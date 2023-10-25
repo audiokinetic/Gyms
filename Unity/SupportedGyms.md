@@ -1,0 +1,74 @@
+- 1-Essential
+    - EssentialAmbient
+    - EssentialPostEvent
+    - EssentialSwitch
+- 2-Basic
+    - BasicAnimNotify
+    - BasicExecuteAction
+        - BasicExecuteActionBreak
+        - BasicExecuteActionPauseResume
+        - BasicExecuteActionStop
+    - BasicFootsteps
+    - BasicLocalizedVoice
+    - BasicMultiplePositions
+    - BasicSetGameParameter
+- 3-Advanced
+    - AdvancedAmbient
+        - AdvancedAmbientFollow
+        - AdvancedAmbientStartAll
+    - AdvancedEvents
+        - AdvancedEventsPostAndWait
+    - AdvancedExternalSources
+    - AdvancedSequencer
+    - AdvancedSubtitle
+    - AdvancedTimeline
+- 5-Spatial
+    - SpatialAudio
+    - SpatialPortal
+- 8-Editor
+    - EditorEnterPlayMode
+    - EditorInspector
+    - EditorPausePlaySession
+    - EditorSoundEngineInitialization
+- 9-Testing
+    - Smoke
+        - SmokeButtonScene
+        - SmokeStreamNoPrefetch
+        - SmokeSubLevel
+            - SmokeSubLevelNested
+            - SmokeSubLevelSingle
+        - SmokeSwitches
+            - SmokeSwitchesSimple
+    - Stress
+        - StressExtSrc
+            - StressExtSrcInMemory
+            - StressExtSrcStreaming
+        - StressMediaLoad
+        - StressOpenLevel
+            - StressOpenLevel_Basic
+            - StressOpenLevel_Codec
+                - StressOpenLevel_ADPCM
+                - StressOpenLevel_PCM
+                - StressOpenLevel_Vorbis
+                - StressOpenLevel_WEMOPUS
+            - StressOpenLevel_ExternalSources
+            - StressOpenLevel_LargeMedia
+            - StressOpenLevel_LocalizedVoice
+            - StressOpenLevel_Stream
+        - StressPostEvent
+            - StressPostEventAndWaitTwoActors
+        - StressStreamingReload
+        - StressSwitches
+            - StressSwitchesAlreadyLoaded
+            - StressSwitchesExternalSources
+            - StressSwitchesLocalized
+            - StressSwitchesMultiNested
+            - StressSwitchesMultipleSounds
+            - StressSwitchesSetEventRelated
+            - StressSwitchesSetEventUnrelated
+            - StressSwitchesSetEventWithAnother
+            - StressSwitchesStateWithSameName
+            - StressSwitchesUnloadEventAllLoaded
+            - StressSwitchesUnloadWhilePlaying
+            - StressSwitchesValueWithoutSwitchContainer
+            - StressSwitchesWithMediaAlreadyLoaded

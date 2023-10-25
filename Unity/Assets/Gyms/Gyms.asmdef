@@ -1,0 +1,21 @@
+{
+    "name": "Gyms",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "AK.Wwise.Unity.API.WwiseTypes",
+        "AK.Wwise.Unity.MonoBehaviour",
+        "AK.Wwise.Unity.API",
+        "Ak.Wwise.Api.WAAPI",
+        "AK.Wwise.Unity.API.Editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

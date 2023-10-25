@@ -1,0 +1,335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: GymNames_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 374fb0e0de31ce841a2676b8c738843e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 13278515200
+    m_Localized: Gym List
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54424637440
+    m_Localized: Advanced Features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117238534144
+    m_Localized: Spatial Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193386123264
+    m_Localized: Testing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563927715840
+    m_Localized: Adding Ambient Events to Scenes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 657959817216
+    m_Localized: Adding Sounds to Animations (AnimNotify)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721801318400
+    m_Localized: Executing Actions on Playing Events
+    m_Metadata:
+      m_Items: []
+  - m_Id: 787345707008
+    m_Localized: Playing Sounds on Collision (Footsteps)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 858283970560
+    m_Localized: Localizing Voices
+    m_Metadata:
+      m_Items: []
+  - m_Id: 919239790592
+    m_Localized: Assigning Multiple Positions to a Single AkComponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 990731702272
+    m_Localized: Using Game Parameters to Modify Events (RTPC)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4282417287168
+    m_Localized: Break
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12202286649344
+    m_Localized: Pause and Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12380787838976
+    m_Localized: Stop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12720098643968
+    m_Localized: Ambient Operations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12941444648960
+    m_Localized: Following an Actor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13380672163840
+    m_Localized: Starting All Level Ambients
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13598394290176
+    m_Localized: Event Operations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13667608694784
+    m_Localized: Using External Sources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13726186344448
+    m_Localized: Using the Sequencer to Animate Wwise Objects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13863629492224
+    m_Localized: Using Event Callbacks to Retrieve Markers (Subtitles)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13955451195392
+    m_Localized: Defining Rooms
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14067795628032
+    m_Localized: Defining Portals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14130064265216
+    m_Localized: Setting Reverb Zones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14196493651968
+    m_Localized: Smoke Tests
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14302227861504
+    m_Localized: Stress Tests
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14358381203456
+    m_Localized: Button Pressing Scene (Control Test)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14431294984192
+    m_Localized: Spatial Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14496931647488
+    m_Localized: Streaming Without Prefetch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14664431177728
+    m_Localized: Level Streaming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14721125584896
+    m_Localized: Nested Sub-Levels
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14788477718528
+    m_Localized: Single Sub-Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14888105021440
+    m_Localized: Switch Container Loading Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14956212129792
+    m_Localized: External Sources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15009446236160
+    m_Localized: In-Memory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15059144544256
+    m_Localized: Streaming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15111699173376
+    m_Localized: Media Loading and Unloading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15170989854720
+    m_Localized: Event Tests
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15327856824320
+    m_Localized: Reloading Streamed Media
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15717578969088
+    m_Localized: Switch Container Loading Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15812508651520
+    m_Localized: Playing Media at Level Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15869840592896
+    m_Localized: Posting Events and Waiting for Completion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15989348896768
+    m_Localized: Waiting for Completion on Multiple Actors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16061771943936
+    m_Localized: Large World
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16116847349760
+    m_Localized: Simple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16209746989056
+    m_Localized: Basic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16264512016384
+    m_Localized: Codecs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16325279092736
+    m_Localized: ADPCM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16393491058688
+    m_Localized: PCM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16609791315968
+    m_Localized: Vorbis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16724014796800
+    m_Localized: WEM Opus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16785964666880
+    m_Localized: External sources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18153165164544
+    m_Localized: Large media file
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18212673949696
+    m_Localized: Localized voice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18280265158656
+    m_Localized: Streaming Media
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18361840177152
+    m_Localized: Already Loaded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18418475864064
+    m_Localized: External Sources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19017909014528
+    m_Localized: Localized
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19077916921856
+    m_Localized: Multiple Nested
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19235593392128
+    m_Localized: Multiple Sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19288248684544
+    m_Localized: Set Event of a Related Container
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19345295413248
+    m_Localized: Set Event of an Unrelated Container
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19414174273536
+    m_Localized: Set Event with Another Container
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19469815910400
+    m_Localized: State with the Same Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19530104836096
+    m_Localized: Unload Event with All States Loaded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19587885568000
+    m_Localized: Unload Event while Playing the Event
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19647650205696
+    m_Localized: Value Without the Switch Container
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19715098808320
+    m_Localized: With Media of the Switch Container Already Loaded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19772678213632
+    m_Localized: Basic Features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19829968211968
+    m_Localized: Essential Features
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19879335170048
+    m_Localized: Posting Events to Wwise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19960675307520
+    m_Localized: Using Switch Containers to Modify Events
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20654971031552
+    m_Localized: Editor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20857639800832
+    m_Localized: Using the Timeline to Animate Wwise Objects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585382155214848
+    m_Localized: Entering Play Mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585388715106304
+    m_Localized: Interacting with the inspector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585390791286784
+    m_Localized: Pausing and resuming sessions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585395040116736
+    m_Localized: Wwise Sound Engine Initialization
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

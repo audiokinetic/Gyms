@@ -1,0 +1,4 @@
+[gerrit]
+host=git.hq.audiokinetic.com
+project=Gyms
+defaultremote=origin

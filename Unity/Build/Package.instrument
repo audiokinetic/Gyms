@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<instrument rootdir="../../../"
+	xmlns:ak="file://instrument/tasks/ak"
+	xmlns:wwise="file://instrument/tasks/wwise"
+	xmlns:scripts="file://instrument/tasks/scripts">
+	
+	<!-- Predefined filepaths. -->
+	<property name="PKG_DISTRIBUTE_PATH" value="Unity/Build/Package.distribute" />
+	<property name="GYMS_DISTRIBUTE_PATH" value="Unity/Build/Fetch.distribute" />
+	<property name="GYMS_DIRECTORY" value="${_ROOT_DIRECTORY_}/Gyms_Unity" />
+	<property name="UNITY_EXEC_PATH" value="C:/Program Files/Unity/Hub/Editor/${UNITY_VERSION}/Editor/Unity.exe" />
+	<target name="fetch_doc">
+		<fail message="Requires the 'WWISE_BUILD_NUMBER' property to be set." if="${WWISE_BUILD_NUMBER == None}" />
+		<fail message="Requires the 'WWISE_VERSION' property to be set." if="${WWISE_VERSION is None}" />
+		<!-- Copy (filter out unrequired files) the content of the Integration folder into a new folder: Gyms_UnityDemoScene. -->
+		
+		<property name="WWISE_BUILD_NUMBER" value='${WWISE_BUILD_NUMBER}' />
+		<if condition="${WWISE_BUILD_NUMBER == 'LATEST'}">
+			<wwise:GetWwiseBuildFromGit wwiseroot="${GYMS_DIRECTORY}/Wwise">
+				<property name="WWISE_BUILD_NUMBER" value="${AK_WWISESDK_BUILD_NUMBER}" />
+			</wwise:GetWwiseBuildFromGit>
+		</if>
+
+		<!-- Set build release path. -->
+		<property name="UNITY_INTEGRATION_VERSION" value="${WWISE_BUILD_NUMBER}.${UNITY_BUILD_NUMBER}" />
+		<property name="PKG_PATH" value="${BUILDS_LOCATION}\UnityIntegration\${WWISE_VERSION}\${UNITY_INTEGRATION_VERSION}\Temp" />
+		
+		<property name="UNITY_GYMS_FOLDER" value="${GYMS_DIRECTORY}/Unity" />
+			
+		<property name="PLATFORMS_ONLINE" value="Windows XboxOne PS4 PS5 Switch Android Mac Linux Stadia XboxSeriesX" />
+		
+	</target>
+    
+	<target name="fetch-unity-integration">
+	
+		<fail message="Requires the 'WWISE_BUILD_NUMBER' property to be set." if="${WWISE_BUILD_NUMBER == None}" />
+		<fail message="Requires the 'WWISE_VERSION' property to be set." if="${WWISE_VERSION is None}" />
+		<!-- Copy (filter out unrequired files) the content of the Integration folder into a new folder: Gyms_UnityDemoScene. -->
+		
+		<property name="WWISE_BUILD_NUMBER" value='${WWISE_BUILD_NUMBER}' />
+		<if condition="${WWISE_BUILD_NUMBER == 'LATEST'}">
+			<wwise:GetWwiseBuildFromGit wwiseroot="${GYMS_DIRECTORY}/Wwise">
+				<property name="WWISE_BUILD_NUMBER" value="${AK_WWISESDK_BUILD_NUMBER}" />
+			</wwise:GetWwiseBuildFromGit>
+		</if>
+
+		<!-- Set build release path. -->
+		<property name="UNITY_INTEGRATION_VERSION" value="${WWISE_BUILD_NUMBER}.${UNITY_BUILD_NUMBER}" />
+		<property name="PKG_PATH" value="\\dc1\Files\Builds\UnityIntegration\${WWISE_VERSION}\${UNITY_INTEGRATION_VERSION}\Release" />
+		
+		<property name="UNITY_GYMS_FOLDER" value="${GYMS_DIRECTORY}/Unity" />
+		
+		<!-- Windows -->
+		
+		<property name="UNZIP_PLATFORM" value="Windows" />
+		<property name="JOB_NAME" value="Unity.Windows" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<property name="JOB_NAME" value="Unity.Mac" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<!-- PS4 -->
+
+		<property name="UNZIP_PLATFORM" value="PS4" />
+		<property name="JOB_NAME" value="Unity.Windows" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<property name="JOB_NAME" value="Unity.Mac" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<property name="JOB_NAME" value="Unity.${UNZIP_PLATFORM}" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<!-- XboxOne -->
+
+		<property name="UNZIP_PLATFORM" value="XboxOne" />
+		<property name="JOB_NAME" value="Unity.Windows" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<property name="JOB_NAME" value="Unity.Mac" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<property name="JOB_NAME" value="Unity.${UNZIP_PLATFORM}" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<!-- Android -->
+
+		<property name="UNZIP_PLATFORM" value="Android" />
+		<property name="JOB_NAME" value="Unity.Windows" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<property name="JOB_NAME" value="Unity.Mac" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<property name="JOB_NAME" value="Unity.${UNZIP_PLATFORM}" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<!-- WindowsStore -->
+
+		<property name="UNZIP_PLATFORM" value="WindowsStore" />
+		<property name="JOB_NAME" value="Unity.Windows" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<property name="JOB_NAME" value="Unity.Mac" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<property name="JOB_NAME" value="Unity.${UNZIP_PLATFORM}" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNZIP_PLATFORM}"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+		
+	</target>
+	
+	<target name="build-gyms">
+		<fail message="Requires the 'UNITY_PLATFORM' property to be set." if="${UNITY_PLATFORM is None}" />
+		<fail message="Requires the 'WWISE_BUILD_NUMBER' property to be set." if="${WWISE_BUILD_NUMBER is None}" />
+		<fail message="Requires the 'WWISE_VERSION' property to be set." if="${WWISE_VERSION is None}" />
+	
+		<!-- Copy (filter out unrequired files) the content of the Integration folder into a new folder: Gyms_UnityDemoScene. -->
+		<property name="WWISE_BUILD_NUMBER" value='${WWISE_BUILD_NUMBER}' />
+		<property name="WWISE_VERSION" value='${WWISE_VERSION}' />
+		<if condition="${WWISE_BUILD_NUMBER == 'LATEST' or WWISE_VERSION == 'LATEST'}">
+			<wwise:GetWwiseBuildFromGit wwiseroot="${GYMS_DIRECTORY}">
+				<if condition="${WWISE_BUILD_NUMBER == 'LATEST'}">
+					<property name="WWISE_BUILD_NUMBER" value="${AK_WWISESDK_BUILD_NUMBER}" />
+				</if>
+				<if condition="${WWISE_VERSION == 'LATEST'}">
+					<property name="WWISE_VERSION" value="v${AK_WWISESDK_VERSION}" />
+				</if>
+			</wwise:GetWwiseBuildFromGit>
+		</if>
+
+		<!-- Set build release path. -->
+		<property name="UNITY_INTEGRATION_VERSION" value="${WWISE_BUILD_NUMBER}.${UNITY_BUILD_NUMBER}" />
+		<property name="PKG_PATH" value="${BUILDS_LOCATION}\UnityIntegration\${WWISE_VERSION}\${UNITY_INTEGRATION_VERSION}\Release" />
+		
+		<property name="UNITY_GYMS_FOLDER" value="${_ROOT_DIRECTORY_}/UnityIntegration" />
+		
+		<!-- Acquire the Wwise Authoring to enable soundbank generation. -->
+		<property name="JOB_NAME" value="x64_vc160_Release" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${BUILDS_LOCATION}\Branches\${WWISE_BRANCH}\Wwise\${WWISE_BUILD_NUMBER}\Artifacts" 
+			override-rootpath="${GYMS_DIRECTORY}/Wwise"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import"
+			failonerror="false" />
+		
+		
+		
+		<property name="JOB_NAME" value="CopyAuthoringData" />
+		<distribute 	
+			file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${GYMS_DIRECTORY}/Wwise"
+			override-rootpath="${GYMS_DIRECTORY}/Wwise"
+			tasks="${JOB_NAME}" 
+			tool="robocopy"
+			mode="export" 
+			/>
+			
+		<!-- Unzip the right Unity integration build for Windows and Mac. -->
+			
+		<property name="JOB_NAME" value="Unity.Windows" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${_ROOT_DIRECTORY_}/UnityIntegration"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+			
+		<property name="JOB_NAME" value="Unity.Mac" />
+		<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+			remotepath="${PKG_PATH}" 
+			override-rootpath="${_ROOT_DIRECTORY_}/UnityIntegration"
+			tasks="${JOB_NAME}" 
+			tool="tar"
+			mode="import" 
+			failonerror="false" />
+		
+		<!-- Copy all files from the Unity integration build inside Gyms_UnityDemoScene/Assets. -->
+		<echo message="Demo scene folder: ${UNITY_GYMS_FOLDER}" />
+		<property name="JOB_NAME" value="CopyFilesToUnityGyms" />
+		<distribute 	
+			file="${PKG_DISTRIBUTE_PATH}" 
+			remotepath="${_root_directory_}"
+			override-rootpath="${_root_directory_}"
+			tasks="${JOB_NAME}" 
+			tool="robocopy"
+			mode="export" 
+			/>
+		
+		<!-- Actually build the demo scene. -->
+		<echo message="Calling BuildGyms.py" />
+		<scripts:python script-path="Gyms_Unity/Unity/Build/BuildGyms.py" >
+			<arg value="${UNITY_EXEC_PATH}" />
+			<arg value="${GYMS_DIRECTORY}/Wwise/Authoring/x64/Release/bin/WwiseConsole.exe" />
+			<arg value="${GYMS_DIRECTORY}/Unity" />
+			<arg value="${GYMS_DIRECTORY}/WwiseProject/Gyms.wproj" />
+		</scripts:python>
+		
+		<property name="JOB_NAME" value="CopyUnityZipFolder.${UNITY_PLATFORM}" />
+		<distribute 	
+			file="${PKG_DISTRIBUTE_PATH}" 
+			remotepath="${GYMS_DIRECTORY}"
+			override-rootpath="${GYMS_DIRECTORY}"
+			tasks="${JOB_NAME}" 
+			tool="robocopy"
+			mode="export" 
+			/>
+	</target>
+	
+	<target name="build_unity">
+		<fail message="Requires the 'WWISE_BUILD_NUMBER' property to be set." if="${WWISE_BUILD_NUMBER is None}" />
+		<fail message="Requires the 'WWISE_VERSION' property to be set." if="${WWISE_VERSION is None}" />
+
+		<property name="WWISE_BUILD_NUMBER" value='${WWISE_BUILD_NUMBER}' />
+		<property name="WWISE_VERSION" value='${WWISE_VERSION}' />
+		<if condition="${WWISE_BUILD_NUMBER == 'LATEST' or WWISE_VERSION == 'LATEST'}">
+			<wwise:GetWwiseBuildFromGit wwiseroot="${GYMS_DIRECTORY}/Wwise">
+				<if condition="${WWISE_BUILD_NUMBER == 'LATEST'}">
+					<property name="WWISE_BUILD_NUMBER" value="${AK_WWISESDK_BUILD_NUMBER}" />
+				</if>
+				<if condition="${WWISE_VERSION == 'LATEST'}">
+					<property name="WWISE_VERSION" value="v${AK_WWISESDK_VERSION}" />
+				</if>
+			</wwise:GetWwiseBuildFromGit>
+		</if>
+
+		<scripts:python script-path="Gyms_Unity/Scripts/WriteUnityVersion.py" >
+			<arg value="${WWISE_VERSION}" />
+			<arg value="${WWISE_BUILD_NUMBER}" />
+			<arg value="${UNITY_BUILD_NUMBER}" />
+		</scripts:python>
+	
+		<scripts:python script-path="Gyms_Unity/Scripts/MasterBuild.py" />
+		
+	</target>
+
+	
+	<target name="fetch_sdk"> 
+		<fail message="Requires the 'UNITY_PLATFORM' property to be set." if="${UNITY_PLATFORM is None}" />
+		<fail message="Requires the 'WWISE_BUILD_NUMBER' property to be set." if="${WWISE_BUILD_NUMBER is None}" />
+		<fail message="Requires the 'WWISE_VERSION' property to be set." if="${WWISE_VERSION is None}" />
+
+		<property name="TARGET_PLATFORM" value="" if="${UNITY_PLATFORM=='None'}" />
+		<property name="TARGET_PLATFORM" value="${UNITY_PLATFORM}" />
+		
+		<!-- Special cases -->
+		<property name="TARGET_PLATFORM" value="Windows_vc150" if="${UNITY_PLATFORM=='Windows'}" />
+		<property name="TARGET_PLATFORM" value="UWP_vc150" if="${UNITY_PLATFORM=='WindowsStore'}" />
+		<property name="TARGET_PLATFORM" value="NX" if="${UNITY_PLATFORM=='Switch'}" />
+		<property name="TARGET_PLATFORM" value="GGP" if="${UNITY_PLATFORM=='Stadia'}" />
+		
+		<property name="WWISE_BUILD_NUMBER" value='${WWISE_BUILD_NUMBER}' />
+		<property name="WWISE_VERSION" value='${WWISE_VERSION}' />
+		<if condition="${WWISE_BUILD_NUMBER == 'LATEST' or WWISE_VERSION == 'LATEST'}">
+			<wwise:GetWwiseBuildFromGit wwiseroot="${_ROOT_DIRECTORY_}/Integration">
+				<if condition="${WWISE_BUILD_NUMBER == 'LATEST'}">
+					<property name="WWISE_BUILD_NUMBER" value="${AK_WWISESDK_BUILD_NUMBER}" />
+				</if>
+				<if condition="${WWISE_VERSION == 'LATEST'}">
+					<property name="WWISE_VERSION" value="v${AK_WWISESDK_VERSION}" />
+				</if>
+			</wwise:GetWwiseBuildFromGit>
+		</if>
+
+		<if condition="${platform.is_linux()}">
+			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${GYMS_DIRECTORY}/Wwise" builds-root="/mnt/nas/" working-directory="Gyms_Unity/Integration" platforms="${TARGET_PLATFORM},Main" />	
+			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${GYMS_DIRECTORY}/Wwise" builds-root="/mnt/nas/" working-directory="Gyms_Unity/Integration" platforms="${TARGET_PLATFORM}" plugin-names="Auro,ConvolutionReverb,iZotope,McDSP,Reflect,SoundSeed,SoundSeedGrain,MasteringSuite" />	
+		</if>
+
+		<if condition="${platform.is_darwin()}">
+			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${GYMS_DIRECTORY}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="Gyms_Unity/Integration" platforms="${TARGET_PLATFORM},Main" />	
+			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${GYMS_DIRECTORY}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="Gyms_Unity/Integration" platforms="${TARGET_PLATFORM}" plugin-names="Auro,ConvolutionReverb,iZotope,McDSP,Reflect,SoundSeed,SoundSeedGrain,MSSpatial,MasteringSuite" />	
+		</if>
+		
+		<if condition="${not platform.is_darwin() and not platform.is_linux()}">
+			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${GYMS_DIRECTORY}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="Gyms_Unity/Integration" platforms="${TARGET_PLATFORM},Main" />	
+			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${GYMS_DIRECTORY}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="Gyms_Unity/Integration" platforms="${TARGET_PLATFORM}" plugin-names="Auro,ConvolutionReverb,iZotope,McDSP,Motion,Reflect,SoundSeed,SoundSeedGrain,MSSpatial,MasteringSuite" />	
+		</if>
+	</target>
+	
+	<target name="fetch-unity-integration-wwise-version">
+	
+		<fail message="Requires the 'WWISE_BUILD_NUMBER' property to be set." if="${WWISE_BUILD_NUMBER == None}" />
+        <fail message="Requires the 'WWISE_VERSION' property to be set." if="${WWISE_VERSION == None}" />
+        <fail message="Requires the 'UNITY_BUILD_NUMBER' property to be set." if="${UNITY_BUILD_NUMBER == None}" />
+		<fail message="Requires the 'TARGET_PLATFORMS' property to be set." if="${TARGET_PLATFORMS == None}" />
+
+		<property name="UNITY_INTEGRATION_VERSION" value="${WWISE_BUILD_NUMBER}.${UNITY_BUILD_NUMBER}" />
+		<property name="PKG_PATH" value="//dc1/Files/Builds/UnityIntegration/${WWISE_VERSION}/${UNITY_INTEGRATION_VERSION}/Release" />
+
+		<foreach property="TARGET_PLATFORM" items="${TARGET_PLATFORMS.split(' ')}">
+			<property name="JOB_NAME" value="Unity.Windows" />
+			<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+				remotepath="${PKG_PATH}" 
+				override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}"
+				tasks="${JOB_NAME}" 
+				tool="tar"
+				mode="import" 
+				failonerror="false" />
+				
+			<property name="JOB_NAME" value="Unity.Mac" />
+			<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+				remotepath="${PKG_PATH}" 
+				override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}"
+				tasks="${JOB_NAME}" 
+				tool="tar"
+				mode="import" 
+				failonerror="false" />
+				
+			<property name="JOB_NAME" value="Unity.${TARGET_PLATFORM}" />
+			<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+				remotepath="${PKG_PATH}" 
+				override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}"
+				tasks="${JOB_NAME}" 
+				tool="tar"
+				mode="import" 
+				failonerror="false" />
+		</foreach>
+	</target>
+	
+	<target name="fetch-wwise-sdk-wwise-version">
+	
+		<fail message="Requires the 'WWISE_BUILD_NUMBER' property to be set." if="${WWISE_BUILD_NUMBER == None}" />
+        <fail message="Requires the 'WWISE_VERSION' property to be set." if="${WWISE_VERSION == None}" />
+		<fail message="Requires the 'TARGET_PLATFORMS' property to be set." if="${TARGET_PLATFORMS == None}" />
+		<fail message="Requires the 'EXTERNAL_PLUGINS' property to be set." if="${EXTERNAL_PLUGINS == None}" />
+
+		<property name="PKG_PATH" value="//dc1/Files/Builds/Wwise/${WWISE_VERSION}/${WWISE_BUILD_NUMBER}/Setup/WwiseInstaller/Release" />
+
+		<foreach property="TARGET_PLATFORM" items="${TARGET_PLATFORMS.split(' ')}">
+			<property name="SDK_TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
+			<property name="JOB_NAME" value="CopyWwisePlugin" />
+			<echo message="Copy the Wwise SDK plug-in files to the ${TARGET_PLATFORM} DSP folder"/>
+			
+			<if condition="${platform.is_darwin()}">
+				<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" builds-root="/mnt/DC1/Files/Builds" working-directory="Gyms_Unity" platforms="${SDK_TARGET_PLATFORM},Windows_vc150,Mac" />
+				
+				<foreach property="EXTERNAL_PLUGIN" items="${EXTERNAL_PLUGINS.split(' ')}">
+					<scripts:python script-path="${GYMS_DIRECTORY}/Wwise/Scripts/Build/FetchLatestStandalonePlugins.py">
+						<arg value="x64_vc150 Win32_vc150 Mac Authoring Common" />
+						<arg value="${EXTERNAL_PLUGIN}" />
+					</scripts:python>
+				</foreach>
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${GYMS_DIRECTORY}/Wwise/SDK/x64_vc150/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP"
+					tasks="${JOB_NAME}" 
+					tool="rsync"
+					mode="import" 
+					failonerror="false" />
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${GYMS_DIRECTORY}/Wwise/SDK/Win32_vc150/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Windows/x86/DSP"
+					tasks="${JOB_NAME}" 
+					tool="rsync"
+					mode="import" 
+					failonerror="false" />
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${GYMS_DIRECTORY}/Wwise/SDK/Mac/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Mac/DSP"
+					tasks="${JOB_NAME}" 
+					tool="rsync"
+					mode="import" 
+					failonerror="false" />
+				
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${GYMS_DIRECTORY}/Wwise/SDK/x64_vc150/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP"
+					tasks="${JOB_NAME}" 
+					tool="rsync"
+					mode="import" 
+					failonerror="false" />
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${_root_directory_}/SDK/Win32_vc150/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Windows/x86/DSP"
+					tasks="${JOB_NAME}" 
+					tool="rsync"
+					mode="import" 
+					failonerror="false" />
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${_root_directory_}/SDK/Mac/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Mac/DSP"
+					tasks="${JOB_NAME}" 
+					tool="rsync"
+					mode="import" 
+					failonerror="false" />
+
+				<if condition="${TARGET_PLATFORM != 'Windows'}">
+					<property name="UNITY_TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
+					<property name="SDK_TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
+
+					<foreach property="EXTERNAL_PLUGIN" items="${EXTERNAL_PLUGINS.split(' ')}">
+						<scripts:python script-path="${GYMS_DIRECTORY}/Wwise/Scripts/Build/FetchLatestStandalonePlugins.py">
+							<arg value="${SDK_TARGET_PLATFORM} Common" />
+							<arg value="${EXTERNAL_PLUGIN}" />
+						</scripts:python>
+					</foreach>
+
+					<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+						remotepath="${GYMS_DIRECTORY}/Wwise/SDK/${SDK_TARGET_PLATFORM}/Profile/bin"
+						override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/${UNITY_TARGET_PLATFORM}/DSP"
+						tasks="${JOB_NAME}" 
+						tool="rsync"
+						mode="import" 
+						failonerror="false" />
+
+					<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+						remotepath="${GYMS_DIRECTORY}/Wwise/SDK/${SDK_TARGET_PLATFORM}/Profile/bin"
+						override-rootpath="${GYMS_DIRECTORY}/UnzipFor${UNITY_TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/${UNITY_TARGET_PLATFORM}/DSP"
+						tasks="${JOB_NAME}" 
+						tool="rsync"
+						mode="import" 
+						failonerror="false" />
+				</if>
+			</if>
+			<property name="JOB_NAME" value="CopyWwisePlugin" />
+
+			<if condition="${not platform.is_darwin() and not platform.is_linux()}">
+				<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" builds-root="${BUILDS_LOCATION}" working-directory="Gyms_Unity" platforms="${SDK_TARGET_PLATFORM},Windows_vc150,Mac" />
+				
+				<foreach property="EXTERNAL_PLUGIN" items="${EXTERNAL_PLUGINS.split(' ')}">
+					<scripts:python script-path="${GYMS_DIRECTORY}/Wwise/Scripts/Build/FetchLatestStandalonePlugins.py">
+						<arg value="x64_vc150 Win32_vc150 Mac Authoring Common" />
+						<arg value="${EXTERNAL_PLUGIN}" />
+					</scripts:python>
+				</foreach>
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${GYMS_DIRECTORY}/Wwise/SDK/x64_vc150/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP"
+					tasks="${JOB_NAME}" 
+					tool="robocopy"
+					mode="import" 
+					failonerror="false" />
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${GYMS_DIRECTORY}/Wwise/SDK/Win32_vc150/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Windows/x86/DSP"
+					tasks="${JOB_NAME}" 
+					tool="robocopy"
+					mode="import" 
+					failonerror="false" />
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${GYMS_DIRECTORY}/Wwise/SDK/Mac/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Mac/DSP"
+					tasks="${JOB_NAME}" 
+					tool="robocopy"
+					mode="import" 
+					failonerror="false" />
+				
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${GYMS_DIRECTORY}/Wwise/SDK/x64_vc150/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP"
+					tasks="${JOB_NAME}" 
+					tool="robocopy"
+					mode="import" 
+					failonerror="false" />
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${GYMS_DIRECTORY}/Wwise/SDK/Win32_vc150/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Windows/x86/DSP"
+					tasks="${JOB_NAME}" 
+					tool="robocopy"
+					mode="import" 
+					failonerror="false" />
+
+				<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+					remotepath="${GYMS_DIRECTORY}/Wwise/SDK/Mac/Profile/bin"
+					override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/Mac/DSP"
+					tasks="${JOB_NAME}" 
+					tool="robocopy"
+					mode="import" 
+					failonerror="false" />
+
+				<if condition="${TARGET_PLATFORM != 'Windows' and TARGET_PLATFORM != 'Switch'}">
+					<property name="UNITY_TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
+					<property name="UNITY_TARGET_PLATFORM" value="Linux/x86_64" if="${TARGET_PLATFORM=='Linux'}" />
+					<property name="UNITY_TARGET_PLATFORM" value="Android/armeabi-v7a" if="${TARGET_PLATFORM=='Android'}" />
+					
+					<property name="SDK_TARGET_PLATFORM" value="XboxOne_vc150" if="${TARGET_PLATFORM=='XboxOne'}" />
+					<property name="SDK_TARGET_PLATFORM" value="XboxOneGC_vc150" if="${TARGET_PLATFORM=='XboxOneGC'}" />
+					<property name="SDK_TARGET_PLATFORM" value="Linux_x64" if="${TARGET_PLATFORM=='Linux'}" />
+					<property name="SDK_TARGET_PLATFORM" value="Android_armeabi-v7a" if="${TARGET_PLATFORM=='Android'}" />
+				
+					<foreach property="EXTERNAL_PLUGIN" items="${EXTERNAL_PLUGINS.split(' ')}">
+						<scripts:python script-path="${GYMS_DIRECTORY}/Wwise/Scripts/Build/FetchLatestStandalonePlugins.py">
+							<arg value="${SDK_TARGET_PLATFORM} Common" />
+							<arg value="${EXTERNAL_PLUGIN}" />
+						</scripts:python>
+					</foreach>
+
+					<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+						remotepath="${GYMS_DIRECTORY}/Wwise/SDK/${SDK_TARGET_PLATFORM}/Profile/bin"
+						override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/${UNITY_TARGET_PLATFORM}/DSP"
+						tasks="${JOB_NAME}" 
+						tool="robocopy"
+						mode="import" 
+						failonerror="false" />
+
+					<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+						remotepath="${GYMS_DIRECTORY}/Wwise/SDK/${SDK_TARGET_PLATFORM}/Profile/bin"
+						override-rootpath="${GYMS_DIRECTORY}/UnzipFor${TARGET_PLATFORM}/Gyms_Unity/Wwise/API/Runtime/Plugins/${UNITY_TARGET_PLATFORM}/DSP"
+						tasks="${JOB_NAME}" 
+						tool="robocopy"
+						mode="import" 
+						failonerror="false" />
+				</if>
+
+				<if condition="${TARGET_PLATFORM == 'Switch'}">
+					<foreach property="EXTERNAL_PLUGIN" items="${EXTERNAL_PLUGINS.split(' ')}">
+						<scripts:python script-path="${GYMS_DIRECTORY}/Wwise/Scripts/Build/FetchLatestStandalonePlugins.py">
+							<arg value="NX64 Common" />
+							<arg value="${EXTERNAL_PLUGIN}" />
+						</scripts:python>
+					</foreach>
+
+					<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+						remotepath="${GYMS_DIRECTORY}/Wwise/SDK/NX64/Profile/lib"
+						override-rootpath="${GYMS_DIRECTORY}/UnzipForSwitch/Wwise/API/Runtime/Plugins/Switch/NX64/DSP"
+						tasks="${JOB_NAME}" 
+						tool="robocopy"
+						mode="import" 
+						failonerror="false" />
+
+					<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+						remotepath="${GYMS_DIRECTORY}/Wwise/SDK/include/AK/Plugin"
+						override-rootpath="${GYMS_DIRECTORY}/UnzipForSwitch/Wwise/API/Runtime/Plugins/Switch/NX64/DSP"
+						tasks="${JOB_NAME}" 
+						tool="robocopy"
+						mode="import" 
+						failonerror="false" />
+
+					<distribute file="${GYMS_DISTRIBUTE_PATH}" 
+						remotepath="${GYMS_DIRECTORY}/Wwise/SDK/NX64/Profile/bin"
+						override-rootpath="${GYMS_DIRECTORY}/UnzipForSwitch/Wwise/API/Runtime/Plugins/Switch/NX64/DSP"
+						tasks="${JOB_NAME}" 
+						tool="robocopy"
+						mode="import" 
+						failonerror="false" />
+				</if>
+			</if>
+
+		</foreach>
+	</target>
+</instrument>

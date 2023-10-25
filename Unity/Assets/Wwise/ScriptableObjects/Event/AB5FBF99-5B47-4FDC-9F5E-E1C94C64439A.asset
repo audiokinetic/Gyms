@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daac7cc27c886974fa974deb32331533, type: 3}
+  m_Name: AB5FBF99-5B47-4FDC-9F5E-E1C94C64439A
+  m_EditorClassIdentifier: 
+  objectName: Streaming_Event
+  id: 1352062650
+  guid: AB5FBF99-5B47-4FDC-9F5E-E1C94C64439A

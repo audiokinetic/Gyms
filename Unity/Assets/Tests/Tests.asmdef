@@ -1,0 +1,30 @@
+{
+    "name": "Tests",
+    "rootNamespace": "",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "Gyms",
+        "AK.Wwise.Unity.MonoBehaviour",
+        "AK.Wwise.Unity.API",
+        "AK.Wwise.Unity.API.WwiseTypes",
+        "AK.Wwise.Unity.Timeline",
+        "AK.Wwise.Unity.MonoBehaviour.Editor",
+        "Ak.Wwise.Api.WAAPI",
+        "AK.Wwise.Unity.API.Editor",
+        "AK.Wwise.Unity.Addressables"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

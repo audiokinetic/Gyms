@@ -1,0 +1,3612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<distribute rootdir="../../"
+	xmlns:tar="attrib://tar">
+
+	<tasks>
+	
+		<task name="CopyFilesToUnityGyms">
+			<includegroup>CopyFilesToUnityGyms</includegroup>
+		</task>
+		
+		<task name="Unity.DemoScene" tar:compression="xz">
+			<includegroup>ExportDemoScene</includegroup>
+		</task>
+		
+		<task name="Unity.DemoSceneTestPackage" tar:compression="xz">
+			<includegroup>ExportDemoSceneTestPackage</includegroup>
+		</task>
+	
+		<task name="CopyUnityUnitySource.Windows">
+			<includegroup>CopySourceZipFolderWindows</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_Windows_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+	
+		<task name="CopyUnityZipFolder.Windows">
+			<includegroup>CopyUnityZipFolderWindows</includegroup>
+		</task>
+
+		<task name="CopyUnityZipFolder.Extensions">
+			<includegroup>CopyUnityZipFolderExtensions</includegroup>
+		</task>
+	
+		<task name="Unity.Windows" tar:compression="xz">
+			<includegroup platform="Windows">ExportPackage</includegroup>
+		</task>
+        
+		<task name="Unity.Extensions" tar:compression="xz">
+			<includegroup platform="Extensions">ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyGymsUnitySource.Android">
+			<includegroup>CopySourceZipFolderAndroid</includegroup>
+		</task>
+		
+		<task name="Gyms_GymsUnity_Android_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.Android">
+			<includegroup>CopyUnityZipFolderAndroid</includegroup>
+		</task>
+		
+		<task name="SymbolsAndroid" tar:compression="xz">
+			<includegroup>GroupSymbolsAndroid</includegroup>
+		</task>
+
+		<task name="Unity.Android" tar:compression="xz">
+			<includegroup platform="Android">ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyGymsUnitySource.Linux">
+			<includegroup>CopySourceZipFolderLinux</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_Linux_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.Linux">
+			<includegroup>CopyUnityZipFolderLinux</includegroup>
+		</task>
+		
+		<task name="Unity.Linux" tar:compression="xz">
+			<includegroup platform="Linux">ExportPackage</includegroup>
+		</task>
+
+		<task name="CopyUnityUnitySource.PS4">
+			<includegroup>CopySourceZipFolderPS4</includegroup>
+		</task>
+		
+		<task name="CopyUnityUnitySource.PS5">
+			<includegroup>CopySourceZipFolderPS5</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_PS4_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_PS5_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.PS4">
+			<includegroup>CopyUnityZipFolderPS4</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.PS5">
+			<includegroup>CopyUnityZipFolderPS5</includegroup>
+		</task>
+		
+		<task name="Unity.PS4" tar:compression="xz">
+			<includegroup platform="PS4">ExportPackage</includegroup>
+		</task>
+
+		<task name="Unity.PS5" tar:compression="xz">
+			<includegroup platform="PS5">ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityUnitySource.Stadia">
+			<includegroup>CopySourceZipFolderStadia</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_Stadia_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.Stadia">
+			<includegroup>CopyUnityZipFolderStadia</includegroup>
+		</task>
+		
+		<task name="Unity.Stadia" tar:compression="xz">
+			<includegroup platform="Stadia">ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityUnitySource.WindowsStore">
+			<includegroup>CopySourceZipFolderWindowsStore</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_WindowsStore_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.WindowsStore">
+			<includegroup>CopyUnityZipFolderWindowsStore</includegroup>
+		</task>
+		
+		<task name="Unity.WindowsStore" tar:compression="xz">
+			<includegroup platform="WindowsStore">ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityUnitySource.XboxOne">
+			<includegroup>CopySourceZipFolderXboxOne</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_XboxOne_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.XboxOne">
+			<includegroup>CopyUnityZipFolderXboxOne</includegroup>
+		</task>
+
+		<task name="Unity.XboxOne" tar:compression="xz">
+			<includegroup platform="XboxOne">ExportPackage</includegroup>
+		</task>
+
+		<task name="CopyUnityUnitySource.XboxSeriesX">
+			<includegroup>CopySourceZipFolderXboxSeriesX</includegroup>
+		</task>
+
+		<task name="Gyms_UnityUnity_XboxSeriesX_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.XboxSeriesX">
+			<includegroup>CopyUnityZipFolderXboxSeriesX</includegroup>
+		</task>
+
+		<task name="Unity.XboxSeriesX" tar:compression="xz">
+			<includegroup platform="XboxSeriesX">ExportPackage</includegroup>
+		</task>
+
+		<task name="CopyUnityUnitySource.XboxOneGC">
+			<includegroup>CopySourceZipFolderXboxOneGC</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_XboxOneGC_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.XboxOneGC">
+			<includegroup>CopyUnityZipFolderXboxOneGC</includegroup>
+		</task>
+		
+		<task name="Unity.XboxOneGC" tar:compression="xz">
+			<includegroup platform="XboxOneGC">ExportPackage</includegroup>
+		</task>
+
+		<task name="CopyUnityUnitySource.Mac">
+			<includegroup>CopySourceZipFolderMac</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_Mac_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.Mac">
+			<includegroup>CopyUnityZipFolderMac</includegroup>
+		</task>
+
+		<task name="Unity.Mac" tar:compression="xz">
+			<includegroup platform="Mac">ExportPackage</includegroup>
+		</task>
+
+		<task name="CopyUnityUnitySource.iOS">
+			<includegroup>CopySourceZipFolderiOS</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_iOS_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.iOS">
+			<includegroup>CopyUnityZipFolderiOS</includegroup>
+		</task>
+
+		<task name="Unity.iOS" tar:compression="xz">
+			<includegroup platform="iOS">ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityUnitySource.tvOS">
+			<includegroup>CopySourceZipFoldertvOS</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_tvOS_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.tvOS">
+			<includegroup>CopyUnityZipFoldertvOS</includegroup>
+		</task>
+
+		<task name="Unity.tvOS" tar:compression="xz">
+			<includegroup platform="tvOS">ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityUnitySource.Switch">
+			<includegroup>CopySourceZipFolderSwitch</includegroup>
+		</task>
+		
+		<task name="Gyms_UnityUnity_Switch_Src">
+			<includegroup>ExportPackage</includegroup>
+		</task>
+		
+		<task name="CopyUnityZipFolder.Switch">
+			<includegroup>CopyUnityZipFolderSwitch</includegroup>
+		</task>
+
+		<task name="Unity.Switch" tar:compression="xz">
+			<includegroup platform="Switch">ExportPackage</includegroup>
+		</task>
+	</tasks>
+
+	<groups>
+	
+		<group name="CopyFilesToUnityGyms">
+			<path source="UnityIntegration/Wwise" target="Gyms_Unity/Unity/Assets/Wwise" recursive="true">
+				<include value="*" />
+				<exclude value="WwiseSettings.xml" />
+				<exclude value="AkDevTools.cs" />
+				<exclude value="AkWwiseMenu_*" />
+			</path>
+		</group>
+	
+		<group name="CopySourceZipFolderWindows">
+		
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/Windows" target="UnityIntegration/AkSoundEngine/Windows" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Wwise" target="UnityIntegration/Unity/Assets/Wwise">
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Wwise" target="UnityIntegration/Unity/Assets/Wwise">
+				<include value="NewVersion.txt" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="UnityIntegration/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Windows" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Windows" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Windows" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Windows" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+		</group>
+		
+		<group name="CopySourceZipFolderWindowsStore">
+		
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/WSA" target="UnityIntegration/AkSoundEngine/WSA" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise/">
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise/">
+				<include value="NewVersion.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Windows" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Windows" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise//API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/WSA" target="Wwise/Unity/Assets/Wwise//API/Runtime/Generated/WSA" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+		</group>
+        
+        <group name="CopySourceZipFolderLinux">
+        
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/Linux" target="UnityIntegration/AkSoundEngine/Linux">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+				<exclude value="*.so" />
+				<exclude value="*.o" />
+				<exclude value="*.d" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+                <exclude value="*" />
+				<include value="Readme_Src.txt" />
+                <include value="NewVersion.txt" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Linux" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Linux" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Linux" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Linux" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+        </group>
+
+        <group name="CopySourceZipFolderStadia">
+        
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/Stadia" target="UnityIntegration/AkSoundEngine/Stadia">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+				<exclude value="*.so" />
+				<exclude value="*.o" />
+				<exclude value="*.d" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/GGP" target="UnityIntegration/AkSoundEngine/GGP">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+				<exclude value="*.so" />
+				<exclude value="*.o" />
+				<exclude value="*.d" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+                <exclude value="*" />
+				<include value="Readme_Src.txt" />
+                <include value="NewVersion.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Stadia" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Stadia" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Stadia" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Stadia" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+        </group>
+
+		<group name="CopySourceZipFolderAndroid">
+		
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/Android" target="UnityIntegration/AkSoundEngine/Android" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+				<exclude value="*.so" />
+				<exclude value="*.o" />
+				<exclude value="*.d" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="NewVersion.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Android" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Android" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Android" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Android" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+		</group>
+		<group name="GroupSymbolsAndroid">
+			<path source="Wwise/AndroidSymbols" target="" recursive="true">
+				<include value="*" />
+			</path>
+		</group>
+		
+		<group name="CopySourceZipFolderPS4">
+		
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/PS4" target="UnityIntegration/AkSoundEngine/PS4" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="NewVersion.txt" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/PS4" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/PS4" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/PS4" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/PS4" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+		</group>
+		
+		<group name="CopySourceZipFolderPS5">
+		
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/PS5" target="UnityIntegration/AkSoundEngine/PS5" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="NewVersion.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/PS5" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/PS5" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/PS5" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/PS5" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+            
+		</group>
+		
+		<group name="CopySourceZipFolderXboxOne">
+		
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/XboxOne" target="UnityIntegration/AkSoundEngine/XboxOne" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="NewVersion.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOne" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOne" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/XboxOne" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/XboxOne" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+		</group>
+
+		<group name="CopySourceZipFolderXboxSeriesX">
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/XboxSeriesX" target="UnityIntegration/AkSoundEngine/XboxSeriesX" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="NewVersion.txt" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxSeriesX" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxSeriesX" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/XboxSeriesX" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/XboxSeriesX" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+            
+		</group>
+
+		<group name="CopySourceZipFolderXboxOneGC">
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/XboxOneGC" target="UnityIntegration/AkSoundEngine/XboxOneGC" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildWwiseUnityIntegrationTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Wwise" target="Wwise/Unity/Assets/Wwise">
+				<include value="NewVersion.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOneGC" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOneGC" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOne" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOne" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/XboxOneGC" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/XboxOneGC" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+            
+		</group>
+		
+		<group name="CopySourceZipFolderiOS">
+		
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildGyms_UnityUnityTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/iOS" target="UnityIntegration/AkSoundEngine/iOS" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildGyms_UnityUnityTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+				<exclude value="*" />
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+				<exclude value="*" />
+				<include value="NewVersion.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/iOS" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/iOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/iOS" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/iOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+		</group>
+		
+		<group name="CopySourceZipFoldertvOS">
+		
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildGyms_UnityUnityTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/tvOS" target="UnityIntegration/AkSoundEngine/tvOS" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildGyms_UnityUnityTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/iOS" target="UnityIntegration/AkSoundEngine/iOS" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildGyms_UnityUnityTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+				<exclude value="*" />
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+				<exclude value="*" />
+				<include value="NewVersion.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/iOS" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/iOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/tvOS" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/tvOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+		</group>
+		
+		<group name="CopySourceZipFolderMac">
+		
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildGyms_UnityUnityTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/Mac" target="UnityIntegration/AkSoundEngine/Mac" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildGyms_UnityUnityTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+				<exclude value="*" />
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+				<exclude value="*" />
+				<include value="NewVersion.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Mac" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Mac" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Mac" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Mac" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+		</group>		
+		
+		<group name="CopySourceZipFolderSwitch">
+		
+			<path source="Wwise/AkSoundEngine/Common" target="UnityIntegration/AkSoundEngine/Common" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildGyms_UnityUnityTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="*.pyc" />
+			</path>
+			
+			<path source="Wwise/AkSoundEngine/Switch" target="UnityIntegration/AkSoundEngine/Switch" recursive="true">
+				<include value="*" />
+				<exclude value="__pycache__" />
+				<exclude value="BuildInitializerTest.py" />
+				<exclude value="BuildGyms_UnityUnityTest.py" />
+				<exclude value="Unity34" />
+				<exclude value="AkUnityApiHeader.h" />
+			</path>
+			
+			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+				<exclude value="*" />
+				<include value="Readme_Src.txt" />
+			</path>
+			
+			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+				<exclude value="*" />
+				<include value="NewVersion.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" target="Wwise/Unity/Assets/Wwise/API/Runtime/WwiseTypes" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Switch" target="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Switch" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Common" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Switch" target="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Switch" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Runtime" target="Wwise/Unity/Assets/Wwise/MonoBehaviour" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Wwise/Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor" target="Wwise/Unity/Assets/Wwise/API/Editor" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API" target="Wwise/Unity/Assets/Wwise/API" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/Timeline" target="Wwise/Unity/Assets/Wwise/Timeline" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+			</path>
+		</group>		
+        
+		<group name="CopyUnityZipFolderExtensions">
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime" target="Unity/Assets/Wwise/API/Runtime" recursive="false">
+				<include value="AkSoundEngine.extensions.cs" />
+				<exclude value="AkSoundEngine.extensions.cs.meta" />
+			</path>
+        </group>
+
+		<group name="CopyUnityZipFolderWindows">
+			<path source="Integration/SDK/Win32_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP" recursive="true">
+				<include value="*" />
+				<exclude value="*AkSoundEngineDLL.dll" />
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+			
+			<path source="Integration/SDK/x64_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP" recursive="true">
+				<include value="*" />
+				<exclude value="*AkSoundEngineDLL.dll" />
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+			
+		</group>
+        
+		<group name="CopyUnityZipFolderAndroid">
+		
+			<path source="Integration/SDK/Android_armeabi-v7a/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Android/armeabi-v7a/DSP" recursive="true">
+				<include value="*.so" />				
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+
+			<path source="Integration/SDK/Android_arm64-v8a/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Android/arm64-v8a/DSP" recursive="true">
+				<include value="*.so" />				
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+			
+			<path source="Integration/SDK/Android_x86/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Android/x86/DSP" recursive="true">
+				<include value="*.so" />				
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+		
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Android" target="Unity/Assets/Wwise/API/Runtime/Generated/Android" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+				
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Android" target="Unity/Assets/Wwise/API/Runtime/Handwritten/Android" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/Android" target="Unity/Assets/Wwise/API/Runtime/Plugins/Android" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/Android" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/Android" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+		
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Android" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Android" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+
+		<group name="CopyUnityZipFolderiOS">
+		
+			<path source="Integration/SDK/iOS/Profile-iphoneos/lib" target="Unity/Assets/Wwise/API/Runtime/Plugins/iOS/DSP">
+				<!-- Interestingly enough, and contrary to robocopy on Windows, all files must be excluded first for this to work,
+				     otherwise all the other files are included as well by default. -->
+				<exclude value="*" />
+				<include value="libAkConvolutionReverbFX.a" />
+				<include value="libAkSoundSeedImpactFX.a" />
+				<include value="libAkSoundSeedWindSource.a" />
+				<include value="libAkSoundSeedWooshSource.a" />
+				<include value="libAkSoundSeedGrainSource.a" />
+				<include value="libAkSynthOneSource.a" />
+				<include value="libAuroHeadphoneFX.a" />
+				<include value="libCrankcaseAudioREVModelPlayerFX.a" />
+				<include value="libiZHybridReverbFX.a" />
+				<include value="libiZTrashBoxModelerFX.a" />
+				<include value="libiZTrashDelayFX.a" />
+				<include value="libiZTrashDistortionFX.a" />
+				<include value="libiZTrashDynamicsFX.a" />
+				<include value="libiZTrashFiltersFX.a" />
+				<include value="libiZTrashMultibandDistortionFX.a" />
+				<include value="libMasteringSuiteFX.a" />
+				<include value="libMcDSPFutzBoxFX.a" />
+				<include value="libMcDSPLimiterFX.a" />
+				<include value="libResonanceAudioFX.a" />
+			</path>
+			
+			<path source="Integration/SDK/include/AK/Plugin" target="Unity/Assets/Wwise/API/Runtime/Plugins/iOS/DSP">
+				<!-- Interestingly enough, and contrary to robocopy on Windows, all files must be excluded first for this to work,
+				     otherwise all the other files are included as well by default. -->
+				<exclude value="*" />
+				<include value="AkConvolutionReverbFXFactory.h" />
+				<include value="AkSoundSeedImpactFXFactory.h" />
+				<include value="AkSoundSeedWindSourceFactory.h" />
+				<include value="AkSoundSeedWooshSourceFactory.h" />
+				<include value="AkSoundSeedGrainSourceFactory.h" />
+				<include value="AkSynthOneSourceFactory.h" />
+				<include value="AuroHeadphoneFXFactory.h" />
+				<include value="CrankcaseAudioREVModelPlayerFXFactory.h" />
+				<include value="iZHybridReverbFXFactory.h" />
+				<include value="iZTrashBoxModelerFXFactory.h" />
+				<include value="iZTrashDelayFXFactory.h" />
+				<include value="iZTrashDistortionFXFactory.h" />
+				<include value="iZTrashDynamicsFXFactory.h" />
+				<include value="iZTrashFiltersFXFactory.h" />
+				<include value="iZTrashMultibandDistortionFXFactory.h" />
+				<include value="MasteringSuiteFXFactory.h" />
+				<include value="McDSPFutzBoxFXFactory.h" />
+				<include value="McDSPLimiterFXFactory.h" />
+				<include value="ResonanceAudioFXFactory.h" />
+			</path>
+		
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/iOS" target="Unity/Assets/Wwise/API/Runtime/Generated/iOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />				
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/iOS" target="Unity/Assets/Wwise/API/Runtime/Handwritten/iOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/iOS" target="Unity/Assets/Wwise/API/Runtime/Plugins/iOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/iOS" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/iOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/iOS" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/iOS" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+		
+		<group name="CopyUnityZipFoldertvOS">
+		
+			<path source="Integration/SDK/tvOS/Profile-appletvos/lib" target="Unity/Assets/Wwise/API/Runtime/Plugins/tvOS/DSP">
+				<!-- Interestingly enough, and contrary to robocopy on Windows, all files must be excluded first for this to work,
+				     otherwise all the other files are included as well by default. -->
+				<exclude value="*" />
+				<include value="libAkConvolutionReverbFX.a" />
+				<include value="libAkSoundSeedImpactFX.a" />
+				<include value="libAkSoundSeedWindSource.a" />
+				<include value="libAkSoundSeedWooshSource.a" />
+				<include value="libAkSoundSeedGrainSource.a" />
+				<include value="libAkSynthOneSource.a" />
+				<include value="libAuroHeadphoneFX.a" />
+				<include value="libCrankcaseAudioREVModelPlayerFX.a" />
+				<include value="libiZHybridReverbFX.a" />
+				<include value="libiZTrashBoxModelerFX.a" />
+				<include value="libiZTrashDelayFX.a" />
+				<include value="libiZTrashDistortionFX.a" />
+				<include value="libiZTrashDynamicsFX.a" />
+				<include value="libiZTrashFiltersFX.a" />
+				<include value="libiZTrashMultibandDistortionFX.a" />
+				<include value="libMasteringSuiteFX.a" />
+				<include value="libMcDSPFutzBoxFX.a" />
+				<include value="libMcDSPLimiterFX.a" />
+			</path>
+			
+			<path source="Integration/SDK/include/AK/Plugin" target="Unity/Assets/Wwise/API/Runtime/Plugins/tvOS/DSP">
+				<!-- Interestingly enough, and contrary to robocopy on Windows, all files must be excluded first for this to work,
+				     otherwise all the other files are included as well by default. -->
+				<exclude value="*" />
+				<include value="AkConvolutionReverbFXFactory.h" />
+				<include value="AkSoundSeedImpactFXFactory.h" />
+				<include value="AkSoundSeedWindSourceFactory.h" />
+				<include value="AkSoundSeedWooshSourceFactory.h" />
+				<include value="AkSoundSeedGrainSourceFactory.h" />
+				<include value="AkSynthOneSourceFactory.h" />
+				<include value="AuroHeadphoneFXFactory.h" />
+				<include value="CrankcaseAudioREVModelPlayerFXFactory.h" />
+				<include value="iZHybridReverbFXFactory.h" />
+				<include value="iZTrashBoxModelerFXFactory.h" />
+				<include value="iZTrashDelayFXFactory.h" />
+				<include value="iZTrashDistortionFXFactory.h" />
+				<include value="iZTrashDynamicsFXFactory.h" />
+				<include value="iZTrashFiltersFXFactory.h" />
+				<include value="iZTrashMultibandDistortionFXFactory.h" />
+				<include value="MasteringSuiteFXFactory.h" />
+				<include value="McDSPFutzBoxFXFactory.h" />
+				<include value="McDSPLimiterFXFactory.h" />
+			</path>
+		
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/tvOS" target="Unity/Assets/Wwise/API/Runtime/Generated/tvOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />				
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/iOS" target="Unity/Assets/Wwise/API/Runtime/Handwritten/iOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/tvOS" target="Unity/Assets/Wwise/API/Runtime/Plugins/tvOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/tvOS" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/tvOS" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/iOS" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/iOS" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+		
+		<group name="CopyUnityZipFolderStadia">
+        
+			<path source="Integration/SDK/GGP/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Stadia/DSP" recursive="true">
+				<include value="*.so" />
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+            
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Stadia" target="Unity/Assets/Wwise/API/Runtime/Generated/Stadia" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />				
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Stadia" target="Unity/Assets/Wwise/API/Runtime/Handwritten/Stadia" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/Stadia" target="Unity/Assets/Wwise/API/Runtime/Plugins/Stadia" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />				
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Stadia" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Stadia" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+		
+		<group name="CopyUnityZipFolderLinux">
+        
+			<path source="Integration/SDK/Linux_x64/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Linux/x86_64/DSP">
+                <exclude value="*" />
+				<include value="libAkConvolutionReverb.so" />
+                <include value="libAkSoundSeedAir.so" />
+                <include value="libAkSoundSeedImpact.so" />
+                <include value="libAkSoundSeedGrain.so" />
+                <include value="libAuro.so" />
+                <include value="libCrankcaseAudioREVModelPlayer.so" />
+                <include value="libiZotope.so" />
+                <include value="libMasteringSuiteFX.so" />
+                <include value="libMcDSP.so" />
+                <include value="libResonanceAudioFX.so" />
+                <include value="libSynthOne.so" />
+			</path>
+            
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Linux" target="Unity/Assets/Wwise/API/Runtime/Generated/Linux" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />				
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Linux" target="Unity/Assets/Wwise/API/Runtime/Handwritten/Linux" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/Linux" target="Unity/Assets/Wwise/API/Runtime/Plugins/Linux" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />				
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/Linux" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/Linux" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Linux" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Linux" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+
+		<group name="CopyUnityZipFolderPS4">
+		
+			<path source="Integration/SDK/PS4/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/PS4/DSP" recursive="true">
+				<include value="*.prx" />
+				<include value="*.a" />
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/PS4" target="Unity/Assets/Wwise/API/Runtime/Generated/PS4" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/PS4" target="Unity/Assets/Wwise/API/Runtime/Handwritten/PS4" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/PS4" target="Unity/Assets/Wwise/API/Runtime/Plugins/PS4" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+				<exclude value="*.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/PS4" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/PS4" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>			
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/PS4" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/PS4" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+		
+		<group name="CopyUnityZipFolderPS5">
+		
+			<path source="Integration/SDK/PS5/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/PS5/DSP" recursive="true">
+				<include value="*.prx" />
+				<include value="*.a" />
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/PS5" target="Unity/Assets/Wwise/API/Runtime/Generated/PS5" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/PS5" target="Unity/Assets/Wwise/API/Runtime/Handwritten/PS5" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/PS5" target="Unity/Assets/Wwise/API/Runtime/Plugins/PS5" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+				<exclude value="*.txt" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/PS5" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/PS5" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/PS5" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/PS5" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+		
+		<group name="CopyUnityZipFolderWindowsStore">
+		
+			<path source="Integration/SDK/UWP_ARM_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_ARM/DSP" recursive="true">
+				<include value="*.dll" />				
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+			
+			<path source="Integration/SDK/UWP_ARM64_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_ARM64/DSP" recursive="true">
+				<include value="*.dll" />				
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+			
+			<path source="Integration/SDK/UWP_Win32_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_Win32/DSP" recursive="true">
+				<include value="*.dll" />				
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+			
+			<path source="Integration/SDK/UWP_x64_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_x64/DSP" recursive="true">
+				<include value="*.dll" />				
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/WSA" target="Unity/Assets/Wwise/API/Runtime/Generated/WSA" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Windows" target="Unity/Assets/Wwise/API/Runtime/Handwritten/Windows" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/WSA" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />				
+				<exclude value="*.pri" />
+				<exclude value="*.winmd" />
+				<exclude value="*.ilk" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/WSA" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/WSA" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />				
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/WSA" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/WSA" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+		
+		<group name="CopyUnityZipFolderXboxOne">
+		
+			<path source="Integration/SDK/XboxOne_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxOne/DSP" recursive="true">
+				<include value="*.dll" />
+				<include value="*.pdb" />
+				<exclude value="AkSoundEngineDLL.dll" />
+				<exclude value="AkSoundEngineDLL.pdb" />
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+		
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/XBoxOne" target="Unity/Assets/Wwise/API/Runtime/Generated/XBoxOne" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XBoxOne" target="Unity/Assets/Wwise/API/Runtime/Handwritten/XBoxOne" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/XboxOne" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxOne" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.ilk" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+				<exclude value="*.winmd" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/XboxOne" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/XboxOne" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/XboxOne" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/XboxOne" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+
+		<group name="CopyUnityZipFolderXboxSeriesX">
+		
+			<path source="Integration/SDK/XboxSeriesX_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxSeriesX/DSP" recursive="true">
+				<include value="*.dll" />
+				<include value="*.pdb" />
+				<exclude value="AkSoundEngineDLL.dll" />
+				<exclude value="AkSoundEngineDLL.pdb" />
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+		
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/XboxSeriesX" target="Unity/Assets/Wwise/API/Runtime/Generated/XboxSeriesX" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxSeriesX" target="Unity/Assets/Wwise/API/Runtime/Handwritten/XboxSeriesX" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/XboxSeriesX" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxSeriesX" recursive="true">
+				<include value="*" />
+				<exclude value="concrt140d.dll" />
+				<exclude value="msvcp140_1d.dll" />
+				<exclude value="msvcp140_2d.dll" />
+				<exclude value="msvcp140d.dll" />
+				<exclude value="vccorlib140d.dll" />
+				<exclude value="vcruntime140d.dll" />
+				<exclude value="concrt140.dll" />
+				<exclude value="msvcp140_1.dll" />
+				<exclude value="msvcp140_2.dll" />
+				<exclude value="msvcp140.dll" />
+				<exclude value="vccorlib140.dll" />
+				<exclude value="vcruntime140.dll" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.ilk" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+				<exclude value="*.winmd" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/XboxSeriesX" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/XboxSeriesX" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/XboxSeriesX" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/XboxSeriesX" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+
+		<group name="CopyUnityZipFolderXboxOneGC">
+		
+			<path source="Integration/SDK/XboxOneGC_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxOneGC/DSP" recursive="true">
+				<include value="*.dll" />
+				<include value="*.pdb" />
+				<exclude value="AkSoundEngineDLL.dll" />
+				<exclude value="AkSoundEngineDLL.pdb" />
+				<exclude value="*AkSilenceGenerator*.*" />
+				<exclude value="*AkSineTone*.*" />
+				<exclude value="*AkToneGen*.*" />
+				<exclude value="*AkSynthOne*.*" />
+				<exclude value="*AkAudioInput*.*" />
+				<exclude value="*AkCompressor*.*" />
+				<exclude value="*AkDelay*.*" />
+				<exclude value="*AkExpander*.*" />
+				<exclude value="*AkFlanger*.*" />
+				<exclude value="*AkGain*.*" />
+				<exclude value="*AkGuitarDistortion*.*" />
+				<exclude value="*AkHarmonizer*.*" />
+				<exclude value="*AkMatrixReverb*.*" />
+				<exclude value="*AkParametricEQ*.*" />
+				<exclude value="*AkPeakLimiter*.*" />
+				<exclude value="*AkPitchShifter*.*" />
+				<exclude value="*AkRecorder*.*" />
+				<exclude value="*AkReflect*.*" />
+				<exclude value="*AkRoomVerb*.*" />
+				<exclude value="*AkStereoDelay*.*" />
+				<exclude value="*AkTimeStretch*.*" />
+				<exclude value="*AkTremolo*.*" />
+			</path>
+		
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/XboxOneGC" target="Unity/Assets/Wwise/API/Runtime/Generated/XboxOneGC" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOneGC" target="Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOneGC" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOne" target="Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOne" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/XboxOneGC" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxOneGC" recursive="true">
+				<include value="*" />
+				<exclude value="concrt140d.dll" />
+				<exclude value="msvcp140_1d.dll" />
+				<exclude value="msvcp140_2d.dll" />
+				<exclude value="msvcp140d.dll" />
+				<exclude value="vccorlib140d.dll" />
+				<exclude value="vcruntime140d.dll" />
+				<exclude value="concrt140.dll" />
+				<exclude value="msvcp140_1.dll" />
+				<exclude value="msvcp140_2.dll" />
+				<exclude value="msvcp140.dll" />
+				<exclude value="vccorlib140.dll" />
+				<exclude value="vcruntime140.dll" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.ilk" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+				<exclude value="*.winmd" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/XboxOneGC" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/XboxOneGC" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/XboxOneGC" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/XboxOneGC" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+		</group>
+
+		<group name="CopyUnityZipFolderMac">
+		
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Mac" target="Unity/Assets/Wwise/API/Runtime/Generated/Mac" recursive="true">
+				<include value="*" />				
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Mac" target="Unity/Assets/Wwise/API/Runtime/Handwritten/Mac" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/Mac" target="Unity/Assets/Wwise/API/Runtime/Plugins/Mac" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />				
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/Mac" target="Unity/Assets/Wwise/API/Editor/WwiseMenu/Mac" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />				
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Mac" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Mac" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+
+		<group name="CopyUnityZipFolderSwitch">
+		
+			<path source="Integration/SDK/NX64/Profile/lib" target="Unity/Assets/Wwise/API/Runtime/Plugins/Switch/NX64/DSP">
+				<include value="libAkConvolutionReverbFX.a" />
+				<include value="libAkSoundSeedImpactFX.a" />
+				<include value="libAkSoundSeedWindSource.a" />
+				<include value="libAkSoundSeedWooshSource.a" />
+				<include value="libAkSoundSeedGrainSource.a" />
+				<include value="libAkSynthOneSource.a" />
+				<include value="libAuroHeadphoneFX.a" />
+				<include value="libAuroPannerMixer.a" />
+				<include value="libCrankcaseAudioREVModelPlayerFX.a" />
+				<include value="libiZHybridReverbFX.a" />
+				<include value="libiZTrashBoxModelerFX.a" />
+				<include value="libiZTrashDelayFX.a" />
+				<include value="libiZTrashDistortionFX.a" />
+				<include value="libiZTrashDynamicsFX.a" />
+				<include value="libiZTrashFiltersFX.a" />
+				<include value="libiZTrashMultibandDistortionFX.a" />
+				<include value="libMasteringSuiteFX.a" />
+				<include value="libMcDSPFutzBoxFX.a" />
+				<include value="libMcDSPLimiterFX.a" />
+				
+				<!-- Because of symbol clash, "built-in" plugins also have to be packaged -->
+				<include value="libAkCompressorFX.a"/>
+				<include value="libAkDelayFX.a"/>
+				<include value="libAkExpanderFX.a"/>
+				<include value="libAkFlangerFX.a" />
+				<include value="libAkGainFX.a"/>
+				<include value="libAkGuitarDistortionFX.a" />
+				<include value="libAkHarmonizerFX.a" />
+				<include value="libAkMatrixReverbFX.a"/>
+				<include value="libAkMeterFX.a"/>
+				<include value="libAkMotionGeneratorSource.a"/>
+				<include value="libAkParametricEQFX.a"/>
+				<include value="libAkPeakLimiterFX.a"/>
+				<include value="libAkPitchShifterFX.a" />
+				<include value="libAkRecorderFX.a" />
+				<include value="libAkReflectFX.a" />
+				<include value="libAkRoomVerbFX.a"/>
+				<include value="libAkMotionSink.a"/>
+				<include value="libAkMotionSourceSource.a"/>
+				<include value="libAkStereoDelayFX.a" />
+				<include value="libAkTimeStretchFX.a" />
+				<include value="libAkTremoloFX.a" />
+			</path>
+			
+			<path source="Integration/SDK/include/AK/Plugin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Switch/NX64/DSP">
+				<include value="AkConvolutionReverbFXFactory.h" />
+				<include value="AkReflectFXFactory.h" />
+				<include value="AkSoundSeedImpactFXFactory.h" />
+				<include value="AkSoundSeedWindSourceFactory.h" />
+				<include value="AkSoundSeedWooshSourceFactory.h" />
+				<include value="AkSoundSeedGrainSourceFactory.h" />
+				<include value="AkSynthOneSourceFactory.h" />
+				<include value="AuroHeadphoneFXFactory.h" />
+				<include value="AuroPannerMixerFactory.h" />
+				<include value="CrankcaseAudioREVModelPlayerFXFactory.h" />
+				<include value="iZHybridReverbFXFactory.h" />
+				<include value="iZTrashBoxModelerFXFactory.h" />
+				<include value="iZTrashDelayFXFactory.h" />
+				<include value="iZTrashDistortionFXFactory.h" />
+				<include value="iZTrashDynamicsFXFactory.h" />
+				<include value="iZTrashFiltersFXFactory.h" />
+				<include value="iZTrashMultibandDistortionFXFactory.h" />
+				<include value="MasteringSuiteFXFactory.h" />
+				<include value="McDSPFutzBoxFXFactory.h" />
+				<include value="McDSPLimiterFXFactory.h" />
+				
+				<!-- Because of symbol clash, "built-in" plugins also have to be packaged -->
+				<include value="AkCompressorFXFactory.h" />
+				<include value="AkDelayFXFactory.h" />
+				<include value="AkExpanderFXFactory.h" />
+				<include value="AkFlangerFXFactory.h" />
+				<include value="AkGainFXFactory.h" />
+				<include value="AkGuitarDistortionFXFactory.h" />
+				<include value="AkHarmonizerFXFactory.h" />
+				<include value="AkMatrixReverbFXFactory.h" />
+				<include value="AkMeterFXFactory.h" />
+				<include value="AkMotionGeneratorSourceFactory.h" />
+				<include value="AkMotionSinkFactory.h" />
+				<include value="AkMotionSourceSourceFactory.h" />
+				<include value="AkParametricEQFXFactory.h" />
+				<include value="AkPeakLimiterFXFactory.h" />
+				<include value="AkPitchShifterFXFactory.h" />
+				<include value="AkRecorderFXFactory.h" />
+				<include value="AkRoomVerbFXFactory.h" />
+				<include value="AkStereoDelayFXFactory.h" />
+				<include value="AkTimeStretchFXFactory.h" />
+				<include value="AkTremoloFXFactory.h" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Generated/Switch" target="Unity/Assets/Wwise/API/Runtime/Generated/Switch" recursive="true">
+				<include value="*" />
+				<exclude value="libAkMotion.bundle" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+			
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Switch" target="Unity/Assets/Wwise/API/Runtime/Handwritten/Switch" recursive="true">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.json" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/API/Runtime/Plugins/Switch" target="Unity/Assets/Wwise/API/Runtime/Plugins/Switch" recursive="true">
+				<include value="*.a" />
+				<include value="*.cpp" />
+				<include value="*.h" />
+				<exclude value="*.meta" />
+			</path>
+
+			<path source="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Switch" target="Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Switch" recursive="false">
+				<include value="*" />
+				<exclude value="*.meta" />
+				<exclude value="*.lib" />
+				<exclude value="*.exp" />
+				<exclude value="*.hg" />
+				<exclude value="*.git" />
+				<exclude value="*.svn" />
+				<exclude value="*.pyc" />
+				<exclude value="*.pyo" />
+				<exclude value="*.orig" />
+				<exclude value="*.sdf" />
+				<exclude value="*.suo" />
+				<exclude value="*.user" />
+				<exclude value="*.ncb" />
+				<exclude value="*.map" />
+				<exclude value="*.filters" />
+				<exclude value="*.opensdf" />
+			</path>
+
+		</group>
+		<group name="ExportPackage">
+			<path source="." recursive="true">
+				<include value="*" />
+			</path>
+		</group>
+
+		<group name="ExportDemoScene">
+			<path source="." recursive="true">
+				<include value="*" />
+				<exclude value="*.user" />
+				<exclude value="*.validationcache" />
+				<exclude value="*.cache" />
+				<exclude value="Android.meta" />
+				<exclude value="XboxSeriesX.meta" />
+				<exclude value="XboxOneGC.meta" />
+				<exclude value="iOS.meta" />
+				<exclude value="Linux.meta" />
+				<exclude value="PS5.meta" />
+				<exclude value="PS4.meta" />
+				<exclude value="Stadia.meta" />
+				<exclude value="Switch.meta" />
+				<exclude value="tvOS.meta" />
+				<exclude value="Vita.meta" />
+				<exclude value="WSA.meta" />
+				<exclude value="XboxOne.meta" />
+				<exclude value="Wwise/Unity/Assets/WwiseDemoScene/AkUnityTests*" />
+				<exclude value="Wwise/Unity/WwiseProject/*/AkUnityTests.wwu" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/Android.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/XboxSeriesX.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/XboxOneGC.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/iOS.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/Linux.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/PS5.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/PS4.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/Stadia.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/Switch.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/tvOS.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/Vita.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/WSA.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/XboxOne.asset" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/Android.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/XboxSeriesX.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/XboxOneGC.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/iOS.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/Linux.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/PS5.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/PS4.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/Stadia.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/Switch.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/tvOS.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/Vita.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/WSA.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/ScriptableObjects/XboxOne.asset.meta" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/Android/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/XboxSeriesX/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/XboxOneGC/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/iOS/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/Linux/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/PS5/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/PS4/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/Stadia/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/Switch/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/tvOS/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/Vita/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/WSA/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Editor/WwiseMenu/XboxOne/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Android/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxSeriesX/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOneGC/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/iOS/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Linux/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/PS5/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/PS4/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Stadia/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Switch/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/tvOS/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/Vita/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/WSA/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/API/Runtime/Handwritten/XboxOne/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Android/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/XboxSeriesX/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/XboxOneGC/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/iOS/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Linux/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/PS5/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/PS4/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Stadia/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Switch/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/tvOS/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/Vita/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/WSA/*" />
+				<exclude value="Wwise/Unity/Assets/Wwise/MonoBehaviour/Editor/EditorPlatformHelpers/XboxOne/*" />
+			</path>
+		</group>
+		
+		<group name="ExportDemoSceneTestPackage">
+			<path source="." recursive="true">
+				<include value="Wwise/Unity/Assets/WwiseDemoScene/AkUnityTests/*" />
+				<include value="Wwise/Unity/WwiseProject/*/AkUnityTests.wwu" />
+				<exclude value="*.user" />
+				<exclude value="*.validationcache" />
+				<exclude value="*.cache" />
+			</path>
+		</group>
+		
+	</groups>
+	
+</distribute>

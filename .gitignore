@@ -1,0 +1,95 @@
+**.akd
+**/.idea
+**/_ReSharper.Caches
+.vs/
+.vsconfig
+**.dat
+**/desktop.ini
+**.log
+**.prof
+**.wem
+
+#
+# Wwise Project
+#
+/WwiseProject/.backup
+/WwiseProject/.cache
+/WwiseProject/ExternalSources/Wwise.dat
+/WwiseProject/ExternalSources/ManyAssets/
+/WwiseProject/GeneratedSoundBanks
+/WwiseProject/Gyms.*
+/WwiseProject/Originals/*.cache
+/WwiseProject/Originals/SFX/LargeMedia.wav
+/WwiseProject/Originals/SFX/ManyAssets*
+/WwiseProject/Originals/SFX/ShortMedia*
+/WwiseProject/Originals/Voices/**/ManyAssets/
+!/WwiseProject/Gyms.wproj
+
+#
+# Unity
+#
+/Unity/*.csproj
+/Unity/*.zip
+
+/Unity/Assets/Resources
+/Unity/Assets/StreamingAssets
+/Unity/Library
+/Unity/Logs
+/Unity/obj
+/Unity/Temp
+/Unity/Unity.*
+/Unity/UserSettings
+
+/Unity/ProjectSettings/boot.config
+/Unity/ProjectSettings/MemorySettings.asset
+/Unity/ProjectSettings/VersionControlSettings.asset
+
+# We want to ignore most of the integration except for a select few files, so we first set up the filters, then the exceptions
+/Unity/Assets/Wwise/AkWwiseSDKVersion.h
+/Unity/Assets/Wwise/**/*.asmdef
+/Unity/Assets/Wwise/**/*.cs
+/Unity/Assets/Wwise/**/*.json
+/Unity/Assets/Wwise/**/*.txt
+/Unity/Assets/Wwise/**/*.asset
+/Unity/Assets/Wwise/**/*.md
+/Unity/Assets/Wwise/**/*.py
+/Unity/Assets/Wwise/**/*.meta
+
+/Unity/Assets/Wwise/Api/Runtime/Plugins
+/Unity/Assets/Wwise/Documentation
+/Unity/Assets/Wwise/Api/Editor/WwiseWindows
+/Unity/Assets/Wwise/Gizmos
+
+# Track ScriptableObjects and their meta files to keep the references to wwiseobjects in components
+!/Unity/Assets/Wwise/ScriptableObjects/AuxBus/*
+!/Unity/Assets/Wwise/ScriptableObjects/Event/*
+!/Unity/Assets/Wwise/ScriptableObjects/GameParameter/*
+!/Unity/Assets/Wwise/ScriptableObjects/SoundBank/*
+!/Unity/Assets/Wwise/ScriptableObjects/Switch/*
+!/Unity/Assets/Wwise/ScriptableObjects/SwitchGroup/*
+!/Unity/Assets/Wwise/ScriptableObjects/AkWwiseInitializationSettings.asset
+!/Unity/Assets/Wwise/ScriptableObjects/AkWwiseInitializationSettings.asset.meta
+
+# Keep core script meta files so references wwise components on gameobjects aren't lost
+# We need these because the integration is not packaged with the gyms
+# The launcher will keep these files when integrating
+!/Unity/Assets/Wwise/API/Runtime/WwiseObjects/WwiseObjects/*.cs.meta
+!/Unity/Assets/Wwise/API/Runtime/WwiseObjects/WwiseTypes/*.cs.meta
+!/Unity/Assets/Wwise/MonoBehaviour/Runtime/*.cs.meta
+!/Unity/Assets/Wwise/Timeline/Runtime/*.cs.meta
+
+#
+# Unreal
+#
+/Unreal/Binaries
+/Unreal/Content/InitBank.uasset
+/Unreal/Content/**/*_BuiltData.uasset
+/Unreal/DerivedDataCache
+/Unreal/Gyms.*
+!/Unreal/Gyms.uproject
+/Unreal/Intermediate
+/Unreal/Plugins/GamepadUMGPlugin/Binaries/**
+/Unreal/Plugins/GamepadUMGPlugin/Intermediate/**
+/Unreal/Plugins/Wwise
+/Unreal/Plugins/WwiseNiagara
+/Unreal/Saved

@@ -1,0 +1,1 @@
+Contains a subset of prefabs and scripts from Unity Standard Assets for Mobile package (which no longer exists).

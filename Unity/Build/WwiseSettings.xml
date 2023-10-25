@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WwiseSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
+  <GenerateSoundBanksAsPreBuildStep>true</GenerateSoundBanksAsPreBuildStep>
+  <SoundbankPath>Audio\GeneratedSoundBanks</SoundbankPath>
+  <CreatedPicker>true</CreatedPicker>
+  <CreateWwiseGlobal>true</CreateWwiseGlobal>
+  <CreateWwiseListener>true</CreateWwiseListener>
+  <ObjectReferenceAutoCleanup>true</ObjectReferenceAutoCleanup>
+  <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
+  <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
+  <WwiseInstallationPathWindows>D:\Jenkins\workspace\Gyms_Unity\Wwise</WwiseInstallationPathWindows>
+  <WwiseProjectPath>../../WwiseProject/Gyms.wproj</WwiseProjectPath>
+  <UseWaapi>true</UseWaapi>
+  <WaapiPort>8080</WaapiPort>
+  <WaapiIP>127.0.0.1</WaapiIP>
+</WwiseSettings>

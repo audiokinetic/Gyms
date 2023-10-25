@@ -1,0 +1,6 @@
+Contains a subset of prefabs and scripts from Standard Assets (for Unity 2018.4) :
+
+https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-for-unity-2018-4-32351
+
+Unity Asset Store License :
+https://unity3d.com/legal/as_terms

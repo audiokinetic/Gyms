@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<instrument rootdir="../../"
+	xmlns:ak="file://instrument/tasks/ak"
+	xmlns:wwise="file://instrument/tasks/wwise"
+	xmlns:scripts="file://instrument/tasks/scripts">
+	
+	<!-- Distribute files -->
+	<property name="GYMS_DISTRIBUTE_FILE" value="Unreal/Build/UnrealGyms.distribute" />
+	
+	<target name="export_all_banks">
+		<distribute file="${GYMS_DISTRIBUTE_FILE}" 
+			remotepath="\\dc1\Files\Builds\Unreal\Artifacts\${WWISE_VERSION}\${WWISE_BUILD_NUMBER}.${WAL_BUILD_NUMBER}" 
+			tasks="ArtifactBanks" 
+			tool="tar" 
+			mode="export" />
+	</target>
+	
+	<target name="import_mac_binaries">
+		<distribute file="${GYMS_DISTRIBUTE_FILE}" 
+			remotepath="\\dc1\Files\Builds\Gyms\Unreal\Artifacts\${WWISE_BUILD_NUMBER}\${WWISE_BUILD_NUMBER}.${WAL_BUILD_NUMBER}" 
+			tasks="ArtifactMacBinaries" 
+			tool="tar" 
+			mode="import" />
+	</target>
+	
+	<target name="export_mac_binaries">
+		<distribute file="${GYMS_DISTRIBUTE_FILE}" 
+			remotepath="/mnt/DC1/Files/Builds/Gyms/Unreal/Artifacts/${WWISE_VERSION}/${WWISE_BUILD_NUMBER}.${WAL_BUILD_NUMBER}" 
+			tasks="ArtifactMacBinaries" 
+			tool="tar" 
+			mode="export" />
+	</target>
+	
+	<target name="package_game_windows">
+		<if condition="${platform.is_windows()}">
+			<distribute file="${GYMS_DISTRIBUTE_FILE}" 
+				remotepath="\\dc1\Files\Builds\Gyms\Unreal\${WWISE_BUILD_NUMBER}\${WWISE_BUILD_NUMBER}.${WAL_BUILD_NUMBER}" 
+				override-rootpath="${_root_directory_}/Packaged_Unreal_Gyms"
+				tasks="Unreal.Windows" 
+				tool="tar" 
+				mode="export" />
+		</if>
+	</target>
+	
+	<target name="package_game_mac">
+		<if condition="${platform.is_darwin()}">
+			<distribute file="${GYMS_DISTRIBUTE_FILE}" 
+				remotepath="/mnt/DC1/Files/Builds/Gyms/Unreal/${WWISE_VERSION}/${WWISE_BUILD_NUMBER}.${WAL_BUILD_NUMBER}" 
+				override-rootpath="${_root_directory_}/Packaged_Unreal_Gyms"
+				tasks="Unreal.macOS" 
+				tool="tar" 
+				mode="export" />
+		</if>
+	</target>
+	
+	<target name="package_source_windows">
+		<if condition="${platform.is_windows()}">
+			<distribute file="${GYMS_DISTRIBUTE_FILE}" 
+				remotepath="\\dc1\Files\Builds\Gyms\Unreal\${WWISE_BUILD_NUMBER}\${WWISE_BUILD_NUMBER}.${WAL_BUILD_NUMBER}" 
+				override-rootpath="${_root_directory_}/Unreal"
+				tasks="Unreal.Source" 
+				tool="tar" 
+				mode="export" />
+				
+			<distribute file="${GYMS_DISTRIBUTE_FILE}" 
+				remotepath="\\dc1\Files\Builds\Gyms\Unreal\${WWISE_BUILD_NUMBER}\${WWISE_BUILD_NUMBER}.${WAL_BUILD_NUMBER}" 
+				tasks="Unreal.WwiseProject" 
+				override-rootpath="${_root_directory_}/Unreal"
+				tool="tar" 
+				mode="export" />
+		</if>
+	</target>
+	
+	<target name="fetch_sdk"> 
+		<if condition="${platform.is_darwin()}">
+			<!-- Get the integration -->
+			<distribute file="${GYMS_DISTRIBUTE_FILE}" 
+				remotepath="/mnt/DC1/Files/Builds/UnrealEngine4Integration/${WWISE_VERSION}/${WWISE_BUILD_NUMBER}.${UNREAL_BUILD_NUMBER}/Release" 
+				override-rootpath="${_root_directory_}/Unreal/Plugins/"
+				tasks="GetIntegration" 
+				tool="tar"
+				mode="import" 
+				failonerror="true" />
+				
+			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="${_root_directory_}/Unreal/Plugins/Wwise/ThirdParty" platforms="Mac,Main" />	
+			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="${_root_directory_}/Unreal/Plugins/Wwise/ThirdParty" platforms="Mac" plugin-names="Auro,ConvolutionReverb,Reflect,MasteringSuite,SoundSeedGrain" />	
+		</if>
+		
+		<if condition="${platform.is_windows()}">
+			<!-- Get the integration -->
+			<distribute file="${GYMS_DISTRIBUTE_FILE}" 
+				remotepath="${BUILDS_LOCATION}\UnrealEngine4Integration\${WWISE_VERSION}\${WWISE_BUILD_NUMBER}.${UNREAL_BUILD_NUMBER}\Release" 
+				override-rootpath="${_root_directory_}/Unreal/Plugins/"
+				tasks="GetIntegration" 
+				tool="tar"
+				mode="import" 
+				failonerror="true" />
+				
+			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="${_root_directory_}/Unreal/Plugins/Wwise/ThirdParty" platforms="Windows_vc150,Windows_vc160,Main"/>	
+			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="${_root_directory_}/Unreal/Plugins/Wwise/ThirdParty" platforms="Windows_vc150,Windows_vc160" plugin-names="Auro,ConvolutionReverb,Reflect,MasteringSuite,SoundSeedGrain"/>	
+			
+			<!-- Get Authoring for SoundBank generation -->
+			<distribute file="${GYMS_DISTRIBUTE_FILE}" 
+				remotepath="${BUILDS_LOCATION}\Branches\${WWISE_BRANCH}\Wwise\${WWISE_BUILD_NUMBER}\Artifacts" 
+				override-rootpath="${_root_directory_}/Wwise"
+				tasks="x64_vc160_Release" 
+				tool="tar"
+				mode="import" 
+				failonerror="true" />
+		</if>
+	</target>
+
+	<target name="build_game">
+		<scripts:python script-path="${_ROOT_DIRECTORY_}/Unreal/Build/BuildGyms.py" />
+	</target>
+	
+	<target name="generate_soundbanks">
+		<scripts:python script-path="${_ROOT_DIRECTORY_}/Unreal/Build/BuildGyms.py" >
+			<arg value="GenerateSoundBanks"/>
+		</scripts:python>
+	</target>
+	
+</instrument>

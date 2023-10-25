@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24b13d913faaff418e26128f0a77fab, type: 3}
+  m_Name: 10DDBF3A-B303-4470-937E-DF0FFF820076
+  m_EditorClassIdentifier: 
+  objectName: MultiNested
+  id: 999328865
+  guid: 10DDBF3A-B303-4470-937E-DF0FFF820076

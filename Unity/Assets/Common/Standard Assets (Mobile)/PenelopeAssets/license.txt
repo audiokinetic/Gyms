@@ -1,0 +1,3 @@
+Code from the Unity iPhone example project "Penelope" 
+
+https://blog.unity.com/technology/unity-iphone-demo-penelope-hits-the-app-store

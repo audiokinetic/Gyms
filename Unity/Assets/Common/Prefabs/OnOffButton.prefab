@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1015532260226288043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3933129081583320824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb677705e105d6749b75d210bbd30d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onClick:
+    m_PersistentCalls:
+      m_Calls: []
+  _materialRed: {fileID: 2100000, guid: 7b64e9c66c53a7f4d91c75a420fd3d81, type: 2}
+  _materialGreen: {fileID: 2100000, guid: fdf33f14abd71384c84f3a4dd68a6f34, type: 2}
+--- !u!1001 &1025851433721126989
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3032209915860423294, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: OnButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1015532260226288043}
+    - target: {fileID: 3032209915860423294, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: OnButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Interact
+      objectReference: {fileID: 0}
+    - target: {fileID: 3032209915860423294, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: OnButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ButtonOnOff, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868543749411807804, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 68.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.739874
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220091660472686207, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961552935996079131, guid: 38d795eb2cede7545b13f31c565828c6,
+        type: 3}
+      propertyPath: m_Name
+      value: OnOffButton
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1859371565560089090, guid: 38d795eb2cede7545b13f31c565828c6, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 38d795eb2cede7545b13f31c565828c6, type: 3}
+--- !u!1 &3933129081583320824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4083012782609260213, guid: 38d795eb2cede7545b13f31c565828c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1025851433721126989}
+  m_PrefabAsset: {fileID: 0}

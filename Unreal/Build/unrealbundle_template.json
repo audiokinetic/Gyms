@@ -1,0 +1,174 @@
+{
+    "id": "unrealintegration.${year}_${major}_${minor}_${build}",
+    "vendor": "Audiokinetic",
+    "name": "Unreal integration",
+    "tag": "ue4",
+    "type": "UnrealIntegration",
+    "launcher": {
+        "minimumRequiredVersion": {
+            "year": 2020,
+            "major": 2,
+            "minor": 0
+        }
+    },
+    "productDependentData" : {
+        "wwiseSdkBuild": ${product_dependent_data},
+        "supportedPlatforms": [
+            "Windows",
+            "Mac",
+            "Linux",
+            "XboxOne",
+            "PS4",
+            "Stadia",
+            "Switch",
+            "Android",
+            "iOS",
+            "tvOS",
+            "PS5",
+            "UWP"
+        ],
+        "platformFolders": {
+            "mandatory": [
+                "include",
+                "Win32_vc150", "x64_vc150", "Win32_vc160", "x64_vc160",
+                "Mac"
+            ],
+            "optional": [
+                "Win32_vc140", "x64_vc140",
+                "WinGC_vc150", "WinGC_vc160",
+                "UWP_ARM64_vc150", "UWP_ARM64_vc160",
+                "Linux_x32", "Linux_x64",
+                "XboxOne_vc140", "XboxOne_vc150", "XboxOne_vc160", 
+                "XboxOneGC_vc150", "XboxOneGC_vc160", 
+                "PS4",
+                "NX64",
+                "GGP",
+                "Android_armeabi-v7a", "Android_x86", "Android_arm64-v8a", "Android_x86_64",
+                "iOS",
+                "tvOS",
+                "PS5",
+                "XboxSeriesX_vc150", "XboxSeriesX_vc160"
+            ]
+        },
+        "supportedUnrealVersions": [
+            { "major": 4, "minor": 26 },
+            { "major": 4, "minor": 27 }
+        ]
+    },
+    "version": {
+        "year": ${year},
+        "major": ${major},
+        "minor": ${minor},
+        "build": ${build},
+        "nickname": "${nickname}"
+    },
+    "labels": [
+        { "displayName": "${branch}", "class": "danger" }
+    ],
+    "links": [
+    ],
+    "eulas": [
+        { "id": "Wwise", "fileName": "Eula.txt", "displayName": "Wwise" },
+        { "id": "Ogg", "fileName": "LegalOggVorbis.txt", "displayName": "Ogg Vorbis" },
+        { "id": "QtAAC", "fileName": "LegalQtaacenc.txt", "displayName": "QtAACEnc" },
+        { "id": "Auro", "fileName": "LegalAuro.txt", "displayName": "Auro" },
+        { "id": "Crankcase", "fileName": "LegalCrankcaseAudioREV.txt", "displayName": "Crankcase Audio" },
+        { "id": "iZotope", "fileName": "LegalIZotope.txt", "displayName": "iZotope" },
+        { "id": "McDSP", "fileName": "LegalMcDsp.txt", "displayName": "McDSP" }
+    ],
+    "groups": [
+        {
+            "id": "Packages",
+            "displayName": "Packages",
+            "values": [
+                {
+                    "id": "Unreal",
+                    "displayName": "Unreal Integration",
+                    "description": "Unreal Integration of Wwise",
+                    "eulaIds": ["Ogg","Wwise", "Auro", "Crankcase", "iZotope", "McDSP"],
+                    "$visible": true,
+                    "$checked": true,
+                    "$disabled": true,
+                    "license": { "platform": "Windows" }
+                },
+                {
+                    "id": "UnrealStadia",
+                    "displayName": "Unreal Integration for Stadia",
+                    "description": "Unreal Integration of Wwise for Stadia",
+                    "eulaIds": [],
+                    "$visible": true,
+                    "$checked": true,
+                    "$disabled": true,
+                    "license": { "platform": "Stadia" }
+                },
+                {
+                    "id": "UnrealPS5",
+                    "displayName": "Unreal Integration for PS5",
+                    "description": "Unreal Integration of Wwise for PS5",
+                    "eulaIds": [],
+                    "$visible": true,
+                    "$checked": true,
+                    "$disabled": true,
+                    "license": { "platform": "PS5" }
+                },
+                {
+                    "id": "UnrealXboxSeriesX",
+                    "displayName": "Unreal Integration for Xbox Series X",
+                    "description": "Unreal Integration of Wwise for Xbox Series X",
+                    "eulaIds": [],
+                    "$visible": true,
+                    "$checked": true,
+                    "$disabled": true,
+                    "license": { "platform": "XboxSeriesX" }
+                },
+                {
+                    "id": "UnrealXboxOneGC",
+                    "displayName": "Unreal Integration for Xbox One (Game Core)",
+                    "description": "Unreal Integration of Wwise for Xbox One (Game Core)",
+                    "eulaIds": [],
+                    "$visible": true,
+                    "$checked": true,
+                    "$disabled": true,
+                    "license": { "platform": "XboxOne" }
+                },
+                {
+                    "id": "UnrealWinGC",
+                    "displayName": "Unreal Integration for Windows (Game Core)",
+                    "description": "Unreal Integration of Wwise for Windows (Game Core)",
+                    "eulaIds": [],
+                    "$visible": true,
+                    "$checked": true,
+                    "$disabled": true,
+                    "license": { "platform": "XboxOne" }
+                },
+                {
+                    "id": "UnrealDemoGame",
+                    "displayName": "Unreal Integration Game Scene",
+                    "description": "Game Scene for the Unreal Integration",
+                    "eulaIds": ["Ogg","Wwise", "Auro", "Crankcase", "iZotope", "McDSP"],
+                    "$visible": false,
+                    "$checked": false,
+                    "$disabled": true,
+                    "license": { "platform": "Windows" }
+                }
+            ]
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "displayName": "Deployment Platforms",
+            "values": [
+                {
+                    "id": "UE426",
+                    "displayName": "Unreal Engine 4.26",
+                    "eulaIds": []
+                },
+                {
+                    "id": "UE427",
+                    "displayName": "Unreal Engine 4.27",
+                    "eulaIds": []
+                }
+            ]
+        }
+    ],
+    "files": [ ]
+}

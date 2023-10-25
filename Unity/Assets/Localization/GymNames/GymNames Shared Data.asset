@@ -1,0 +1,341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: GymNames Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: GymNames
+  m_TableCollectionNameGuidString: 374fb0e0de31ce841a2676b8c738843e
+  m_Entries:
+  - m_Id: 13278515200
+    m_Key: Gyms
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54424637440
+    m_Key: 3-Advanced
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117238534144
+    m_Key: 5-Spatial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193386123264
+    m_Key: 9-Testing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563927715840
+    m_Key: EssentialAmbient
+    m_Metadata:
+      m_Items: []
+  - m_Id: 657959817216
+    m_Key: BasicAnimNotify
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721801318400
+    m_Key: BasicExecuteAction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 787345707008
+    m_Key: BasicFootsteps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 858283970560
+    m_Key: BasicLocalizedVoice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 919239790592
+    m_Key: BasicMultiplePositions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 990731702272
+    m_Key: BasicSetGameParameter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4282417287168
+    m_Key: BasicExecuteActionBreak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12202286649344
+    m_Key: BasicExecuteActionPauseResume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12380787838976
+    m_Key: BasicExecuteActionStop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12720098643968
+    m_Key: AdvancedAmbient
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12941444648960
+    m_Key: AdvancedAmbientFollow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13380672163840
+    m_Key: AdvancedAmbientStartAll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13598394290176
+    m_Key: AdvancedEvents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13667608694784
+    m_Key: AdvancedExternalSources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13726186344448
+    m_Key: AdvancedSequencer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13863629492224
+    m_Key: AdvancedSubtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13955451195392
+    m_Key: SpatialAudio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14067795628032
+    m_Key: SpatialPortal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14130064265216
+    m_Key: SpatialReverb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14196493651968
+    m_Key: Smoke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14302227861504
+    m_Key: Stress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14358381203456
+    m_Key: SmokeButtonScene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14431294984192
+    m_Key: SmokeSpatial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14496931647488
+    m_Key: SmokeStreamNoPrefetch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14664431177728
+    m_Key: SmokeSubLevel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14721125584896
+    m_Key: SmokeSubLevelNested
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14788477718528
+    m_Key: SmokeSubLevelSingle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14888105021440
+    m_Key: SmokeSwitches
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14956212129792
+    m_Key: StressExtSrc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15009446236160
+    m_Key: StressExtSrcInMemory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15059144544256
+    m_Key: StressExtSrcStreaming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15111699173376
+    m_Key: StressMediaLoad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15170989854720
+    m_Key: StressPostEvent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15327856824320
+    m_Key: StressStreamingReload
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15717578969088
+    m_Key: StressSwitches
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15812508651520
+    m_Key: StressOpenLevel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15869840592896
+    m_Key: AdvancedEventsPostAndWait
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15989348896768
+    m_Key: StressPostEventAndWaitTwoActors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16061771943936
+    m_Key: SmokeSpatialLargeWorld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16116847349760
+    m_Key: SmokeSwitchesSimple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16209746989056
+    m_Key: StressOpenLevel_Basic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16264512016384
+    m_Key: StressOpenLevel_Codec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16325279092736
+    m_Key: StressOpenLevel_ADPCM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16393491058688
+    m_Key: StressOpenLevel_PCM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16609791315968
+    m_Key: StressOpenLevel_Vorbis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16724014796800
+    m_Key: StressOpenLevel_WEMOPUS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16785964666880
+    m_Key: StressOpenLevel_ExternalSources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18153165164544
+    m_Key: StressOpenLevel_LargeMedia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18212673949696
+    m_Key: StressOpenLevel_LocalizedVoice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18280265158656
+    m_Key: StressOpenLevel_Stream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18361840177152
+    m_Key: StressSwitchesAlreadyLoaded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18418475864064
+    m_Key: StressSwitchesExternalSources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19017909014528
+    m_Key: StressSwitchesLocalized
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19077916921856
+    m_Key: StressSwitchesMultiNested
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19235593392128
+    m_Key: StressSwitchesMultipleSounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19288248684544
+    m_Key: StressSwitchesSetEventRelated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19345295413248
+    m_Key: StressSwitchesSetEventUnrelated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19414174273536
+    m_Key: StressSwitchesSetEventWithAnother
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19469815910400
+    m_Key: StressSwitchesStateWithSameName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19530104836096
+    m_Key: StressSwitchesUnloadEventAllLoaded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19587885568000
+    m_Key: StressSwitchesUnloadWhilePlaying
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19647650205696
+    m_Key: StressSwitchesValueWithoutSwitchContainer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19715098808320
+    m_Key: StressSwitchesWithMediaAlreadyLoaded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19772678213632
+    m_Key: 2-Basic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19829968211968
+    m_Key: 1-Essential
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19879335170048
+    m_Key: EssentialPostEvent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19960675307520
+    m_Key: EssentialSwitch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20654971031552
+    m_Key: 8-Editor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20857639800832
+    m_Key: AdvancedTimeline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585382155214848
+    m_Key: EditorEnterPlayMode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585388715106304
+    m_Key: EditorInspector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585390791286784
+    m_Key: EditorPausePlaySession
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585395040116736
+    m_Key: EditorSoundEngineInitialization
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1694610576102

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<distribute rootdir="../../"
+	xmlns:tar="attrib://tar">
+
+	<tasks>
+	
+		<task name="x64_vc160_Release" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+		
+		<task name="Unity.Windows" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.Mac" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.iOS" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.tvOS" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.XboxOneGC" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.PS4" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.XboxSeriesX" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.PS5" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.Android" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.XboxOne" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.XboxOne" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.Linux" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.WindowsStore" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.Switch" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Unity.Stadia" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="CopyAuthoringData" tar:compression="xz">
+			<includegroup>CopyAuthoringData</includegroup>
+		</task>
+
+		<task name="CopyWwisePlugin" tar:compression="xz">
+			<includegroup>CopyWwisePlugin</includegroup>
+		</task>
+
+	</tasks>
+
+	<groups>
+
+		<group name="CopyAuthoringData">
+			<path source="." recursive="true">
+				<include value="*" />
+			</path>
+		</group>
+
+		<group name="CopyWwisePlugin">
+			<path source="." target="." recursive="true">
+				<include value="*" />
+			</path>
+		</group>
+	
+		<group name="ImportPackage">
+			<path source="*" recursive="true">
+				<include value="*" />
+			</path>
+		</group>
+		
+	</groups>
+	
+</distribute>

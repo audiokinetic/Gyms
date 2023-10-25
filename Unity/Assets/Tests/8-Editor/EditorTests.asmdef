@@ -1,0 +1,27 @@
+{
+    "name": "EditorTests",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "Tests",
+        "AK.Wwise.Unity.API",
+        "AK.Wwise.Unity.MonoBehaviour",
+        "AK.Wwise.Unity.API.WwiseTypes",
+        "AK.Wwise.Unity.MonoBehaviour.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

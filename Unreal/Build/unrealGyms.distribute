@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<distribute rootdir="../../"
+	xmlns:sevenzip="attrib://7z"
+	xmlns:tar="attrib://tar">
+	
+	<tasks>
+		<task name="Unreal.Windows" tar:compression="xz">
+			<includegroup ue_platform_name="Win64">Output_Packaged_Windows</includegroup>
+		</task>
+		
+		<task name="Unreal.macOS" tar:compression="xz">
+			<includegroup ue_platform_name="Win64">Output_Packaged_Mac</includegroup>
+		</task>
+		
+		<task name="Unreal.Source" tar:compression="xz">
+			<includegroup ue_platform_name="Win64">Output_Source_Windows</includegroup>
+		</task>
+		
+		<task name="Unreal.WwiseProject" tar:compression="xz">
+			<includegroup ue_platform_name="Win64">Output_WwiseProject</includegroup>
+		</task>
+		
+		<task name="ArtifactBanks" tar:compression="xz">
+			<includegroup>ArtifactBanks</includegroup>
+		</task>
+		
+		<task name="ArtifactMacBinaries" tar:compression="xz">
+			<includegroup Platform="Mac">ArtifactBinaries</includegroup>
+		</task>
+		
+		<task name="x64_vc160_Release" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+		<task name="Wwise.app">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+		
+		<task name="GetIntegration" tar:archive-name="Unreal.${UE_VERSION}" tar:compression="xz">
+			<includegroup>ImportPackage</includegroup>
+		</task>
+
+	</tasks>
+	
+	<groups>
+		<group name="Output_Packaged_Windows">
+			<path source="." recursive="true">
+				<include value="*"/>
+			</path>
+		</group>
+		
+		<group name="Output_Packaged_Mac">
+			<path source="." recursive="true">
+				<include value="Gyms/*"/>
+			</path>
+		</group>
+		
+		<group name="ArtifactBanks">
+			<path source="Gyms/Unreal/Content/WwiseAudio" recursive="true">
+				<include value="*"/>
+			</path>
+		</group>
+		
+		<group name="ArtifactBinaries">
+			<path source="Gyms/Unreal/Binaries/${Platform}" recursive="true">
+				<include value="*"/>
+			</path>
+			<path source="Gyms/Unreal/Plugins/GamepadUMGPlugin/Binaries/${Platform}" recursive="true">
+				<include value="*"/>
+			</path>
+			<path source="Gyms/Unreal/Plugins/Wwise/Binaries/${Platform}" recursive="true">
+				<include value="*"/>
+			</path>
+			<path source="Gyms/Unreal/Plugins/Wwise/ThirdParty" recursive="true">
+				<include value="*.dll"/>
+				<include value="*.dylib"/>
+			</path>
+		</group>
+		
+		<group name="Output_Source_Windows">
+			<path source="Unreal" recursive="true">
+				<include value="*"/>
+				<exclude value=".svn/*"/>
+				<exclude value=".vs/*"/>
+				<exclude value="Binaries/Mac/Gyms.*"/>
+				<exclude value="Binaries/Win64/Gyms.*"/>
+				<exclude value="Build/*"/>
+				<exclude value="Help/*"/>
+				<exclude value="Intermediate/*"/>
+				<exclude value="OmegaT_ja/*"/>
+				<exclude value="OmegaT_zh/*"/>
+				<exclude value="Plugins/GamepadUMGPlugin/Binaries/Mac/*.a"/>
+				<exclude value="Plugins/GamepadUMGPlugin/Binaries/Win32/*"/>
+				<exclude value="Plugins/GamepadUMGPlugin/Binaries/Win64/*.lib"/>
+				<exclude value="Plugins/Wwise/.svn/*"/>
+				<exclude value="Plugins/Wwise/*.uplugin_template"/>
+				<exclude value="Plugins/Wwise/Binaries/Mac/*.a"/>
+				<exclude value="Plugins/Wwise/Binaries/Win64/*.lib"/>
+				<exclude value="Plugins/Wwise/ThirdParty/*"/>
+				<exclude value="Saved/*"/>
+				<exclude value="Wwise Project/*"/>
+				<exclude value="TempDefinitionFile.txt"/>
+				<exclude value="Gyms.sln"/>
+			</path>
+			<path source="Unreal" recursive="true">
+				<include value="Plugins/Wwise/ThirdParty/*.dll"/>
+				<include value="Plugins/Wwise/ThirdParty/*.dylib"/>
+			</path>
+		</group>
+		
+		<group name="Output_WwiseProject">
+			<path source="Wwise Project" recursive="true">
+				<include value="*"/>
+				<exclude value=".cache/*"/>
+				<exclude value="IncrementalSoundBankData.xml"/>
+				<exclude value="*.validationcache"/>
+				<exclude value="*.akd"/>
+			</path>
+		</group>
+		
+		<group name="ImportPackage">
+			<path source="*" recursive="true">
+				<include value="*" />
+			</path>
+		</group>
+	</groups>
+
+</distribute>
+	

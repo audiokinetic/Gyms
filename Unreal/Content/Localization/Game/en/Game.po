@@ -1,0 +1,1226 @@
+﻿# Game English translation.
+# Copyright Epic Games, Inc. All Rights Reserved.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Game\n"
+"POT-Creation-Date: 2023-08-21 15:43\n"
+"PO-Revision-Date: 2023-08-21 15:43\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Key:	017302DB49C91806954FA3A9879B936C
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesMultipleSounds/StressSwitchesMultipleSounds.StressSwitchesMultipleSounds:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesMultipleSounds/StressSwitchesMultipleSounds.StressSwitchesMultipleSounds:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",017302DB49C91806954FA3A9879B936C"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	01B8A09049C5D53C9447AD8BD0B68AD3
+#. SourceLocation:	/Game/Gyms/1-Essential/1-EssentialPostEvent/1-EssentialPostEvent.1-EssentialPostEvent:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/1-Essential/1-EssentialPostEvent/1-EssentialPostEvent.1-EssentialPostEvent:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",01B8A09049C5D53C9447AD8BD0B68AD3"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	09FEA4A14F8D76AEF8B1499D22D1BBE9
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LargeMedia/StressOpenLevel_LargeMedia.StressOpenLevel_LargeMedia:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LargeMedia/StressOpenLevel_LargeMedia.StressOpenLevel_LargeMedia:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",09FEA4A14F8D76AEF8B1499D22D1BBE9"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	0DA9B3164C58162FD91F178043C80624
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesMultiNested/StressSwitchesMultiNested.StressSwitchesMultiNested:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesMultiNested/StressSwitchesMultiNested.StressSwitchesMultiNested:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",0DA9B3164C58162FD91F178043C80624"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	0F01422447BFA8FFB0DC2FB6C943FC1E
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicFootsteps/BasicFootsteps.BasicFootsteps:PersistentLevel.Wood.NewTextRenderComponent.Text
+#: /Game/Gyms/2-Basic/BasicFootsteps/BasicFootsteps.BasicFootsteps:PersistentLevel.Wood.NewTextRenderComponent.Text
+msgctxt ",0F01422447BFA8FFB0DC2FB6C943FC1E"
+msgid "Wood"
+msgstr "Wood"
+
+#. Key:	1730F3494EDE45E2F36F0898DCC55D14
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeButtonScene/SmokeButtonScene.SmokeButtonScene:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeButtonScene/SmokeButtonScene.SmokeButtonScene:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",1730F3494EDE45E2F36F0898DCC55D14"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	190AA22D43FA86EEFD1D31BF142D8215
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_Vorbis/StressOpenLevel_Vorbis_2.StressOpenLevel_Vorbis_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_Vorbis/StressOpenLevel_Vorbis_2.StressOpenLevel_Vorbis_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",190AA22D43FA86EEFD1D31BF142D8215"
+msgid "LevelName"
+msgstr "LevelName"
+
+#. Key:	19408E0845ED7A5A985AE0B05BC0E930
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicExecuteAction/BasicExecuteActionStop/BasicExecuteActionStop.BasicExecuteActionStop:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/2-Basic/BasicExecuteAction/BasicExecuteActionStop/BasicExecuteActionStop.BasicExecuteActionStop:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",19408E0845ED7A5A985AE0B05BC0E930"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	1C3082A14627E35BA7994A894496377C
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicFootsteps/BasicFootsteps.BasicFootsteps:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/2-Basic/BasicFootsteps/BasicFootsteps.BasicFootsteps:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",1C3082A14627E35BA7994A894496377C"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	20ED8F8443C49E6DB4ADD9A11B7C95F4
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedSubtitle/AdvancedSubtitle.AdvancedSubtitle:PersistentLevel.TextRenderActor2_4.NewTextRenderComponent.Text
+#: /Game/Gyms/3-Advanced/AdvancedSubtitle/AdvancedSubtitle.AdvancedSubtitle:PersistentLevel.TextRenderActor2_4.NewTextRenderComponent.Text
+msgctxt ",20ED8F8443C49E6DB4ADD9A11B7C95F4"
+msgid "Subtitle"
+msgstr "Subtitle"
+
+#. Key:	218F413E46DBCA925182D9A2F87F2411
+#. SourceLocation:	/Game/CommonAssets/UI/InGameMenu/InGameMenu.InGameMenu_C:WidgetTree.TextBlock_168.Text
+#: /Game/CommonAssets/UI/InGameMenu/InGameMenu.InGameMenu_C:WidgetTree.TextBlock_168.Text
+msgctxt ",218F413E46DBCA925182D9A2F87F2411"
+msgid "Back to main menu"
+msgstr "Back to main menu"
+
+#. Key:	21E1507A471C4F7EA3554BBF51BC3184
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressExtSrc/StressExtSrcStreaming/StressExtSrcStreaming.StressExtSrcStreaming:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressExtSrc/StressExtSrcStreaming/StressExtSrcStreaming.StressExtSrcStreaming:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",21E1507A471C4F7EA3554BBF51BC3184"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	236E91F043E29D2157B436A66B810CF2
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested_3.SmokeSubLevelNested_3:PersistentLevel.TextRenderActor2_3.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested_3.SmokeSubLevelNested_3:PersistentLevel.TextRenderActor2_3.NewTextRenderComponent.Text
+msgctxt ",236E91F043E29D2157B436A66B810CF2"
+msgid "Post Event"
+msgstr "Post Event"
+
+#. Key:	2962AA43462F66F73847C9BF48A74B35
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested_3.SmokeSubLevelNested_3:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested_3.SmokeSubLevelNested_3:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",2962AA43462F66F73847C9BF48A74B35"
+msgid "Change Switch"
+msgstr "Change Switch"
+
+#. Key:	2C1B7FCB48E62C4383D16AB3E70B5470
+#. SourceLocation:	/Game/Gyms/5-Spatial/SpatialPortal/SpatialPortal.SpatialPortal:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/5-Spatial/SpatialPortal/SpatialPortal.SpatialPortal:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",2C1B7FCB48E62C4383D16AB3E70B5470"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	2DD424FC47B9A5EDC45BDBB98B600826
+#. SourceLocation:	/Game/Gyms/1-Essential/2-EssentialAmbient/2-EssentialAmbient.2-EssentialAmbient:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/1-Essential/2-EssentialAmbient/2-EssentialAmbient.2-EssentialAmbient:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",2DD424FC47B9A5EDC45BDBB98B600826"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	302C4E0D4D21212C95D7DB9208BD7260
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedSubtitle/AdvancedSubtitle.AdvancedSubtitle:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/3-Advanced/AdvancedSubtitle/AdvancedSubtitle.AdvancedSubtitle:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",302C4E0D4D21212C95D7DB9208BD7260"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	32A9881F44647415F74F3FB8F0719B66
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientFollow/AdvancedAmbientFollow.AdvancedAmbientFollow:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+#: /Game/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientFollow/AdvancedAmbientFollow.AdvancedAmbientFollow:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+msgctxt ",32A9881F44647415F74F3FB8F0719B66"
+msgid "Post Event on<br> the Rightt Arm"
+msgstr "Post Event on<br> the Rightt Arm"
+
+#. Key:	33C0739D499B4ED8EE89ABA352F3F640
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested_2.SmokeSubLevelNested_2:PersistentLevel.TextRenderActor2_4.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested_2.SmokeSubLevelNested_2:PersistentLevel.TextRenderActor2_4.NewTextRenderComponent.Text
+msgctxt ",33C0739D499B4ED8EE89ABA352F3F640"
+msgid "Open Sub-Level"
+msgstr "Open Sub-Level"
+
+#. Key:	342C1E6543A8156DBA60B2B63BDA5E48
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested.SmokeSubLevelNested:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested.SmokeSubLevelNested:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",342C1E6543A8156DBA60B2B63BDA5E48"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	382382204813DE494F70FBA201BBAAFF
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelSingle/SmokeSubLevelSingle_2.SmokeSubLevelSingle_2:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelSingle/SmokeSubLevelSingle_2.SmokeSubLevelSingle_2:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+msgctxt ",382382204813DE494F70FBA201BBAAFF"
+msgid "Wood"
+msgstr "Wood"
+
+#. Key:	3956C9DE453BC4BDD40EF48AEE7175B3
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressPostEvent/StressPostEventAndWaitTwoActors/StressPostEventAndWaitTwoActors.StressPostEventAndWaitTwoActors:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressPostEvent/StressPostEventAndWaitTwoActors/StressPostEventAndWaitTwoActors.StressPostEventAndWaitTwoActors:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",3956C9DE453BC4BDD40EF48AEE7175B3"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	3A16A7324CB56FE4573DB2A4516AEFE8
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LargeMedia/StressOpenLevel_LargeMedia.StressOpenLevel_LargeMedia:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LargeMedia/StressOpenLevel_LargeMedia.StressOpenLevel_LargeMedia:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",3A16A7324CB56FE4573DB2A4516AEFE8"
+msgid "Generate the file with the <br> GenerateLargeWavFile.py<br> under the WwiseProject folder"
+msgstr "Generate the file with the <br> GenerateLargeWavFile.py<br> under the WwiseProject folder"
+
+#. Key:	3C5B96474689821B6E0CCA8855A80CE9
+#. SourceLocation:	/Game/Gyms/1-Essential/5-EssentialSwitch/5-EssentialSwitch.5-EssentialSwitch:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/1-Essential/5-EssentialSwitch/5-EssentialSwitch.5-EssentialSwitch:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",3C5B96474689821B6E0CCA8855A80CE9"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	3C8DB7E44CA8976A8173509BB96A312D
+#. SourceLocation:	/Game/Gyms/1-Essential/5-EssentialSwitch/5-EssentialSwitch.5-EssentialSwitch:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+#: /Game/Gyms/1-Essential/5-EssentialSwitch/5-EssentialSwitch.5-EssentialSwitch:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+msgctxt ",3C8DB7E44CA8976A8173509BB96A312D"
+msgid "Post\r\nEvent"
+msgstr "Post\r\nEvent"
+
+#. Key:	3CEFB8464A50CD42D6C58B861150A1FD
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameter.BasicSetGameParameter:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+#: /Game/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameter.BasicSetGameParameter:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+msgctxt ",3CEFB8464A50CD42D6C58B861150A1FD"
+msgid "Lower\r\nRTPC\r\nValue"
+msgstr "Lower\r\nRTPC\r\nValue"
+
+#. Key:	402F02C5457AE39B427DCD9F8AB79AC7
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelSingle/SmokeSubLevelSingle.SmokeSubLevelSingle:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelSingle/SmokeSubLevelSingle.SmokeSubLevelSingle:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",402F02C5457AE39B427DCD9F8AB79AC7"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	40FD041F4202CD34C431E18D682961FA
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesExternalSources/StressSwitchesExternalSources.StressSwitchesExternalSources:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesExternalSources/StressSwitchesExternalSources.StressSwitchesExternalSources:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",40FD041F4202CD34C431E18D682961FA"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	449C6DF044CE293E581E2AA19F2CF774
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LocalizedVoice/StressOpenLevel_LocalizedVoice.StressOpenLevel_LocalizedVoice:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LocalizedVoice/StressOpenLevel_LocalizedVoice.StressOpenLevel_LocalizedVoice:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",449C6DF044CE293E581E2AA19F2CF774"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	46911108444791E8037904BB9A503F80
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_ExternalSources/StressOpenLevel_ExternalSources.StressOpenLevel_ExternalSources:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_ExternalSources/StressOpenLevel_ExternalSources.StressOpenLevel_ExternalSources:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",46911108444791E8037904BB9A503F80"
+msgid "LevelName"
+msgstr "LevelName"
+
+#. Key:	46E5976F4975BFA2F7EBB198CA12C956
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesUnloadEventAllLoaded/StressSwitchesUnloadEventAllLoaded.StressSwitchesUnloadEventAllLoaded:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesUnloadEventAllLoaded/StressSwitchesUnloadEventAllLoaded.StressSwitchesUnloadEventAllLoaded:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",46E5976F4975BFA2F7EBB198CA12C956"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	474EE625427BA5324CADC2A49079FDB3
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientFollow/AdvancedAmbientFollow.AdvancedAmbientFollow:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientFollow/AdvancedAmbientFollow.AdvancedAmbientFollow:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",474EE625427BA5324CADC2A49079FDB3"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	48A9F54249A8082D91738581C4598B61
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesSetEventWithAnother/StressSwitchesSetEventWithAnother.StressSwitchesSetEventWithAnother:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesSetEventWithAnother/StressSwitchesSetEventWithAnother.StressSwitchesSetEventWithAnother:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",48A9F54249A8082D91738581C4598B61"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	49E3E3834AC4FD4C1A2375A6F0731D45
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicExecuteAction/BasicExecuteActionBreak/BasicExecuteActionBreak.BasicExecuteActionBreak:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/2-Basic/BasicExecuteAction/BasicExecuteActionBreak/BasicExecuteActionBreak.BasicExecuteActionBreak:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",49E3E3834AC4FD4C1A2375A6F0731D45"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	4D6FE35B4FDA51F748E27384F0C27675
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedSubtitle/AdvancedSubtitle.AdvancedSubtitle:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/3-Advanced/AdvancedSubtitle/AdvancedSubtitle.AdvancedSubtitle:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",4D6FE35B4FDA51F748E27384F0C27675"
+msgid "Cue"
+msgstr "Cue"
+
+#. Key:	5045B2294C281C0006F61C91D288B762
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested_2.SmokeSubLevelNested_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested_2.SmokeSubLevelNested_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",5045B2294C281C0006F61C91D288B762"
+msgid "Post Event"
+msgstr "Post Event"
+
+#. Key:	5182ABC1421A7AF5857A71B6D52CF260
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedLoadData/AdvancedLoadData.AdvancedLoadData:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/3-Advanced/AdvancedLoadData/AdvancedLoadData.AdvancedLoadData:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",5182ABC1421A7AF5857A71B6D52CF260"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	56767EE545E804617A027DBFC8A7509F
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LargeMedia/StressOpenLevel_LargeMedia_2.StressOpenLevel_LargeMedia_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LargeMedia/StressOpenLevel_LargeMedia_2.StressOpenLevel_LargeMedia_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",56767EE545E804617A027DBFC8A7509F"
+msgid "Generate the file with the <br> GenerateLargeWavFile.py<br> under the WwiseProject folder"
+msgstr "Generate the file with the <br> GenerateLargeWavFile.py<br> under the WwiseProject folder"
+
+#. Key:	5D80D50F4BBE5F8F9411E6A74D4A2511
+#. SourceLocation:	/Game/CommonAssets/UI/MainMenu/MainMenuWidget.MainMenuWidget_C:WidgetTree.TextBlock_82.Text
+#: /Game/CommonAssets/UI/MainMenu/MainMenuWidget.MainMenuWidget_C:WidgetTree.TextBlock_82.Text
+msgctxt ",5D80D50F4BBE5F8F9411E6A74D4A2511"
+msgid "Update Maps to Cook"
+msgstr "Update Maps to Cook"
+
+#. Key:	5F3100514A4295B197744DB64018C83A
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesSetEventRelated/StressSwitchesSetEventRelated.StressSwitchesSetEventRelated:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesSetEventRelated/StressSwitchesSetEventRelated.StressSwitchesSetEventRelated:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",5F3100514A4295B197744DB64018C83A"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	609B4ACE4D826ED6C6B50BB1E20530B3
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicExecuteAction/BasicExecuteActionBreak/BasicExecuteActionBreak.BasicExecuteActionBreak:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/2-Basic/BasicExecuteAction/BasicExecuteActionBreak/BasicExecuteActionBreak.BasicExecuteActionBreak:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",609B4ACE4D826ED6C6B50BB1E20530B3"
+msgid "Start Looping<br>Sound"
+msgstr "Start Looping<br>Sound"
+
+#. Key:	62BE57C94380EA490C43E880154374D9
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicFootsteps/BasicFootsteps.BasicFootsteps:PersistentLevel.TextRenderActor_2.NewTextRenderComponent.Text
+#: /Game/Gyms/2-Basic/BasicFootsteps/BasicFootsteps.BasicFootsteps:PersistentLevel.TextRenderActor_2.NewTextRenderComponent.Text
+msgctxt ",62BE57C94380EA490C43E880154374D9"
+msgid "Grass"
+msgstr "Grass"
+
+#. Key:	62D2FBCA4AE1CB2E7AADBD8954743853
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesSetEventUnrelated/StressSwitchesSetEventUnrelated.StressSwitchesSetEventUnrelated:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesSetEventUnrelated/StressSwitchesSetEventUnrelated.StressSwitchesSetEventUnrelated:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",62D2FBCA4AE1CB2E7AADBD8954743853"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	6391AF6F48299F1C81B6B2B84B34A4C2
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicMultiplePositions/BasicMultiplePositions.BasicMultiplePositions:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/2-Basic/BasicMultiplePositions/BasicMultiplePositions.BasicMultiplePositions:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",6391AF6F48299F1C81B6B2B84B34A4C2"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	67616D254EAE8E7B22D2A888FA29411F
+#. SourceLocation:	/Game/Gyms/5-Spatial/SpatialAudio/SpatialAudio.SpatialAudio:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/5-Spatial/SpatialAudio/SpatialAudio.SpatialAudio:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",67616D254EAE8E7B22D2A888FA29411F"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	69860162467C1CDD0D0355BF5EBA3B51
+#. SourceLocation:	/Game/GymTemplate/GymTemplate.GymTemplate:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/GymTemplate/GymTemplate.GymTemplate:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",69860162467C1CDD0D0355BF5EBA3B51"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	6AA1F0D74F7643E1353900A4B11017CA
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientFollow/AdvancedAmbientFollow.AdvancedAmbientFollow:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientFollow/AdvancedAmbientFollow.AdvancedAmbientFollow:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",6AA1F0D74F7643E1353900A4B11017CA"
+msgid "Post Event on<br> the Left Arm"
+msgstr "Post Event on<br> the Left Arm"
+
+#. Key:	6F506C8A4DA5725C64E88282A48846A1
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Basic/StressOpenLevel_Basic.StressOpenLevel_Basic:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Basic/StressOpenLevel_Basic.StressOpenLevel_Basic:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",6F506C8A4DA5725C64E88282A48846A1"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	7054C35B4188D26D4CCED28C68F4EBA0
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedExternalSources/AdvancedExternalSources.AdvancedExternalSources:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/3-Advanced/AdvancedExternalSources/AdvancedExternalSources.AdvancedExternalSources:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",7054C35B4188D26D4CCED28C68F4EBA0"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	72D31F0C493222E19478CFB321BEC0CF
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Stream/StressOpenLevel_Stream.StressOpenLevel_Stream:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Stream/StressOpenLevel_Stream.StressOpenLevel_Stream:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",72D31F0C493222E19478CFB321BEC0CF"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	730164BB4A97A45B68BBA3AB0AB0C142
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesValueWithoutSwitchContainer/StressSwitchesValueWithoutSwitchContainer.StressSwitchesValueWithoutSwitchContainer:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesValueWithoutSwitchContainer/StressSwitchesValueWithoutSwitchContainer.StressSwitchesValueWithoutSwitchContainer:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",730164BB4A97A45B68BBA3AB0AB0C142"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	730E948F4C8E8E3EB9B9BBBE1925DE5E
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeStreamNoPrefetch/SmokeStreamNoPrefetch.SmokeStreamNoPrefetch:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeStreamNoPrefetch/SmokeStreamNoPrefetch.SmokeStreamNoPrefetch:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",730E948F4C8E8E3EB9B9BBBE1925DE5E"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	7516617942C8E06CD6F2F38D736A6D4C
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameter.BasicSetGameParameter:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameter.BasicSetGameParameter:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",7516617942C8E06CD6F2F38D736A6D4C"
+msgid "Increase\r\nRTPC\r\nValue"
+msgstr "Increase\r\nRTPC\r\nValue"
+
+#. Key:	7915FA85418FC785C8364EA71376B4F3
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesAlreadyLoaded/StressSwitchesAlreadyLoaded.StressSwitchesAlreadyLoaded:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesAlreadyLoaded/StressSwitchesAlreadyLoaded.StressSwitchesAlreadyLoaded:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",7915FA85418FC785C8364EA71376B4F3"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	799AC95745D83BDB0547B6ADEF5310A1
+#. SourceLocation:	/Game/CommonAssets/UI/MainMenu/MainMenuWidget.MainMenuWidget_C:WidgetTree.SelectText.Text
+#: /Game/CommonAssets/UI/MainMenu/MainMenuWidget.MainMenuWidget_C:WidgetTree.SelectText.Text
+msgctxt ",799AC95745D83BDB0547B6ADEF5310A1"
+msgid "Select your gym:"
+msgstr "Select your gym:"
+
+#. Key:	7C41C88445C10BE91B8DD89A3FAEEA5B
+#. SourceLocation:	/Game/Gyms/5-Spatial/SpatialReverb/SpatialReverb.SpatialReverb:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/5-Spatial/SpatialReverb/SpatialReverb.SpatialReverb:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",7C41C88445C10BE91B8DD89A3FAEEA5B"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	823936624D6AACDA0F1B7D9233C217FA
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesLocalized/StressSwitchesLocalized.StressSwitchesLocalized:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesLocalized/StressSwitchesLocalized.StressSwitchesLocalized:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",823936624D6AACDA0F1B7D9233C217FA"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	89562DC940CF01363242D2A2326CCDAF
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressStreamingReload/StressStreamingReload.StressStreamingReload:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressStreamingReload/StressStreamingReload.StressStreamingReload:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",89562DC940CF01363242D2A2326CCDAF"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	89E0A2B442C128943BE68DB082EF6D62
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressMediaLoad/StressMediaLoad.StressMediaLoad:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressMediaLoad/StressMediaLoad.StressMediaLoad:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",89E0A2B442C128943BE68DB082EF6D62"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	8DDA8A59463C4C8CA4C69A82AFA4322D
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedEvents/AdvancedEventsPostAndWait/AdvancedEventsPostAndWait.AdvancedEventsPostAndWait:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/3-Advanced/AdvancedEvents/AdvancedEventsPostAndWait/AdvancedEventsPostAndWait.AdvancedEventsPostAndWait:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",8DDA8A59463C4C8CA4C69A82AFA4322D"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	8ED0945B48E39647DEEDEEAD51F7C97C
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicAnimNotify/BasicAnimNotify.BasicAnimNotify:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/2-Basic/BasicAnimNotify/BasicAnimNotify.BasicAnimNotify:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",8ED0945B48E39647DEEDEEAD51F7C97C"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	8F6449BF4F52A68993DB8D9AF4717023
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested.SmokeSubLevelNested:PersistentLevel.TextRenderActor2_4.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested.SmokeSubLevelNested:PersistentLevel.TextRenderActor2_4.NewTextRenderComponent.Text
+msgctxt ",8F6449BF4F52A68993DB8D9AF4717023"
+msgid "Post Event"
+msgstr "Post Event"
+
+#. Key:	91E411AE47B2887A5BC4E2A2E373812C
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested.SmokeSubLevelNested:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelNested/SmokeSubLevelNested.SmokeSubLevelNested:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",91E411AE47B2887A5BC4E2A2E373812C"
+msgid "Open Sub-Level"
+msgstr "Open Sub-Level"
+
+#. Key:	923A871B4AE07F0EC69C43A3140284AE
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_WEMOPUS/StressOpenLevel_WEMOPUS.StressOpenLevel_WEMOPUS:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_WEMOPUS/StressOpenLevel_WEMOPUS.StressOpenLevel_WEMOPUS:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",923A871B4AE07F0EC69C43A3140284AE"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	979F262442BCE3123C40A2B4C10705A7
+#. SourceLocation:	/Game/GymTemplate/GymTemplateToggle.GymTemplateToggle:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/GymTemplate/GymTemplateToggle.GymTemplateToggle:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",979F262442BCE3123C40A2B4C10705A7"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	9CC3478E4A7F67503ED40A84C14ED8DF
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedSequencer/AdvancedSequencer.AdvancedSequencer:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/3-Advanced/AdvancedSequencer/AdvancedSequencer.AdvancedSequencer:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",9CC3478E4A7F67503ED40A84C14ED8DF"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	9D04D5914C7B70757DFF21BA861896C6
+#. SourceLocation:	/Game/CommonAssets/UI/MainMenu/MainMenuWidget.MainMenuWidget_C:WidgetTree.Button_83.ToolTipText
+#: /Game/CommonAssets/UI/MainMenu/MainMenuWidget.MainMenuWidget_C:WidgetTree.Button_83.ToolTipText
+msgctxt ",9D04D5914C7B70757DFF21BA861896C6"
+msgid "(Editor Only) Scan the project to update the maps to cook."
+msgstr "(Editor Only) Scan the project to update the maps to cook."
+
+#. Key:	9F801F604ECCD24E67C6A49174A3411D
+#. SourceLocation:	/Game/Gyms/5-Spatial/SpatialPortal/SpatialPortal.SpatialPortal:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/5-Spatial/SpatialPortal/SpatialPortal.SpatialPortal:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",9F801F604ECCD24E67C6A49174A3411D"
+msgid "Open/Close<br>Portal"
+msgstr "Open/Close<br>Portal"
+
+#. Key:	A3AC13D7460CE1B4F0593682A525F072
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_Vorbis/StressOpenLevel_Vorbis.StressOpenLevel_Vorbis:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_Vorbis/StressOpenLevel_Vorbis.StressOpenLevel_Vorbis:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",A3AC13D7460CE1B4F0593682A525F072"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	A486F51F45BDA1733C431D92C4CA3829
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LargeMedia/StressOpenLevel_LargeMedia_2.StressOpenLevel_LargeMedia_2:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LargeMedia/StressOpenLevel_LargeMedia_2.StressOpenLevel_LargeMedia_2:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+msgctxt ",A486F51F45BDA1733C431D92C4CA3829"
+msgid "LevelName"
+msgstr "LevelName"
+
+#. Key:	A57858BA4CE36422D07313A47A1D0147
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSpatial/SmokeSpatialLargeWorld/SmokeSpatialLargeWorld.SmokeSpatialLargeWorld:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSpatial/SmokeSpatialLargeWorld/SmokeSpatialLargeWorld.SmokeSpatialLargeWorld:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",A57858BA4CE36422D07313A47A1D0147"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	A96CA16D43E3843516D2998411E78734
+#. SourceLocation:	/Game/GymTemplate/GymTemplateButton.GymTemplateButton:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/GymTemplate/GymTemplateButton.GymTemplateButton:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",A96CA16D43E3843516D2998411E78734"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	AAA0AA604A040611837CB891AF577D29
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicExecuteAction/BasicExecuteActionPauseResume/BasicExecuteActionPauseResume.BasicExecuteActionPauseResume:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/2-Basic/BasicExecuteAction/BasicExecuteActionPauseResume/BasicExecuteActionPauseResume.BasicExecuteActionPauseResume:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",AAA0AA604A040611837CB891AF577D29"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	AF9134354905227DF04BB598059D7F3B
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicLocalizedVoice/BasicLocalizedVoice.BasicLocalizedVoice:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/2-Basic/BasicLocalizedVoice/BasicLocalizedVoice.BasicLocalizedVoice:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",AF9134354905227DF04BB598059D7F3B"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	B1AB603E4AEF69F696787AB8352384BC
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedEvents/AdvancedEventsPostAndWait/AdvancedEventsPostAndWait.AdvancedEventsPostAndWait:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+#: /Game/Gyms/3-Advanced/AdvancedEvents/AdvancedEventsPostAndWait/AdvancedEventsPostAndWait.AdvancedEventsPostAndWait:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+msgctxt ",B1AB603E4AEF69F696787AB8352384BC"
+msgid "Post Event"
+msgstr "Post Event"
+
+#. Key:	B1DF75CA466C384F7E9884B696AA90BE
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_ExternalSources/StressOpenLevel_ExternalSources.StressOpenLevel_ExternalSources:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_ExternalSources/StressOpenLevel_ExternalSources.StressOpenLevel_ExternalSources:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",B1DF75CA466C384F7E9884B696AA90BE"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	B212FE334074661714CE51B56A16DCCA
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSwitches/SmokeSwitchesSimple/SmokeSwitchesSimple.SmokeSwitchesSimple:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSwitches/SmokeSwitchesSimple/SmokeSwitchesSimple.SmokeSwitchesSimple:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",B212FE334074661714CE51B56A16DCCA"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	B66E616145E6855753D2768A7C30F2B2
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_ExternalSources/StressOpenLevel_ExternalSources_2.StressOpenLevel_ExternalSources_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_ExternalSources/StressOpenLevel_ExternalSources_2.StressOpenLevel_ExternalSources_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",B66E616145E6855753D2768A7C30F2B2"
+msgid "LevelName"
+msgstr "LevelName"
+
+#. Key:	BDB57FE94DD9BC6F962173A5A368C2EA
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameter.BasicSetGameParameter:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameter.BasicSetGameParameter:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",BDB57FE94DD9BC6F962173A5A368C2EA"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	C19BA1F440CB03D7905DF7988081A715
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LocalizedVoice/StressOpenLevel_LocalizedVoice_2.StressOpenLevel_LocalizedVoice_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LocalizedVoice/StressOpenLevel_LocalizedVoice_2.StressOpenLevel_LocalizedVoice_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",C19BA1F440CB03D7905DF7988081A715"
+msgid "LevelName"
+msgstr "LevelName"
+
+#. Key:	C5406D164BC637CEBAAC9894AB78E2DF
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressExtSrc/StressExtSrcInMemory/StressExtSrcInMemory.StressExtSrcInMemory:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressExtSrc/StressExtSrcInMemory/StressExtSrcInMemory.StressExtSrcInMemory:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",C5406D164BC637CEBAAC9894AB78E2DF"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	C6CC3E89450EAB1A2FA9D49A00C1EDBB
+#. SourceLocation:	/Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelSingle/SmokeSubLevelSingle_2.SmokeSubLevelSingle_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Smoke/SmokeSubLevel/SmokeSubLevelSingle/SmokeSubLevelSingle_2.SmokeSubLevelSingle_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",C6CC3E89450EAB1A2FA9D49A00C1EDBB"
+msgid "Grass"
+msgstr "Grass"
+
+#. Key:	CACCC6174E55F8DBF43FB1B2D83976D1
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_PCM/StressOpenLevel_PCM.StressOpenLevel_PCM:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_PCM/StressOpenLevel_PCM.StressOpenLevel_PCM:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",CACCC6174E55F8DBF43FB1B2D83976D1"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	CBA4D6BE46401C5D3A0ED6964F4E7FE8
+#. SourceLocation:	/Game/CommonAssets/UI/MainMenu/MainMenuWidget.MainMenuWidget_C:WidgetTree.TextBlock_0.Text
+#: /Game/CommonAssets/UI/MainMenu/MainMenuWidget.MainMenuWidget_C:WidgetTree.TextBlock_0.Text
+msgctxt ",CBA4D6BE46401C5D3A0ED6964F4E7FE8"
+msgid "Wwise Gyms"
+msgstr "Wwise Gyms"
+
+#. Key:	D51D402E48A62D2C6D6629A67C489235
+#. SourceLocation:	/Game/GymTemplate/GymTemplateOpenLevel.GymTemplateOpenLevel:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/GymTemplate/GymTemplateOpenLevel.GymTemplateOpenLevel:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",D51D402E48A62D2C6D6629A67C489235"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	D7115FEA4838EF7B1C5140BBD99F0F35
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LargeMedia/StressOpenLevel_LargeMedia.StressOpenLevel_LargeMedia:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LargeMedia/StressOpenLevel_LargeMedia.StressOpenLevel_LargeMedia:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+msgctxt ",D7115FEA4838EF7B1C5140BBD99F0F35"
+msgid "LevelName"
+msgstr "LevelName"
+
+#. Key:	E076588F4CECA11CD434A7AD6ED45C35
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesStateWithSameName/StressSwitchesStateWithSameName.StressSwitchesStateWithSameName:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesStateWithSameName/StressSwitchesStateWithSameName.StressSwitchesStateWithSameName:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",E076588F4CECA11CD434A7AD6ED45C35"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	E1A1CD6B4C5AC5D9380AA7A3D60DB324
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesWithMediaAlreadyLoaded/StressSwitchesWithMediaAlreadyLoaded.StressSwitchesWithMediaAlreadyLoaded:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesWithMediaAlreadyLoaded/StressSwitchesWithMediaAlreadyLoaded.StressSwitchesWithMediaAlreadyLoaded:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",E1A1CD6B4C5AC5D9380AA7A3D60DB324"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	E3515DC8496D48066E7E73AD4E371AB9
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameter.BasicSetGameParameter:PersistentLevel.TextRenderActor3.NewTextRenderComponent.Text
+#: /Game/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameter.BasicSetGameParameter:PersistentLevel.TextRenderActor3.NewTextRenderComponent.Text
+msgctxt ",E3515DC8496D48066E7E73AD4E371AB9"
+msgid "Reset\r\nRTPC\r\nValue"
+msgstr "Reset\r\nRTPC\r\nValue"
+
+#. Key:	E8880407438B59FA29F993A18CDE438F
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedExternalSources/AdvancedExternalSources.AdvancedExternalSources:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/3-Advanced/AdvancedExternalSources/AdvancedExternalSources.AdvancedExternalSources:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",E8880407438B59FA29F993A18CDE438F"
+msgid "Play\r\nEvent"
+msgstr "Play\r\nEvent"
+
+#. Key:	EC4E83EB4024C067B1FAACAE1B4DEC59
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedExternalSources/AdvancedExternalSources.AdvancedExternalSources:PersistentLevel.TextRenderActor2_4.NewTextRenderComponent.Text
+#: /Game/Gyms/3-Advanced/AdvancedExternalSources/AdvancedExternalSources.AdvancedExternalSources:PersistentLevel.TextRenderActor2_4.NewTextRenderComponent.Text
+msgctxt ",EC4E83EB4024C067B1FAACAE1B4DEC59"
+msgid "Change\r\nExternal Sources\r\nAudio"
+msgstr "Change\r\nExternal Sources\r\nAudio"
+
+#. Key:	EC57C6404A253C839D647EB648E41D8F
+#. SourceLocation:	/Game/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientStartAll/AdvancedAmbientStartAll.AdvancedAmbientStartAll:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientStartAll/AdvancedAmbientStartAll.AdvancedAmbientStartAll:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",EC57C6404A253C839D647EB648E41D8F"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	F0B155B144EB0C0E864E2781E1B2385B
+#. SourceLocation:	/Game/Gyms/2-Basic/BasicExecuteAction/BasicExecuteActionBreak/BasicExecuteActionBreak.BasicExecuteActionBreak:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+#: /Game/Gyms/2-Basic/BasicExecuteAction/BasicExecuteActionBreak/BasicExecuteActionBreak.BasicExecuteActionBreak:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
+msgctxt ",F0B155B144EB0C0E864E2781E1B2385B"
+msgid "Break the<br>Loop"
+msgstr "Break the<br>Loop"
+
+#. Key:	F17E3A814A31A2BAE1CA028CF9942DCB
+#. SourceLocation:	/Game/Gyms/1-Essential/5-EssentialSwitch/5-EssentialSwitch.5-EssentialSwitch:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/1-Essential/5-EssentialSwitch/5-EssentialSwitch.5-EssentialSwitch:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",F17E3A814A31A2BAE1CA028CF9942DCB"
+msgid "Change\r\nSwitch\r\nValue"
+msgstr "Change\r\nSwitch\r\nValue"
+
+#. Key:	F3F0499948D5B430A1FE04AA56DDAE64
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesUnloadWhilePlaying/StressSwitchesUnloadWhilePlaying.StressSwitchesUnloadWhilePlaying:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesUnloadWhilePlaying/StressSwitchesUnloadWhilePlaying.StressSwitchesUnloadWhilePlaying:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",F3F0499948D5B430A1FE04AA56DDAE64"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	F8A3FDFD483A5E14718517A81E6370FE
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Stream/StressOpenLevel_Stream_2.StressOpenLevel_Stream_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Stream/StressOpenLevel_Stream_2.StressOpenLevel_Stream_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",F8A3FDFD483A5E14718517A81E6370FE"
+msgid "LevelName"
+msgstr "LevelName"
+
+#. Key:	FAE7A9D44A663135F18DE48AE84E9892
+#. SourceLocation:	/Game/GymCreator/GymCreatorBlueprint.GymCreatorBlueprint_C:WidgetTree.TextBlock_235.Text
+#: /Game/GymCreator/GymCreatorBlueprint.GymCreatorBlueprint_C:WidgetTree.TextBlock_235.Text
+msgctxt ",FAE7A9D44A663135F18DE48AE84E9892"
+msgid "Create Gym"
+msgstr "Create Gym"
+
+#. Key:	FB0507854B5B98643020DEAC940A2B6E
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_ADPCM/StressOpenLevel_ADPCM.StressOpenLevel_ADPCM:PersistentLevel.FunctionalTest_1.TestName.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_ADPCM/StressOpenLevel_ADPCM.StressOpenLevel_ADPCM:PersistentLevel.FunctionalTest_1.TestName.Text
+msgctxt ",FB0507854B5B98643020DEAC940A2B6E"
+msgid "FunctionalTest"
+msgstr "FunctionalTest"
+
+#. Key:	FC509EEC4945FCD4656D1F8C99C9CAEF
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LocalizedVoice/StressOpenLevel_LocalizedVoice.StressOpenLevel_LocalizedVoice:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LocalizedVoice/StressOpenLevel_LocalizedVoice.StressOpenLevel_LocalizedVoice:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",FC509EEC4945FCD4656D1F8C99C9CAEF"
+msgid "LevelName"
+msgstr "LevelName"
+
+#. Key:	FFF0BD1340416599653D59A6041E83E9
+#. SourceLocation:	/Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Basic/StressOpenLevel_Basic_2.StressOpenLevel_Basic_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+#: /Game/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Basic/StressOpenLevel_Basic_2.StressOpenLevel_Basic_2:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
+msgctxt ",FFF0BD1340416599653D59A6041E83E9"
+msgid "LevelName"
+msgstr "LevelName"
+
+#. Key:	1-Essential
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,1-Essential"
+msgid "Essential Features"
+msgstr "Essential Features"
+
+#. Key:	1-EssentialPostEvent
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,1-EssentialPostEvent"
+msgid "Posting Events to Wwise"
+msgstr "Posting Events to Wwise"
+
+#. Key:	2-Basic
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,2-Basic"
+msgid "Basic Features"
+msgstr "Basic Features"
+
+#. Key:	2-EssentialAmbient
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,2-EssentialAmbient"
+msgid "Adding Ambient Events to Scenes"
+msgstr "Adding Ambient Events to Scenes"
+
+#. Key:	3-Advanced
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,3-Advanced"
+msgid "Advanced Features"
+msgstr "Advanced Features"
+
+#. Key:	5-EssentialSwitch
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,5-EssentialSwitch"
+msgid "Using Switch Containers to Modify Events"
+msgstr "Using Switch Containers to Modify Events"
+
+#. Key:	5-Spatial
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,5-Spatial"
+msgid "Spatial Audio"
+msgstr "Spatial Audio"
+
+#. Key:	9-Testing
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,9-Testing"
+msgid "Testing"
+msgstr "Testing"
+
+#. Key:	AdvancedAmbient
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,AdvancedAmbient"
+msgid "Ambient Operations"
+msgstr "Ambient Operations"
+
+#. Key:	AdvancedAmbientFollow
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,AdvancedAmbientFollow"
+msgid "Following an Actor"
+msgstr "Following an Actor"
+
+#. Key:	AdvancedAmbientStartAll
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,AdvancedAmbientStartAll"
+msgid "Starting All Level Ambients"
+msgstr "Starting All Level Ambients"
+
+#. Key:	AdvancedEvents
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,AdvancedEvents"
+msgid "Event Operations"
+msgstr "Event Operations"
+
+#. Key:	AdvancedEventsPostAndWait
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,AdvancedEventsPostAndWait"
+msgid "Posting Events and Waiting for Completion"
+msgstr "Posting Events and Waiting for Completion"
+
+#. Key:	AdvancedExternalSources
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,AdvancedExternalSources"
+msgid "Using External Sources"
+msgstr "Using External Sources"
+
+#. Key:	AdvancedLoadData
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,AdvancedLoadData"
+msgid "Manually Loading Event Media and SoundBanks"
+msgstr "Manually Loading Event Media and SoundBanks"
+
+#. Key:	AdvancedSequencer
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,AdvancedSequencer"
+msgid "Using the Sequencer to Animate Wwise Objects"
+msgstr "Using the Sequencer to Animate Wwise Objects"
+
+#. Key:	AdvancedSubtitle
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,AdvancedSubtitle"
+msgid "Using Event Callbacks to Retrieve Markers (Subtitles)"
+msgstr "Using Event Callbacks to Retrieve Markers (Subtitles)"
+
+#. Key:	BasicAnimNotify
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,BasicAnimNotify"
+msgid "Adding Sounds to Animations (AnimNotify)"
+msgstr "Adding Sounds to Animations (AnimNotify)"
+
+#. Key:	BasicExecuteAction
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,BasicExecuteAction"
+msgid "Executing Actions on Playing Events"
+msgstr "Executing Actions on Playing Events"
+
+#. Key:	BasicExecuteActionBreak
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,BasicExecuteActionBreak"
+msgid "Break"
+msgstr "Break"
+
+#. Key:	BasicExecuteActionPauseResume
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,BasicExecuteActionPauseResume"
+msgid "Pause and Resume"
+msgstr "Pause and Resume"
+
+#. Key:	BasicExecuteActionStop
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,BasicExecuteActionStop"
+msgid "Stop"
+msgstr "Stop"
+
+#. Key:	BasicFootsteps
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,BasicFootsteps"
+msgid "Playing Sounds on Collision (Footsteps)"
+msgstr "Playing Sounds on Collision (Footsteps)"
+
+#. Key:	BasicLocalizedVoice
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,BasicLocalizedVoice"
+msgid "Localizing Voices"
+msgstr "Localizing Voices"
+
+#. Key:	BasicMultiplePositions
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,BasicMultiplePositions"
+msgid "Assigning Multiple Positions to a Single AkComponent"
+msgstr "Assigning Multiple Positions to a Single AkComponent"
+
+#. Key:	BasicSetGameParameter
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,BasicSetGameParameter"
+msgid "Using Game Parameters to Modify Events (RTPC)"
+msgstr "Using Game Parameters to Modify Events (RTPC)"
+
+#. Key:	Gyms
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,Gyms"
+msgid "Gym List"
+msgstr "Gym List"
+
+#. Key:	Smoke
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,Smoke"
+msgid "Smoke Tests"
+msgstr "Smoke Tests"
+
+#. Key:	SmokeButtonScene
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SmokeButtonScene"
+msgid "Button Pressing Scene (Control Test)"
+msgstr "Button Pressing Scene (Control Test)"
+
+#. Key:	SmokeSpatial
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SmokeSpatial"
+msgid "Spatial Audio"
+msgstr "Spatial Audio"
+
+#. Key:	SmokeSpatialLargeWorld
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SmokeSpatialLargeWorld"
+msgid "Large World"
+msgstr "Large World"
+
+#. Key:	SmokeStreamNoPrefetch
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SmokeStreamNoPrefetch"
+msgid "Streaming Without Prefetch"
+msgstr "Streaming Without Prefetch"
+
+#. Key:	SmokeSubLevel
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SmokeSubLevel"
+msgid "Level Streaming"
+msgstr "Level Streaming"
+
+#. Key:	SmokeSubLevelNested
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SmokeSubLevelNested"
+msgid "Nested Sub-Levels"
+msgstr "Nested Sub-Levels"
+
+#. Key:	SmokeSubLevelSingle
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SmokeSubLevelSingle"
+msgid "Single Sub-Level"
+msgstr "Single Sub-Level"
+
+#. Key:	SmokeSwitches
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SmokeSwitches"
+msgid "Switch Container Loading Options"
+msgstr "Switch Container Loading Options"
+
+#. Key:	SmokeSwitchesSimple
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SmokeSwitchesSimple"
+msgid "Simple"
+msgstr "Simple"
+
+#. Key:	SpatialAudio
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SpatialAudio"
+msgid "Defining Rooms"
+msgstr "Defining Rooms"
+
+#. Key:	SpatialPortal
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SpatialPortal"
+msgid "Defining Portals"
+msgstr "Defining Portals"
+
+#. Key:	SpatialReverb
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,SpatialReverb"
+msgid "Setting Reverb Zones"
+msgstr "Setting Reverb Zones"
+
+#. Key:	Stress
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,Stress"
+msgid "Stress Tests"
+msgstr "Stress Tests"
+
+#. Key:	StressExtSrc
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressExtSrc"
+msgid "External Sources"
+msgstr "External Sources"
+
+#. Key:	StressExtSrcInMemory
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressExtSrcInMemory"
+msgid "In-Memory"
+msgstr "In-Memory"
+
+#. Key:	StressExtSrcStreaming
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressExtSrcStreaming"
+msgid "Streaming"
+msgstr "Streaming"
+
+#. Key:	StressMediaLoad
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressMediaLoad"
+msgid "Media Loading and Unloading"
+msgstr "Media Loading and Unloading"
+
+#. Key:	StressOpenLevel
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel"
+msgid "Playing Media at Level Start"
+msgstr "Playing Media at Level Start"
+
+#. Key:	StressOpenLevel_ADPCM
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel_ADPCM"
+msgid "ADPCM"
+msgstr "ADPCM"
+
+#. Key:	StressOpenLevel_Basic
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel_Basic"
+msgid "Basic"
+msgstr "Basic"
+
+#. Key:	StressOpenLevel_Codec
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel_Codec"
+msgid "Codecs"
+msgstr "Codecs"
+
+#. Key:	StressOpenLevel_ExternalSources
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel_ExternalSources"
+msgid "External sources"
+msgstr "External sources"
+
+#. Key:	StressOpenLevel_LargeMedia
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel_LargeMedia"
+msgid "Large media file"
+msgstr "Large media file"
+
+#. Key:	StressOpenLevel_LocalizedVoice
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel_LocalizedVoice"
+msgid "Localized voice"
+msgstr "Localized voice"
+
+#. Key:	StressOpenLevel_PCM
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel_PCM"
+msgid "PCM"
+msgstr "PCM"
+
+#. Key:	StressOpenLevel_Stream
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel_Stream"
+msgid "Streaming media"
+msgstr "Streaming media"
+
+#. Key:	StressOpenLevel_Vorbis
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel_Vorbis"
+msgid "Vorbis"
+msgstr "Vorbis"
+
+#. Key:	StressOpenLevel_WEMOPUS
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressOpenLevel_WEMOPUS"
+msgid "WEM Opus"
+msgstr "WEM Opus"
+
+#. Key:	StressPostEvent
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressPostEvent"
+msgid "Event Tests"
+msgstr "Event Tests"
+
+#. Key:	StressPostEventAndWaitTwoActors
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressPostEventAndWaitTwoActors"
+msgid "Waiting for Completion on Multiple Actors"
+msgstr "Waiting for Completion on Multiple Actors"
+
+#. Key:	StressStreamingReload
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressStreamingReload"
+msgid "Reloading Streamed Media"
+msgstr "Reloading Streamed Media"
+
+#. Key:	StressSwitches
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitches"
+msgid "Switch Container Loading Options"
+msgstr "Switch Container Loading Options"
+
+#. Key:	StressSwitchesAlreadyLoaded
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesAlreadyLoaded"
+msgid "Already Loaded"
+msgstr "Already Loaded"
+
+#. Key:	StressSwitchesExternalSources
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesExternalSources"
+msgid "External Sources"
+msgstr "External Sources"
+
+#. Key:	StressSwitchesLocalized
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesLocalized"
+msgid "Localized"
+msgstr "Localized"
+
+#. Key:	StressSwitchesMultiNested
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesMultiNested"
+msgid "Multiple Nested"
+msgstr "Multiple Nested"
+
+#. Key:	StressSwitchesMultipleSounds
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesMultipleSounds"
+msgid "Multiple Sounds"
+msgstr "Multiple Sounds"
+
+#. Key:	StressSwitchesSetEventRelated
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesSetEventRelated"
+msgid "Set Event of a Related Container"
+msgstr "Set Event of a Related Container"
+
+#. Key:	StressSwitchesSetEventUnrelated
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesSetEventUnrelated"
+msgid "Set Event of an Unrelated Container"
+msgstr "Set Event of an Unrelated Container"
+
+#. Key:	StressSwitchesSetEventWithAnother
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesSetEventWithAnother"
+msgid "Set Event with Another Container"
+msgstr "Set Event with Another Container"
+
+#. Key:	StressSwitchesStateWithSameName
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesStateWithSameName"
+msgid "State with the Same Name"
+msgstr "State with the Same Name"
+
+#. Key:	StressSwitchesUnloadEventAllLoaded
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesUnloadEventAllLoaded"
+msgid "Unload Event with All States Loaded"
+msgstr "Unload Event with All States Loaded"
+
+#. Key:	StressSwitchesUnloadWhilePlaying
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesUnloadWhilePlaying"
+msgid "Unload Event while Playing the Event"
+msgstr "Unload Event while Playing the Event"
+
+#. Key:	StressSwitchesValueWithoutSwitchContainer
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesValueWithoutSwitchContainer"
+msgid "Value Without the Switch Container"
+msgstr "Value Without the Switch Container"
+
+#. Key:	StressSwitchesWithMediaAlreadyLoaded
+#. SourceLocation:	/Game/MainMenu/GymNames.GymNames
+#: /Game/MainMenu/GymNames.GymNames
+msgctxt "GymNames,StressSwitchesWithMediaAlreadyLoaded"
+msgid "With Media of the Switch Container Already Loaded"
+msgstr "With Media of the Switch Container Already Loaded"
+

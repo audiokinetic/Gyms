@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58041c9f300df7a4d82eecedce1cdd91, type: 3}
+  m_Name: 1A842F68-4695-45CB-9468-554A3B6F6BBF
+  m_EditorClassIdentifier: 
+  objectName: Switch_1_1_1
+  id: 4022146769
+  guid: 1A842F68-4695-45CB-9468-554A3B6F6BBF
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 6a0d0eee89145f7498e4640cd1699bbc,
+    type: 2}

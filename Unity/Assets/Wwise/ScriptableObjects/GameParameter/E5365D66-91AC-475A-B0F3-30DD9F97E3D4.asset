@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b126a09420ca64a86f0b2fbea30e32, type: 3}
+  m_Name: E5365D66-91AC-475A-B0F3-30DD9F97E3D4
+  m_EditorClassIdentifier: 
+  objectName: RTPC
+  id: 2392629736
+  guid: E5365D66-91AC-475A-B0F3-30DD9F97E3D4

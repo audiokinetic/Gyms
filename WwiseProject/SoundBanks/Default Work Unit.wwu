@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8828E023-FB72-4C34-A0F2-BC976F4835C9}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{8828E023-FB72-4C34-A0F2-BC976F4835C9}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Default" ID="{F4583FFB-8DF3-40F8-B8BC-D5EF6BD1B307}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Fire_Shotgun" ID="{9869B0D3-5C16-402F-BA85-C9D2A39D15ED}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PostEvent_Stream" ID="{CC89A621-C0F0-403D-B69A-9ACA88E67CED}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Two" ID="{DCE953BE-211B-4077-B081-CCF9C78653F9}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Metal_04" ID="{3A580D05-512A-409E-8DB7-E14058BAC34B}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Subtitle_Voice" ID="{08BA1E73-9CEB-40EA-A6E0-25537D5EA135}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="One" ID="{D440C52D-F83A-416E-8328-143B827061C8}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Metal_05" ID="{7BC5C109-0D00-4181-8361-A0CE14D8EA1C}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="In_Memory_Event" ID="{F99B3D55-D7E6-419A-9999-6391C4ABD561}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Wood_04" ID="{3726F7BC-36E0-41C0-8872-E8FDF7656CFD}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PostEvent_ADPCM" ID="{CB841629-9EC3-425F-8476-D8459B146957}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Wood_01" ID="{B109AB36-B840-4292-8CAE-A2005C6976D5}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Metal_03" ID="{BC459F17-5935-4298-8FA4-E9E97046A242}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Grass_02" ID="{E8A0E3CB-B31F-42C3-885A-7CAEFCD0E894}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Metal_02" ID="{9BF20741-7AE6-432C-B607-7B43FBBE1F30}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Grass_03" ID="{313E6738-9603-4395-B6B1-029C9C48C327}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Three" ID="{B74C74BE-A650-43DA-A4E5-1E56EC300C9E}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ExternalSources" ID="{C6AF64CF-B166-4412-8913-CE294F29BF2C}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Post_Spatial_Audio_Event" ID="{25E4A84A-A2B1-4414-876C-5F631A075485}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Silence" ID="{B513C306-780F-44F2-B707-190111DFD737}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PostEvent_Event" ID="{62547E87-CA2A-44FC-8EC3-6BD3F36E32E7}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Post_RTPC_Event" ID="{AD41AA61-B264-453E-BC1F-5F952C58AA9E}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkSwitch" ID="{C3225902-07FC-457A-8117-2EACAF161A38}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PostEvent_Vorbis" ID="{1FDC150A-79F8-4590-96D1-DD0BA082533A}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambient_Event" ID="{C544A903-BCAE-45A1-BA83-8F936BB89801}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Wood_02" ID="{9F260B90-FA7B-45B8-BE0A-DEFD4C4FF7B8}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Room_Bus" ID="{E0FBAC03-61BD-46D1-804A-7CCC53DF056A}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Post_ExternalAudio_Event" ID="{58368532-769E-4775-8147-8C765BE28A8E}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Grass_01" ID="{FF261098-B357-47D7-BF5A-F1FD55D24315}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Looping_Event" ID="{0EF3A8F8-9489-48E0-8096-EEFA414FBED1}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LoopingSound" ID="{7A18C36D-06A4-48F0-AD9B-5308A8AFADC0}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Wood_03" ID="{7122AAFC-02EF-4B84-89BA-D2DFE3FB5544}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Streaming_Sound" ID="{21402C7F-235D-4C7B-8D08-076CD2025504}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PostEvent_Stream_Zero_Latency" ID="{261CA2C5-2A84-4CC1-A315-7E5B5A037CA0}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PostEvent_WemOpus" ID="{0E539272-79F1-4CE0-9781-C9729BEC7326}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Post_Subtitle_Event" ID="{EEBD4314-B526-4D3F-9D7E-33B72ADD1AAD}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Grass_04" ID="{BAE9CF26-A5F2-4D41-B792-34C44E1226D4}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Switch_Container" ID="{3EF145B3-B7EE-4E20-87B9-6641F75D885D}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Post_Switch_Event" ID="{68773D19-F2AF-4E30-B8DE-BAB84F946830}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footstep_Event" ID="{1FB9B2D0-6222-4E75-B8BE-8B7EF1668CBB}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Metal_01" ID="{3FC18464-6D47-4EAA-AB68-96603BEDBDBB}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Wood_05" ID="{48687E90-1A1B-4EAE-AE9B-FEA973C8381A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="In_Memory_Sound" ID="{9191C2A7-DC80-4FB3-AB89-4804FEB00CFE}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PostEvent_PCM" ID="{0A1F6812-357A-4FE6-8520-8B040A9B8BFC}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="LocalizedBank" ID="{F481A72A-B879-4287-923D-4EFD820F77FD}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Post_Localized_Voice" ID="{7C6B20F7-06E3-4572-9854-C9A3252EB7C0}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="LargeMediaSoundBank" ID="{DE7A9D3B-D02D-47FD-AF55-BE978D8C46EA}">
+					<ObjectInclusionList>
+						<ObjectRef Name="LargeMedia" ID="{76861171-0E54-4611-A6BD-EE644255BF3A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LargeMedia_Event" ID="{532111A0-B14D-4918-90A7-DB93C7DA9CD1}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

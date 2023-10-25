@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58041c9f300df7a4d82eecedce1cdd91, type: 3}
+  m_Name: 9A0DC949-8985-44A5-900D-568BBB7764A2
+  m_EditorClassIdentifier: 
+  objectName: LowSwitch
+  id: 4095098373
+  guid: 9A0DC949-8985-44A5-900D-568BBB7764A2
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 146043b1a7df31946aeea5e9b06fb34e,
+    type: 2}
