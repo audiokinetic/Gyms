@@ -17,9 +17,11 @@
 						<ObjectRef Name="PostEvent_ADPCM" ID="{CB841629-9EC3-425F-8476-D8459B146957}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wood_01" ID="{B109AB36-B840-4292-8CAE-A2005C6976D5}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Metal_03" ID="{BC459F17-5935-4298-8FA4-E9E97046A242}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DLCSoundStreaming" ID="{C401DE8F-9A5E-42A6-B7AC-D9B5928C8733}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grass_02" ID="{E8A0E3CB-B31F-42C3-885A-7CAEFCD0E894}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Metal_02" ID="{9BF20741-7AE6-432C-B607-7B43FBBE1F30}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DLCSound" ID="{D74F96F4-133D-4350-913F-F1FBBA7F2730}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grass_03" ID="{313E6738-9603-4395-B6B1-029C9C48C327}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Three" ID="{B74C74BE-A650-43DA-A4E5-1E56EC300C9E}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ExternalSources" ID="{C6AF64CF-B166-4412-8913-CE294F29BF2C}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
@@ -32,9 +34,11 @@
 						<ObjectRef Name="Ambient_Event" ID="{C544A903-BCAE-45A1-BA83-8F936BB89801}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wood_02" ID="{9F260B90-FA7B-45B8-BE0A-DEFD4C4FF7B8}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Room_Bus" ID="{E0FBAC03-61BD-46D1-804A-7CCC53DF056A}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StreamingDLCSound" ID="{7804FD9E-F2C5-4708-8865-FF1734C583A0}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Post_ExternalAudio_Event" ID="{58368532-769E-4775-8147-8C765BE28A8E}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grass_01" ID="{FF261098-B357-47D7-BF5A-F1FD55D24315}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Looping_Event" ID="{0EF3A8F8-9489-48E0-8096-EEFA414FBED1}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DLCSound" ID="{9AB6C66B-529A-48E8-B0FA-B7C6A1F4C67C}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="LoopingSound" ID="{7A18C36D-06A4-48F0-AD9B-5308A8AFADC0}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wood_03" ID="{7122AAFC-02EF-4B84-89BA-D2DFE3FB5544}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Streaming_Sound" ID="{21402C7F-235D-4C7B-8D08-076CD2025504}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>

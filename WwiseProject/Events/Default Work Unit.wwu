@@ -427,6 +427,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="DLCSound" ID="{201CD1EA-96DA-405C-B266-F928D3D34E99}" ShortID="26649870">
+					<ChildrenList>
+						<Event Name="Play_DLCSound" ID="{9AB6C66B-529A-48E8-B0FA-B7C6A1F4C67C}">
+							<ChildrenList>
+								<Action Name="" ID="{736EFA54-F508-4575-A2AB-B13B76E7591B}" ShortID="927261208">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DLCSound" ID="{D74F96F4-133D-4350-913F-F1FBBA7F2730}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_DLCSoundStreaming" ID="{C401DE8F-9A5E-42A6-B7AC-D9B5928C8733}">
+							<ChildrenList>
+								<Action Name="" ID="{71F9024A-F60F-45D3-A635-EDA113142A99}" ShortID="455331696">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="StreamingDLCSound" ID="{7804FD9E-F2C5-4708-8865-FF1734C583A0}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
