@@ -20,6 +20,8 @@ The Dropdown menu let you select which template scene to create. The options are
 - Toggle Button: A level with a toggle button.
 - OpenLevel: Two levels connected by an arch.
 
+For more information on the template type and how to use them, refer to [Seting up my first gym](GymFirstSetup.md).
+
 ![](../../../Documentation/Images/UnityFirstGymFolder.png)
 
 The same folders are created within the Tests folder, which contains a test script named **GymsNameTests** and a **Resources** folder that contains a prefab called **TestObject_GymName.prefab**.
