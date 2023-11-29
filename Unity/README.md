@@ -3,6 +3,10 @@
 
 The Wwise&trade; Gyms for Unity&trade; are [Wwise Gyms](../README.md), and contain multiple simple examples of the Wwise Unity Integration. The full list of Unity gyms is available in the [SupportedGyms.md](SupportedGyms.md) file. For descriptions of the available gyms, refer to the [Wwise Gyms list](../Documentation/Gyms/README.md) page.
 
+## Installation
+
+You must integrate the Unity project before you open it to ensure that all script references work.
+
 ## Project Structure
 
 It consists of two parts: one part is in the **Gyms** folder and the other is in the **Tests** folder. The **Gyms** folder contains the scenes for the examples. The **Tests** folder contains the tests. These two folders have the same subfolder hierarchy.
