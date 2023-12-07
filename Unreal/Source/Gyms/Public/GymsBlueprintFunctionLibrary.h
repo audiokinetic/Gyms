@@ -46,7 +46,7 @@ class GYMS_API UGymsBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 	using FWorldSoftObjectPtr = TSoftObjectPtr<UWorld>;
 
 	UFUNCTION(BlueprintCallable, Category="Gym Blueprint Helpers")
-	static TArray<TSoftObjectPtr<UWorld>> GetAllGyms();
+	static TArray<TSoftObjectPtr<UWorld>> GetAllGyms(const TArray<FString>& GymNames);
 
 	UFUNCTION(BlueprintCallable, Category = "Gym Blueprint Helpers")
 	static bool IsMobilePlatform();
@@ -71,5 +71,4 @@ class GYMS_API UGymsBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable, Category = "Gym Blueprint Helpers")
 	static FTopLevelAssetPath MakeTopLevelAssetPath(const FString& FullPathOrPackageName, const FString& AssetName);
-	
 };

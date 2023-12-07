@@ -30,6 +30,8 @@ public class SetPlayerController : UnityEngine.MonoBehaviour
 	public GameObject StandardPlayerController;
 	public GameObject MobilePlayerController;
 
+	protected static bool HasBeenSet = false;
+
 	public static bool IsMobile
 	{
 		get
@@ -53,9 +55,13 @@ public class SetPlayerController : UnityEngine.MonoBehaviour
 
 	private void OnEnable() 
 	{
-		s_Instance = this;
-		StandardPlayerController.SetActive(!IsMobile);
-		MobilePlayerController.SetActive(IsMobile);
+		if (!HasBeenSet)
+		{
+			HasBeenSet = true;
+			s_Instance = this;
+			StandardPlayerController.SetActive(!IsMobile);
+			MobilePlayerController.SetActive(IsMobile);
+		}
 	}
 
 	private static SetPlayerController s_Instance = null;

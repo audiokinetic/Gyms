@@ -32,7 +32,7 @@ the specific language governing permissions and limitations under the License.
 #include "Settings/ProjectPackagingSettings.h"
 #endif
 
-TArray<UGymsBlueprintFunctionLibrary::FWorldSoftObjectPtr> UGymsBlueprintFunctionLibrary::GetAllGyms()
+TArray<UGymsBlueprintFunctionLibrary::FWorldSoftObjectPtr> UGymsBlueprintFunctionLibrary::GetAllGyms(const TArray<FString>& GymNames)
 {
 	TArray<FString> FoundGymFiles;
 
@@ -52,8 +52,9 @@ TArray<UGymsBlueprintFunctionLibrary::FWorldSoftObjectPtr> UGymsBlueprintFunctio
 	}
 	FoundGymFiles.Sort();
 
-	// Return only the file name
+	const bool CheckGymNames = !GymNames.IsEmpty();
 	TArray<FWorldSoftObjectPtr> Gyms;
+	// Return only the file name
 	for (FString GymFile : FoundGymFiles)
 	{
 		TArray<FString> PathParts;
@@ -62,14 +63,18 @@ TArray<UGymsBlueprintFunctionLibrary::FWorldSoftObjectPtr> UGymsBlueprintFunctio
 		FString Filename = PathParts[PathParts.Num() - 1];
 		Filename.RemoveFromEnd(TEXT(".umap"));
 
-		FString LastFolder = PathParts[PathParts.Num() - 2];
-		if (Filename == LastFolder)
+		if(!CheckGymNames || GymNames.Contains(Filename))
 		{
-			GymFile.RemoveFromEnd(TEXT(".umap"));
-			GymFile = TEXT("/Game/") + GymFile;
-			FWorldSoftObjectPtr SoftPtr(GymFile);
-			Gyms.Add( SoftPtr );
+			FString LastFolder = PathParts[PathParts.Num() - 2];
+			if (Filename == LastFolder)
+			{
+				GymFile.RemoveFromEnd(TEXT(".umap"));
+				GymFile = TEXT("/Game/") + GymFile;
+				FWorldSoftObjectPtr SoftPtr(GymFile);
+				Gyms.Add( SoftPtr );
+			}
 		}
+
 	}
 	return Gyms;
 }
