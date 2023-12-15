@@ -26,7 +26,8 @@ using UnityEngine;
 
 public class ButtonProximityInteraction: MonoBehaviour
 {
-	
+	public float delayTime = 0.5f; // Set the time required between each valid interaction
+	private float timer = 0f;
 	private bool m_PlayerInTrigger = false;
 	public UnityEngine.Events.UnityEvent OnButtonPressed;
 
@@ -52,12 +53,14 @@ public class ButtonProximityInteraction: MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (m_PlayerInTrigger && Input.GetButtonDown("Interact"))
+		timer += Time.deltaTime;
+		if (m_PlayerInTrigger && (Input.GetButtonDown("Interact") || (Input.touchCount == 3) && timer >= delayTime))
 		{
 			if (OnButtonPressed != null)
 			{
 				OnButtonPressed.Invoke();
 			}
+			timer = 0f;
 		}
 	}
 }

@@ -27,13 +27,17 @@ using UnityEngine.SceneManagement;
 
 public class GlobalControls : MonoBehaviour
 {
+    public float delayTime = 0.5f; // Set the time required between each valid interaction
+    private float timer = 0f;
     // Update is called once per frame
     void Update()
     {
-        //Return to the Main Menu
-        if (Input.GetButtonDown("Return"))
+        timer += Time.deltaTime;
+        // Return to the Main Menu if the "Return" button is pressed or if four finger has been put on the screen
+        if (Input.GetButtonDown("Return") || ((Input.touchCount == 4) && timer >= delayTime))
         {
             SceneManager.LoadScene("MainMenu");
+            timer = 0f;
         }
     }
 }
