@@ -1,7 +1,7 @@
 # Creating Your First Gym
 
 ## Template Selection
-- Empty: An empty level. Not recommended template for first-time users.
+- Empty: An empty level. This template is not recommended for first-time users.
 - Simple Button: A level with a simple button. The button can be interacted with and triggers an action based on the setup. Refer to [Simple Button example](#simple-button-example) for a basic tutorial on how to set up a button to trigger an AkEvent.
 - Toggle Button: A level with a toggle button. The main difference between this and the simple button level is that the button toggles between on and off. Refer to [Toogle Button example](#toogle-button-example) for a basic tutorial on how to set up a button to Start and Pause an AkEvent.
 - Open Level: Two levels connected by an arch. Refer to [Open Level example](#open-level-example) for a basic tutorial on how to set up a sound to play upon switching level.
@@ -11,7 +11,7 @@
 #### Using the Gym Creator
 
 1. Find the Gym creator in the project browser.
-2. Open the scene
+2. Open the scene.
 3. Enter Play Mode.
 ![Gym Creator In Browser](../../../Documentation/Images/GymCreatorProjectBrowser.png)
 
@@ -83,7 +83,7 @@ This tutorial involves some basic scripting.
 ![MonoBehaviour](../../../Documentation/Images/ToggleButtonTutorial/MonoBehaviour.png)
 ![OnOffManager](../../../Documentation/Images/ToggleButtonTutorial/OnOffManager.png)
 
-6. The OnOffManager is a custom class that is part of the Gyms. It contains two function that need to be overriden: **OnAction** and **OffAction**. Add them to your script:
+6. The OnOffManager is a custom class that is part of the Gyms. It contains two functions that need to be overridden: **OnAction** and **OffAction**. Add them to your script:
 ![OnOffAction](../../../Documentation/Images/ToggleButtonTutorial/OnOffAction.png)
 
 7. A reference to the AkEvent is also required to play and stop it.

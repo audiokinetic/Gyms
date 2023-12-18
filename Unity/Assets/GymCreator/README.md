@@ -14,13 +14,13 @@ The specified path creates two folders called My and First:
 
 The folder created within the Gyms folder contains a scene with the same name as the folder. You can add scripts specific to your Gym here. 
 
-The Dropdown menu let you select which template scene to create. The options are:
+The Dropdown menu lets you select which template scene to create. The options are:
 - Empty: An empty level.
 - Simple Button: A level with a simple button.
 - Toggle Button: A level with a toggle button.
 - OpenLevel: Two levels connected by an arch.
 
-For more information on the template type and how to use them, refer to [Seting up my first gym](GymFirstSetup.md).
+For more information on the template types and how to use them, refer to [Setting up my first gym](GymFirstSetup.md).
 
 ![](../../../Documentation/Images/UnityFirstGymFolder.png)
 

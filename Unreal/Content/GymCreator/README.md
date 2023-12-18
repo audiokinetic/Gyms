@@ -17,7 +17,7 @@ The folder contains a level with the same name as the folder (in this example, "
 
 > Spaces are replaced by underscores (_) in the created folder names.
 
-The Dropdown menu let you select which template map to create. The options are:
+The Dropdown menu lets you select which template map to create. The options are:
 - Empty: An empty level.
 - Simple Button: A level with a simple button.
 - Toggle Button: A level with a toggle button.
