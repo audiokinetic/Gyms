@@ -11,6 +11,24 @@ You must integrate the Unity project before you open it to ensure that all scrip
 
 It consists of two parts: one part is in the **Gyms** folder and the other is in the **Tests** folder. The **Gyms** folder contains the scenes for the examples. The **Tests** folder contains the tests. These two folders have the same subfolder hierarchy.
 
+
+## Controls
+### Desktop
+- **Move**: WASD
+- **Camera Movement**: Mouse
+- **Interact**: E
+- **Main Menu**: Ctrl
+### Console (Xbox/Playstation)
+- **Move**: Left Joystick
+- **Camera Movement**: Right Joystick
+- **Interact**: A / Square
+- **Main Menu**: Start + A / Touch Pad
+### Mobile
+- **Move**: Left Virtual Joystick
+- **Camera Movement**: Right Virtual Joystick
+- **Interact**: Press with three fingers
+- **Main Menu**: Press with four fingers
+
 ## Create Gyms
 
 It comes with a Gym Creator tool, which simplifies Gym creation. For more information about the Gym Creator, refer to [Assets/GymCreator/README.md](Assets/GymCreator/README.md).
