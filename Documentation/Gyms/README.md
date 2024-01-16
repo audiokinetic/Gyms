@@ -67,6 +67,11 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `2-Basic/BasicMultiplePositions`_
 - Posting a single Wwise Event on multiple objects at once.
 
+### Posting Events at location
+
+- _Folder: `2-Basic/BasicPostLocation`_
+- Posting Events at given location.
+
 ### Using Game Parameters to Modify Events (RTPC)
 
 - _Folder: `2-Basic/BasicSetGameParameter`_

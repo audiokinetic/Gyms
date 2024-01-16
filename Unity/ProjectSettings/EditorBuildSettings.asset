@@ -6,26 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientFollow/AdvancedAmbientFollow.unity
-    guid: 0ef26902f6a899b4bb3367f0fe0dd0be
+    path: Assets/Common/Scenes/MainMenu.unity
+    guid: ee43eafd47b3e1e488eece95dbfa4539
   - enabled: 1
-    path: Assets/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientStartAll/AdvancedAmbientStartAll.unity
-    guid: 83512165366c3c5408849cbd9537b2ac
+    path: Assets/GymCreator/GymTemplate/GymTemplate.unity
+    guid: 8b092c76975c89d44ba0fcc54f64188d
   - enabled: 1
-    path: Assets/Gyms/3-Advanced/AdvancedEvents/AdvancedEventsPostAndWait/AdvancedEventsPostAndWait.unity
-    guid: 122dc91fe8f4d104a983182ded5a6a5a
+    path: Assets/Gyms/1-Essential/EssentialAmbient/EssentialAmbient.unity
+    guid: e194b5e922b6b0d46b34cea8edb5bbdd
   - enabled: 1
-    path: Assets/Gyms/3-Advanced/AdvancedExternalSources/AdvancedExternalSources.unity
-    guid: dfe289a59662b1641a540cf6a8416041
+    path: Assets/Gyms/1-Essential/EssentialPostEvent/EssentialPostEvent.unity
+    guid: 9018fb71fb675104bb152882324fef39
   - enabled: 1
-    path: Assets/Gyms/3-Advanced/AdvancedSequencer/AdvancedSequencer.unity
-    guid: ef623304aafade84db4fd2a0469e498e
-  - enabled: 1
-    path: Assets/Gyms/3-Advanced/AdvancedSubtitle/AdvancedSubtitle.unity
-    guid: 158e411adf0ff514dbed096c608f66dc
-  - enabled: 1
-    path: Assets/Gyms/3-Advanced/AdvancedTimeline/AdvancedTimeline.unity
-    guid: 19d1db14c33a0db44be8a92fed88e577
+    path: Assets/Gyms/1-Essential/EssentialSwitch/EssentialSwitch.unity
+    guid: fb161c2827174bd40bcaa92c29f89124
   - enabled: 1
     path: Assets/Gyms/2-Basic/BasicAnimNotify/BasicAnimNotify.unity
     guid: 11e94f2aebaff124882c873fd93b5938
@@ -48,8 +42,38 @@ EditorBuildSettings:
     path: Assets/Gyms/2-Basic/BasicMultiplePositions/BasicMultiplePositions.unity
     guid: ddc951e1bf187ba47b86a23528aa5eed
   - enabled: 1
+    path: Assets/Gyms/2-Basic/BasicPostLocation/BasicPostLocation.unity
+    guid: f2af3da8ef83f9d4a977f13d16b50015
+  - enabled: 1
     path: Assets/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameter.unity
     guid: 8e07fb4159d639a409309a8a2b6da878
+  - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientFollow/AdvancedAmbientFollow.unity
+    guid: 0ef26902f6a899b4bb3367f0fe0dd0be
+  - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientStartAll/AdvancedAmbientStartAll.unity
+    guid: 83512165366c3c5408849cbd9537b2ac
+  - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedEvents/AdvancedEventsPostAndWait/AdvancedEventsPostAndWait.unity
+    guid: 122dc91fe8f4d104a983182ded5a6a5a
+  - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedExternalSources/AdvancedExternalSources.unity
+    guid: dfe289a59662b1641a540cf6a8416041
+  - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedSequencer/AdvancedSequencer.unity
+    guid: ef623304aafade84db4fd2a0469e498e
+  - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedSubtitle/AdvancedSubtitle.unity
+    guid: 158e411adf0ff514dbed096c608f66dc
+  - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedTimeline/AdvancedTimeline.unity
+    guid: 19d1db14c33a0db44be8a92fed88e577
+  - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialAudio/SpatialAudio.unity
+    guid: 200aca35fc892b24bbced41540c88a91
+  - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialPortal/SpatialPortal.unity
+    guid: b5fa5c8c8a23fc741a8c5577beb1b95b
   - enabled: 1
     path: Assets/Gyms/8-Editor/EditorEnterPlayMode/EditorEnterPlayMode.unity
     guid: 830dec3939a06174f8345222e21edc3f
@@ -62,36 +86,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gyms/8-Editor/EditorSoundEngineInitialization/EditorSoundEngineInitialization.unity
     guid: cec7b61361eb52e43bf378ec7ce32689
-  - enabled: 1
-    path: Assets/Gyms/1-Essential/EssentialAmbient/EssentialAmbient.unity
-    guid: e194b5e922b6b0d46b34cea8edb5bbdd
-  - enabled: 1
-    path: Assets/Gyms/1-Essential/EssentialPostEvent/EssentialPostEvent.unity
-    guid: 9018fb71fb675104bb152882324fef39
-  - enabled: 1
-    path: Assets/Gyms/1-Essential/EssentialSwitch/EssentialSwitch.unity
-    guid: fb161c2827174bd40bcaa92c29f89124
-  - enabled: 1
-    path: Assets/GymCreator/GymCreator.unity
-    guid: f20ae2268537acd468a7f6ccf7af070a
-  - enabled: 1
-    path: Assets/GymCreator/GymTemplate/GymTemplate.unity
-    guid: 8b092c76975c89d44ba0fcc54f64188d
-  - enabled: 1
-    path: Assets/GymCreator/GymTemplate/GymTemplateButton.unity
-    guid: 7c3ee4fc089249c4f9ee8f7942c69af7
-  - enabled: 1
-    path: Assets/GymCreator/GymTemplate/GymTemplateOpenLevel.unity
-    guid: 28551ec670312b147abe2f6e5c965ba3
-  - enabled: 1
-    path: Assets/GymCreator/GymTemplate/GymTemplateOpenLevel_2.unity
-    guid: 07b053b1706bc9b4881f71fff1596c2b
-  - enabled: 1
-    path: Assets/GymCreator/GymTemplate/GymTemplateToggle.unity
-    guid: 1aceb8fc267085c4c994d51a6ded26ba
-  - enabled: 1
-    path: Assets/Common/Scenes/MainMenu.unity
-    guid: ee43eafd47b3e1e488eece95dbfa4539
   - enabled: 1
     path: Assets/Gyms/9-Testing/Smoke/SmokeButtonScene/SmokeButtonScene.unity
     guid: a7a29698222b0174eae6e52738913d8a
@@ -116,12 +110,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gyms/9-Testing/Smoke/SmokeSwitches/SmokeSwitchesSimple/SmokeSwitchesSimple.unity
     guid: d8d0070ee9d353843b4b027b19a3f1a0
-  - enabled: 1
-    path: Assets/Gyms/5-Spatial/SpatialAudio/SpatialAudio.unity
-    guid: 200aca35fc892b24bbced41540c88a91
-  - enabled: 1
-    path: Assets/Gyms/5-Spatial/SpatialPortal/SpatialPortal.unity
-    guid: b5fa5c8c8a23fc741a8c5577beb1b95b
   - enabled: 1
     path: Assets/Gyms/9-Testing/Stress/StressExtSrc/StressExtSrcInMemory/StressExtSrcInMemory.unity
     guid: e44ebcb6dd3d2c04d9eb1e2e99566dd3
@@ -156,17 +144,35 @@ EditorBuildSettings:
     path: Assets/Gyms/9-Testing/Stress/StressMediaLoad/StressMediaLoad_Switch_2.unity
     guid: 09d1cfbce37692f46b97a6193d0b04ae
   - enabled: 1
+    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Basic/StressOpenLevel_Basic.unity
+    guid: 7e6714e9631a3d649ab4bd8569e35a39
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Basic/StressOpenLevel_Basic_2.unity
+    guid: 322684eea16ca554a8d3aac9a8f70586
+  - enabled: 1
     path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_ADPCM/StressOpenLevel_ADPCM.unity
     guid: 8cbf95b67896c934b82e450a70eda555
   - enabled: 1
     path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_ADPCM/StressOpenLevel_ADPCM_2.unity
     guid: 2769579c585daf244abb6f82e811cc75
   - enabled: 1
-    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Basic/StressOpenLevel_Basic.unity
-    guid: 7e6714e9631a3d649ab4bd8569e35a39
+    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_PCM/StressOpenLevel_PCM.unity
+    guid: c6c8362e47060d14e9ec28a4352ad517
   - enabled: 1
-    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Basic/StressOpenLevel_Basic_2.unity
-    guid: 322684eea16ca554a8d3aac9a8f70586
+    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_PCM/StressOpenLevel_PCM_2.unity
+    guid: 611e4cc8adfba9e4bb9da1bdccec9c15
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_Vorbis/StressOpenLevel_Vorbis.unity
+    guid: bc80a7ce9b76d7d41a433c04d1bd844e
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_Vorbis/StressOpenLevel_Vorbis_2.unity
+    guid: 592f288492db47946baa9e406de2e24a
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_WEMOPUS/StressOpenLevel_WEMOPUS.unity
+    guid: 60a398fc663eada418c83e227d63cb69
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_WEMOPUS/StressOpenLevel_WEMOPUS_2.unity
+    guid: 7f2fd9f6fd4c5524ca5640fe4ffb60ed
   - enabled: 1
     path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_ExternalSources/StressOpenLevel_ExternalSources.unity
     guid: 88f24f0b99c74354e908f02b7d54a722
@@ -186,29 +192,11 @@ EditorBuildSettings:
     path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_LocalizedVoice/StressOpenLevel_LocalizedVoice_2.unity
     guid: 72594c7e9df6a614298005da14f65d09
   - enabled: 1
-    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_PCM/StressOpenLevel_PCM.unity
-    guid: c6c8362e47060d14e9ec28a4352ad517
-  - enabled: 1
-    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_PCM/StressOpenLevel_PCM_2.unity
-    guid: 611e4cc8adfba9e4bb9da1bdccec9c15
-  - enabled: 1
     path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Stream/StressOpenLevel_Stream.unity
     guid: 8232d11626027944f8f75c773b1a8dc2
   - enabled: 1
     path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Stream/StressOpenLevel_Stream_2.unity
     guid: 2b01f9d7b15a6b443aa072115c9867ef
-  - enabled: 1
-    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_Vorbis/StressOpenLevel_Vorbis.unity
-    guid: bc80a7ce9b76d7d41a433c04d1bd844e
-  - enabled: 1
-    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_Vorbis/StressOpenLevel_Vorbis_2.unity
-    guid: 592f288492db47946baa9e406de2e24a
-  - enabled: 1
-    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_WEMOPUS/StressOpenLevel_WEMOPUS.unity
-    guid: 60a398fc663eada418c83e227d63cb69
-  - enabled: 1
-    path: Assets/Gyms/9-Testing/Stress/StressOpenLevel/StressOpenLevel_Codec/StressOpenLevel_WEMOPUS/StressOpenLevel_WEMOPUS_2.unity
-    guid: 7f2fd9f6fd4c5524ca5640fe4ffb60ed
   - enabled: 1
     path: Assets/Gyms/9-Testing/Stress/StressPostEvent/StressPostEventAndWaitTwoActors/StressPostEventAndWaitTwoActors.unity
     guid: 1afb5b8c5876a48448aa85f3d873dec9

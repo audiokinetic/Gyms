@@ -330,6 +330,10 @@ MonoBehaviour:
     m_Localized: Wwise Sound Engine Initialization
     m_Metadata:
       m_Items: []
+  - m_Id: 45708827947827200
+    m_Localized: Posting Events at given location
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

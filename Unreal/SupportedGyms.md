@@ -11,6 +11,7 @@
     - BasicFootsteps
     - BasicLocalizedVoice
     - BasicMultiplePositions
+    - BasicPostLocation
     - BasicSetGameParameter
 - 3-Advanced
     - AdvancedAmbient

@@ -327,6 +327,10 @@ MonoBehaviour:
     m_Key: EditorSoundEngineInitialization
     m_Metadata:
       m_Items: []
+  - m_Id: 45708827947827200
+    m_Key: BasicPostLocation
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
