@@ -57,6 +57,11 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `2-Basic/BasicFootsteps`_
 - Connecting a Wwise Event to a trigger, such as a collision, on a bone anchor.
 
+### Playing Sounds on Collision based on the Surface (Footsteps)
+
+- _Folder: `2-Basic/BasicFootstepsDynamic`_
+- Connecting a Wwise Event to a trigger, such as a collision with a Raycast on a bone anchor and getting material to set a Switch value.
+
 ### Localizing Voices
 
 - _Folder: `2-Basic/BasicLocalizedVoice`_

@@ -9,6 +9,7 @@
         - BasicExecuteActionPauseResume
         - BasicExecuteActionStop
     - BasicFootsteps
+    - BasicFootstepsDynamic
     - BasicLocalizedVoice
     - BasicMultiplePositions
     - BasicPostLocation

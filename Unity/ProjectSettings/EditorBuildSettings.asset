@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Gyms/2-Basic/BasicFootsteps/BasicFootsteps.unity
     guid: a8d95b99c0b108c4aa2dc3204deb0e50
   - enabled: 1
+    path: Assets/Gyms/2-Basic/BasicFootstepsDynamic/BasicFootstepsDynamic.unity
+    guid: cc5af7769e24e9b4ca086b7bc91d86a4
+  - enabled: 1
     path: Assets/Gyms/2-Basic/BasicLocalizedVoice/BasicLocalizedVoice.unity
     guid: b0ea827b63cf3b744a91a28b1f4a6f45
   - enabled: 1

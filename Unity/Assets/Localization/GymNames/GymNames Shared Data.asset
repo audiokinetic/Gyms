@@ -335,6 +335,10 @@ MonoBehaviour:
     m_Key: BasicPostLocation
     m_Metadata:
       m_Items: []
+  - m_Id: 47946377626255360
+    m_Key: BasicFootstepsDynamic
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
