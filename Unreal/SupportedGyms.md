@@ -56,6 +56,8 @@
             - StressOpenLevel_Stream
         - StressPostEvent
             - StressPostEventAndWaitTwoActors
+            - StressPostEventOnDestroy
+        - StressPostEventOnDestroy
         - StressStreamingReload
         - StressSwitches
             - StressSwitchesAlreadyLoaded
@@ -71,3 +73,4 @@
             - StressSwitchesUnloadWhilePlaying
             - StressSwitchesValueWithoutSwitchContainer
             - StressSwitchesWithMediaAlreadyLoaded
+- PostEvent

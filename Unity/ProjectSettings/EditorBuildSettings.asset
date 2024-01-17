@@ -201,6 +201,9 @@ EditorBuildSettings:
     path: Assets/Gyms/9-Testing/Stress/StressPostEvent/StressPostEventAndWaitTwoActors/StressPostEventAndWaitTwoActors.unity
     guid: 1afb5b8c5876a48448aa85f3d873dec9
   - enabled: 1
+    path: Assets/Gyms/9-Testing/Stress/StressPostEvent/StressPostEventOnDestroy/StressPostEventOnDestroy.unity
+    guid: aa52cf3287170d64aa34c4f2d8581282
+  - enabled: 1
     path: Assets/Gyms/9-Testing/Stress/StressStreamingReload/StressStreamingReload.unity
     guid: 70276f23d80199e4dae7b9f6e0a675f5
   - enabled: 1

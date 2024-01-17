@@ -58,6 +58,7 @@
             - StressOpenLevel_Stream
         - StressPostEvent
             - StressPostEventAndWaitTwoActors
+            - StressPostEventOnDestroy
         - StressStreamingReload
         - StressSwitches
             - StressSwitchesAlreadyLoaded

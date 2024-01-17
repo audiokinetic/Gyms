@@ -327,7 +327,11 @@ MonoBehaviour:
     m_Key: EditorSoundEngineInitialization
     m_Metadata:
       m_Items: []
-  - m_Id: 45708827947827200
+  - m_Id: 45762063942160384
+    m_Key: StressPostEventOnDestroy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46040316829372416
     m_Key: BasicPostLocation
     m_Metadata:
       m_Items: []
