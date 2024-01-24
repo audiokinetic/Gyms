@@ -51,6 +51,10 @@
 		{
 			"Name": "ModularGameplayDemo",
 			"Enabled": true
+		},
+		{
+			"Name": "WwiseNiagara",
+			"Enabled": true
 		}
 	]
 }

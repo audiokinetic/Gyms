@@ -876,6 +876,45 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{1D5F1EE9-EC48-4347-AF8D-C0EA909FF273}" ShortID="46968935">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="NiagaraParticleAge" ID="{E5BD6B1B-7C75-429D-80F5-599F1B2768BA}" WorkUnitID="{7BEB4404-A22C-4DF5-A13D-5056FD2D0256}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{5587A5EB-F5A1-4040-836E-4B68E1093D74}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-40</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="Shotgun_Fire_01" ID="{D063BDC1-E766-44C5-886B-68BB8B20B0D5}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -2521,6 +2560,246 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Sine" ID="{599E28DE-45B1-4212-9519-C397AFC23D24}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Niagara" ID="{962E0B49-BD94-40B0-8C4E-02F81405EFD7}" ShortID="152496375">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Niagara_Metal_Impact" ID="{BF514D11-B40E-4BB9-8094-1B4C671F7D47}" ShortID="444100202">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Metal_01" ID="{6E174CBE-EE99-42F6-8D35-3C50E32C1A68}" ShortID="143317924">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardmetal_01" ID="{2D9B48B8-DD57-4AD2-83B2-E9840BAB02AB}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardmetal_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="807927048"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardmetal_01" ID="{2D9B48B8-DD57-4AD2-83B2-E9840BAB02AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Metal_02" ID="{C2797AD1-D1A7-49BC-A8D2-C2B645E54198}" ShortID="295963575">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardmetal_02" ID="{CFED2649-3D3E-4E78-B127-B05635A49C79}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardmetal_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="432936573"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardmetal_02" ID="{CFED2649-3D3E-4E78-B127-B05635A49C79}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Metal_03" ID="{77A722D4-4553-4948-B404-9F5709841D84}" ShortID="34525654">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardmetal_03" ID="{1D0AAEBE-6EBC-4F50-AFE4-FEED10D93178}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardmetal_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="393478778"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardmetal_03" ID="{1D0AAEBE-6EBC-4F50-AFE4-FEED10D93178}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Metal_04" ID="{31E077D1-6F10-4FAA-AB64-6B342D92DC5E}" ShortID="426136375">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardmetal_04" ID="{CA3D7AC3-1A2F-435E-9D2C-96253B45BA97}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardmetal_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="180050282"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardmetal_04" ID="{CA3D7AC3-1A2F-435E-9D2C-96253B45BA97}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Metal_05" ID="{D40C66D0-861E-4682-8F1C-BCB1866939C8}" ShortID="810172904">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardmetal_05" ID="{F2A4AEB0-46B5-480D-9CF8-012D17FD8331}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardmetal_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="87858552"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardmetal_05" ID="{F2A4AEB0-46B5-480D-9CF8-012D17FD8331}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Niagara_Synth" ID="{5706871B-9FCF-42CC-96C0-7293CD7B6059}" ShortID="756046159">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Synth One" ID="{0C44EF6C-83CF-4C67-9A07-A8F8B0F2DAEB}" ShortID="808431895" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="Osc1Level" Type="Real32" Value="-24"/>
+										<Property Name="Osc2Level" Type="Real32" Value="-12"/>
+										<Property Name="OutputLevel" Type="Real32" Value="-24"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{7A617052-7E61-4F98-A115-C254ABA11891}" ShortID="389483861">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{82824BF0-AA69-4F96-A407-BCF8CE3235AC}" ShortID="986911378">
+																		<PropertyList>
+																			<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																		</PropertyList>
+																	</ModulatorEnvelope>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{426C9E64-1E6D-41D3-8E20-38EDB2FB6B5C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{35DD00AB-5152-46E6-A50A-CDFA99598FE5}" ShortID="898799517">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BaseFrequency"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="NiagaraParticleAge" ID="{E5BD6B1B-7C75-429D-80F5-599F1B2768BA}" WorkUnitID="{7BEB4404-A22C-4DF5-A13D-5056FD2D0256}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{4C6BE87D-B723-4E9F-A1AB-D8D70BED95CD}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="5"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>1200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>60</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Synth One" ID="{0C44EF6C-83CF-4C67-9A07-A8F8B0F2DAEB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

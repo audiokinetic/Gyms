@@ -28,6 +28,10 @@
     - SpatialAudio
     - SpatialPortal
     - SpatialReverb
+- 7-Niagara
+    - NiagaraFireAndForget
+    - NiagaraGPUEmitter
+    - NiagaraPersistent
 - 9-Testing
     - Smoke
         - SmokeButtonScene

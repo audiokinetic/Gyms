@@ -23,6 +23,7 @@
 								<Property Name="Max" Type="Real64" Value="4"/>
 							</PropertyList>
 						</GameParameter>
+						<WorkUnit Name="Niagara" ID="{7BEB4404-A22C-4DF5-A13D-5056FD2D0256}" PersistMode="Reference"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

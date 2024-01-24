@@ -453,6 +453,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Niagara" ID="{E6407EC0-68FD-4F5A-88F8-A0112127C5FC}" ShortID="986385456">
+					<ChildrenList>
+						<Event Name="Play_Niagara_Metal_Impact" ID="{F23F2D45-D7F9-49E7-99DB-1681E4B538BD}">
+							<ChildrenList>
+								<Action Name="" ID="{2DBF2774-C1F2-455B-AB76-4002335217CA}" ShortID="85076420">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Niagara_Metal_Impact" ID="{BF514D11-B40E-4BB9-8094-1B4C671F7D47}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Niagara_Synth" ID="{4EC8C371-9988-4B89-8470-7ABB7DE6EB56}">
+							<ChildrenList>
+								<Action Name="" ID="{008E5ECC-5CAC-4C6C-978E-DA521BCE03AC}" ShortID="95139371">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Niagara_Synth" ID="{5706871B-9FCF-42CC-96C0-7293CD7B6059}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

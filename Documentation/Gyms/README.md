@@ -157,6 +157,24 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `5-Spatial/SpatialReverb`_
 - Example showing how to set up a reverberation zone.
 
+## Niagara | _Unreal_
+- _Folder: `7-Niagara`_
+- Using the Niagara Particle system with the Wwise Niagara plugin.
+
+
+### Niagara GPU Emitter
+- _Folder: `7-Niagara/NiagaraGPUEmitter`_
+- Example showing how to export particle data to Blueprints . This example runs **without** using the Wwise Niagara plugin.
+
+### Niagara Fire and Forget
+- _Folder: `7-Niagara/NiagaraFireAndForget`_
+- Example of an posting a fire-and-forget (one-shot) Wwise Event from a Niagara emitter.
+
+### Niagara Persistent
+- _Folder: `7-Niagara/NiagaraPersistent`_
+- Example of an posting a persistent Wwise Event from a Niagara emitter, and modifying Game Parameters
+  associated with it.
+
 ## Testing
 
 - _Folder: `9-Testing`_
