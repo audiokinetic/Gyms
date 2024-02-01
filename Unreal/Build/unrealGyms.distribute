@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<distribute rootdir="../../"
+<distribute rootdir="../../../"
 	xmlns:sevenzip="attrib://7z"
 	xmlns:tar="attrib://tar">
 	
@@ -26,14 +26,6 @@
 		
 		<task name="ArtifactMacBinaries" tar:compression="xz">
 			<includegroup Platform="Mac">ArtifactBinaries</includegroup>
-		</task>
-		
-		<task name="x64_vc160_Release" tar:compression="xz">
-			<includegroup>ImportPackage</includegroup>
-		</task>
-
-		<task name="Wwise.app">
-			<includegroup>ImportPackage</includegroup>
 		</task>
 		
 		<task name="GetIntegration" tar:archive-name="Unreal.${UE_VERSION}" tar:compression="xz">

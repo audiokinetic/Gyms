@@ -28,10 +28,10 @@ from distutils.dir_util import copy_tree, remove_tree
 # Base class for building the Wwise Audio Lab
 class PlatformBuilder:
 	def __init__(self, platformName, configuration):
-		self.editorPlatformName = platformName;
+		self.editorPlatformName = platformName
 		self.configuration = configuration
-		self.projectFile = os.path.join(os.getcwd(), "Unreal", "Gyms.uproject")
-		self.wwiseProjectFile = os.path.join(os.getcwd(), "WwiseProject", "Gyms.wproj")
+		self.projectFile = os.path.join(os.getcwd(), "Gyms", "Unreal", "Gyms.uproject")
+		self.wwiseProjectFile = os.path.join(os.getcwd(), "Gyms", "WwiseProject", "Gyms.wproj")
 		self.packagePath = os.path.join(os.getcwd(), "Packaged_Gyms")
 		self.unrealVersion = os.environ["UE_VERSION"]
 
@@ -88,7 +88,7 @@ class WindowsBuilder(PlatformBuilder):
 		else:
 			self.unrealBuildToolPath = self.unrealInstallPath + "\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe"        
 		self.compiler = "C:\VS2019\MSBuild\Current\Bin\MSBuild.exe"
-		self.codeSolutionPath = os.path.join(os.getcwd(), "Unreal", "Gyms.sln")
+		self.codeSolutionPath = os.path.join(os.getcwd(), "Gyms", "Unreal", "Gyms.sln")
 		self.unrealAutomationToolPath = os.path.join(self.unrealInstallPath, "Engine", "Build", "BatchFiles", "RunUAT.bat")
 		if self.unrealVersion >= '5.0':
 			self.unrealEditorPath = os.path.join(self.unrealInstallPath, "Engine", "Binaries", "Win64", "UnrealEditor-cmd.exe")
@@ -213,8 +213,8 @@ def main(argv=None):
 			skipSDKCopy = True
 
 	if not skipSDKCopy:
-		fromDirectory = os.path.join(os.getcwd(), "Unreal", "Plugins", "Wwise", "ThirdParty", "SDK")
-		toDirectory = os.path.join(os.getcwd(), "Unreal", "Plugins", "Wwise", "ThirdParty")
+		fromDirectory = os.path.join(os.getcwd(), "Gyms", "Unreal", "Plugins", "Wwise", "ThirdParty", "SDK")
+		toDirectory = os.path.join(os.getcwd(), "Gyms", "Unreal", "Plugins", "Wwise", "ThirdParty")
 		copy_tree(fromDirectory, toDirectory)
 		remove_tree(fromDirectory)
 	

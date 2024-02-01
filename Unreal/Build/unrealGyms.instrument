@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<instrument rootdir="../../"
+<instrument rootdir="../../../"
 	xmlns:ak="file://instrument/tasks/ak"
 	xmlns:wwise="file://instrument/tasks/wwise"
 	xmlns:scripts="file://instrument/tasks/scripts">
 	
 	<!-- Distribute files -->
-	<property name="GYMS_DISTRIBUTE_FILE" value="Unreal/Build/UnrealGyms.distribute" />
+	<property name="GYMS_DISTRIBUTE_FILE" value="Gyms/Unreal/Build/UnrealGyms.distribute" />
 	
 	<target name="export_all_banks">
 		<distribute file="${GYMS_DISTRIBUTE_FILE}" 
@@ -76,46 +76,37 @@
 			<!-- Get the integration -->
 			<distribute file="${GYMS_DISTRIBUTE_FILE}" 
 				remotepath="/mnt/DC1/Files/Builds/UnrealEngine4Integration/${WWISE_VERSION}/${WWISE_BUILD_NUMBER}.${UNREAL_BUILD_NUMBER}/Release" 
-				override-rootpath="${_root_directory_}/Unreal/Plugins/"
+				override-rootpath="${_root_directory_}/Gyms/Unreal/Plugins/"
 				tasks="GetIntegration" 
 				tool="tar"
 				mode="import" 
 				failonerror="true" />
 				
-			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="${_root_directory_}/Unreal/Plugins/Wwise/ThirdParty" platforms="Mac,Main" />	
-			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="${_root_directory_}/Unreal/Plugins/Wwise/ThirdParty" platforms="Mac" plugin-names="Auro,ConvolutionReverb,Reflect,MasteringSuite,SoundSeedGrain" />	
+			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/Wwise/ThirdParty" platforms="Mac,Main" />	
+			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/Wwise/ThirdParty" platforms="Mac" plugin-names="Auro,ConvolutionReverb,Reflect,MasteringSuite,SoundSeedGrain" />	
 		</if>
 		
 		<if condition="${platform.is_windows()}">
 			<!-- Get the integration -->
 			<distribute file="${GYMS_DISTRIBUTE_FILE}" 
 				remotepath="${BUILDS_LOCATION}\UnrealEngine4Integration\${WWISE_VERSION}\${WWISE_BUILD_NUMBER}.${UNREAL_BUILD_NUMBER}\Release" 
-				override-rootpath="${_root_directory_}/Unreal/Plugins/"
+				override-rootpath="${_root_directory_}/Gyms/Unreal/Plugins/"
 				tasks="GetIntegration" 
 				tool="tar"
 				mode="import" 
 				failonerror="true" />
 				
-			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="${_root_directory_}/Unreal/Plugins/Wwise/ThirdParty" platforms="Windows_vc150,Windows_vc160,Main"/>	
-			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="${_root_directory_}/Unreal/Plugins/Wwise/ThirdParty" platforms="Windows_vc150,Windows_vc160" plugin-names="Auro,ConvolutionReverb,Reflect,MasteringSuite,SoundSeedGrain"/>	
-			
-			<!-- Get Authoring for SoundBank generation -->
-			<distribute file="${GYMS_DISTRIBUTE_FILE}" 
-				remotepath="${BUILDS_LOCATION}\Branches\${WWISE_BRANCH}\Wwise\${WWISE_BUILD_NUMBER}\Artifacts" 
-				override-rootpath="${_root_directory_}/Wwise"
-				tasks="x64_vc160_Release" 
-				tool="tar"
-				mode="import" 
-				failonerror="true" />
+			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/Wwise/ThirdParty" platforms="Windows_vc150,Windows_vc160,Windows_vc170,Main"/>	
+			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/Wwise/ThirdParty" platforms="Windows_vc150,Windows_vc160,Windows_vc170" plugin-names="Auro,ConvolutionReverb,Reflect,MasteringSuite,SoundSeedGrain"/>	
 		</if>
 	</target>
 
 	<target name="build_game">
-		<scripts:python script-path="${_ROOT_DIRECTORY_}/Unreal/Build/BuildGyms.py" />
+		<scripts:python script-path="${_ROOT_DIRECTORY_}/Gyms/Unreal/Build/BuildGyms.py" />
 	</target>
 	
 	<target name="generate_soundbanks">
-		<scripts:python script-path="${_ROOT_DIRECTORY_}/Unreal/Build/BuildGyms.py" >
+		<scripts:python script-path="${_ROOT_DIRECTORY_}/Gyms/Unreal/Build/BuildGyms.py" >
 			<arg value="GenerateSoundBanks"/>
 		</scripts:python>
 	</target>
