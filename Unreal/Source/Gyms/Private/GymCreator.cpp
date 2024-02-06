@@ -141,7 +141,7 @@ FString UGymCreator::CreateGym(FString CommonPath, FString Path, int TemplateInd
 
     TArray<UPackage*> PackagesToSave;
     ObjectTools::FPackageGroupName NewGymName;
-    NewGymName.PackageName = "/Game/Gyms/" / Name / Name; 
+    NewGymName.PackageName = "/Game/" / Path / Name; 
     NewGymName.ObjectName = Name;
     TSet<UPackage*> PackagesNotDuplicated;
     UObject* NewMap = ObjectTools::DuplicateSingleObject(TemplateMapObject, NewGymName, PackagesNotDuplicated);
