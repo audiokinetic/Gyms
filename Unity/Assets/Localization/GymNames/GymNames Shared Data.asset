@@ -107,10 +107,6 @@ MonoBehaviour:
     m_Key: SpatialPortal
     m_Metadata:
       m_Items: []
-  - m_Id: 14130064265216
-    m_Key: SpatialReverb
-    m_Metadata:
-      m_Items: []
   - m_Id: 14196493651968
     m_Key: Smoke
     m_Metadata:

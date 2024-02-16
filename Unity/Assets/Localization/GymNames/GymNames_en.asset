@@ -110,10 +110,6 @@ MonoBehaviour:
     m_Localized: Defining Portals
     m_Metadata:
       m_Items: []
-  - m_Id: 14130064265216
-    m_Localized: Setting Reverb Zones
-    m_Metadata:
-      m_Items: []
   - m_Id: 14196493651968
     m_Localized: Smoke Tests
     m_Metadata:

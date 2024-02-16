@@ -152,10 +152,10 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `5-Spatial/SpatialPortal`_
 - Example showing how to define a portal between two spatial environments.
 
-### Setting Reverb Zones | _Unreal_
+### Setting Reverb Volume | _Unreal_
 
 - _Folder: `5-Spatial/SpatialReverb`_
-- Example showing how to set up a reverberation zone.
+- Example showing how to set up a reverberation volume.
 
 ## Niagara | _Unreal_
 - _Folder: `7-Niagara`_
