@@ -39,13 +39,13 @@ namespace Tests
 
             LoadBank(bank);
 
-            GameObject movingCube = GameObject.Find("MovingCube");
-            CustomAnimation movement = movingCube.GetComponent<CustomAnimation>();
-            AdvancedSequencer_RTPCSequence rtpc = movingCube.GetComponent<AdvancedSequencer_RTPCSequence>();
+            GameObject button = GameObject.Find("MovingCube");
+            AdvancedSequencer_Interact movement = button.GetComponent<AdvancedSequencer_Interact>();
+            AdvancedSequencer_RTPCSequence rtpc = button.GetComponent<AdvancedSequencer_RTPCSequence>();
             movement.Interact();
             yield return new WaitForSeconds(1f);
             float expectedValue = 0.6f;
-            float actualValue = rtpc.RtpcSequencer.GetValue(movingCube.gameObject);
+            float actualValue = rtpc.RtpcSequencer.GetValue(button.gameObject);
             LogOutput("RTPC value changes in Sequencer: ", AreApproximatelyEqual(actualValue, expectedValue, 0.1f));
             movement.Interact();
 
