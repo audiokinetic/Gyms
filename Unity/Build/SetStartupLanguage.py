@@ -25,16 +25,18 @@ the specific language governing permissions and limitations under the License.
 import os
 import sys
 
-def change_language(platform):
+def change_language():
     path = os.path.join(os.path.dirname(__file__), '..')
-    path = os.path.join(path, "Assets", "Wwise", "ScriptableObjects", platform + ".asset")
-    with open(path, 'r') as file :
-        filedata = file.read()
+    path = os.path.join(path, "Assets", "Wwise", "ScriptableObjects")
+    for filename in os.listdir(path):
+         if filename.endswith(".asset"):
+            file_path = os.path.join(path, filename)
+            with open(file_path, 'r') as file :
+                filedata = file.read()
 
-    filedata = filedata.replace('English(US)', 'en_US')
-    with open(path, 'w') as file:
-        file.write(filedata)
+            filedata = filedata.replace('English(US)', 'en_US')
+            with open(file_path, 'w') as file:
+                file.write(filedata)
 
 if __name__ == "__main__":
-    change_language("AkWwiseInitializationSettings")
-    change_language(sys.argv[1])
+    change_language()

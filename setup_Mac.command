@@ -11,3 +11,6 @@ python3 WwiseProject/GenerateProjectWavFiles.py
 
 # Generate the supported Gyms
 python3 GenerateSupportedGyms.py
+
+# Set the language for the Unity Project
+python Unity/Build/SetStartupLanguage.py
