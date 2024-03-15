@@ -34,7 +34,7 @@ public class ButtonProximityInteraction: MonoBehaviour
 	void OnTriggerEnter(Collider in_other)
 	{
 		var controller = SetPlayerController.GetCurrentPlayerController();
-		if (in_other == controller.GetComponent<CapsuleCollider>())
+		if (controller && in_other == controller.GetComponent<CapsuleCollider>())
 		{
 			m_PlayerInTrigger = true;
 		}

@@ -338,26 +338,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b46dfc10fe33bb4fb687ab0020b9873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  didDestroy: 0
   triggerList: 
   useOtherObject: 0
-  pausedOnStart: 0
   actionOnEventType: 0
   curveInterpolation: 4
   enableActionOnEvent: 0
   data:
     idInternal: 0
-    valueGuidInternal: []
+    valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 332076937a9cd114e88de99796594f00,
       type: 2}
-    m_playingId: 0
   useCallbacks: 0
   Callbacks: []
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
   eventIdInternal: 0
-  valueGuidInternal: []
+  valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
 --- !u!114 &960162104
 MonoBehaviour:
@@ -376,11 +373,9 @@ MonoBehaviour:
     useDefaultListeners: 1
   isEnvironmentAware: 1
   isStaticObject: 0
-  m_Collider: {fileID: 0}
   m_positionOffsetData:
     KeepMe: 0
     positionOffset: {x: 0, y: 0, z: 0}
-  isRegistered: 0
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
 --- !u!1001 &1065676326
@@ -522,12 +517,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d795eb2cede7545b13f31c565828c6, type: 3}
---- !u!136 &1065676327 stripped
-CapsuleCollider:
-  m_CorrespondingSourceObject: {fileID: 4868543749411807804, guid: 38d795eb2cede7545b13f31c565828c6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1065676326}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1185730423
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,64 +626,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1701671859
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1701671861}
-  - component: {fileID: 1701671860}
-  m_Layer: 0
-  m_Name: WwiseGlobal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1701671860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701671859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43a4506955ad834c8072de0eb493b0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: e4c44e75d73658c45ad46962b93a0574,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
---- !u!4 &1701671861
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701671859}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1886350519
 GameObject:
@@ -880,26 +811,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b46dfc10fe33bb4fb687ab0020b9873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  didDestroy: 0
   triggerList: 
   useOtherObject: 0
-  pausedOnStart: 0
   actionOnEventType: 0
   curveInterpolation: 4
   enableActionOnEvent: 0
   data:
     idInternal: 0
-    valueGuidInternal: []
+    valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4476c7645ba05bf4d88e4b25ed65479e,
       type: 2}
-    m_playingId: 0
   useCallbacks: 0
   Callbacks: []
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
   eventIdInternal: 0
-  valueGuidInternal: []
+  valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
 --- !u!114 &1952289380
 MonoBehaviour:
@@ -918,11 +846,9 @@ MonoBehaviour:
     useDefaultListeners: 1
   isEnvironmentAware: 0
   isStaticObject: 0
-  m_Collider: {fileID: 1065676327}
   m_positionOffsetData:
     KeepMe: 0
     positionOffset: {x: 0, y: 0, z: 0}
-  isRegistered: 0
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
 --- !u!114 &1952289388
@@ -937,13 +863,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd3a63cac142f3c45a1cb591288ed9f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  didDestroy: 0
   triggerList: f7e1664c
   useOtherObject: 0
-  pausedOnStart: 0
   data:
     idInternal: 0
-    valueGuidInternal: []
+    valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 807f815147e65b144afe9c41d86efe95,
       type: 2}
   decodeBank: 0
@@ -952,4 +876,4 @@ MonoBehaviour:
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
-  valueGuidInternal: []
+  valueGuidInternal: 
