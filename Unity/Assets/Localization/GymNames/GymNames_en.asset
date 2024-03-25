@@ -338,6 +338,10 @@ MonoBehaviour:
     m_Localized: Playing Sounds on Collision base on a surface (Footsteps)
     m_Metadata:
       m_Items: []
+  - m_Id: 70330206702145536
+    m_Localized: Setting a State in a Timeline
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

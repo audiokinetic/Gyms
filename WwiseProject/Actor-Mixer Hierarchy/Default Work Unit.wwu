@@ -2804,6 +2804,96 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="AkState" ID="{809451D4-2A26-4A21-8326-E7AEA39437FB}" ShortID="685605319">
+					<ChildrenList>
+						<SwitchContainer Name="State_Container" ID="{C120000A-FA9A-46B8-A3E8-09242EDFBFD1}" ShortID="630561617">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Low" ID="{46F5A797-A960-4A09-8620-3A6D39C4726C}" WorkUnitID="{92BD2F57-F1E6-4572-B365-4DAFC95C9BC0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="AkState" ID="{1D255671-F634-4E4C-A548-DFAEF2B7B1CE}" WorkUnitID="{92BD2F57-F1E6-4572-B365-4DAFC95C9BC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Low_State" ID="{6C7B391A-4AA9-4BE7-992D-E977410779B3}" ShortID="544223660">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sine_440Hz_500ms_mono" ID="{EB2FF3C0-F0DE-41ED-BA96-662008087359}">
+											<Language>SFX</Language>
+											<AudioFile>Sine_440Hz_500ms_mono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="784407396"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sine_440Hz_500ms_mono" ID="{EB2FF3C0-F0DE-41ED-BA96-662008087359}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="High_State" ID="{2136A1B2-9AD5-4C81-96F2-DF0DA771F741}" ShortID="415442122">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sine_880Hz_500ms_mono" ID="{06BFD211-5EF0-4475-BCB6-4AB916B97EDC}">
+											<Language>SFX</Language>
+											<AudioFile>Sine_880Hz_500ms_mono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="994628037"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sine_880Hz_500ms_mono" ID="{06BFD211-5EF0-4475-BCB6-4AB916B97EDC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Low_State" ID="{6C7B391A-4AA9-4BE7-992D-E977410779B3}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="High_State" ID="{2136A1B2-9AD5-4C81-96F2-DF0DA771F741}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="High" ID="{B5DE0219-EAAF-42FD-82CC-8DF16BE103DC}"/>
+										<ItemList>
+											<ItemRef Name="High_State" ID="{2136A1B2-9AD5-4C81-96F2-DF0DA771F741}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Low" ID="{46F5A797-A960-4A09-8620-3A6D39C4726C}"/>
+										<ItemList>
+											<ItemRef Name="Low_State" ID="{6C7B391A-4AA9-4BE7-992D-E977410779B3}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

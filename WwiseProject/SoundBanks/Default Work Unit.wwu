@@ -44,6 +44,7 @@
 						<ObjectRef Name="Streaming_Sound" ID="{21402C7F-235D-4C7B-8D08-076CD2025504}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PostEvent_Stream_Zero_Latency" ID="{261CA2C5-2A84-4CC1-A315-7E5B5A037CA0}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PostEvent_WemOpus" ID="{0E539272-79F1-4CE0-9781-C9729BEC7326}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Post_State_Event" ID="{411339C4-FAE4-4D00-9ECF-459EF4E49146}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Post_Subtitle_Event" ID="{EEBD4314-B526-4D3F-9D7E-33B72ADD1AAD}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grass_04" ID="{BAE9CF26-A5F2-4D41-B792-34C44E1226D4}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Container" ID="{3EF145B3-B7EE-4E20-87B9-6641F75D885D}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
@@ -51,6 +52,7 @@
 						<ObjectRef Name="Footstep_Event" ID="{1FB9B2D0-6222-4E75-B8BE-8B7EF1668CBB}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Metal_01" ID="{3FC18464-6D47-4EAA-AB68-96603BEDBDBB}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wood_05" ID="{48687E90-1A1B-4EAE-AE9B-FEA973C8381A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SetStateEvent" ID="{99CE3B98-FA97-4FA1-B19A-E657309D117C}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="In_Memory_Sound" ID="{9191C2A7-DC80-4FB3-AB89-4804FEB00CFE}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PostEvent_PCM" ID="{0A1F6812-357A-4FE6-8520-8B040A9B8BFC}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

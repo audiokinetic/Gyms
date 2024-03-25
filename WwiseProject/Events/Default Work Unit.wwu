@@ -479,6 +479,39 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="EventOperation" ID="{EF19627B-F383-4270-863E-ED9862482D6E}" ShortID="324112309">
+					<ChildrenList>
+						<Event Name="SetStateEvent" ID="{99CE3B98-FA97-4FA1-B19A-E657309D117C}">
+							<ChildrenList>
+								<Action Name="" ID="{A91BA22F-85EB-4A46-9702-DEAF9A700BFB}" ShortID="209055293">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="High" ID="{B5DE0219-EAAF-42FD-82CC-8DF16BE103DC}" WorkUnitID="{92BD2F57-F1E6-4572-B365-4DAFC95C9BC0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AkState" ID="{B8AE42EC-85E4-44AE-84C0-8D68411F4317}" ShortID="702174032">
+					<ChildrenList>
+						<Event Name="Post_State_Event" ID="{411339C4-FAE4-4D00-9ECF-459EF4E49146}">
+							<ChildrenList>
+								<Action Name="" ID="{2122DD2D-BB66-448F-983D-B3B12A7D1D49}" ShortID="968900650">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="State_Container" ID="{C120000A-FA9A-46B8-A3E8-09242EDFBFD1}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

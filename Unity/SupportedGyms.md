@@ -35,6 +35,7 @@
 - 9-Testing
     - Smoke
         - SmokeButtonScene
+        - SmokeSetStateTimeline
         - SmokeStreamNoPrefetch
         - SmokeSubLevel
             - SmokeSubLevelNested

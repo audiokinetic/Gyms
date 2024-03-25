@@ -335,6 +335,10 @@ MonoBehaviour:
     m_Key: BasicFootstepsDynamic
     m_Metadata:
       m_Items: []
+  - m_Id: 70330206702145536
+    m_Key: SmokeSetStateTimeline
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

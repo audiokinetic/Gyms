@@ -93,6 +93,9 @@ EditorBuildSettings:
     path: Assets/Gyms/9-Testing/Smoke/SmokeButtonScene/SmokeButtonScene.unity
     guid: a7a29698222b0174eae6e52738913d8a
   - enabled: 1
+    path: Assets/Gyms/9-Testing/Smoke/SmokeSetStateTimeline/SmokeSetStateTimeline.unity
+    guid: 066a3d8d37195734bb9e12dd05acf5f5
+  - enabled: 1
     path: Assets/Gyms/9-Testing/Smoke/SmokeStreamNoPrefetch/SmokeStreamNoPrefetch.unity
     guid: ee76bd10533c71a4da5cb75f12c641eb
   - enabled: 1
