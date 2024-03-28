@@ -30,7 +30,7 @@ public class GymsTarget : TargetRules
 	public GymsTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.AddRange( new string[] { "Gyms", "WwiseSimpleExternalSource"} );
 		
 #if UE_5_1_OR_LATER

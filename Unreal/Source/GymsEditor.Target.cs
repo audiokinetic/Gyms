@@ -30,7 +30,7 @@ public class GymsEditorTarget : TargetRules
 	public GymsEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.AddRange( new string[] { "Gyms", "GymEditorUtilities", "WwiseSimpleExternalSource" } );
 		
 #if UE_5_1_OR_LATER
