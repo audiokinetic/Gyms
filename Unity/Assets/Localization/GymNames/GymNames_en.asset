@@ -342,6 +342,10 @@ MonoBehaviour:
     m_Localized: Setting a State in a Timeline
     m_Metadata:
       m_Items: []
+  - m_Id: 73993862241456128
+    m_Localized: Stopping an Event with an Event
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -495,6 +495,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="StopEvent" ID="{79454EB5-D318-4C1C-A155-4D06F4C39AA9}">
+							<ChildrenList>
+								<Action Name="" ID="{CEDCF383-EAB6-4975-99DB-AB44450DEDA3}" ShortID="644870864">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Subtitle_Voice" ID="{08BA1E73-9CEB-40EA-A6E0-25537D5EA135}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AkState" ID="{B8AE42EC-85E4-44AE-84C0-8D68411F4317}" ShortID="702174032">
