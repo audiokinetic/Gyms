@@ -2927,6 +2927,28 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="UtilitySound" ID="{9D1DD565-359D-437C-9C18-8BFE5188F92C}" ShortID="1046867901">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MUS_RotTR_Cue2_Safe_4bars_85BPM" ID="{99A1201B-3299-42E8-B678-A88DC9A140AC}">
+							<Language>SFX</Language>
+							<AudioFile>MUS_RotTR_Cue2_Safe_4bars_85BPM.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="343212581"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MUS_RotTR_Cue2_Safe_4bars_85BPM" ID="{99A1201B-3299-42E8-B678-A88DC9A140AC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

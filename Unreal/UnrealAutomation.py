@@ -37,7 +37,6 @@ class UnrealAutomation(GymsAutomation):
     
     def __init__(self):
         self.outputFile = 'GymsOutput.log'
-        self.gymsPath = os.path.join(os.path.dirname(__file__), "Content", "Gyms")
         self.gymExtension = '.umap'
         self.editors = ['UE4Editor', 'UnrealEditor']
 
@@ -50,12 +49,18 @@ class UnrealAutomation(GymsAutomation):
         path = os.path.dirname(__file__)
         path = os.path.join(path, 'Gyms.uproject')
         return path
-
+    
     def platform_argument(self, requiredArguments):
+        return
+    
+    def platform_optional_argument(self, optionalArguments):
         return
 
     def get_target_platform(self, args):
         return ''
+    
+    def set_gyms_path(self, args):
+        self.gymsPath = os.path.join(os.path.dirname(__file__), "Content", "Gyms")
 
     def get_log_path(self):
         path = os.path.dirname(__file__)

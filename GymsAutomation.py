@@ -171,14 +171,14 @@ class GymsAutomation:
 
         optionalArguments = parser.add_argument_group("Optional Arguments")
         optionalArguments.add_argument('-t', '--timeout', required=False, type=int, default=6000, help='The maximum duration of the test in seconds. The run will fail without finishing if it lasts longer than the given value. The default value is 10 minutes.')
-
+        self.platform_optional_argument(optionalArguments)
         args = parser.parse_args()
         enginePath = args.enginePath
         filePath = args.filePath
         fileOutput = args.fileOutput
         self.platform = self.get_target_platform(args)
         timeout = args.timeout
-
+        self.set_gyms_path(args)
         if os.path.isfile(enginePath):
             found = False
             for editor in self.editors:

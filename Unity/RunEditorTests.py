@@ -30,7 +30,7 @@ import subprocess
 
 editors = ['Unity']
 
-def run_gyms(playModeOption, wwiseSettings, enginePath, filePath, fileOutput, platform):
+def run_gyms(playModeOption, wwiseSettings, enginePath, filePath, fileOutput, platform, projectPath):
     set_enter_play_mode_option(playModeOption)
     print_settings(playModeOption, wwiseSettings)
     automationPath = os.path.join(os.path.dirname(__file__), "UnityAutomation.py")
@@ -38,7 +38,8 @@ def run_gyms(playModeOption, wwiseSettings, enginePath, filePath, fileOutput, pl
                 '-o="{}" '.format(fileOutput) +
                 '-f="{}" '.format(filePath) +
                 '-u="{}" '.format(enginePath) +
-                '-p="{}"'.format(platform)
+                '-p="{}" '.format(platform) +
+                '-j="{}" '.format(projectPath)
                )
     subprocess.run(cmd_line)
 
@@ -177,6 +178,9 @@ def main():
         requiredArguments.add_argument('-s', '--sceneReload', required=True, type=correct_play_mode_value, help='Which setting of the Scene Reload to use. 0 = Scene Reload Enabled. 1 = Scene Reload Disabled. 2 = Both (Tests will run twice)')
         requiredArguments.add_argument('-e', '--editor', required=True, type=correct_play_mode_value, help='Should the Sound Engine be Initialized in the editor? 0 = Sound Engine is Initialized in the editor. 1 = Sound Engine is not Initialized in the editor. 2 = Both (Tests will run twice)')
         requiredArguments.add_argument('-p', '--platform', required=True, type=str, help='The platform on which the tests run.')
+        optionalArguments = parser.add_argument_group("Optional Arguments")
+        optionalArguments.add_argument('-j', '--projectPath', required=False, type=str, default='', help='The path to the unity project. The default value is this script path.')
+        
         args = parser.parse_args()
         domainReload = args.domainReload
         sceneReload = args.sceneReload
@@ -185,6 +189,7 @@ def main():
         fileOutput = args.fileOutput
         editor = args.editor
         platform = args.platform
+        projectPath = args.projectPath
 
         combos = get_tests_options(domainReload, sceneReload, editor)
         enableEnterPlayModeOption()
@@ -196,7 +201,7 @@ def main():
         for i in range(len(combos)):
             set_wwise_setting(path_to_wwise_settings(), 'LoadSoundEngineInEditMode', combos[i][2])
             playmode = get_enter_play_mode_option(combos[i][0], combos[i][1])
-            run_gyms(playmode, combos[i][2], enginePath, filePath, outputPath, platform)
+            run_gyms(playmode, combos[i][2], enginePath, filePath, outputPath, platform, projectPath)
             write_to_output_file(fileOutput, outputPath, combos[i])
         os.remove(outputPath)
 

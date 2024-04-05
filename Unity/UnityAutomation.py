@@ -27,6 +27,8 @@ import os
 import re
 import shutil
 import subprocess
+import argparse
+from argparse import RawDescriptionHelpFormatter
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from GymsAutomation import GymsAutomation
@@ -34,8 +36,8 @@ from GymsAutomation import GymsAutomation
 class UnityAutomation(GymsAutomation):
 
     def __init__(self):
+        self.projectPath = ''
         self.outputFile = 'GymsOutput.xml'
-        self.gymsPath = os.path.join(self.get_project_path(), "Assets", "Gyms")
         self.gymExtension = '.unity'
         self.editors = ['Unity']
 
@@ -55,14 +57,24 @@ class UnityAutomation(GymsAutomation):
     def platform_argument(self, requiredArguments):
         requiredArguments.add_argument('-p', '--platform', required=True, type=str, help='The platform on which the tests run.')
 
+    def platform_optional_argument(self, optionalArguments):
+        optionalArguments.add_argument('-j', '--projectPath', required=False, type=str, default='', help='The path to the unity project. The default value is this script path.')
+
     def get_target_platform(self, args):
         return args.platform
 
     def get_project_path(self):
-        return os.path.dirname(__file__)
+        if(self.projectPath != ''):
+            return self.projectPath
+        else:
+            return os.path.dirname(__file__)
+    
+    def set_gyms_path(self, args):
+        self.projectPath = args.projectPath
+        self.gymsPath = os.path.join(self.get_project_path(), "Assets", "Gyms")
 
     def get_log_path(self):
-        path = os.path.dirname(__file__)
+        path = self.get_project_path()
         return os.path.join(path, self.outputFile)
 
     def search_line(self, line, gyms, results, testsNames):
