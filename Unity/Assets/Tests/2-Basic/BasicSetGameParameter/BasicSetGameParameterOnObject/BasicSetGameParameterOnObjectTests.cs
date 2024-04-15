@@ -29,38 +29,38 @@ using UnityEngine.TestTools;
 
 namespace Tests
 {
-    public class BasicSetGameParameterTests : GymTests
+    public class BasicSetGameParameterOnObjectTests : GymTests
     {
-        const string SceneName = "BasicSetGameParameter";
+        const string SceneName = "BasicSetGameParameterOnObject";
         [UnityTest]
-        public IEnumerator BasicSetGameParameter_Tests()
+        public IEnumerator BasicSetGameParameterOnObject_Tests()
         {
             yield return StartTest(SceneName);
             AkBank bank = gameObject.GetComponent<AkBank>();
             LoadBank(bank);
 
-            BasicSetGameParameterTests_Component testComponents = gameObject.GetComponent<BasicSetGameParameterTests_Component>();
+            BasicSetGameParameterOnObjectTests_Component onObjectTestComponents = gameObject.GetComponent<BasicSetGameParameterOnObjectTests_Component>();
 
             //Set value
-            testComponents.rtpcClass.SetValue(testComponents.gameObject, 300.0f);
+            onObjectTestComponents.rtpcClass.SetValue(onObjectTestComponents.gameObject, 300.0f);
             yield return new WaitForSeconds(0.2f);
-            float value = testComponents.rtpcClass.GetValue(testComponents.gameObject);
+            float value = onObjectTestComponents.rtpcClass.GetValue(onObjectTestComponents.gameObject);
             float expected = 300.0f;
             Assert.AreEqual(expected, value);
             LogOutput("Set value: ", true);
 
             //Set out of bounds value (lower)
-            testComponents.rtpcClass.SetValue(testComponents.gameObject, -200.0f);
+            onObjectTestComponents.rtpcClass.SetValue(onObjectTestComponents.gameObject, -200.0f);
             yield return new WaitForSeconds(0.2f);
-            value = testComponents.rtpcClass.GetValue(testComponents.gameObject);
+            value = onObjectTestComponents.rtpcClass.GetValue(onObjectTestComponents.gameObject);
             expected = -200.0f;
             Assert.AreEqual(expected, value);
             LogOutput("Set out of bounds lower: ", true);
 
             //Set out of bounds value (upper)
-            testComponents.rtpcClass.SetValue(testComponents.gameObject, 1600.0f);
+            onObjectTestComponents.rtpcClass.SetValue(onObjectTestComponents.gameObject, 1600.0f);
             yield return new WaitForSeconds(0.2f);
-            value = testComponents.rtpcClass.GetValue(testComponents.gameObject);
+            value = onObjectTestComponents.rtpcClass.GetValue(onObjectTestComponents.gameObject);
             expected = 1600.0f;
             Assert.AreEqual(expected, value);
             LogOutput("Set out of bounds upper: ", true);

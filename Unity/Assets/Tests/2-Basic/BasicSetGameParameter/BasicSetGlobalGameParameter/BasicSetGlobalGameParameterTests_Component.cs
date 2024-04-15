@@ -26,7 +26,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicSetGameParameterTests_Component : MonoBehaviour
+public class BasicSetGlobalGameParameterTests_Component : MonoBehaviour
 {
     public AK.Wwise.RTPC rtpcClass;
 }

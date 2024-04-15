@@ -346,6 +346,10 @@ MonoBehaviour:
     m_Localized: Stopping an Event with an Event
     m_Metadata:
       m_Items: []
+  - m_Id: 78008771550171136
+    m_Localized: Using Game Parameters to Modify global parameters (RTPC)
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

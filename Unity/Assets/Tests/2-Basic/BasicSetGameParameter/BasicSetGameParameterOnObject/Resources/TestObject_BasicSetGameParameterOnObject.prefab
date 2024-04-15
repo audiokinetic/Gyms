@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2335710013882470318}
   - component: {fileID: 6883871829782710533}
   m_Layer: 0
-  m_Name: TestObject_BasicSetGameParameter
+  m_Name: TestObject_BasicSetGameParameterOnObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -49,7 +50,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 807f815147e65b144afe9c41d86efe95,
+    WwiseObjectReference: {fileID: 11400000, guid: a9bcdd81e14f817498925e927a5ac5dd,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -72,5 +73,5 @@ MonoBehaviour:
   rtpcClass:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 04cf94978c24ccf4d90fbda00c615d16,
+    WwiseObjectReference: {fileID: 11400000, guid: a06ddfa8553340b458c6405724a2beb1,
       type: 2}

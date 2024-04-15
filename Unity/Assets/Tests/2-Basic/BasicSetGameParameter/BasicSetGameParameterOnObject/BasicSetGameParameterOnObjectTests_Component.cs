@@ -26,42 +26,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicSetGameParameter : MonoBehaviour
+public class BasicSetGameParameterOnObjectTests_Component : MonoBehaviour
 {
-    const float MINRANGE = 0.0f;
-    const float MAXRANGE = 1200.0f;
-    const float RAISE = 10.0f;
-    const float LOWER = 10.0f;
-    
-    [SerializeField]
-    AK.Wwise.RTPC _rtpcClass;
-    [SerializeField]
-    [Range(MINRANGE, MAXRANGE)]
-    float _pitchValue = MINRANGE;
-
-    public void Raise()
-    {
-        Process(true);
-    }
-
-    public void Lower()
-    {
-        Process(false);
-    }
-
-    void Process(bool raise)
-    {
-        _pitchValue = _rtpcClass.GetValue(gameObject);
-        if (raise)
-        {
-            _pitchValue = Mathf.Clamp(_pitchValue + RAISE, MINRANGE, MAXRANGE);
-            Debug.Log("Raising RTPC value : " + _pitchValue);
-        }
-        else
-        {
-            _pitchValue = Mathf.Clamp(_pitchValue - LOWER, MINRANGE, MAXRANGE);
-            Debug.Log("Lowering RTPC value : " + _pitchValue);
-        }
-        _rtpcClass.SetValue(gameObject, _pitchValue);
-    }
+    public AK.Wwise.RTPC rtpcClass;
 }

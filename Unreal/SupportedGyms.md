@@ -14,6 +14,8 @@
     - BasicMultiplePositions
     - BasicPostLocation
     - BasicSetGameParameter
+        - BasicSetGameParameterOnObject
+        - BasicSetGlobalGameParameter
 - 3-Advanced
     - AdvancedAmbient
         - AdvancedAmbientFollow

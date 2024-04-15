@@ -343,6 +343,10 @@ MonoBehaviour:
     m_Key: SmokeEventWithNoMedia
     m_Metadata:
       m_Items: []
+  - m_Id: 78008771550171136
+    m_Key: BasicSetGlobalGameParameter
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

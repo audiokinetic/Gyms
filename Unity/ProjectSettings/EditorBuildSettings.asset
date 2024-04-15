@@ -48,8 +48,11 @@ EditorBuildSettings:
     path: Assets/Gyms/2-Basic/BasicPostLocation/BasicPostLocation.unity
     guid: f2af3da8ef83f9d4a977f13d16b50015
   - enabled: 1
-    path: Assets/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameter.unity
+    path: Assets/Gyms/2-Basic/BasicSetGameParameter/BasicSetGameParameterOnObject/BasicSetGameParameterOnObject.unity
     guid: 8e07fb4159d639a409309a8a2b6da878
+  - enabled: 1
+    path: Assets/Gyms/2-Basic/BasicSetGameParameter/BasicSetGlobalGameParameter/BasicSetGlobalGameParameter.unity
+    guid: c09038d48f5b40a4b88cb8e2112c1bc1
   - enabled: 1
     path: Assets/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientFollow/AdvancedAmbientFollow.unity
     guid: 0ef26902f6a899b4bb3367f0fe0dd0be

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicSetGameParameterOnOffManager : OnOffManager
+public class BasicSetGameParameterOnObjectOnOffManager : OnOffManager
 {
     [SerializeField]
     AkAmbient _ambient = default;

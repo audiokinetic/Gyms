@@ -79,8 +79,12 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 
 ### Using Game Parameters to Modify Events (RTPC)
 
-- _Folder: `2-Basic/BasicSetGameParameter`_
-- Modifying a Game Parameter to change the resulting sound of a posted Wwise Event.
+- _Folder: `2-Basic/BasicSetGameParameter/BasicSetGameParameterOnObject`_
+- Modifying a Game Parameter to change the resulting sound of a posted Wwise Event on a game object.
+
+### Using Game Parameters to Modify global parameters (RTPC)
+- _Folder: `2-Basic/BasicSetGameParameter/BasicSetGlobalGameParameter`_
+- Modifying a global Game Parameter.
 
 ## Advanced Features
 
