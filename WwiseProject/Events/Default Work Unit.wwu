@@ -526,6 +526,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="InteractiveMusic" ID="{A07AC1AE-AEE6-4262-AAF2-1034F2414EA1}" ShortID="903892574">
+					<ChildrenList>
+						<Event Name="InteractiveMusicEvent" ID="{26C6DC2B-2942-4C6D-9638-E9BBFC4902E7}">
+							<ChildrenList>
+								<Action Name="" ID="{15B0FCC0-4521-422B-8EB6-92C4062B14AF}" ShortID="203965716">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="InteractiveMusicSegment" ID="{2602F191-3D29-48E3-8AE0-46070E78034D}" WorkUnitID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
