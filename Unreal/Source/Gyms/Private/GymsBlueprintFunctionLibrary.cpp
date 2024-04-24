@@ -96,6 +96,7 @@ void UGymsBlueprintFunctionLibrary::UpdateMapsToCook()
 	FFilePath NewPath;
 	NewPath.FilePath = "/Game/MainMenu/MainMenu";
 	PackagingSettings->MapsToCook.Add(NewPath);
+	FoundGymFiles.Sort();
 	for (auto& GymFile : FoundGymFiles)
 	{
 		GymFile.RemoveFromStart(GymsPath);
