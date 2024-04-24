@@ -50,9 +50,10 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a9bcdd81e14f817498925e927a5ac5dd,
+    WwiseObjectReference: {fileID: 11400000, guid: 807f815147e65b144afe9c41d86efe95,
       type: 2}
   decodeBank: 0
+  overrideLoadSetting: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
@@ -73,5 +74,5 @@ MonoBehaviour:
   rtpcClass:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 66fd792cc1b205a4b99a774fef947379,
+    WwiseObjectReference: {fileID: 11400000, guid: c5462717af2c2e54eb506cd310ee6eae,
       type: 2}
