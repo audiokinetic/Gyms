@@ -69,45 +69,28 @@ class PlatformBuilder:
 		except Exception as err:
 			raise RuntimeError("UnrealAutomationTool failed; {}".format(err))
 
-	def PackageGame(self):
-		self.GenerateProjectFiles()
-		self.BuildEditor()
-		self.BuildGame()
-		self.RenameBuildFolder()
-
-# Class to build Windows plugin, uses the binary install of UE
-class WindowsBuilder(PlatformBuilder):
-	def __init__(self):
-		PlatformBuilder.__init__(self, "Win64", "Development Editor")
-		self.gamePlatformName = "Win64"
-		
-		self.unrealInstallPath = "C:\\Epic Games\\UE_" + self.unrealVersion
-
-		if self.unrealVersion >= '5.0':
-			self.unrealBuildToolPath = self.unrealInstallPath + "\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool.exe"
-		else:
-			self.unrealBuildToolPath = self.unrealInstallPath + "\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe"        
-		self.compiler = "C:\VS2019\MSBuild\Current\Bin\MSBuild.exe"
-		self.codeSolutionPath = os.path.join(os.getcwd(), "Gyms", "Unreal", "Gyms.sln")
-		self.unrealAutomationToolPath = os.path.join(self.unrealInstallPath, "Engine", "Build", "BatchFiles", "RunUAT.bat")
-		if self.unrealVersion >= '5.0':
-			self.unrealEditorPath = os.path.join(self.unrealInstallPath, "Engine", "Binaries", "Win64", "UnrealEditor-cmd.exe")
-		else:
-			self.unrealEditorPath = os.path.join(self.unrealInstallPath, "Engine", "Binaries", "Win64", "UE4Editor-cmd.exe")
-		self.wwiseConsolePath = os.path.join(os.getcwd(), "Wwise", "Authoring", "x64", "Release", "bin", "WwiseConsole.exe")
-		
 	def BuildEditor(self):
 		print("Compiling editor code for platform: " + self.editorPlatformName)
-		cmd = [self.compiler, self.codeSolutionPath, "/t:Rebuild", "/p:Configuration={},Platform={}".format(self.configuration, self.editorPlatformName)]
+		cmd = [self.unrealBuildToolPath, "GymsEditor", self.editorPlatformName, self.configuration, "-project=" + self.projectFile, "-editor", "-progress", "-rebuild", "-nullSoundEngineAsError"]
 		try:
 			print("Command is: {}".format(cmd))
 			process = subprocess.Popen(cmd, shell=False)
 			ret = process.wait()
 			if ret != 0:
-				raise RuntimeError("{} failed.".format(self.compiler))
+				raise RuntimeError("{} failed.".format(unrealBuildToolPath))
 		except Exception as err:
-			raise RuntimeError("{} failed; {}".format(self.compiler, err))
+			raise RuntimeError("{} failed; {}".format(unrealBuildToolPath, err))
 
+	def GenerateSoundBanksForPackage(self):
+		self.BuildEditor()
+		self.GenerateSoundBanks()
+
+	def PackageGame(self):
+		self.GenerateProjectFiles()
+		self.BuildEditor()
+		self.BuildGame()
+		self.RenameBuildFolder()
+        
 	def GenerateSoundBanks(self):
 		print("Inserting license in Wwise project...")
 		shutil.copy(self.wwiseProjectFile, self.wwiseProjectFile + ".bak")
@@ -137,10 +120,6 @@ class WindowsBuilder(PlatformBuilder):
 			print("Command is: {}".format(cmd))
 			process = subprocess.Popen(cmd, shell=False)
 			ret = process.wait()
-			#Gyms currently have events that will throw an error by design
-			#if ret != 0:
-			#	raise RuntimeError("UnrealEditor failed.")
-			
 		except Exception as err:
 			raise RuntimeError("UnrealEditor failed; {}".format(err))
 
@@ -148,10 +127,24 @@ class WindowsBuilder(PlatformBuilder):
 		shutil.copy(self.wwiseProjectFile + ".bak", self.wwiseProjectFile)
 		os.remove(self.wwiseProjectFile + ".bak")
 
-	def GenerateSoundBanksForPackage(self):
-		self.GenerateProjectFiles()
-		self.BuildEditor()
-		self.GenerateSoundBanks()
+# Class to build Windows plugin, uses the binary install of UE
+class WindowsBuilder(PlatformBuilder):
+	def __init__(self):
+		PlatformBuilder.__init__(self, "Win64", "Development")
+		self.gamePlatformName = "Win64"
+		
+		self.unrealInstallPath = "C:\\Epic Games\\UE_" + self.unrealVersion
+
+		if self.unrealVersion >= '5.0':
+			self.unrealBuildToolPath = self.unrealInstallPath + "\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool.exe"
+		else:
+			self.unrealBuildToolPath = self.unrealInstallPath + "\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe"
+		self.unrealAutomationToolPath = os.path.join(self.unrealInstallPath, "Engine", "Build", "BatchFiles", "RunUAT.bat")
+		if self.unrealVersion >= '5.0':
+			self.unrealEditorPath = os.path.join(self.unrealInstallPath, "Engine", "Binaries", "Win64", "UnrealEditor-cmd.exe")
+		else:
+			self.unrealEditorPath = os.path.join(self.unrealInstallPath, "Engine", "Binaries", "Win64", "UE4Editor-cmd.exe")
+		self.wwiseConsolePath = os.path.join(os.getcwd(), "Wwise", "Authoring", "x64", "Release", "bin", "WwiseConsole.exe")
 
 	def RenameBuildFolder(self):
 		shutil.rmtree(os.path.join(self.packagePath, "Gyms"))
@@ -166,36 +159,7 @@ class MacBuilder(PlatformBuilder):
 		self.gamePlatformName = 'Mac'
 		self.unrealInstallPath = "/Users/Shared/Epic Games/UE_" + self.unrealVersion
 		self.unrealBuildToolPath = self.unrealInstallPath + "/Engine/Build/BatchFiles/Mac/GenerateProjectFiles.sh"
-		self.compiler = "xcodebuild"
-		self.codeSolutionPath = os.path.join(os.getcwd(), "Gyms", "Unreal", "Intermediate", "ProjectFiles", "Gyms.xcodeproj")
 		self.unrealAutomationToolPath = self.unrealInstallPath + "/Engine/Build/BatchFiles/RunUAT.command"
-
-	def GenerateProjectFiles(self):
-		print("Generating Project files...")
-		currentPath = os.getcwd()
-		os.chdir(self.unrealInstallPath + "/Engine/Build/BatchFiles/Mac")
-		cmd = [self.unrealBuildToolPath, "-project=" + self.projectFile, "-game"]
-		try:
-			print("Command is: {}".format(cmd))
-			process = subprocess.Popen(cmd, shell=False)
-			ret = process.wait()
-			if ret != 0:
-				raise RuntimeError("{} failed.".format(cmd))
-		except Exception as err:
-			raise RuntimeError("UnrealBuildTool failed; {}".format(err))
-		os.chdir(currentPath)
-
-	def BuildEditor(self):
-		print("Compiling plugin code for platform: " + self.editorPlatformName)
-		cmd = [self.compiler, "-project", self.codeSolutionPath, "-configuration", self.configuration, "-sdk", self.editorPlatformName, "-arch", "x86_64", "build" ]
-		try:
-			print("Command is: {}".format(cmd))
-			process = subprocess.Popen(cmd, shell=False)
-			ret = process.wait()
-			if ret != 0:
-				raise RuntimeError("{} failed.".format(self.compiler))
-		except Exception as err:
-			raise RuntimeError("{} failed; {}".format(self.compiler, err))
 
 	def RenameBuildFolder(self):
 		shutil.rmtree(os.path.join(self.packagePath, "Gyms"))
