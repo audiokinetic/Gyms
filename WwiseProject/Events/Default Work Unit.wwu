@@ -541,6 +541,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="AudioDevice" ID="{6FDDDFFF-5433-4222-96C7-CF0C6A7E0311}" ShortID="762763421">
+					<ChildrenList>
+						<Event Name="AudioDeviceEvent" ID="{C89E3159-6164-466C-BE4D-EF3A31390A2F}">
+							<ChildrenList>
+								<Action Name="" ID="{D17BA157-A067-482E-8E2A-4AA440986BED}" ShortID="818276419">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AudioDeviceSound" ID="{3850180A-8DA8-4472-9BB5-A0B02CD997EA}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

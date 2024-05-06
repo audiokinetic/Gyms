@@ -28,6 +28,9 @@ the specific language governing permissions and limitations under the License.
 #include "Gyms.h"
 #include "HAL/FileManager.h"
 #include "Kismet/GameplayStatics.h"
+
+#include "Wwise/API/WwisePlatformAPI.h"
+
 #if WITH_EDITOR
 #include "Settings/ProjectPackagingSettings.h"
 #endif
@@ -166,4 +169,10 @@ FTopLevelAssetPath UGymsBlueprintFunctionLibrary::MakeTopLevelAssetPath(const FS
 		return FTopLevelAssetPath();
 
 	return AssetName.IsEmpty() ? FTopLevelAssetPath(FullPathOrPackageName) : FTopLevelAssetPath(*FullPathOrPackageName, *AssetName);
+}
+
+int32 UGymsBlueprintFunctionLibrary::GetOutputDeviceId(const FString& DeviceName)
+{
+	const auto Platform = IWwisePlatformAPI::Get();
+	return Platform->GetDeviceIDFromName((wchar_t*)*DeviceName);
 }

@@ -35,7 +35,8 @@ public class Gyms : ModuleRules
 			"CoreUObject",
 			"Engine",
 			"FunctionalTesting",
-			"InputCore"
+			"InputCore",
+			"WwiseSoundEngine"
 
 		});
 

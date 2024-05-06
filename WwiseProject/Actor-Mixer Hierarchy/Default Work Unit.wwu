@@ -2894,6 +2894,32 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="AudioDevice" ID="{856AC3E3-1270-4012-8C95-0637DA246DD8}" ShortID="1070313054">
+					<ChildrenList>
+						<Sound Name="AudioDeviceSound" ID="{3850180A-8DA8-4472-9BB5-A0B02CD997EA}" ShortID="850077917">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Audio_Device_Bus" ID="{75A5D9C9-CF36-4D95-94E3-D510D70E0089}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shotgun_Fire_01" ID="{2C4A4A76-5D96-49D9-80E1-F834CD9734A2}">
+									<Language>SFX</Language>
+									<AudioFile>Shotgun_Fire_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="59606849"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shotgun_Fire_01" ID="{2C4A4A76-5D96-49D9-80E1-F834CD9734A2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

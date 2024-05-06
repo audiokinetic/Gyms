@@ -103,7 +103,7 @@ class PlatformBuilder:
 			sys.exit(1)
 
 		print("Migrating project...")
-		cmd = [self.wwiseConsolePath, "migrate", self.wwiseProjectFile, "--quiet"]
+		cmd = [self.wwiseConsolePath, "migrate", self.wwiseProjectFile]
 		try:
 			print("Command is: {}".format(cmd))
 			process = subprocess.Popen(cmd, shell=False)

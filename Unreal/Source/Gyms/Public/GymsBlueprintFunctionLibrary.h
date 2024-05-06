@@ -71,4 +71,7 @@ class GYMS_API UGymsBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable, Category = "Gym Blueprint Helpers")
 	static FTopLevelAssetPath MakeTopLevelAssetPath(const FString& FullPathOrPackageName, const FString& AssetName);
+	
+	UFUNCTION(BlueprintCallable, Category = "Gym Blueprint Helpers")
+	static int32 GetOutputDeviceId(const FString& DeviceName);
 };
