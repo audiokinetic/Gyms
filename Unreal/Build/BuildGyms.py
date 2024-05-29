@@ -77,9 +77,9 @@ class PlatformBuilder:
 			process = subprocess.Popen(cmd, shell=False)
 			ret = process.wait()
 			if ret != 0:
-				raise RuntimeError("{} failed.".format(unrealBuildToolPath))
+				raise RuntimeError("{} failed.".format(self.unrealBuildToolPath))
 		except Exception as err:
-			raise RuntimeError("{} failed; {}".format(unrealBuildToolPath, err))
+			raise RuntimeError("{} failed; {}".format(self.unrealBuildToolPath, err))
 
 	def GenerateSoundBanksForPackage(self):
 		self.BuildEditor()
