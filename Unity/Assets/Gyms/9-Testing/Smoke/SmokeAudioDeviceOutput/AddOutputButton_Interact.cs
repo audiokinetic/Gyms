@@ -1,0 +1,60 @@
+/*******************************************************************************
+The content of this file includes portions of the AUDIOKINETIC Wwise Technology
+released in source code form as part of the SDK installer package.
+
+Commercial License Usage
+
+Licensees holding valid commercial licenses to the AUDIOKINETIC Wwise Technology
+may use this file in accordance with the end user license agreement provided 
+with the software or, alternatively, in accordance with the terms contained in a
+written agreement between you and Audiokinetic Inc.
+
+Apache License Usage
+
+Alternatively, this file may be used under the Apache License, Version 2.0 (the 
+"Apache License"); you may not use this file except in compliance with the 
+Apache License. You may obtain a copy of the Apache License at 
+http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
+the specific language governing permissions and limitations under the License.
+*******************************************************************************/
+
+using System;
+using UnityEngine;
+
+public class AddOutputButton_Interact : OnOffManager
+{
+    public AK.Wwise.Bank Bank;
+    private AkOutputSettings _outSettingsToAdd = new AkOutputSettings(); 
+    private const string AudioDeviceShareSet = "Audio_Device_System";
+    private ulong _additionalDeviceId = 0;
+    public void Start()
+    {
+        base.Start();
+        Bank.Load();
+        
+        AkDeviceDescription AdditionalDevice = AddOutputHelpers.GetNonDefaultActiveDevice("System");
+        _outSettingsToAdd.idDevice = AdditionalDevice.idDevice;
+        _outSettingsToAdd.audioDeviceShareset = AkSoundEngine.GetIDFromString(AudioDeviceShareSet);
+    }
+
+    public void OnDestroy()
+    {
+        Bank.Unload();
+    }
+
+    public override void OnAction()
+    {
+        var Result = AkSoundEngine.AddOutput(_outSettingsToAdd, out _additionalDeviceId);
+        Debug.Log("Add output called with result " + Result);
+    }
+
+    public override void OffAction()
+    {
+        var Result = AkSoundEngine.RemoveOutput(_additionalDeviceId);
+        Debug.Log("Remove output called with result " + Result);
+    }
+}

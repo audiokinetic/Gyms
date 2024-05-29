@@ -36,9 +36,14 @@
     - NiagaraPersistent
 - 9-Testing
     - Smoke
+        - SmokeAudioDeviceOutput
         - SmokeButtonScene
-        - SmokeMultiplayer
+        - SmokeEventWithNoMedia
         - SmokeMultilistener
+        - SmokeMultiplayer
+        - SmokeSequencerPause
+            - SmokeSequencerPauseStopAtSectionEndFalse
+            - SmokeSequencerPauseStopAtSectionEndTrue
         - SmokeSpatial
             - SmokeSpatialLargeWorld
         - SmokeStreamNoPrefetch
@@ -66,7 +71,6 @@
         - StressPostEvent
             - StressPostEventAndWaitTwoActors
             - StressPostEventOnDestroy
-        - StressPostEventOnDestroy
         - StressStreamingReload
         - StressSwitches
             - StressSwitchesAlreadyLoaded
@@ -82,4 +86,4 @@
             - StressSwitchesUnloadWhilePlaying
             - StressSwitchesValueWithoutSwitchContainer
             - StressSwitchesWithMediaAlreadyLoaded
-- PostEvent
+- ModularGameplayDemo

@@ -14,6 +14,8 @@
     - BasicMultiplePositions
     - BasicPostLocation
     - BasicSetGameParameter
+        - BasicSetGameParameterOnObject
+        - BasicSetGlobalGameParameter
 - 3-Advanced
     - AdvancedAmbient
         - AdvancedAmbientFollow
@@ -34,7 +36,14 @@
     - EditorSoundEngineInitialization
 - 9-Testing
     - Smoke
+        - Smoke
+            - SmokeButtonScene
+            - SmokeStreamNoPrefetch
+            - SmokeSubLevel
+            - SmokeSwitches
+        - SmokeAudioDeviceOutput
         - SmokeButtonScene
+        - SmokeEventWithNoMedia
         - SmokeSetStateTimeline
         - SmokeStreamNoPrefetch
         - SmokeSubLevel
@@ -42,6 +51,8 @@
             - SmokeSubLevelSingle
         - SmokeSwitches
             - SmokeSwitchesSimple
+        - SmokeTimeline
+            - SmokeTimelineInteractiveMusicSeek
     - Stress
         - StressExtSrc
             - StressExtSrcInMemory
