@@ -9,7 +9,7 @@ The projects are developed using the following software versions:
 
 - Wwise&trade; 2022.1.6
 - Unity&trade; 2021.3.29f1
-- Unreal&trade; 5.1.1
+- Unreal&trade; 5.2.1
 
 ## Setup
 

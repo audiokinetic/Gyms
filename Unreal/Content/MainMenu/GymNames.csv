@@ -27,6 +27,7 @@ Key,SourceString
 "Smoke","Smoke Tests"
 "Stress","Stress Tests"
 "SmokeButtonScene","Button Pressing Scene (Control Test)"
+"SmokeMultilistener","Create multiple Listeners per Component"
 "SmokeSpatial","Spatial Audio"
 "SmokeStreamNoPrefetch","Streaming Without Prefetch"
 "SmokeSubLevel","Level Streaming"
@@ -78,3 +79,5 @@ Key,SourceString
 "NiagaraGPUEmitter","Using Wwise with Niagara GPU Emitters"
 "NiagaraFireAndForget","Posting a Fire-And-Forget Wwise Event from Niagara"
 "NiagaraPersistent","Posting a Persistent Wwise Event from Niagara"
+"BasicSetGlobalGameParameter","Using Game Parameters to Modify global parameters (RTPC)"
+"SmokeMultiplayer","Create multiple Players/Default Listeners"

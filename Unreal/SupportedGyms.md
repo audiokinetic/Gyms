@@ -37,6 +37,8 @@
 - 9-Testing
     - Smoke
         - SmokeButtonScene
+        - SmokeMultiplayer
+        - SmokeMultilistener
         - SmokeSpatial
             - SmokeSpatialLargeWorld
         - SmokeStreamNoPrefetch
