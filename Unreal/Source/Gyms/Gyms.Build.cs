@@ -36,8 +36,10 @@ public class Gyms : ModuleRules
 			"Engine",
 			"FunctionalTesting",
 			"InputCore",
-			"WwiseSoundEngine"
-
+			
+			"Wwise",
+			"WwiseNiagara",
+			"WwiseSoundEngine",
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
