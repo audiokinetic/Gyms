@@ -30,7 +30,7 @@ public class SetPlayerController : UnityEngine.MonoBehaviour
 	public GameObject StandardPlayerController;
 	public GameObject MobilePlayerController;
 
-	protected static bool HasBeenSet = false;
+	protected bool HasBeenSet = false;
 
 	public static bool IsMobile
 	{
