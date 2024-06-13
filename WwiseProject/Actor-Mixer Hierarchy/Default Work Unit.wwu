@@ -7,6 +7,7 @@
 					<ChildrenList>
 						<Sound Name="Tone_150Hz" ID="{7C734436-049D-4094-AA72-1AD8CB89524D}" ShortID="904870958">
 							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-1210</Value>
@@ -15,9 +16,6 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="SpatialAudioAttenuation" ID="{EA508674-20AA-4C32-9D22-2D46D95D80F6}" WorkUnitID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}"/>
-								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
 								</Reference>
