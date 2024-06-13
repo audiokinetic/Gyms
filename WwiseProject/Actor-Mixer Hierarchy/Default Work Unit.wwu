@@ -546,6 +546,11 @@
 						</Sound>
 						<Sound Name="Tone_150Hz_Stream" ID="{721D612D-F949-4C51-B0D4-566199DB7830}" ShortID="913062235">
 							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-1210</Value>
@@ -625,6 +630,11 @@
 						</Sound>
 						<Sound Name="Tone_150Hz_Stream_Zero_Latency" ID="{89A4F4C1-6270-4D8A-ACA3-7743FA0C805A}" ShortID="926702696">
 							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsZeroLatency" Type="bool">
 									<ValueList>
 										<Value>True</Value>
