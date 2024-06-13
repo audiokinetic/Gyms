@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Common" ID="{2F030C2D-A9C2-4E8F-B393-EDC19B5D1821}" ShortID="510150988">
 					<ChildrenList>
-						<Sound Name="Tone_1210Hz" ID="{7C734436-049D-4094-AA72-1AD8CB89524D}" ShortID="904870958">
+						<Sound Name="Tone_150Hz" ID="{7C734436-049D-4094-AA72-1AD8CB89524D}" ShortID="904870958">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
@@ -28,7 +28,7 @@
 							<ChildrenList>
 								<SourcePlugin Name="Wwise Synth One" ID="{033553D1-32AB-45A5-9D92-49D0E8C182EE}" ShortID="432390771" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 									<PropertyList>
-										<Property Name="BaseFrequency" Type="Real32" Value="1210"/>
+										<Property Name="BaseFrequency" Type="Real32" Value="150"/>
 									</PropertyList>
 									<ObjectLists>
 										<ObjectList Name="RTPC">
@@ -82,7 +82,7 @@
 								<ActiveSource Name="Wwise Synth One" ID="{033553D1-32AB-45A5-9D92-49D0E8C182EE}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Tone_1210Hz_Position" ID="{DA4A2964-413D-47D8-9A8A-CB0B7D83D0B5}" ShortID="1025349894">
+						<Sound Name="Tone_150Hz_Position" ID="{DA4A2964-413D-47D8-9A8A-CB0B7D83D0B5}" ShortID="1025349894">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
@@ -119,7 +119,7 @@
 							<ChildrenList>
 								<SourcePlugin Name="Wwise Synth One" ID="{99493A69-0DC1-4E30-BC3D-DD6BB7393995}" ShortID="618752431" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 									<PropertyList>
-										<Property Name="BaseFrequency" Type="Real32" Value="1210"/>
+										<Property Name="BaseFrequency" Type="Real32" Value="150"/>
 									</PropertyList>
 									<ObjectLists>
 										<ObjectList Name="RTPC">
@@ -173,7 +173,7 @@
 								<ActiveSource Name="Wwise Synth One" ID="{99493A69-0DC1-4E30-BC3D-DD6BB7393995}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Tone_1210Hz_RTPC" ID="{47C5D125-8788-42E7-AC91-FC471B948382}" ShortID="139603964">
+						<Sound Name="Tone_150Hz_RTPC" ID="{47C5D125-8788-42E7-AC91-FC471B948382}" ShortID="139603964">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
@@ -194,7 +194,7 @@
 							<ChildrenList>
 								<SourcePlugin Name="Wwise Synth One" ID="{CE7D65F0-04B6-4B44-A048-5D300824D351}" ShortID="273126106" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 									<PropertyList>
-										<Property Name="BaseFrequency" Type="Real32" Value="1210"/>
+										<Property Name="BaseFrequency" Type="Real32" Value="150"/>
 									</PropertyList>
 									<ObjectLists>
 										<ObjectList Name="RTPC">
@@ -544,7 +544,7 @@
 								<ActiveSource Name="Marker_Test_001" ID="{1C4B95A2-96FD-4538-9D0C-CD5EF4FCCF69}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Tone_1210Hz_Stream" ID="{721D612D-F949-4C51-B0D4-566199DB7830}" ShortID="913062235">
+						<Sound Name="Tone_150Hz_Stream" ID="{721D612D-F949-4C51-B0D4-566199DB7830}" ShortID="913062235">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
@@ -569,8 +569,7 @@
 							<ChildrenList>
 								<SourcePlugin Name="Wwise Synth One" ID="{71100971-D3B3-4448-BE12-9CCA26E70C46}" ShortID="575330217" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 									<PropertyList>
-										<Property Name="BaseFrequency" Type="Real32" Value="1210"/>
-										<Property Name="FrequencyMode" Type="int32" Value="1"/>
+										<Property Name="BaseFrequency" Type="Real32" Value="150"/>
 									</PropertyList>
 									<ObjectLists>
 										<ObjectList Name="RTPC">
@@ -624,7 +623,7 @@
 								<ActiveSource Name="Wwise Synth One" ID="{71100971-D3B3-4448-BE12-9CCA26E70C46}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Tone_1210Hz_Stream_Zero_Latency" ID="{89A4F4C1-6270-4D8A-ACA3-7743FA0C805A}" ShortID="926702696">
+						<Sound Name="Tone_150Hz_Stream_Zero_Latency" ID="{89A4F4C1-6270-4D8A-ACA3-7743FA0C805A}" ShortID="926702696">
 							<PropertyList>
 								<Property Name="IsZeroLatency" Type="bool">
 									<ValueList>
@@ -649,7 +648,7 @@
 							<ChildrenList>
 								<SourcePlugin Name="Wwise Synth One" ID="{E2E4EA1B-7B35-42FE-B7BC-3D6B778F9A85}" ShortID="129262936" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 									<PropertyList>
-										<Property Name="BaseFrequency" Type="Real32" Value="1210"/>
+										<Property Name="BaseFrequency" Type="Real32" Value="150"/>
 									</PropertyList>
 									<ObjectLists>
 										<ObjectList Name="RTPC">
