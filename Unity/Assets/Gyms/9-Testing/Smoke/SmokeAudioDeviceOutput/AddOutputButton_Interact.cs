@@ -31,14 +31,22 @@ public class AddOutputButton_Interact : OnOffManager
     private AkOutputSettings _outSettingsToAdd = new AkOutputSettings(); 
     private const string AudioDeviceShareSet = "Audio_Device_System";
     private ulong _additionalDeviceId = 0;
-    public void Start()
+    public override void Start()
     {
         base.Start();
         Bank.Load();
         
         AkDeviceDescription AdditionalDevice = AddOutputHelpers.GetNonDefaultActiveDevice("System");
-        _outSettingsToAdd.idDevice = AdditionalDevice.idDevice;
-        _outSettingsToAdd.audioDeviceShareset = AkSoundEngine.GetIDFromString(AudioDeviceShareSet);
+
+        if (AdditionalDevice != null)
+        {
+            _outSettingsToAdd.idDevice = AdditionalDevice.idDevice;
+            _outSettingsToAdd.audioDeviceShareset = AkSoundEngine.GetIDFromString(AudioDeviceShareSet);
+        }
+        else
+        {
+            Debug.Log("This Gym works better if you have two active output devices on your machine.");
+        }
     }
 
     public void OnDestroy()

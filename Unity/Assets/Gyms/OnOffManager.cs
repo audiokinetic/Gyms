@@ -34,7 +34,7 @@ public abstract class OnOffManager : MonoBehaviour
         private set;
     }
     
-    public void Start()
+    public virtual void Start()
     {
         IsOn = false;
     }
