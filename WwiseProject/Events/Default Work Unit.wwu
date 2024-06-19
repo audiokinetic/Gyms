@@ -150,6 +150,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Post_No_Default_External_Sources" ID="{6CB0105F-5E3A-4231-9A7D-DB846C52F7B9}">
+							<ChildrenList>
+								<Action Name="" ID="{D70E6B6C-EB50-4DCD-87B6-6EB759F79AB8}" ShortID="254823898">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Default_External_Source" ID="{46387730-D6EB-4A71-8D4D-6AD67D539E10}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Subtitle" ID="{1EDEE4F3-A1CC-4AFA-83D3-21B9290F0987}" ShortID="276423643">

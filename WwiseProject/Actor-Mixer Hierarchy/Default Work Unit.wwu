@@ -2980,6 +2980,28 @@
 						<ActiveSource Name="MUS_RotTR_Cue2_Safe_4bars_85BPM" ID="{99A1201B-3299-42E8-B678-A88DC9A140AC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="ExternalSources" ID="{F1E39316-F4D3-4041-A3AF-4D861167BE81}" ShortID="334059430">
+					<ChildrenList>
+						<Sound Name="No_Default_External_Source" ID="{46387730-D6EB-4A71-8D4D-6AD67D539E10}" ShortID="972245107">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ExternalSource Name="No_Default_External_Source" ID="{58E528DB-192F-446E-961B-37FE16EF3A82}">
+									<Language>SFX</Language>
+								</ExternalSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="No_Default_External_Source" ID="{58E528DB-192F-446E-961B-37FE16EF3A82}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
