@@ -817,7 +817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2068478831}
   - component: {fileID: 2068478830}
-  - component: {fileID: 2068478829}
+  - component: {fileID: 2068478832}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged

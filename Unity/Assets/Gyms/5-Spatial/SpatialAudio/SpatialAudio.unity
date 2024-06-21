@@ -2021,7 +2021,6 @@ GameObject:
   - component: {fileID: 2124126956}
   - component: {fileID: 2124126955}
   - component: {fileID: 2124126957}
-  - component: {fileID: 2124126958}
   m_Layer: 0
   m_Name: Emitter
   m_TagString: Untagged
@@ -2079,7 +2078,6 @@ MonoBehaviour:
       type: 2}
   useCallbacks: 0
   Callbacks: []
-  playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
   eventIdInternal: 0
