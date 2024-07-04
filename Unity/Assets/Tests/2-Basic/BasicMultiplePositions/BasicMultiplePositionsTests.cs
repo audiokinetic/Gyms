@@ -45,7 +45,11 @@ namespace Tests
 
             ambient.HandleEvent(gameObject);
 
+#if WWISE_2024_OR_LATER
             Assert.AreEqual(expected, ambient.playingId);
+#else
+            Assert.AreEqual(expected, ambient.data.PlayingId);
+#endif
 
             LogOutput("Posting on Multiple Positions ", true);
 

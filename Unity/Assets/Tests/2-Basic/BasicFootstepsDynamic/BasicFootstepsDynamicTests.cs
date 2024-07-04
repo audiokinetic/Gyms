@@ -45,9 +45,14 @@ namespace Tests
             AkEvent akEvent = gameObject.GetComponent<AkEvent>();
             
             uint expected = PostSilence();
+#if WWISE_2024_OR_LATER
             expected = akEvent.playingId + 1;
-            LogOutput("Post on event ", true);
             Assert.AreEqual(expected, akEvent.playingId + 1);
+#else
+            expected = akEvent.data.PlayingId + 1;
+            Assert.AreEqual(expected, akEvent.data.PlayingId + 1);
+#endif
+            LogOutput("Post on event ", true);
             
             //Test the raycast 
             AK.Wwise.Switch switchPlay = footstepsDyamic.RaycastDown();
