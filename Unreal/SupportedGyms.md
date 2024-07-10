@@ -20,6 +20,7 @@
     - AdvancedAmbient
         - AdvancedAmbientFollow
         - AdvancedAmbientStartAll
+    - AdvancedCaptureProfiler
     - AdvancedEvents
         - AdvancedEventsPostAndWait
     - AdvancedExternalSources

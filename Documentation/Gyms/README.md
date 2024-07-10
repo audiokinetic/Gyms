@@ -106,6 +106,11 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `3-Advanced/AdvancedAmbient/AdvancedAmbientStartAll`_
 - Posting Wwise Events for every currently defined Ambient sound on a map.
 
+### Capturing Profiler File
+
+- _Folder: `3-Advanced/AdvancedCaptureProfiler`_
+- Start and stop capturing a Profiler session.
+
 ### Event Operations
 
 - _Folder: `3-Advanced/AdvancedEvents`_
