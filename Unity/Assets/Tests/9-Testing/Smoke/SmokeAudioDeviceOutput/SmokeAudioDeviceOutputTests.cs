@@ -44,6 +44,11 @@ namespace Tests
             
             // Find an additional audio device
             var additionalDevice = AddOutputHelpers.GetNonDefaultActiveDevice("System");
+            if (additionalDevice == null)
+            {
+                yield break;
+            }
+            
             Assert.AreNotEqual(additionalDevice.idDevice, AkSoundEngine.AK_INVALID_DEVICE_ID);
 
             // AddOutput and make sure it works
