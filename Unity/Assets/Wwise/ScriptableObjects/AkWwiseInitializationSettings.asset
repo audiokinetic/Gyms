@@ -9,20 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af3455f1c4b83f84da5d43c5f98e47ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 5061fe06ca504f14aaa81beb9b3e4ec6, type: 3}
   m_Name: AkWwiseInitializationSettings
   m_EditorClassIdentifier: 
   PlatformSettingsNameList:
   - Base
   - Windows
   PlatformSettingsList:
-  - {fileID: 11400000, guid: fd28569b74000c44582f00845e98cdc4, type: 2}
-  - {fileID: 11400000, guid: 9d6e8399655e9784caea904473139aa3, type: 2}
+  - {fileID: 11400000, guid: b608bded864eb0348b2d09f00cd6551a, type: 2}
+  - {fileID: 11400000, guid: 560eba62603099048af7897c77a9b859, type: 2}
   InvalidReferencePlatforms: []
   UserSettings:
     m_BasePath: Audio\GeneratedSoundBanks
     m_StartupLanguage: English(US)
     m_EngineLogging: 1
+    m_DefaultScalingFactor: 1
     m_MaximumNumberOfPositioningPaths: 255
     m_CommandQueueSize: 262144
     m_SamplesPerFrame: 512
@@ -61,11 +62,13 @@ MonoBehaviour:
     m_MaximumHardwareTimeoutMs: 1000
     m_DebugOutOfRangeCheckEnabled: 0
     m_DebugOutOfRangeLimit: 16
+    m_SuspendAudioDuringFocusLoss: 1
     m_RenderDuringFocusLoss: 0
     m_SoundBankPersistentDataPath: 
     m_UseAsyncOpen: 0
     m_MemoryAllocationSizeLimit: 0
     m_MemoryDebugLevel: 0
+    m_MemorySpanCount: 2
   CommsSettings:
     m_PoolSize: 262144
     m_DiscoveryBroadcastPort: 24024

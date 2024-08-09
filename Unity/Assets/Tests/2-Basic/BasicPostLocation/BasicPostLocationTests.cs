@@ -87,7 +87,6 @@ namespace Tests
             LogOutput("Expected the object is null ", true);
             Assert.AreEqual(null, obj);
 
-
             //multiple click
             yield return locationPost.PostTimer();
             yield return new WaitForSeconds(.4f);
@@ -95,8 +94,11 @@ namespace Tests
             yield return new WaitForSeconds(2);
             LogOutput("Expected the object is null ", true);
             Assert.AreEqual(null, obj);
-
-
+            
+            // Remove pending bank references
+            AkBank bank = gameObject.GetComponent<AkBank>();
+            bank.data.Unload();
+            bank.data.Unload();
 
             yield return FinishTest(SceneName);
         }

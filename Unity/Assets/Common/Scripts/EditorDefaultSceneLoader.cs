@@ -22,34 +22,27 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
-using NUnit.Framework;
-using System.Collections;
-using UnityEngine.TestTools;
+#if UNITY_EDITOR
+using UnityEditor;
+using UnityEditor.SceneManagement;
 using UnityEngine;
-using UnityEngine.Playables;
 
-namespace Tests
+[InitializeOnLoad]
+static class EditorDefaultSceneLoader
 {
-    public class SmokeSetStateTimelineTests : GymTests
+    static EditorDefaultSceneLoader()
     {
-        const string SceneName = "SmokeSetStateTimeline";
-        [UnityTest]
-        public IEnumerator SmokeSetStateTimeline_Tests()
+        if (EditorSceneManager.GetActiveScene().path == "")
         {
-            yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            uint firstSilence = PostSilence();
-            LoadBank(bank);
-            PlayableDirector timeline = GameObject.Find("SetSwitchTimeline").GetComponent<PlayableDirector>();
-            timeline.Play();
-            yield return new WaitForSeconds(0.5f);
-            uint secondSilence = PostSilence(); 
-            Assert.Greater(secondSilence, firstSilence + 1);
-            Assert.Less(secondSilence, firstSilence + 4);
-
-            yield return FinishTest(SceneName);
-            bank.data.Unload();
+            EditorApplication.update += OpenDefaultScene;
         }
     }
+    
+    static void OpenDefaultScene()
+    {
+        EditorApplication.update -= OpenDefaultScene;
+        string defaultScenePath = "Assets/Common/Scenes/MainMenu.unity";
+        EditorSceneManager.OpenScene(defaultScenePath);
+    }
 }
+#endif

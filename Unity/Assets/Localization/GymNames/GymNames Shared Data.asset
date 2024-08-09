@@ -339,6 +339,10 @@ MonoBehaviour:
     m_Key: SmokeSetStateTimeline
     m_Metadata:
       m_Items: []
+  - m_Id: 60938519529324544
+    m_Key: AdvancedCaptureProfiler
+    m_Metadata:
+      m_Items: []
   - m_Id: 73993862241456128
     m_Key: SmokeEventWithNoMedia
     m_Metadata:

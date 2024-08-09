@@ -929,6 +929,7 @@ MonoBehaviour:
       type: 2}
   useCallbacks: 0
   Callbacks: []
+  playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
   eventIdInternal: 0

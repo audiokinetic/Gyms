@@ -22,46 +22,40 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
-using NUnit.Framework;
+using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Playables;
 using UnityEngine.TestTools;
 
 namespace Tests
 {
-    public class SmokeTimelineInteractiveMusicSeekTests : GymTests
+    public class AdvancedCaptureProfilerTests : GymTests
     {
-        const string SceneName = "SmokeTimelineInteractiveMusicSeek";
+        const string SceneName = "AdvancedCaptureProfiler";
         [UnityTest]
-        public IEnumerator SmokeTimelineInteractiveMusicSeek_Tests()
+        public IEnumerator AdvancedCaptureProfiler_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
 
-            LoadBank(bank);
+            yield return TestCaptureProfiler();
 
-            var timeline = GameObject.FindFirstObjectByType<PlayableDirector>();
-            timeline.time = 0f;
-
-            uint firstSilence = PostSilence();
-            timeline.Play();
-            yield return new WaitForSeconds(0.1f);
-            timeline.time = 2f;
-            yield return new WaitForSeconds(0.1f);
-            timeline.time = 1f;
-            //Goes past the duration of the timeline. Loops and start another event.
-            yield return new WaitForSeconds(0.1f);
-            timeline.time = 20f;
-            
-            yield return new WaitForSeconds(0.1f);
-            timeline.time = -1f;
-
-            uint secondSilence = PostSilence();
-            Assert.Greater(secondSilence, firstSilence + 5);
-            Assert.Less(secondSilence, firstSilence + 15);
             yield return FinishTest(SceneName);
-            bank.data.Unload();
+        }
+
+        private IEnumerator TestCaptureProfiler()
+        {
+            var dt = DateTime.Now;
+            var profilerFile = "Profiler_" + dt.ToString("yyyy-MM-ddTHH-mm-ss"); 
+        
+            AkSoundEngine.StartProfilerCapture(profilerFile);
+
+            yield return new WaitForEndOfFrame();
+
+            AkSoundEngine.StopProfilerCapture();
+            
+            yield return new WaitForEndOfFrame();
+            
+            
         }
     }
 }

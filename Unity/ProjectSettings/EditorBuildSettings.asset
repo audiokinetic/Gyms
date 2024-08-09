@@ -60,6 +60,9 @@ EditorBuildSettings:
     path: Assets/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientStartAll/AdvancedAmbientStartAll.unity
     guid: 83512165366c3c5408849cbd9537b2ac
   - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedCaptureProfiler/AdvancedCaptureProfiler.unity
+    guid: b236f9e2fa15e384a9cdffd4add9ccb9
+  - enabled: 1
     path: Assets/Gyms/3-Advanced/AdvancedEvents/AdvancedEventsPostAndWait/AdvancedEventsPostAndWait.unity
     guid: 122dc91fe8f4d104a983182ded5a6a5a
   - enabled: 1
@@ -125,6 +128,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gyms/9-Testing/Smoke/SmokeSwitches/SmokeSwitchesSimple/SmokeSwitchesSimple.unity
     guid: d8d0070ee9d353843b4b027b19a3f1a0
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Smoke/SmokeTimeline/SmokeTimelineInteractiveMusicSeek/SmokeTimelineInteractiveMusicSeek.unity
+    guid: c05be31be1fc0ac42abeac0c50bfa837
   - enabled: 1
     path: Assets/Gyms/9-Testing/Stress/StressExtSrc/StressExtSrcInMemory/StressExtSrcInMemory.unity
     guid: e44ebcb6dd3d2c04d9eb1e2e99566dd3

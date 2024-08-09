@@ -1,4 +1,4 @@
-/*******************************************************************************
+﻿/*******************************************************************************
 The content of this file includes portions of the AUDIOKINETIC Wwise Technology
 released in source code form as part of the SDK installer package.
 
@@ -22,34 +22,22 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
-using NUnit.Framework;
-using System.Collections;
-using UnityEngine.TestTools;
+using System;
 using UnityEngine;
-using UnityEngine.Playables;
 
-namespace Tests
+public class AdvancedCaptureProfiler_CaptureProfiler : OnOffManager
 {
-    public class SmokeSetStateTimelineTests : GymTests
+    public override void OnAction()
     {
-        const string SceneName = "SmokeSetStateTimeline";
-        [UnityTest]
-        public IEnumerator SmokeSetStateTimeline_Tests()
-        {
-            yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
+        var dt = DateTime.Now;
+        var profilerFile = "Profiler_" + dt.ToString("yyyy-MM-ddTHH-mm-ss"); 
+        
+        Debug.Log(profilerFile);
+        AkSoundEngine.StartProfilerCapture(profilerFile);
+    }
 
-            uint firstSilence = PostSilence();
-            LoadBank(bank);
-            PlayableDirector timeline = GameObject.Find("SetSwitchTimeline").GetComponent<PlayableDirector>();
-            timeline.Play();
-            yield return new WaitForSeconds(0.5f);
-            uint secondSilence = PostSilence(); 
-            Assert.Greater(secondSilence, firstSilence + 1);
-            Assert.Less(secondSilence, firstSilence + 4);
-
-            yield return FinishTest(SceneName);
-            bank.data.Unload();
-        }
+    public override void OffAction()
+    {
+        AkSoundEngine.StopProfilerCapture();
     }
 }

@@ -1,4 +1,4 @@
-/*******************************************************************************
+﻿/*******************************************************************************
 The content of this file includes portions of the AUDIOKINETIC Wwise Technology
 released in source code form as part of the SDK installer package.
 
@@ -22,34 +22,36 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
-using NUnit.Framework;
+using System;
 using System.Collections;
-using UnityEngine.TestTools;
 using UnityEngine;
-using UnityEngine.Playables;
 
-namespace Tests
+public class AdvancedCaptureProfiler_PostEvent : MonoBehaviour
 {
-    public class SmokeSetStateTimelineTests : GymTests
+    [SerializeField]
+    AK.Wwise.Event _event;
+    [SerializeField]
+    AK.Wwise.Bank _bank;
+    [SerializeField]
+    GameObject _gameObject;
+    [SerializeField]
+    bool _onPlayerGameObject;
+    // Start is called before the first frame update
+    public void Post()
     {
-        const string SceneName = "SmokeSetStateTimeline";
-        [UnityTest]
-        public IEnumerator SmokeSetStateTimeline_Tests()
+        StartCoroutine(PostTimer());
+    }
+
+    IEnumerator PostTimer()
+    {
+        _bank.Load();
+        GameObject gameObjectToPost = _gameObject ? _gameObject : gameObject;
+        if(_onPlayerGameObject)
         {
-            yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            uint firstSilence = PostSilence();
-            LoadBank(bank);
-            PlayableDirector timeline = GameObject.Find("SetSwitchTimeline").GetComponent<PlayableDirector>();
-            timeline.Play();
-            yield return new WaitForSeconds(0.5f);
-            uint secondSilence = PostSilence(); 
-            Assert.Greater(secondSilence, firstSilence + 1);
-            Assert.Less(secondSilence, firstSilence + 4);
-
-            yield return FinishTest(SceneName);
-            bank.data.Unload();
+            gameObjectToPost = GameObject.FindGameObjectWithTag("MainCamera");
         }
+        _event.Post(gameObjectToPost);
+        yield return new WaitForSeconds(1);
+        _event.Stop(gameObjectToPost);
     }
 }
