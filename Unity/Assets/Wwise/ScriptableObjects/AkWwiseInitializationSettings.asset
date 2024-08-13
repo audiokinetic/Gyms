@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5061fe06ca504f14aaa81beb9b3e4ec6, type: 3}
+  m_Script: {fileID: 11500000, guid: 43754481b55d0d3408344c9eba91e4b8, type: 3}
   m_Name: AkWwiseInitializationSettings
   m_EditorClassIdentifier: 
   PlatformSettingsNameList:
   - Base
   - Windows
   PlatformSettingsList:
-  - {fileID: 11400000, guid: b608bded864eb0348b2d09f00cd6551a, type: 2}
-  - {fileID: 11400000, guid: 560eba62603099048af7897c77a9b859, type: 2}
+  - {fileID: 11400000, guid: e2f86d58079d6c74bb6eb2dd9bbb744c, type: 2}
+  - {fileID: 11400000, guid: 6d282b612b6644443ae081d8dd86c38c, type: 2}
   InvalidReferencePlatforms: []
   UserSettings:
     m_BasePath: Audio\GeneratedSoundBanks
@@ -40,14 +40,14 @@ MonoBehaviour:
     m_NumberOfRefillsInVoice: 4
     m_SpatialAudioSettings:
       m_MaxSoundPropagationDepth: 8
-      m_MovementThreshold: 0.1
-      m_NumberOfPrimaryRays: 100
-      m_MaxReflectionOrder: 1
+      m_MovementThreshold: 0.25
+      m_NumberOfPrimaryRays: 35
+      m_MaxReflectionOrder: 2
       m_MaxDiffractionOrder: 4
       m_DiffractionOnReflectionsOrder: 2
-      m_MaxPathLength: 10000
+      m_MaxEmitterRoomAuxSends: 3
+      m_MaxPathLength: 1000
       m_CPULimitPercentage: 0
-      m_EnableDiffractionOnReflections: 1
       m_EnableGeometricDiffractionAndTransmission: 1
       m_CalcEmitterVirtualPosition: 1
       m_LoadBalancingSpread: 1
@@ -55,6 +55,7 @@ MonoBehaviour:
     m_IOMemorySize: 2097152
     m_TargetAutoStreamBufferLengthMs: 380
     m_UseStreamCache: 0
+    m_LoadBankAsynchronously: 0
     m_MaximumPinnedBytesInCache: 4294967295
     m_EnableGameSyncPreparation: 0
     m_ContinuousPlaybackLookAhead: 1
@@ -65,7 +66,6 @@ MonoBehaviour:
     m_SuspendAudioDuringFocusLoss: 1
     m_RenderDuringFocusLoss: 0
     m_SoundBankPersistentDataPath: 
-    m_UseAsyncOpen: 0
     m_MemoryAllocationSizeLimit: 0
     m_MemoryDebugLevel: 0
     m_MemorySpanCount: 2

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}" SchemaVersion="119">
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}" PersistMode="Standalone">
 			<ChildrenList>
@@ -18,6 +18,16 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{E19626B1-FA33-49F3-95FD-D780F188DAA8}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Marker_Test_001" ID="{E8155E09-5BF9-4094-B623-78FE4348DC11}">
@@ -28,14 +38,6 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{E19626B1-FA33-49F3-95FD-D780F188DAA8}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
 							<ObjectLists>
 								<ObjectList Name="Sequences">
 									<Reference>

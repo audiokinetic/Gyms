@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}" SchemaVersion="119">
 	<InteractiveMusic>
 		<WorkUnit Name="ManyAssetGym" ID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}" PersistMode="Standalone">
 			<ChildrenList>
@@ -11,6 +11,21 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{C7EE8C01-2366-45DC-9B83-71AE4C578258}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{CFF33156-2E94-4BD1-ADDB-834E9E56D277}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<MusicPlaylistContainer Name="MusicContainer_B" ID="{5674E534-9742-4D74-B163-2A943CC8DB07}" ShortID="61050720">
@@ -20,6 +35,79 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{84B96086-A35E-4B85-8A50-F127BD462DD3}" ShortID="122072304">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{CAC6784B-7A91-436E-B9C3-0222AFDD06A3}" ShortID="143466364">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="ManyAssetsMediaMusic_5" ID="{9EBE99FA-BF49-414A-8FDD-5D1FBCBD1417}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{11ECCFD1-0006-4068-95D0-648DBCE5B5A3}" ShortID="222914144">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="ManyAssetsMediaMusic_6" ID="{5AFA6270-A6BD-4996-A29B-B1D7AD6686DE}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{2F695D3D-ECA8-4BB7-BABE-7CB0FD1B37AA}" ShortID="117407540">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="ManyAssetsMediaMusic_7" ID="{A775C6D9-4AEF-489E-8E1F-96A6365C0572}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{684EE894-B3FF-4044-8961-90D70048AF8A}" ShortID="174656150">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="ManyAssetsMediaMusic_8" ID="{CFD74CD7-D9FD-40F6-A14D-3E038FB61321}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{E12870AA-5DE2-43D9-B9A4-A2613503F8D9}" ShortID="894065366">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="ManyAssetsMediaMusic_9" ID="{DA2144BF-BF9E-4801-8507-714B0998995A}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{FBCF045B-88AA-43B5-826B-6916FDC69039}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{4741BAB4-BF19-41E2-8E54-3AAE26D98D73}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -41,6 +129,16 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{4AD8450F-402D-43D0-B91C-7FCC8D3C02C3}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="ManyAssetsMediaMusic_6" ID="{D0D566D8-A174-419F-9299-86D5D068E422}">
@@ -51,14 +149,6 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{4AD8450F-402D-43D0-B91C-7FCC8D3C02C3}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
 												<ObjectList Name="Sequences">
 													<Reference>
@@ -125,6 +215,16 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{002D5053-ADCE-446E-86E6-F2B72260A01A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="ManyAssetsMediaMusic_7" ID="{86C15DEE-DFFE-4340-B4B5-F2D7B22119C3}">
@@ -135,14 +235,6 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{002D5053-ADCE-446E-86E6-F2B72260A01A}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
 												<ObjectList Name="Sequences">
 													<Reference>
@@ -209,6 +301,16 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{E582FF5D-7B61-4B63-99F1-9DB06920FC9A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="ManyAssetsMediaMusic_8" ID="{F1C99C2D-BF2F-4C57-A862-AE88857618FF}">
@@ -219,14 +321,6 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{E582FF5D-7B61-4B63-99F1-9DB06920FC9A}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
 												<ObjectList Name="Sequences">
 													<Reference>
@@ -293,6 +387,16 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{E9FCFF1A-8A41-4D97-8C16-FB6EDB2F93F9}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="ManyAssetsMediaMusic_9" ID="{2BBE6DEC-907C-4EAB-9566-EE7976A17F3D}">
@@ -303,14 +407,6 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{E9FCFF1A-8A41-4D97-8C16-FB6EDB2F93F9}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
 												<ObjectList Name="Sequences">
 													<Reference>
@@ -377,6 +473,16 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{B18F254F-5419-4664-ADBD-BBE0848A8E18}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="ManyAssetsMediaMusic_5" ID="{191FE421-49F5-4413-A7A4-AB4500DD506B}">
@@ -387,14 +493,6 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{B18F254F-5419-4664-ADBD-BBE0848A8E18}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
 												<ObjectList Name="Sequences">
 													<Reference>
@@ -444,55 +542,6 @@
 									</ObjectLists>
 								</MusicSegment>
 							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{FBCF045B-88AA-43B5-826B-6916FDC69039}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{4741BAB4-BF19-41E2-8E54-3AAE26D98D73}">
-											<TransitionInfo/>
-										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{84B96086-A35E-4B85-8A50-F127BD462DD3}" ShortID="122072304">
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{CAC6784B-7A91-436E-B9C3-0222AFDD06A3}" ShortID="143466364">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="ManyAssetsMediaMusic_5" ID="{9EBE99FA-BF49-414A-8FDD-5D1FBCBD1417}"/>
-										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{11ECCFD1-0006-4068-95D0-648DBCE5B5A3}" ShortID="222914144">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="ManyAssetsMediaMusic_6" ID="{5AFA6270-A6BD-4996-A29B-B1D7AD6686DE}"/>
-										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{2F695D3D-ECA8-4BB7-BABE-7CB0FD1B37AA}" ShortID="117407540">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="ManyAssetsMediaMusic_7" ID="{A775C6D9-4AEF-489E-8E1F-96A6365C0572}"/>
-										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{684EE894-B3FF-4044-8961-90D70048AF8A}" ShortID="174656150">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="ManyAssetsMediaMusic_8" ID="{CFD74CD7-D9FD-40F6-A14D-3E038FB61321}"/>
-										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{E12870AA-5DE2-43D9-B9A4-A2613503F8D9}" ShortID="894065366">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="ManyAssetsMediaMusic_9" ID="{DA2144BF-BF9E-4801-8507-714B0998995A}"/>
-										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicSegment Name="ManyAssetsMediaMusic" ID="{0F04FF08-3A64-40FE-B4AF-A6D6303075EF}" ShortID="212582458">
 							<PropertyList>
@@ -512,6 +561,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{EBDB47AF-1D63-40E1-83A4-B305B4D99170}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ManyAssetsMediaMusic_0" ID="{591F4A7E-5F62-4869-9AE9-E4CDC0827C48}">
@@ -522,14 +581,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{EBDB47AF-1D63-40E1-83A4-B305B4D99170}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
 											<Reference>
@@ -565,6 +616,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{4533814B-EB70-4859-B75D-8326EE3B3BFB}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ManyAssetsMediaMusic_1" ID="{4DD834BC-C697-4364-B878-E1366C53AC2C}">
@@ -575,14 +636,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{4533814B-EB70-4859-B75D-8326EE3B3BFB}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
 											<Reference>
@@ -618,6 +671,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{A25DB35B-5272-4619-A769-2E16E1953223}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ManyAssetsMediaMusic_2" ID="{36269EE9-62D9-4B57-A62D-652480F760B3}">
@@ -628,14 +691,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{A25DB35B-5272-4619-A769-2E16E1953223}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
 											<Reference>
@@ -671,6 +726,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{6877CD99-A373-415D-BD6A-920CDB5BF65D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ManyAssetsMediaMusic_3" ID="{A40C441D-ED59-48DB-9E4B-606B827CC65B}">
@@ -681,14 +746,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{6877CD99-A373-415D-BD6A-920CDB5BF65D}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
 											<Reference>
@@ -724,6 +781,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{0E57038A-A87C-47DE-AC40-1701837D7322}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ManyAssetsMediaMusic_4" ID="{C07E9C41-10BC-4359-B711-911B3E8BA22A}">
@@ -734,14 +801,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{0E57038A-A87C-47DE-AC40-1701837D7322}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
 											<Reference>
@@ -791,65 +850,78 @@
 							</ObjectLists>
 						</MusicSegment>
 					</ChildrenList>
-					<TransitionList>
-						<MusicTransition Name="Root" ID="{C7EE8C01-2366-45DC-9B83-71AE4C578258}">
-							<PropertyList>
-								<Property Name="IsFolder" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<MusicTransition Name="Transition" ID="{CFF33156-2E94-4BD1-ADDB-834E9E56D277}">
-									<TransitionInfo/>
-								</MusicTransition>
-							</ChildrenList>
-							<TransitionInfo/>
-						</MusicTransition>
-					</TransitionList>
 					<ObjectLists>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{37ACD778-2E18-4A38-A23D-32513038611F}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="ManyAssetsMediaMusic" ID="{0F04FF08-3A64-40FE-B4AF-A6D6303075EF}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+											</Reference>
+										</ReferenceList>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
 						<ObjectList Name="Stingers">
 							<Reference>
 								<Local>
 									<MusicStinger Name="" ID="{F3FDBB69-747F-477C-B57D-764AA4D94884}">
-										<SegmentRef Name="ManyAssetsMediaMusicStinger_0" ID="{1652AC0C-34B0-4864-B208-8D576960F17A}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+										<ReferenceList>
+											<Reference Name="Segment">
+												<ObjectRef Name="ManyAssetsMediaMusicStinger_0" ID="{1652AC0C-34B0-4864-B208-8D576960F17A}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+											</Reference>
+										</ReferenceList>
 									</MusicStinger>
 								</Local>
 							</Reference>
 							<Reference>
 								<Local>
 									<MusicStinger Name="" ID="{7EF16F26-F74C-4317-A0E4-2A7FF6C859D9}">
-										<SegmentRef Name="ManyAssetsMediaMusicStinger_1" ID="{DB0A5A1F-C22F-4C33-93BC-08165655A5A7}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+										<ReferenceList>
+											<Reference Name="Segment">
+												<ObjectRef Name="ManyAssetsMediaMusicStinger_1" ID="{DB0A5A1F-C22F-4C33-93BC-08165655A5A7}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+											</Reference>
+										</ReferenceList>
 									</MusicStinger>
 								</Local>
 							</Reference>
 							<Reference>
 								<Local>
 									<MusicStinger Name="" ID="{B92AAC4A-9C38-4537-8641-85F41922DB13}">
-										<SegmentRef Name="ManyAssetsMediaMusicStinger_2" ID="{506D6387-976A-4AF0-AEB0-3E57B33726CA}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+										<ReferenceList>
+											<Reference Name="Segment">
+												<ObjectRef Name="ManyAssetsMediaMusicStinger_2" ID="{506D6387-976A-4AF0-AEB0-3E57B33726CA}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+											</Reference>
+										</ReferenceList>
 									</MusicStinger>
 								</Local>
 							</Reference>
 							<Reference>
 								<Local>
 									<MusicStinger Name="" ID="{B1F7FC3F-AACB-4E10-9436-74E8E93A49F9}">
-										<SegmentRef Name="ManyAssetsMediaMusicStinger_3" ID="{19FBA0F7-AE90-4B7E-B2B4-C8AE7B6ADC59}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+										<ReferenceList>
+											<Reference Name="Segment">
+												<ObjectRef Name="ManyAssetsMediaMusicStinger_3" ID="{19FBA0F7-AE90-4B7E-B2B4-C8AE7B6ADC59}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+											</Reference>
+										</ReferenceList>
 									</MusicStinger>
 								</Local>
 							</Reference>
 							<Reference>
 								<Local>
 									<MusicStinger Name="" ID="{423586CB-BA13-4309-8DF5-69093F4A254F}">
-										<SegmentRef Name="ManyAssetsMediaMusicStinger_4" ID="{2A455C07-E0AA-41FB-944A-73C7DF9E6CD4}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+										<ReferenceList>
+											<Reference Name="Segment">
+												<ObjectRef Name="ManyAssetsMediaMusicStinger_4" ID="{2A455C07-E0AA-41FB-944A-73C7DF9E6CD4}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+											</Reference>
+										</ReferenceList>
 									</MusicStinger>
 								</Local>
 							</Reference>
 						</ObjectList>
 					</ObjectLists>
-					<EntryList>
-						<Entry>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="ManyAssetsMediaMusic" ID="{0F04FF08-3A64-40FE-B4AF-A6D6303075EF}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-					</EntryList>
 				</MusicSwitchContainer>
 				<Folder Name="Stinger" ID="{C9F31ECE-EEFA-4F45-BFAC-F6C3B417A92B}" ShortID="1015117539">
 					<ChildrenList>
@@ -871,6 +943,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{E4C28DA3-5A8B-40F3-80D4-2828A08BA0BB}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ManyAssetsMediaMusicStinger_0" ID="{1D27726D-39E5-4DAF-AEDA-4B49C98B7B42}">
@@ -881,14 +963,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{E4C28DA3-5A8B-40F3-80D4-2828A08BA0BB}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
 											<Reference>
@@ -955,6 +1029,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{82E33B79-36D1-45DE-845A-56BA6FFE80BC}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ManyAssetsMediaMusicStinger_1" ID="{CEE092D3-C241-4691-A64D-0C70D78A9ED1}">
@@ -965,14 +1049,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{82E33B79-36D1-45DE-845A-56BA6FFE80BC}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
 											<Reference>
@@ -1039,6 +1115,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{CC7AE4B5-3971-4EF5-8D1B-D7285C31AFE7}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ManyAssetsMediaMusicStinger_2" ID="{56E40F6E-AB98-42BF-9266-CBDAA8493D84}">
@@ -1049,14 +1135,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{CC7AE4B5-3971-4EF5-8D1B-D7285C31AFE7}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
 											<Reference>
@@ -1123,6 +1201,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{1A136D1D-26C1-4083-A099-A143A07EFC4A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ManyAssetsMediaMusicStinger_3" ID="{7B3B48F6-1298-4A22-8291-7B0165A9F5EE}">
@@ -1133,14 +1221,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{1A136D1D-26C1-4083-A099-A143A07EFC4A}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
 											<Reference>
@@ -1207,6 +1287,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
 										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{7C32E591-9A31-4E9B-B332-9EA979BA7A87}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ManyAssetsMediaMusicStinger_4" ID="{83DFEA48-AF9D-4C1C-8F64-4CCD998540A6}">
@@ -1217,14 +1307,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{7C32E591-9A31-4E9B-B332-9EA979BA7A87}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
 											<Reference>

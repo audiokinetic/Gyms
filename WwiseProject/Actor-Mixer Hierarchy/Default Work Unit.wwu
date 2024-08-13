@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{83C7F172-2885-4077-9671-3FE56F82D16C}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{83C7F172-2885-4077-9671-3FE56F82D16C}" SchemaVersion="119">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{83C7F172-2885-4077-9671-3FE56F82D16C}" PersistMode="Standalone">
 			<ChildrenList>
@@ -442,11 +442,19 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-							<Playlist>
-								<ItemRef Name="One" ID="{D440C52D-F83A-416E-8328-143B827061C8}"/>
-								<ItemRef Name="Two" ID="{DCE953BE-211B-4077-B081-CCF9C78653F9}"/>
-								<ItemRef Name="Three" ID="{B74C74BE-A650-43DA-A4E5-1E56EC300C9E}"/>
-							</Playlist>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="One" ID="{D440C52D-F83A-416E-8328-143B827061C8}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Two" ID="{DCE953BE-211B-4077-B081-CCF9C78653F9}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Three" ID="{B74C74BE-A650-43DA-A4E5-1E56EC300C9E}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</RandomSequenceContainer>
 						<Sound Name="Subtitle_Voice" ID="{08BA1E73-9CEB-40EA-A6E0-25537D5EA135}" ShortID="582732013">
 							<PropertyList>
@@ -484,58 +492,90 @@
 									<MediaIDList>
 										<MediaID ID="746521856"/>
 									</MediaIDList>
-									<PluginInnerObjectList>
-										<List Name="Markers">
-											<PluginInnerObject Name="" ID="{D038B84D-E92B-4F2A-A6B2-908A83B487F4}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="Cue 1"/>
-													<Property Name="Time" Type="Real64" Value="0.0342291666666667"/>
-												</PropertyList>
-											</PluginInnerObject>
-											<PluginInnerObject Name="" ID="{A903D748-11D0-444B-90C7-9567F66957BE}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="Cue 2"/>
-													<Property Name="Time" Type="Real64" Value="1.13060416666667"/>
-												</PropertyList>
-											</PluginInnerObject>
-											<PluginInnerObject Name="" ID="{D6E7D214-4754-4748-9897-09BC6D67275F}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="Cue 3"/>
-													<Property Name="Time" Type="Real64" Value="2.13354166666667"/>
-												</PropertyList>
-											</PluginInnerObject>
-											<PluginInnerObject Name="" ID="{1FE9EAF7-A745-41E2-8D0E-097EA0E48EFF}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="Cue 4"/>
-													<Property Name="Time" Type="Real64" Value="2.87454166666667"/>
-												</PropertyList>
-											</PluginInnerObject>
-											<PluginInnerObject Name="" ID="{6559B786-0BF3-4EF3-A68F-C08E0080BDA8}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="Cue 5"/>
-													<Property Name="Time" Type="Real64" Value="4.25391666666667"/>
-												</PropertyList>
-											</PluginInnerObject>
-											<PluginInnerObject Name="" ID="{4D3A46FE-A4C7-41BA-9D91-2691A6C95110}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="Cue 6"/>
-													<Property Name="Time" Type="Real64" Value="5.15022916666667"/>
-												</PropertyList>
-											</PluginInnerObject>
-											<PluginInnerObject Name="" ID="{C26A2703-B706-4DDE-8B28-D9EEEAE1F69F}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="Cue 7"/>
-													<Property Name="Time" Type="Real64" Value="7.64704166666667"/>
-												</PropertyList>
-											</PluginInnerObject>
-											<PluginInnerObject Name="" ID="{3163DCF8-359C-4FDA-A484-AC677D504E43}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="Cue 8"/>
-													<Property Name="Time" Type="Real64" Value="9.53979166666667"/>
-												</PropertyList>
-											</PluginInnerObject>
-										</List>
-									</PluginInnerObjectList>
+									<ObjectLists>
+										<ObjectList Name="Markers">
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{D038B84D-E92B-4F2A-A6B2-908A83B487F4}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="Cue 1"/>
+															<Property Name="Time" Type="Real64" Value="0.0342291666666667"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{A903D748-11D0-444B-90C7-9567F66957BE}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="Cue 2"/>
+															<Property Name="Time" Type="Real64" Value="1.13060416666667"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{D6E7D214-4754-4748-9897-09BC6D67275F}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="Cue 3"/>
+															<Property Name="Time" Type="Real64" Value="2.13354166666667"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{1FE9EAF7-A745-41E2-8D0E-097EA0E48EFF}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="Cue 4"/>
+															<Property Name="Time" Type="Real64" Value="2.87454166666667"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{6559B786-0BF3-4EF3-A68F-C08E0080BDA8}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="Cue 5"/>
+															<Property Name="Time" Type="Real64" Value="4.25391666666667"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{4D3A46FE-A4C7-41BA-9D91-2691A6C95110}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="Cue 6"/>
+															<Property Name="Time" Type="Real64" Value="5.15022916666667"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{C26A2703-B706-4DDE-8B28-D9EEEAE1F69F}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="Cue 7"/>
+															<Property Name="Time" Type="Real64" Value="7.64704166666667"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{3163DCF8-359C-4FDA-A484-AC677D504E43}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="Cue 8"/>
+															<Property Name="Time" Type="Real64" Value="9.53979166666667"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -1071,11 +1111,19 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
-											<Playlist>
-												<ItemRef Name="ShortMedia_4" ID="{8E9F649B-CB32-4617-B5F0-99C3DE257465}"/>
-												<ItemRef Name="ShortMedia_5" ID="{A185B383-A7B9-486C-B4AC-6A02F6E47D16}"/>
-												<ItemRef Name="ShortMedia_6" ID="{A9529659-793D-4A25-A755-6A8123CF190E}"/>
-											</Playlist>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<Reference>
+														<ObjectRef Name="ShortMedia_4" ID="{8E9F649B-CB32-4617-B5F0-99C3DE257465}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="ShortMedia_5" ID="{A185B383-A7B9-486C-B4AC-6A02F6E47D16}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="ShortMedia_6" ID="{A9529659-793D-4A25-A755-6A8123CF190E}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 										<SwitchContainer Name="ShortMediaSwitched" ID="{6F8ACB7C-EE66-4F47-A32C-2573A0912B84}" ShortID="109465267">
 											<ReferenceList>
@@ -1453,11 +1501,19 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
-											<Playlist>
-												<ItemRef Name="ShortMedia_streamed_4" ID="{BF62B5FE-A53B-48C1-84A8-C6DE881CA2A5}"/>
-												<ItemRef Name="ShortMedia_streamed_5" ID="{06894AA9-6FB8-4C83-BACF-CC7716D3C03E}"/>
-												<ItemRef Name="ShortMedia_streamed_6" ID="{2F13509C-D63E-4C90-BE69-5FEEF4C9AACB}"/>
-											</Playlist>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<Reference>
+														<ObjectRef Name="ShortMedia_streamed_4" ID="{BF62B5FE-A53B-48C1-84A8-C6DE881CA2A5}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="ShortMedia_streamed_5" ID="{06894AA9-6FB8-4C83-BACF-CC7716D3C03E}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="ShortMedia_streamed_6" ID="{2F13509C-D63E-4C90-BE69-5FEEF4C9AACB}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</RandomSequenceContainer>
 										<SwitchContainer Name="ShortMediaStreamedSwitched" ID="{5BF4EB32-A3EC-4391-B97E-F9B7A29C1A68}" ShortID="78619092">
 											<ReferenceList>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{53876CD0-19C2-476C-A830-BBCF3F922E8C}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{53876CD0-19C2-476C-A830-BBCF3F922E8C}" SchemaVersion="119">
 	<AudioObjects>
 		<WorkUnit Name="Switches Gyms" ID="{53876CD0-19C2-476C-A830-BBCF3F922E8C}" PersistMode="Standalone">
 			<ChildrenList>
@@ -113,16 +113,20 @@
 									<MediaIDList>
 										<MediaID ID="435792457"/>
 									</MediaIDList>
-									<PluginInnerObjectList>
-										<List Name="Markers">
-											<PluginInnerObject Name="" ID="{6A3FEA3E-483C-4F67-94D4-03CB981D29FD}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="fr_FR"/>
-													<Property Name="Time" Type="Real64" Value="0.0188487329264325"/>
-												</PropertyList>
-											</PluginInnerObject>
-										</List>
-									</PluginInnerObjectList>
+									<ObjectLists>
+										<ObjectList Name="Markers">
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{6A3FEA3E-483C-4F67-94D4-03CB981D29FD}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="fr_FR"/>
+															<Property Name="Time" Type="Real64" Value="0.0188487329264325"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</AudioFileSource>
 								<AudioFileSource Name="Hello_01" ID="{CCC8D6CB-708B-4ED5-80D0-C76922E04769}">
 									<PropertyList>
@@ -133,16 +137,20 @@
 									<MediaIDList>
 										<MediaID ID="752474211"/>
 									</MediaIDList>
-									<PluginInnerObjectList>
-										<List Name="Markers">
-											<PluginInnerObject Name="" ID="{481A5228-125B-4030-82A7-9F3A88A56CA5}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="en_US"/>
-													<Property Name="Time" Type="Real64" Value="0.0145479176681379"/>
-												</PropertyList>
-											</PluginInnerObject>
-										</List>
-									</PluginInnerObjectList>
+									<ObjectLists>
+										<ObjectList Name="Markers">
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{481A5228-125B-4030-82A7-9F3A88A56CA5}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="en_US"/>
+															<Property Name="Time" Type="Real64" Value="0.0145479176681379"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</AudioFileSource>
 								<AudioFileSource Name="Hello" ID="{1F653D38-460E-418D-AD3B-D77D49C4B649}">
 									<PropertyList>
@@ -153,16 +161,20 @@
 									<MediaIDList>
 										<MediaID ID="776905217"/>
 									</MediaIDList>
-									<PluginInnerObjectList>
-										<List Name="Markers">
-											<PluginInnerObject Name="" ID="{1BD4B8FB-B4C7-4D3B-9A06-825AB4322EFC}" PluginName="Marker" CompanyID="0" PluginID="993">
-												<PropertyList>
-													<Property Name="Label" Type="string" Value="en_GB"/>
-													<Property Name="Time" Type="Real64" Value="0.0145479176681379"/>
-												</PropertyList>
-											</PluginInnerObject>
-										</List>
-									</PluginInnerObjectList>
+									<ObjectLists>
+										<ObjectList Name="Markers">
+											<Reference>
+												<Local>
+													<Marker Name="" ID="{1BD4B8FB-B4C7-4D3B-9A06-825AB4322EFC}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="en_GB"/>
+															<Property Name="Time" Type="Real64" Value="0.0145479176681379"/>
+														</PropertyList>
+													</Marker>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
