@@ -23,6 +23,7 @@
     - AdvancedCaptureProfiler
     - AdvancedEvents
         - AdvancedEventsPostAndWait
+        - AdvancedEventsPostWithCallback
     - AdvancedExternalSources
     - AdvancedLoadData
     - AdvancedSequencer

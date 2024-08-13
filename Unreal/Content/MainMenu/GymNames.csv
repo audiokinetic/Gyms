@@ -43,6 +43,7 @@ Key,SourceString
 "StressSwitches","Switch Container Loading Options"
 "StressOpenLevel","Playing Media at Level Start"
 "AdvancedEventsPostAndWait","Posting Events and Waiting for Completion"
+"AdvancedEventsPostWithCallback","Posting Events with a Callback"
 "StressPostEventAndWaitTwoActors","Waiting for Completion on Multiple Actors"
 "SmokeSpatialLargeWorld","Large World"
 "SmokeSwitchesSimple","Simple"
