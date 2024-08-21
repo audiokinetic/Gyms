@@ -42,12 +42,9 @@ namespace Tests
             yield return new WaitForEndOfFrame();
 
             BasicExecuteActionBreak_Interact interact = GameObject.FindObjectOfType<BasicExecuteActionBreak_Interact>();
-#if WWISE_2024_OR_LATER
-            uint expected = interact.gameObject.GetComponent<AkEvent>().playingId + 2;
-#else
-            uint expected = interact.gameObject.GetComponent<AkEvent>().data.PlayingId + 2;
-#endif
 
+            uint expected = interact.gameObject.GetComponent<AkEvent>().playingId + 2;
+            
             interact.Interact();
             yield return new WaitForSeconds(1f);
 
