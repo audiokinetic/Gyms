@@ -8,11 +8,6 @@
 						<Sound Name="Tone_150Hz" ID="{7C734436-049D-4094-AA72-1AD8CB89524D}" ShortID="904870958">
 							<PropertyList>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-1210</Value>
-									</ValueList>
-								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -89,11 +84,6 @@
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-1210</Value>
 									</ValueList>
 								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -174,11 +164,6 @@
 						<Sound Name="Tone_150Hz_RTPC" ID="{47C5D125-8788-42E7-AC91-FC471B948382}" ShortID="139603964">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-1210</Value>
-									</ValueList>
-								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -589,11 +574,6 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-1210</Value>
-									</ValueList>
-								</Property>
 								<Property Name="PreFetchLength" Type="int16">
 									<ValueList>
 										<Value>0</Value>
@@ -676,11 +656,6 @@
 								<Property Name="IsZeroLatency" Type="bool">
 									<ValueList>
 										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-1210</Value>
 									</ValueList>
 								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
