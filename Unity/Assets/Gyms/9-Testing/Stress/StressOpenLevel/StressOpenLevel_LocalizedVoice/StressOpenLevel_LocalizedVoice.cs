@@ -26,7 +26,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StressOpenLevel_LocalizedVoice : StressOpenLevel_Trigger
+public class StressOpenLevel_LocalizedVoice : OpenLevel_Trigger
 {
     [SerializeField]
     string _language;

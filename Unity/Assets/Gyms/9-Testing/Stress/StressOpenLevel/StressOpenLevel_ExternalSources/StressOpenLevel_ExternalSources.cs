@@ -27,7 +27,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StressOpenLevel_ExternalSources : StressOpenLevel_Trigger
+public class StressOpenLevel_ExternalSources : OpenLevel_Trigger
 {
     [SerializeField]
     string[] externalSourcesChange;
