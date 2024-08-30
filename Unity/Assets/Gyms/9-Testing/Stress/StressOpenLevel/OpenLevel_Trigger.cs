@@ -27,7 +27,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StressOpenLevel_Trigger : MonoBehaviour
+public class OpenLevel_Trigger : MonoBehaviour
 {
     [SerializeField]
     string _levelToLoad;

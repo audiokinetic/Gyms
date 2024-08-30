@@ -26,7 +26,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StressOpenLevel_PostEvent : StressOpenLevel_Trigger
+public class StressOpenLevel_PostEvent : OpenLevel_Trigger
 {
     [SerializeField]
     AkAmbient _ambient;
