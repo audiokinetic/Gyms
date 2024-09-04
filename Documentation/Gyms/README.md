@@ -134,7 +134,13 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 ### Using the Sequencer to Animate Wwise Objects
 
 - _Folder: `3-Advanced/AdvancedSequencer`_
-- Using the sequencing system to drive Wwise Events, Game Parameters, and Switches.
+- Using the sequencing system to interact with Wwise Events and Objects
+
+- _Folder: `3-Advanced/AdvancedSequencer/AdvancedSequencerPlain`_
+- Using the sequencing system to post Wwise Events
+
+- _Folder: `3-Advanced/AdvancedSequencer/AdvancedSequencerSpatialized`_
+- Using the sequencing system to drive Wwise Events and Game Parameters
 
 ### Using Event Callbacks to Retrieve Markers (Subtitles)
 

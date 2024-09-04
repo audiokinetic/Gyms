@@ -11,12 +11,6 @@
 								<Property Name="Max" Type="Real64" Value="1200"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="LevelSequencer" ID="{AED2557C-0BDF-4D3C-B2FB-2111D0B817A5}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="1"/>
-							</PropertyList>
-						</GameParameter>
 						<GameParameter Name="RTPC_SwitchControler" ID="{17A29FCC-FD32-4EA9-BCD7-A3FEB1666E0E}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="1"/>
@@ -32,6 +26,7 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<WorkUnit Name="Sequencer" ID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
