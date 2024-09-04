@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{65952EF1-7CE8-404D-BA22-B2C4CC3F0529}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Sequencer" ID="{65952EF1-7CE8-404D-BA22-B2C4CC3F0529}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="SequencerPlain" ID="{0B6BA3F5-8DD9-450B-A47F-5FF9960941B6}" ShortID="80350167">
+					<PropertyList>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+								<Conversion Name="Default Conversion Settings (Custom)" ID="{772C12D1-81EA-4121-A5CE-33E19948F192}">
+									<PropertyList>
+										<Property Name="Channels" Type="int32">
+											<ValueList>
+												<Value Platform="Base">4</Value>
+												<Value Platform="Windows">4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="LRMix" Type="Real64">
+											<ValueList>
+												<Value Platform="Base">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Base">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MinSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Base">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Base">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseFilenameMarker" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ConversionPluginInfoList>
+										<ConversionPluginInfo Platform="Base">
+											<ConversionPlugin Name="" ID="{EC68F98A-3F8B-464B-AFA1-E3B9F9C131F3}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+										</ConversionPluginInfo>
+										<ConversionPluginInfo Platform="Windows">
+											<ConversionPlugin Name="" ID="{5407D81C-58C5-4395-A7DF-20414EED0294}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+										</ConversionPluginInfo>
+									</ConversionPluginInfoList>
+								</Conversion>
+							</Custom>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Sine_440Hz_500ms_mono" ID="{3AEFD39E-598B-4612-A646-0CED4AC20842}">
+							<Language>SFX</Language>
+							<AudioFile>Sine_440Hz_500ms_mono.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="784407396"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="LargeMedia" ID="{F9ADEDDE-5E16-468B-9F82-090849A3E702}">
+							<Language>SFX</Language>
+							<AudioFile>LargeMedia.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="433934266"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="LargeMedia" ID="{F9ADEDDE-5E16-468B-9F82-090849A3E702}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SequencerSpatialized" ID="{EDB6512C-7383-4C78-9341-736B3D15D619}" ShortID="1032446584">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="SpatialAudioAttenuation" ID="{EA508674-20AA-4C32-9D22-2D46D95D80F6}" WorkUnitID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Sine_440Hz_500ms_mono" ID="{B33A9F45-0181-4239-B374-52A0B87DADAE}">
+							<Language>SFX</Language>
+							<AudioFile>Sine_440Hz_500ms_mono.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="987134811"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{6A210D30-3C7E-4DB1-A05E-3AF755DDC67E}" ShortID="897886572">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC" ID="{E5365D66-91AC-475A-B0F3-30DD9F97E3D4}" WorkUnitID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{725B910B-1DCC-4D82-952B-40C63946D4B6}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-2000</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1200</XPos>
+																<YPos>1000</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{5F7D4465-790C-4ABD-895E-B9343AA466F0}" ShortID="452778000">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="LevelSequencer" ID="{AED2557C-0BDF-4D3C-B2FB-2111D0B817A5}" WorkUnitID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{14921CAE-970F-4DE2-8555-A2353216B808}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-64</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Sine_440Hz_500ms_mono" ID="{B33A9F45-0181-4239-B374-52A0B87DADAE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

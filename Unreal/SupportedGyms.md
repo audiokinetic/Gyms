@@ -27,6 +27,8 @@
     - AdvancedExternalSources
     - AdvancedLoadData
     - AdvancedSequencer
+        - AdvancedSequencerPlain
+        - AdvancedSequencerSpatialized
     - AdvancedSubtitle
 - 5-Spatial
     - SpatialAudio

@@ -272,7 +272,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="LevelSequencer" ID="{AED2557C-0BDF-4D3C-B2FB-2111D0B817A5}" WorkUnitID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}"/>
+														<ObjectRef Name="LevelSequencer" ID="{AED2557C-0BDF-4D3C-B2FB-2111D0B817A5}" WorkUnitID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
