@@ -22,38 +22,21 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
-using UnrealBuildTool;
+using UnityEngine;
 
-public class Gyms : ModuleRules
+public class AdvancedPersistentMusic_PersistentGameObject : MonoBehaviour
 {
-	public Gyms(ReadOnlyTargetRules Target) : base(Target)
-	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { 
-			"Core", 
-			"CoreUObject",
-			"Engine",
-			"FunctionalTesting",
-			"InputCore",
-			"AkAudio",
-			"Wwise",
-			"WwiseNiagara",
-			"WwiseSoundEngine",
-		});
+    public static AdvancedPersistentMusic_PersistentGameObject Instance;
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
-		if (Target.bBuildEditor)
-		{
-			PrivateDependencyModuleNames.AddRange(
-				new string[]
-				{
-#if UE_5_0_OR_LATER
-					"DeveloperToolSettings",
-#endif
-					"UnrealEd",
-				});
-		}
-	}
+    void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 }

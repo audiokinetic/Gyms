@@ -22,38 +22,29 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
-using UnrealBuildTool;
+using NUnit.Framework;
+using System.Collections;
+using UnityEngine.TestTools;
 
-public class Gyms : ModuleRules
+namespace Tests
 {
-	public Gyms(ReadOnlyTargetRules Target) : base(Target)
-	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { 
-			"Core", 
-			"CoreUObject",
-			"Engine",
-			"FunctionalTesting",
-			"InputCore",
-			"AkAudio",
-			"Wwise",
-			"WwiseNiagara",
-			"WwiseSoundEngine",
-		});
+    public class AdvancedPersistentMusicTests : GymTests
+    {
+        const string SceneName = "AdvancedPersistentMusic";
+        [UnityTest]
+        public IEnumerator AdvancedPersistentMusic_Tests()
+        {
+            yield return StartTest(SceneName);
+            AkBank bank = gameObject.GetComponent<AkBank>();
+            LoadBank(bank);
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
-		if (Target.bBuildEditor)
-		{
-			PrivateDependencyModuleNames.AddRange(
-				new string[]
-				{
-#if UE_5_0_OR_LATER
-					"DeveloperToolSettings",
-#endif
-					"UnrealEd",
-				});
-		}
-	}
+            uint expected = PostSilence() + 1;
+
+            yield return LoadScene(SceneName + "_2", UnityEngine.SceneManagement.LoadSceneMode.Single);
+            yield return StartTest(SceneName);
+
+            Assert.AreEqual(expected, PostSilence());
+            yield return FinishTest(SceneName);
+        }
+    }
 }

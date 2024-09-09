@@ -27,6 +27,7 @@
     - AdvancedSequencer
     - AdvancedSubtitle
     - AdvancedTimeline
+    - AdvancedPersistentMusic
 - 5-Spatial
     - SpatialAudio
     - SpatialPortal

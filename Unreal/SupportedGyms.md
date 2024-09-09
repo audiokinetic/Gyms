@@ -30,6 +30,7 @@
         - AdvancedSequencerPlain
         - AdvancedSequencerSpatialized
     - AdvancedSubtitle
+    - AdvancedPersistentMusic
 - 5-Spatial
     - SpatialAudio
     - SpatialPortal

@@ -69,6 +69,12 @@ EditorBuildSettings:
     path: Assets/Gyms/3-Advanced/AdvancedExternalSources/AdvancedExternalSources.unity
     guid: dfe289a59662b1641a540cf6a8416041
   - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedPersistentMusic/AdvancedPersistentMusic.unity
+    guid: c2bcb554893c27a49be7a5733502fd51
+  - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedPersistentMusic/AdvancedPersistentMusic_2.unity
+    guid: 216762b555d40d04abc64219ffe2691c
+  - enabled: 1
     path: Assets/Gyms/3-Advanced/AdvancedSequencer/AdvancedSequencer.unity
     guid: ef623304aafade84db4fd2a0469e498e
   - enabled: 1
