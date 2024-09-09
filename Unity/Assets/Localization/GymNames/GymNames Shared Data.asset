@@ -351,6 +351,10 @@ MonoBehaviour:
     m_Key: BasicSetGlobalGameParameter
     m_Metadata:
       m_Items: []
+  - m_Id: 131239163757490176
+    m_Key: AdvancedPersistentMusic
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

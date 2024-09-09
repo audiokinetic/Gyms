@@ -350,6 +350,10 @@ MonoBehaviour:
     m_Localized: Using Game Parameters to Modify global parameters (RTPC)
     m_Metadata:
       m_Items: []
+  - m_Id: 131239163757490176
+    m_Localized: Posting a Persistent Wwise Event (Music)
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
