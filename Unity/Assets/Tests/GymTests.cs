@@ -48,6 +48,12 @@ public class GymTests
     protected IEnumerator FinishTest(string SceneName)
     {
         AkSoundEngine.StopAll();
+        yield return new WaitForEndOfFrame();
+        var Banks = GameObject.FindObjectsByType<AkBank>(FindObjectsSortMode.None);
+        foreach (var Bank in Banks)
+        {
+            Bank.UnloadBank(Bank.gameObject);
+        }
         if (gameObject != null)
         {
             //Destroy the object to make sure the Bank is unloaded before starting the next test
