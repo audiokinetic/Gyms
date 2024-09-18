@@ -165,6 +165,10 @@ FTopLevelAssetPath UGymsBlueprintFunctionLibrary::MakeTopLevelAssetPath(const FS
 
 int32 UGymsBlueprintFunctionLibrary::GetOutputDeviceId(const FString& DeviceName)
 {
+#if defined(PLATFORM_MICROSOFT) && PLATFORM_MICROSOFT && !(defined(PLATFORM_XB1) && PLATFORM_XB1) && !(defined(PLATFORM_XBOXONE) && PLATFORM_XBOXONE)
 	const auto Platform = IWwisePlatformAPI::Get();
 	return Platform->GetDeviceIDFromName((wchar_t*)*DeviceName);
+#else
+	return -1;
+#endif
 }
