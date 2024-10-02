@@ -40,5 +40,8 @@ public class GymsTarget : TargetRules
 #if UE_5_4_OR_LATER
 		bUseAdaptiveUnityBuild = false;
 #endif
+		
+		//bUseUnityBuild = false;
+		//bUsePCHFiles = false;
 	}
 }

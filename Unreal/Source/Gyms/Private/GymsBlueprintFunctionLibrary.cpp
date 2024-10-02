@@ -26,6 +26,7 @@ the specific language governing permissions and limitations under the License.
 
 #include "FunctionalTestBase.h"
 #include "Gyms.h"
+#include "Engine/Engine.h"
 #include "HAL/FileManager.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -73,8 +74,7 @@ TArray<UGymsBlueprintFunctionLibrary::FWorldSoftObjectPtr> UGymsBlueprintFunctio
 			{
 				GymFile.RemoveFromEnd(TEXT(".umap"));
 				GymFile = TEXT("/Game/") + GymFile;
-				FWorldSoftObjectPtr SoftPtr(GymFile);
-				Gyms.Add( SoftPtr );
+				Gyms.Emplace( FSoftObjectPath(GymFile) );
 			}
 		}
 

@@ -26,6 +26,8 @@ the specific language governing permissions and limitations under the License.
 #include "Settings/ProjectPackagingSettings.h"
 #include "AssetRegistry/AssetRegistryModule.h"
 
+#include "Editor.h"
+
 #define LOCTEXT_NAMESPACE "GymEditorUtilities"
 
 void FGymEditorUtilitiesModule::StartupModule()
