@@ -25,6 +25,10 @@ the specific language governing permissions and limitations under the License.
 
 #include "GymCreator.h"
 
+#include "Engine/World.h"
+#include "GenericPlatform/GenericPlatformFile.h"
+#include "HAL/PlatformFileManager.h"
+
 #if WITH_EDITOR
 #include "FileHelpers.h"
 #include "ObjectTools.h"
