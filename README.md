@@ -9,7 +9,7 @@ The Gym projects support the major version of Wwise indicated in the current git
 
 - Wwise&trade; 2022.1 and all minor releases
 - The latest three Unity&trade; LTS versions
-- The latest three Unreal&trade; LTS versions
+- The latest three Unreal&trade; versions
 
 ## Setup
 
