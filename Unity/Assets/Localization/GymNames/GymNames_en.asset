@@ -354,6 +354,10 @@ MonoBehaviour:
     m_Localized: Posting a Persistent Wwise Event (Music)
     m_Metadata:
       m_Items: []
+  - m_Id: 141375980364263424
+    m_Localized: Posting a Wwise Event with a Cooldown Period
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

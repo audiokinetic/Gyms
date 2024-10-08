@@ -24,6 +24,7 @@
     - AdvancedEvents
         - AdvancedEventsPostAndWait
         - AdvancedEventsPostWithCallback
+        - AdvancedEventsCooldown
     - AdvancedExternalSources
     - AdvancedLoadData
     - AdvancedSequencer

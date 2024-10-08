@@ -121,6 +121,11 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `3-Advanced/AdvancedEvents/AdvancedEventsPostAndWait`_
 - Posting a Wwise Event and waiting for its completion.
 
+#### Posting Events with a Cooldown Period
+
+- _Folder: `3-Advanced/AdvancedEvents/AdvancedEventsCooldown`_
+- Posting a Wwise Event with a Cooldown Period that prevents the Event from being posted again during that time.
+
 ### Using External Sources
 
 - _Folder: `3-Advanced/AdvancedExternalSources`_
