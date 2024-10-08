@@ -23,6 +23,7 @@
     - AdvancedCaptureProfiler
     - AdvancedEvents
         - AdvancedEventsPostAndWait
+        - AdvancedEventsCooldown
     - AdvancedExternalSources
     - AdvancedSequencer
     - AdvancedSubtitle
