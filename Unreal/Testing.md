@@ -121,3 +121,9 @@ To run a test with OpenLevel, we recommend the following sequence:
 
 ## OpenLevel Testing Limitation
 OpenLevel is limited to a maximum of two OpenLevel calls and the last one must be to the original level.
+
+## Testing Modular gameplay
+When testing the Unreal Modular Gameplay Feature in the gyms, start by enabling the Modular Gameplay and Game Feature Plugin and restart the editor. Additionaly, make sure that the Modular Gameplay Demo plugin is enabled. Under the Modular Gameplay Demo plugin folder, open the Data Asset and make sure to set the current state to Active.
+
+### Additional note for cooking
+By default, the umap located under the Modular Gameplay Demo plugin folder won't be added to the map to cook list in the project settings. Make sure to add it before cooking when trying to test the Demo in a packaged project.
