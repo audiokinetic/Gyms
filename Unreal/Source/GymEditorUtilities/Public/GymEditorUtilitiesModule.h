@@ -26,9 +26,7 @@ the specific language governing permissions and limitations under the License.
 
 #include "Gyms.h"
 #include "Runtime/Launch/Resources/Version.h"
-#if UE_5_0_OR_LATER
 #include "UObject/ObjectSaveContext.h"
-#endif
 #include "IGymEditorUtilities.h"
 
 /**
@@ -42,11 +40,7 @@ class FGymEditorUtilitiesModule : public IGymEditorUtilities
 
 private:
 	FDelegateHandle OnPreSaveWorldHandle;
-#if UE_5_0_OR_LATER
 	void OnPreSaveWorld(UWorld* World, FObjectPreSaveContext ObjectSaveContext);
-#else
-	void OnPreSaveWorld(uint32 SaveFlags, UWorld* World);
-#endif
 	
 	/**
 	 * Adds a level to PackagingSettings->MapsToCook. This ensures all maps are packaged in a built game.
