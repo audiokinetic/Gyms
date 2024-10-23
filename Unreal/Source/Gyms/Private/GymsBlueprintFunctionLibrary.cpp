@@ -108,11 +108,7 @@ void UGymsBlueprintFunctionLibrary::UpdateMapsToCook()
 		{
 			NewPath.FilePath = "/Game/Gyms/" + GymFile;
 			PackagingSettings->MapsToCook.Add(NewPath);
-#if UE_5_0_OR_LATER
 			PackagingSettings->TryUpdateDefaultConfigFile();
-#else
-			PackagingSettings->UpdateDefaultConfigFile();
-#endif
         }
     }
 #endif
@@ -134,12 +130,8 @@ void UGymsBlueprintFunctionLibrary::ForceFinishingTest(AFunctionalTest* TestActo
 	FFunctionalTestBase* FunctionalTest = static_cast<FFunctionalTestBase*>(FAutomationTestFramework::Get().GetCurrentTest());
 	if (FunctionalTest && TestActor)
 	{
-#if UE_5_0_OR_LATER
 		TestActor->bIsRunning = true;
 		FunctionalTest->SetFunctionalTestComplete(TestActor->TestLabel);
-#else
-		FunctionalTest->SetFunctionalTestComplete(TestActor->GetName());
-#endif
 	}
 }
 

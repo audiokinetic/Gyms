@@ -49,9 +49,7 @@ public class Gyms : ModuleRules
 			PrivateDependencyModuleNames.AddRange(
 				new string[]
 				{
-#if UE_5_0_OR_LATER
 					"DeveloperToolSettings",
-#endif
 					"UnrealEd",
 				});
 		}

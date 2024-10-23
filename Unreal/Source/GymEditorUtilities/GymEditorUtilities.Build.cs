@@ -31,9 +31,7 @@ public class GymEditorUtilities : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(new string[] { "Core",
-#if UE_5_0_OR_LATER
 			"DeveloperToolSettings", 
-#endif
 			"CoreUObject", 
 			"Engine", 
 			"InputCore", 
