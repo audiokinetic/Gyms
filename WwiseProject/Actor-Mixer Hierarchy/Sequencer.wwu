@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{65952EF1-7CE8-404D-BA22-B2C4CC3F0529}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{65952EF1-7CE8-404D-BA22-B2C4CC3F0529}" SchemaVersion="119">
 	<AudioObjects>
 		<WorkUnit Name="Sequencer" ID="{65952EF1-7CE8-404D-BA22-B2C4CC3F0529}" PersistMode="Standalone">
 			<ChildrenList>

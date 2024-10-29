@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{A7726C4F-F11A-43F9-8F25-E4AA0D6A1234}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{A7726C4F-F11A-43F9-8F25-E4AA0D6A1234}" SchemaVersion="119">
 	<Events>
 		<WorkUnit Name="Sequencer" ID="{A7726C4F-F11A-43F9-8F25-E4AA0D6A1234}" PersistMode="Standalone">
 			<ChildrenList>
