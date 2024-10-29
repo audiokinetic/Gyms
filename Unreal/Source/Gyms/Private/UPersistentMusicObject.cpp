@@ -33,7 +33,7 @@ void UPersistentMusicObject::Register()
 {
 	if (FAkAudioDevice::Get())
 	{
-		FAkAudioDevice::Get()->RegisterGameObject((AkGameObjectID)AkGameObject, TEXT("Persistent_Music"));
+		FAkAudioDevice::Get()->RegisterGameObject(AkGameObject->GetAkGameObjectID(), TEXT("Persistent_Music"));
 		AkGameObject->SetRegisteredWithWwise(true);
 	}
 }
@@ -43,7 +43,7 @@ void UPersistentMusicObject::Unregister()
 	auto* SoundEngine = IWwiseSoundEngineAPI::Get();
 	if (LIKELY(SoundEngine))
 	{
-		SoundEngine->UnregisterGameObj((AkGameObjectID)AkGameObject);
+		SoundEngine->UnregisterGameObj(AkGameObject->GetAkGameObjectID());
 		AkGameObject->SetRegisteredWithWwise(false);
 	}
 }
@@ -53,7 +53,7 @@ void UPersistentMusicObject::SetListener()
 	auto* SoundEngine = IWwiseSoundEngineAPI::Get();
 	if (LIKELY(SoundEngine))
 	{
-		AkGameObjectID ListenerIds[] = { (AkGameObjectID)AkGameObject };
-		SoundEngine->SetListeners((AkGameObjectID)AkGameObject, ListenerIds, 1);
+		AkGameObjectID ListenerIds[] = { AkGameObject->GetAkGameObjectID() };
+		SoundEngine->SetListeners(AkGameObject->GetAkGameObjectID(), ListenerIds, 1);
 	}
 }
