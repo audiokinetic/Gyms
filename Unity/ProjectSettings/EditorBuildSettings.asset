@@ -87,6 +87,9 @@ EditorBuildSettings:
     path: Assets/Gyms/3-Advanced/AdvancedTimeline/AdvancedTimeline.unity
     guid: 19d1db14c33a0db44be8a92fed88e577
   - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedVideoAudioSync/AdvancedVideoAudioSync.unity
+    guid: 28e1a2c0dca9f21409596fd2877bcb50
+  - enabled: 1
     path: Assets/Gyms/5-Spatial/SpatialAudio/SpatialAudio.unity
     guid: 200aca35fc892b24bbced41540c88a91
   - enabled: 1
