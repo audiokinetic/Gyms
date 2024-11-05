@@ -157,6 +157,11 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `3-Advanced/AdvancedTimeline`_
 - Using the Timeline system to drive Wwise Events, Game Parameters, and Switches.
 
+### Using GetSourcePlayPosition to synchronize a Video with a Wwise Event
+
+- _Folder: `3-Advanced/AdvancedVideoAudioSync`_
+- Posting a Wwise Event and keeping the video synchronized using GetSourcePlayPosition.
+
 ## Spatial Audio
 
 - _Folder: `5-Spatial`_

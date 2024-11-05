@@ -41,6 +41,7 @@
 						<ObjectRef Name="Looping_Event" ID="{0EF3A8F8-9489-48E0-8096-EEFA414FBED1}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_DLCSound" ID="{9AB6C66B-529A-48E8-B0FA-B7C6A1F4C67C}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="LoopingSound" ID="{7A18C36D-06A4-48F0-AD9B-5308A8AFADC0}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Post_VA_Sync_Event" ID="{88F4B118-6221-4A91-9776-3588BE0094A3}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wood_03" ID="{7122AAFC-02EF-4B84-89BA-D2DFE3FB5544}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopEvent" ID="{79454EB5-D318-4C1C-A155-4D06F4C39AA9}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="InteractiveMusicEvent" ID="{26C6DC2B-2942-4C6D-9638-E9BBFC4902E7}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
