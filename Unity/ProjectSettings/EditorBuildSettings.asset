@@ -90,6 +90,12 @@ EditorBuildSettings:
     path: Assets/Gyms/5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeMesh/SpatialGeometryShapeMesh.unity
     guid: aa459ad6e83ab6e48b82538c320fc599
   - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedVideoAudioSync/AdvancedVideoAudioSync.unity
+    guid: 28e1a2c0dca9f21409596fd2877bcb50
+  - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialAudio/SpatialAudio.unity
+    guid: 200aca35fc892b24bbced41540c88a91
+  - enabled: 1
     path: Assets/Gyms/5-Spatial/SpatialOutdoorsRoom/SpatialOutdoorsRoom.unity
     guid: 00ee632bc057cad48b17d72c360c10a2
   - enabled: 1

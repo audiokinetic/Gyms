@@ -1658,6 +1658,28 @@
 								<ActiveSource Name="Hello" ID="{83D13B83-F96B-45A8-AF88-4A17F8F430DB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="VA_Sync_SFX" ID="{ACCF45F4-1906-457D-81C8-F55551BF07FE}" ShortID="505085053">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AdvancedVideoAudioSync_Audio" ID="{30048E48-AC79-482E-9DA9-6B274C3D8D17}">
+									<Language>SFX</Language>
+									<AudioFile>AdvancedVideoAudioSync_Audio.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="949762375"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="AdvancedVideoAudioSync_Audio" ID="{30048E48-AC79-482E-9DA9-6B274C3D8D17}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AkSwitch" ID="{C3225902-07FC-457A-8117-2EACAF161A38}" ShortID="350302714">
