@@ -29,6 +29,7 @@
     - AdvancedSubtitle
     - AdvancedTimeline
     - AdvancedPersistentMusic
+	- AdvancedVideoAudioSync
 - 5-Spatial
     - SpatialGeometry
         - SpatialGeometryShape

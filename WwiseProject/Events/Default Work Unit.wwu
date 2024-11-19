@@ -626,6 +626,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="VASync" ID="{6C2F08AF-3178-45C4-B402-29170AC7B5A9}" ShortID="331155700">
+					<ChildrenList>
+						<Event Name="Post_VA_Sync_Event" ID="{88F4B118-6221-4A91-9776-3588BE0094A3}">
+							<ChildrenList>
+								<Action Name="" ID="{669AA32C-FB2C-4A1C-A0B4-BDD8598B4F51}" ShortID="141686093">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VA_Sync_SFX" ID="{ACCF45F4-1906-457D-81C8-F55551BF07FE}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
