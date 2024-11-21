@@ -36,9 +36,6 @@ namespace Tests
         public IEnumerator StressExtSrcStreaming_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            bank.data.Load();
 
             yield return new WaitForSeconds(20f);
 

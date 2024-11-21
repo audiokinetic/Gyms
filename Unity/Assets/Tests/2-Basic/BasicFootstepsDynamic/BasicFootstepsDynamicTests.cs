@@ -36,22 +36,16 @@ namespace Tests
         public IEnumerator BasicFootstepsDynamic_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
             GameObject go = GameObject.Find("FPSController");
             BasicFootstepsDyamic footstepsDyamic = go.GetComponent<BasicFootstepsDyamic>();
 
-            LoadBank(bank);
             var switches = gameObject.GetComponents<AkSwitch>();
             AkEvent akEvent = gameObject.GetComponent<AkEvent>();
             
             uint expected = PostSilence();
-#if WWISE_2024_OR_LATER
+
             expected = akEvent.playingId + 1;
             Assert.AreEqual(expected, akEvent.playingId + 1);
-#else
-            expected = akEvent.data.PlayingId + 1;
-            Assert.AreEqual(expected, akEvent.data.PlayingId + 1);
-#endif
             LogOutput("Post on event ", true);
             
             //Test the raycast 
@@ -72,7 +66,6 @@ namespace Tests
             Assert.AreEqual(null, switchPlay);
             
             yield return FinishTest(SceneName);
-            bank.data.Unload();
         }
     }
 }

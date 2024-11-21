@@ -25,6 +25,4 @@ the specific language governing permissions and limitations under the License.
 #pragma once
 
 #include "CoreMinimal.h"
-
-#define UE_5_0_OR_LATER   (ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 0)
-#define UE_5_1_OR_LATER   (ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 1)
+#include "Runtime/Launch/Resources/Version.h"

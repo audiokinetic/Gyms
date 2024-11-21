@@ -35,9 +35,6 @@ namespace Tests
         public IEnumerator AdvancedSequencer_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             GameObject button = GameObject.Find("MovingCube");
             AdvancedSequencer_Interact movement = button.GetComponent<AdvancedSequencer_Interact>();

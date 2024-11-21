@@ -46,15 +46,16 @@ public class StressStreamingReload : MonoBehaviour
         {
             string sceneName = "StressStreamingReload_1";
             SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
-            yield return new WaitForEndOfFrame();
             SceneManager.UnloadSceneAsync(sceneName);
             
             sceneName = "StressStreamingReload_2";
             SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
-            yield return new WaitForEndOfFrame();
             SceneManager.UnloadSceneAsync(sceneName);
+            
             _testIterations++;
         }
+
+        yield return null;
     }
 
     IEnumerator GarbageCollectorCall()

@@ -36,9 +36,6 @@ namespace Tests
         public IEnumerator SmokeButtonScene_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             yield return FinishTest(SceneName);
         }

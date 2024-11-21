@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A7726C4F-F11A-43F9-8F25-E4AA0D6A1234}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Sequencer" ID="{A7726C4F-F11A-43F9-8F25-E4AA0D6A1234}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_SequencerPlain" ID="{0D4A57E0-90D5-4656-A9A6-1FEDEF411741}">
+					<ChildrenList>
+						<Action Name="" ID="{2208AD85-E535-4DAF-8CC0-4F84E6F7557F}" ShortID="327135309">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LargeMedia" ID="{76861171-0E54-4611-A6BD-EE644255BF3A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SequencerSpatialized" ID="{8A057C72-0B8C-483F-89DF-F697EB81EC03}">
+					<ChildrenList>
+						<Action Name="" ID="{7587FFBC-44DF-470D-9E59-23B321115321}" ShortID="816254484">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SequencerSpatialized" ID="{EDB6512C-7383-4C78-9341-736B3D15D619}" WorkUnitID="{65952EF1-7CE8-404D-BA22-B2C4CC3F0529}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

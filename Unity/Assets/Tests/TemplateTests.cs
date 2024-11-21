@@ -35,14 +35,10 @@ namespace Tests
         public IEnumerator Template_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             //Add Tests Here
 
             yield return FinishTest(SceneName);
-            bank.data.Unload();
         }
     }
 }

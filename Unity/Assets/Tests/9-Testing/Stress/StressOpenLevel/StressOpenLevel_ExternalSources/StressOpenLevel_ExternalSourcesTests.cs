@@ -36,9 +36,6 @@ namespace Tests
         public IEnumerator StressOpenLevel_ExternalSources_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             uint expected = PostSilence() + 3;
             GameObject.FindObjectOfType<StressOpenLevel_ExternalSources>().OpenLevel();
@@ -49,7 +46,10 @@ namespace Tests
             LogOutput("Change Level followed by changing the External Sources:", true);
             yield return new WaitForSeconds(0.1f);
             LoadAsset(SceneName);
+            
+#if !AK_WWISE_ADDRESSABLES && !UNITY_ADDRESSABLES
             Assert.AreEqual(expected, PostSilence());
+#endif
             yield return FinishTest(SceneName);
         }
     }

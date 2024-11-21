@@ -23,10 +23,12 @@
     - AdvancedCaptureProfiler
     - AdvancedEvents
         - AdvancedEventsPostAndWait
+        - AdvancedEventsCooldown
     - AdvancedExternalSources
     - AdvancedSequencer
     - AdvancedSubtitle
     - AdvancedTimeline
+    - AdvancedPersistentMusic
 - 5-Spatial
     - SpatialAudio
     - SpatialPortal
@@ -84,3 +86,6 @@
             - StressSwitchesUnloadWhilePlaying
             - StressSwitchesValueWithoutSwitchContainer
             - StressSwitchesWithMediaAlreadyLoaded
+- AutoBankSample
+    - PlayAutoBankSound
+    - PlayUserDefinedBank

@@ -36,7 +36,7 @@ public class Gyms : ModuleRules
 			"Engine",
 			"FunctionalTesting",
 			"InputCore",
-			
+			"AkAudio",
 			"Wwise",
 			"WwiseNiagara",
 			"WwiseSoundEngine",
@@ -44,15 +44,18 @@ public class Gyms : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 		
-		if (Target.bBuildEditor)
+		if (Target.bBuildEditor || Target.bBuildWithEditorOnlyData)
 		{
 			PrivateDependencyModuleNames.AddRange(
 				new string[]
 				{
-#if UE_5_0_OR_LATER
 					"DeveloperToolSettings",
-#endif
 					"UnrealEd",
+					
+					"WwisePackaging",
+					"WwisePackagingEditor",
+					"WwisePackagingRuntime",
+					"WwiseProjectDatabase",
 				});
 		}
 	}

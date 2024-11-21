@@ -28,12 +28,9 @@ public class EssentialAmbient_Interact : OnOffManager
 {
     [SerializeField]
     AkAmbient _ambient = default;
-    [SerializeField]
-    AK.Wwise.Bank _bank = default;
 
     public override void OnAction()
     {
-        _bank.Load();
         _ambient.data.Post(_ambient.gameObject);
     }
 

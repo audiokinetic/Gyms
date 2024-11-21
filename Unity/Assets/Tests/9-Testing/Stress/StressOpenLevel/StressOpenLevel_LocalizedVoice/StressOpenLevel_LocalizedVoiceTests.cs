@@ -37,9 +37,6 @@ namespace Tests
         {
             AkSoundEngine.SetCurrentLanguage("en_US");
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             uint expected = PostSilence() + 3;
 
@@ -55,8 +52,6 @@ namespace Tests
             
             LoadAsset(SceneName);
             
-            bank = gameObject.GetComponent<AkBank>();
-            LoadBank(bank);
             Assert.AreEqual(expected, PostSilence());
             yield return FinishTest(SceneName);
         }

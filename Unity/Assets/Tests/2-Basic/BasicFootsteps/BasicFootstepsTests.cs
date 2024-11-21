@@ -35,9 +35,6 @@ namespace Tests
         public IEnumerator BasicFootsteps_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             var switches = gameObject.GetComponents<AkSwitch>();
             AkEvent akEvent = gameObject.GetComponent<AkEvent>();

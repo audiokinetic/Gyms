@@ -177,8 +177,8 @@ def main(argv=None):
 			skipSDKCopy = True
 
 	if not skipSDKCopy:
-		fromDirectory = os.path.join(os.getcwd(), "Gyms", "Unreal", "Plugins", "Wwise", "ThirdParty", "SDK")
-		toDirectory = os.path.join(os.getcwd(), "Gyms", "Unreal", "Plugins", "Wwise", "ThirdParty")
+		fromDirectory = os.path.join(os.getcwd(), "Gyms", "Unreal", "Plugins", "WwiseSoundEngine", "ThirdParty", "SDK")
+		toDirectory = os.path.join(os.getcwd(), "Gyms", "Unreal", "Plugins", "WwiseSoundEngine", "ThirdParty")
 		copy_tree(fromDirectory, toDirectory)
 		remove_tree(fromDirectory)
 	

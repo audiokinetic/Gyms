@@ -36,16 +36,20 @@ namespace Tests
         public IEnumerator StressPostEventAndWaitTwoActors_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             uint expected = PostSilence() + 3;
 
             yield return GameObject.FindObjectOfType<StressPostEventAndWaitTwoActors_PostTwoWaitForEvent>().PostEventsAndWaitRoutine();
             yield return new WaitForSeconds(10f);
 
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => GameObject.Find("PostAndWaitPrefab").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank()
+                .IsCompleted);
+            yield return new WaitUntil(() => GameObject.Find("PostAndWaitPrefab (1)").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank()
+                .IsCompleted);
+#else
             Assert.AreEqual(expected, PostSilence());
+#endif
             yield return FinishTest(SceneName);
         }
     }

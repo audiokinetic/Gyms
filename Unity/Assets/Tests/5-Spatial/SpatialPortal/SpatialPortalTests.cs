@@ -36,9 +36,6 @@ namespace Tests
         public IEnumerator SpatialPortal_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             AkRoomPortal portal = GameObject.FindObjectOfType<AkRoomPortal>();
 

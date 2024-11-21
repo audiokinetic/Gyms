@@ -26,6 +26,7 @@ the specific language governing permissions and limitations under the License.
 
 #include "FunctionalTestBase.h"
 #include "Gyms.h"
+#include "Engine/Engine.h"
 #include "HAL/FileManager.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -73,8 +74,7 @@ TArray<UGymsBlueprintFunctionLibrary::FWorldSoftObjectPtr> UGymsBlueprintFunctio
 			{
 				GymFile.RemoveFromEnd(TEXT(".umap"));
 				GymFile = TEXT("/Game/") + GymFile;
-				FWorldSoftObjectPtr SoftPtr(GymFile);
-				Gyms.Add( SoftPtr );
+				Gyms.Emplace( FSoftObjectPath(GymFile) );
 			}
 		}
 
@@ -108,11 +108,7 @@ void UGymsBlueprintFunctionLibrary::UpdateMapsToCook()
 		{
 			NewPath.FilePath = "/Game/Gyms/" + GymFile;
 			PackagingSettings->MapsToCook.Add(NewPath);
-#if UE_5_0_OR_LATER
 			PackagingSettings->TryUpdateDefaultConfigFile();
-#else
-			PackagingSettings->UpdateDefaultConfigFile();
-#endif
         }
     }
 #endif
@@ -134,12 +130,8 @@ void UGymsBlueprintFunctionLibrary::ForceFinishingTest(AFunctionalTest* TestActo
 	FFunctionalTestBase* FunctionalTest = static_cast<FFunctionalTestBase*>(FAutomationTestFramework::Get().GetCurrentTest());
 	if (FunctionalTest && TestActor)
 	{
-#if UE_5_0_OR_LATER
 		TestActor->bIsRunning = true;
 		FunctionalTest->SetFunctionalTestComplete(TestActor->TestLabel);
-#else
-		FunctionalTest->SetFunctionalTestComplete(TestActor->GetName());
-#endif
 	}
 }
 
@@ -173,6 +165,10 @@ FTopLevelAssetPath UGymsBlueprintFunctionLibrary::MakeTopLevelAssetPath(const FS
 
 int32 UGymsBlueprintFunctionLibrary::GetOutputDeviceId(const FString& DeviceName)
 {
+#if defined(PLATFORM_MICROSOFT) && PLATFORM_MICROSOFT && !(defined(PLATFORM_XB1) && PLATFORM_XB1) && !(defined(PLATFORM_XBOXONE) && PLATFORM_XBOXONE)
 	const auto Platform = IWwisePlatformAPI::Get();
 	return Platform->GetDeviceIDFromName((wchar_t*)*DeviceName);
+#else
+	return -1;
+#endif
 }

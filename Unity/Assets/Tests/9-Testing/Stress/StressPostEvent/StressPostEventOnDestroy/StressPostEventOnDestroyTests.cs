@@ -36,19 +36,20 @@ namespace Tests
         public IEnumerator StressPostEventOnDestroy_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
 
-            LoadBank(bank);
             uint expected = PostSilence() + 2;
             var interact = UnityEngine.GameObject.Find("Cylinder").GetComponent<StressSpawnDestroyInteract>();
             interact.Interact();
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            var spawnedObjectAkEvent = UnityEngine.GameObject.Find("StressPostEventOnDestroyCube(Clone)").GetComponent<AkEvent>();
+            yield return new WaitUntil(() =>  spawnedObjectAkEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
             interact.Interact();
 
             yield return (new WaitForSeconds(0.5f));
             Assert.AreEqual(expected, PostSilence());
             LogOutput("Posting an event during object destruction", true);
             yield return FinishTest(SceneName);
-            bank.data.Unload();
         }
     }
 }

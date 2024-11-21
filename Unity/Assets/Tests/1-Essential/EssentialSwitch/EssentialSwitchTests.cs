@@ -24,6 +24,7 @@ the specific language governing permissions and limitations under the License.
 
 using NUnit.Framework;
 using System.Collections;
+using UnityEngine;
 using UnityEngine.TestTools;
 
 namespace Tests
@@ -35,14 +36,15 @@ namespace Tests
         public IEnumerator EssentialSwitch_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-            LoadBank(bank);
 
             EssentialSwitchTests_Component testComponents = gameObject.GetComponent<EssentialSwitchTests_Component>();
-
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() =>
+                testComponents.switchEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
             //Set no switch test
             testComponents.noSwitch.SetValue(testComponents.gameObject);
-            uint expected = AkSoundEngine.PostEvent("Silence", gameObject);
+            uint expected = PostSilence();
             uint id = testComponents.switchEvent.Post(testComponents.gameObject);
             expected++;
             Assert.AreEqual(expected, id);

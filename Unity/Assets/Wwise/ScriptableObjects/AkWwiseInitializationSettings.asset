@@ -9,20 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43754481b55d0d3408344c9eba91e4b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d127127a24917a49afa72524cbc1f11, type: 3}
   m_Name: AkWwiseInitializationSettings
   m_EditorClassIdentifier: 
   PlatformSettingsNameList:
   - Base
   - Windows
   PlatformSettingsList:
-  - {fileID: 11400000, guid: e2f86d58079d6c74bb6eb2dd9bbb744c, type: 2}
-  - {fileID: 11400000, guid: 6d282b612b6644443ae081d8dd86c38c, type: 2}
+  - {fileID: 11400000, guid: 9dd16f7adae417044ad4d83cd28b9781, type: 2}
+  - {fileID: 11400000, guid: 2391497939b2ab545b81cdf5dc6eff53, type: 2}
   InvalidReferencePlatforms: []
   UserSettings:
     m_BasePath: Audio\GeneratedSoundBanks
     m_StartupLanguage: English(US)
     m_EngineLogging: 1
+    m_IsAutoBankEnabled: 1
     m_DefaultScalingFactor: 1
     m_MaximumNumberOfPositioningPaths: 255
     m_CommandQueueSize: 262144
@@ -51,6 +52,11 @@ MonoBehaviour:
       m_EnableGeometricDiffractionAndTransmission: 1
       m_CalcEmitterVirtualPosition: 1
       m_LoadBalancingSpread: 1
+      m_MaxDiffractionPaths: 8
+      m_MaxReflectionPaths: 0
+      m_MaxDiffractionAngleDegrees: 180
+      m_SmoothingConstantMs: 0
+      m_TransmissionOperation: 2
   AdvancedSettings:
     m_IOMemorySize: 2097152
     m_TargetAutoStreamBufferLengthMs: 380
@@ -66,9 +72,16 @@ MonoBehaviour:
     m_SuspendAudioDuringFocusLoss: 1
     m_RenderDuringFocusLoss: 0
     m_SoundBankPersistentDataPath: 
-    m_MemoryAllocationSizeLimit: 0
+    m_MemoryPrimarySbaInitSize: 2097152
+    m_MemoryPrimaryTlsfInitSize: 2097152
+    m_MemoryPrimaryTlsfSpanSize: 2097152
+    m_MemoryPrimaryReservedLimit: 0
+    m_MemoryPrimaryAllocSizeHuge: 2097152
+    m_MemoryMediaTlsfInitSize: 2097152
+    m_MemoryMediaTlsfSpanSize: 2097152
+    m_MemoryMediaReservedLimit: 0
+    m_MemoryMediaAllocSizeHuge: 2097152
     m_MemoryDebugLevel: 0
-    m_MemorySpanCount: 2
   CommsSettings:
     m_PoolSize: 262144
     m_DiscoveryBroadcastPort: 24024

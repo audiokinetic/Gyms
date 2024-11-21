@@ -36,12 +36,16 @@ namespace Tests
         public IEnumerator AdvancedEventsPostAndWait_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             uint expected = PostSilence() + 3;
             GameObject secondObject = GameObject.Instantiate(gameObject);
+
+
+            AdvancedEventsPostAndWait_WaitForEndOfEvent scriptReference =
+                gameObject.GetComponent<AdvancedEventsPostAndWait_WaitForEndOfEvent>();
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => scriptReference._event.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 
             gameObject.GetComponent<AdvancedEventsPostAndWait_WaitForEndOfEvent>().Interact();
             yield return new WaitForSeconds(0.2f);
@@ -49,7 +53,6 @@ namespace Tests
             gameObject.GetComponent<AdvancedEventsPostAndWait_WaitForEndOfEvent>().Interact();
             secondObject.GetComponent<AdvancedEventsPostAndWait_WaitForEndOfEvent>().Interact();
             Assert.AreEqual(expected, PostSilence());
-            bank.UnloadBank(gameObject);
             yield return new WaitForSeconds(10f);
             
             LogOutput("Finishing an event", true);

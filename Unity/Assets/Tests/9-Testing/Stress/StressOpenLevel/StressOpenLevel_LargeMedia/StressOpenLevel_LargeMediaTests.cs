@@ -36,9 +36,6 @@ namespace Tests
         public IEnumerator StressOpenLevel_LargeMedia_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
             yield return new WaitForEndOfFrame();
 
             uint expected = PostSilence() + 3;
@@ -46,11 +43,13 @@ namespace Tests
             yield return LoadScene(SceneName + "_2", UnityEngine.SceneManagement.LoadSceneMode.Single);
             yield return StartTest(SceneName);
 
-            bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
             yield return new WaitForEndOfFrame();
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => GameObject.Find("AkAmbient").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank()
+                .IsCompleted);
+#else
             Assert.AreEqual(expected, PostSilence());
+#endif
             yield return FinishTest(SceneName);
         }
     }

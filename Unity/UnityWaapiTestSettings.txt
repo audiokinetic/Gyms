@@ -1,0 +1,15 @@
+# The first 4 settings are global settings for the whole run
+# For the settings under "Run 1:" they are unique per run.
+# It is possible to create more than 1 run.
+
+-f : Unity/AutoBankAddresable.txt
+-u : C:\Program Files\Unity\Hub\Editor\2021.3.29f1\Editor\Unity.exe
+-o : Unity/AutoBankAddresableOutput.txt
+-j : E:\Code\Gyms\Unity_Test_Temp_Copy
+-w : ws://127.0.0.1:8080/waapi
+
+Run 1:
+-d : 0
+-e : 0
+-s : 0
+-p : StandaloneWindows64

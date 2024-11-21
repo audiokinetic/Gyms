@@ -9,13 +9,13 @@
 
 	<target name="fetch_sdk">
 		<if condition="${platform.is_darwin()}">
-			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/Wwise/ThirdParty" platforms="Mac,Main" />	
-			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/Wwise/ThirdParty" platforms="Mac" plugin-names="Auro,ConvolutionReverb,Reflect,MasteringSuite,SoundSeedGrain" />	
+			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/WwiseSoundEngine/ThirdParty" platforms="Mac,Main" />	
+			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="/mnt/DC1/Files/Builds" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/WwiseSoundEngine/ThirdParty" platforms="Mac" plugin-names="Auro,ConvolutionReverb,Reflect,MasteringSuite,SoundSeedGrain" />	
 		</if>
 
 		<if condition="${platform.is_windows()}">
-			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/Wwise/ThirdParty" platforms="Windows_vc150,Windows_vc160,Windows_vc170,Main"/>	
-			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/Wwise/ThirdParty" platforms="Windows_vc150,Windows_vc160,Windows_vc170" plugin-names="Auro,ConvolutionReverb,Reflect,MasteringSuite,SoundSeedGrain"/>	
+			<wwise:getsdk wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/WwiseSoundEngine/ThirdParty" platforms="Windows_vc150,Windows_vc160,Windows_vc170,Main"/>	
+			<wwise:getplugins wwise-version="${WWISE_VERSION}" specific-build="${WWISE_BUILD_NUMBER}" wwise-root="${_root_directory_}/Wwise" builds-root="${BUILDS_LOCATION}" working-directory="${_root_directory_}/Gyms/Unreal/Plugins/WwiseSoundEngine/ThirdParty" platforms="Windows_vc150,Windows_vc160,Windows_vc170" plugin-names="Auro,ConvolutionReverb,Reflect,MasteringSuite,SoundSeedGrain"/>	
 		</if>
 	</target>
 

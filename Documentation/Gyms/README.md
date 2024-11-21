@@ -121,6 +121,11 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `3-Advanced/AdvancedEvents/AdvancedEventsPostAndWait`_
 - Posting a Wwise Event and waiting for its completion.
 
+#### Posting Events with a Cooldown Period
+
+- _Folder: `3-Advanced/AdvancedEvents/AdvancedEventsCooldown`_
+- Posting a Wwise Event with a Cooldown Period that prevents the Event from being posted again during that time.
+
 ### Using External Sources
 
 - _Folder: `3-Advanced/AdvancedExternalSources`_
@@ -134,7 +139,13 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 ### Using the Sequencer to Animate Wwise Objects
 
 - _Folder: `3-Advanced/AdvancedSequencer`_
-- Using the sequencing system to drive Wwise Events, Game Parameters, and Switches.
+- Using the sequencing system to interact with Wwise Events and Objects
+
+- _Folder: `3-Advanced/AdvancedSequencer/AdvancedSequencerPlain`_
+- Using the sequencing system to post Wwise Events
+
+- _Folder: `3-Advanced/AdvancedSequencer/AdvancedSequencerSpatialized`_
+- Using the sequencing system to drive Wwise Events and Game Parameters
 
 ### Using Event Callbacks to Retrieve Markers (Subtitles)
 

@@ -29,7 +29,7 @@ using UnityEngine;
 public class AdvancedEventsPostAndWait_WaitForEndOfEvent : MonoBehaviour
 {
     [SerializeField]
-    AkEvent _event;
+    public AkEvent _event;
 
     bool _canPlay = true;
     public void Interact()

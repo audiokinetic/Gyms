@@ -53,8 +53,6 @@ namespace Tests
         {
             yield return StartTest(SceneName);
             
-            AkBank bank = gameObject.GetComponent<AkBank>();
-            LoadBank(bank);
             AkEvent akEvent = gameObject.GetComponent<AkEvent>();
             yield return new WaitForEndOfFrame();
             AdvancedSubtitleTests_Callback callback = gameObject.GetComponent<AdvancedSubtitleTests_Callback>();

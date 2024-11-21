@@ -35,9 +35,6 @@ namespace Tests
         public IEnumerator BasicMultiplePositions_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             uint expected = PostSilence() + 1;
 
@@ -45,11 +42,7 @@ namespace Tests
 
             ambient.HandleEvent(gameObject);
 
-#if WWISE_2024_OR_LATER
             Assert.AreEqual(expected, ambient.playingId);
-#else
-            Assert.AreEqual(expected, ambient.data.PlayingId);
-#endif
 
             LogOutput("Posting on Multiple Positions ", true);
 

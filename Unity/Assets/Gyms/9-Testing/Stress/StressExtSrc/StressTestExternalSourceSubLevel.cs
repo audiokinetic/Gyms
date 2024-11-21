@@ -46,6 +46,7 @@ public class StressTestExternalSourceSubLevel : MonoBehaviour
         {
             return;
         }
+
         _externalSourceInfoArray[0].iExternalSrcCookie = AkSoundEngine.GetIDFromString(externalSourcesNames[0]);
         _externalSourceInfoArray[0].szFile = mediaNames[0];
         _externalSourceInfoArray[0].idCodec = 2;
@@ -70,7 +71,16 @@ public class StressTestExternalSourceSubLevel : MonoBehaviour
 
     IEnumerator PostEvents()
     {
-        while (true)
+        //Should investigate a way to post event using Ak.Wwise.Event::Post()
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+        for (int i = 0; i < 2; i++)
+        {
+            AK.Wwise.Event currentEvent = _events[i];
+            yield return new WaitUntil(() => currentEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+        }
+#endif
+
+        while (true) 
         {
             yield return new WaitForSeconds(Random.Range(0f, 0.01f));
             for (int i = 0; i < 2; i++)

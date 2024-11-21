@@ -37,13 +37,13 @@ namespace Tests
         {
             yield return StartTest(SceneName);
             CallbackIncrement.CallbackCount = 0;
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             uint expected = PostSilence();
             var EventButton = GameObject.Find("Button").GetComponentInChildren<AkEvent>();
             var StopButton = GameObject.Find("Button (1)").GetComponentInChildren<AkEvent>();
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => EventButton.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
             EventButton.HandleEvent(EventButton.gameObject);
             yield return new WaitForSeconds(0.2f);
             StopButton.HandleEvent(EventButton.gameObject);
@@ -52,7 +52,6 @@ namespace Tests
             Assert.AreEqual(expected + 3, PostSilence());
 
             yield return FinishTest(SceneName);
-            bank.data.Unload();
         }
     }
 }

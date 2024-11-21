@@ -36,12 +36,21 @@ namespace Tests
         public IEnumerator BasicAnimNotify_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             uint expected = PostSilence() + 2;
 
+            WwiseEventReference eventRef;
+            if (IsMobile)
+            {
+                eventRef = GameObject.Find("Player").GetComponent<AkEvent>().data.WwiseObjectReference;
+            }
+            else
+            {
+                eventRef = GameObject.Find("FirstPersonCharacter").GetComponent<AkEvent>().data.WwiseObjectReference;
+            }
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => eventRef.CompleteLoadBank().IsCompleted);
+#endif
             GameObject.FindObjectOfType<BasicAnimNotify_ChangeStateOnButtonPressed>().ChangeState();
             LogOutput("Post an event with an animator:", true);
 

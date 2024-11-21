@@ -39,14 +39,10 @@ namespace Tests
             ExpectedLogErrorAtLeastOnce("Source starvation");
 #endif
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             yield return new WaitForSeconds(11f);
 
             yield return FinishTest(SceneName);
-            bank.data.Unload();
         }
     }
 }

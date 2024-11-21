@@ -5,11 +5,13 @@
 */
 #pragma once
 
+#include "Curves/CurveFloat.h"
 #include "Engine/DeveloperSettings.h"
 
 #include "GamepadCursorSettings.generated.h"
 
 class FGameAnalogCursor;
+struct FRichCurve;
 
 /**
  *  These settings are used with the Gamepad UMG Plugin!

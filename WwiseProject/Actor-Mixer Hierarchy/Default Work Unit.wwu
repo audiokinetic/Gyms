@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{83C7F172-2885-4077-9671-3FE56F82D16C}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{83C7F172-2885-4077-9671-3FE56F82D16C}" SchemaVersion="123">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{83C7F172-2885-4077-9671-3FE56F82D16C}" PersistMode="Standalone">
 			<ChildrenList>
@@ -8,11 +8,6 @@
 						<Sound Name="Tone_150Hz" ID="{7C734436-049D-4094-AA72-1AD8CB89524D}" ShortID="904870958">
 							<PropertyList>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-1210</Value>
-									</ValueList>
-								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -91,17 +86,7 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-1210</Value>
-									</ValueList>
-								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -174,11 +159,6 @@
 						<Sound Name="Tone_150Hz_RTPC" ID="{47C5D125-8788-42E7-AC91-FC471B948382}" ShortID="139603964">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-1210</Value>
-									</ValueList>
-								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -287,7 +267,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="LevelSequencer" ID="{AED2557C-0BDF-4D3C-B2FB-2111D0B817A5}" WorkUnitID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}"/>
+														<ObjectRef Name="LevelSequencer" ID="{AED2557C-0BDF-4D3C-B2FB-2111D0B817A5}" WorkUnitID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -589,11 +569,6 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-1210</Value>
-									</ValueList>
-								</Property>
 								<Property Name="PreFetchLength" Type="int16">
 									<ValueList>
 										<Value>0</Value>
@@ -676,11 +651,6 @@
 								<Property Name="IsZeroLatency" Type="bool">
 									<ValueList>
 										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-1210</Value>
 									</ValueList>
 								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -2453,8 +2423,8 @@
 												</Property>
 												<Property Name="MaxSampleRate" Type="int32">
 													<ValueList>
-														<Value Platform="Base">0</Value>
-														<Value Platform="Windows">0</Value>
+														<Value Platform="Base">48000</Value>
+														<Value Platform="Windows">48000</Value>
 													</ValueList>
 												</Property>
 												<Property Name="MinSampleRate" Type="int32">
@@ -3005,6 +2975,28 @@
 						<ActiveSource Name="MUS_RotTR_Cue2_Safe_4bars_85BPM" ID="{99A1201B-3299-42E8-B678-A88DC9A140AC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="ExternalSources" ID="{F1E39316-F4D3-4041-A3AF-4D861167BE81}" ShortID="334059430">
+					<ChildrenList>
+						<Sound Name="No_Default_External_Source" ID="{46387730-D6EB-4A71-8D4D-6AD67D539E10}" ShortID="972245107">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ExternalSource Name="No_Default_External_Source" ID="{58E528DB-192F-446E-961B-37FE16EF3A82}">
+									<Language>SFX</Language>
+								</ExternalSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="No_Default_External_Source" ID="{58E528DB-192F-446E-961B-37FE16EF3A82}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

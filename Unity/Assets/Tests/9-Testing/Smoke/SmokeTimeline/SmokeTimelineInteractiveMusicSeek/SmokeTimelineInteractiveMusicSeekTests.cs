@@ -30,38 +30,42 @@ using UnityEngine.TestTools;
 
 namespace Tests
 {
-    public class SmokeTimelineInteractiveMusicSeekTests : GymTests
+    public class SmokeTimelineInteractiveMusicSeekTests : TimelineGymTests
     {
         const string SceneName = "SmokeTimelineInteractiveMusicSeek";
         [UnityTest]
         public IEnumerator SmokeTimelineInteractiveMusicSeek_Tests()
         {
+#if UNITY_EDITOR
+            float waitTime = 0.1f;
+#else
+            float waitTime = 0.2f;
+#endif
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             var timeline = GameObject.FindFirstObjectByType<PlayableDirector>();
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return LoadAllTimeLineEvent(timeline);
+#endif
             timeline.time = 0f;
 
             uint firstSilence = PostSilence();
             timeline.Play();
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(waitTime);
             timeline.time = 2f;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(waitTime);
             timeline.time = 1f;
             //Goes past the duration of the timeline. Loops and start another event.
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(waitTime);
             timeline.time = 20f;
             
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(waitTime);
             timeline.time = -1f;
 
             uint secondSilence = PostSilence();
             Assert.Greater(secondSilence, firstSilence + 5);
             Assert.Less(secondSilence, firstSilence + 15);
             yield return FinishTest(SceneName);
-            bank.data.Unload();
         }
     }
 }

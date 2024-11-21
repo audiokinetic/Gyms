@@ -27,7 +27,6 @@ using UnityEngine;
 
     public class BasicPostLocation : MonoBehaviour
     {
-        [SerializeField] AK.Wwise.Bank _bank;
         [SerializeField] AK.Wwise.Event _event;
         [SerializeField] Vector3 _location;
         public Vector3 location {get {return _location;}}
@@ -52,7 +51,7 @@ using UnityEngine;
             obj.name = "AkPostLocation";
 
             yield return new WaitForSeconds(.2f);
-            akPost.Post(_bank);
+            akPost.Post();
             akPost.NewPosition(_location);
         }
     }

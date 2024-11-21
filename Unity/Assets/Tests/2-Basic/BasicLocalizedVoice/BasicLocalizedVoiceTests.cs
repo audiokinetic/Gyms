@@ -38,11 +38,17 @@ namespace Tests
             yield return StartTest(SceneName);
             BasicLocalizedVoice localizedVoice = GameObject.Find("Cylinder").GetComponent<BasicLocalizedVoice>();
             AK.Wwise.Event localizedEvent = localizedVoice.LocalizedEvent;
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            ExpectedLogErrorAtLeastOnce("Wwise Addressable Bank Manager: Post_Localized_Voice could not be loaded");
+#endif
             yield return localizedVoice.SetLanguage("en_US");
             yield return new WaitForSeconds(0.2f);
-            uint expected = localizedEvent.PlayingId + 1;
             
+            uint expected = localizedEvent.PlayingId + 1;
+
             //Set unsupported language
+#if !AK_WWISE_ADDRESSABLES
+            ExpectedLogError("PrepareEvent for Post_Localized_Voice failed with result: AK_IDNotFound");
 #if UNITY_EDITOR
             ExpectedLogError("Could not post event");
             //There can be 1 or 2 different errors logged.
@@ -50,17 +56,17 @@ namespace Tests
             ExpectedLogError("Event ID not found Name");
             ExpectedLogError("Unload bank failed");
 #endif
-
+#endif
             yield return localizedVoice.SetLanguage("");
             yield return new WaitForSeconds(0.2f);
             uint actual = localizedEvent.PlayingId;
-            string language = AkSoundEngine.GetCurrentLanguage();
             Assert.AreEqual(0, actual);
+            string language = AkSoundEngine.GetCurrentLanguage();
             Assert.AreEqual("", language);
             LogOutput("Set unsupported language: ", true);
             LogAssert.ignoreFailingMessages = false;
-
-            //Set language
+             
+            // Set language
             yield return localizedVoice.SetLanguage("fr_FR");
             yield return new WaitForSeconds(0.2f);
             actual = localizedEvent.PlayingId;

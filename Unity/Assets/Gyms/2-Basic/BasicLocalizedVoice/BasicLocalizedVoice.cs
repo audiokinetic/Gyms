@@ -1,4 +1,4 @@
-﻿/*******************************************************************************
+/*******************************************************************************
 The content of this file includes portions of the AUDIOKINETIC Wwise Technology
 released in source code form as part of the SDK installer package.
 
@@ -25,6 +25,7 @@ the specific language governing permissions and limitations under the License.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Wwise.API.Runtime.WwiseTypes.WwiseObjectsManagers;
 
 public class BasicLocalizedVoice : OnOffManager
 {
@@ -34,9 +35,6 @@ public class BasicLocalizedVoice : OnOffManager
     {
         get { return _localizedEvent; }
     }
-
-    [SerializeField]
-    AkBank _bank;
 
     public override void OnAction()
     {
@@ -50,11 +48,13 @@ public class BasicLocalizedVoice : OnOffManager
 
     public IEnumerator SetLanguage(string language)
     {
-        _bank.UnloadBank(gameObject);
-        AkSoundEngine.SetCurrentLanguage(language);
+        List<string> bankToReload = new List<string>() {_localizedEvent.WwiseObjectReference.DisplayName };
+        WwiseEventReferencesManager.Instance.SetLanguageAndReloadLocalizedBanks(language, bankToReload);
         yield return new WaitForEndOfFrame();
-        _bank.HandleEvent(gameObject);
         Debug.Log("Current language: " + AkSoundEngine.GetCurrentLanguage());
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+        yield return new WaitUntil(() => _localizedEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
         _localizedEvent.Post(gameObject);
     }
 }

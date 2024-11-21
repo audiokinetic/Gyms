@@ -40,8 +40,8 @@ MonoBehaviour:
       type: 2}
   blendInCurve: 4
   blendOutCurve: 4
-  eventDurationMax: -1
-  eventDurationMin: -1
+  eventDurationMax: 9.768979
+  eventDurationMin: 9.768979
   retriggerEvent: 0
   UseWwiseEventDuration: 0
   PrintDebugInformation: 0

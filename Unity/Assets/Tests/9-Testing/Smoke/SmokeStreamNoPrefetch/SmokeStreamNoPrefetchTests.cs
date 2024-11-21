@@ -36,12 +36,15 @@ namespace Tests
         public IEnumerator SmokeStreamNoPrefetch_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-            LoadBank(bank);
             AkEvent[] events = gameObject.GetComponents<AkEvent>();
             AkEvent inMemoryEvent = events[0];
             AkEvent streamingEvent = events[1];
 
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => inMemoryEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+            yield return new WaitUntil(() => streamingEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
+            
             uint expected = PostSilence() + 2;
 
             streamingEvent.data.Post(gameObject);

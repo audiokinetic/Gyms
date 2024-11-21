@@ -69,6 +69,9 @@ namespace Tests
             yield return locationPost.PostTimer();
             BasicPostLocation_Event soundLocation = GameObject.Find("AkPostLocation").GetComponent<BasicPostLocation_Event>();
             AK.Wwise.Event locationEvent = soundLocation.akEvent.data;
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => locationEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
             expected = locationEvent.PlayingId + 1;
 
             expected = PostSilence();
@@ -94,11 +97,6 @@ namespace Tests
             yield return new WaitForSeconds(2);
             LogOutput("Expected the object is null ", true);
             Assert.AreEqual(null, obj);
-            
-            // Remove pending bank references
-            AkBank bank = gameObject.GetComponent<AkBank>();
-            bank.data.Unload();
-            bank.data.Unload();
 
             yield return FinishTest(SceneName);
         }

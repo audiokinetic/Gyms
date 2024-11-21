@@ -37,9 +37,7 @@ namespace Tests
         public IEnumerator SmokeAudioDeviceOutput_Tests()
         {
             yield return StartTest(SceneName);
-            var bank = gameObject.GetComponent<AkBank>();
 
-            LoadBank(bank);
             var initialPlayingID = AkSoundEngine.PostEvent("Silence", gameObject);
             
             // Find an additional audio device
@@ -77,7 +75,6 @@ namespace Tests
             }
             
             yield return FinishTest(SceneName);
-            bank.data.Unload();
         }
     }
 }

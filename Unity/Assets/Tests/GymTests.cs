@@ -25,29 +25,73 @@ the specific language governing permissions and limitations under the License.
 using NUnit.Framework;
 using System.Collections;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
 
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
+using AK.Wwise.Unity.WwiseAddressables;
+#endif
+
 public class GymTests
 {
+    public static bool IsMobile
+    {
+        get
+        {
+#if (UNITY_WP8 || UNITY_IOS || UNITY_ANDROID) && !UNITY_EDITOR
+			return true;
+#else
+            return false;
+#endif
+        }
+    }
+    
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
+    [UnityEngine.SerializeField, AkShowOnly]
+    protected WwiseAddressableSoundBank SilenceBank;
+#endif
+
     protected GameObject gameObject;
     protected IEnumerator StartTest(string SceneName)
     {
         yield return LoadScene(SceneName, LoadSceneMode.Single);
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
+        yield return new WaitUntil(() => LoadAsset(SceneName).IsCompleted);
+#else
         LoadAsset(SceneName);
+#endif
         yield return new WaitForEndOfFrame();
     }
 
-    protected void LoadAsset(string SceneName)
+    protected async Task LoadAsset(string SceneName)
     {
         GameObject testObject = Resources.Load<GameObject>(GeneratePath(SceneName));
         gameObject = GameObject.Instantiate(testObject);
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
+        AkEvent[] events = gameObject.GetComponents<AkEvent>();
+        foreach (var eEvent in events)
+        {
+            if (eEvent.data.WwiseObjectReference && eEvent.data.WwiseObjectReference.DisplayName == "Silence")
+            {
+                AK.Wwise.Event _silenceEvent = eEvent.data;
+                await eEvent.data.WwiseObjectReference.CompleteLoadBank();
+                SilenceBank = _silenceEvent.WwiseObjectReference.AutoBank;
+            }
+        }
+#endif
     }
 
     protected IEnumerator FinishTest(string SceneName)
     {
         AkSoundEngine.StopAll();
+        yield return new WaitForEndOfFrame();
+        var Banks = GameObject.FindObjectsByType<AkBank>(FindObjectsSortMode.None);
+        foreach (var Bank in Banks)
+        {
+            Bank.UnloadBank(Bank.gameObject);
+        }
         if (gameObject != null)
         {
             //Destroy the object to make sure the Bank is unloaded before starting the next test
@@ -125,7 +169,22 @@ public class GymTests
 
     protected uint PostSilence()
     {
-        return AkSoundEngine.PostEvent("Silence", gameObject);
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
+        if (SilenceBank != null)
+        {
+            return AkSoundEngine.PostEvent("Silence", gameObject);
+        }
+        else
+        {
+            UnityEngine.Debug.LogWarning("Wwise Addressable asset for AutoBank:"  + " couldn't be found.  If the event is in an User Defined Soundbank, make sure" +
+                                         " to check the \"Is In User Define SoundBank\" box in the editor.");
+            return 0;
+        }
+#else
+        uint m_BankID = AkBankManager.LoadBank("Silence", false, false, AkBankTypeEnum.AkBankType_Event);
+        uint id = AkSoundEngine.PostEvent("Silence", gameObject);
+        return id;
+#endif
     }
 
     protected void ExpectedLogError(string pattern, uint occurences = 1, LogType type = LogType.Error)

@@ -31,8 +31,6 @@ public class EssentialPostEvent_ForOneSecond : MonoBehaviour
     [SerializeField]
     AK.Wwise.Event _event;
     [SerializeField]
-    AK.Wwise.Bank _bank;
-    [SerializeField]
     GameObject _gameObject;
     [SerializeField]
     bool _onPlayerGameObject;
@@ -44,7 +42,6 @@ public class EssentialPostEvent_ForOneSecond : MonoBehaviour
 
     IEnumerator PostTimer()
     {
-        _bank.Load();
         GameObject gameObjectToPost = _gameObject ? _gameObject : gameObject;
         if(_onPlayerGameObject)
         {

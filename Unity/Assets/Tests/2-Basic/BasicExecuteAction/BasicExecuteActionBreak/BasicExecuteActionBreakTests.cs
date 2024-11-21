@@ -36,18 +36,14 @@ namespace Tests
         public IEnumerator BasicExecuteActionBreak_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
             yield return new WaitForEndOfFrame();
-
-            BasicExecuteActionBreak_Interact interact = GameObject.FindObjectOfType<BasicExecuteActionBreak_Interact>();
-#if WWISE_2024_OR_LATER
-            uint expected = interact.gameObject.GetComponent<AkEvent>().playingId + 2;
-#else
-            uint expected = interact.gameObject.GetComponent<AkEvent>().data.PlayingId + 2;
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() =>GameObject.Find("Cylinder").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
 #endif
+            BasicExecuteActionBreak_Interact interact = GameObject.FindObjectOfType<BasicExecuteActionBreak_Interact>();
 
+            uint expected = interact.gameObject.GetComponent<AkEvent>().playingId + 2;
+            
             interact.Interact();
             yield return new WaitForSeconds(1f);
 

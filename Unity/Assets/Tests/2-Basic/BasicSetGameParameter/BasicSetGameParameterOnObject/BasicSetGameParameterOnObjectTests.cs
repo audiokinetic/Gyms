@@ -36,8 +36,6 @@ namespace Tests
         public IEnumerator BasicSetGameParameterOnObject_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-            LoadBank(bank);
 
             BasicSetGameParameterOnObjectTests_Component onObjectTestComponents = gameObject.GetComponent<BasicSetGameParameterOnObjectTests_Component>();
 

@@ -24,10 +24,14 @@
     - AdvancedEvents
         - AdvancedEventsPostAndWait
         - AdvancedEventsPostWithCallback
+        - AdvancedEventsCooldown
     - AdvancedExternalSources
     - AdvancedLoadData
     - AdvancedSequencer
+        - AdvancedSequencerPlain
+        - AdvancedSequencerSpatialized
     - AdvancedSubtitle
+    - AdvancedPersistentMusic
 - 5-Spatial
     - SpatialAudio
     - SpatialPortal

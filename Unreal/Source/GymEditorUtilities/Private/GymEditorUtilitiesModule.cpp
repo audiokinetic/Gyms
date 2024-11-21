@@ -26,15 +26,13 @@ the specific language governing permissions and limitations under the License.
 #include "Settings/ProjectPackagingSettings.h"
 #include "AssetRegistry/AssetRegistryModule.h"
 
+#include "Editor.h"
+
 #define LOCTEXT_NAMESPACE "GymEditorUtilities"
 
 void FGymEditorUtilitiesModule::StartupModule()
 {
-#if UE_5_0_OR_LATER
 	OnPreSaveWorldHandle = FEditorDelegates::PreSaveWorldWithContext.AddRaw(this, &FGymEditorUtilitiesModule::OnPreSaveWorld);
-#else
-	OnPreSaveWorldHandle = FEditorDelegates::PreSaveWorld.AddRaw(this, &FGymEditorUtilitiesModule::OnPreSaveWorld);
-#endif
 	// Need to wait for the AssetRegistry to finish discovering all assets to run PruneMapsToCook
 	auto& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
 	OnAssetRegistryFilesLoadedHandle = AssetRegistryModule.Get().OnFilesLoaded().AddRaw(this, &FGymEditorUtilitiesModule::PruneMapsToCook);
@@ -42,11 +40,7 @@ void FGymEditorUtilitiesModule::StartupModule()
 
 void FGymEditorUtilitiesModule::ShutdownModule()
 {
-#if UE_5_0_OR_LATER
 	FEditorDelegates::PreSaveWorldWithContext.Remove(OnPreSaveWorldHandle);
-#else
-	FEditorDelegates::PreSaveWorld.Remove(OnPreSaveWorldHandle);
-#endif
 	if (FModuleManager::Get().IsModuleLoaded("AssetRegistry"))
 	{
 		auto& AssetRegistryModule = FModuleManager::GetModuleChecked<FAssetRegistryModule>("AssetRegistry");
@@ -54,11 +48,7 @@ void FGymEditorUtilitiesModule::ShutdownModule()
 	}
 }
 
-#if UE_5_0_OR_LATER
 void FGymEditorUtilitiesModule::OnPreSaveWorld(UWorld* World, FObjectPreSaveContext ObjectSaveContext)
-#else
-void FGymEditorUtilitiesModule::OnPreSaveWorld(uint32 SaveFlags, UWorld* World)
-#endif
 {
 	auto ActiveLevels = World->GetLevels();
 	for (auto& ActiveLevel : ActiveLevels)
@@ -76,11 +66,7 @@ void FGymEditorUtilitiesModule::EnsureLevelIsInPackagingSettings(const FString& 
 		FFilePath NewPath;
 		NewPath.FilePath = LevelToAdd;
 		PackagingSettings->MapsToCook.Add(NewPath);
-#if UE_5_0_OR_LATER
 		PackagingSettings->TryUpdateDefaultConfigFile();
-#else
-		PackagingSettings->UpdateDefaultConfigFile();
-#endif
 	}
 }
 
@@ -96,11 +82,7 @@ void FGymEditorUtilitiesModule::PruneMapsToCook()
 		MapToCook.FilePath.FindLastChar('/', LastSlashIndex);
 		FString FileName = MapToCook.FilePath.RightChop(LastSlashIndex+1);
 		FString ObjectPath = MapToCook.FilePath + TEXT(".") + FileName;
-#if UE_5_1_OR_LATER
 		FAssetData MapAssetData = AssetRegistryModule.Get().GetAssetByObjectPath(FSoftObjectPath(ObjectPath), true);
-#else
-		FAssetData MapAssetData = AssetRegistryModule.Get().GetAssetByObjectPath(FName(ObjectPath), true);
-#endif
 		if (!MapAssetData.IsValid())
 		{
 			// Cannot change collection while iterating over it, add to array of things to remove
@@ -111,11 +93,7 @@ void FGymEditorUtilitiesModule::PruneMapsToCook()
 	if (MapsToRemove.Num() > 0)
 	{
 		PackagingSettings->MapsToCook.RemoveAll([&](FFilePath ItemInArray) { return MapsToRemove.Contains(ItemInArray.FilePath); });
-#if UE_5_0_OR_LATER
 		PackagingSettings->TryUpdateDefaultConfigFile();
-#else
-		PackagingSettings->UpdateDefaultConfigFile();
-#endif
 	}
 }
 

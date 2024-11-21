@@ -37,10 +37,12 @@ namespace Tests
         public IEnumerator SmokeSubLevelNested_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
             AkSwitch akSwitch = gameObject.GetComponent<AkSwitch>();
             AkEvent akEvent = gameObject.GetComponent<AkEvent>();
-            LoadBank(bank);
+            
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => akEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 
             uint expected = PostSilence() + 1;
 

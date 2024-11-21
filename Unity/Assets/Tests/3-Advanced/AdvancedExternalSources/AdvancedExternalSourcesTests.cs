@@ -37,11 +37,8 @@ namespace Tests
         public IEnumerator AdvancedExternalSources_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
-
-            uint expected = AkSoundEngine.PostEvent("Silence", gameObject);
+            
+            uint expected = PostSilence() + 2;
 
             AkExternalSourceInfoArray _arrayTest = new AkExternalSourceInfoArray(3);
             _arrayTest[0].iExternalSrcCookie = AkSoundEngine.GetIDFromString("One");
@@ -57,9 +54,14 @@ namespace Tests
             _arrayTest[2].idCodec = 2;
 
             //Post external source test
-            uint id = AkSoundEngine.PostEvent("Post_ExternalAudio_Event", gameObject, 0, null, 0, 3, _arrayTest);
+            AdvancedExternalSources scriptReference = GameObject.FindObjectOfType<AdvancedExternalSources>();
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() =>scriptReference._event.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
+
+            scriptReference.PostExternalSourcesEvent();
             yield return new WaitForSeconds(1f);
-            Assert.AreEqual(++expected, id);
+            Assert.AreEqual(expected, PostSilence());
             LogOutput("Post an external source event: ", true);
 
             //Change external source test
@@ -67,9 +69,10 @@ namespace Tests
             _arrayTest[1].szFile = "05.wem";
             _arrayTest[2].szFile = "06.wem";
 
-            id = AkSoundEngine.PostEvent("Post_ExternalAudio_Event", gameObject, 0, null, 0, 3, _arrayTest);
+            expected += 2;
+            scriptReference.PostExternalSourcesEvent();
             yield return new WaitForSeconds(1f);
-            Assert.AreEqual(++expected, id);
+            Assert.AreEqual(expected, PostSilence());
             LogOutput("Change the external source event: ", true);
 
             yield return FinishTest(SceneName);

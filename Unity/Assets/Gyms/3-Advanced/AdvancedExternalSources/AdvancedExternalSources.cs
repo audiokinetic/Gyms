@@ -33,14 +33,12 @@ public class AdvancedExternalSources : OnOffManager
     AkExternalSourceInfoArray _externalSourceInfoArray = new AkExternalSourceInfoArray(3);
 
     [SerializeField]
-    AK.Wwise.Event _event;
-    [SerializeField]
-    AK.Wwise.Bank _bank;
+    public AK.Wwise.Event _event;
 
     private new void Start()
     {
         base.Start();
-
+        
         _externalSourceInfoArray[0].iExternalSrcCookie = AkSoundEngine.GetIDFromString("One");
         _externalSourceInfoArray[0].szFile = "01.wem";
         _externalSourceInfoArray[0].idCodec = AKCODECID_ADPCM;
@@ -70,7 +68,6 @@ public class AdvancedExternalSources : OnOffManager
 
     public void PostExternalSourcesEvent()
     {
-        _bank.Load();
         AkSoundEngine.PostEvent(_event.Id, gameObject, 0, null, 0, 3, _externalSourceInfoArray);
     }
 }

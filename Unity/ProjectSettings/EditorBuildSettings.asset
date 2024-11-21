@@ -63,11 +63,20 @@ EditorBuildSettings:
     path: Assets/Gyms/3-Advanced/AdvancedCaptureProfiler/AdvancedCaptureProfiler.unity
     guid: b236f9e2fa15e384a9cdffd4add9ccb9
   - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedEvents/AdvancedEventsCooldown/AdvancedEventsCooldown.unity
+    guid: 9b5f573462dc85741891f0cc3adaca5f
+  - enabled: 1
     path: Assets/Gyms/3-Advanced/AdvancedEvents/AdvancedEventsPostAndWait/AdvancedEventsPostAndWait.unity
     guid: 122dc91fe8f4d104a983182ded5a6a5a
   - enabled: 1
     path: Assets/Gyms/3-Advanced/AdvancedExternalSources/AdvancedExternalSources.unity
     guid: dfe289a59662b1641a540cf6a8416041
+  - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedPersistentMusic/AdvancedPersistentMusic.unity
+    guid: c2bcb554893c27a49be7a5733502fd51
+  - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedPersistentMusic/AdvancedPersistentMusic_2.unity
+    guid: 216762b555d40d04abc64219ffe2691c
   - enabled: 1
     path: Assets/Gyms/3-Advanced/AdvancedSequencer/AdvancedSequencer.unity
     guid: ef623304aafade84db4fd2a0469e498e
@@ -104,6 +113,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gyms/9-Testing/Smoke/SmokeEventWithNoMedia/SmokeEventWithNoMedia.unity
     guid: 5fd185c11c4c1cb48959effd18e4fee4
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Smoke/SmokeMultipleSameEvent/SmokeMultipleSameEvent.unity
+    guid: bc3e0f3098f4a91428dedf8594afcb29
   - enabled: 1
     path: Assets/Gyms/9-Testing/Smoke/SmokeSetStateTimeline/SmokeSetStateTimeline.unity
     guid: 066a3d8d37195734bb9e12dd05acf5f5
@@ -272,6 +284,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesWithMediaAlreadyLoaded/StressSwitchesWithMediaAlreadyLoaded.unity
     guid: 96daaa5daecca3446a8673085002c24d
+  - enabled: 1
+    path: Assets/Gyms/AutoBankSample/PlayUserDefinedBank/PlayUserDefinedBank.unity
+    guid: f14d039e77955954ca72abb1cde1e3d2
+  - enabled: 1
+    path: Assets/Gyms/AutoBankSample/PlayAutoBankSound/PlayAutoBankSound.unity
+    guid: 1c14037021a28984f85a3f3c3ee98fe2
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: a6d8dce1fefcb964180e76277fd74379,
       type: 2}

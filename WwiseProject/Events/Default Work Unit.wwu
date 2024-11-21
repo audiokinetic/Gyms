@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" SchemaVersion="123">
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" PersistMode="Standalone">
 			<ChildrenList>
@@ -145,6 +145,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Three" ID="{B74C74BE-A650-43DA-A4E5-1E56EC300C9E}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Post_No_Default_External_Sources" ID="{6CB0105F-5E3A-4231-9A7D-DB846C52F7B9}">
+							<ChildrenList>
+								<Action Name="" ID="{D70E6B6C-EB50-4DCD-87B6-6EB759F79AB8}" ShortID="254823898">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No_Default_External_Source" ID="{46387730-D6EB-4A71-8D4D-6AD67D539E10}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -420,6 +431,32 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AutoBankSample" ID="{2EF69AAD-71F9-4379-8504-F0361A59A67C}" ShortID="120580002">
+					<ChildrenList>
+						<Event Name="Play_AutoBankSFX" ID="{1858E177-F5F8-4384-827A-7C6E610D4544}">
+							<ChildrenList>
+								<Action Name="" ID="{C341A005-D51E-4CF4-8C5D-A5C266926076}" ShortID="567520440">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AutoBankSFX" ID="{4A4889EA-3766-4A39-A339-FDA1AD8FB759}" WorkUnitID="{A6EF49AA-FDD3-492A-8953-E2C1A973F398}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UserDefinedBankSFX" ID="{486C7023-33C0-4761-9A13-39A6FC6BD4EB}">
+							<ChildrenList>
+								<Action Name="" ID="{4D377CBB-49C7-4B5C-AD33-9EBCF783BAC7}" ShortID="12783484">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UserDefinedBankSFX" ID="{5A2B4F1A-7B7B-4F51-B9D5-281B585594C0}" WorkUnitID="{A3D5474A-DCBE-4BA1-8EC4-CD3607407BBE}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

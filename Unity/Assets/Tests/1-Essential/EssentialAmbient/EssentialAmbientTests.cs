@@ -40,31 +40,14 @@ namespace Tests
             AkAmbient[] ambients = gameObject.GetComponents<AkAmbient>();
             AkAmbient ambient = ambients[0];
             AkAmbient empty = ambients[1];
-            AkBank bank = gameObject.GetComponent<AkBank>();
 
-            bank.data.Unload();
-            yield return new WaitForEndOfFrame();
-            //Play unloaded Ambient
-            uint id = ambient.data.Post(gameObject);
-#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
-            ExpectedLogError("will be delayed", type : LogType.Warning);
-            Assert.AreEqual(AkSoundEngine.AK_PENDING_EVENT_LOAD_ID, id);
-#elif UNITY_EDITOR
-            ExpectedLogError("Could not post event");
-            Assert.AreEqual(0, id);
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => ambient.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
 #endif
-#if !(UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES) && UNITY_EDITOR
-	        ExpectedLogError("Event ID not found");
-#endif
-
-            LogOutput("Play unloaded ambient: ", true);
-            
-            yield return new WaitForEndOfFrame();
-            bank.data.Load();
             uint expected = PostSilence() + 1;
 
             //Play an ambient test
-            id = ambient.data.Post(gameObject);
+            uint id = ambient.data.Post(gameObject);
             Assert.AreEqual(expected, id);
             ambient.Stop(0);
             LogOutput("Play an ambient: ", true);

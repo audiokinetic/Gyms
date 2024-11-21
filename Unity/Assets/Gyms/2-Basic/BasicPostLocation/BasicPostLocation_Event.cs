@@ -49,8 +49,7 @@ public class BasicPostLocation_Event : MonoBehaviour
         callBackEvent.GameObject = gameObject;
     }
 
-    public void Post(AK.Wwise.Bank bank) {
-        bank.Load();
+    public void Post() {
         akEvent.HandleEvent(gameObject);
     }
 

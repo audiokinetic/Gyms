@@ -27,7 +27,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StressOpenLevel_ExternalSources : StressOpenLevel_Trigger
+public class StressOpenLevel_ExternalSources : OpenLevel_Trigger
 {
     [SerializeField]
     string[] externalSourcesChange;
@@ -40,7 +40,7 @@ public class StressOpenLevel_ExternalSources : StressOpenLevel_Trigger
 
     AkExternalSourceInfoArray _externalSourceInfoArray = new AkExternalSourceInfoArray(3);
 
-    private void Start()
+    private async void Start()
     {
         _externalSourceInfoArray[0].iExternalSrcCookie = AkSoundEngine.GetIDFromString("One");
         _externalSourceInfoArray[0].szFile = externalSourcesBase[0];
@@ -53,8 +53,15 @@ public class StressOpenLevel_ExternalSources : StressOpenLevel_Trigger
         _externalSourceInfoArray[2].iExternalSrcCookie = AkSoundEngine.GetIDFromString("Three");
         _externalSourceInfoArray[2].szFile = externalSourcesBase[2];
         _externalSourceInfoArray[2].idCodec = 2;
-
-        AkSoundEngine.PostEvent(_event.Id, gameObject, 0, null, 0, 3, _externalSourceInfoArray);
+        
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+        await _event.WwiseObjectReference.CompleteLoadBank();
+#endif
+        if (this)
+        {
+            AkSoundEngine.PostEvent(_event.Id, gameObject, 0, null, 0, 3, _externalSourceInfoArray);
+        }
+      
     }
 
     protected override void PostLoadAction()

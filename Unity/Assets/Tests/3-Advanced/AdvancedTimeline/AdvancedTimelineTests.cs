@@ -37,9 +37,6 @@ namespace Tests
         public IEnumerator AdvancedTimeline_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             GameObject cube = GameObject.Find("MovingCube");
             AdvancedTimeline timeline = cube.GetComponent<AdvancedTimeline>();

@@ -33,12 +33,13 @@ public class GymsTarget : TargetRules
 		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.AddRange( new string[] { "Gyms", "WwiseSimpleExternalSource"} );
 		
-#if UE_5_1_OR_LATER
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-#endif
 
 #if UE_5_4_OR_LATER
 		bUseAdaptiveUnityBuild = false;
 #endif
+		
+		//bUseUnityBuild = false;
+		//bUsePCHFiles = false;
 	}
 }

@@ -59,6 +59,8 @@
 /Unity/Assets/Wwise/Documentation
 /Unity/Assets/Wwise/Api/Editor/WwiseWindows
 /Unity/Assets/Wwise/Gizmos
+/Unity/AutoBankAddresableOutput.txt
+/Unity/Assets/Wwise/ProjectDatabase/Runtime/Plugins
 
 # Track ScriptableObjects and their meta files to keep the references to wwiseobjects in components
 !/Unity/Assets/Wwise/ScriptableObjects/AuxBus/*
@@ -92,5 +94,6 @@
 /Unreal/Plugins/GamepadUMGPlugin/Intermediate/**
 /Unreal/Plugins/Wwise
 /Unreal/Plugins/WwiseNiagara
+/Unreal/Plugins/WwiseSoundEngine
 /Unreal/Saved
 /Unreal/Plugins/Developer/RiderLink/**

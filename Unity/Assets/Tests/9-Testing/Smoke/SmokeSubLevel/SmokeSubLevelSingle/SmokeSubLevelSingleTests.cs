@@ -37,11 +37,6 @@ namespace Tests
         public IEnumerator SmokeSubLevelSingle_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            bank.data.Unload();
-
-            LoadBank(bank);
             uint expected = PostSilence() + 1;
             yield return LoadScene(SceneName + "_2", LoadSceneMode.Additive);
             yield return new WaitForEndOfFrame();
@@ -50,6 +45,9 @@ namespace Tests
 
             subLevelSwitch.OnEnter.SetValue(gameObject);
             AkEvent akEvent = gameObject.GetComponent<AkEvent>();
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => akEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
             uint actual = akEvent.data.Post(gameObject);
             Assert.AreEqual(expected, actual);
             LogOutput("Set Switch existing in Loaded Sub_Level: ", true);

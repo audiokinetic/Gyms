@@ -24,24 +24,27 @@ the specific language governing permissions and limitations under the License.
 
 using NUnit.Framework;
 using System.Collections;
+using System.Linq;
 using UnityEngine.TestTools;
 using UnityEngine;
 using UnityEngine.Playables;
 
 namespace Tests
 {
-    public class SmokeSetStateTimelineTests : GymTests
+    public class SmokeSetStateTimelineTests : TimelineGymTests
     {
         const string SceneName = "SmokeSetStateTimeline";
         [UnityTest]
         public IEnumerator SmokeSetStateTimeline_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
 
             uint firstSilence = PostSilence();
-            LoadBank(bank);
             PlayableDirector timeline = GameObject.Find("SetSwitchTimeline").GetComponent<PlayableDirector>();
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return LoadAllTimeLineEvent(timeline);
+#endif
+          
             timeline.Play();
             yield return new WaitForSeconds(0.5f);
             uint secondSilence = PostSilence(); 
@@ -49,7 +52,6 @@ namespace Tests
             Assert.Less(secondSilence, firstSilence + 4);
 
             yield return FinishTest(SceneName);
-            bank.data.Unload();
         }
     }
 }

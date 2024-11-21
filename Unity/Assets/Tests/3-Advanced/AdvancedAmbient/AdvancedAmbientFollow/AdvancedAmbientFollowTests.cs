@@ -36,9 +36,6 @@ namespace Tests
         public IEnumerator AdvancedAmbientFollow_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             uint expected = PostSilence() + 2;
 

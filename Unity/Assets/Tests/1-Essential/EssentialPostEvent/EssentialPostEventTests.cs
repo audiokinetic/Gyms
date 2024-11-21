@@ -39,32 +39,14 @@ namespace Tests
         {
             yield return StartTest(SceneName);
             EssentialPostEventTests_Component testComponent = gameObject.GetComponent<EssentialPostEventTests_Component>();
-
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            bank.data.Unload();
-            yield return new WaitForEndOfFrame();
-
-            //Post unloaded event
-            uint id = testComponent.soundEvent.Post(testComponent.gameObject);
-#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
-            ExpectedLogError("will be delayed", type: LogType.Warning);
-            Assert.AreEqual(AkSoundEngine.AK_PENDING_EVENT_LOAD_ID, id);
-#elif UNITY_EDITOR
-            ExpectedLogError("Could not post event");
-            Assert.AreEqual(0, id);
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => testComponent.soundEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
 #endif
-#if !(UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES) && UNITY_EDITOR
-	        ExpectedLogError("Event ID not found");
-#endif
-
-            LogOutput("Post unloaded event: ", true);
-            LoadBank(bank);
             yield return new WaitForEndOfFrame();
             uint expected = PostSilence() + 1;
 
             //Post an event test
-            id = testComponent.soundEvent.Post(testComponent.gameObject);
+            uint id = testComponent.soundEvent.Post(testComponent.gameObject);
             Assert.AreEqual(expected, id);
             LogOutput("Post an event: ", true);
 

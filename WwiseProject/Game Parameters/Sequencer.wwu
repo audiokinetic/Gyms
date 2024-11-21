@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}" SchemaVersion="123" RootDocumentID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}" ParentDocumentID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}">
+	<GameParameters>
+		<WorkUnit Name="Sequencer" ID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}" OwnerID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="LevelSequencer" ID="{AED2557C-0BDF-4D3C-B2FB-2111D0B817A5}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

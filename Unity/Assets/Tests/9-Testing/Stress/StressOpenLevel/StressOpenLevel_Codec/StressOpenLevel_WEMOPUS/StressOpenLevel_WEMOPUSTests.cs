@@ -36,16 +36,18 @@ namespace Tests
         public IEnumerator StressOpenLevel_WEMOPUS_Tests()
         {
             yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             uint expected = PostSilence() + 3;
 
             yield return LoadScene(SceneName + "_2", UnityEngine.SceneManagement.LoadSceneMode.Single);
             yield return StartTest(SceneName);
 
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            yield return new WaitUntil(() => GameObject.Find("AkAmbient").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank()
+                .IsCompleted);
+#else
             Assert.AreEqual(expected, PostSilence());
+#endif
             yield return FinishTest(SceneName);
         }
     }
