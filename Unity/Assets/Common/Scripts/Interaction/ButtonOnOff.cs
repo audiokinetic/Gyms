@@ -30,8 +30,19 @@ public class ButtonOnOff : Button3D
     Material _materialRed;
     [SerializeField]
     Material _materialGreen;
+    [SerializeField]
+    bool _startOn;
 
     bool _isOn = false;
+    public bool IsOn { get { return _isOn; } }
+
+    private void Start()
+    {
+        if (_startOn)
+        {
+            Interact();
+        }
+    }
 
     public override void Interact()
     {

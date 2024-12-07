@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}" SchemaVersion="126">
+	<AudioObjects>
+		<WorkUnit Name="SpatialAudioGyms" ID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Spatial_Sawtooth" ID="{D9B33B32-A102-468C-B076-A2D5FE255B57}" ShortID="1032886501">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>45</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>50</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F487D952-56E3-4624-BEC9-7F9C84E14031}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="SpatialAudioAttenuation_50m" ID="{DF00CA9A-3997-4B13-A5FA-B1D63D5134A7}" WorkUnitID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Tone Generator" ID="{52BF9066-74FD-4234-B740-1CE8760A9687}" ShortID="661318579" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+							<PropertyList>
+								<Property Name="DecayTime" Type="Real32" Value="0.1"/>
+								<Property Name="ReleaseTime" Type="Real32" Value="0.4"/>
+								<Property Name="StartFreq" Type="Real32" Value="65"/>
+								<Property Name="SustainLevel" Type="Real32" Value="-35"/>
+								<Property Name="SustainTime" Type="Real32" Value="0"/>
+								<Property Name="SweepFreqType" Type="int32" Value="1"/>
+								<Property Name="WaveGain" Type="Real32" Value="0"/>
+								<Property Name="WaveType" Type="int32" Value="3"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Tone Generator" ID="{52BF9066-74FD-4234-B740-1CE8760A9687}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Spatial_PinkNoise" ID="{C9290836-9A67-4C7B-BA50-CB8B62E53978}" ShortID="928496387">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>65</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{CCE1A7A1-C681-451B-9702-F55388A6C394}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="SpatialAudioAttenuation_50m" ID="{DF00CA9A-3997-4B13-A5FA-B1D63D5134A7}" WorkUnitID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Tone Generator" ID="{BBC974E0-D822-41FA-A15F-0256C3F081FE}" ShortID="254094723" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+							<PropertyList>
+								<Property Name="DecayTime" Type="Real32" Value="0.1"/>
+								<Property Name="ReleaseTime" Type="Real32" Value="0.4"/>
+								<Property Name="StartFreq" Type="Real32" Value="330"/>
+								<Property Name="SustainLevel" Type="Real32" Value="-96.3"/>
+								<Property Name="SustainTime" Type="Real32" Value="0"/>
+								<Property Name="WaveGain" Type="Real32" Value="-6.6"/>
+								<Property Name="WaveType" Type="int32" Value="5"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Tone Generator" ID="{BBC974E0-D822-41FA-A15F-0256C3F081FE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Spatial_WhiteNoise" ID="{6AD02829-969D-436A-8377-271684FEE2C3}" ShortID="209524322">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>50</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>30</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="SpatialAudioAttenuation_50m" ID="{DF00CA9A-3997-4B13-A5FA-B1D63D5134A7}" WorkUnitID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Tone Generator" ID="{F5CE1756-F51C-4B97-9496-5E760977B907}" ShortID="110102782" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+							<PropertyList>
+								<Property Name="DecayTime" Type="Real32" Value="0.2"/>
+								<Property Name="ReleaseTime" Type="Real32" Value="0.3"/>
+								<Property Name="SustainLevel" Type="Real32" Value="-96.3"/>
+								<Property Name="SustainTime" Type="Real32" Value="0"/>
+								<Property Name="WaveGain" Type="Real32" Value="-13"/>
+								<Property Name="WaveType" Type="int32" Value="4"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Tone Generator" ID="{F5CE1756-F51C-4B97-9496-5E760977B907}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Spatial_PluckLoop" ID="{649B7E3F-DA34-45B1-8EFF-C88E466BF21F}" ShortID="62927307">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="SpatialAudioAttenuation_50m" ID="{DF00CA9A-3997-4B13-A5FA-B1D63D5134A7}" WorkUnitID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="pluckLoop" ID="{10846752-713E-42D1-8246-EF5E9E6A83C7}">
+							<Language>SFX</Language>
+							<AudioFile>pluckLoop.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="227680065"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="pluckLoop" ID="{10846752-713E-42D1-8246-EF5E9E6A83C7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

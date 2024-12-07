@@ -160,22 +160,87 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 ## Spatial Audio
 
 - _Folder: `5-Spatial`_
-- List of examples pertaining to properly spatializing a map's soundscape.
+- List of examples using the different Wwise Spatial Audio integrated features for demoing and testing purposes. Use these features to spatialize sound in your virtual environments.
 
-### Defining Rooms
+### Geometry
 
-- _Folder: `5-Spatial/SpatialAudio`_
-- Example showing how to bound and define a properly spatialized room.
+- _Folder: `5-Spatial/SpatialGeometry`_
+- List of gyms showing how sound is affected by Geometry.
 
-### Defining Portals
+#### Geometry Shapes
 
-- _Folder: `5-Spatial/SpatialPortal`_
-- Example showing how to define a portal between two spatial environments.
+- _Folder: `5-Spatial/SpatialGeometry/SpatialGeometryShape`_
+- List of gyms showing how Geometry works with different shapes.
 
-### Setting Reverb Volume | _Unreal_
+##### All Brush presets | _Unreal_
 
-- _Folder: `5-Spatial/SpatialReverb`_
-- Example showing how to set up a reverberation volume.
+- _Folder: `5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeBrush`_
+- Shows how Geometry works with all Brush presets.
+
+##### All Collision presets | _Unreal_
+
+- _Folder: `5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeCollision`_
+- Shows how Geometry works with all Collision presets.
+
+##### All Mesh presets
+
+- _Folder: `5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeMesh`_
+- Shows how Geometry works with all Mesh primitives and with custom shapes.
+
+### Obstruction and Occlusion | _Unreal_
+
+- _Folder: `5-Spatial/SpatialObsOcc`_
+- Examples showing how to use Obstruction and Occlusion in a map using Spatial Audio.
+
+#### Emitter Obstruction | _Unreal_
+
+- _Folder: `5-Spatial/SpatialObsOcc/SpatialObsOccEmitterObstruction`_
+- Example showing Obstruction being applied when an obstacle is placed between an emitter and the listener. For Obstruction to be applied, the map needs to contain Spatial Audio Rooms.
+
+##### Emitter Occlusion | _Unreal_
+
+- _Folder: `5-Spatial/SpatialObsOcc/SpatialObsOccEmitterOcclusion`_
+- Example showing Occlusion being applied when an obstacle is placed between an emitter and the listener. For Occlusion to be applied, the map cannot contain any Spatial Audio Rooms.
+
+#### Emitter Obstruction through Portals | _Unreal_
+
+- _Folder: `5-Spatial/SpatialObsOcc/SpatialObsOccPortalObstruction/`_
+- Examples showing Obstruction being applied when an obstacle is placed between an emitter and the listener while they are in different Spatial Audio Rooms.
+
+##### Obstacle between Emitter and Portal | _Unreal_
+
+- _Folder: `5-Spatial/SpatialObsOcc/SpatialObsOccPortalObstruction/SpatialObsOccPortalObstructionEmitter`_
+- Example showing Obstruction being applied when an obstacle is placed between an emitter and a Portal.
+
+##### Obstacle between Listener and Portal | _Unreal_
+
+- _Folder: `5-Spatial/SpatialObsOcc/SpatialObsOccPortalObstruction/SpatialObsOccPortalObstructionListener`_
+- Example showing Obstruction being applied when an obstacle is placed between a Portal and the listener.
+
+##### Obstacle between two Portals | _Unreal_
+
+- _Folder: `5-Spatial/SpatialObsOcc/SpatialObsOccPortalObstruction/SpatialObsOccPortalObstructionPortal`_
+- Example showing Obstruction being applied when an obstacle is placed between two Portals.
+
+### Outdoors Room
+
+- _Folder: `5-Spatial/SpatialOutdoorsRoom`_
+- Shows how to set and update the parameters of the automatically created Outdoors Room.
+
+### Radial Emitter
+
+- _Folder: `5-Spatial/SpatialRadialEmitter`_
+- A list of gyms to test Radial Emitters.
+
+#### Radial Emitter and Multi-Position
+
+- _Folder: `5-Spatial/SpatialRadialEmitter/SpatialRadialEmitterMultiPosition`_
+- Shows how to set up a Multi-Positioned Radial Emitter.
+
+#### Single Radial Emitter
+
+- _Folder: `5-Spatial/SpatialRadialEmitter/SpatialRadialEmitterSimple`_
+- Shows how to set up a single Radial emitter.
 
 ## Niagara | _Unreal_
 - _Folder: `7-Niagara`_

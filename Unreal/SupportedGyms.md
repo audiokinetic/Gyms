@@ -33,9 +33,22 @@
     - AdvancedSubtitle
     - AdvancedPersistentMusic
 - 5-Spatial
-    - SpatialAudio
-    - SpatialPortal
-    - SpatialReverb
+    - SpatialGeometry
+        - SpatialGeometryShape
+            - SpatialGeometryShapeBrush
+            - SpatialGeometryShapeCollision
+            - SpatialGeometryShapeMesh
+    - SpatialObsOcc
+        - SpatialObsOccEmitterObstruction
+        - SpatialObsOccEmitterOcclusion
+        - SpatialObsOccPortalObstruction
+            - SpatialObsOccPortalObstructionEmitter
+            - SpatialObsOccPortalObstructionListener
+            - SpatialObsOccPortalObstructionPortal
+    - SpatialOutdoorsRoom
+    - SpatialRadialEmitter
+        - SpatialRadialEmitterMultiPosition
+        - SpatialRadialEmitterSimple
 - 7-Niagara
     - NiagaraFireAndForget
     - NiagaraGPUEmitter
