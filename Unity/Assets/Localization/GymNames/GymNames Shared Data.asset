@@ -99,14 +99,6 @@ MonoBehaviour:
     m_Key: AdvancedSubtitle
     m_Metadata:
       m_Items: []
-  - m_Id: 13955451195392
-    m_Key: SpatialAudio
-    m_Metadata:
-      m_Items: []
-  - m_Id: 14067795628032
-    m_Key: SpatialPortal
-    m_Metadata:
-      m_Items: []
   - m_Id: 14196493651968
     m_Key: Smoke
     m_Metadata:
@@ -141,6 +133,34 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 14888105021440
     m_Key: SmokeSwitches
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115994108473294848
+    m_Key: SpatialGeometry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115994168338595840
+    m_Key: SpatialGeometryShape
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115994463948947456
+    m_Key: SpatialGeometryShapeMesh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75414742465265664
+    m_Key: SpatialOutdoorsRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76203306190913536
+    m_Key: SpatialRadialEmitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76203387740766208
+    m_Key: SpatialRadialEmitterMultiPosition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76203352202428416
+    m_Key: SpatialRadialEmitterSimple
     m_Metadata:
       m_Items: []
   - m_Id: 14956212129792

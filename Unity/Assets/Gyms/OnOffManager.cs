@@ -22,8 +22,6 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class OnOffManager : MonoBehaviour
@@ -31,7 +29,7 @@ public abstract class OnOffManager : MonoBehaviour
     public bool IsOn
     {
         get;
-        private set;
+        protected set;
     }
     
     public virtual void Start()

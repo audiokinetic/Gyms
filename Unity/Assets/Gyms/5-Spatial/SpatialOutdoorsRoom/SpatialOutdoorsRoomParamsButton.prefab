@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5621055983551231743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 601546698030072452, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_Name
+      value: SpatialOutdoorsRoomParamsButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492037756824053984, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921067584464422883, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5444ae1d1e3e76e4eac256c0b3e44788, type: 2}
+    - target: {fileID: 3993177997732350243, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993177997732350243, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993177997732350243, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217128082518586525, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2283256853895509831}
+    - target: {fileID: 9217128082518586525, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217128082518586525, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SpatialOutdoorsRoomParams_Interact, Gyms
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217128082518586525, guid: af0155f7a5525fc47bacffb2be5549a3,
+        type: 3}
+      propertyPath: _onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af0155f7a5525fc47bacffb2be5549a3, type: 3}
+--- !u!114 &4485030966708646311 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8087347021157762904, guid: af0155f7a5525fc47bacffb2be5549a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 5621055983551231743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5069680072022291579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 601546698030072452, guid: af0155f7a5525fc47bacffb2be5549a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 5621055983551231743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2283256853895509831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5069680072022291579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27e3f3453d0c5054a9c812e4938e6a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _descriptionText: {fileID: 8748416659449561052}
+  _valueText: {fileID: 4485030966708646311}
+  _parameter: 0
+  _variation: 0.1
+--- !u!114 &8748416659449561052 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3993177997732350243, guid: af0155f7a5525fc47bacffb2be5549a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 5621055983551231743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

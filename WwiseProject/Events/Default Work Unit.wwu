@@ -61,12 +61,45 @@
 				</Folder>
 				<Folder Name="SpatialAudio" ID="{4280C673-A951-445D-B220-FD45EBA5B47D}" ShortID="246414673">
 					<ChildrenList>
-						<Event Name="Post_Spatial_Audio_Event" ID="{25E4A84A-A2B1-4414-876C-5F631A075485}">
+						<Event Name="SpatialAudioEvent" ID="{60B1ADD6-D922-4612-B8C1-3D8175E891C4}">
 							<ChildrenList>
-								<Action Name="" ID="{706D07CA-628C-4D26-8D94-727EBEA06C13}" ShortID="58994368">
+								<Action Name="" ID="{3E59E288-16C7-40CA-8A7E-97BCD0BCE002}" ShortID="877169706">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Tone_150Hz_Position" ID="{DA4A2964-413D-47D8-9A8A-CB0B7D83D0B5}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											<ObjectRef Name="Spatial_PluckLoop" ID="{649B7E3F-DA34-45B1-8EFF-C88E466BF21F}" WorkUnitID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="RoomTone" ID="{627058BA-7052-4F97-8D4B-26D6B13CDF88}">
+							<ChildrenList>
+								<Action Name="" ID="{2408F4FF-0979-45E7-ADBD-433CC6645E2F}" ShortID="837761917">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spatial_PinkNoise" ID="{C9290836-9A67-4C7B-BA50-CB8B62E53978}" WorkUnitID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="RoomTone_01" ID="{D1B3B2BA-B9F3-4EA3-A56B-C88C4FDBBD7B}">
+							<ChildrenList>
+								<Action Name="" ID="{86389B7C-288E-40BD-A66E-7593755514BE}" ShortID="935472737">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spatial_Sawtooth" ID="{D9B33B32-A102-468C-B076-A2D5FE255B57}" WorkUnitID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="RoomTone_02" ID="{601C31B4-1431-4160-B47C-37536D075E08}">
+							<ChildrenList>
+								<Action Name="" ID="{EA2FE8C8-E86E-470C-B180-81B600C405ED}" ShortID="872524589">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spatial_WhiteNoise" ID="{6AD02829-969D-436A-8377-271684FEE2C3}" WorkUnitID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
