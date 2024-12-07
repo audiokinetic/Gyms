@@ -102,14 +102,6 @@ MonoBehaviour:
     m_Localized: Using Event Callbacks to Retrieve Markers (Subtitles)
     m_Metadata:
       m_Items: []
-  - m_Id: 13955451195392
-    m_Localized: Defining Rooms
-    m_Metadata:
-      m_Items: []
-  - m_Id: 14067795628032
-    m_Localized: Defining Portals
-    m_Metadata:
-      m_Items: []
   - m_Id: 14196493651968
     m_Localized: Smoke Tests
     m_Metadata:
@@ -338,6 +330,18 @@ MonoBehaviour:
     m_Localized: Playing Sounds on Collision base on a surface (Footsteps)
     m_Metadata:
       m_Items: []
+  - m_Id: 76203306190913536
+    m_Localized: Radial Emitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76203352202428416
+    m_Localized: Single Radial Emitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76203387740766208
+    m_Localized: Multi-Positioned Radial Emitter
+    m_Metadata:
+      m_Items: []
   - m_Id: 70330206702145536
     m_Localized: Setting a State in a Timeline
     m_Metadata:
@@ -348,6 +352,46 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 78008771550171136
     m_Localized: Using Game Parameters to Modify global parameters (RTPC)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63429248331800576
+    m_Localized: Spatial Audio Geometry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63429318338928640
+    m_Localized: Single Geometries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63429565861584896
+    m_Localized: Setting parameters of a SurfaceReflector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63429624892219392
+    m_Localized: Setting parameters of a Geometry with an empty Mesh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63429738754990080
+    m_Localized: Geometry Shapes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63429786985291776
+    m_Localized: All Mesh presets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75414742465265664
+    m_Localized: Outdoors Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115994108473294848
+    m_Localized: Geometry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115994168338595840
+    m_Localized: Geometry Shapes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115994463948947456
+    m_Localized: Mesh Shapes
     m_Metadata:
       m_Items: []
   - m_Id: 131239163757490176

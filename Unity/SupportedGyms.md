@@ -30,8 +30,13 @@
     - AdvancedTimeline
     - AdvancedPersistentMusic
 - 5-Spatial
-    - SpatialAudio
-    - SpatialPortal
+    - SpatialGeometry
+        - SpatialGeometryShape
+            - SpatialGeometryShapeMesh
+    - SpatialOutdoorsRoom
+    - SpatialRadialEmitter
+        - SpatialRadialEmitterMultiPosition
+        - SpatialRadialEmitterSimple
 - 8-Editor
     - EditorEnterPlayMode
     - EditorInspector

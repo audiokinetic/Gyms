@@ -87,11 +87,17 @@ EditorBuildSettings:
     path: Assets/Gyms/3-Advanced/AdvancedTimeline/AdvancedTimeline.unity
     guid: 19d1db14c33a0db44be8a92fed88e577
   - enabled: 1
-    path: Assets/Gyms/5-Spatial/SpatialAudio/SpatialAudio.unity
-    guid: 200aca35fc892b24bbced41540c88a91
+    path: Assets/Gyms/5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeMesh/SpatialGeometryShapeMesh.unity
+    guid: aa459ad6e83ab6e48b82538c320fc599
   - enabled: 1
-    path: Assets/Gyms/5-Spatial/SpatialPortal/SpatialPortal.unity
-    guid: b5fa5c8c8a23fc741a8c5577beb1b95b
+    path: Assets/Gyms/5-Spatial/SpatialOutdoorsRoom/SpatialOutdoorsRoom.unity
+    guid: 00ee632bc057cad48b17d72c360c10a2
+  - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialRadialEmitter/SpatialRadialEmitterMultiPosition/SpatialRadialEmitterMultiPosition.unity
+    guid: 3934b64ac96594c42af1c1e8346b395a
+  - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialRadialEmitter/SpatialRadialEmitterSimple/SpatialRadialEmitterSimple.unity
+    guid: d14012ffde4cdfa49b35f2fd0258a5c5
   - enabled: 1
     path: Assets/Gyms/8-Editor/EditorEnterPlayMode/EditorEnterPlayMode.unity
     guid: 830dec3939a06174f8345222e21edc3f

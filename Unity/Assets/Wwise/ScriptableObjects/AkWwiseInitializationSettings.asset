@@ -23,7 +23,7 @@ MonoBehaviour:
     m_BasePath: Audio\GeneratedSoundBanks
     m_StartupLanguage: English(US)
     m_EngineLogging: 1
-    m_DefaultScalingFactor: 1
+    m_DefaultListenerScalingFactor: 1
     m_MaximumNumberOfPositioningPaths: 255
     m_CommandQueueSize: 262144
     m_SamplesPerFrame: 512
