@@ -22,9 +22,10 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
-using NUnit.Framework;
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.TestTools;
 
 namespace Tests
@@ -32,6 +33,11 @@ namespace Tests
     public class BasicSetGlobalGameParameterTests : GymTests
     {
         const string SceneName = "BasicSetGlobalGameParameter";
+
+        private float _initialValue = 0.2f;
+
+        private BasicSetGlobalGameParameterTests_Component testComponents;
+
         [UnityTest]
         public IEnumerator BasicSetGlobalGameParameter_Tests()
         {
@@ -39,33 +45,51 @@ namespace Tests
             AkBank bank = gameObject.GetComponent<AkBank>();
             LoadBank(bank);
 
-            BasicSetGlobalGameParameterTests_Component testComponents = gameObject.GetComponent<BasicSetGlobalGameParameterTests_Component>();
+            testComponents = gameObject.GetComponent<BasicSetGlobalGameParameterTests_Component>();
 
-            //Set value
-            testComponents.rtpcClass.SetGlobalValue(300.0f);
+            _initialValue = testComponents.rtpcClass.GetGlobalValue();
+
+            // Set value
+            float expected = 0.3f;
+            testComponents.rtpcClass.SetGlobalValue(expected);
             yield return new WaitForSeconds(0.2f);
             float value = testComponents.rtpcClass.GetGlobalValue();
-            float expected = 300.0f;
-            Assert.AreEqual(expected, value);
+            Assert.AreApproximatelyEqual(expected, value, 0.01f);
             LogOutput("Set value: ", true);
 
-            //Set out of bounds value (lower)
-            testComponents.rtpcClass.SetGlobalValue(-200.0f);
+            // Set out of bounds value (lower)
+            // Current behaviour is to return the value as given, even if that's outside the Min Range
+            expected = -2f;
+            testComponents.rtpcClass.SetGlobalValue(expected);
             yield return new WaitForSeconds(0.2f);
             value = testComponents.rtpcClass.GetGlobalValue();
-            expected = -200.0f;
-            Assert.AreEqual(expected, value);
+            Assert.AreApproximatelyEqual(expected, value, 0.01f);
             LogOutput("Set out of bounds lower: ", true);
 
-            //Set out of bounds value (upper)
-            testComponents.rtpcClass.SetGlobalValue(1600.0f);
+            // Set out of bounds value (upper)
+            // Current behaviour is to return the value as given, even if that's outside the Max range
+            expected = 300f;
+            testComponents.rtpcClass.SetGlobalValue(300f);
             yield return new WaitForSeconds(0.2f);
             value = testComponents.rtpcClass.GetGlobalValue();
-            expected = 1600.0f;
-            Assert.AreEqual(expected, value);
+            Assert.AreApproximatelyEqual(expected, value, 0.01f);
             LogOutput("Set out of bounds upper: ", true);
 
+            testComponents.rtpcClass.SetGlobalValue(_initialValue);
+
             yield return FinishTest(SceneName);
+        }
+
+        [UnityTearDown]
+        public new IEnumerator TearDown()
+        {
+            testComponents.rtpcClass.SetGlobalValue(_initialValue);
+            float value = testComponents.rtpcClass.GetGlobalValue();
+            if (Math.Abs(value - _initialValue) >= 0.01f)
+            {
+                Debug.LogError($"Failed to reset Global GameParamter Value. Actual: {value}. Expected: {_initialValue}");
+            }
+            yield return null;
         }
     }
 }
