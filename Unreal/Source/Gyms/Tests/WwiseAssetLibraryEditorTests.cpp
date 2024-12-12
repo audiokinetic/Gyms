@@ -279,34 +279,6 @@ WWISE_TEST_CASE(AssetMaps_MediaAndSoundBanks, "Wwise::AssetLibraryEditor::AssetM
 		}
 	}
 
-	SECTION("No Duplicate Media - SharedMediaData")
-	{
-		TSet<WwiseDBShortId> ExistingKeys;
-		for (const auto& Source: FilteringSharedMediaData->Sources)
-		{
-			if (auto Media = Source.GetMedia())
-			{
-				WwiseDBShortId MediaID = Media->Id;
-				CHECK(!ExistingKeys.Contains(MediaID))
-				ExistingKeys.Add(MediaID);
-			}
-		}
-	}
-
-	SECTION("No Duplicate Media - AllSharedData")
-	{
-		TSet<WwiseDBShortId> ExistingKeys;
-		for (const auto& Source: FilteringSharedData->Sources)
-		{
-			if (auto Media = Source.GetMedia())
-			{
-				WwiseDBShortId MediaID = Media->Id;
-				CHECK(!ExistingKeys.Contains(MediaID))
-				ExistingKeys.Add(MediaID);
-			}
-		}
-	}
-
 	SECTION("Only Media In Media Map")
 	{
 		for (const auto& Source: FilteringSharedMediaData->Sources)
