@@ -29,28 +29,20 @@ using UnityEngine.TestTools;
 
 namespace Tests
 {
-    public class SmokeMultipleSameEventTests : GymTests
+    public class SmokeStopSoundOnDestroyTests : GymTests
     {
-        const string SceneName = "SmokeMultipleSameEvent";
+        const string SceneName = "SmokeStopSoundOnDestroy";
         [UnityTest]
-        public IEnumerator SmokeMultipleSameEvent_Tests()
+        public IEnumerator SmokeStopSoundOnDestroy_Tests()
         {
             yield return StartTest(SceneName);
-#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-            WwiseEventReference wwiseEventRef = gameObject.GetComponent<AkEvent>().data.WwiseObjectReference;
-            
-            wwiseEventRef.UnloadAutoBank();
-            yield return new WaitForSeconds(1.0f);
-            
-            wwiseEventRef.LoadAutoBank();
-            Assert.IsFalse(wwiseEventRef.IsAutoBankLoaded);
-            //Should detect that it's already loading and not override the previous LoadAutoBank Task.
-            wwiseEventRef.LoadAutoBank();
-            Assert.IsFalse(wwiseEventRef.IsAutoBankLoaded);
 
-            yield return new WaitUntil(() => wwiseEventRef.CompleteLoadBank().IsCompleted);
-            Assert.IsTrue(wwiseEventRef.IsAutoBankLoaded);
-#endif
+            var gameObjectReloader = GameObject.Find("Utilities").GetComponent<GameObjectReloader>();
+            
+            gameObjectReloader.PostEvent();
+            yield return new WaitForSeconds(0.5f);
+            gameObjectReloader.DestroyAndRecreateObject();
+            gameObjectReloader.PostEvent();
 
             yield return FinishTest(SceneName);
         }

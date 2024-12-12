@@ -495,6 +495,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_UserDefinedStreamingSFX" ID="{AA333ABB-E28F-445F-9173-C12E547FF6A1}">
+							<ChildrenList>
+								<Action Name="" ID="{1F43BC13-4709-4554-A349-AC318C3E383E}" ShortID="878306059">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UserDefinedStreamingSFX" ID="{90EA3AAD-F9DD-497D-9D09-D1F31AA86736}" WorkUnitID="{A3D5474A-DCBE-4BA1-8EC4-CD3607407BBE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="DLCSound" ID="{201CD1EA-96DA-405C-B266-F928D3D34E99}" ShortID="26649870">

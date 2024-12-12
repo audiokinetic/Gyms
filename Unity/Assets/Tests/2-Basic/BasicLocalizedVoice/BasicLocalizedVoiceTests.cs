@@ -45,15 +45,15 @@ namespace Tests
             yield return new WaitForSeconds(0.2f);
             
             uint expected = localizedEvent.PlayingId + 1;
+            
 
             //Set unsupported language
 #if !AK_WWISE_ADDRESSABLES
             ExpectedLogError("PrepareEvent for Post_Localized_Voice failed with result: AK_IDNotFound");
 #if UNITY_EDITOR
+            ExpectedLogError("Post Event failed. If working with Autobanks");
             ExpectedLogError("Could not post event");
             //There can be 1 or 2 different errors logged.
-            ExpectedLogErrorAtLeastOnce("");
-            ExpectedLogError("Event ID not found Name");
             ExpectedLogError("Unload bank failed");
 #endif
 #endif
@@ -68,6 +68,7 @@ namespace Tests
              
             // Set language
             yield return localizedVoice.SetLanguage("fr_FR");
+
             yield return new WaitForSeconds(0.2f);
             actual = localizedEvent.PlayingId;
             Assert.AreEqual(expected, actual);

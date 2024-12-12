@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="UserDefinedBank" ID="{F9AA23B0-2C6A-43F5-8449-E0CB8195F17D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_UserDefinedStreamingSFX" ID="{AA333ABB-E28F-445F-9173-C12E547FF6A1}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UserDefinedBankSFX" ID="{486C7023-33C0-4761-9A13-39A6FC6BD4EB}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
