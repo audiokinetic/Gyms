@@ -166,7 +166,15 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 		LibraryInfo.FilteredAssets.Empty();
 
 		Processor->FilterLibraryAssets(*FilteringSharedData, LibraryInfo, false);
-		CHECK(LibraryInfo.FilteredAssets.Num() == 0);
+		int EmptyFilterCount = LibraryInfo.FilteredAssets.Num();
+		
+		Filter->SelectedLanguages.Empty();
+		Filter->SelectedLanguages.Add("SFX");
+		LibraryInfo.FilteredAssets.Empty();
+
+		Processor->FilterLibraryAssets(*FilteringSharedData, LibraryInfo, false);
+		
+		CHECK(LibraryInfo.FilteredAssets.Num() == EmptyFilterCount);
 	}
 }
 
