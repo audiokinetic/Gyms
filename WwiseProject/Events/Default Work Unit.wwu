@@ -652,6 +652,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<WorkUnit Name="AudioLink" ID="{B23B4FE2-7B3E-437F-9C01-37B520789009}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

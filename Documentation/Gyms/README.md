@@ -106,6 +106,11 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `3-Advanced/AdvancedAmbient/AdvancedAmbientStartAll`_
 - Posting Wwise Events for every currently defined Ambient sound on a map.
 
+### AudioLink Video | _Unreal_
+
+- _Folder: `3-Advanced/AdvancedAudioLinkVideo`_
+- Sending Unreal MediaPlayer audio to Wwise via AudioLink.
+
 ### Capturing Profiler File
 
 - _Folder: `3-Advanced/AdvancedCaptureProfiler`_
