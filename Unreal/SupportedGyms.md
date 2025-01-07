@@ -20,6 +20,7 @@
     - AdvancedAmbient
         - AdvancedAmbientFollow
         - AdvancedAmbientStartAll
+    - AdvancedAudioLinkVideo
     - AdvancedCaptureProfiler
     - AdvancedEvents
         - AdvancedEventsPostAndWait
