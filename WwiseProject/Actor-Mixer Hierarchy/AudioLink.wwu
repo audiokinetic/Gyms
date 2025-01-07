@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C4B40BE6-12AC-4E11-9C4D-702EC5FBC73A}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="AudioLink" ID="{C4B40BE6-12AC-4E11-9C4D-702EC5FBC73A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Unreal_Input" ID="{734968D8-9211-41C2-A8D4-995F63F6C3F0}" ShortID="306686203">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Audio Input" ID="{3E70EAC9-D98E-4CED-8EF0-06B3C04C105C}" ShortID="607170987" PluginName="Wwise Audio Input" CompanyID="0" PluginID="200">
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Audio Input" ID="{3E70EAC9-D98E-4CED-8EF0-06B3C04C105C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

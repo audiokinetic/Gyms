@@ -16,6 +16,7 @@ Key,SourceString
 "AdvancedAmbient","Ambient Operations"
 "AdvancedAmbientFollow","Following an Actor"
 "AdvancedAmbientStartAll","Starting All Level Ambients"
+"AdvancedAudioLink","Send Unreal audio to Wwise"
 "AdvancedEvents","Event Operations"
 "AdvancedExternalSources","Using External Sources"
 "AdvancedLoadData","Manually Loading Event Media and SoundBanks"
