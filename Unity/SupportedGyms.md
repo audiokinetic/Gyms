@@ -37,6 +37,7 @@
     - SpatialRadialEmitter
         - SpatialRadialEmitterMultiPosition
         - SpatialRadialEmitterSimple
+- 6-Additional
 - 8-Editor
     - EditorEnterPlayMode
     - EditorInspector

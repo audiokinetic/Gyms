@@ -49,6 +49,7 @@
     - SpatialRadialEmitter
         - SpatialRadialEmitterMultiPosition
         - SpatialRadialEmitterSimple
+- 6-Additional
 - 7-Niagara
     - NiagaraFireAndForget
     - NiagaraGPUEmitter

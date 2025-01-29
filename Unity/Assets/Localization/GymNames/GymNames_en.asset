@@ -404,6 +404,10 @@ MonoBehaviour:
     m_Localized: Posting a Wwise Event with a Cooldown Period
     m_Metadata:
       m_Items: []
+  - m_Id: 223050383360
+    m_Localized: Additional Gyms
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
