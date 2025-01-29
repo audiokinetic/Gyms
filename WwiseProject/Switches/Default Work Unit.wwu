@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}" SchemaVersion="126">
+<WwiseDocument Type="WorkUnit" ID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}" SchemaVersion="127">
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}" PersistMode="Standalone">
 			<ChildrenList>
@@ -35,6 +35,31 @@
 						<Switch Name="Grass" ID="{2C4D3FAB-B4BF-4808-9DA4-D00C66590B51}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<Folder Name="DynamicDialogue" ID="{CE51C77C-54A6-4C7B-830C-D8A74D88387A}" ShortID="963372753">
+					<ChildrenList>
+						<SwitchGroup Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}">
+							<ChildrenList>
+								<Switch Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}"/>
+								<Switch Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}"/>
+								<Switch Name="Outside" ID="{EDEED907-75CB-4CD8-A7EA-EE7EBF22AC7F}"/>
+								<Switch Name="Street" ID="{A2BE38EC-3621-4511-B707-FB634018B905}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}">
+							<ChildrenList>
+								<Switch Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}"/>
+								<Switch Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Hostility" ID="{493722E8-CD8E-4630-8C92-AB26D4D3630B}">
+							<ChildrenList>
+								<Switch Name="Hostile" ID="{C1399CF8-F925-4333-9744-A8D072903D07}"/>
+								<Switch Name="Friendly" ID="{70363629-B3F7-4915-A13B-8E66FD7691F3}"/>
+								<Switch Name="Neutral" ID="{9EBF008D-408C-43BB-BE30-3C9401BCF75B}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

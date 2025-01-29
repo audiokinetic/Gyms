@@ -1,6 +1,1913 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{BDB25378-3A1E-4F49-9ABB-9E035E654DD8}" SchemaVersion="126">
+<WwiseDocument Type="WorkUnit" ID="{BDB25378-3A1E-4F49-9ABB-9E035E654DD8}" SchemaVersion="127">
 	<DynamicDialogue>
-		<WorkUnit Name="Default Work Unit" ID="{BDB25378-3A1E-4F49-9ABB-9E035E654DD8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BDB25378-3A1E-4F49-9ABB-9E035E654DD8}" PersistMode="Standalone">
+			<ChildrenList>
+				<DialogueEvent Name="PlaylistManipulation" ID="{9BA5EB0D-E1EC-4D85-B805-C42CB4358443}">
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{75FFB224-C839-4948-BAA5-957D725B4653}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{8F23990B-220A-414A-8883-F280F2C2F282}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{B026FCF7-10F4-47D7-A756-3DC5F706E0FD}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hangar_Alone" ID="{A759D201-7281-40BD-BCA3-854689709665}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{DBE83748-5DF8-47D6-A26A-019E0089DFFC}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hangar_Gang" ID="{167C305C-883D-4645-BF47-8C12431B27E4}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{BACBB049-CECF-4FA1-B86F-923F9826D74A}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Outside" ID="{EDEED907-75CB-4CD8-A7EA-EE7EBF22AC7F}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{6FD62A45-E4F6-4E74-AEE4-824CB6912A93}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Outside_Gang" ID="{A378C770-AD1F-428A-8FE0-1E23006427EB}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Outside" ID="{EDEED907-75CB-4CD8-A7EA-EE7EBF22AC7F}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{D1D59F90-FD18-4108-A708-F868B3DFB530}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Street_Alone" ID="{33D2E223-04EC-4C27-A005-F14ACC7D2A04}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Street" ID="{A2BE38EC-3621-4511-B707-FB634018B905}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{75548B41-AD01-4115-B934-BBB9A8D65B5F}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Street_Gang" ID="{9D2C3F57-3968-4948-A142-E499D796FD39}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Street" ID="{A2BE38EC-3621-4511-B707-FB634018B905}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{D74B222B-39AD-4AC3-9C0D-C0A8C0AFC7A5}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{E1152548-F01F-4072-903A-15932DCBCBCB}">
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{D4CE2E1C-05AC-4DF5-A78C-295CF89AB56A}">
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</DialogueEvent>
+				<DialogueEvent Name="ModifyPlaylist" ID="{92A0A88C-1E74-4C6C-B593-BA2FBC51433B}">
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{31501109-2A0A-4C13-87FE-C895E4CF40FF}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{6573794F-BEC3-4B39-8D85-001875AAAB25}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{4A63F190-6E74-4697-B2AA-E332AF77CB5A}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{109DC56B-1886-4F0C-8AE8-D382A16437C4}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</DialogueEvent>
+				<DialogueEvent Name="ResolvePlaylist" ID="{9732E637-4350-4FFA-BF34-91148E896D1C}">
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{28A80B9C-F695-460E-8996-2468CEB9FFEF}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{78B02221-AB50-489A-B2C9-3FF1D79B739E}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{1B1670B0-1D29-4B23-BBC9-8FCD70E7B337}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{95E4BB60-0E86-42A0-87A5-73F51EFB5C35}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</DialogueEvent>
+				<DialogueEvent Name="ResolvePlaylistNoDefaultFallback" ID="{B3194AC5-9356-4BBE-A6FE-E22B733D5849}">
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{E43F6508-DCD8-4116-A904-2AE27CBB5246}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{94638045-BEEC-45E8-A6F9-B42496FDEA2B}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{CF79139F-3C54-42D3-AEA3-50CFF9B24D1F}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</DialogueEvent>
+				<DialogueEvent Name="ModifyPlaylistNoDefaultFallback" ID="{1FFF1140-6EB9-4203-85AD-727A3393E9D3}">
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{B42BFC7F-82F6-49B4-9A29-9431FB981ED7}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{33DA9BB7-6443-4D76-9D6C-EEA1E12577C3}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{82D2F854-4A72-4374-88B3-40A71EBFA4F9}">
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</DialogueEvent>
+				<DialogueEvent Name="FallbackPathPlaylist" ID="{70FA481B-31A8-40AF-9E33-439AADB86EE9}">
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{DEFEA903-EB39-4BE7-8611-2FA68BF16B0F}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{87D53D7E-AD8C-40BB-A2A9-EA08DAEDF869}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</DialogueEvent>
+				<DialogueEvent Name="ProbabilityPlaylist" ID="{0ED4C7BD-9E9D-4DB0-8F89-212E51D91C32}">
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{13504EC7-01DD-45E5-8F61-E1EC47CCE96B}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{673A9CFC-6895-4F18-8A84-596DB02F1792}">
+										<PropertyList>
+											<Property Name="Probability" Type="int32" Value="50"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{BC0CC01D-3658-4E9C-854F-2A04C9DC4899}">
+										<PropertyList>
+											<Property Name="Probability" Type="int32" Value="0"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</DialogueEvent>
+				<DialogueEvent Name="ChainPlaylist" ID="{C9128F3D-94E1-4372-A6F0-C215812EA658}">
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="Hostility" ID="{493722E8-CD8E-4630-8C92-AB26D4D3630B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{EB4ABFF5-B6DC-400D-B0E9-C158F4161F55}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Hostility" ID="{493722E8-CD8E-4630-8C92-AB26D4D3630B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{1C5850D4-FF28-4B36-8976-499272400128}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Hostility" ID="{493722E8-CD8E-4630-8C92-AB26D4D3630B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{139D035B-2D76-4C52-995F-111DF6DA7A19}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Friendly" ID="{70363629-B3F7-4915-A13B-8E66FD7691F3}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{2EB46CE0-5908-49A7-8882-510C6D8AC12C}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Hostile" ID="{C1399CF8-F925-4333-9744-A8D072903D07}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{906F1912-CDEF-48B8-952E-0BBCC35B6B81}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Silence" ID="{A453F51A-B766-4F2A-B52A-FA4231E60FF9}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Neutral" ID="{9EBF008D-408C-43BB-BE30-3C9401BCF75B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</DialogueEvent>
+				<DialogueEvent Name="WeightsPlalist" ID="{259216A2-FA48-4CD8-8AFD-0101D1D7608E}">
+					<PropertyList>
+						<Property Name="Mode" Type="int16" Value="1"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{ADFD9A37-251A-47B5-B97B-3B5F234A2DBB}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{CB38C85E-0183-4EB9-B845-E1C678255236}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>90</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{2BE3FF8C-9E8A-4D84-A4E2-17DA6603426C}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>100</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{7AA42AA5-3DCD-48CE-AAC3-EBF46122B99C}">
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{9EF1C6AE-C3EE-498A-AC4C-5AFD830A81EA}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>0</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{F5EDC3FF-9232-419A-BC4E-B6A7B1B0BAE9}">
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</DialogueEvent>
+				<Folder Name="WeightsPlaylist" ID="{92836F8D-EDAC-4E4B-A0EF-68830D800400}" ShortID="23556847">
+					<ChildrenList>
+						<DialogueEvent Name="Match100Fallback0" ID="{38986D7F-BDD5-4DC2-B602-5C7256E23697}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{D318F3C1-B60A-493C-9C2A-0824D8BFB0CE}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>100</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{3E464F34-57D6-42D8-882D-16CD03BD9234}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>0</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match100Fallback90" ID="{4D5BF928-7EFE-4301-9AC6-72706B1AFF3E}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{2E164FF7-B348-4E81-8A43-6D63F45A9B18}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>100</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{A3DDA534-4FF1-41AF-94B9-A9BB2721AC53}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>90</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match90Fallback80" ID="{3EF93008-749B-4B1D-BF0B-9BA60BC1AFC0}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{54EFBB4A-5E2E-44F6-A655-74E4C0B061BF}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>90</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{4969EE8D-C9E4-4880-A34F-F10B6FE64C91}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>80</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match90Fallback90" ID="{8461E8F3-C750-44F1-B538-E44F7065FE4C}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{6E15D4EE-699A-4C17-B368-A6F862FE8291}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>90</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{AD986002-21E6-4742-9AB8-E87F42ABF11A}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>90</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match50Fallback50" ID="{25209E4C-1706-4276-9B36-0B5F360A2755}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{723C2531-964C-4485-8AEE-217ED8E42D4C}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{CAC5BB3A-8952-4CCC-A5D6-DFC939BA4DE9}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match80Fallback20" ID="{B837BB3D-77D6-4588-B5EA-7EBE86C698BA}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{45BDD028-9977-4EB1-9AD9-9FC367432094}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>80</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{F1D23D2D-8223-44D3-A8C4-FDA1292F92EE}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>20</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match100Fallback100" ID="{81B7C3AF-D501-4477-9F68-465BA3EBFAD8}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{0511E57F-B5EA-4747-9160-1D466D90D22C}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>100</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{0BB8A58E-4BA5-494A-BD71-158E99B8CB99}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>100</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match60PartialMatch20Fallback20" ID="{C92BE1B4-B7C2-4158-A980-B4ECC9A10DE9}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{7543F0AD-9DEC-475A-BB8A-DD086215F420}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>60</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{273B8765-512E-418A-9B39-B29E03165151}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>20</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{797359CB-8503-4930-AC9B-D0B97CA367B8}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>20</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match60PartialMatch50Fallback50" ID="{0F457791-DCCF-4A7C-8930-BF9FD7B715D1}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{05842FBB-46BB-4308-BAA5-CDB51E66B863}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>60</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{C028EDC9-4D39-4717-97EA-17741CC0A41F}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{E443D11A-7FDE-48F9-9F24-1068141368BB}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match0Fallback0" ID="{2A8E3B29-2569-4740-905C-707E2BF5EECC}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{AF4F7861-DE4F-4161-8847-652907D9FE96}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>0</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{6F2B8F1D-6122-406B-B5E3-B7FD2F95E3B9}">
+												<PropertyList>
+													<Property Name="Weight" Type="int32">
+														<ValueList>
+															<Value>0</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="OrderedPlaylist" ID="{15D123DB-6102-4358-8FC6-ECFD3866ABB1}">
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{65C433D1-4DBA-411C-B65E-C09F57AFE141}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{CDF4F39A-A28D-4992-B768-8D7A6E15EFC7}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{2D9F02A1-DABF-4878-B303-09BB0756C645}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hangar_Alone" ID="{A759D201-7281-40BD-BCA3-854689709665}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{9CFF6FF5-3A7F-40AE-9616-65DD80B88FB0}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Outside_Gang" ID="{A378C770-AD1F-428A-8FE0-1E23006427EB}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{BEE8DB25-F963-4098-944B-EA0939A7FD0B}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</DynamicDialogue>
 </WwiseDocument>

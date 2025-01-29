@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" SchemaVersion="126">
+<WwiseDocument Type="WorkUnit" ID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" SchemaVersion="127">
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" PersistMode="Standalone">
 			<ChildrenList>
@@ -735,6 +735,21 @@
 						<Event Name="SharedMediaEvent_02" ID="{2B348EDF-0597-4D07-89CD-C8D9CBDCD900}">
 							<ChildrenList>
 								<Action Name="" ID="{3FD76718-C256-4A17-8BEF-D53E131E7776}" ShortID="1003118374">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="DynamicDialogue" ID="{D27932E5-70C9-45F3-90AE-3848405E4FDC}" ShortID="1047207788">
+					<ChildrenList>
+						<Event Name="DynamicSequenceFromAudioNode" ID="{E8191C51-D462-4F94-810C-B2CF287E33A0}">
+							<ChildrenList>
+								<Action Name="" ID="{F928A370-646A-4E44-9F2B-5B2763617652}" ShortID="300860085">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5E42C017-C023-46C2-9503-950FD24100E7}" SchemaVersion="127">
+	<Containers>
+		<WorkUnit Name="DynamicDialogue" ID="{5E42C017-C023-46C2-9503-950FD24100E7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Alone" ID="{FC76812F-DFF4-497D-BC60-580B31C53778}" ShortID="543869848">
+					<ChildrenList>
+						<Sound Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" ShortID="659244624">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UNA-BM-AL_01" ID="{37D35F34-08E4-475E-9E4A-94CE3B927EF4}">
+									<Language>SFX</Language>
+									<AudioFile>UNA-BM-AL_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="344152944"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UNA-BM-AL_01" ID="{37D35F34-08E4-475E-9E4A-94CE3B927EF4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hangar_Alone" ID="{A759D201-7281-40BD-BCA3-854689709665}" ShortID="321399197">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UNA-BM-HG_01" ID="{9C24BBFC-929A-4E0D-BA23-F2523E801E7C}">
+									<Language>SFX</Language>
+									<AudioFile>UNA-BM-HG_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="58659922"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UNA-BM-HG_01" ID="{9C24BBFC-929A-4E0D-BA23-F2523E801E7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" ShortID="137017208">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UNA-BM-LO_01" ID="{61CCCCD5-7FE3-41F3-A01E-587C1F1D5B52}">
+									<Language>SFX</Language>
+									<AudioFile>UNA-BM-LO_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="591881804"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UNA-BM-LO_01" ID="{61CCCCD5-7FE3-41F3-A01E-587C1F1D5B52}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Street_Alone" ID="{33D2E223-04EC-4C27-A005-F14ACC7D2A04}" ShortID="60623735">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UNA-BM-ST_01" ID="{F7C4B362-E4B7-49DD-8AD6-BD8E8F26F205}">
+									<Language>SFX</Language>
+									<AudioFile>UNA-BM-ST_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1033063530"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UNA-BM-ST_01" ID="{F7C4B362-E4B7-49DD-8AD6-BD8E8F26F205}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Gang" ID="{4F071A98-F4F0-4D04-94BF-A5208CC7F7D2}" ShortID="839467706">
+					<ChildrenList>
+						<Sound Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" ShortID="999323572">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UNA-GG-AL_01" ID="{6E419DF6-1AC5-47CD-813C-CECA365C09D8}">
+									<Language>SFX</Language>
+									<AudioFile>UNA-GG-AL_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="85802360"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UNA-GG-AL_01" ID="{6E419DF6-1AC5-47CD-813C-CECA365C09D8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hangar_Gang" ID="{167C305C-883D-4645-BF47-8C12431B27E4}" ShortID="978985798">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UNA-GG-HG_01" ID="{26D31EB5-B873-469C-AFE7-4511F26A8D1D}">
+									<Language>SFX</Language>
+									<AudioFile>UNA-GG-HG_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="565115837"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UNA-GG-HG_01" ID="{26D31EB5-B873-469C-AFE7-4511F26A8D1D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Outside_Gang" ID="{A378C770-AD1F-428A-8FE0-1E23006427EB}" ShortID="646692572">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UNA-GG-LO_01" ID="{C07B3FDC-93E5-4A9C-A4BC-BC7714E46950}">
+									<Language>SFX</Language>
+									<AudioFile>UNA-GG-LO_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="585728612"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UNA-GG-LO_01" ID="{C07B3FDC-93E5-4A9C-A4BC-BC7714E46950}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Street_Gang" ID="{9D2C3F57-3968-4948-A142-E499D796FD39}" ShortID="461430002">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UNA-GG-ST_01" ID="{34EB5503-5887-40DE-974A-83ADFD786B88}">
+									<Language>SFX</Language>
+									<AudioFile>UNA-GG-ST_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="616000114"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UNA-GG-ST_01" ID="{34EB5503-5887-40DE-974A-83ADFD786B88}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
