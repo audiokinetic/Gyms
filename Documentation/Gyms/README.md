@@ -242,6 +242,10 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `5-Spatial/SpatialRadialEmitter/SpatialRadialEmitterSimple`_
 - Shows how to set up a single Radial emitter.
 
+## Additional Gyms
+- _Folder: `6-Additional`_
+- Additional Gyms.
+
 ## Niagara | _Unreal_
 - _Folder: `7-Niagara`_
 - Using the Niagara Particle system with the Wwise Niagara plugin.

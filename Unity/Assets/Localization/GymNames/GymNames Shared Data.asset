@@ -99,6 +99,10 @@ MonoBehaviour:
     m_Key: AdvancedSubtitle
     m_Metadata:
       m_Items: []
+  - m_Id: 223050383360
+    m_Key: 6-Additional
+    m_Metadata:
+      m_Items: []
   - m_Id: 14196493651968
     m_Key: Smoke
     m_Metadata:
