@@ -147,6 +147,22 @@ MonoBehaviour:
     m_Key: SpatialGeometryShapeMesh
     m_Metadata:
       m_Items: []
+  - m_Id: 73571002553483264
+    m_Key: SpatialLevelLoading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73571154752192512
+    m_Key: SpatialLevelLoadingSubLevel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73571115761942528
+    m_Key: SpatialLevelLoadingToNonSpatial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73571065392545792
+    m_Key: SpatialLevelLoadingToSpatial
+    m_Metadata:
+      m_Items: []
   - m_Id: 75414742465265664
     m_Key: SpatialOutdoorsRoom
     m_Metadata:
