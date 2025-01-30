@@ -346,6 +346,22 @@ MonoBehaviour:
     m_Localized: Multi-Positioned Radial Emitter
     m_Metadata:
       m_Items: []
+  - m_Id: 73571002553483264
+    m_Localized: Level loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73571065392545792
+    m_Localized: Loading from a non-Spatial Audio level to a Spatial Audio level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73571115761942528
+    m_Localized: Loading from a Spatial Audio level to a non-Spatial Audio level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73571154752192512
+    m_Localized: Loading a Spatial Audio sub-level in a Spatial Audio level
+    m_Metadata:
+      m_Items: []
   - m_Id: 70330206702145536
     m_Localized: Setting a State in a Timeline
     m_Metadata:
