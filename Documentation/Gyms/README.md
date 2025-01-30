@@ -201,6 +201,26 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeMesh`_
 - Shows how Geometry works with all Mesh primitives and with custom shapes.
 
+### Level loading
+
+- _Folder: `5-Spatial/SpatialLevelLoading`_
+- A list of gyms to test the loading and unloading behaviour of Spatial Audio levels.
+
+#### Loading a Spatial Audio sub-level in a Spatial Audio level
+
+- _Folder: `5-Spatial/SpatialLevelLoading/SpatialLevelLoadingSubLevel`_
+- Shows what happens when a Spatial Audio sub-level is loaded in a Spatial Audio level.
+
+#### Loading from a Spatial Audio level to a non-Spatial Audio level
+
+- _Folder: `5-Spatial/SpatialLevelLoading/SpatialLevelLoadingToNonSpatial`_
+- Shows what happens when the game transitions from a level containing Spatial Audio elements to a level with no Spatial Audio elements.
+
+#### Loading from a non-Spatial Audio level to a Spatial Audio level
+
+- _Folder: `5-Spatial/SpatialLevelLoading/SpatialLevelLoadingToSpatial`_
+- Shows what happens when the game transitions from a level with no Spatial Audio elements to a level containing Spatial Audio elements.
+
 ### Obstruction and Occlusion | _Unreal_
 
 - _Folder: `5-Spatial/SpatialObsOcc`_
