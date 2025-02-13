@@ -22,8 +22,10 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
+using System;
 using NUnit.Framework;
 using System.Collections;
+using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -78,8 +80,77 @@ namespace Tests
             id = testComponent.noEvent.Post(testComponent.gameObject);
             yield return new WaitForEndOfFrame();
 
-            Assert.AreEqual(0, id);
+            Assert.AreEqual(AkSoundEngine.AK_INVALID_PLAYING_ID, id);
             LogOutput("Post empty event: ", true);
+
+            // Post invalid events
+            var callbackCalled = false;
+            AkCallbackManager.EventCallback callbackFunc = (cookie, type, info) => { callbackCalled = true; };
+
+            ExpectedLogError("Event ID not found", 16);
+            ExpectedLogErrorAtLeastOnce("Failed posting event");
+
+            AkSoundEngine.PostEvent(AkSoundEngine.AK_INVALID_UNIQUE_ID, testComponent.gameObject);
+            AkSoundEngine.PostEvent(AkSoundEngine.AK_INVALID_UNIQUE_ID, testComponent.gameObject, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null);
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent(AkSoundEngine.AK_INVALID_UNIQUE_ID, testComponent.gameObject, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null, 0, new AkExternalSourceInfoArray(0));
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent(AkSoundEngine.AK_INVALID_UNIQUE_ID, testComponent.gameObject, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null, 0, new AkExternalSourceInfoArray(0), 0);
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            var gameObjectId = AkSoundEngine.GetAkGameObjectID(testComponent.gameObject);
+            AkSoundEngine.PostEvent(AkSoundEngine.AK_INVALID_UNIQUE_ID, gameObjectId);
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent(AkSoundEngine.AK_INVALID_UNIQUE_ID, gameObjectId, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null);
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent(AkSoundEngine.AK_INVALID_UNIQUE_ID, gameObjectId, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null, 0, new AkExternalSourceInfoArray(0));
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent(AkSoundEngine.AK_INVALID_UNIQUE_ID, gameObjectId, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null, 0, new AkExternalSourceInfoArray(0), 0);
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent("INVALID_EVENT", testComponent.gameObject);
+            AkSoundEngine.PostEvent("INVALID_EVENT", testComponent.gameObject, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null);
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent("INVALID_EVENT", testComponent.gameObject, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null, 0, new AkExternalSourceInfoArray(0));
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent("INVALID_EVENT", testComponent.gameObject, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null, 0, new AkExternalSourceInfoArray(0), 0);
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent("INVALID_EVENT", gameObjectId);
+            AkSoundEngine.PostEvent("INVALID_EVENT", gameObjectId, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null);
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent("INVALID_EVENT", gameObjectId, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null, 0, new AkExternalSourceInfoArray(0));
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            AkSoundEngine.PostEvent("INVALID_EVENT", gameObjectId, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null, 0, new AkExternalSourceInfoArray(0), 0);
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
+            yield return new WaitForSeconds(0.2f);
+
+            Assert.False(callbackCalled);
+            Assert.Zero(AkCallbackManager.GetEventCallbacks().Count());
+
             yield return FinishTest(SceneName);
         }
     }
