@@ -1636,6 +1636,21 @@
 						<Sound Name="LoopingSound" ID="{7A18C36D-06A4-48F0-AD9B-5308A8AFADC0}" ShortID="965867924">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsZeroLatency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>300</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
