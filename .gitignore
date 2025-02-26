@@ -39,6 +39,7 @@
 /Unity/Temp
 /Unity/Unity.*
 /Unity/UserSettings
+/Unity/SupportedGyms.md
 
 /Unity/ProjectSettings/boot.config
 /Unity/ProjectSettings/MemorySettings.asset
@@ -97,3 +98,4 @@
 /Unreal/Plugins/WwiseSoundEngine
 /Unreal/Saved
 /Unreal/Plugins/Developer/RiderLink/**
+/Unreal/SupportedGyms.md
