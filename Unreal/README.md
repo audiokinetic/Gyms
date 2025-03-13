@@ -12,3 +12,6 @@ A primary purpose of the Gyms is to test features and edge cases. For more infor
 
 [Wwise Gyms are released under dual license with Apache 2.0.](../LICENSE)
 Unreal, Unreal Engine, UE4, UE5, and the Unreal Engine logo are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere.
+
+## Localized Names
+Upon opening the Gym project for the first time, all Gyms will have their folder names in the Main Menu. To display their localized name, open MainMenu/GymNames.uasset and import GymNames.csv into it. Only commit changes to GymNames.csv and never commit changes to GymNames.uasset
