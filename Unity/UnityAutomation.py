@@ -61,14 +61,14 @@ class UnityAutomation(GymsAutomation):
         optionalArguments.add_argument('-j', '--projectPath', required=False, type=str, default='', help='The path to the unity project. The default value is this script path.')
 
     def get_target_platform(self, args):
-        return args.platform
+        return args.platform.replace('Windows', 'StandaloneWindows64')
 
     def get_project_path(self):
         if(self.projectPath != ''):
             return self.projectPath
         else:
             return os.path.dirname(__file__)
-    
+
     def set_gyms_path(self, args):
         self.projectPath = args.projectPath
         self.gymsPath = os.path.join(self.get_project_path(), "Assets", "Gyms")
@@ -108,6 +108,7 @@ class UnityAutomation(GymsAutomation):
         fileName = "LastSceneManagerSetup.txt"
         inputFile = os.path.join(path, "Build", fileName)
         outputFile = os.path.join(path, "Library", fileName)
+        os.makedirs(os.path.dirname(outputFile), exist_ok=True)
         shutil.copyfile(inputFile, outputFile)
         subprocess.run(cmd_line, timeout=timeout)
         return self.test_result(testsName.split(';'))
