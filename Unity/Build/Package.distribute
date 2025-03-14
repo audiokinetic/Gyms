@@ -256,7 +256,7 @@
 	<groups>
 	
 		<group name="CopyFilesToUnityGyms">
-			<path source="UnityIntegration/Wwise" target="Gyms_Unity/Unity/Assets/Wwise" recursive="true">
+			<path source="UnityIntegration/Wwise" target="Unity/Assets/Wwise" recursive="true">
 				<include value="*" />
 				<exclude value="WwiseSettings.xml" />
 				<exclude value="AkDevTools.cs" />
@@ -1152,12 +1152,12 @@
 				<exclude value="AkUnityApiHeader.h" />
 			</path>
 			
-			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+			<path source="Gyms" target="Wwise/Unity/Assets/Wwise">
 				<exclude value="*" />
 				<include value="Readme_Src.txt" />
 			</path>
 			
-			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+			<path source="Gyms" target="Wwise/Unity/Assets/Wwise">
 				<exclude value="*" />
 				<include value="NewVersion.txt" />
 			</path>
@@ -1247,12 +1247,12 @@
 				<exclude value="AkUnityApiHeader.h" />
 			</path>
 			
-			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+			<path source="Gyms" target="Wwise/Unity/Assets/Wwise">
 				<exclude value="*" />
 				<include value="Readme_Src.txt" />
 			</path>
 			
-			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+			<path source="Gyms" target="Wwise/Unity/Assets/Wwise">
 				<exclude value="*" />
 				<include value="NewVersion.txt" />
 			</path>
@@ -1333,12 +1333,12 @@
 				<exclude value="AkUnityApiHeader.h" />
 			</path>
 			
-			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+			<path source="Gyms" target="Wwise/Unity/Assets/Wwise">
 				<exclude value="*" />
 				<include value="Readme_Src.txt" />
 			</path>
 			
-			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+			<path source="Gyms" target="Wwise/Unity/Assets/Wwise">
 				<exclude value="*" />
 				<include value="NewVersion.txt" />
 			</path>
@@ -1419,12 +1419,12 @@
 				<exclude value="AkUnityApiHeader.h" />
 			</path>
 			
-			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+			<path source="Gyms" target="Wwise/Unity/Assets/Wwise">
 				<exclude value="*" />
 				<include value="Readme_Src.txt" />
 			</path>
 			
-			<path source="Gyms_Unity" target="Wwise/Unity/Assets/Wwise">
+			<path source="Gyms" target="Wwise/Unity/Assets/Wwise">
 				<exclude value="*" />
 				<include value="NewVersion.txt" />
 			</path>
@@ -1493,7 +1493,7 @@
         </group>
 
 		<group name="CopyUnityZipFolderWindows">
-			<path source="Integration/SDK/Win32_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP" recursive="true">
+			<path source="Integration/SDK/Win32_vc160/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP" recursive="true">
 				<include value="*" />
 				<exclude value="*AkSoundEngineDLL.dll" />
 				<exclude value="*AkSilenceGenerator*.*" />
@@ -1519,7 +1519,7 @@
 				<exclude value="*AkTremolo*.*" />
 			</path>
 			
-			<path source="Integration/SDK/x64_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP" recursive="true">
+			<path source="Integration/SDK/x64_vc160/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP" recursive="true">
 				<include value="*" />
 				<exclude value="*AkSoundEngineDLL.dll" />
 				<exclude value="*AkSilenceGenerator*.*" />
@@ -2557,7 +2557,7 @@
 		
 		<group name="CopyUnityZipFolderWindowsStore">
 		
-			<path source="Integration/SDK/UWP_ARM_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_ARM/DSP" recursive="true">
+			<path source="Integration/SDK/UWP_ARM_vc160/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_ARM/DSP" recursive="true">
 				<include value="*.dll" />				
 				<exclude value="*AkSilenceGenerator*.*" />
 				<exclude value="*AkSineTone*.*" />
@@ -2583,7 +2583,7 @@
 				<exclude value="*AkTremolo*.*" />
 			</path>
 			
-			<path source="Integration/SDK/UWP_ARM64_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_ARM64/DSP" recursive="true">
+			<path source="Integration/SDK/UWP_ARM64_vc160/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_ARM64/DSP" recursive="true">
 				<include value="*.dll" />				
 				<exclude value="*AkSilenceGenerator*.*" />
 				<exclude value="*AkSineTone*.*" />
@@ -2609,7 +2609,7 @@
 				<exclude value="*AkTremolo*.*" />
 			</path>
 			
-			<path source="Integration/SDK/UWP_Win32_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_Win32/DSP" recursive="true">
+			<path source="Integration/SDK/UWP_Win32_vc160/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_Win32/DSP" recursive="true">
 				<include value="*.dll" />				
 				<exclude value="*AkSilenceGenerator*.*" />
 				<exclude value="*AkSineTone*.*" />
@@ -2635,7 +2635,7 @@
 				<exclude value="*AkTremolo*.*" />
 			</path>
 			
-			<path source="Integration/SDK/UWP_x64_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_x64/DSP" recursive="true">
+			<path source="Integration/SDK/UWP_x64_vc160/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/WSA/WSA_UWP_x64/DSP" recursive="true">
 				<include value="*.dll" />				
 				<exclude value="*AkSilenceGenerator*.*" />
 				<exclude value="*AkSineTone*.*" />
@@ -2772,7 +2772,7 @@
 		
 		<group name="CopyUnityZipFolderXboxOne">
 		
-			<path source="Integration/SDK/XboxOne_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxOne/DSP" recursive="true">
+			<path source="Integration/SDK/XboxOne_vc160/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxOne/DSP" recursive="true">
 				<include value="*.dll" />
 				<include value="*.pdb" />
 				<exclude value="AkSoundEngineDLL.dll" />
@@ -2911,7 +2911,7 @@
 
 		<group name="CopyUnityZipFolderXboxSeriesX">
 		
-			<path source="Integration/SDK/XboxSeriesX_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxSeriesX/DSP" recursive="true">
+			<path source="Integration/SDK/XboxSeriesX_vc160/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxSeriesX/DSP" recursive="true">
 				<include value="*.dll" />
 				<include value="*.pdb" />
 				<exclude value="AkSoundEngineDLL.dll" />
@@ -3062,7 +3062,7 @@
 
 		<group name="CopyUnityZipFolderXboxOneGC">
 		
-			<path source="Integration/SDK/XboxOneGC_vc150/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxOneGC/DSP" recursive="true">
+			<path source="Integration/SDK/XboxOneGC_vc160/Profile/bin" target="Unity/Assets/Wwise/API/Runtime/Plugins/XboxOneGC/DSP" recursive="true">
 				<include value="*.dll" />
 				<include value="*.pdb" />
 				<exclude value="AkSoundEngineDLL.dll" />

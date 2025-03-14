@@ -4,7 +4,7 @@
 
 	<tasks>
 	
-		<task name="x64_vc160_Release" tar:compression="xz">
+		<task name="x64_vc170_Release" tar:compression="xz">
 			<includegroup>ImportPackage</includegroup>
 		</task>
 		
