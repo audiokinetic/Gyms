@@ -11,6 +11,28 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<Folder Name="SharedMediasInBank" ID="{2C954356-0180-4648-BF01-D763FCAC441D}" ShortID="1062364382">
+					<ChildrenList>
+						<SoundBank Name="SharedMediaSoundBank_01" ID="{CC3B11DA-7DC2-4CDA-BD71-0FC3DB5BF83E}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="SharedMediaEvent_01" ID="{1FA3FF4B-D411-4CD6-BB74-80ADA17D8C5D}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="SharedMediaSoundBank_02" ID="{3ED654E7-8005-45B7-8536-4B8242BAB7B9}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="SharedMediaEvent_02" ID="{2B348EDF-0597-4D07-89CD-C8D9CBDCD900}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList>
+								<ObjectRef Name="Hello" ID="{89097BB6-6FCA-4CB5-969B-2F523907E3E4}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+							</ObjectExclusionList>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
