@@ -28,16 +28,19 @@ using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class SpatialGeometryShapeMeshTests : GymTests
+namespace Tests
 {
-    const string SceneName = "SpatialGeometryShapeMesh";
-    [UnityTest]
-    public IEnumerator SpatialGeometryShapeMesh_Tests()
-    {
-        yield return StartTest(SceneName);
+	public class SpatialGeometryShapeMeshTests : GymTests
+	{
+		const string SceneName = "SpatialGeometryShapeMesh";
+		[UnityTest]
+		public IEnumerator SpatialGeometryShapeMesh_Tests()
+		{
+			yield return StartTest(SceneName);
 
-        //Add Tests Here
+			//INSERT TESTS HERE
 
-        yield return FinishTest(SceneName);
-    }
+			yield return FinishTest(SceneName);
+		}
+	}   
 }

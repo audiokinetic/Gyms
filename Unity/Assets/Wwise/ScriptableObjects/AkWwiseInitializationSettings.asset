@@ -21,7 +21,7 @@ MonoBehaviour:
   InvalidReferencePlatforms: []
   UserSettings:
     m_BasePath: Audio\GeneratedSoundBanks
-    m_StartupLanguage: English(US)
+    m_StartupLanguage: en_US
     m_EngineLogging: 1
     m_IsAutoBankEnabled: 1
     m_DefaultListenerScalingFactor: 1

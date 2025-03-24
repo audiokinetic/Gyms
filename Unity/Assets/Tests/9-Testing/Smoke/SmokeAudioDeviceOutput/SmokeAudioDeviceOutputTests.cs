@@ -38,7 +38,7 @@ namespace Tests
         {
             yield return StartTest(SceneName);
 
-            var initialPlayingID = AkSoundEngine.PostEvent("Silence", gameObject);
+            var initialPlayingID = PostSilence();
             
             // Find an additional audio device
             var additionalDevice = AddOutputHelpers.GetNonDefaultActiveDevice("System");
@@ -64,7 +64,7 @@ namespace Tests
             
             // Make sure posting additional event works
             {
-                var pID = AkSoundEngine.PostEvent("AudioDeviceEvent", gameObject);
+                var pID = gameObject.GetComponent<AkEvent>().data.Post(gameObject);
                 Assert.AreEqual(pID, initialPlayingID+1);
             }
             
