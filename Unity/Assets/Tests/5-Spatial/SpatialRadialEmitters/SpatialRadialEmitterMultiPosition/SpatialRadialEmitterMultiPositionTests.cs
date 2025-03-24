@@ -36,7 +36,7 @@ namespace Tests
         {
             yield return StartTest(SceneName);
 
-            //Add Tests Here
+            //INSERT TESTS HERE
 
             yield return FinishTest(SceneName);
         }

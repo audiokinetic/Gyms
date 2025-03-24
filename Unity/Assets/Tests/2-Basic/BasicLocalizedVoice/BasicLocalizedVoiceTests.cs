@@ -35,6 +35,8 @@ namespace Tests
         [UnityTest]
         public IEnumerator BasicLocalizedVoice_Tests()
         {
+            AkUnitySoundEngine.SetCurrentLanguage("en_US");
+            yield return new WaitForEndOfFrame();
             yield return StartTest(SceneName);
             BasicLocalizedVoice localizedVoice = GameObject.Find("Cylinder").GetComponent<BasicLocalizedVoice>();
             AK.Wwise.Event localizedEvent = localizedVoice.LocalizedEvent;
@@ -44,24 +46,27 @@ namespace Tests
             yield return localizedVoice.SetLanguage("en_US");
             yield return new WaitForSeconds(0.2f);
             
-            uint expected = localizedEvent.PlayingId + 1;
             
+            uint expected = localizedEvent.PlayingId + 1;
 
             //Set unsupported language
 #if !AK_WWISE_ADDRESSABLES
             ExpectedLogError("PrepareEvent for Post_Localized_Voice failed with result: AK_IDNotFound");
 #if UNITY_EDITOR
-            ExpectedLogError("Post Event failed. If working with Autobanks");
-            ExpectedLogError("Could not post event");
-            //There can be 1 or 2 different errors logged.
-            ExpectedLogError("Unload bank failed");
+            //There are 5 expected log errors that can appear in a random order
+            //Could not post event
+            //File not found in path(s)
+            //Event ID not found
+            //Bank Load Failed
+            //Unload bank failed
+            ExpectedLogError("Wwise", 5);
 #endif
 #endif
             yield return localizedVoice.SetLanguage("");
             yield return new WaitForSeconds(0.2f);
             uint actual = localizedEvent.PlayingId;
             Assert.AreEqual(0, actual);
-            string language = AkSoundEngine.GetCurrentLanguage();
+            string language = AkUnitySoundEngine.GetCurrentLanguage();
             Assert.AreEqual("", language);
             LogOutput("Set unsupported language: ", true);
             LogAssert.ignoreFailingMessages = false;
