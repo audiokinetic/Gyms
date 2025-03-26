@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BE149AE4-7093-4078-880A-57EB6E562826}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="ReconcileTests" ID="{BE149AE4-7093-4078-880A-57EB6E562826}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="AddedEvent" ID="{0B4CB5C2-4C67-4C4A-B6B6-CB433E777826}"/>
+				<Event Name="RenamedEvent" ID="{C3CE108D-50C7-41BD-8059-0DAC1210F8AE}"/>
+				<Folder Name="VEEEEEEEEEEEEEEEEEEEEEEEEEEEERRRRRYYYYYYYYYLOOOOOOOOOOOOONGPAAAAAAAAAAAAAAATH" ID="{ED6B4089-5DDB-4516-9B3A-43347D8441E0}" ShortID="778475036">
+					<ChildrenList>
+						<Folder Name="VEEEEEEEEEEEEEEEEEEEEEEEEEEEERRRRRYYYYYYYYYLOOOOOOOOOOOOONGPAAAAAAAAAAAAAAATH" ID="{476905B8-1775-41A5-8D7B-EA84F9CCC074}" ShortID="994858971">
+							<ChildrenList>
+								<Event Name="TooLongPathEvent" ID="{1F722F5C-E3B5-4156-B891-96ADD51DE0C1}"/>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Event Name="UpdatedEvent" ID="{7443F178-67B7-4457-A9F8-C6AD99537A0E}"/>
+				<Event Name="RenamedEventAssetWithSameName" ID="{D72A73E8-926B-4D51-9137-CA0CF6C908C6}"/>
+				<Event Name="MovedEvent" ID="{904F5725-97CD-4236-AA7D-FFBB80E4160B}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
