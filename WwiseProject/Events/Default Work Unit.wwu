@@ -615,6 +615,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="SharedMediasInBanks" ID="{67E435AF-53C9-49A2-8D7A-3495126622BA}" ShortID="188750778">
+					<ChildrenList>
+						<Event Name="SharedMediaEvent_01" ID="{1FA3FF4B-D411-4CD6-BB74-80ADA17D8C5D}">
+							<ChildrenList>
+								<Action Name="" ID="{B657EE24-F926-4C49-A93B-04A03B0E186E}" ShortID="912819875">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SharedMediaEvent_02" ID="{2B348EDF-0597-4D07-89CD-C8D9CBDCD900}">
+							<ChildrenList>
+								<Action Name="" ID="{3FD76718-C256-4A17-8BEF-D53E131E7776}" ShortID="1003118374">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
