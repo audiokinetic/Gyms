@@ -135,6 +135,72 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Language_Media_AutoBank" ID="{221340BE-8F81-49AA-BBED-DC25FBF98DDD}">
+							<ChildrenList>
+								<Action Name="" ID="{E87D554C-7DE5-4E0C-933D-968012BF8FDD}" ShortID="146872954">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Language_Media_AutoBank" ID="{AF8B4D71-F35E-4C65-9A3B-8BFA5963199A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Language_Media_AnotherBank" ID="{722D524A-BB6B-4D14-B8A8-DAFE89CDC37B}">
+							<ChildrenList>
+								<Action Name="" ID="{CFEB07AA-414C-4767-BCC6-8A5D2B4DC935}" ShortID="47433257">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Language_Media_AnotherBank" ID="{E0285AC0-8DE0-4B79-9038-B0512CD9AC51}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Language_Media_Bank_Ref" ID="{65BFF1AF-EEB8-4619-A251-D54E8DA9EB20}">
+							<ChildrenList>
+								<Action Name="" ID="{0CB00248-B1C3-493D-80DD-36157E1B6496}" ShortID="531600237">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Language_Media_Bank_Ref" ID="{2832A77C-4DFB-4F25-99B7-F2542868AFD2}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Language_Media_Bank" ID="{4D5CB16F-0223-4D55-B169-D2DBC11256BF}">
+							<ChildrenList>
+								<Action Name="" ID="{52E16131-4D27-4CDA-A20B-8CF603A880C7}" ShortID="530242131">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Language_Media_Bank" ID="{5E63C7CF-151C-4CE0-9C60-E67D2ABF0D35}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Language_Media_AutoBank_Ref" ID="{0F4A721E-63E5-47B6-A73F-7257E75E10B3}">
+							<ChildrenList>
+								<Action Name="" ID="{17F02A6C-C7B3-47FC-96F1-CF0056139A2B}" ShortID="605816037">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Language_Media_AutoBank_Ref" ID="{5D87450F-5038-43F0-B511-9BC602B4B6E2}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Language_Media_AnotherBank_Ref" ID="{33958F84-BE24-4167-8212-CA8975D75E1E}">
+							<ChildrenList>
+								<Action Name="" ID="{11E3D47D-963F-4751-80BA-2588767E0332}" ShortID="314465576">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Language_Media_AnotherBank_Ref" ID="{89D0878D-FB9F-4FAD-9D61-F1EB3D66CD62}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="ExternalSources" ID="{EEE91F5F-A24C-40A8-BC68-CF79EC44B0E7}" ShortID="884644713">

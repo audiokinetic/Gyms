@@ -3019,6 +3019,346 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Language" ID="{2A4BCDC6-9BFB-43EC-8F6C-2025FD46939F}" ShortID="655947644">
+					<ChildrenList>
+						<Sound Name="Language_Media_Bank" ID="{5E63C7CF-151C-4CE0-9C60-E67D2ABF0D35}" ShortID="637066364">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLatency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>0</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lang_Bank_En" ID="{92E212DD-D8AF-447A-90BA-C1BE89AD3B7A}">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM As Input" ID="{E712A671-9647-44EF-8B1B-857926D620F0}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+									</ReferenceList>
+									<Language>en_US</Language>
+									<AudioFile>Lang_Bank_En.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1024167738"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Lang_Bank_Fr" ID="{A82935B9-4AA5-4EA8-99D2-110C98FDFD5E}">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM As Input" ID="{E712A671-9647-44EF-8B1B-857926D620F0}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+									</ReferenceList>
+									<Language>fr_FR</Language>
+									<AudioFile>Lang_Bank_Fr.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="894269153"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lang_Bank_Fr" ID="{A82935B9-4AA5-4EA8-99D2-110C98FDFD5E}" Platform="Linked"/>
+								<ActiveSource Name="Lang_Bank_En" ID="{92E212DD-D8AF-447A-90BA-C1BE89AD3B7A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Language_Media_AnotherBank" ID="{E0285AC0-8DE0-4B79-9038-B0512CD9AC51}" ShortID="195865446">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLatency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>0</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lang_AnotherBank_En" ID="{BBF8DE14-19C0-40C3-B99F-EC4443CD8C2C}">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM As Input" ID="{E712A671-9647-44EF-8B1B-857926D620F0}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+									</ReferenceList>
+									<Language>en_US</Language>
+									<AudioFile>Lang_AnotherBank_En.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="979230548"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Lang_AnotherBank_Fr" ID="{E6355962-91FD-4A85-9B73-A575BF720F1A}">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM As Input" ID="{E712A671-9647-44EF-8B1B-857926D620F0}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+									</ReferenceList>
+									<Language>fr_FR</Language>
+									<AudioFile>Lang_AnotherBank_Fr.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="523691165"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lang_AnotherBank_En" ID="{BBF8DE14-19C0-40C3-B99F-EC4443CD8C2C}" Platform="Linked"/>
+								<ActiveSource Name="Lang_AnotherBank_Fr" ID="{E6355962-91FD-4A85-9B73-A575BF720F1A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Language_Media_AutoBank" ID="{AF8B4D71-F35E-4C65-9A3B-8BFA5963199A}" ShortID="894946878">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLatency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>0</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lang_AutoBank_En" ID="{B786DA75-C508-48E9-A721-EAAEEE163D1B}">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM As Input" ID="{E712A671-9647-44EF-8B1B-857926D620F0}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+									</ReferenceList>
+									<Language>en_US</Language>
+									<AudioFile>Lang_AutoBank_En.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="757669950"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Lang_AutoBank_Fr" ID="{54EED814-DF21-4E9D-9E56-8518192D74D9}">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM As Input" ID="{E712A671-9647-44EF-8B1B-857926D620F0}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+									</ReferenceList>
+									<Language>fr_FR</Language>
+									<AudioFile>Lang_AutoBank_Fr.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1015350693"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lang_AutoBank_Fr" ID="{54EED814-DF21-4E9D-9E56-8518192D74D9}" Platform="Linked"/>
+								<ActiveSource Name="Lang_AutoBank_En" ID="{B786DA75-C508-48E9-A721-EAAEEE163D1B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Language_Media_AnotherBank_Ref" ID="{89D0878D-FB9F-4FAD-9D61-F1EB3D66CD62}" ShortID="778489968">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLatency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>0</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lang_AnotherBank_Ref" ID="{19EBB6B3-90E2-4E53-90F7-7BEF0E520617}">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM As Input" ID="{E712A671-9647-44EF-8B1B-857926D620F0}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+									</ReferenceList>
+									<Language>en_US</Language>
+									<AudioFile>Lang_AnotherBank_Ref.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="840828417"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lang_AnotherBank_Ref" ID="{19EBB6B3-90E2-4E53-90F7-7BEF0E520617}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Language_Media_Bank_Ref" ID="{2832A77C-4DFB-4F25-99B7-F2542868AFD2}" ShortID="719629226">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLatency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>0</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lang_Bank_Ref" ID="{D5A83550-C9D5-49E8-AEAD-78FC7586E832}">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM As Input" ID="{E712A671-9647-44EF-8B1B-857926D620F0}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+									</ReferenceList>
+									<Language>en_US</Language>
+									<AudioFile>Lang_Bank_Ref.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="175334473"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lang_Bank_Ref" ID="{D5A83550-C9D5-49E8-AEAD-78FC7586E832}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Language_Media_AutoBank_Ref" ID="{5D87450F-5038-43F0-B511-9BC602B4B6E2}" ShortID="939873072">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="IsZeroLatency" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PreFetchLength" Type="int16">
+									<ValueList>
+										<Value>0</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lang_AutoBank_Ref" ID="{A6D83949-30A4-44EE-B743-01AC948AEABF}">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM As Input" ID="{E712A671-9647-44EF-8B1B-857926D620F0}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+									</ReferenceList>
+									<Language>en_US</Language>
+									<AudioFile>Lang_AutoBank_Ref.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="5648239"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lang_AutoBank_Ref" ID="{A6D83949-30A4-44EE-B743-01AC948AEABF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
