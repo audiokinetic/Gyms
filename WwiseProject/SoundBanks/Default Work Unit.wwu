@@ -11,6 +11,30 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Localized_MediaOnly" ID="{B235F5A7-7739-40C3-B1E1-D8A7217550BA}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Language_Media_AnotherBank_Ref" ID="{33958F84-BE24-4167-8212-CA8975D75E1E}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="4"/>
+						<ObjectRef Name="Play_Language_Media_AnotherBank" ID="{722D524A-BB6B-4D14-B8A8-DAFE89CDC37B}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="4"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Localized_NoMedia" ID="{5250E8E0-2F3B-4304-84CC-F8D6C0F72988}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Language_Media_AnotherBank_Ref" ID="{33958F84-BE24-4167-8212-CA8975D75E1E}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="3"/>
+						<ObjectRef Name="Play_Language_Media_AnotherBank" ID="{722D524A-BB6B-4D14-B8A8-DAFE89CDC37B}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="3"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Localized_Regular" ID="{10FFC56F-A7E8-412D-88B9-BF4E6FA3CC6F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Language_Media_Bank_Ref" ID="{65BFF1AF-EEB8-4619-A251-D54E8DA9EB20}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Language_Media_Bank" ID="{4D5CB16F-0223-4D55-B169-D2DBC11256BF}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 				<Folder Name="SharedMediasInBank" ID="{2C954356-0180-4648-BF01-D763FCAC441D}" ShortID="1062364382">
 					<ChildrenList>
 						<SoundBank Name="SharedMediaSoundBank_01" ID="{CC3B11DA-7DC2-4CDA-BD71-0FC3DB5BF83E}">
