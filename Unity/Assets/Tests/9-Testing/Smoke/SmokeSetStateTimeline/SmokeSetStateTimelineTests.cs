@@ -38,6 +38,7 @@ namespace Tests
         public IEnumerator SmokeSetStateTimeline_Tests()
         {
             yield return StartTest(SceneName);
+            Application.targetFrameRate = 50;
 
             uint firstSilence = PostSilence();
             PlayableDirector timeline = GameObject.Find("SetSwitchTimeline").GetComponent<PlayableDirector>();
@@ -50,7 +51,8 @@ namespace Tests
             uint secondSilence = PostSilence(); 
             Assert.Greater(secondSilence, firstSilence + 1);
             Assert.Less(secondSilence, firstSilence + 4);
-
+            
+            Application.targetFrameRate = -1;
             yield return FinishTest(SceneName);
         }
     }

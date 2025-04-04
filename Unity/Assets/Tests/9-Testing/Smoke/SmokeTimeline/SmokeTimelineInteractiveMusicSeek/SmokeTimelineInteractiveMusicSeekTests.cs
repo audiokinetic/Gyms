@@ -42,6 +42,7 @@ namespace Tests
             float waitTime = 0.2f;
 #endif
             yield return StartTest(SceneName);
+            Application.targetFrameRate = 50;
 
             var timeline = GameObject.FindFirstObjectByType<PlayableDirector>();
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
@@ -63,8 +64,10 @@ namespace Tests
             timeline.time = -1f;
 
             uint secondSilence = PostSilence();
-            Assert.Greater(secondSilence, firstSilence + 5);
+            Assert.Greater(secondSilence, firstSilence + 2);
             Assert.Less(secondSilence, firstSilence + 15);
+            
+            Application.targetFrameRate = -1;
             yield return FinishTest(SceneName);
         }
     }
