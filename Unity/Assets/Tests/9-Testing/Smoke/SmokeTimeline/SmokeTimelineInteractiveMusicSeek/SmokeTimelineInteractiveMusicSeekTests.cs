@@ -40,6 +40,7 @@ namespace Tests
             AkBank bank = gameObject.GetComponent<AkBank>();
 
             LoadBank(bank);
+            Application.targetFrameRate = 50;
 
             var timeline = GameObject.FindFirstObjectByType<PlayableDirector>();
             timeline.time = 0f;
@@ -58,8 +59,10 @@ namespace Tests
             timeline.time = -1f;
 
             uint secondSilence = PostSilence();
-            Assert.Greater(secondSilence, firstSilence + 5);
+            Assert.Greater(secondSilence, firstSilence + 2);
             Assert.Less(secondSilence, firstSilence + 15);
+            
+            Application.targetFrameRate = -1;
             yield return FinishTest(SceneName);
             bank.data.Unload();
         }

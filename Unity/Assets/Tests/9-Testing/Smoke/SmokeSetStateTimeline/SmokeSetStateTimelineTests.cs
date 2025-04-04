@@ -38,6 +38,7 @@ namespace Tests
         {
             yield return StartTest(SceneName);
             AkBank bank = gameObject.GetComponent<AkBank>();
+            Application.targetFrameRate = 50;
 
             uint firstSilence = PostSilence();
             LoadBank(bank);
@@ -47,7 +48,8 @@ namespace Tests
             uint secondSilence = PostSilence(); 
             Assert.Greater(secondSilence, firstSilence + 1);
             Assert.Less(secondSilence, firstSilence + 4);
-
+            
+            Application.targetFrameRate = -1;
             yield return FinishTest(SceneName);
             bank.data.Unload();
         }
