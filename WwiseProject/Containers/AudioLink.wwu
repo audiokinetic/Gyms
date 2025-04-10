@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{C4B40BE6-12AC-4E11-9C4D-702EC5FBC73A}" SchemaVersion="123">
-	<AudioObjects>
+<WwiseDocument Type="WorkUnit" ID="{C4B40BE6-12AC-4E11-9C4D-702EC5FBC73A}" SchemaVersion="130">
+	<Containers>
 		<WorkUnit Name="AudioLink" ID="{C4B40BE6-12AC-4E11-9C4D-702EC5FBC73A}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="Unreal_Input" ID="{734968D8-9211-41C2-A8D4-995F63F6C3F0}" ShortID="306686203">
@@ -23,5 +23,5 @@
 				</Sound>
 			</ChildrenList>
 		</WorkUnit>
-	</AudioObjects>
+	</Containers>
 </WwiseDocument>

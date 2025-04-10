@@ -314,6 +314,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gyms/AutoBankSample/PlayUserDefinedBank/PlayUserDefinedBank.unity
     guid: f14d039e77955954ca72abb1cde1e3d2
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Smoke/Essential/BanksReload/BanksReload.unity
+    guid: 0c7c512c269f53941a2139700563b49f
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Smoke/Essential/InitBankReload/InitBankReload.unity
+    guid: b26a1769d520e814fb5212fab7a91e6e
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Smoke/SmokeStopSoundOnDestroy/SmokeStopSoundOnDestroy.unity
+    guid: 6f1924f3a6f1c604ba0c6446f97f5bdb
+  - enabled: 1
+    path: Assets/Gyms/9-Testing/Smoke/SmokeSharedMediasInBanks/SmokeSharedMediasInBanks.unity
+    guid: 109c47d233c177c48ac561b19f9e6d2d
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: a6d8dce1fefcb964180e76277fd74379,
       type: 2}

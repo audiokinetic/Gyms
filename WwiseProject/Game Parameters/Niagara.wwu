@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{7BEB4404-A22C-4DF5-A13D-5056FD2D0256}" SchemaVersion="127" RootDocumentID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}" ParentDocumentID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}">
+<WwiseDocument Type="WorkUnit" ID="{7BEB4404-A22C-4DF5-A13D-5056FD2D0256}" SchemaVersion="130" RootDocumentID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}" ParentDocumentID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}">
 	<GameParameters>
 		<WorkUnit Name="Niagara" ID="{7BEB4404-A22C-4DF5-A13D-5056FD2D0256}" OwnerID="{D0E1BF00-4F83-4C1D-9409-9B67B91D9E7E}" PersistMode="Nested">
 			<ChildrenList>

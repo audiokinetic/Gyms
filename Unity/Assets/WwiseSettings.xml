@@ -2,7 +2,8 @@
 <WwiseSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
   <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
-  <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+  <WwiseStreamingAssetsPath>Audio\GeneratedSoundBanks</WwiseStreamingAssetsPath>
+  <RootOutputPath>WwiseData/Bank</RootOutputPath>
   <CreatedPicker>true</CreatedPicker>
   <CreateWwiseGlobal>true</CreateWwiseGlobal>
   <CreateWwiseListener>false</CreateWwiseListener>
@@ -15,6 +16,14 @@
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>
+  <AutoSyncWaapi>false</AutoSyncWaapi>
+  <UseGitRepository>true</UseGitRepository>
+  <PackageSource>https://github.com/audiokinetic/WwiseUnityAddressables.git#v25.1.0</PackageSource>
+  <AddressableBankFolder>WwiseData/Bank</AddressableBankFolder>
+  <UseCustomBuildScript>false</UseCustomBuildScript>
+  <AddressableAssetBuilderPath>Assets/AddressableAssetsData/DataBuilders/BuildScriptWwisePacked.asset</AddressableAssetBuilderPath>
+  <AddressableInstallationRequested>false</AddressableInstallationRequested>
+  <AddressableUninstallationRequested>false</AddressableUninstallationRequested>
   <XMLTranslatorTimeout>10</XMLTranslatorTimeout>
   <WaapiTranslatorTimeout>0</WaapiTranslatorTimeout>
 </WwiseSettings>

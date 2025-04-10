@@ -654,7 +654,8 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: WWISE_2024_OR_LATER;WWISE_ADDRESSABLES_23_1_OR_LATER;WWISE_ADDRESSABLES_24_1_OR_LATER
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

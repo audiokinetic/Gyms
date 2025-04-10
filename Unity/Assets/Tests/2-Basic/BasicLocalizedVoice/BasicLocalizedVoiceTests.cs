@@ -35,8 +35,8 @@ namespace Tests
         [UnityTest]
         public IEnumerator BasicLocalizedVoice_Tests()
         {
-	        AkUnitySoundEngine.SetCurrentLanguage("en_US");
-	        yield return new WaitForEndOfFrame();
+            AkUnitySoundEngine.SetCurrentLanguage("en_US");
+            yield return new WaitForEndOfFrame();
             yield return StartTest(SceneName);
             BasicLocalizedVoice localizedVoice = GameObject.Find("Cylinder").GetComponent<BasicLocalizedVoice>();
             AK.Wwise.Event localizedEvent = localizedVoice.LocalizedEvent;
@@ -45,21 +45,27 @@ namespace Tests
 #endif
             yield return localizedVoice.SetLanguage("en_US");
             yield return new WaitForSeconds(0.2f);
-            
-            
-            uint expected = localizedEvent.PlayingId + 2;
+
+
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+	        //With addressables, due to the auto bank not being loaded, the post won't happen for an invalid language thus not incrementing the PlayingId
+            //This means that only the SetLanguage to "fr" will increment the PlayingId, making the expected localizedEvent.PlayingId + 1;
+            uint expected = localizedEvent.PlayingId + 1;
+#else
+	        uint expected = localizedEvent.PlayingId + 2;
+#endif
 
             //Set unsupported language
 #if !AK_WWISE_ADDRESSABLES
             ExpectedLogError("PrepareEvent for Post_Localized_Voice failed with result: AK_IDNotFound");
 #if UNITY_EDITOR
-	        //There are 5 expected log errors that can appear in a random order
-	        //Could not post event
-	        //File not found in path(s)
-	        //Event ID not found
-	        //Bank Load Failed
-	        //Unload bank failed
-	        ExpectedLogError("Wwise", 5);
+            //There are 5 expected log errors that can appear in a random order
+            //Could not post event
+            //File not found in path(s)
+            //Event ID not found
+            //Bank Load Failed
+            //Unload bank failed
+            ExpectedLogError("Wwise", 5);
 #endif
 #endif
             yield return localizedVoice.SetLanguage("");

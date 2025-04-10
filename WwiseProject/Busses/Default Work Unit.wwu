@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}" SchemaVersion="127">
+<WwiseDocument Type="WorkUnit" ID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}" SchemaVersion="130">
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}" PersistMode="Standalone">
 			<ChildrenList>
@@ -26,35 +26,27 @@
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{EC60A690-7E84-4AD6-B135-FCDFF3DE9E4D}" ShortID="836805407">
+									
+								<EffectSlot Name="" ID="{EC60A690-7E84-4AD6-B135-FCDFF3DE9E4D}" ShortID="836805407">
 												<ReferenceList>
 													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 														<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 													</Reference>
 												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
+											</EffectSlot></ObjectList>
 							</ObjectLists>
 						</AuxBus>
 						<AuxBus Name="Lower_Pitch_Bus" ID="{1826A465-8793-46D8-B444-732E44C228C4}">
 							<ObjectLists>
 								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{92AFFA09-5F58-4805-9942-6904578FA4B6}" ShortID="754940925">
+									
+								<EffectSlot Name="" ID="{92AFFA09-5F58-4805-9942-6904578FA4B6}" ShortID="754940925">
 												<ReferenceList>
 													<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 														<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 													</Reference>
 												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
+											</EffectSlot></ObjectList>
 							</ObjectLists>
 						</AuxBus>
 						<AuxBus Name="RoomReverb_Big" ID="{E1A99C47-7FC9-4BEF-81EE-7173C2EBD91A}">
@@ -67,9 +59,8 @@
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{2F5BD1ED-3DCE-4F51-BD9F-2241CE84957D}" ShortID="387964638">
+									
+								<EffectSlot Name="" ID="{2F5BD1ED-3DCE-4F51-BD9F-2241CE84957D}" ShortID="387964638">
 												<ReferenceList>
 													<Reference Name="Effect">
 														<Custom CreatedFrom="{4FF7C4B2-37B0-4DFF-8E8A-1420102AE2DD}">
@@ -100,10 +91,7 @@
 														</Custom>
 													</Reference>
 												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
+											</EffectSlot></ObjectList>
 							</ObjectLists>
 						</AuxBus>
 						<AuxBus Name="RoomReverb_Small" ID="{049F369A-2217-4AF1-ABF4-6C1FA736A36B}">
@@ -116,9 +104,8 @@
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{4014F074-946C-44ED-88B6-719A1FAA9EA3}" ShortID="550382474">
+									
+								<EffectSlot Name="" ID="{4014F074-946C-44ED-88B6-719A1FAA9EA3}" ShortID="550382474">
 												<ReferenceList>
 													<Reference Name="Effect">
 														<Custom CreatedFrom="{384A82A1-3C92-4AC5-AFC2-474F2080642C}">
@@ -145,10 +132,7 @@
 														</Custom>
 													</Reference>
 												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
+											</EffectSlot></ObjectList>
 							</ObjectLists>
 						</AuxBus>
 						<AuxBus Name="RoomReverb_Medium" ID="{09B88709-7886-4DE4-B5BF-86DD0D446150}">
@@ -161,9 +145,8 @@
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{1DA8D161-BDF2-4C92-A787-F9C7ED49F4CC}" ShortID="1016045341">
+									
+								<EffectSlot Name="" ID="{1DA8D161-BDF2-4C92-A787-F9C7ED49F4CC}" ShortID="1016045341">
 												<ReferenceList>
 													<Reference Name="Effect">
 														<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
@@ -189,31 +172,23 @@
 														</Custom>
 													</Reference>
 												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
+											</EffectSlot></ObjectList>
 							</ObjectLists>
 						</AuxBus>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">
-							<Reference>
-								<Local>
-									<EffectSlot Name="" ID="{81CDEEC2-F21A-4FE9-AE4F-5EB0A2411518}" ShortID="629715279">
+							
+						<EffectSlot Name="" ID="{81CDEEC2-F21A-4FE9-AE4F-5EB0A2411518}" ShortID="629715279">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 												<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 											</Reference>
 										</ReferenceList>
-									</EffectSlot>
-								</Local>
-							</Reference>
-						</ObjectList>
+									</EffectSlot></ObjectList>
 						<ObjectList Name="RTPC">
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{CFE2F376-C14F-4B79-825C-9694ED606915}" ShortID="447736671">
+							
+						<RTPC Name="" ID="{CFE2F376-C14F-4B79-825C-9694ED606915}" ShortID="447736671">
 										<PropertyList>
 											<Property Name="PropertyName" Type="string" Value="Highpass"/>
 										</PropertyList>
@@ -248,10 +223,7 @@
 												</Custom>
 											</Reference>
 										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-						</ObjectList>
+									</RTPC></ObjectList>
 					</ObjectLists>
 				</Bus>
 				<Bus Name="Audio_Device_Bus" ID="{75A5D9C9-CF36-4D95-94E3-D510D70E0089}">

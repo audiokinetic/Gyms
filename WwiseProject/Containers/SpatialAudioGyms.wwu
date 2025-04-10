@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}" SchemaVersion="126">
-	<AudioObjects>
+<WwiseDocument Type="WorkUnit" ID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}" SchemaVersion="130">
+	<Containers>
 		<WorkUnit Name="SpatialAudioGyms" ID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="Spatial_Sawtooth" ID="{D9B33B32-A102-468C-B076-A2D5FE255B57}" ShortID="1032886501">
@@ -183,5 +183,5 @@
 				</Sound>
 			</ChildrenList>
 		</WorkUnit>
-	</AudioObjects>
+	</Containers>
 </WwiseDocument>

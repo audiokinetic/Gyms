@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}" SchemaVersion="127">
+<WwiseDocument Type="WorkUnit" ID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}" SchemaVersion="130">
 	<Containers>
 		<WorkUnit Name="Default Work Unit" ID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}" PersistMode="Standalone">
 			<ChildrenList>
@@ -40,50 +40,34 @@
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Sequences">
-									<Reference>
-										<Local>
-											<MusicTrackSequence Name="" ID="{22C8F18E-C8C6-4AE0-9194-8EF99B2FC3B9}">
+									
+								<MusicTrackSequence Name="" ID="{22C8F18E-C8C6-4AE0-9194-8EF99B2FC3B9}">
 												<ObjectLists>
 													<ObjectList Name="Clips">
-														<Reference>
-															<Local>
-																<MusicClip Name="Marker_Test_001" ID="{ABAC2487-ABF2-44FE-8661-024DD0414E8F}">
+														
+													<MusicClip Name="Marker_Test_001" ID="{ABAC2487-ABF2-44FE-8661-024DD0414E8F}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="9768.97916666667"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="Marker_Test_001" ID="{E8155E09-5BF9-4094-B623-78FE4348DC11}"/>
-																</MusicClip>
-															</Local>
-														</Reference>
-													</ObjectList>
+																</MusicClip></ObjectList>
 												</ObjectLists>
-											</MusicTrackSequence>
-										</Local>
-									</Reference>
-								</ObjectList>
+											</MusicTrackSequence></ObjectList>
 							</ObjectLists>
 						</MusicTrack>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Cues">
-							<Reference>
-								<Local>
-									<MusicCue Name="Entry Cue" ID="{3A8FA875-4CBB-44E2-8E85-5DE8131EFB58}"/>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MusicCue Name="Exit Cue" ID="{A1C7B25D-A2A8-454B-A1A6-484E5A812EE6}">
+							
+							
+						<MusicCue Name="Entry Cue" ID="{3A8FA875-4CBB-44E2-8E85-5DE8131EFB58}"/><MusicCue Name="Exit Cue" ID="{A1C7B25D-A2A8-454B-A1A6-484E5A812EE6}">
 										<PropertyList>
 											<Property Name="CueType" Type="int16" Value="1"/>
 											<Property Name="TimeMs" Type="Real64" Value="1000"/>
 										</PropertyList>
-									</MusicCue>
-								</Local>
-							</Reference>
-						</ObjectList>
+									</MusicCue></ObjectList>
 					</ObjectLists>
 				</MusicSegment>
 			</ChildrenList>

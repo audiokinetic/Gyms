@@ -24,6 +24,7 @@ the specific language governing permissions and limitations under the License.
 
 using NUnit.Framework;
 using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.TestTools;
 
@@ -42,7 +43,10 @@ namespace Tests
             var EventButton = GameObject.Find("Button").GetComponentInChildren<AkEvent>();
             var StopButton = GameObject.Find("Button (1)").GetComponentInChildren<AkEvent>();
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-            yield return new WaitUntil(() => EventButton.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+            Task loadingBank = Task.Run(EventButton.data.WwiseObjectReference.CompleteLoadBank);
+            yield return new WaitUntil(() =>loadingBank.IsCompleted);
+            loadingBank = Task.Run(StopButton.data.WwiseObjectReference.CompleteLoadBank);
+            yield return new WaitUntil(() =>loadingBank.IsCompleted);
 #endif
             EventButton.HandleEvent(EventButton.gameObject);
             yield return new WaitForSeconds(0.2f);

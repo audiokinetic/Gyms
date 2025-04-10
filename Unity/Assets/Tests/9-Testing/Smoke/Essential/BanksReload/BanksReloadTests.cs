@@ -41,6 +41,7 @@ namespace Tests
         private bool firstCall = true;
         private DateTime startTime;
         private bool timedOut = false;
+        private Task loadingBank;
         
         WwiseEventReference eventRef;
         private async Task CompleteLoadBank()
@@ -54,7 +55,7 @@ namespace Tests
             {
                 firstCall = false;
                 var elapsedTime = DateTime.Now - startTime;
-                if (elapsedTime.TotalSeconds >= 1)
+                if (elapsedTime.TotalSeconds >= 2.5f)
                 {
                     timedOut = true;
                     firstCall = true;
@@ -62,6 +63,7 @@ namespace Tests
                 }
                 await Task.Yield();
             }
+            firstCall = true;
         }
         private void LoadBank()
         {
@@ -139,7 +141,8 @@ namespace Tests
             
             //Multiple ref | Unload ignoring ref
             LoadBank();
-            yield return new WaitUntil(() => CompleteLoadBank().IsCompleted);
+            loadingBank = Task.Run(CompleteLoadBank);
+            yield return new WaitUntil(() => loadingBank.IsCompleted);
             CheckIsInHandleDict(true);
             CheckRefCount(1);
             LoadBank();
@@ -150,7 +153,8 @@ namespace Tests
             
             //Multiple ref | Unload considering ref
             LoadBank();
-            yield return new WaitUntil(() => CompleteLoadBank().IsCompleted);
+            loadingBank = Task.Run(CompleteLoadBank);
+            yield return new WaitUntil(() => loadingBank.IsCompleted);
             CheckIsInHandleDict(true);
             CheckRefCount(1);
             LoadBank();
@@ -163,7 +167,8 @@ namespace Tests
             
             //Unloading init bank shouldn't automatically unload the bank
             LoadBank();
-            yield return new WaitUntil(() => CompleteLoadBank().IsCompleted);
+            loadingBank = Task.Run(CompleteLoadBank);
+            yield return new WaitUntil(() => loadingBank.IsCompleted);
             CheckIsInHandleDict(true);
             CheckRefCount(1);
             InitBankReloadTests.UnloadInitBank();
@@ -173,12 +178,14 @@ namespace Tests
             
             //It should however stop bank from loading
             LoadBank();
-            yield return new WaitUntil(() => CompleteLoadBank().IsCompleted);
+            loadingBank = Task.Run(CompleteLoadBank);
+            yield return new WaitUntil(() => loadingBank.IsCompleted);
             yield return new WaitForSeconds(1);
             Assert.IsTrue(timedOut);
             ExpectedLogError("UserDefinedBank bank will be loaded after the init bank is loaded", 1, LogType.Log);
             InitBankReloadTests.LoadInitBank();
-            yield return new WaitUntil(() => CompleteLoadBank().IsCompleted);
+            loadingBank = Task.Run(CompleteLoadBank);
+            yield return new WaitUntil(() => loadingBank.IsCompleted);
             Assert.IsFalse(timedOut);
             
             // Auto Banks
@@ -193,9 +200,10 @@ namespace Tests
             //Simple unload
             UnloadAutoBank();
             CheckIsInHandleDict(false);
-
+            
             LoadAutoBank();
-            yield return new WaitUntil(() => eventRef.CompleteLoadBank().IsCompleted);
+            loadingBank = Task.Run(eventRef.CompleteLoadBank);
+            yield return new WaitUntil(() => loadingBank.IsCompleted);
             CheckIsInHandleDict(true);
             CheckRefCount(1);
             yield return FinishTest(SceneName);
@@ -210,7 +218,8 @@ namespace Tests
             
             //Unloading init bank shouldn't automatically unload the bank
             LoadBank();
-            yield return new WaitUntil(() => CompleteLoadBank().IsCompleted);
+            loadingBank = Task.Run(CompleteLoadBank);
+            yield return new WaitUntil(() => loadingBank.IsCompleted);
             CheckIsInHandleDict(true);
             CheckRefCount(1);
             InitBankReloadTests.UnloadInitBank();
@@ -220,12 +229,14 @@ namespace Tests
             
             //It should however stop bank from loading
             LoadBank();
-            yield return new WaitUntil(() => CompleteLoadBank().IsCompleted);
+            loadingBank = Task.Run(CompleteLoadBank);
+            yield return new WaitUntil(() => loadingBank.IsCompleted);
             yield return new WaitForSeconds(1);
             Assert.IsTrue(timedOut);
             ExpectedLogError("Ambient_Event bank will be loaded after the init bank is loaded", 1, LogType.Log);
             InitBankReloadTests.LoadInitBank();
-            yield return new WaitUntil(() => CompleteLoadBank().IsCompleted);
+            loadingBank = Task.Run(CompleteLoadBank);
+            yield return new WaitUntil(() => loadingBank.IsCompleted);
             Assert.IsFalse(timedOut);
 #endif
             yield return FinishTest(SceneName);

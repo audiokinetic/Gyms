@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="127" WwiseVersion="v2025.1.0" WwiseBuild="8750">
+<WwiseDocument Type="Project" SchemaVersion="130" WwiseVersion="v2025.1.0" WwiseBuild="8804">
 	<ProjectInfo>
 		<Project Name="Gyms" ID="{225E3277-D99C-47A8-9765-D8D28C291B75}">
 			<Platforms>
@@ -25,12 +25,11 @@
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
-						<Value Platform="Base">GeneratedSoundBanks\Base</Value>
-						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
+						<Value Platform="Base">..\Unity\Assets\WwiseData\Bank\Base</Value>
+						<Value Platform="Windows">..\Unity\Assets\WwiseData\Bank\Windows</Value>
 					</ValueList>
 				</Property>
 				<Property Name="GenerateMainSoundBank" Type="bool" Value="True"/>
-				<Property Name="GenerateSoundBankXML" Type="bool" Value="True"/>
 				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
 					<ValueList>
 						<Value Platform="Base">256</Value>
@@ -40,11 +39,11 @@
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGeneratePrintPath" Type="bool" Value="True"/>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks"/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\Unity\Assets\WwiseData\Bank"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
-						<Value Platform="Base">GeneratedSoundBanks\Base\</Value>
-						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Base">..\Unity\Assets\WwiseData\Bank\Base\</Value>
+						<Value Platform="Windows">..\Unity\Assets\WwiseData\Bank\Windows\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
@@ -913,6 +912,11 @@
 								<Value>256</Value>
 							</ValueList>
 						</Property>
+						<Property Name="HSFEmphasis" Type="Real64">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
 						<Property Name="LicenseKey" Type="string">
 							<ValueList>
 								<Value></Value>
@@ -1015,7 +1019,7 @@
 						</Property>
 						<Property Name="SoundBankPaths" Type="string">
 							<ValueList>
-								<Value></Value>
+								<Value>..\Unity\Assets\WwiseData\Bank\</Value>
 							</ValueList>
 						</Property>
 						<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
@@ -1805,7 +1809,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="ActorMixer" PluginType="0" CompanyID="1" PluginID="8">
+				<SharedPropertyList ClassName="PropertyContainer" PluginType="0" CompanyID="1" PluginID="8">
 					<PropertyList>
 						<Property Name="3DPosition" Type="int16">
 							<ValueList>
@@ -6981,7 +6985,7 @@
 						</Property>
 						<Property Name="SoundBankPaths" Type="string">
 							<ValueList>
-								<Value></Value>
+								<Value>..\Unity\Assets\WwiseData\Bank\</Value>
 							</ValueList>
 						</Property>
 						<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
@@ -7935,6 +7939,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
+				<SharedPropertyList ClassName="MetadataSlot" PluginType="0" CompanyID="0" PluginID="85"/>
 				<SharedPropertyList ClassName="StateGroupInfo" PluginType="0" CompanyID="1" PluginID="85">
 					<PropertyList>
 						<Property Name="MusicSyncType" Type="int32">
@@ -7944,6 +7949,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
+				<SharedPropertyList ClassName="PlaylistSlot" PluginType="0" CompanyID="0" PluginID="86"/>
 				<SharedPropertyList ClassName="SidechainMix" PluginType="0" CompanyID="1" PluginID="86">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
@@ -7968,6 +7974,9 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
+				<SharedPropertyList ClassName="ArgumentsSlot" PluginType="0" CompanyID="0" PluginID="87"/>
+				<SharedPropertyList ClassName="EntryPathSlot" PluginType="0" CompanyID="0" PluginID="88"/>
+				<SharedPropertyList ClassName="MusicArgumentsSlot" PluginType="0" CompanyID="0" PluginID="89"/>
 				<SharedPropertyList ClassName="Wwise Sine" PluginType="2" CompanyID="0" PluginID="100">
 					<PropertyList>
 						<Property Name="ChannelMask" Type="int32">
@@ -10127,6 +10136,11 @@
 						<Property Name="Min" Type="Real32">
 							<ValueList>
 								<Value>-48</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MixdownCfg" Type="int32">
+							<ValueList>
+								<Value>0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="OverrideColor" Type="bool">
@@ -13097,6 +13111,275 @@
 						<Property Name="Volume" Type="Real32">
 							<ValueList>
 								<Value>0</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
+				<SharedPropertyList ClassName="Wwise Multiband Meter" PluginType="3" CompanyID="0" PluginID="196">
+					<PropertyList>
+						<Property Name="ApplyDownstreamVolume" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="AttackTime_Band0" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="AttackTime_Band1" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="AttackTime_Band2" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="AttackTime_Band3" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="AttackTime_Band4" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Color" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Enabled_Band1" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Enabled_Band2" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Enabled_Band3" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Enabled_Band4" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HighFrequency_Band1" Type="Real32">
+							<ValueList>
+								<Value>200</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HighFrequency_Band2" Type="Real32">
+							<ValueList>
+								<Value>400</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HighFrequency_Band3" Type="Real32">
+							<ValueList>
+								<Value>800</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HighFrequency_Band4" Type="Real32">
+							<ValueList>
+								<Value>16000</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HighRolloff_Band1" Type="int32">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HighRolloff_Band2" Type="int32">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HighRolloff_Band3" Type="int32">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HighRolloff_Band4" Type="int32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Hold_Band0" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Hold_Band1" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Hold_Band2" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Hold_Band3" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Hold_Band4" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="InfiniteHold" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LowFrequency_Band1" Type="Real32">
+							<ValueList>
+								<Value>20</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LowFrequency_Band2" Type="Real32">
+							<ValueList>
+								<Value>200</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LowFrequency_Band3" Type="Real32">
+							<ValueList>
+								<Value>400</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LowFrequency_Band4" Type="Real32">
+							<ValueList>
+								<Value>800</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LowRolloff_Band1" Type="int32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LowRolloff_Band2" Type="int32">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LowRolloff_Band3" Type="int32">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LowRolloff_Band4" Type="int32">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Max_Band0" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Max_Band1" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Max_Band2" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Max_Band3" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Max_Band4" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MeterMode" Type="int32">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MeterScope" Type="int32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Min_Band0" Type="Real32">
+							<ValueList>
+								<Value>-48</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Min_Band1" Type="Real32">
+							<ValueList>
+								<Value>-48</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Min_Band2" Type="Real32">
+							<ValueList>
+								<Value>-48</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Min_Band3" Type="Real32">
+							<ValueList>
+								<Value>-48</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Min_Band4" Type="Real32">
+							<ValueList>
+								<Value>-48</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MixdownCfg" Type="int32">
+							<ValueList>
+								<Value>16641</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReleaseTime_Band0" Type="Real32">
+							<ValueList>
+								<Value>0.1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReleaseTime_Band1" Type="Real32">
+							<ValueList>
+								<Value>0.1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReleaseTime_Band2" Type="Real32">
+							<ValueList>
+								<Value>0.1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReleaseTime_Band3" Type="Real32">
+							<ValueList>
+								<Value>0.1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReleaseTime_Band4" Type="Real32">
+							<ValueList>
+								<Value>0.1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

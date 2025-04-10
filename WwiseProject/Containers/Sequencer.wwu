@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{65952EF1-7CE8-404D-BA22-B2C4CC3F0529}" SchemaVersion="127">
+<WwiseDocument Type="WorkUnit" ID="{65952EF1-7CE8-404D-BA22-B2C4CC3F0529}" SchemaVersion="130">
 	<Containers>
 		<WorkUnit Name="Sequencer" ID="{65952EF1-7CE8-404D-BA22-B2C4CC3F0529}" PersistMode="Standalone">
 			<ChildrenList>
@@ -110,9 +110,9 @@
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="RTPC">
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{6A210D30-3C7E-4DB1-A05E-3AF755DDC67E}" ShortID="897886572">
+							
+							
+						<RTPC Name="" ID="{6A210D30-3C7E-4DB1-A05E-3AF755DDC67E}" ShortID="897886572">
 										<PropertyList>
 											<Property Name="PropertyName" Type="string" Value="Pitch"/>
 										</PropertyList>
@@ -142,12 +142,7 @@
 												</Custom>
 											</Reference>
 										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{5F7D4465-790C-4ABD-895E-B9343AA466F0}" ShortID="452778000">
+									</RTPC><RTPC Name="" ID="{5F7D4465-790C-4ABD-895E-B9343AA466F0}" ShortID="452778000">
 										<PropertyList>
 											<Property Name="PropertyName" Type="string" Value="Volume"/>
 										</PropertyList>
@@ -177,10 +172,7 @@
 												</Custom>
 											</Reference>
 										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-						</ObjectList>
+									</RTPC></ObjectList>
 					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="Sine_440Hz_500ms_mono" ID="{B33A9F45-0181-4239-B374-52A0B87DADAE}" Platform="Linked"/>
