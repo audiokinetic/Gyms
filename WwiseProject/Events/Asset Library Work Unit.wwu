@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9BFC131D-86D1-46E0-9560-8E5C49AE788E}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Asset Library Work Unit" ID="{9BFC131D-86D1-46E0-9560-8E5C49AE788E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Main_Game_Event" ID="{E6D2FC89-C709-4E6D-AAA7-1BF59A9BD839}">
+					<ChildrenList>
+						<Action Name="" ID="{701C957E-3A83-4E6C-BC1A-13EBB894C6E1}" ShortID="162737594">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DLC_Event" ID="{1444B42B-DD06-4BA9-B85D-A9C06337CAC3}">
+					<ChildrenList>
+						<Action Name="" ID="{1EAC5F43-203C-42E4-AA6F-56D877CB524B}" ShortID="934395772">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_In_Game_And_DLC" ID="{B09F029C-E77B-4684-954D-A4E3CCE6BFE4}">
+					<ChildrenList>
+						<Action Name="" ID="{C4DCAB3B-EF77-4D8C-8665-CAAC3B66FAE4}" ShortID="903499078">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DLC_Event_With_Main_Game_Ref" ID="{FC272D5D-CEE5-4E35-BFE9-9A7A623AD649}">
+					<ChildrenList>
+						<Action Name="" ID="{BFC9A652-A9A0-48E5-9A66-3C34C79B5997}" ShortID="80955706">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Main_Game_Event_2" ID="{3237CCB5-6374-40D2-9313-B9AA09AC32DD}">
+					<ChildrenList>
+						<Action Name="" ID="{6321D45A-1192-4AA7-92ED-75CCEA43AA8E}" ShortID="219227504">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Subtitle_Voice" ID="{08BA1E73-9CEB-40EA-A6E0-25537D5EA135}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
