@@ -98,6 +98,7 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 	FWwiseAssetLibraryInfo LibraryInfo;
 	auto* Filter = NewObject<UWwiseAssetLibraryFilterLanguage>(GetTransientPackage());
 	FWwiseAssetLibraryProcessor::GetRelevantAssets(TEXT("/Game/"), FilteringSharedData->AssetsData);
+	FilteringSharedData->bConsiderAssetsData = false;
 	SECTION("Initialize AssetLibraryProcessor, Filtering SharedData and filter")
 	{
 		CHECK(Processor);
