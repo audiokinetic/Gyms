@@ -479,7 +479,6 @@ MonoBehaviour:
   useCallbacks: 0
   stopSoundOnDestroy: 1
   Callbacks: []
-  playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
   eventIdInternal: 0
@@ -507,6 +506,7 @@ MonoBehaviour:
     useDefaultListeners: 1
   isEnvironmentAware: 1
   isStaticObject: 0
+  usePositionOffsetData: 0
   m_positionOffsetData:
     KeepMe: 0
     positionOffset: {x: 0, y: 0, z: 0}
@@ -533,12 +533,11 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3d0c847e0bdff8f4b95d24e54d3863e1,
+    WwiseObjectReference: {fileID: 11400000, guid: 4a3374004fb6843449d8a245c1f08d11,
       type: 2}
   useCallbacks: 0
   stopSoundOnDestroy: 1
   Callbacks: []
-  playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
   eventIdInternal: 0
@@ -566,6 +565,7 @@ MonoBehaviour:
     useDefaultListeners: 1
   isEnvironmentAware: 1
   isStaticObject: 0
+  usePositionOffsetData: 0
   m_positionOffsetData:
     KeepMe: 0
     positionOffset: {x: 0, y: 0, z: 0}
