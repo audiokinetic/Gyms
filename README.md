@@ -13,15 +13,25 @@ The Gym projects support the major version of Wwise indicated in the current git
 
 ## Setup
 
-The Gyms do not include the Wwise Integration of their engine. Use the Wwise Launcher to integrate Wwise into both projects.
-In the **WwiseProject** folder, run **GenerateProjectWavFiles.py**. Open the Wwise Project in Wwise and generate the SoundBanks.
-Alternatively, you can run the **setup.bat** file for your platform.
+The Gyms do not include the Wwise Integration of their engine. Use the Audiokinetic Launcher to integrate Wwise into both projects.
+Execute the **setup_Windows.bat** or **setup_Mac.command** depending on your platform.
+Alternatively, to execute actions independently, run the **`GenerateProjectWavFiles.py`** script to generate the audio files, then open the Wwise Project in Wwise Authoring and generate the SoundBanks.
 
 ### Unreal
 With the Wwise Gyms for Unreal, make sure to set the version of the uproject before you integrate the project through the Audiokinetic Launcher. To change the uproject version, right-click <b>Gyms.uproject</b> and select <b>Switch Unreal Engine Version</b>.
 
 ### Unity
-With the Wwise Gyms for Unity, select <b>Install files directly into the Unity project directory</b> when you are integrating Wwise. Refer to [Integrating Wwise into a Unity Project](https://www.audiokinetic.com/en/library/wwise_launcher/?source=InstallGuide&id=integrating_wwise_into_a_unity_project) for details.
+With the Wwise Gyms for Unity, integrate Wwise into your projects as described in [Integrating Wwise into a Unity Project](https://www.audiokinetic.com/en/library/wwise_launcher/?source=InstallGuide&id=integrating_wwise_into_a_unity_project).
+Additionally, by default, the Unity Gyms use the Wwise Unity Addressable package. To set up the package, do one of the following:
+
+- Use the **setup_Windows.bat** or **setup_Mac.command** to complete the installation.
+- Use the Wwise Unity Addressable Installer in the Unity Editor.
+- Follow the installation process under the **Setting Up and Building with the Wwise Addressables Package** section on the [Installing the Wwise Unity Addressables Package](https://www.audiokinetic.com/en/public-library/?source=Unity&id=pg_addressables_setup.html#adressables_setup_build) page.
+
+If you do not want to use the Wwise Unity Addressable package, you can uninstall it in one of the following ways:
+
+- Use the **uninstall_Unity_Addressable_Windows.bat** or **uninstall_Unity_Addressable_Mac.command**.
+- Uninstall it directly from the Unity Package Manager and then regenerate the Soundbanks.
 
 #### RunAutoBankAddressableTest.bat
 A bat file executing a set of tests for the Unity Addressables Auto-Bank feature. The test will create a copy of the Gyms Wwise project before editing it. This set of test requires the Python (Waapi-Client). Execute ```py -3 -m pip install waapi-client``` to install the module. Refer to [Python (Waapi-Client)](https://www.audiokinetic.com/en/library/edge/?source=SDK&id=waapi_client_python_rpc.html) for details. Before running the .bat file, make sure that:
