@@ -26,35 +26,101 @@ using System;
 using System.IO;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
 #if UNITY_EDITOR
-public class GymCreator : MonoBehaviour
+enum SceneTemplate
 {
-    [SerializeField]
-    InputField _path;
-
-    [SerializeField]
-    Dropdown _dropdown;
-
-    [SerializeField]
-    Text _message;
-
-    enum SceneTemplate
-    {
-        Empty,
-        Button,
-        Toggle,
-        OpenLevel
-    }
-
+    Empty,
+    Button,
+    Toggle,
+    OpenLevel
+}
+public class GymCreator : UnityEditor.EditorWindow
+{
     const string BasicTestFilePath = "Assets/Tests/TemplateTests.cs";
     const string BasicTestObjectPath = "Assets/GymCreator/GymTemplate/Resources/TestObject_GymTemplate.prefab";
 
-    private void Start()
+    SceneTemplate _sceneTemplate = SceneTemplate.Empty;
+    string _gymName = "";
+    string _gymPath = "";
+    
+    [UnityEditor.MenuItem("Window/Gym Creator", false)]
+    public static void InitGymCreatorWindow()
     {
-        UnityEditor.EditorApplication.playModeStateChanged += UpdateMaps;
+        GetWindow<GymCreator>("Gym Creator", true);
     }
+    public void OnGUI()
+    {
+        using (new UnityEngine.GUILayout.VerticalScope("box"))
+        {
+            using (new UnityEngine.GUILayout.HorizontalScope())
+            {
+                UnityEditor.EditorGUILayout.PrefixLabel("Gym Name:");
+                _gymName = UnityEngine.GUILayout.TextField(_gymName, TextField, UnityEngine.GUILayout.Height(17));
+            }
+
+            using (new UnityEngine.GUILayout.HorizontalScope())
+            {
+                UnityEditor.EditorGUILayout.PrefixLabel("Gym Path:");
+                UnityEditor.EditorGUILayout.SelectableLabel(_gymPath, TextField, UnityEngine.GUILayout.Height(17));
+
+                if (Ellipsis())
+                {
+                    var GymBasePath = System.IO.Path.Combine(UnityEngine.Application.dataPath, "Gyms/");
+                    GymBasePath = GymBasePath.Replace("\\", "/");
+                    var GymPathSelected = UnityEditor.EditorUtility.OpenFolderPanel("Select your Gym Path", _gymPath, "");
+                    if(!GymPathSelected.Contains(GymBasePath))
+                    {
+                        UnityEditor.EditorUtility.DisplayDialog("Error", "The Gym Path must be within the Gyms folder", "Ok");
+                    }
+                    else
+                    {
+                        _gymPath = GymPathSelected.Replace(GymBasePath, string.Empty);
+                    }
+                }
+            }
+
+            using (new UnityEngine.GUILayout.HorizontalScope())
+            {
+                UnityEditor.EditorGUILayout.PrefixLabel("Scene Template:");
+                _sceneTemplate = (SceneTemplate)UnityEditor.EditorGUILayout.EnumPopup(_sceneTemplate);
+            }
+
+            if(GUILayout.Button("Create Gym"))
+            {
+                if (_gymName.Length == 0)
+                {
+                    Debug.LogError("Gym Name is empty");
+                }
+                else
+                {
+                    Create();
+                }
+            }
+            
+            if(GUILayout.Button("Update Scenes in Build"))
+            {
+                FolderHierarchyUtils.GenerateFolderHierarchy();
+            }
+        }
+    }
+    
+    private static bool Ellipsis()
+    {
+        return UnityEngine.GUILayout.Button("...", UnityEngine.GUILayout.Width(30));
+    }
+    
+    private static UnityEngine.GUIStyle textField;
+    public static UnityEngine.GUIStyle TextField
+    {
+        get
+        {
+            if (textField == null)
+                textField = new UnityEngine.GUIStyle("textfield");
+            return textField;
+        }
+    }
+
     bool ContainsMultipleMaps(SceneTemplate scene)
     {
         switch (scene)
@@ -111,25 +177,22 @@ public class GymCreator : MonoBehaviour
         string gymPath = Directory.GetCurrentDirectory() + "/Assets/Gyms";
         string testPath = Directory.GetCurrentDirectory() + "/Assets/Tests";
 
-        SceneTemplate templateType = (SceneTemplate)_dropdown.value;
+        string newGymPath = System.IO.Path.Combine(_gymPath, _gymName); 
+        newGymPath = newGymPath.Replace("\\", "/");
 
-        gymPath = gymPath + "/" + _path.text;
-        gymPath.Replace("\\", "/");
+        testPath = testPath + "/" + newGymPath;
+        testPath = testPath.Replace("\\", "/");
 
-        testPath = testPath + "/" + _path.text;
-        testPath.Replace("\\", "/");
+        int pathDepth = newGymPath.Count(c => c == '/');
 
-        int pathDepth = _path.text.Count(c => c == '/');
-
-        Debug.Log(gymPath);
-        if(!Directory.Exists(gymPath) && !Directory.Exists(testPath))
+        if(!Directory.Exists(newGymPath) && !Directory.Exists(testPath))
         {
 
-            int index = gymPath.LastIndexOf("/");
-            string name = gymPath.Substring(index + 1);
-            string parentFolder = gymPath.Substring(0, index);
+            int index = newGymPath.LastIndexOf("/");
+            string name = newGymPath.Substring(index + 1);
+            string parentFolder = newGymPath.Substring(0, index);
             CheckForFilesAtPath(parentFolder, pathDepth);
-            
+
             index = testPath.LastIndexOf("/");
             name = testPath.Substring(index + 1);
             parentFolder = testPath.Substring(0, index);
@@ -137,10 +200,11 @@ public class GymCreator : MonoBehaviour
 
             try
             {
-                if (_path.text.Contains("."))
+                if (newGymPath.Contains("."))
                 {
                     throw new Exception("Invalid Path");
                 }
+                gymPath = System.IO.Path.Combine(gymPath, newGymPath);
                 Directory.CreateDirectory(gymPath);
                 Directory.CreateDirectory(testPath + "/Resources");
 
@@ -150,11 +214,11 @@ public class GymCreator : MonoBehaviour
                 testFileText = testFileText.Replace("Template", name);
                 File.WriteAllText(testPath + "/" + name + "Tests.cs", testFileText);
 
-                CopyScene(GetBasicScenePath(templateType, 1), gymPath, name, GetBasicSceneName(templateType, 1));
+                CopyScene(GetBasicScenePath(_sceneTemplate, 1), gymPath, name, GetBasicSceneName(_sceneTemplate, 1));
 
-                if(ContainsMultipleMaps(templateType))
+                if(ContainsMultipleMaps(_sceneTemplate))
                 {
-                    CopyScene(GetBasicScenePath(templateType, 2), gymPath, name + "_2", GetBasicSceneName(templateType, 1));
+                    CopyScene(GetBasicScenePath(_sceneTemplate, 2), gymPath, name + "_2", GetBasicSceneName(_sceneTemplate, 1));
                     string secondScenePath = gymPath + "/" + name + "_2.unity";
                     string sceneText = File.ReadAllText(secondScenePath);
                     sceneText = sceneText.Replace(name + "_2", name);
@@ -167,9 +231,9 @@ public class GymCreator : MonoBehaviour
                 string testObjectContent = File.ReadAllText(BasicTestObjectPath);
                 testObjectContent = testObjectContent.Replace("TemplateGym", name);
                 File.WriteAllText(testPath + "/Resources/" + "TestObject_" + name + ".prefab", testObjectContent);
-
-                _message.color = Color.white;
-                _message.text = "Gym " + name + " successfully created";
+                
+                UnityEditor.AssetDatabase.Refresh();
+                FolderHierarchyUtils.GenerateFolderHierarchy();
             }
             catch (Exception e)
             {
@@ -226,27 +290,11 @@ public class GymCreator : MonoBehaviour
 
     private void LogError(Exception e)
     {
-        Debug.LogWarning(e.ToString());
-        _message.color = Color.red;
-        _message.text = "Failed Creating Gym: " + e.ToString();
+        Debug.LogError(e.ToString());
     }
-
     private void GymAlreadyExistsWarning()
     {
-        _message.color = Color.red;
-        _message.text = _path.text + " Gym already exists";
+        Debug.LogWarning("Gym Already Exists at Path:" + _gymPath);
     }
-
-    private void UpdateMaps(UnityEditor.PlayModeStateChange state)
-    {
-        if(state == UnityEditor.PlayModeStateChange.ExitingPlayMode)
-        {
-            UnityEditor.EditorApplication.playModeStateChanged -= UpdateMaps;
-            UnityEditor.AssetDatabase.Refresh();
-
-            FolderHierarchyUtils.GenerateFolderHierarchy();
-        }
-    }
-
 }
 #endif

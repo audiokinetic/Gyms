@@ -26,6 +26,8 @@ the specific language governing permissions and limitations under the License.
 #include "GymCreator.h"
 
 #include "FunctionalTest.h"
+#include "DesktopPlatformModule.h"
+#include "IDesktopPlatform.h"
 #include "Engine/World.h"
 #include "GenericPlatform/GenericPlatformFile.h"
 #include "HAL/PlatformFileManager.h"
@@ -190,4 +192,27 @@ FString UGymCreator::CreateGym(FString CommonPath, FString Path, int TemplateInd
     }
 #endif
     return Name + " Gym Created";
+}
+
+FString UGymCreator::OpenFolderDialog()
+{
+    IDesktopPlatform* DesktopPlatform = FDesktopPlatformModule::Get();
+    if (DesktopPlatform)
+    {
+        FString LastWwiseImportPath = FPaths::ProjectContentDir() / "Gyms/";
+        FString FolderName;
+        const FString Title = NSLOCTEXT("UnrealEd", "ChooseADirectory", "Choose A Directory").ToString();
+        DesktopPlatform->OpenDirectoryDialog(FSlateApplication::Get().FindBestParentWindowHandleForDialogs(nullptr),
+                Title,
+                LastWwiseImportPath,
+                FolderName);
+        FPaths::MakePathRelativeTo(FolderName, *LastWwiseImportPath);
+        if (FolderName.StartsWith("../"))
+        {
+            FMessageDialog::Open(EAppMsgType::Ok, FText::FromString("Gym Path must be within the Gyms Folder."));
+            return "";
+        }
+        return FolderName;
+    }
+    return "";
 }

@@ -89,32 +89,6 @@ bool UGymsBlueprintFunctionLibrary::IsMobilePlatform()
 	return PlatformName.Compare(TEXT("Android")) == 0 || PlatformName.Compare(TEXT("IOS")) == 0;
 }
 
-void UGymsBlueprintFunctionLibrary::UpdateMapsToCook()
-{
-#if WITH_EDITOR
-	TArray<FString> FoundGymFiles;
-	FString GymsPath = FPaths::Combine(FPaths::ProjectContentDir(), TEXT("Gyms")) + TEXT("/");;
-	IFileManager::Get().FindFilesRecursive(FoundGymFiles, *GymsPath, TEXT("*.umap"), true, false);
-	UProjectPackagingSettings* PackagingSettings = GetMutableDefault<UProjectPackagingSettings>();
-	PackagingSettings->MapsToCook.Empty();
-	FFilePath NewPath;
-	NewPath.FilePath = "/Game/MainMenu/MainMenu";
-	PackagingSettings->MapsToCook.Add(NewPath);
-	FoundGymFiles.Sort();
-	for (auto& GymFile : FoundGymFiles)
-	{
-		GymFile.RemoveFromStart(GymsPath);
-		GymFile.RemoveFromEnd(TEXT(".umap"));
-		if (!PackagingSettings->MapsToCook.ContainsByPredicate([GymFile](FFilePath ItemInArray) { return ItemInArray.FilePath == GymFile; }))
-		{
-			NewPath.FilePath = "/Game/Gyms/" + GymFile;
-			PackagingSettings->MapsToCook.Add(NewPath);
-			PackagingSettings->TryUpdateDefaultConfigFile();
-        }
-    }
-#endif
-}
-
 void UGymsBlueprintFunctionLibrary::FireEvent(const FGenericCallback& CallbackEvent)
 {
 	CallbackEvent.ExecuteIfBound();
