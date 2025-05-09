@@ -51,4 +51,10 @@ class GYMS_API UGymCreator : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable, Category = "Gym Creator Helpers")
 	static FString CreateGym(FString CommonPath, FString Path, int TemplateIndex);
+
+	/**
+	* Opens a Folder Dialog
+	*/
+	UFUNCTION(BlueprintCallable, Category = "Gym Creator Helpers")
+	static FString OpenFolderDialog();
 };

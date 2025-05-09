@@ -1,10 +1,9 @@
 # Unity Gym Creator
 
-You can use the Unity Gym Creator to create Gym templates. Load the Gyms project in Unity. The **GymCreator** folder is located under the **Assets** folder.
+You can use the Unity Gym Creator to create Gym templates. Load the Gyms project in Unity. The **GymCreator** is available under Window/Gym Creator.
 
-![](../../../Documentation/Images/UnityProjectExplorer.png)
 
-Open the GymCreator Scene then click Play in the editor. In the dialog that appears, type the path in which you want to create your level, starting as a sub-folder of the Gyms folder. For example:
+In the dialog that appears, type the name of your gym and select the path of your gym. Your path must be a sub-folder of the Gyms folder. For example:
 
 ![](../../../Documentation/Images/UnityGymsCreated.png)
 
