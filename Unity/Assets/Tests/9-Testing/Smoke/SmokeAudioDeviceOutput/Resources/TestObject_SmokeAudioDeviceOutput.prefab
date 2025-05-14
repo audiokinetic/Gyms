@@ -54,6 +54,7 @@ MonoBehaviour:
   m_positionOffsetData:
     KeepMe: 0
     positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
 --- !u!114 &8213039858389666931
@@ -76,9 +77,10 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e85b974c460fda246a5c2a0117216888,
+    WwiseObjectReference: {fileID: 11400000, guid: 3d0c847e0bdff8f4b95d24e54d3863e1,
       type: 2}
   useCallbacks: 0
+  stopSoundOnDestroy: 1
   Callbacks: []
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0

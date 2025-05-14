@@ -27,13 +27,14 @@ using UnityEngine;
 
 public class AddOutputButton_Interact : OnOffManager
 {
+    public AK.Wwise.Bank Bank;
     private AkOutputSettings _outSettingsToAdd = new AkOutputSettings(); 
     private const string AudioDeviceShareSet = "Audio_Device_System";
     private ulong _additionalDeviceId = 0;
     public override void Start()
     {
         base.Start();
-        
+        Bank.Load();
         AkDeviceDescription AdditionalDevice = AddOutputHelpers.GetNonDefaultActiveDevice("System");
 
         if (AdditionalDevice != null)
@@ -49,6 +50,7 @@ public class AddOutputButton_Interact : OnOffManager
 
     public void OnDestroy()
     {
+        Bank.Unload();
     }
 
     public override void OnAction()

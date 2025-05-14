@@ -57,6 +57,13 @@
 						</SoundBank>
 					</ChildrenList>
 				</Folder>
+				<SoundBank Name="AudioDeviceSoundBank" ID="{F34C88E6-89B4-43F4-94FE-768176293ACA}">
+					<ObjectInclusionList>
+						<ObjectRef Name="AudioDeviceEvent" ID="{C89E3159-6164-466C-BE4D-EF3A31390A2F}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
