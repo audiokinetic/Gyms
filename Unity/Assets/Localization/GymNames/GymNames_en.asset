@@ -332,6 +332,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 60938519529324544
     m_Localized: Capturing Profiler File
+    m_Metadata:
+      m_Items: []
   - m_Id: 76203306190913536
     m_Localized: Radial Emitter
     m_Metadata:
@@ -409,6 +411,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 151856346166358016
     m_Localized: Posting a Wwise Event and keeping the video synchronized using GetSourcePlayPosition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2781945159680
+    m_Localized: Event Callback Types
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2991630999552
+    m_Localized: Using Event Callbacks to retrieve when an Event ends
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3428337737728
+    m_Localized: Using Event Callbacks to retrieve Event duration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3523015761920
+    m_Localized: Using Event Callbacks to retrieve Music information (Bar duration)
     m_Metadata:
       m_Items: []
   references:
