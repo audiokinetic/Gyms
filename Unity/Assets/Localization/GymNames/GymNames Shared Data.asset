@@ -383,6 +383,22 @@ MonoBehaviour:
     m_Key: AdvancedVideoAudioSync
     m_Metadata:
       m_Items: []
+  - m_Id: 225808756403494912
+    m_Key: AdvancedCallbackTypes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225808918471401472
+    m_Key: AdvancedCallbackTypesEndOfEvent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225809180393103360
+    m_Key: AdvancedCallbackTypesDuration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225809266682519552
+    m_Key: AdvancedCallbackTypesMusicSyncBar
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
