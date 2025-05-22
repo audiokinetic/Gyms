@@ -1,4 +1,4 @@
-﻿/*******************************************************************************
+/*******************************************************************************
 The content of this file includes portions of the AUDIOKINETIC Wwise Technology
 released in source code form as part of the SDK installer package.
 
@@ -26,32 +26,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdvancedSubtitle_Callback : MonoBehaviour
+public class AdvancedCallbackTypesEndOfEventTests_Callback : MonoBehaviour
 {
-	[SerializeField]
-	TextMesh m_SubtitleText;
+	public bool callbackCalled = false;
 
-	// Array containing the subtitles.
-	protected static string[] ms_EnglishSubtitles = new string[]
+	public void EndOfEventCallback()
 	{
-		"In this tutorial...",
-		"...we will look at creating...",
-		"...actor-mixers...",
-		"...and control buses.",
-		"We will also look at the...",
-		"...actor-mixer and master-mixer structures...",
-		"...and how to manage these structures efficiently.",
-		"END OF DEMO."
-	};
-	
-	public void MarkerCallback(AkEventCallbackMsg callbackInfo)
-	{
-		switch (callbackInfo.type)
-		{
-		case AkCallbackType.AK_Marker:
-			AkMarkerCallbackInfo MarkerCallbackInfo = callbackInfo.info as AkMarkerCallbackInfo;
-			m_SubtitleText.text = ms_EnglishSubtitles[MarkerCallbackInfo.uIdentifier];
-			break;
-		}
+		callbackCalled = true;
 	}
+
 }
