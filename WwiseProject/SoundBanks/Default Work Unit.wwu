@@ -52,6 +52,7 @@
 						<ObjectRef Name="Post_State_Event" ID="{411339C4-FAE4-4D00-9ECF-459EF4E49146}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Post_Subtitle_Event" ID="{EEBD4314-B526-4D3F-9D7E-33B72ADD1AAD}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grass_04" ID="{BAE9CF26-A5F2-4D41-B792-34C44E1226D4}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MusicSyncBarEvent" ID="{E5ECEF19-3405-4DBA-8330-EC5E0184046F}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Switch_Container" ID="{3EF145B3-B7EE-4E20-87B9-6641F75D885D}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Post_Switch_Event" ID="{68773D19-F2AF-4E30-B8DE-BAB84F946830}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Event" ID="{1FB9B2D0-6222-4E75-B8BE-8B7EF1668CBB}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>

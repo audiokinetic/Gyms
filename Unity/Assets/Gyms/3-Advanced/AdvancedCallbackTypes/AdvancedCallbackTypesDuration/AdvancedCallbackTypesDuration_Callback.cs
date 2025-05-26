@@ -33,13 +33,18 @@ public class AdvancedCallbackTypesDuration_Callback : MonoBehaviour
 
 	public void DurationCallback(AkEventCallbackMsg callbackInfo)
 	{
-		switch (callbackInfo.type)
+		if (callbackInfo.type != AkCallbackType.AK_Duration)
 		{
-		case AkCallbackType.AK_Duration:
-			var DurationCallbackInfo = callbackInfo.info as AkDurationCallbackInfo;
-			m_DurationText.text = "This Event duration is " + DurationCallbackInfo.fDuration.ToString() + " milliseconds";
-			break;
+			return;
 		}
+
+		AkDurationCallbackInfo durationCallbackInfo = callbackInfo.info as AkDurationCallbackInfo;
+		if (durationCallbackInfo != null)
+		{
+			m_DurationText.text = "This Event duration is " + durationCallbackInfo.fDuration.ToString() + " milliseconds";
+		}
+
+
 	}
 
 }

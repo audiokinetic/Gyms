@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSegment Name="InteractiveMusicSegment" ID="{2602F191-3D29-48E3-8AE0-46070E78034D}" ShortID="384785864">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="9768.97916666667"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
@@ -79,6 +82,93 @@
 										<PropertyList>
 											<Property Name="CueType" Type="int16" Value="1"/>
 											<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicSegment Name="MusicCallbackSegment" ID="{55A87C8B-15D7-4E49-A3A2-D9BBDACA09A1}" ShortID="848834479">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="8135.57823129252"/>
+						<Property Name="Tempo" Type="Real64" Value="118"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="MusicCallbackTrack" ID="{D8EE3D00-D03E-4943-B97B-78177946F1EA}" ShortID="826303021">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{1004D8C5-3BFF-44AB-BDDB-8F85DAF9C7C7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="OIZ_beat_loop_secam_118" ID="{23ED6ECF-656D-468C-8CA6-B25469B11B50}">
+									<Language>SFX</Language>
+									<AudioFile>OIZ_beat_loop_secam_118.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="826587727"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{7C29FEC8-FA03-4E46-B0E9-246F3C9D221C}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="OIZ_beat_loop_secam_118" ID="{1802B12D-A46D-4F14-A688-B7121769EC19}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8135.57823129252"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="OIZ_beat_loop_secam_118" ID="{23ED6ECF-656D-468C-8CA6-B25469B11B50}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{39FD0F33-6FC2-46DF-B63A-BB0F074F2E68}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{57D42496-955B-4A30-AD10-CE7E82320810}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="8135.57823129252"/>
 										</PropertyList>
 									</MusicCue>
 								</Local>

@@ -649,6 +649,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="MusicSyncBarEvent" ID="{E5ECEF19-3405-4DBA-8330-EC5E0184046F}">
+							<ChildrenList>
+								<Action Name="" ID="{018F5C3A-245C-4B5C-8400-5BBA20AA779F}" ShortID="432882393">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MusicCallbackSegment" ID="{55A87C8B-15D7-4E49-A3A2-D9BBDACA09A1}" WorkUnitID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AudioDevice" ID="{6FDDDFFF-5433-4222-96C7-CF0C6A7E0311}" ShortID="762763421">

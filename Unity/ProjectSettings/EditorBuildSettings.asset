@@ -60,6 +60,8 @@ EditorBuildSettings:
     path: Assets/Gyms/3-Advanced/AdvancedAmbient/AdvancedAmbientStartAll/AdvancedAmbientStartAll.unity
     guid: 83512165366c3c5408849cbd9537b2ac
   - enabled: 1
+    path: Assets/Gyms/3-Advanced/AdvancedCallbackTypes/AdvancedCallbackTypesMusicSyncBar/AdvancedCallbackTypesMusicSyncBar.unity
+    guid: 48c30e580cb96e54698304d8633aad4b
     path: Assets/Gyms/3-Advanced/AdvancedCallbackTypes/AdvancedCallbackTypesDuration/AdvancedCallbackTypesDuration.unity
     guid: 083305f55bc458549a387d55a9afb5a9
   - enabled: 1

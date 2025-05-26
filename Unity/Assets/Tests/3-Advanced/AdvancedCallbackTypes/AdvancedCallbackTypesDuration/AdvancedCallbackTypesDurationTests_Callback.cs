@@ -33,6 +33,10 @@ public class AdvancedCallbackTypesDurationTests_Callback : MonoBehaviour
 	public void DurationCallback(AkEventCallbackMsg callbackInfo)
 	{
 		var DurationCallbackInfo = callbackInfo.info as AkDurationCallbackInfo;
-		EventDuration = DurationCallbackInfo.fDuration;
+		if (DurationCallbackInfo != null)
+		{
+			EventDuration = DurationCallbackInfo.fDuration;
+		}
+		
 	}
 }
