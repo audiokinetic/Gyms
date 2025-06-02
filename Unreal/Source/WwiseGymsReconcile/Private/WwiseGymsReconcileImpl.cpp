@@ -47,8 +47,8 @@ bool FWwiseGymsReconcileImpl::AddToDelete(FWwiseReconcileItem& Item)
 	if (!ShouldBeSkipped(Item))
 	{
 		bDelete = FWwiseReconcileImpl::AddToDelete(Item);
+		UE_LOG(LogWwiseGymsReconcile, Log, TEXT("Adding Asset %s to Delete: %s"), *Item.Asset.AssetName.ToString(), bDelete ? TEXT("True") : TEXT("False"));
 	}
-	UE_LOG(LogWwiseGymsReconcile, Log, TEXT("Adding Asset %s to Delete: %s"), *Item.Asset.AssetName.ToString(), bDelete ? TEXT("True") : TEXT("False"));
 	return bDelete;
 }
 
@@ -58,8 +58,8 @@ bool FWwiseGymsReconcileImpl::AddToCreate(FWwiseReconcileItem& Item)
 	if (!ShouldBeSkipped(Item))
 	{
 		bCreate = FWwiseReconcileImpl::AddToCreate(Item);
+		UE_LOG(LogWwiseGymsReconcile, Log, TEXT("Adding Asset %s to Create: %s"), *Item.WwiseAnyRef.WwiseAnyRef->GetName(), bCreate ? TEXT("True") : TEXT("False"));
 	}
-	UE_LOG(LogWwiseGymsReconcile, Log, TEXT("Adding Asset %s to Create: %s"), *Item.WwiseAnyRef.WwiseAnyRef->GetName(), bCreate ? TEXT("True") : TEXT("False"));
 	return bCreate;
 }
 
@@ -69,8 +69,8 @@ bool FWwiseGymsReconcileImpl::AddToRename(FWwiseReconcileItem& Item)
 	if (!ShouldBeSkipped(Item))
 	{
 		bRename = FWwiseReconcileImpl::AddToRename(Item);
+		UE_LOG(LogWwiseGymsReconcile, Log, TEXT("Adding Asset %s to Rename : %s"), *Item.WwiseAnyRef.WwiseAnyRef->GetName(), bRename ? TEXT("True") : TEXT("False"));
 	}
-	UE_LOG(LogWwiseGymsReconcile, Log, TEXT("Adding Asset %s to Rename : %s"), *Item.WwiseAnyRef.WwiseAnyRef->GetName(), bRename ? TEXT("True") : TEXT("False"));
 	return bRename;
 }
 
@@ -80,40 +80,7 @@ bool FWwiseGymsReconcileImpl::AddToUpdate(FWwiseReconcileItem& Item)
 	if (!ShouldBeSkipped(Item))
 	{
 		bUpdate = FWwiseReconcileImpl::AddToUpdate(Item);
+		UE_LOG(LogWwiseGymsReconcile, Log, TEXT("Adding Asset %s to Update : %s"), *Item.WwiseAnyRef.WwiseAnyRef->GetName(), bUpdate ? TEXT("True") : TEXT("False"));
 	}
-	UE_LOG(LogWwiseGymsReconcile, Log, TEXT("Adding Asset %s to Update : %s"), *Item.WwiseAnyRef.WwiseAnyRef->GetName(), bUpdate ? TEXT("True") : TEXT("False"));
 	return bUpdate;
-}
-
-bool FWwiseGymsReconcileImpl::ShouldMove(const WwiseAnyRef& Ref, FAssetData InAssetPath, FString& OutNewAssetPath)
-{
-	bool bShouldMove = false;
-	FWwiseReconcileItem ReconcileItem;
-	ReconcileItem.WwiseAnyRef.WwiseAnyRef = &Ref;
-	if (!ShouldBeSkipped(ReconcileItem) && InAssetPath.IsValid())
-	{
-		auto WwisePath = Ref.GetObjectPath();
-		auto AkSettings = GetMutableDefault<UAkSettings>();
-		const FString DefaultPath = AkSettings->DefaultAssetCreationPath;
-		WwisePath = WwisePath.String.Replace(TEXT("\\"), TEXT("/"));
-		WwisePath = WwisePath.String.Replace(TEXT(" "), TEXT("_"));
-		FString ExpectedPath = DefaultPath / FPaths::GetPath(WwisePath.String);
-
-		if (!InAssetPath.GetObjectPathString().Contains(WwisePath.String))
-		{
-			bShouldMove = true;
-			OutNewAssetPath = ExpectedPath;
-		}
-	}
-	UE_LOG(LogWwiseGymsReconcile, Log, TEXT("Should Asset %s Move: %s"), *Ref.GetName(), bShouldMove ? TEXT("True") : TEXT("False"));
-	return bShouldMove;
-}
-
-int32 FWwiseGymsReconcileImpl::MoveAssets(FScopedSlowTask& SlowTask)
-{
-	for (const auto& AssetData : AssetsToMove)
-	{
-		UE_LOG(LogWwiseGymsReconcile, Warning, TEXT("TOTALLY moving %s to %s"), *AssetData.WwiseAnyRef.WwiseAnyRef->GetName(), *AssetData.MovedPath);
-	}
-	return AssetsToMove.Num();
 }

@@ -22,4 +22,6 @@ class WWISEGYMSTESTRECONCILE_API FWwiseGymsTestReconcileImpl : public FWwiseGyms
 {
 protected:
 	virtual bool ShouldBeSkipped(const FWwiseReconcileItem& Item) override;
+	virtual bool ShouldMove(const WwiseAnyRef& Ref, FAssetData InAssetPath, FString& OutNewAssetPath) override;
+	virtual int32 MoveAssets(FScopedSlowTask& SlowTask) override;
 };
