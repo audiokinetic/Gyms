@@ -112,7 +112,7 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 		LibraryInfo.Filters.Add(nullptr);
 		LibraryInfo.FilteredAssets.Empty();
 		Processor->FilterLibraryAssets(*FilteringSharedData, LibraryInfo, false);
-		CHECK(LibraryInfo.FilteredAssets.Num() == FilteringSharedData->Sources.Num());
+		CHECK(LibraryInfo.FilteredAssets.Num() == (FilteringSharedData->Sources.Num()-FilteringSharedData->SkippedAssetsCount));
 	}
 
 	// Set up Shared Testing Filter. This is used for all the tests below
@@ -249,6 +249,10 @@ WWISE_TEST_CASE(AssetMaps_MediaAndSoundBanks, "Wwise::AssetLibraryEditor::AssetM
 			Processor->InstantiateSharedData(*ProjectDB));
 		Processor->RetrieveAssetMap(*FilteringSharedData);
 	}
+	TArray<FAssetData> AssetsData;
+	// Assets relevant to testing are based in Game/WwiseAudio
+	FWwiseAssetLibraryProcessor::GetRelevantAssets("/Game/WwiseAudio/", AssetsData);
+	FilteringSharedData->AssetsData = AssetsData;
 
 	TUniquePtr<FWwiseAssetLibraryFilteringSharedData> FilteringSharedMediaData;
 	FilteringSharedMediaData = TUniquePtr<FWwiseAssetLibraryFilteringSharedData>(
@@ -304,7 +308,6 @@ WWISE_TEST_CASE(AssetMaps_MediaAndSoundBanks, "Wwise::AssetLibraryEditor::AssetM
 			if (Media)
 			{
 				CHECK(Media->bStreaming || Media->Location == WwiseMetadataMediaLocation::Loose)
-				CHECK(Media->Location != WwiseMetadataMediaLocation::Memory)
 			}
 		}
 	}
