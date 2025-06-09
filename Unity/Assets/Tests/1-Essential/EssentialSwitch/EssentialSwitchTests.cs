@@ -39,8 +39,11 @@ namespace Tests
 
             EssentialSwitchTests_Component testComponents = gameObject.GetComponent<EssentialSwitchTests_Component>();
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-            yield return new WaitUntil(() =>
-                testComponents.switchEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#if UNITY_WEBGL
+            yield return testComponents.switchEvent.WwiseObjectReference.CompleteLoadBank();
+#else
+            yield return new WaitUntil(() => testComponents.switchEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 #endif
             //Set no switch test
             testComponents.noSwitch.SetValue(testComponents.gameObject);

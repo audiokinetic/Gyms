@@ -21,6 +21,7 @@ MonoBehaviour:
     m_Address: Assets/Localization/GymNames/GymNames Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 503594c400fea3c4ca16d5752a595147, type: 2}
   m_SchemaSet:

@@ -46,9 +46,13 @@ namespace Tests
             yield return localizedVoice.SetLanguage("en_US");
             yield return new WaitForSeconds(0.2f);
             
-            
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+            //With addressables, due to the auto bank not being loaded, the post won't happen for an invalid language thus not incrementing the PlayingId
+            //This means that only the SetLanguage to "fr" will increment the PlayingId, making the expected localizedEvent.PlayingId + 1;
             uint expected = localizedEvent.PlayingId + 1;
-
+#else
+	        uint expected = localizedEvent.PlayingId + 2;
+#endif
             //Set unsupported language
 #if !AK_WWISE_ADDRESSABLES
             ExpectedLogError("PrepareEvent for Post_Localized_Voice failed with result: AK_IDNotFound");

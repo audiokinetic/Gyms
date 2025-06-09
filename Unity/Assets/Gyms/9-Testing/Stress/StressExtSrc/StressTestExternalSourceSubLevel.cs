@@ -76,7 +76,12 @@ public class StressTestExternalSourceSubLevel : MonoBehaviour
         for (int i = 0; i < 2; i++)
         {
             AK.Wwise.Event currentEvent = _events[i];
+#if UNITY_WEBGL
+            yield return currentEvent.WwiseObjectReference.CompleteLoadBank();
+
+#else
             yield return new WaitUntil(() => currentEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
         }
 #endif
 

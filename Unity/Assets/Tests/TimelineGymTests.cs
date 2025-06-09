@@ -18,8 +18,11 @@ namespace Tests
                 var eventRefs = srcObj.GetEventReferences();
                 foreach (var eventRef in eventRefs)
                 {
+#if UNITY_WEBGL
+                    yield return eventRef.CompleteLoadBank();
+#else
                     yield return new WaitUntil(() =>eventRef.CompleteLoadBank().IsCompleted);
-
+#endif
                 }
             }
         }

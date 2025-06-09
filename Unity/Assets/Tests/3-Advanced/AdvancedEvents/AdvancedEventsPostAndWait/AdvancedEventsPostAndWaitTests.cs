@@ -44,7 +44,11 @@ namespace Tests
             AdvancedEventsPostAndWait_WaitForEndOfEvent scriptReference =
                 gameObject.GetComponent<AdvancedEventsPostAndWait_WaitForEndOfEvent>();
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return scriptReference._event.data.WwiseObjectReference.CompleteLoadBank();
+#else
             yield return new WaitUntil(() => scriptReference._event.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 #endif
 
             gameObject.GetComponent<AdvancedEventsPostAndWait_WaitForEndOfEvent>().Interact();

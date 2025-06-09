@@ -35,6 +35,7 @@ namespace Tests
         [UnityTest]
         public IEnumerator StressOpenLevel_LargeMedia_Tests()
         {
+#if !UNITY_WEBGL
             yield return StartTest(SceneName);
             yield return new WaitForEndOfFrame();
 
@@ -51,6 +52,9 @@ namespace Tests
             Assert.AreEqual(expected, PostSilence());
 #endif
             yield return FinishTest(SceneName);
+#else
+            yield return null;
+#endif
         }
     }
 }

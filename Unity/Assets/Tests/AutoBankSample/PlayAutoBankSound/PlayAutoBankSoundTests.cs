@@ -16,7 +16,11 @@ namespace Tests
             GameObject cylinder = GameObject.Find("Cylinder");
             AK.Wwise.Event _event = cylinder.GetComponent<AkEvent>().data;
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return _event.WwiseObjectReference.CompleteLoadBank();
+#else
             yield return new WaitUntil(() => _event.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 #endif
 
             uint expected = PostSilence() + 1;

@@ -24,6 +24,7 @@ the specific language governing permissions and limitations under the License.
 
 using NUnit.Framework;
 using System.Collections;
+using AK.Wwise.Unity.WwiseAddressables;
 using UnityEngine;
 using UnityEngine.TestTools;
 
@@ -39,7 +40,8 @@ namespace Tests
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
             WwiseEventReference wwiseEventRef = gameObject.GetComponent<AkEvent>().data.WwiseObjectReference;
             
-            wwiseEventRef.UnloadAutoBank();
+            yield return wwiseEventRef.UnloadAutoBank();
+            AkAddressableBankManager.Instance.DoUnloadBank();
             yield return new WaitForSeconds(1.0f);
             
             wwiseEventRef.LoadAutoBank();
@@ -48,7 +50,12 @@ namespace Tests
             wwiseEventRef.LoadAutoBank();
             Assert.IsFalse(wwiseEventRef.IsAutoBankLoaded);
 
+#if UNITY_WEBGL
+            yield return wwiseEventRef.CompleteLoadBank();
+#else         
             yield return new WaitUntil(() => wwiseEventRef.CompleteLoadBank().IsCompleted);
+
+#endif
             Assert.IsTrue(wwiseEventRef.IsAutoBankLoaded);
 #endif
 

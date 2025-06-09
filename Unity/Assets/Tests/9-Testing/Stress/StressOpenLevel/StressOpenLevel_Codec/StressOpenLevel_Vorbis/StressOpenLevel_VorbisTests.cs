@@ -43,8 +43,12 @@ namespace Tests
             yield return StartTest(SceneName);
 
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-            yield return new WaitUntil(() => GameObject.Find("AkAmbient").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank()
-                .IsCompleted);
+#if UNITY_WEBGL
+            yield return GameObject.Find("AkAmbient").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank();
+#else
+            yield return new WaitUntil(() => GameObject.Find("AkAmbient").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
+
 #else
             Assert.AreEqual(expected, PostSilence());
 #endif

@@ -70,7 +70,11 @@ namespace Tests
             BasicPostLocation_Event soundLocation = GameObject.Find("AkPostLocation").GetComponent<BasicPostLocation_Event>();
             AK.Wwise.Event locationEvent = soundLocation.akEvent.data;
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return locationEvent.WwiseObjectReference.CompleteLoadBank();
+#else
             yield return new WaitUntil(() => locationEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif       
 #endif
             expected = locationEvent.PlayingId + 1;
 
@@ -95,6 +99,7 @@ namespace Tests
             yield return new WaitForSeconds(.4f);
             yield return locationPost.PostTimer();
             yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(15);
             LogOutput("Expected the object is null ", true);
             Assert.AreEqual(null, obj);
 

@@ -5,15 +5,15 @@ released in source code form as part of the SDK installer package.
 Commercial License Usage
 
 Licensees holding valid commercial licenses to the AUDIOKINETIC Wwise Technology
-may use this file in accordance with the end user license agreement provided 
+may use this file in accordance with the end user license agreement provided
 with the software or, alternatively, in accordance with the terms contained in a
 written agreement between you and Audiokinetic Inc.
 
 Apache License Usage
 
-Alternatively, this file may be used under the Apache License, Version 2.0 (the 
-"Apache License"); you may not use this file except in compliance with the 
-Apache License. You may obtain a copy of the Apache License at 
+Alternatively, this file may be used under the Apache License, Version 2.0 (the
+"Apache License"); you may not use this file except in compliance with the
+Apache License. You may obtain a copy of the Apache License at
 http://www.apache.org/licenses/LICENSE-2.0.
 
 Unless required by applicable law or agreed to in writing, software distributed
@@ -32,24 +32,25 @@ public class OpenLevel_Trigger : MonoBehaviour
     [SerializeField]
     string _levelToLoad;
 
-    protected void OnTriggerEnter(Collider other)
+    protected IEnumerator OnTriggerEnter(Collider other)
     {
-        OpenLevel();
+        yield return OpenLevel();
     }
 
-    public void OpenLevel()
+    public IEnumerator OpenLevel()
     {
-        PreLoadAction();
+        yield return PreLoadAction();
         SceneManager.LoadScene(_levelToLoad);
-        PostLoadAction();
+        yield return PostLoadAction();
     }
 
-    protected virtual void PostLoadAction()
+    protected virtual IEnumerator PostLoadAction()
     {
-
+        yield return null;
     }
 
-    protected virtual void PreLoadAction()
+    protected virtual IEnumerator PreLoadAction()
     {
+        yield return null;
     }
 }

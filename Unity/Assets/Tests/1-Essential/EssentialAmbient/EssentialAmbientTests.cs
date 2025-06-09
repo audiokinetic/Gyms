@@ -42,7 +42,11 @@ namespace Tests
             AkAmbient empty = ambients[1];
 
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return ambient.data.WwiseObjectReference.CompleteLoadBank();
+#else
             yield return new WaitUntil(() => ambient.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 #endif
             uint expected = PostSilence() + 1;
 

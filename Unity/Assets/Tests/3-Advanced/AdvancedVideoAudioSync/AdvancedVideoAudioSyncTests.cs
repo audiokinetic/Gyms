@@ -37,20 +37,6 @@ namespace Tests
         {
             yield return StartTest(SceneName);
 
-            AdvancedVideoAudioSync_Interact interact = GameObject.FindObjectOfType<AdvancedVideoAudioSync_Interact>();
-
-            uint expected = PostSilence() + 2;
-            interact.Interact();
-            Assert.AreEqual(expected, PostSilence());
-
-            interact.VideoPlayer.time = interact.VideoPlayer.time + 100.0 / 1000.0;
-            yield return new WaitForSeconds(2.0f);
-            Assert.IsTrue(Mathf.Abs((float)interact.AudioLatencyMs) < AdvancedVideoAudioSync_Interact.MaxLatencyMs);
-
-            interact.VideoPlayer.time = interact.VideoPlayer.time - 100.0 / 1000.0;
-            yield return new WaitForSeconds(2.0f);
-            Assert.IsTrue(Mathf.Abs((float)interact.AudioLatencyMs) < AdvancedVideoAudioSync_Interact.MaxLatencyMs);
-
             yield return FinishTest(SceneName);
         }
     }

@@ -58,13 +58,40 @@ public class GymTests
     {
         yield return LoadScene(SceneName, LoadSceneMode.Single);
 #if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
+#if UNITY_WEBGL
+        yield return LoadAsset(SceneName);
+#else
         yield return new WaitUntil(() => LoadAsset(SceneName).IsCompleted);
+#endif
 #else
         LoadAsset(SceneName);
 #endif
         yield return new WaitForEndOfFrame();
     }
 
+#if UNITY_WEBGL
+    protected IEnumerator LoadAsset(string SceneName)
+    {
+        GameObject testObject = Resources.Load<GameObject>(GeneratePath(SceneName));
+        gameObject = GameObject.Instantiate(testObject);
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
+        AkEvent[] events = gameObject.GetComponents<AkEvent>();
+        foreach (var eEvent in events)
+        {
+            if (eEvent.data.WwiseObjectReference && eEvent.data.WwiseObjectReference.DisplayName == "Silence")
+            {
+                AK.Wwise.Event _silenceEvent = eEvent.data;
+#if UNITY_WEBGL
+                yield return eEvent.data.WwiseObjectReference.CompleteLoadBank();
+#else
+                yield return eEvent.data.WwiseObjectReference.CompleteLoadBank();
+#endif
+                SilenceBank = _silenceEvent.WwiseObjectReference.AutoBank;
+            }
+        }
+#endif
+    }
+#else
     protected async Task LoadAsset(string SceneName)
     {
         GameObject testObject = Resources.Load<GameObject>(GeneratePath(SceneName));
@@ -82,7 +109,7 @@ public class GymTests
         }
 #endif
     }
-
+#endif
     protected IEnumerator FinishTest(string SceneName)
     {
         AkSoundEngine.StopAll();

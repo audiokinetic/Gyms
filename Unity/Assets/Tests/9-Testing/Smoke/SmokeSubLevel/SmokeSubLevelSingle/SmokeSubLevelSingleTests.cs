@@ -46,7 +46,11 @@ namespace Tests
             subLevelSwitch.OnEnter.SetValue(gameObject);
             AkEvent akEvent = gameObject.GetComponent<AkEvent>();
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return akEvent.data.WwiseObjectReference.CompleteLoadBank();
+#else
             yield return new WaitUntil(() => akEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 #endif
             uint actual = akEvent.data.Post(gameObject);
             Assert.AreEqual(expected, actual);

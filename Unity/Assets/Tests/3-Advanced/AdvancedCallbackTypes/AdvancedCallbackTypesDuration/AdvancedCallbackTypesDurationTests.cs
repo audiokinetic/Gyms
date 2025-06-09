@@ -39,6 +39,13 @@ namespace Tests
 			yield return StartTest(SceneName);
 
 			AkEvent akEvent = gameObject.GetComponent<AkEvent>();
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+	        yield return akEvent.data.WwiseObjectReference.CompleteLoadBank();
+#else
+			yield return new WaitUntil(() => akEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
+#endif
 			akEvent.HandleEvent(gameObject);
 			yield return new WaitForSeconds(0.2f);
 			AdvancedCallbackTypesDurationTests_Callback callbackInfo = gameObject.GetComponent<AdvancedCallbackTypesDurationTests_Callback>();

@@ -56,7 +56,11 @@ namespace Tests
             //Post external source test
             AdvancedExternalSources scriptReference = GameObject.FindObjectOfType<AdvancedExternalSources>();
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return scriptReference._event.WwiseObjectReference.CompleteLoadBank();
+#else
             yield return new WaitUntil(() =>scriptReference._event.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 #endif
 
             scriptReference.PostExternalSourcesEvent();
