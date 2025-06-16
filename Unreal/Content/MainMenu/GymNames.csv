@@ -104,3 +104,7 @@ Key,SourceString
 "SmokeSequencerPause","Pausing the Sequencer"
 "AdvancedSequencerPlain","Using the sequencing system to post Wwise Events"
 "AdvancedSequencerSpatialized","Using the sequencing system to drive Wwise Events and Game Parameters"
+"AdvancedCallbackTypes","Event Callback Types"
+"AdvancedCallbackTypesEndOfEvent","Using Event Callbacks to retrieve when an Event ends"
+"AdvancedCallbackTypesDuration","Using Event Callbacks to retrieve Event duration"
+"AdvancedCallbackTypesMusicSyncBar","Using Event Callbacks to retrieve Music information (Bar duration)"
