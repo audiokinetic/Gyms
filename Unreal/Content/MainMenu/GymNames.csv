@@ -106,3 +106,7 @@ Key,SourceString
 "AdvancedSequencerPlain","Using the sequencing system to post Wwise Events"
 "AdvancedSequencerSpatialized","Using the sequencing system to drive Wwise Events and Game Parameters"
 "BasicSeekOnEvent", "Seeking an Event at a given percentage of the duration."
+"AdvancedCallbackTypes","Event Callback Types"
+"AdvancedCallbackTypesEndOfEvent","Using Event Callbacks to retrieve when an Event ends"
+"AdvancedCallbackTypesDuration","Using Event Callbacks to retrieve Event duration"
+"AdvancedCallbackTypesMusicSyncBar","Using Event Callbacks to retrieve Music information (Bar duration)"
