@@ -43,10 +43,16 @@ namespace Tests
             var EventButton = GameObject.Find("Button").GetComponentInChildren<AkEvent>();
             var StopButton = GameObject.Find("Button (1)").GetComponentInChildren<AkEvent>();
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return EventButton.data.WwiseObjectReference.CompleteLoadBank();
+            yield return StopButton.data.WwiseObjectReference.CompleteLoadBank();
+#else
             Task loadingBank = Task.Run(EventButton.data.WwiseObjectReference.CompleteLoadBank);
             yield return new WaitUntil(() =>loadingBank.IsCompleted);
             loadingBank = Task.Run(StopButton.data.WwiseObjectReference.CompleteLoadBank);
             yield return new WaitUntil(() =>loadingBank.IsCompleted);
+#endif
+          
 #endif
             EventButton.HandleEvent(EventButton.gameObject);
             yield return new WaitForSeconds(0.2f);

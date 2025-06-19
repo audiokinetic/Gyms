@@ -40,7 +40,7 @@ public class StressOpenLevel_ExternalSources : OpenLevel_Trigger
 
     AkExternalSourceInfoArray _externalSourceInfoArray = new AkExternalSourceInfoArray(3);
 
-    private async void Start()
+    private IEnumerator Start()
     {
         _externalSourceInfoArray[0].iExternalSrcCookie = AkSoundEngine.GetIDFromString("One");
         _externalSourceInfoArray[0].szFile = externalSourcesBase[0];
@@ -55,7 +55,11 @@ public class StressOpenLevel_ExternalSources : OpenLevel_Trigger
         _externalSourceInfoArray[2].idCodec = 2;
         
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-        await _event.WwiseObjectReference.CompleteLoadBank();
+#if UNITY_WEBGL
+        yield return _event.WwiseObjectReference.CompleteLoadBank();
+#else
+        yield return new WaitUntil(() => _event.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 #endif
         if (this)
         {
@@ -64,7 +68,7 @@ public class StressOpenLevel_ExternalSources : OpenLevel_Trigger
       
     }
 
-    protected override void PostLoadAction()
+    protected override IEnumerator PostLoadAction()
     {
         for(int i = 0; i < 3; i++)
         {
@@ -73,5 +77,6 @@ public class StressOpenLevel_ExternalSources : OpenLevel_Trigger
                 _externalSourceInfoArray[i].szFile = externalSourcesChange[i];
             }
         }
+        yield return null;
     }
 }

@@ -43,10 +43,14 @@ namespace Tests
             yield return new WaitForSeconds(10f);
 
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-            yield return new WaitUntil(() => GameObject.Find("PostAndWaitPrefab").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank()
-                .IsCompleted);
-            yield return new WaitUntil(() => GameObject.Find("PostAndWaitPrefab (1)").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank()
-                .IsCompleted);
+            yield return GameObject.Find("PostAndWaitPrefab").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank();
+            yield return GameObject.Find("PostAndWaitPrefab (1)").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank();
+#if UNITY_WEBGL
+#else
+            yield return new WaitUntil(() => GameObject.Find("PostAndWaitPrefab").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+            yield return new WaitUntil(() => GameObject.Find("PostAndWaitPrefab (1)").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
+
 #else
             Assert.AreEqual(expected, PostSilence());
 #endif

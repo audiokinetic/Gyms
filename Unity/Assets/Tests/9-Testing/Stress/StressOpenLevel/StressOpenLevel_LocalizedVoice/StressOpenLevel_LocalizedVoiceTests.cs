@@ -40,12 +40,12 @@ namespace Tests
 
             uint expected = PostSilence() + 3;
 
-            GameObject.FindObjectOfType<StressOpenLevel_LocalizedVoice>().OpenLevel();
+            yield return GameObject.FindObjectOfType<StressOpenLevel_LocalizedVoice>().OpenLevel();
             Assert.AreEqual("fr_FR", AkSoundEngine.GetCurrentLanguage());
             LogOutput("Change Level followed by changing the language to fr_FR:", true);
             yield return new WaitForSeconds(0.1f);
-
-            GameObject.FindObjectOfType<StressOpenLevel_LocalizedVoice>().OpenLevel();
+            
+            yield return GameObject.FindObjectOfType<StressOpenLevel_LocalizedVoice>().OpenLevel();
             Assert.AreEqual("en_US", AkSoundEngine.GetCurrentLanguage());
             LogOutput("Change Level followed by changing the language to en_US:", true);
             yield return new WaitForSeconds(0.1f);

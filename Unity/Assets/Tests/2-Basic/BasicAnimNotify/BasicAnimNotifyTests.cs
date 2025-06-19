@@ -49,7 +49,12 @@ namespace Tests
                 eventRef = GameObject.Find("FirstPersonCharacter").GetComponent<AkEvent>().data.WwiseObjectReference;
             }
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return eventRef.CompleteLoadBank();
+#else
             yield return new WaitUntil(() => eventRef.CompleteLoadBank().IsCompleted);
+
+#endif
 #endif
             GameObject.FindObjectOfType<BasicAnimNotify_ChangeStateOnButtonPressed>().ChangeState();
             LogOutput("Post an event with an animator:", true);

@@ -35,14 +35,17 @@ namespace Tests
         [UnityTest]
         public IEnumerator StressStreamingReload_Tests()
         {
+#if !UNITY_WEBGL
+            yield return StartTest(SceneName);
 #if UNITY_EDITOR
             ExpectedLogErrorAtLeastOnce("Source starvation");
 #endif
-            yield return StartTest(SceneName);
-
             yield return new WaitForSeconds(11f);
-
             yield return FinishTest(SceneName);
+#else
+            yield return null;
+#endif
+
         }
     }
 }

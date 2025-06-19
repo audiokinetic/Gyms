@@ -41,8 +41,14 @@ namespace Tests
             AkEvent streamingEvent = events[1];
 
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-            yield return new WaitUntil(() => inMemoryEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
-            yield return new WaitUntil(() => streamingEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#if UNITY_WEBGL
+        yield return inMemoryEvent.data.WwiseObjectReference.CompleteLoadBank();
+        yield return streamingEvent.data.WwiseObjectReference.CompleteLoadBank();
+#else
+        yield return new WaitUntil(() => inMemoryEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+        yield return new WaitUntil(() => streamingEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
+           
 #endif
             
             uint expected = PostSilence() + 2;

@@ -42,7 +42,11 @@ namespace Tests
             yield return StartTest(SceneName);
             EssentialPostEventTests_Component testComponent = gameObject.GetComponent<EssentialPostEventTests_Component>();
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return testComponent.soundEvent.WwiseObjectReference.CompleteLoadBank();
+#else
             yield return new WaitUntil(() => testComponent.soundEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 #endif
             yield return new WaitForEndOfFrame();
             uint expected = PostSilence() + 1;

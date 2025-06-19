@@ -31,8 +31,12 @@ public class StressOpenLevel_PostEvent : OpenLevel_Trigger
     [SerializeField]
     AkAmbient _ambient;
 
-    protected override void PreLoadAction()
+    protected override IEnumerator PreLoadAction()
     {
+#if UNITY_WEBGL
+        yield return _ambient.data.WwiseObjectReference.CompleteLoadBank();
+#endif
         _ambient.data.Post(_ambient.gameObject);
+        yield return null;
     }
 }

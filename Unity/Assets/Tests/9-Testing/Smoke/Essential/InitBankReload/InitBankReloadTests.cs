@@ -22,8 +22,11 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
+using System;
 using NUnit.Framework;
 using System.Collections;
+using System.Threading.Tasks;
+using UnityEngine;
 #if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
 using AK.Wwise.Unity.WwiseAddressables;
 #endif
@@ -33,6 +36,17 @@ namespace Tests
 {
     public class InitBankReloadTests : GymTests
     {
+        private WwiseAddressableSoundBank bank;
+        private bool firstCall = true;
+        private DateTime startTime;
+        private bool timedOut = false;
+        private Task loadingBank;
+#if UNITY_WEBGL
+        private float timeOut = 10.0f;
+#else
+        private float timeOut = 2.5f;
+#endif
+
         public static void LoadInitBank()
         {
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
@@ -71,17 +85,59 @@ namespace Tests
 #endif
         }
         
+private IEnumerator WaitForBankLoad()
+        {
+#if UNITY_WEBGL
+            yield return CompleteLoadBank();
+#else
+            loadingBank = Task.Run(CompleteLoadBank);
+            yield return new WaitUntil(() => loadingBank.IsCompleted);
+#endif
+        }
+        
+        #if UNITY_WEBGL
+        private async Awaitable CompleteLoadBank()
+        #else
+        private async Task CompleteLoadBank()
+        #endif
+        {
+            if (firstCall)
+            {
+                startTime = DateTime.Now;
+                timedOut = false;
+            }
+            while (bank.LoadState == BankLoadState.Loading || bank.LoadState == BankLoadState.WaitingForPrepareEvent || bank.LoadState == BankLoadState.WaitingForInitBankToLoad)
+            {
+                firstCall = false;
+                var elapsedTime = DateTime.Now - startTime;
+                if (elapsedTime.TotalSeconds >= timeOut)
+                {
+                    timedOut = true;
+                    firstCall = true;
+                    break;
+                }
+#if UNITY_WEBGL
+                await Awaitable.NextFrameAsync();
+#else
+                await Task.Yield();
+#endif
+            }
+            firstCall = true;
+        }
         
         const string SceneName = "InitBankReload";
         [UnityTest]
         public IEnumerator InitBankReload_Tests()
         {
+            bank = AkAddressableBankManager.InitBank;
             yield return StartTest(SceneName);
+            yield return WaitForBankLoad();
             // Basic reload
             UnloadInitBank();
             CheckIsInHandleDict(false);
-            
+                
             LoadInitBank();
+            yield return WaitForBankLoad();
             CheckIsInHandleDict(true);
             
             CheckRefCount(1);
@@ -98,6 +154,7 @@ namespace Tests
             
             // Reload and ref should be at 1
             LoadInitBank();
+            yield return WaitForBankLoad();
             CheckIsInHandleDict(true);
             CheckRefCount(1);
 

@@ -38,7 +38,11 @@ namespace Tests
             yield return StartTest(SceneName);
             yield return new WaitForEndOfFrame();
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return GameObject.Find("Cylinder").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank();
+#else
             yield return new WaitUntil(() =>GameObject.Find("Cylinder").GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 #endif
             BasicExecuteActionBreak_Interact interact = GameObject.FindObjectOfType<BasicExecuteActionBreak_Interact>();
 

@@ -32,24 +32,25 @@ public class OpenLevel_Trigger : MonoBehaviour
     [SerializeField]
     string _levelToLoad;
 
-    protected void OnTriggerEnter(Collider other)
+    protected IEnumerator OnTriggerEnter(Collider other)
     {
-        OpenLevel();
+        yield return OpenLevel();
     }
 
-    public void OpenLevel()
+    public IEnumerator OpenLevel()
     {
-        PreLoadAction();
+        yield return PreLoadAction();
         SceneManager.LoadScene(_levelToLoad);
-        PostLoadAction();
+        yield return PostLoadAction();
     }
 
-    protected virtual void PostLoadAction()
+    protected virtual IEnumerator PostLoadAction()
     {
-
+        yield return null;
     }
 
-    protected virtual void PreLoadAction()
+    protected virtual IEnumerator PreLoadAction()
     {
+        yield return null;
     }
 }

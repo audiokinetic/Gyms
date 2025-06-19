@@ -42,7 +42,12 @@ namespace Tests
             interact.Interact();
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
             var spawnedObjectAkEvent = UnityEngine.GameObject.Find("StressPostEventOnDestroyCube(Clone)").GetComponent<AkEvent>();
+#if UNITY_WEBGL
+            yield return spawnedObjectAkEvent.data.WwiseObjectReference.CompleteLoadBank();
+#else
             yield return new WaitUntil(() =>  spawnedObjectAkEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+
+#endif
 #endif
             interact.Interact();
 

@@ -24,6 +24,7 @@ the specific language governing permissions and limitations under the License.
 
 using NUnit.Framework;
 using System.Collections;
+using UnityEngine;
 using UnityEngine.TestTools;
 
 namespace Tests
@@ -35,14 +36,21 @@ namespace Tests
         public IEnumerator SmokeSharedMediasInBanks_Tests()
         {
             yield return StartTest(SceneName);
-
+            
             var expected = PostSilence() + 4;
             var events = gameObject.GetComponents<AkEvent>();
+#if UNITY_WEBGL
             foreach (var e in events)
             {
+                yield return e.data.WwiseObjectReference.CompleteLoadBank();
+            }
+#endif
+            foreach (var e in events)
+            {
+                yield return e.data.WaitForBankToBeLoaded(gameObject);
                 e.HandleEvent(gameObject);
             }
-            Assert.AreEqual(PostSilence(), expected);
+            Assert.AreEqual(expected, PostSilence());
             yield return FinishTest(SceneName);
         }
     }
