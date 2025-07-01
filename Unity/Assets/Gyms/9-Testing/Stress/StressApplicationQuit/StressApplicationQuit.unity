@@ -486,6 +486,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6c0424e66fd62c744be520f0f0657a76,
       type: 2}
+  Bank:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 807f815147e65b144afe9c41d86efe95,
+      type: 2}
 --- !u!4 &1229874629
 Transform:
   m_ObjectHideFlags: 0

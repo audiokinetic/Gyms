@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b126a09420ca64a86f0b2fbea30e32, type: 3}
   m_Name: 6816E7D7-D2D5-4E38-8029-5316BF0A1408
   m_EditorClassIdentifier: 
-  objectName: GlobalParameterVolume
-  id: 1609229239
+  objectName: GlobalParameterHPF
+  id: 2651918925
   guid: 6816E7D7-D2D5-4E38-8029-5316BF0A1408

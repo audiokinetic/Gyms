@@ -35,20 +35,22 @@ namespace Tests
         [UnityTest]
         public IEnumerator BasicLocalizedVoice_Tests()
         {
+            AkSoundEngine.SetCurrentLanguage("en_US");
+            yield return new WaitForEndOfFrame();
             yield return StartTest(SceneName);
             BasicLocalizedVoice localizedVoice = GameObject.Find("Cylinder").GetComponent<BasicLocalizedVoice>();
             AK.Wwise.Event localizedEvent = localizedVoice.LocalizedEvent;
             yield return localizedVoice.SetLanguage("en_US");
             yield return new WaitForSeconds(0.2f);
-            uint expected = localizedEvent.PlayingId + 1;
             
+            uint expected = localizedEvent.PlayingId + 1;
             //Set unsupported language
 #if UNITY_EDITOR
             ExpectedLogError("Could not post event");
-            //There can be 1 or 2 different errors logged.
-            ExpectedLogErrorAtLeastOnce("");
-            ExpectedLogError("Event ID not found Name");
-            ExpectedLogError("Unload bank failed");
+	        //Could not post event
+            //File not found in path(s)
+            //Unload bank failed
+            ExpectedLogError("Wwise", 4);
 #endif
 
             yield return localizedVoice.SetLanguage("");

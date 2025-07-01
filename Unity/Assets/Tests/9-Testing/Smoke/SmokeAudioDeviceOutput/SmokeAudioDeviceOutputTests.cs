@@ -66,7 +66,7 @@ namespace Tests
             
             // Make sure posting additional event works
             {
-                var pID = AkSoundEngine.PostEvent("AudioDeviceEvent", gameObject);
+                var pID = gameObject.GetComponent<AkEvent>().data.Post(gameObject);
                 Assert.AreEqual(pID, initialPlayingID+1);
             }
             

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4720905431929748483}
   - component: {fileID: 2335710013882470318}
   - component: {fileID: 6883871829782710533}
-  - component: {fileID: -245662899058875498}
+  - component: {fileID: -7399634278448680028}
   m_Layer: 0
   m_Name: TestObject_BasicSetGameParameterOnObject
   m_TagString: Untagged
@@ -77,7 +77,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 04cf94978c24ccf4d90fbda00c615d16,
       type: 2}
---- !u!114 &-245662899058875498
+--- !u!114 &-7399634278448680028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,10 +94,10 @@ MonoBehaviour:
     useDefaultListeners: 1
   isEnvironmentAware: 1
   isStaticObject: 0
+  usePositionOffsetData: 0
   m_positionOffsetData:
     KeepMe: 0
     positionOffset: {x: 0, y: 0, z: 0}
-  scalingFactor: -1
-  overrideScalingFactor: 0
+  scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1

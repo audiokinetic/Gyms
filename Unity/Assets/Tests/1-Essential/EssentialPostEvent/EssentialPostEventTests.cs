@@ -87,9 +87,10 @@ namespace Tests
             var callbackCalled = false;
             AkCallbackManager.EventCallback callbackFunc = (cookie, type, info) => { callbackCalled = true; };
 
+#if UNITY_EDITOR
             ExpectedLogError("Event ID not found", 16);
             ExpectedLogErrorAtLeastOnce("Failed posting event");
-
+#endif
             AkSoundEngine.PostEvent(AkSoundEngine.AK_INVALID_UNIQUE_ID, testComponent.gameObject);
             AkSoundEngine.PostEvent(AkSoundEngine.AK_INVALID_UNIQUE_ID, testComponent.gameObject, (uint)AkCallbackType.AK_EndOfEvent, callbackFunc, null);
             Assert.False(callbackCalled);

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7cce0135bfed16408d2332cd882d1df, type: 3}
+  m_Script: {fileID: 11500000, guid: daac7cc27c886974fa974deb32331533, type: 3}
   m_Name: C89E3159-6164-466C-BE4D-EF3A31390A2F
   m_EditorClassIdentifier: 
   objectName: AudioDeviceEvent

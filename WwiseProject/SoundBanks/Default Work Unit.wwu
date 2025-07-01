@@ -34,6 +34,7 @@
 						<ObjectRef Name="Ambient_Event" ID="{C544A903-BCAE-45A1-BA83-8F936BB89801}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wood_02" ID="{9F260B90-FA7B-45B8-BE0A-DEFD4C4FF7B8}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SpatialAudioEvent" ID="{60B1ADD6-D922-4612-B8C1-3D8175E891C4}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AudioDeviceEvent" ID="{C89E3159-6164-466C-BE4D-EF3A31390A2F}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Room_Bus" ID="{E0FBAC03-61BD-46D1-804A-7CCC53DF056A}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StreamingDLCSound" ID="{7804FD9E-F2C5-4708-8865-FF1734C583A0}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Post_ExternalAudio_Event" ID="{58368532-769E-4775-8147-8C765BE28A8E}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>

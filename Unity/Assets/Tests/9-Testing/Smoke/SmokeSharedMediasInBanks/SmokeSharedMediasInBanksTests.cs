@@ -36,6 +36,7 @@ namespace Tests
         {
             yield return StartTest(SceneName);
 
+            gameObject.GetComponent<AkBank>().HandleEvent(gameObject);
             var expected = PostSilence() + 4;
             var events = gameObject.GetComponents<AkEvent>();
             foreach (var e in events)
