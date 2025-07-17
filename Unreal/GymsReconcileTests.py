@@ -29,7 +29,7 @@ import subprocess
 import re
 
 def parse_results():
-    expected_results = ["AddedEvent to Create: True", "TooLongPathEvent to Create: True", "UpdatedEvent to Update : True", "RenamedEvent to Rename : True", "RenamedEventAssetWithSameName to Rename : True", "DeletedEvent to Delete: True", "Could not create asset \'TooLongPathEvent\' at location", "Asset RenamedEventAssetWithSameName already exists at", "Should Asset RenamedEventAssetWithSameName Move: False", "Should Asset MovedEvent Move: True", "TOTALLY moving MovedEvent to /Game/WwiseAudio/Events/ReconcileTests"]
+    expected_results = [r"AddedEvent to Create: True", r"TooLongPathEvent to Create: True", r"UpdatedEvent to Update : True", r"RenamedEvent to Rename : True", r"RenamedEventAssetWithSameName to Rename : True", r"DeletedEvent to Delete: True", r"Could not create asset \'TooLongPathEvent\' at location", r"Asset RenamedEventAssetWithSameName already exists at", r"Should Asset RenamedEventAssetWithSameName Move: False", r"Should Asset MovedEvent Move: True", r"TOTALLY moving MovedEvent to /Game/WwiseAudio/Events/ReconcileTests"]
     path = os.path.dirname(__file__) + "/Saved/Logs/ReconcileOutput.txt"
     with open(path) as f:
         content = f.readlines()
