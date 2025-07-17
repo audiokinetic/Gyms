@@ -30,8 +30,8 @@ import re
 import glob
 
 def parse_results():
-    expected_results = ["[Main_Game_Event_2].*Main_Game_SoundBank.bnk.*Bulk Data", "[DLC_TextFilterAssetLibrary].*DLC_Event.bnk.*Bulk Data", "DLC_Event_With_Main_Game_Ref.bnk.*Bulk Data"]
-    unintended_results = ["Post_Localized_Voice.bnk.*Bulk Data DLC_LanguageFilter"]
+    expected_results = [r"[Main_Game_Event_2].*Main_Game_SoundBank.bnk.*Bulk Data", r"[DLC_TextFilterAssetLibrary].*DLC_Event.bnk.*Bulk Data", r"DLC_Event_With_Main_Game_Ref.bnk.*Bulk Data"]
+    unintended_results = [r"Post_Localized_Voice.bnk.*Bulk Data DLC_LanguageFilter"]
     path = os.path.dirname(__file__) + "/Saved/Logs/CookingOutput.txt"
     with open(path) as f:
         content = f.readlines()
