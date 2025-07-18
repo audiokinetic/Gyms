@@ -84,7 +84,7 @@ class UnityAutomation(GymsAutomation):
             search = re.search(expectedString + ' result=".{6}"', line)
             if search:
                 substring = line[search.start():search.end()]
-                results.append(re.search('Passed', substring) != None)
+                results.append(re.search(r'Passed', substring) != None)
                 testsNames.append(gym)
         return results, testsNames
 

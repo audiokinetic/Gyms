@@ -23,7 +23,7 @@ the specific language governing permissions and limitations under the License.
 """
 
 import sys, os, os.path, platform, subprocess, shutil
-from distutils.dir_util import copy_tree, remove_tree
+import shutil
 
 # Base class for building the Wwise Audio Lab
 class PlatformBuilder:
@@ -179,8 +179,8 @@ def main(argv=None):
 	if not skipSDKCopy:
 		fromDirectory = os.path.join(os.getcwd(), "Gyms", "Unreal", "Plugins", "Wwise", "ThirdParty", "SDK")
 		toDirectory = os.path.join(os.getcwd(), "Gyms", "Unreal", "Plugins", "Wwise", "ThirdParty")
-		copy_tree(fromDirectory, toDirectory)
-		remove_tree(fromDirectory)
+		shutil.copytree(fromDirectory, toDirectory, dirs_exist_ok=True)
+		shutil.rmtree(fromDirectory)
 	
 	os.environ["MLSDK"] = ""
 	builder = None
