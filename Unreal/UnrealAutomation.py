@@ -83,9 +83,9 @@ class UnrealAutomation(GymsAutomation):
         results = []
         testsNames = []
         for line in content:
-            if re.search('Test Completed+', line):
+            if re.search(r'Test Completed+', line):
                 results.append(re.search(self.get_success_keyword(), line) != None)
-                index = re.search('Path={Project.Functional Tests.', line).end()
+                index = re.search(r'Path={Project.Functional Tests.', line).end()
                 testsNames.append(line[index + 5: -2])
         return results, testsNames
 
@@ -109,7 +109,7 @@ class UnrealAutomation(GymsAutomation):
         return cmd_line
 
     def write_results(self, unrealPath, file, gymsList, targetPlatform, failingGyms, timeout):
-        self.isUnrealFour = re.search('UE4', unrealPath) != None
+        self.isUnrealFour = re.search(r'UE4', unrealPath) != None
         results, testNames = self.run_tests_command(gymsList, unrealPath, timeout)
         gymsSkipped = gymsList
         for i in range(len(results)):
