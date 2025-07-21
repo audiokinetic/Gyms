@@ -24,6 +24,6 @@
   <AddressableAssetBuilderPath>Assets/AddressableAssetsData/DataBuilders/BuildScriptWwisePacked.asset</AddressableAssetBuilderPath>
   <AddressableInstallationRequested>false</AddressableInstallationRequested>
   <AddressableUninstallationRequested>false</AddressableUninstallationRequested>
-  <XMLTranslatorTimeout>10</XMLTranslatorTimeout>
+  <XMLTranslatorTimeout>0</XMLTranslatorTimeout>
   <WaapiTranslatorTimeout>0</WaapiTranslatorTimeout>
 </WwiseSettings>
