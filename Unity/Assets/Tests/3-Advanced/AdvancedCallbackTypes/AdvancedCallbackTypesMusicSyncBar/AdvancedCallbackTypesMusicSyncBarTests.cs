@@ -22,16 +22,29 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
+using NUnit.Framework;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TestTools;
 
-public class AdvancedCallbackTypesEndOfEventTests_Callback : MonoBehaviour
+namespace Tests
 {
-	public bool callbackCalled = false;
+    public class AdvancedCallbackTypesMusicSyncBarTests : GymTests
+    {
+        const string SceneName = "AdvancedCallbackTypesMusicSyncBar";
+        [UnityTest]
+        public IEnumerator AdvancedCallbackTypesMusicSyncBar_Tests()
+        {
+            yield return StartTest(SceneName);;
 
-	public void EndOfEventCallback()
-	{
-		callbackCalled = true;
-	}
+			AkEvent akEvent = gameObject.GetComponent<AkEvent>();
+			akEvent.HandleEvent(gameObject);
+			yield return new WaitForSeconds(0.2f);
+			AdvancedCallbackTypesMusicSyncBarTests_Callback callbackInfo = gameObject.GetComponent<AdvancedCallbackTypesMusicSyncBarTests_Callback>();
+			AreApproximatelyEqual(callbackInfo.BarDuration, 2.03391671f, 0.0001f);
+			LogOutput("Duration of a bar is " + callbackInfo.BarDuration + " seconds : ", true);
+
+			yield return FinishTest(SceneName);
+        }
+    }
 }

@@ -26,12 +26,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdvancedCallbackTypesEndOfEventTests_Callback : MonoBehaviour
+public class AdvancedCallbackTypesMusicSyncBar_Callback : MonoBehaviour
 {
-	public bool callbackCalled = false;
+	[SerializeField]
+	TextMesh m_MusicSyncBarText;
 
-	public void EndOfEventCallback()
+	public void MusicSyncBarCallback(AkEventCallbackMsg callbackInfo)
 	{
-		callbackCalled = true;
+		if (callbackInfo.type != AkCallbackType.AK_MusicSyncBar)
+		{
+			return;
+		}
+
+		AkMusicSyncCallbackInfo musicSyncCallbackInfo = callbackInfo.info as AkMusicSyncCallbackInfo;
+		if (musicSyncCallbackInfo != null)
+		{
+			m_MusicSyncBarText.text = "Duration of the bar is " + musicSyncCallbackInfo.segmentInfo_fBarDuration.ToString() + " seconds.";
+		}
+
 	}
 }

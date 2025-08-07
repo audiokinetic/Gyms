@@ -35,12 +35,16 @@ public class AdvancedCallbackTypesEndOfEvent : MonoBehaviour
 
 	public void EndOfEventCallback(AkEventCallbackMsg callbackInfo)
 	{
-		switch (callbackInfo.type)
+		if(callbackInfo.type != AkCallbackType.AK_EndOfEvent)
 		{
-		case AkCallbackType.AK_EndOfEvent:
-			m_CallbackText.text = ms_EndOfEventString;
-			break;
+			return;
 		}
+
+		if(callbackInfo != null)
+		{
+			m_CallbackText.text = ms_EndOfEventString;
+		}
+
 	}
 
 }

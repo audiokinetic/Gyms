@@ -26,12 +26,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdvancedCallbackTypesEndOfEventTests_Callback : MonoBehaviour
+public class AdvancedCallbackTypesMusicSyncBarTests_Callback : MonoBehaviour
 {
-	public bool callbackCalled = false;
+	public float BarDuration = 0f;
 
-	public void EndOfEventCallback()
+	public void MusicSyncCallback(AkEventCallbackMsg callbackInfo)
 	{
-		callbackCalled = true;
+		var MusicSyncCallbackInfo = callbackInfo.info as AkMusicSyncCallbackInfo;
+		if (MusicSyncCallbackInfo != null )
+		{
+			BarDuration = MusicSyncCallbackInfo.segmentInfo_fBarDuration;
+		}
 	}
 }
