@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" SchemaVersion="131">
+<WwiseDocument Type="WorkUnit" ID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" SchemaVersion="132">
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" PersistMode="Standalone">
 			<ChildrenList>
@@ -681,6 +681,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="InteractiveMusicSegment" ID="{2602F191-3D29-48E3-8AE0-46070E78034D}" WorkUnitID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MusicSyncBarEvent" ID="{7F1EABEC-AB49-4B6C-9C55-0213BEF2D0AA}">
+							<ChildrenList>
+								<Action Name="" ID="{9435043B-74EE-4295-A539-435819B73894}" ShortID="197156233">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MusicCallbackSegment" ID="{ADACA929-DC19-4FF0-81DA-B356181F02F2}" WorkUnitID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daac7cc27c886974fa974deb32331533, type: 3}
+  m_Name: 7F1EABEC-AB49-4B6C-9C55-0213BEF2D0AA
+  m_EditorClassIdentifier: 
+  objectName: MusicSyncBarEvent
+  id: 1514689270
+  guid: 7F1EABEC-AB49-4B6C-9C55-0213BEF2D0AA
+  AutoBank: {fileID: 11400000, guid: c42f7c9d03d8bd549b737439a51873cc, type: 2}
+  IsInUserDefinedSoundBank: 0

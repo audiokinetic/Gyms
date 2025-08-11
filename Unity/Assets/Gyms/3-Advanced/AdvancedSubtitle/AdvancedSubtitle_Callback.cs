@@ -46,12 +46,16 @@ public class AdvancedSubtitle_Callback : MonoBehaviour
 	
 	public void MarkerCallback(AkEventCallbackMsg callbackInfo)
 	{
-		switch (callbackInfo.type)
+		if (callbackInfo.type != AkCallbackType.AK_Marker)
 		{
-		case AkCallbackType.AK_Marker:
-			AkMarkerCallbackInfo MarkerCallbackInfo = callbackInfo.info as AkMarkerCallbackInfo;
-			m_SubtitleText.text = ms_EnglishSubtitles[MarkerCallbackInfo.uIdentifier];
-			break;
+			return;
 		}
+
+		AkMarkerCallbackInfo markerCallbackInfo = callbackInfo.info as AkMarkerCallbackInfo;
+		if (markerCallbackInfo != null)
+		{
+			m_SubtitleText.text = ms_EnglishSubtitles[markerCallbackInfo.uIdentifier];
+		}
+
 	}
 }
