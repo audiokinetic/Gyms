@@ -128,43 +128,12 @@ public class GymCreator : MonoBehaviour
             int index = gymPath.LastIndexOf("/");
             string name = gymPath.Substring(index + 1);
             string parentFolder = gymPath.Substring(0, index);
-
-            //If not in the root folder and the directory already existed, move it's content
-            if(Directory.Exists(parentFolder) && pathDepth > 0)
-            {
-                int subFolderIndex = parentFolder.LastIndexOf("/");
-                string subFolderName = parentFolder.Substring(subFolderIndex);
-                //if the folder has files create a sub folder with same name and move the files
-                if (Directory.EnumerateFiles(parentFolder).Any())
-                {
-                    try
-                    {
-                        string newFolderName = parentFolder + subFolderName;
-                        if(!Directory.Exists(newFolderName))
-                        {
-                            Directory.CreateDirectory(newFolderName);
-                        }
-
-                        string[] files = Directory.GetFiles(parentFolder);
-
-                        // Move each file to the destination directory
-                        foreach (string file in files)
-                        {
-                            // Check if it is a file (not a directory)
-                            if (File.Exists(file))
-                            {
-                                string fileName = Path.GetFileName(file);
-                                string destinationPath = Path.Combine(newFolderName, fileName);
-                                File.Move(file, destinationPath);
-                            }
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        LogError(e);
-                    }
-                }
-            }
+            CheckForFilesAtPath(parentFolder, pathDepth);
+            
+            index = testPath.LastIndexOf("/");
+            name = testPath.Substring(index + 1);
+            parentFolder = testPath.Substring(0, index);
+            CheckForFilesAtPath(parentFolder, pathDepth);
 
             try
             {
@@ -213,6 +182,46 @@ public class GymCreator : MonoBehaviour
             GymAlreadyExistsWarning();
         }
 
+    }
+
+    private void CheckForFilesAtPath(string parentFolder, int pathDepth)
+    {
+        //If not in the root folder and the directory already existed, move it's content
+        if(Directory.Exists(parentFolder) && pathDepth > 0)
+        {
+            int subFolderIndex = parentFolder.LastIndexOf("/");
+            string subFolderName = parentFolder.Substring(subFolderIndex);
+            //if the folder has files create a sub folder with same name and move the files
+            if (Directory.EnumerateFiles(parentFolder).Any(f => !f.EndsWith(".meta")))
+            {
+                try
+                {
+                    string newFolderName = parentFolder + subFolderName;
+                    if(!Directory.Exists(newFolderName))
+                    {
+                        Directory.CreateDirectory(newFolderName);
+                    }
+
+                    string[] files = Directory.GetFiles(parentFolder);
+
+                    // Move each file to the destination directory
+                    foreach (string file in files)
+                    {
+                        // Check if it is a file (not a directory)
+                        if (File.Exists(file))
+                        {
+                            string fileName = Path.GetFileName(file);
+                            string destinationPath = Path.Combine(newFolderName, fileName);
+                            File.Move(file, destinationPath);
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    LogError(e);
+                }
+            }
+        }
     }
 
     private void LogError(Exception e)
