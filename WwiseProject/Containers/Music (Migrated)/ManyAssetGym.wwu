@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}" SchemaVersion="130">
+<WwiseDocument Type="WorkUnit" ID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}" SchemaVersion="131">
 	<Containers>
 		<WorkUnit Name="ManyAssetGym" ID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}" PersistMode="Standalone">
 			<ChildrenList>

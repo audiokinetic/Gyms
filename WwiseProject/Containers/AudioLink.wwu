@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{C4B40BE6-12AC-4E11-9C4D-702EC5FBC73A}" SchemaVersion="130">
+<WwiseDocument Type="WorkUnit" ID="{C4B40BE6-12AC-4E11-9C4D-702EC5FBC73A}" SchemaVersion="131">
 	<Containers>
 		<WorkUnit Name="AudioLink" ID="{C4B40BE6-12AC-4E11-9C4D-702EC5FBC73A}" PersistMode="Standalone">
 			<ChildrenList>

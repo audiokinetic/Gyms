@@ -1,861 +1,1089 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{BDB25378-3A1E-4F49-9ABB-9E035E654DD8}" SchemaVersion="127">
+<WwiseDocument Type="WorkUnit" ID="{BDB25378-3A1E-4F49-9ABB-9E035E654DD8}" SchemaVersion="131">
 	<DynamicDialogue>
 		<WorkUnit Name="Default Work Unit" ID="{BDB25378-3A1E-4F49-9ABB-9E035E654DD8}" PersistMode="Standalone">
 			<ChildrenList>
 				<DialogueEvent Name="PlaylistManipulation" ID="{9BA5EB0D-E1EC-4D85-B805-C42CB4358443}">
 					<ObjectLists>
 						<ObjectList Name="Arguments">
-							<Reference>
-								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
+							<PluginInnerObject Name="" ID="{272A112D-9D39-4FFF-BDA9-4B503AC608BC}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{EE3E0109-59F9-4E8B-A5FE-DC6BE9DC880E}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
 						</ObjectList>
 						<ObjectList Name="Entries">
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{75FFB224-C839-4948-BAA5-957D725B4653}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+							<MultiSwitchEntry Name="" ID="{75FFB224-C839-4948-BAA5-957D725B4653}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{6D8E8437-D514-4861-8272-AEA755487C71}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{0D2BD3B3-3761-4D78-8E27-C1572A461EB2}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{8F23990B-220A-414A-8883-F280F2C2F282}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{8F23990B-220A-414A-8883-F280F2C2F282}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{F35A2974-9A40-4B7D-90C3-2B5D67F0EEF3}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{3E9BB48B-933A-4171-8F8B-50CF8FB9423F}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{B026FCF7-10F4-47D7-A756-3DC5F706E0FD}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Hangar_Alone" ID="{A759D201-7281-40BD-BCA3-854689709665}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{B026FCF7-10F4-47D7-A756-3DC5F706E0FD}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Hangar_Alone" ID="{A759D201-7281-40BD-BCA3-854689709665}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{3B93C4FA-CEDB-4F85-8ADA-533F294B2015}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{F14DAE1E-DE11-4CE7-AE77-DD2CFAE2E846}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{DBE83748-5DF8-47D6-A26A-019E0089DFFC}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Hangar_Gang" ID="{167C305C-883D-4645-BF47-8C12431B27E4}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{DBE83748-5DF8-47D6-A26A-019E0089DFFC}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Hangar_Gang" ID="{167C305C-883D-4645-BF47-8C12431B27E4}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{47B4A298-129E-4359-B2D5-C57A17BA7E09}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{4F764905-D049-41D7-B254-D124D1C2748A}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{BACBB049-CECF-4FA1-B86F-923F9826D74A}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{BACBB049-CECF-4FA1-B86F-923F9826D74A}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{2381D043-BB16-4FAE-9CAF-EDE68F3CBA0D}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Outside" ID="{EDEED907-75CB-4CD8-A7EA-EE7EBF22AC7F}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{933288CF-55AF-46D6-839C-EF5EDFA23F40}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{6FD62A45-E4F6-4E74-AEE4-824CB6912A93}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Outside_Gang" ID="{A378C770-AD1F-428A-8FE0-1E23006427EB}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{6FD62A45-E4F6-4E74-AEE4-824CB6912A93}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Outside_Gang" ID="{A378C770-AD1F-428A-8FE0-1E23006427EB}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{B72BE822-7782-43E0-8AB6-2690BA3F56A1}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Outside" ID="{EDEED907-75CB-4CD8-A7EA-EE7EBF22AC7F}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{12E608F0-B33A-4254-85B3-48E1A1459CCC}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{D1D59F90-FD18-4108-A708-F868B3DFB530}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Street_Alone" ID="{33D2E223-04EC-4C27-A005-F14ACC7D2A04}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{D1D59F90-FD18-4108-A708-F868B3DFB530}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Street_Alone" ID="{33D2E223-04EC-4C27-A005-F14ACC7D2A04}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{64F9AE44-D1C7-4681-9334-4837C5CD1E67}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Street" ID="{A2BE38EC-3621-4511-B707-FB634018B905}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{416C2AC8-89FF-4825-8DBE-688EEC8177ED}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{75548B41-AD01-4115-B934-BBB9A8D65B5F}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Street_Gang" ID="{9D2C3F57-3968-4948-A142-E499D796FD39}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{75548B41-AD01-4115-B934-BBB9A8D65B5F}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Street_Gang" ID="{9D2C3F57-3968-4948-A142-E499D796FD39}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{4D506767-17E5-4F36-86DF-86C5E12607F3}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Street" ID="{A2BE38EC-3621-4511-B707-FB634018B905}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{D65D92F9-82BE-4C21-AD53-7AC3C274F972}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{D74B222B-39AD-4AC3-9C0D-C0A8C0AFC7A5}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{D74B222B-39AD-4AC3-9C0D-C0A8C0AFC7A5}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{EE72FE48-1F17-4B17-9D70-AD5003EA0175}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{C35BF017-DBC6-40AE-BC82-A279B227A69A}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{E1152548-F01F-4072-903A-15932DCBCBCB}">
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{E1152548-F01F-4072-903A-15932DCBCBCB}">
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{BFF0E2ED-8BEE-450C-976A-B34039C5DA33}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{EF1DB2EA-FE84-400A-BDEF-CCBEB1027796}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{D4CE2E1C-05AC-4DF5-A78C-295CF89AB56A}">
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{D4CE2E1C-05AC-4DF5-A78C-295CF89AB56A}">
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{E741BBBF-149E-4855-BC36-E81D00031579}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{7202828B-3FD4-48FF-A064-250429439593}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
 						</ObjectList>
 					</ObjectLists>
 				</DialogueEvent>
 				<DialogueEvent Name="ModifyPlaylist" ID="{92A0A88C-1E74-4C6C-B593-BA2FBC51433B}">
 					<ObjectLists>
 						<ObjectList Name="Arguments">
-							<Reference>
-								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
+							<PluginInnerObject Name="" ID="{08E4BA04-6F73-4762-92B8-B750A33952D8}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{727D6D9B-BC87-430C-ACD2-C218D5890C8A}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
 						</ObjectList>
 						<ObjectList Name="Entries">
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{31501109-2A0A-4C13-87FE-C895E4CF40FF}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+							<MultiSwitchEntry Name="" ID="{31501109-2A0A-4C13-87FE-C895E4CF40FF}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{8B5717E8-A6B0-477F-BDE0-880DB38D1839}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{D3EDD8CA-A2FB-470C-AF3B-1AD5DACA0CA7}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{6573794F-BEC3-4B39-8D85-001875AAAB25}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{6573794F-BEC3-4B39-8D85-001875AAAB25}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{A03B995B-7911-41C1-99EE-229E8AA9F5EF}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{3E2ABAF2-6D23-4873-BB7B-006C468CC6DA}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{4A63F190-6E74-4697-B2AA-E332AF77CB5A}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{4A63F190-6E74-4697-B2AA-E332AF77CB5A}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{47EC5969-EC8C-44C4-B23D-1F3225CD1886}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{29B543D2-0245-4734-AC69-C3B6A90BB06C}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{109DC56B-1886-4F0C-8AE8-D382A16437C4}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{109DC56B-1886-4F0C-8AE8-D382A16437C4}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{E0B3D91B-F09E-479D-9EAC-38FF7FAB89A3}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{5DBCCC1C-F183-414C-AB17-7665B397B444}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
 						</ObjectList>
 					</ObjectLists>
 				</DialogueEvent>
 				<DialogueEvent Name="ResolvePlaylist" ID="{9732E637-4350-4FFA-BF34-91148E896D1C}">
 					<ObjectLists>
 						<ObjectList Name="Arguments">
-							<Reference>
-								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
+							<PluginInnerObject Name="" ID="{381A2BD3-FEEE-47DD-8E93-AF8CDB733608}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{CF50D208-4FD8-431D-851C-E045A0DD915C}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
 						</ObjectList>
 						<ObjectList Name="Entries">
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{28A80B9C-F695-460E-8996-2468CEB9FFEF}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+							<MultiSwitchEntry Name="" ID="{28A80B9C-F695-460E-8996-2468CEB9FFEF}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{4DAF4D94-7ED6-4674-97D7-1CC6E7069578}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{B9D9A2E1-891F-40E4-BA6B-AEC0B575DEA7}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{78B02221-AB50-489A-B2C9-3FF1D79B739E}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{78B02221-AB50-489A-B2C9-3FF1D79B739E}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{F3E24B1E-44F4-4DB3-A319-E612C7C23EA3}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{18D51181-A01D-47A6-99B0-0E91C5D0D3B9}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{1B1670B0-1D29-4B23-BBC9-8FCD70E7B337}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{1B1670B0-1D29-4B23-BBC9-8FCD70E7B337}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{A9AB4B5F-3965-4294-AC77-9AE7FBC56F71}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{498C6818-3EDA-431F-B29C-3F739A06A9AD}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{95E4BB60-0E86-42A0-87A5-73F51EFB5C35}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{95E4BB60-0E86-42A0-87A5-73F51EFB5C35}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{ABC6B9AE-1362-4988-89C5-23961D2A60AE}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{0F30C371-F6AC-436F-8DD3-F7EEE0672BF9}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
 						</ObjectList>
 					</ObjectLists>
 				</DialogueEvent>
 				<DialogueEvent Name="ResolvePlaylistNoDefaultFallback" ID="{B3194AC5-9356-4BBE-A6FE-E22B733D5849}">
 					<ObjectLists>
 						<ObjectList Name="Arguments">
-							<Reference>
-								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
+							<PluginInnerObject Name="" ID="{051E2AE2-2986-4B5A-9D01-B697232F8A4B}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{876C617C-26F9-4EFC-AEE3-029DA749B20B}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
 						</ObjectList>
 						<ObjectList Name="Entries">
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{E43F6508-DCD8-4116-A904-2AE27CBB5246}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+							<MultiSwitchEntry Name="" ID="{E43F6508-DCD8-4116-A904-2AE27CBB5246}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{FE2646D4-C224-45E3-B29D-6372FB7D177A}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{945BC46E-D2D9-44B7-872E-20CC42F043DE}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{94638045-BEEC-45E8-A6F9-B42496FDEA2B}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{94638045-BEEC-45E8-A6F9-B42496FDEA2B}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{F16F8648-D1B5-40B9-A857-C479EC977B27}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{9176D447-E4AA-4906-A331-B47C1B6ECB8E}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{CF79139F-3C54-42D3-AEA3-50CFF9B24D1F}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{CF79139F-3C54-42D3-AEA3-50CFF9B24D1F}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Outside_Alone" ID="{90B66807-C1A0-4632-9EA7-8AA0DEF756C2}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{4EAA9107-B43F-497D-9469-771E776E02F7}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{50EB54DC-32B1-402D-A2F2-A5AAE443EE99}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
 						</ObjectList>
 					</ObjectLists>
 				</DialogueEvent>
 				<DialogueEvent Name="ModifyPlaylistNoDefaultFallback" ID="{1FFF1140-6EB9-4203-85AD-727A3393E9D3}">
 					<ObjectLists>
 						<ObjectList Name="Arguments">
-							<Reference>
-								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
+							<PluginInnerObject Name="" ID="{9F3ACFD1-10F8-4E40-807B-DD41FF13FB0E}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{6B75F575-2DCD-4B6C-90D6-11FC2830B8AC}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
 						</ObjectList>
 						<ObjectList Name="Entries">
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{B42BFC7F-82F6-49B4-9A29-9431FB981ED7}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+							<MultiSwitchEntry Name="" ID="{B42BFC7F-82F6-49B4-9A29-9431FB981ED7}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{599AC1C7-697C-46AC-B334-B3B5D70062D1}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{F48DD3C4-B15F-44CF-AF21-199E6E20BD77}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{33DA9BB7-6443-4D76-9D6C-EEA1E12577C3}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{33DA9BB7-6443-4D76-9D6C-EEA1E12577C3}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{7F04FA24-6CC3-4608-B1D1-FADBE7C937FF}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{1ABB04EC-BBDF-4D0C-AF78-D5A540651051}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{82D2F854-4A72-4374-88B3-40A71EBFA4F9}">
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{82D2F854-4A72-4374-88B3-40A71EBFA4F9}">
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{4110DC96-AC86-456E-9373-A975B700E62D}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{157CA89C-1EE7-4B12-9356-A6AEFCDF5EDC}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
 						</ObjectList>
 					</ObjectLists>
 				</DialogueEvent>
 				<DialogueEvent Name="FallbackPathPlaylist" ID="{70FA481B-31A8-40AF-9E33-439AADB86EE9}">
 					<ObjectLists>
 						<ObjectList Name="Arguments">
-							<Reference>
-								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
+							<PluginInnerObject Name="" ID="{BCD5DFA9-DFA7-4E35-9EAD-7AD69F27999E}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{D9033F5A-AFFD-4208-BABC-A633452E3662}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
 						</ObjectList>
 						<ObjectList Name="Entries">
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{DEFEA903-EB39-4BE7-8611-2FA68BF16B0F}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+							<MultiSwitchEntry Name="" ID="{DEFEA903-EB39-4BE7-8611-2FA68BF16B0F}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{02684583-2E46-4082-9DD2-4CD19BA93CF0}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{6D48043A-EEC9-4E6B-B109-848D35024BDA}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{87D53D7E-AD8C-40BB-A2A9-EA08DAEDF869}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{87D53D7E-AD8C-40BB-A2A9-EA08DAEDF869}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{8E127B28-1451-4179-90FD-3ADA359A1FB2}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{952AE8C0-7566-400A-A2C6-028588E45426}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
 						</ObjectList>
 					</ObjectLists>
 				</DialogueEvent>
 				<DialogueEvent Name="ProbabilityPlaylist" ID="{0ED4C7BD-9E9D-4DB0-8F89-212E51D91C32}">
 					<ObjectLists>
 						<ObjectList Name="Arguments">
-							<Reference>
-								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
+							<PluginInnerObject Name="" ID="{C6C68E68-F22E-4186-8A45-AD2FCE4AB3E8}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{21649FD3-2BDC-467B-86F5-CB31D90B8DAE}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
 						</ObjectList>
 						<ObjectList Name="Entries">
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{13504EC7-01DD-45E5-8F61-E1EC47CCE96B}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+							<MultiSwitchEntry Name="" ID="{13504EC7-01DD-45E5-8F61-E1EC47CCE96B}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{4B7ED24E-FF95-4A31-AD70-D59898FA003B}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{5B4702EE-FE93-48AC-8D08-A9AB4159A8B1}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{673A9CFC-6895-4F18-8A84-596DB02F1792}">
-										<PropertyList>
-											<Property Name="Probability" Type="int32" Value="50"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{673A9CFC-6895-4F18-8A84-596DB02F1792}">
+								<PropertyList>
+									<Property Name="Probability" Type="int32" Value="50"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{99CC25A8-F6DB-4652-B7AA-E30DDA53A2DC}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{0E966A86-64B5-4423-9E61-D21FB29D399A}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{BC0CC01D-3658-4E9C-854F-2A04C9DC4899}">
-										<PropertyList>
-											<Property Name="Probability" Type="int32" Value="0"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{BC0CC01D-3658-4E9C-854F-2A04C9DC4899}">
+								<PropertyList>
+									<Property Name="Probability" Type="int32" Value="0"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{4229BC4C-1341-4BFC-A543-42985EB03DB5}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{E0661FE6-6DF1-484D-B67F-FCB20524CA84}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
 						</ObjectList>
 					</ObjectLists>
 				</DialogueEvent>
 				<DialogueEvent Name="ChainPlaylist" ID="{C9128F3D-94E1-4372-A6F0-C215812EA658}">
 					<ObjectLists>
 						<ObjectList Name="Arguments">
-							<Reference>
-								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="Hostility" ID="{493722E8-CD8E-4630-8C92-AB26D4D3630B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
+							<PluginInnerObject Name="" ID="{979CFC3C-B396-4103-AF05-7586F7DBC4F8}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{EAE5D4E7-5955-47EE-A7DC-3BA881888D9D}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{A74957C1-9896-43CC-9DC2-0E9065C54EDC}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="Hostility" ID="{493722E8-CD8E-4630-8C92-AB26D4D3630B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
 						</ObjectList>
 						<ObjectList Name="Entries">
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{EB4ABFF5-B6DC-400D-B0E9-C158F4161F55}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+							<MultiSwitchEntry Name="" ID="{EB4ABFF5-B6DC-400D-B0E9-C158F4161F55}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{CAECAEB0-9FC6-4C40-A9EB-5552D2342665}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{C5F7A959-06AB-4497-AC87-5C58BEFFA73E}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{93438919-735C-4F3F-BE87-FB829E6E1FBA}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Hostility" ID="{493722E8-CD8E-4630-8C92-AB26D4D3630B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{1C5850D4-FF28-4B36-8976-499272400128}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{1C5850D4-FF28-4B36-8976-499272400128}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{06C7BDD3-1C09-4A31-91D9-25E26E9BCFBF}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{B0301045-47C7-4638-AC9F-841812663BEA}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{242D6F4F-7968-4A88-9846-E3C6D10EAFB2}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Hostility" ID="{493722E8-CD8E-4630-8C92-AB26D4D3630B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{139D035B-2D76-4C52-995F-111DF6DA7A19}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{139D035B-2D76-4C52-995F-111DF6DA7A19}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{57165771-CDE7-49F7-B02D-797A6B37F1F3}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{3342EBC8-59B0-43A3-8F93-F8FDFB19F970}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{84E29DB4-FA22-4545-A6A9-9F67FDBBFD52}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Friendly" ID="{70363629-B3F7-4915-A13B-8E66FD7691F3}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{2EB46CE0-5908-49A7-8882-510C6D8AC12C}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{2EB46CE0-5908-49A7-8882-510C6D8AC12C}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{0A27BE9E-F6CF-4286-8E46-D6956EFD0A84}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{D297F11F-AF7C-42B4-BFAE-2566EBF63D2B}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{5DE75F05-D161-4078-B4B2-2B013933A80C}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Hostile" ID="{C1399CF8-F925-4333-9744-A8D072903D07}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{906F1912-CDEF-48B8-952E-0BBCC35B6B81}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="Silence" ID="{A453F51A-B766-4F2A-B52A-FA4231E60FF9}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{906F1912-CDEF-48B8-952E-0BBCC35B6B81}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Silence" ID="{A453F51A-B766-4F2A-B52A-FA4231E60FF9}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{7F102F01-C5BA-4446-BC22-1CDBA8BFB143}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{C30AACB6-8F1B-4E66-A393-79481FE9DBD9}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-												<Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{C9FF9B1B-A110-45B3-8E68-DAED15FB7562}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
 													<ObjectRef Name="Neutral" ID="{9EBF008D-408C-43BB-BE30-3C9401BCF75B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
 						</ObjectList>
 					</ObjectLists>
 				</DialogueEvent>
@@ -865,17 +1093,213 @@
 					</PropertyList>
 					<ObjectLists>
 						<ObjectList Name="Arguments">
-							<Reference>
-								<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-							</Reference>
+							<PluginInnerObject Name="" ID="{360B8090-28CC-4020-BF5D-213831CFCBFE}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{439CD3B1-C2A5-4049-ACA3-D881CE95FB8C}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
 						</ObjectList>
 						<ObjectList Name="Entries">
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{ADFD9A37-251A-47B5-B97B-3B5F234A2DBB}">
+							<MultiSwitchEntry Name="" ID="{ADFD9A37-251A-47B5-B97B-3B5F234A2DBB}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{9B75E205-527F-461D-A1B7-8682DDE0956C}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{D9BCCED2-CD26-4F79-A935-42C0FD515214}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{CB38C85E-0183-4EB9-B845-E1C678255236}">
+								<PropertyList>
+									<Property Name="Weight" Type="int32">
+										<ValueList>
+											<Value>90</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{AB05EE8A-36DD-4417-A104-0EE0D3B0E2BA}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{10371BEC-1563-4B85-A0EC-1CD3B7430FA2}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{2BE3FF8C-9E8A-4D84-A4E2-17DA6603426C}">
+								<PropertyList>
+									<Property Name="Weight" Type="int32">
+										<ValueList>
+											<Value>100</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{743B71F1-24DB-4DEE-AA74-0ED1641702BC}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{48875635-9529-4828-A3DD-6DF732630CA3}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{7AA42AA5-3DCD-48CE-AAC3-EBF46122B99C}">
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{CB566007-3C06-484F-8469-B4476259437D}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{15CDACFF-1988-44EE-A9D1-624DD7AC8256}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{9EF1C6AE-C3EE-498A-AC4C-5AFD830A81EA}">
+								<PropertyList>
+									<Property Name="Weight" Type="int32">
+										<ValueList>
+											<Value>0</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{0B9B03A7-1643-4C96-8FD5-3C6CD3BC372F}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{8BAA0991-0DC3-435C-9467-106ACF98D6A2}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{F5EDC3FF-9232-419A-BC4E-B6A7B1B0BAE9}">
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{9E987660-2490-42E4-8B8B-045105C0E3B2}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+										<PluginInnerObject Name="" ID="{56ED5B89-3109-4EA3-99ED-3F0EE42CB391}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+						</ObjectList>
+					</ObjectLists>
+				</DialogueEvent>
+				<Folder Name="WeightsPlaylist" ID="{92836F8D-EDAC-4E4B-A0EF-68830D800400}" ShortID="23556847">
+					<ChildrenList>
+						<DialogueEvent Name="Match100Fallback0" ID="{38986D7F-BDD5-4DC2-B602-5C7256E23697}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{D44A50A7-A556-4FDF-A9FC-97D46DA7D0E7}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{2A7B5FE9-9066-4EA0-978A-1E4C4A452C3E}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<MultiSwitchEntry Name="" ID="{D318F3C1-B60A-493C-9C2A-0824D8BFB0CE}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>100</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
 										<ReferenceList>
 											<Reference Name="AudioNode">
 												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
@@ -883,20 +1307,113 @@
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
+												<PluginInnerObject Name="" ID="{7565EF39-821F-4680-90E3-5A793A143C17}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{A7B5DA5D-BD88-4834-BBD1-78CA157244DB}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
 											</ObjectList>
 										</ObjectLists>
 									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{CB38C85E-0183-4EB9-B845-E1C678255236}">
+									<MultiSwitchEntry Name="" ID="{3E464F34-57D6-42D8-882D-16CD03BD9234}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>0</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{91F8971F-6AB8-4774-AB5C-F39835EC02D7}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{8E1A2208-0375-4317-9C85-A698A8663994}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match100Fallback90" ID="{4D5BF928-7EFE-4301-9AC6-72706B1AFF3E}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{713245B5-24E8-4F8E-84CF-D97007905BE4}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{90B04934-C9D0-49A2-AD21-F789EF26156D}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<MultiSwitchEntry Name="" ID="{2E164FF7-B348-4E81-8A43-6D63F45A9B18}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>100</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{74687336-B62E-4C53-8BF5-DD7678BBA85A}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{53914B28-B965-4268-A30C-E068DEA30003}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{A3DDA534-4FF1-41AF-94B9-A9BB2721AC53}">
 										<PropertyList>
 											<Property Name="Weight" Type="int32">
 												<ValueList>
@@ -906,25 +1423,428 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="Alley_Gang" ID="{74E03249-C932-4CAC-8DA5-3F2955189C0E}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Gang" ID="{E65E35CB-E723-4000-947F-190A3DF81059}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
+												<PluginInnerObject Name="" ID="{475CFC68-C29E-4F72-AD0D-9AEA69EA880B}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{D6EE9C29-4CCA-497B-968E-1EADB66304A7}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
 											</ObjectList>
 										</ObjectLists>
 									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{2BE3FF8C-9E8A-4D84-A4E2-17DA6603426C}">
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match90Fallback80" ID="{3EF93008-749B-4B1D-BF0B-9BA60BC1AFC0}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{4DB933E3-D48C-4472-AF32-AA2ADE045678}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{4292FAC1-EA54-467B-8DCD-787CE7A63DF9}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<MultiSwitchEntry Name="" ID="{54EFBB4A-5E2E-44F6-A655-74E4C0B061BF}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>90</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{C1C74E81-0CCC-4490-8AB2-57C4E71C39AA}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{8719E335-B5EA-413A-810E-FCA2ABB9DACC}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{4969EE8D-C9E4-4880-A34F-F10B6FE64C91}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>80</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{743D2076-C746-41C4-8EC0-9D856BA98F7F}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{D31865F4-F1C7-4B3C-BE39-5E1D2649E524}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match90Fallback90" ID="{8461E8F3-C750-44F1-B538-E44F7065FE4C}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{86A59680-9012-4F11-B043-248A05C93DCA}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{C8B20252-1132-466A-BA87-39371D6E6715}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<MultiSwitchEntry Name="" ID="{6E15D4EE-699A-4C17-B368-A6F862FE8291}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>90</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{9CC208F9-9DB8-4F8F-9CA6-6318F930A4FE}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{99097901-45D5-440E-9D4D-0CE88FDD28F7}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{AD986002-21E6-4742-9AB8-E87F42ABF11A}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>90</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{EAD3B6AA-BC65-4AC2-9966-7D77D43C2954}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{278DA377-FB0D-447E-ADA4-CCE7ABF2382F}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match50Fallback50" ID="{25209E4C-1706-4276-9B36-0B5F360A2755}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{CC4A15DC-0049-471C-BDA4-0861572778F4}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{24DD128F-F54D-4044-BBC7-6AC48E6D6735}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<MultiSwitchEntry Name="" ID="{723C2531-964C-4485-8AEE-217ED8E42D4C}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{A0AA9A3A-BADA-41E8-A34F-A8962AD70646}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{A7798916-42E7-4621-9911-DD1078273ED7}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{CAC5BB3A-8952-4CCC-A5D6-DFC939BA4DE9}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{09BC47B9-89C4-4E00-889D-D9FFA22F5476}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{20AAC4CB-CFF8-46C7-9C2E-F087181B9789}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match80Fallback20" ID="{B837BB3D-77D6-4588-B5EA-7EBE86C698BA}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{CB639E45-9C35-438E-82E3-22555979EBDE}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{FB048301-7A17-4E9C-9806-22C4AABC4116}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<MultiSwitchEntry Name="" ID="{45BDD028-9977-4EB1-9AD9-9FC367432094}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>80</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{FE44E8FE-39D5-4F73-BE4D-F424B2737488}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{0BB4F28D-BF8C-4B6D-A53A-01F7C37B5E99}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{F1D23D2D-8223-44D3-A8C4-FDA1292F92EE}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>20</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{322ACCF9-903D-4B31-BF3A-FFE522C9AE6C}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{65F0DD5A-A05A-4E77-966B-17DF53AE82E0}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</ObjectList>
+							</ObjectLists>
+						</DialogueEvent>
+						<DialogueEvent Name="Match100Fallback100" ID="{81B7C3AF-D501-4477-9F68-465BA3EBFAD8}">
+							<PropertyList>
+								<Property Name="Mode" Type="int16" Value="1"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{D3C3A05F-C3D8-4B8C-A6DF-104864871B5D}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{85B8F48E-D17A-4DB8-8548-265D3267F860}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<MultiSwitchEntry Name="" ID="{0511E57F-B5EA-4747-9160-1D466D90D22C}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>100</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{D02595C5-293F-46FA-AE99-34352A0BCF32}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{AEAAC7B3-8487-47B2-AB25-2D90F4DD84B1}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{0BB8A58E-4BA5-494A-BD71-158E99B8CB99}">
 										<PropertyList>
 											<Property Name="Weight" Type="int32">
 												<ValueList>
@@ -939,571 +1859,23 @@
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
+												<PluginInnerObject Name="" ID="{0E9FC6B4-E991-4824-9ED5-150D7D9A0481}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{6EC1C718-87A9-4EA2-A059-EB2B6620C6F9}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
 											</ObjectList>
 										</ObjectLists>
 									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{7AA42AA5-3DCD-48CE-AAC3-EBF46122B99C}">
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{9EF1C6AE-C3EE-498A-AC4C-5AFD830A81EA}">
-										<PropertyList>
-											<Property Name="Weight" Type="int32">
-												<ValueList>
-													<Value>0</Value>
-												</ValueList>
-											</Property>
-										</PropertyList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{F5EDC3FF-9232-419A-BC4E-B6A7B1B0BAE9}">
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
-												<Reference>
-													<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-				</DialogueEvent>
-				<Folder Name="WeightsPlaylist" ID="{92836F8D-EDAC-4E4B-A0EF-68830D800400}" ShortID="23556847">
-					<ChildrenList>
-						<DialogueEvent Name="Match100Fallback0" ID="{38986D7F-BDD5-4DC2-B602-5C7256E23697}">
-							<PropertyList>
-								<Property Name="Mode" Type="int16" Value="1"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{D318F3C1-B60A-493C-9C2A-0824D8BFB0CE}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>100</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{3E464F34-57D6-42D8-882D-16CD03BD9234}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>0</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</DialogueEvent>
-						<DialogueEvent Name="Match100Fallback90" ID="{4D5BF928-7EFE-4301-9AC6-72706B1AFF3E}">
-							<PropertyList>
-								<Property Name="Mode" Type="int16" Value="1"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{2E164FF7-B348-4E81-8A43-6D63F45A9B18}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>100</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{A3DDA534-4FF1-41AF-94B9-A9BB2721AC53}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>90</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</DialogueEvent>
-						<DialogueEvent Name="Match90Fallback80" ID="{3EF93008-749B-4B1D-BF0B-9BA60BC1AFC0}">
-							<PropertyList>
-								<Property Name="Mode" Type="int16" Value="1"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{54EFBB4A-5E2E-44F6-A655-74E4C0B061BF}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>90</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{4969EE8D-C9E4-4880-A34F-F10B6FE64C91}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>80</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</DialogueEvent>
-						<DialogueEvent Name="Match90Fallback90" ID="{8461E8F3-C750-44F1-B538-E44F7065FE4C}">
-							<PropertyList>
-								<Property Name="Mode" Type="int16" Value="1"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{6E15D4EE-699A-4C17-B368-A6F862FE8291}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>90</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{AD986002-21E6-4742-9AB8-E87F42ABF11A}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>90</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</DialogueEvent>
-						<DialogueEvent Name="Match50Fallback50" ID="{25209E4C-1706-4276-9B36-0B5F360A2755}">
-							<PropertyList>
-								<Property Name="Mode" Type="int16" Value="1"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{723C2531-964C-4485-8AEE-217ED8E42D4C}">
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{CAC5BB3A-8952-4CCC-A5D6-DFC939BA4DE9}">
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</DialogueEvent>
-						<DialogueEvent Name="Match80Fallback20" ID="{B837BB3D-77D6-4588-B5EA-7EBE86C698BA}">
-							<PropertyList>
-								<Property Name="Mode" Type="int16" Value="1"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{45BDD028-9977-4EB1-9AD9-9FC367432094}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>80</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{F1D23D2D-8223-44D3-A8C4-FDA1292F92EE}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>20</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</DialogueEvent>
-						<DialogueEvent Name="Match100Fallback100" ID="{81B7C3AF-D501-4477-9F68-465BA3EBFAD8}">
-							<PropertyList>
-								<Property Name="Mode" Type="int16" Value="1"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{0511E57F-B5EA-4747-9160-1D466D90D22C}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>100</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{0BB8A58E-4BA5-494A-BD71-158E99B8CB99}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>100</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
-															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
 								</ObjectList>
 							</ObjectLists>
 						</DialogueEvent>
@@ -1513,98 +1885,118 @@
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
+									<PluginInnerObject Name="" ID="{2FDA2EF3-821B-48E6-8AD5-9C1471A6F2C3}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{093D2852-21CC-459B-ABAE-429193E81F2A}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
 								</ObjectList>
 								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{7543F0AD-9DEC-475A-BB8A-DD086215F420}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>60</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+									<MultiSwitchEntry Name="" ID="{7543F0AD-9DEC-475A-BB8A-DD086215F420}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>60</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{CFDE04B5-7E28-42C4-86DD-6426E541CDBE}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{86BE1548-B9FF-4FF7-8E66-365D9C905A1D}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{273B8765-512E-418A-9B39-B29E03165151}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>20</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{273B8765-512E-418A-9B39-B29E03165151}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>20</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{D20D125E-24E6-461A-B6D3-F08B650EEB83}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{2133254C-52A7-4E31-B5E4-637951B24E44}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{797359CB-8503-4930-AC9B-D0B97CA367B8}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>20</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{797359CB-8503-4930-AC9B-D0B97CA367B8}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>20</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{A24D89D4-6A55-446A-A833-631A45799DED}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{D07F82E1-F808-4FB7-9A98-961F2FB3BFC0}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
 								</ObjectList>
 							</ObjectLists>
 						</DialogueEvent>
@@ -1614,84 +2006,104 @@
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
+									<PluginInnerObject Name="" ID="{6025F295-52BA-437B-BBF1-EE502A60FF5A}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{947DD290-F59F-4BD0-B4D5-37AE3F70293B}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
 								</ObjectList>
 								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{05842FBB-46BB-4308-BAA5-CDB51E66B863}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>60</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+									<MultiSwitchEntry Name="" ID="{05842FBB-46BB-4308-BAA5-CDB51E66B863}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>60</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{5286396B-4B40-4956-BBA6-C66196D03167}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{41A9BB59-5C31-4284-A093-E5A939EBE73A}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{C028EDC9-4D39-4717-97EA-17741CC0A41F}">
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{C028EDC9-4D39-4717-97EA-17741CC0A41F}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{BDA46B60-1B40-4E74-9438-07BC88C7BA65}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{C9C26AA8-97A5-4123-A852-8361C789818F}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{E443D11A-7FDE-48F9-9F24-1068141368BB}">
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{E443D11A-7FDE-48F9-9F24-1068141368BB}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{C2DF325C-D7B8-479B-8D8C-8B9F7855BC24}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{D3F6983C-70B4-4902-939D-38872877D0A9}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
 								</ObjectList>
 							</ObjectLists>
 						</DialogueEvent>
@@ -1701,207 +2113,275 @@
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
+									<PluginInnerObject Name="" ID="{4DA94734-B7A4-4CCC-9409-3B02CED75365}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{196C0275-A959-4ED1-8BD8-721197CC47AC}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
 								</ObjectList>
 								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{AF4F7861-DE4F-4161-8847-652907D9FE96}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>0</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+									<MultiSwitchEntry Name="" ID="{AF4F7861-DE4F-4161-8847-652907D9FE96}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>0</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{B8FADCC1-693C-4F4E-B12A-5897C99FA57D}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{0A466456-FB09-46D8-8E02-011C66614298}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{6F2B8F1D-6122-406B-B5E3-B7FD2F95E3B9}">
-												<PropertyList>
-													<Property Name="Weight" Type="int32">
-														<ValueList>
-															<Value>0</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{6F2B8F1D-6122-406B-B5E3-B7FD2F95E3B9}">
+										<PropertyList>
+											<Property Name="Weight" Type="int32">
+												<ValueList>
+													<Value>0</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{8DE97A37-46A3-4948-9AF0-8D0B0D5E7F66}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{9CE0506C-2B15-4E95-8BC7-9AB5D11DD108}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
 								</ObjectList>
 							</ObjectLists>
 						</DialogueEvent>
 						<DialogueEvent Name="OrderedPlaylist" ID="{15D123DB-6102-4358-8FC6-ECFD3866ABB1}">
 							<ObjectLists>
 								<ObjectList Name="Arguments">
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
-									<Reference>
-										<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
-									</Reference>
+									<PluginInnerObject Name="" ID="{56DAE146-7181-48FE-9833-322A0A217DBA}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{4047EB62-19AE-4C56-8039-8C081C98B775}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{97E404BD-848D-414B-9186-A8BD1774EC89}" PluginName="ArgumentsSlot" CompanyID="0" PluginID="87">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
 								</ObjectList>
 								<ObjectList Name="Entries">
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{65C433D1-4DBA-411C-B65E-C09F57AFE141}">
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+									<MultiSwitchEntry Name="" ID="{65C433D1-4DBA-411C-B65E-C09F57AFE141}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{99CC6C0D-B0AC-4C4A-AF63-25BF3A094965}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{3FC17AA7-015E-465E-A5F6-BC6860542482}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="EnemyCount" ID="{C75F2BF6-39A4-442E-BC71-9C94290ED855}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{FB1D529C-9B25-411D-831F-DA5F8BBCA925}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{CDF4F39A-A28D-4992-B768-8D7A6E15EFC7}">
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{CDF4F39A-A28D-4992-B768-8D7A6E15EFC7}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Alley_Alone" ID="{88D89185-8801-46B1-AA72-9EA6E48A2543}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{34982BA2-DC03-4EF7-A96F-B285B706C899}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{D0164462-1751-4D4A-AF66-D6BB0F93380F}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{7CB26B81-38F1-468E-AAE0-5C84A24F2516}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{2D9F02A1-DABF-4878-B303-09BB0756C645}">
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hangar_Alone" ID="{A759D201-7281-40BD-BCA3-854689709665}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{2D9F02A1-DABF-4878-B303-09BB0756C645}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hangar_Alone" ID="{A759D201-7281-40BD-BCA3-854689709665}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{5F19C77E-01B6-4A02-840C-F512AE865601}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{C338B22A-F99E-466D-9A33-813715A984F1}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{6AFE1DDA-96AB-47F8-983F-B43574611DB5}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Hangar" ID="{478DA5BD-1853-4C84-82EA-EAC34B47ECCB}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{9CFF6FF5-3A7F-40AE-9616-65DD80B88FB0}">
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Outside_Gang" ID="{A378C770-AD1F-428A-8FE0-1E23006427EB}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{9CFF6FF5-3A7F-40AE-9616-65DD80B88FB0}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Outside_Gang" ID="{A378C770-AD1F-428A-8FE0-1E23006427EB}" WorkUnitID="{5E42C017-C023-46C2-9503-950FD24100E7}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{340B8592-5D7D-42F8-A32B-0111B4E07FFC}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{C536B1D4-ABE6-4C4B-A98F-5E7C8AB3BC7C}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{4C93C2E1-AC9C-4F7B-A759-C2E7777AC9F2}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{BEE8DB25-F963-4098-944B-EA0939A7FD0B}">
-												<ReferenceList>
-													<Reference Name="AudioNode">
-														<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-													</Reference>
-												</ReferenceList>
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{BEE8DB25-F963-4098-944B-EA0939A7FD0B}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Hello_SFX" ID="{F75C4417-F29C-432F-B11E-80AFF6BD297A}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{0FF8CD43-6959-4C37-A891-76174E29C460}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alley" ID="{E3C2BA97-3878-4DF7-86FE-F58D8B4BAC2B}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{2B49A96C-6205-4AFF-B1C1-563C34C531B1}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Alone" ID="{AA33E989-8D10-4A5D-B331-F3523694AC61}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-														<Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+												<PluginInnerObject Name="" ID="{9BB08045-8943-4D24-9E2E-3A5CFDEBCF46}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
 															<ObjectRef Name="Area" ID="{068A1AA4-41FB-4348-B761-B36460B8916E}" WorkUnitID="{282BB9B1-1E57-4655-A417-FA6FA18005A5}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
 								</ObjectList>
 							</ObjectLists>
 						</DialogueEvent>
