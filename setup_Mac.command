@@ -6,6 +6,16 @@ SCRIPT_DIR="$(dirname "$0")"
 # Navigate to the script directory
 cd "$SCRIPT_DIR"
 
+# Get the Unity installation path
+if [ -z "$1" ]; then
+  read -p "Enter your Unity installation path: " unityPath
+else
+  unityPath="$1"
+fi
+
+echo Running Unity in batch mode to resolve packages. This may take a moment
+"$unityPath" -batchmode -resolvePackages -projectPath "Unity" -quit
+
 # Generate the WAV files
 python3 WwiseProject/GenerateProjectWavFiles.py
 
@@ -32,13 +42,6 @@ if [ -z "$WwiseInstalationPathMac" ]; then
   echo "Error: WwiseInstalationPathMac is not defined in the WwiseSettings.xml."
 else
   "$WwiseInstalationPathMac/Contents/Tools/WwiseConsole.sh" generate-soundbank "$SCRIPT_DIR/WwiseProject/Gyms.wproj"
-fi
-
-# Get the Unity installation path
-if [ -z "$1" ]; then
-  read -p "Enter your Unity installation path: " unityPath
-else
-  unityPath="$1"
 fi
 
 # Setup addressables
