@@ -22,8 +22,10 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
 public class FolderMenuItem : SceneMenuItem
@@ -43,7 +45,7 @@ public class FolderMenuItem : SceneMenuItem
     protected FolderMenuItem mParent = null;
     protected int mItemCount = 0;
 
-    public void Init(FolderHierarchy hierarchy)
+    public IEnumerator Init(FolderHierarchy hierarchy)
     {
         _isOpen = false;
 
@@ -51,12 +53,25 @@ public class FolderMenuItem : SceneMenuItem
         GameObject verticalLayout = gameObject.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
         verticalLayout.transform.Translate(new Vector3(LowerLevelStep, 0));
         _sceneName = hierarchy.Name;
+#if UNITY_WEBGL
+        var localizedStringHandle = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("GymNames", hierarchy.Name);
+        yield return localizedStringHandle;
+        if (localizedStringHandle.Status == AsyncOperationStatus.Succeeded)
+        {
+            _name.text =  localizedStringHandle.Result;
+            if (_name.text == hierarchy.Name)
+            {
+                Debug.LogWarning("Couldn't find \"" + _name.text + "\" in the localization table \"GymNames\".");
+            }
+        }
+#else
         _name.text = LocalizationSettings.StringDatabase.GetLocalizedString("GymNames", hierarchy.Name);
         if (_name.text == hierarchy.Name)
         {
             Debug.LogWarning("Couldn't find \"" + _name.text + "\" in the localization table \"GymNames\".");
         }
-
+        yield return null;
+#endif
         gameObject.name = hierarchy.Name;
         mItemCount = hierarchy.Subfolders.Length;
         foreach (FolderHierarchy subfolder in hierarchy.Subfolders)
@@ -65,7 +80,7 @@ public class FolderMenuItem : SceneMenuItem
             {
                 _containsJustAGym = false;
                 FolderMenuItem folder = Instantiate(_folderObject, verticalLayout.transform);
-                folder.Init(subfolder);
+                yield return folder.Init(subfolder);
                 folder.mParent = this;
                 folder.gameObject.SetActive(false);
                 _isEmpty = false;
@@ -75,7 +90,7 @@ public class FolderMenuItem : SceneMenuItem
             {
                 SceneMenuItem fileUI = Instantiate(_template, verticalLayout.transform);
                 fileUI.transform.Translate(new Vector3(LowerLevelStep, 0));
-                fileUI.Init(hierarchy.Name);
+                yield return fileUI.Init(hierarchy.Name);
                 _isEmpty = false;
             }
         }

@@ -22,6 +22,7 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -35,7 +36,7 @@ public class MainMenu : MonoBehaviour
     private int totalAmountOfItem = 0;
     FolderHierarchy _folderHierarchy = default;
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -43,12 +44,12 @@ public class MainMenu : MonoBehaviour
         _folderHierarchy = Resources.Load<FolderHierarchy>(SceneListPath);
 
         //Load the first level folders
-        InstantiateFolders();
+        yield return InstantiateFolders();
 
         UpdatePosition();
     }
 
-    private void InstantiateFolders()
+    private IEnumerator InstantiateFolders()
     {
         FolderMenuItem folderTemplate = gameObject.GetComponentInChildren<FolderMenuItem>(true);
         foreach (FolderHierarchy subFolder in _folderHierarchy.Subfolders)
@@ -56,7 +57,7 @@ public class MainMenu : MonoBehaviour
             if (subFolder.HasGym())
             {
                 FolderMenuItem folder = Instantiate(folderTemplate, folderTemplate.gameObject.transform.parent);
-                folder.Init(subFolder);
+                yield return folder.Init(subFolder);
                 folder.gameObject.SetActive(true);
                 if (_selectedComponent == default)
                 {

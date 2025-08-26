@@ -22,22 +22,39 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SceneMenuItem : MenuItem
 {
     protected string _sceneName = default;
-    public void Init(string sceneName)
+    public IEnumerator Init(string sceneName)
     {
         _sceneName = sceneName;
+#if UNITY_WEBGL 
+        var localizedStringHandle = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("GymNames", sceneName);
+        yield return localizedStringHandle;
+        if (localizedStringHandle.Status == AsyncOperationStatus.Succeeded)
+        {
+            _name.text =  localizedStringHandle.Result;
+            if (_name.text == sceneName)
+            {
+                Debug.LogWarning("Couldn't find \"" + _name.text + "\" in the localization table \"GymNames\".");
+            }
+        }
+#else
         _name.text = LocalizationSettings.StringDatabase.GetLocalizedString("GymNames", sceneName);
         if (_name.text == sceneName)
         {
             Debug.LogWarning("Couldn't find \"" + _name.text + "\" in the localization table \"GymNames\".");
         }
+        yield return null;
+#endif
+
         gameObject.SetActive(false);
     }
 
