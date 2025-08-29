@@ -47,7 +47,9 @@ namespace Tests
 #endif
             foreach (var e in events)
             {
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
                 yield return e.data.WaitForBankToBeLoaded(gameObject);
+#endif
                 e.HandleEvent(gameObject);
             }
             Assert.AreEqual(expected, PostSilence());

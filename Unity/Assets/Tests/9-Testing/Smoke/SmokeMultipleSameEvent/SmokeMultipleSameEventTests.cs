@@ -24,9 +24,11 @@ the specific language governing permissions and limitations under the License.
 
 using NUnit.Framework;
 using System.Collections;
-using AK.Wwise.Unity.WwiseAddressables;
 using UnityEngine;
 using UnityEngine.TestTools;
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+using AK.Wwise.Unity.WwiseAddressables;
+#endif
 
 namespace Tests
 {

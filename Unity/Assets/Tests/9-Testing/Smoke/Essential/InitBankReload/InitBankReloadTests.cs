@@ -36,7 +36,9 @@ namespace Tests
 {
     public class InitBankReloadTests : GymTests
     {
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
         private WwiseAddressableSoundBank bank;
+#endif
         private bool firstCall = true;
         private DateTime startTime;
         private bool timedOut = false;
@@ -95,9 +97,9 @@ private IEnumerator WaitForBankLoad()
 #endif
         }
         
-        #if UNITY_WEBGL
+#if UNITY_WEBGL
         private async Awaitable CompleteLoadBank()
-        #else
+#else
         private async Task CompleteLoadBank()
         #endif
         {
@@ -106,6 +108,7 @@ private IEnumerator WaitForBankLoad()
                 startTime = DateTime.Now;
                 timedOut = false;
             }
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
             while (bank.LoadState == BankLoadState.Loading || bank.LoadState == BankLoadState.WaitingForPrepareEvent || bank.LoadState == BankLoadState.WaitingForInitBankToLoad)
             {
                 firstCall = false;
@@ -122,6 +125,7 @@ private IEnumerator WaitForBankLoad()
                 await Task.Yield();
 #endif
             }
+#endif
             firstCall = true;
         }
         
@@ -129,7 +133,9 @@ private IEnumerator WaitForBankLoad()
         [UnityTest]
         public IEnumerator InitBankReload_Tests()
         {
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
             bank = AkAddressableBankManager.InitBank;
+#endif
             yield return StartTest(SceneName);
             yield return WaitForBankLoad();
             // Basic reload
