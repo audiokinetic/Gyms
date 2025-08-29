@@ -65,7 +65,7 @@ public class StressOpenLevel_ExternalSources : OpenLevel_Trigger
         {
             AkSoundEngine.PostEvent(_event.Id, gameObject, 0, null, 0, 3, _externalSourceInfoArray);
         }
-      
+        yield return null;
     }
 
     protected override IEnumerator PostLoadAction()
