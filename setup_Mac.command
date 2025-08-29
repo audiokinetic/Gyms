@@ -61,7 +61,7 @@ checkProcess() {
     if [ "$isRunning" == "true" ]; then
       echo "Successfully completed the operation."
     else
-      echo "An error happened and $processName was not running."
+      echo "An error occurred and prevented $processName from running."
     fi
   fi
 }
