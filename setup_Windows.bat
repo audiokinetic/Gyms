@@ -41,7 +41,7 @@ if "%ERRORLEVEL%"=="0" (
         echo Addressables setup was completed successfully.
 
     ) else (
-        echo An error happened and %processName% wasn't running.
+        echo An error occurred and prevented %processName% from running.
     )
 )
 pause
