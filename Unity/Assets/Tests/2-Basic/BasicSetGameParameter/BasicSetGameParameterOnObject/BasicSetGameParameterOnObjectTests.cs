@@ -63,6 +63,20 @@ namespace Tests
             Assert.AreEqual(expected, value);
             LogOutput("Set out of bounds upper: ", true);
 
+            //Set Game Parameter with Transition
+            onObjectTestComponents.rtpcClass.SetValue(onObjectTestComponents.gameObject, 0.0f, 400);
+            yield return new WaitForSeconds(0.2f);
+            value = onObjectTestComponents.rtpcClass.GetValue(onObjectTestComponents.gameObject);
+            //Game Parameter will transition linearly from 1600 to 0 in 0.4 seconds. It should be around 800 after 0.2 seconds 
+            Assert.LessOrEqual(value, 850.0f);
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
+            //Due to the async nature of Addressables, we are a bit more lenient.
+            Assert.GreaterOrEqual(value, 685.0f);
+#else
+            Assert.GreaterOrEqual(value, 750.0f);
+#endif
+            LogOutput("Set Game Parameter with Transition: ", true);
+
             yield return FinishTest(SceneName);
         }
     }
