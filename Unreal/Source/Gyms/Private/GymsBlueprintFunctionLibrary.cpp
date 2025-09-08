@@ -24,6 +24,7 @@ the specific language governing permissions and limitations under the License.
 
 #include "GymsBlueprintFunctionLibrary.h"
 
+#include "AutomationBlueprintFunctionLibrary.h"
 #include "FunctionalTestBase.h"
 #include "Gyms.h"
 #include "Engine/Engine.h"
@@ -171,4 +172,10 @@ int32 UGymsBlueprintFunctionLibrary::GetOutputDeviceId(const FString& DeviceName
 #else
 	return -1;
 #endif
+}
+
+void UGymsBlueprintFunctionLibrary::IgnoreErrorMessages(const FString& IgnoredError)
+{
+	UAutomationBlueprintFunctionLibrary::AddExpectedLogError(IgnoredError, 0);
+	UE_LOG(LogTemp, Error, TEXT("%s"), *IgnoredError);
 }
