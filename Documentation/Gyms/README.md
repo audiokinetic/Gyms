@@ -77,8 +77,34 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `2-Basic/BasicPostLocation`_
 - Posting Events at given location.
 
+### Playing a dynamic sequence from an AudioNode
+
+- _Folder: `2-Basic/BasicDynamicDialogue/BasicDynamicDialogueDynamicSequenceFromAudioNode`_
+- Posting a Dynamic Sequence from an AudioNode.
+
+### Using the fallback path
+
+- _Folder: `2-Basic/BasicDynamicDialogue/BasicDynamicDialogueFallbackPath`_
+- Using the Dynamic Dialogue Fallback path.
+
+### Manipulating a playlist
+
+- _Folder: `2-Basic/BasicDynamicDialogue/BasicDynamicDialoguePlaylistManipulation`_
+- Manipulating a Dynamic Dialogue playlist.
+
+### Using probabilities
+
+- _Folder: `2-Basic/BasicDynamicDialogue/BasicDynamicDialogueProbabilities`_
+- Using probabilities to play Dynamic Dialogues.
+
+### Using Weights
+
+- _Folder: `2-Basic/BasicDynamicDialogue/BasicDynamicDialogueWeights`_
+- Using Weights to play Dynamic Dialogues.
+
 ### Seeking an Event
-- _Folder: `2-Basic/BasicSeekEvent`_ 
+
+- _Folder: `2-Basic/BasicSeekEvent`_
 - Seeking an Event at a given percentage of the duration.
 
 ### Using Game Parameters to Modify Events (RTPC)
@@ -87,6 +113,7 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - Modifying a Game Parameter to change the resulting sound of a posted Wwise Event on a game object.
 
 ### Using Game Parameters to Modify global parameters (RTPC)
+
 - _Folder: `2-Basic/BasicSetGameParameter/BasicSetGlobalGameParameter`_
 - Modifying a global Game Parameter.
 
@@ -114,6 +141,26 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 
 - _Folder: `3-Advanced/AdvancedAudioLinkVideo`_
 - Sending Unreal MediaPlayer audio to Wwise via AudioLink.
+
+### Chaining dynamic sequences
+
+- _Folder: `3-Advanced/AdvancedDynamicDialogue/AdvancedDynamicDialogueDynamicSequenceChain`_
+- Chaining Dynamic Sequences in a Dynamic Dialogue.
+
+### Modifying playlist
+
+- _Folder: `3-Advanced/AdvancedDynamicDialogue/AdvancedDynamicDialogueModifyPlaylist`_
+- Modifying a Dynamic Dialogue playlist.
+
+### Using ordered path
+
+- _Folder: `3-Advanced/AdvancedDynamicDialogue/AdvancedDynamicDialogueOrderedPath`_
+- Ordering a Dynamic Dialogue path.
+
+### Resolving arguments
+
+- _Folder: `3-Advanced/AdvancedDynamicDialogue/AdvancedDynamicDialogueResolveArguments`_
+- Resolving arguments for a Dynamic Dialogue.
 
 ### Capturing Profiler File
 
