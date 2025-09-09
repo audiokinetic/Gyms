@@ -43,7 +43,11 @@ namespace Tests
 			AkEvent akEvent = gameObject.GetComponent<AkEvent>();
 
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+	        yield return akEvent.data.WwiseObjectReference.CompleteLoadBank();
+#else
 			yield return new WaitUntil(() => akEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
 #endif
 
 			callbackScript = gameObject.GetComponent<AdvancedCallbackTypesEndOfEventTests_Callback>();
