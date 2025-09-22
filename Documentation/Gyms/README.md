@@ -157,6 +157,11 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `3-Advanced/AdvancedSubtitle`_
 - Using Markers to synchronize Wwise media and game-specific operations.
 
+### Using Set Audio Listener Override Node
+
+- _Folder: `3-Advanced/AdvancedDefaultListenerOverride`_
+- Using the Set Audio Listener Override node to change the default listener in the level.
+
 ### Using the Timeline to Animate Wwise Objects | _Unity_
 
 - _Folder: `3-Advanced/AdvancedTimeline`_

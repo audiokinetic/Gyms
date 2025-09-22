@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3A0ECD51-8738-4A9C-9810-8E51D0DCAEAC}" SchemaVersion="119">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{3A0ECD51-8738-4A9C-9810-8E51D0DCAEAC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3A0ECD51-8738-4A9C-9810-8E51D0DCAEAC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Meter" ID="{BE22CE78-4048-496C-8305-924662B1995E}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="Max" Type="Real32" Value="12"/>
+						<Property Name="Min" Type="Real32" Value="-96.3"/>
+					</PropertyList>
+					<PluginData>
+						<GameParameter Name="Volume" ID="{9BB8CFCE-E0F9-4CD5-AE76-2E16BF6F7B73}"/>
+					</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

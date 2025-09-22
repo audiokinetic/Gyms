@@ -209,6 +209,17 @@
 									</EffectSlot>
 								</Local>
 							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{E9BFFCE0-5F70-429A-91D9-1D85AA101481}" ShortID="595513587">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+												<ObjectRef Name="Meter" ID="{BE22CE78-4048-496C-8305-924662B1995E}" WorkUnitID="{3A0ECD51-8738-4A9C-9810-8E51D0DCAEAC}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
 						</ObjectList>
 						<ObjectList Name="RTPC">
 							<Reference>
