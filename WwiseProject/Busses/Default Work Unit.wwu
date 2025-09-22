@@ -185,6 +185,26 @@
 									</Reference>
 								</ReferenceList>
 							</EffectSlot>
+							<EffectSlot Name="" ID="{979E97E3-677A-4026-A7D9-39541E8C622F}" ShortID="186547493">
+								<ReferenceList>
+									<Reference Name="Effect">
+										<Custom>
+											<Effect Name="Meter (Custom)" ID="{82B4C78D-CF02-4BC6-AD9A-EFCA47C37AEB}" ShortID="452076402" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+												<PropertyList>
+													<Property Name="Max" Type="Real32" Value="12"/>
+													<Property Name="MeterMode" Type="int32" Value="1"/>
+													<Property Name="Min" Type="Real32" Value="-96.3"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="GameParameter">
+														<ObjectRef Name="Volume" ID="{CC0F58C7-B6B8-4EC2-84F2-5ABB40405678}" WorkUnitID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}"/>
+													</Reference>
+												</ReferenceList>
+											</Effect>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</EffectSlot>
 						</ObjectList>
 						<ObjectList Name="RTPC">
 							<RTPC Name="" ID="{CFE2F376-C14F-4B79-825C-9694ED606915}" ShortID="447736671">
