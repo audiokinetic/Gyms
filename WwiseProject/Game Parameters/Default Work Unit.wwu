@@ -24,6 +24,13 @@
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="Volume" ID="{CC0F58C7-B6B8-4EC2-84F2-5ABB40405678}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="12"/>
+								<Property Name="Min" Type="Real64" Value="-96.3"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<WorkUnit Name="Sequencer" ID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}" PersistMode="Reference"/>

@@ -181,6 +181,60 @@
 						<ActiveSource Name="pluckLoop" ID="{10846752-713E-42D1-8246-EF5E9E6A83C7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="ListeneerOverride_Spatial_Sawtooth" ID="{5A9489F4-1A82-4E8C-B722-8C6B2630183B}" ShortID="1022115392">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>45</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>50</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{BD5821A4-2C8B-46BF-A3FB-E6BD42D8929E}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="ListenerOverrideAttenuation" ID="{996012D2-84C4-4966-A887-B2F5E4C04561}" WorkUnitID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Tone Generator" ID="{316EEBBF-C899-4EB5-ADBA-06B6952627BE}" ShortID="627524427" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+							<PropertyList>
+								<Property Name="DecayTime" Type="Real32" Value="0.1"/>
+								<Property Name="ReleaseTime" Type="Real32" Value="0.4"/>
+								<Property Name="StartFreq" Type="Real32" Value="65"/>
+								<Property Name="SustainLevel" Type="Real32" Value="-35"/>
+								<Property Name="SustainTime" Type="Real32" Value="0"/>
+								<Property Name="SweepFreqType" Type="int32" Value="1"/>
+								<Property Name="WaveGain" Type="Real32" Value="0"/>
+								<Property Name="WaveType" Type="int32" Value="3"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Tone Generator" ID="{316EEBBF-C899-4EB5-ADBA-06B6952627BE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

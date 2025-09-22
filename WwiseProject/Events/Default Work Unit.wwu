@@ -105,6 +105,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="ListenerOverrideSpatialAudioEvent" ID="{CEAC174A-B633-4FB2-AA95-A055C3402001}">
+							<ChildrenList>
+								<Action Name="" ID="{1E49EEBB-3202-4396-95CC-C7941684C6C7}" ShortID="234578947">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ListeneerOverride_Spatial_Sawtooth" ID="{5A9489F4-1A82-4E8C-B722-8C6B2630183B}" WorkUnitID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="RTPC" ID="{48AC6143-B633-4731-AD2E-C4EED1DA1CC0}" ShortID="696782440">
@@ -771,6 +782,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="MONEVENTDETEST" ID="{6A3269C4-CB61-4327-B0CF-4EEAB203CF75}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
