@@ -42,15 +42,15 @@ public class StressOpenLevel_ExternalSources : OpenLevel_Trigger
 
     private IEnumerator Start()
     {
-        _externalSourceInfoArray[0].iExternalSrcCookie = AkSoundEngine.GetIDFromString("One");
+        _externalSourceInfoArray[0].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString("One");
         _externalSourceInfoArray[0].szFile = externalSourcesBase[0];
         _externalSourceInfoArray[0].idCodec = 2;
 
-        _externalSourceInfoArray[1].iExternalSrcCookie = AkSoundEngine.GetIDFromString("Two");
+        _externalSourceInfoArray[1].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString("Two");
         _externalSourceInfoArray[1].szFile = externalSourcesBase[1];
         _externalSourceInfoArray[1].idCodec = 2;
 
-        _externalSourceInfoArray[2].iExternalSrcCookie = AkSoundEngine.GetIDFromString("Three");
+        _externalSourceInfoArray[2].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString("Three");
         _externalSourceInfoArray[2].szFile = externalSourcesBase[2];
         _externalSourceInfoArray[2].idCodec = 2;
         
@@ -63,7 +63,7 @@ public class StressOpenLevel_ExternalSources : OpenLevel_Trigger
 #endif
         if (this)
         {
-            AkSoundEngine.PostEvent(_event.Id, gameObject, 0, null, 0, 3, _externalSourceInfoArray);
+            AkUnitySoundEngine.PostEvent(_event.Id, gameObject, 0, null, 0, 3, _externalSourceInfoArray);
         }
         yield return null;
     }

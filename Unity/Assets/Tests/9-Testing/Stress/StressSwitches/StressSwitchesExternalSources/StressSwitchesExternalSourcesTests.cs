@@ -48,18 +48,18 @@ namespace Tests
 
             // Set ExternalSource Media and post the event. 01
             AkExternalSourceInfoArray _arrayTest = new AkExternalSourceInfoArray(1);
-            _arrayTest[0].iExternalSrcCookie = AkSoundEngine.GetIDFromString("External_Source_Switch1");
+            _arrayTest[0].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString("External_Source_Switch1");
             _arrayTest[0].szFile = "01.wem";
             _arrayTest[0].idCodec = 2;
             ExpectedLogError("01 is expecting to play");
-            Assert.AreEqual(++expected, AkSoundEngine.PostEvent(akEvent.data.Id, gameObject, (uint)AkCallbackType.AK_Marker, CheckFilePlaying, "01", 1, _arrayTest));
+            Assert.AreEqual(++expected, AkUnitySoundEngine.PostEvent(akEvent.data.Id, gameObject, (uint)AkCallbackType.AK_Marker, CheckFilePlaying, "01", 1, _arrayTest));
             yield return new UnityEngine.WaitForSeconds(0.5f);
 
             // Set another media to the switch.
             _arrayTest[0].szFile = "04.wem";
             bank.data.Load();
             ExpectedLogError("04 is expecting to play");
-            Assert.AreEqual(++expected, AkSoundEngine.PostEvent(akEvent.data.Id, gameObject, (uint)AkCallbackType.AK_Marker, CheckFilePlaying, "04", 1, _arrayTest));
+            Assert.AreEqual(++expected, AkUnitySoundEngine.PostEvent(akEvent.data.Id, gameObject, (uint)AkCallbackType.AK_Marker, CheckFilePlaying, "04", 1, _arrayTest));
             yield return new UnityEngine.WaitForSeconds(0.5f);
 
             // Unload all and expect Media 01.wem to be unloaded.

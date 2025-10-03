@@ -33,7 +33,7 @@ public class StressOpenLevel_PostEvent : OpenLevel_Trigger
 
     protected override IEnumerator PreLoadAction()
     {
-#if UNITY_WEBGL
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES && UNITY_WEBGL
         yield return _ambient.data.WwiseObjectReference.CompleteLoadBank();
 #endif
         _ambient.data.Post(_ambient.gameObject);

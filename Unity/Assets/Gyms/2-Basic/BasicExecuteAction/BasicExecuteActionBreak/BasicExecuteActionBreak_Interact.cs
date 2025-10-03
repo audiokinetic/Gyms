@@ -38,6 +38,6 @@ public class BasicExecuteActionBreak_Interact : OnOffManager
 
     public override void OnAction()
     {
-        AkSoundEngine.ExecuteActionOnEvent(_event.data.Id, AkActionOnEventType.AkActionOnEventType_Break, gameObject);
+        AkUnitySoundEngine.ExecuteActionOnEvent(_event.data.Id, AkActionOnEventType.AkActionOnEventType_Break, gameObject);
     }
 }

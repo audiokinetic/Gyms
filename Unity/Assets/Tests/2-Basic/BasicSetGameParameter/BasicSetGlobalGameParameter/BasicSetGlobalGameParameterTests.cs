@@ -79,7 +79,7 @@ namespace Tests
         }
 
         [UnityTearDown]
-        public new IEnumerator TearDown()
+        public IEnumerator TearDown()
         {
             testComponents.rtpcClass.SetGlobalValue(_initialValue);
             float value = testComponents.rtpcClass.GetGlobalValue();

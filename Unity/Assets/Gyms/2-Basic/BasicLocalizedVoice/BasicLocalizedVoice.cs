@@ -51,7 +51,7 @@ public class BasicLocalizedVoice : OnOffManager
         List<string> bankToReload = new List<string>() {_localizedEvent.WwiseObjectReference.DisplayName };
         yield return WwiseEventReferencesManager.Instance.SetLanguageAndReloadLocalizedBanks(language, bankToReload);
         yield return new WaitForEndOfFrame();
-        Debug.Log("Current language: " + AkSoundEngine.GetCurrentLanguage());
+        Debug.Log("Current language: " + AkUnitySoundEngine.GetCurrentLanguage());
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
 #if UNITY_WEBGL
         yield return _localizedEvent.WwiseObjectReference.CompleteLoadBank();
