@@ -41,15 +41,15 @@ namespace Tests
             uint expected = PostSilence() + 2;
 
             AkExternalSourceInfoArray _arrayTest = new AkExternalSourceInfoArray(3);
-            _arrayTest[0].iExternalSrcCookie = AkSoundEngine.GetIDFromString("One");
+            _arrayTest[0].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString("One");
             _arrayTest[0].szFile = "01.wem";
             _arrayTest[0].idCodec = 2;
 
-            _arrayTest[1].iExternalSrcCookie = AkSoundEngine.GetIDFromString("Two");
+            _arrayTest[1].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString("Two");
             _arrayTest[1].szFile = "02.wem";
             _arrayTest[1].idCodec = 2;
 
-            _arrayTest[2].iExternalSrcCookie = AkSoundEngine.GetIDFromString("Three");
+            _arrayTest[2].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString("Three");
             _arrayTest[2].szFile = "03.wem";
             _arrayTest[2].idCodec = 2;
 

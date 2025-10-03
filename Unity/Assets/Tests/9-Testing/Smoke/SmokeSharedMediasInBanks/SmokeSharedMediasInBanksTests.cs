@@ -39,7 +39,7 @@ namespace Tests
             
             var expected = PostSilence() + 4;
             var events = gameObject.GetComponents<AkEvent>();
-#if UNITY_WEBGL
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES && UNITY_WEBGL
             foreach (var e in events)
             {
                 yield return e.data.WwiseObjectReference.CompleteLoadBank();

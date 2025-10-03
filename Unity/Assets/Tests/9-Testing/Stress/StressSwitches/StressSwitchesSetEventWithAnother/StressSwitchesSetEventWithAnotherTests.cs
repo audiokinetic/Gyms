@@ -58,8 +58,8 @@ namespace Tests
             yield return new UnityEngine.WaitForSeconds(0.1f);
 
             // Checking that no other Media was loaded with it. (Set Switch with string to another switch and make sure that the media do not play)
-            AkSoundEngine.SetSwitch("MultiNested_1", "Switch_1_1", gameObject);
-            AkSoundEngine.SetSwitch("MultiNested_1_1", "Switch_1_1_1", gameObject);
+            AkUnitySoundEngine.SetSwitch("MultiNested_1", "Switch_1_1", gameObject);
+            AkUnitySoundEngine.SetSwitch("MultiNested_1_1", "Switch_1_1_1", gameObject);
             ExpectedLogError("No default Switch value selected in group");
             ExpectedLogError("Unknown I/O device error");
             Assert.AreEqual(++expected, eventsHolder.Post_SetStatePlaySwitch_withAnother.data.Post(gameObject, (uint)AkCallbackType.AK_Marker, CheckFilePlaying, "ShouldNotPlay"));

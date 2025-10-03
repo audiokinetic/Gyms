@@ -64,12 +64,12 @@ public class GymTests
         yield return new WaitUntil(() => LoadAsset(SceneName).IsCompleted);
 #endif
 #else
-        LoadAsset(SceneName);
+        _ = LoadAsset(SceneName);
 #endif
         yield return new WaitForEndOfFrame();
     }
 
-#if UNITY_WEBGL
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES && UNITY_WEBGL
     protected IEnumerator LoadAsset(string SceneName)
     {
         GameObject testObject = Resources.Load<GameObject>(GeneratePath(SceneName));
@@ -112,7 +112,7 @@ public class GymTests
 #endif
     protected IEnumerator FinishTest(string SceneName)
     {
-        AkSoundEngine.StopAll();
+        AkUnitySoundEngine.StopAll();
         yield return new WaitForEndOfFrame();
         var Banks = GameObject.FindObjectsByType<AkBank>(FindObjectsSortMode.None);
         foreach (var Bank in Banks)
@@ -131,7 +131,7 @@ public class GymTests
     
     protected IEnumerator FinishTestEditMode(string SceneName)
     {
-        AkSoundEngine.StopAll();
+        AkUnitySoundEngine.StopAll();
         LogAssert.ignoreFailingMessages = false;
         yield return new WaitForEndOfFrame();
     }
@@ -199,7 +199,7 @@ public class GymTests
 #if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
         if (SilenceBank != null)
         {
-            return AkSoundEngine.PostEvent("Silence", gameObject);
+            return AkUnitySoundEngine.PostEvent("Silence", gameObject);
         }
         else
         {
@@ -209,7 +209,7 @@ public class GymTests
         }
 #else
         uint m_BankID = AkBankManager.LoadBank("Silence", false, false, AkBankTypeEnum.AkBankType_Event);
-        uint id = AkSoundEngine.PostEvent("Silence", gameObject);
+        uint id = AkUnitySoundEngine.PostEvent("Silence", gameObject);
         return id;
 #endif
     }

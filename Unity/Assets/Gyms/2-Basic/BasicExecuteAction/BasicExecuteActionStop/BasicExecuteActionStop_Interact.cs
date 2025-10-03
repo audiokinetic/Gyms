@@ -38,6 +38,6 @@ public class BasicExecuteActionStop_Interact : OnOffManager
 
     public override void OnAction()
     {
-        AkSoundEngine.ExecuteActionOnEvent(_event.data.Id, AkActionOnEventType.AkActionOnEventType_Stop, gameObject);
+        AkUnitySoundEngine.ExecuteActionOnEvent(_event.data.Id, AkActionOnEventType.AkActionOnEventType_Stop, gameObject);
     }
 }

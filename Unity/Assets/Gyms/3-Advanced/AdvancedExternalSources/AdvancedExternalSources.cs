@@ -39,15 +39,15 @@ public class AdvancedExternalSources : OnOffManager
     {
         base.Start();
         
-        _externalSourceInfoArray[0].iExternalSrcCookie = AkSoundEngine.GetIDFromString("One");
+        _externalSourceInfoArray[0].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString("One");
         _externalSourceInfoArray[0].szFile = "01.wem";
         _externalSourceInfoArray[0].idCodec = AKCODECID_ADPCM;
 
-        _externalSourceInfoArray[1].iExternalSrcCookie = AkSoundEngine.GetIDFromString("Two");
+        _externalSourceInfoArray[1].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString("Two");
         _externalSourceInfoArray[1].szFile = "02.wem";
         _externalSourceInfoArray[1].idCodec = AKCODECID_ADPCM;
 
-        _externalSourceInfoArray[2].iExternalSrcCookie = AkSoundEngine.GetIDFromString("Three");
+        _externalSourceInfoArray[2].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString("Three");
         _externalSourceInfoArray[2].szFile = "03.wem";
         _externalSourceInfoArray[2].idCodec = AKCODECID_ADPCM;
     }
@@ -68,6 +68,6 @@ public class AdvancedExternalSources : OnOffManager
 
     public void PostExternalSourcesEvent()
     {
-        AkSoundEngine.PostEvent(_event.Id, gameObject, 0, null, 0, 3, _externalSourceInfoArray);
+        AkUnitySoundEngine.PostEvent(_event.Id, gameObject, 0, null, 0, 3, _externalSourceInfoArray);
     }
 }

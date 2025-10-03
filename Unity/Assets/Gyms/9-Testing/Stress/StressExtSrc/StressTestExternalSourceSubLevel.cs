@@ -47,11 +47,11 @@ public class StressTestExternalSourceSubLevel : MonoBehaviour
             return;
         }
 
-        _externalSourceInfoArray[0].iExternalSrcCookie = AkSoundEngine.GetIDFromString(externalSourcesNames[0]);
+        _externalSourceInfoArray[0].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString(externalSourcesNames[0]);
         _externalSourceInfoArray[0].szFile = mediaNames[0];
         _externalSourceInfoArray[0].idCodec = 2;
 
-        _externalSourceInfoArray[1].iExternalSrcCookie = AkSoundEngine.GetIDFromString(externalSourcesNames[1]);
+        _externalSourceInfoArray[1].iExternalSrcCookie = AkUnitySoundEngine.GetIDFromString(externalSourcesNames[1]);
         _externalSourceInfoArray[1].szFile = mediaNames[0];
         _externalSourceInfoArray[1].idCodec = 2;
 
@@ -90,7 +90,7 @@ public class StressTestExternalSourceSubLevel : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(0f, 0.01f));
             for (int i = 0; i < 2; i++)
             {
-                AkSoundEngine.PostEvent(_events[0].Id, gameObject, 0, null, 0, 1, _externalSourceInfoArray);
+                AkUnitySoundEngine.PostEvent(_events[0].Id, gameObject, 0, null, 0, 1, _externalSourceInfoArray);
             }
         }
     }    
