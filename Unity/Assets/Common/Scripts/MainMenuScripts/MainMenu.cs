@@ -175,7 +175,7 @@ public class MainMenu : MonoBehaviour
     {
         if (component != null)
         {
-            Color selected = Color.cyan;
+            Color selected = new Color(0, 84 / 255f, 159 / 255f);
             Color notSelected = Color.black;
 
             if (_selectedComponent != default)
