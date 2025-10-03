@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _door: {fileID: 2039893637}
-  _levelName: Nested_Sub_Level_2
+  _levelName: SmokeSubLevelNested_2
 --- !u!1001 &861003981
 PrefabInstance:
   m_ObjectHideFlags: 0
