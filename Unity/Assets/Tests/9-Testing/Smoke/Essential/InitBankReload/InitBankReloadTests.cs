@@ -43,9 +43,9 @@ namespace Tests
         private DateTime startTime;
         private bool timedOut = false;
         private Task loadingBank;
-#if UNITY_WEBGL
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES && UNITY_WEBGL
         private float timeOut = 10.0f;
-#else
+#elif UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
         private float timeOut = 2.5f;
 #endif
 
@@ -97,7 +97,7 @@ private IEnumerator WaitForBankLoad()
 #endif
         }
         
-#if UNITY_WEBGL
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES && UNITY_WEBGL
         private async Awaitable CompleteLoadBank()
 #else
         private async Task CompleteLoadBank()

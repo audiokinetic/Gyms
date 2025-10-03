@@ -37,7 +37,7 @@ namespace Tests
         {
             UnityEngine.Debug.Log("This Gym is not implemented yet.");
             yield break;
-            AkSoundEngine.StartProfilerCapture("meow.prof");
+            AkUnitySoundEngine.StartProfilerCapture("meow.prof");
             yield return StartTest(SceneName);
             SwitchWithMediaAlreadyLoadedSwitch eventSwitchHolder = gameObject.GetComponent<SwitchWithMediaAlreadyLoadedSwitch>();
 
@@ -92,7 +92,7 @@ namespace Tests
 
             yield return FinishTest(SceneName);
             eventSwitchHolder.play_Simple_Switch_bank.data.Unload();
-            AkSoundEngine.StopProfilerCapture();
+            AkUnitySoundEngine.StopProfilerCapture();
         }
     }
 }

@@ -30,7 +30,7 @@ public class AdvancedAmbientStartAll_Interact : OnOffManager
 {
     public override void OffAction()
     {
-        AkSoundEngine.StopAll();
+        AkUnitySoundEngine.StopAll();
     }
 
     public override void OnAction()

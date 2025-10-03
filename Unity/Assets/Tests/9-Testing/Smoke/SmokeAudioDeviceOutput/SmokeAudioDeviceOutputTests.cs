@@ -47,7 +47,7 @@ namespace Tests
                 yield break;
             }
             
-            Assert.AreNotEqual(additionalDevice.idDevice, AkSoundEngine.AK_INVALID_DEVICE_ID);
+            Assert.AreNotEqual(additionalDevice.idDevice, AkUnitySoundEngine.AK_INVALID_DEVICE_ID);
 
             // AddOutput and make sure it works
             ulong deviceId;
@@ -55,11 +55,11 @@ namespace Tests
             {
                 var outSettingsToAdd = new AkOutputSettings();
                 outSettingsToAdd.idDevice = additionalDevice.idDevice;
-                outSettingsToAdd.audioDeviceShareset = AkSoundEngine.GetIDFromString(AudioDeviceShareSet);
-                result = AkSoundEngine.AddOutput(outSettingsToAdd, out deviceId);
+                outSettingsToAdd.audioDeviceShareset = AkUnitySoundEngine.GetIDFromString(AudioDeviceShareSet);
+                result = AkUnitySoundEngine.AddOutput(outSettingsToAdd, out deviceId);
 
                 Assert.AreEqual(result, AKRESULT.AK_Success);
-                Assert.AreNotEqual(deviceId, AkSoundEngine.AK_INVALID_DEVICE_ID);
+                Assert.AreNotEqual(deviceId, AkUnitySoundEngine.AK_INVALID_DEVICE_ID);
             }
             
             // Make sure posting additional event works
@@ -70,7 +70,7 @@ namespace Tests
             
             // Remove the output
             {
-                result = AkSoundEngine.RemoveOutput(deviceId);
+                result = AkUnitySoundEngine.RemoveOutput(deviceId);
                 Assert.AreEqual(result, AKRESULT.AK_Success);
             }
             

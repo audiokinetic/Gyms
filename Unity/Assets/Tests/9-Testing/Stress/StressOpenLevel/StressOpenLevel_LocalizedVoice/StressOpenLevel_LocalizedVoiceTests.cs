@@ -35,18 +35,18 @@ namespace Tests
         [UnityTest]
         public IEnumerator StressOpenLevel_LocalizedVoice_Tests()
         {
-            AkSoundEngine.SetCurrentLanguage("en_US");
+            AkUnitySoundEngine.SetCurrentLanguage("en_US");
             yield return StartTest(SceneName);
 
             uint expected = PostSilence() + 3;
 
             yield return GameObject.FindObjectOfType<StressOpenLevel_LocalizedVoice>().OpenLevel();
-            Assert.AreEqual("fr_FR", AkSoundEngine.GetCurrentLanguage());
+            Assert.AreEqual("fr_FR", AkUnitySoundEngine.GetCurrentLanguage());
             LogOutput("Change Level followed by changing the language to fr_FR:", true);
             yield return new WaitForSeconds(0.1f);
             
             yield return GameObject.FindObjectOfType<StressOpenLevel_LocalizedVoice>().OpenLevel();
-            Assert.AreEqual("en_US", AkSoundEngine.GetCurrentLanguage());
+            Assert.AreEqual("en_US", AkUnitySoundEngine.GetCurrentLanguage());
             LogOutput("Change Level followed by changing the language to en_US:", true);
             yield return new WaitForSeconds(0.1f);
             

@@ -39,7 +39,7 @@ namespace Tests
             yield return new WaitForEndOfFrame();
 
             BasicExecuteActionStop_Interact interact = GameObject.FindObjectOfType<BasicExecuteActionStop_Interact>();
-#if UNITY_WEBGL
+#if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES && UNITY_WEBGL
             yield return interact.gameObject.GetComponent<AkEvent>().data.WwiseObjectReference.CompleteLoadBank();
 #endif
 

@@ -83,9 +83,9 @@ namespace Tests
             yield return new WaitForSeconds(0.2f);
             actual = localizedEvent.PlayingId;
             Assert.AreEqual(expected, actual);
-            Assert.AreEqual("fr_FR", AkSoundEngine.GetCurrentLanguage());
+            Assert.AreEqual("fr_FR", AkUnitySoundEngine.GetCurrentLanguage());
             LogOutput("Set language: ", true);
-            AkSoundEngine.SetCurrentLanguage("en_US");
+            AkUnitySoundEngine.SetCurrentLanguage("en_US");
             yield return FinishTest(SceneName);
         }
     }

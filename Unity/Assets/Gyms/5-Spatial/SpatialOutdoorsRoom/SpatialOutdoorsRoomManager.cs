@@ -62,7 +62,7 @@ public class SpatialOutdoorsRoomManager : MonoBehaviour
 	{
 		AkRoom.StopOutdoors();
 		ResetOutdoorsRoomParams();
-		AkSoundEngine.RemoveRoom(AkRoom.INVALID_ROOM_ID);
+		AkUnitySoundEngine.RemoveRoom(AkRoom.INVALID_ROOM_ID);
 
 		if (m_instance)
 		{

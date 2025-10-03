@@ -45,7 +45,7 @@ namespace Tests
             GameObject.FindObjectOfType<StressOpenLevel_ExternalSources>().OpenLevel();
             LogOutput("Change Level followed by changing the External Sources:", true);
             yield return new WaitForSeconds(0.1f);
-            LoadAsset(SceneName);
+            _ = LoadAsset(SceneName);
             
 #if !AK_WWISE_ADDRESSABLES && !UNITY_ADDRESSABLES
             Assert.AreEqual(expected, PostSilence());

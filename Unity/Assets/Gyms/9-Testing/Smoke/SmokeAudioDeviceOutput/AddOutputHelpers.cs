@@ -26,10 +26,10 @@ public class AddOutputHelpers
 {
     public static AkDeviceDescription GetNonDefaultActiveDevice(string AudioDeviceName)
     {
-        uint sharesetIdSystem = AkSoundEngine.GetIDFromString(AudioDeviceName);
-        uint deviceCount = AkSoundEngine.GetNumOutputDevices(sharesetIdSystem);
+        uint sharesetIdSystem = AkUnitySoundEngine.GetIDFromString(AudioDeviceName);
+        uint deviceCount = AkUnitySoundEngine.GetNumOutputDevices(sharesetIdSystem);
         AkDeviceDescriptionArray devices = new AkDeviceDescriptionArray((int)deviceCount);
-        AkSoundEngine.GetDeviceList(sharesetIdSystem, out deviceCount, devices);
+        AkUnitySoundEngine.GetDeviceList(sharesetIdSystem, out deviceCount, devices);
             
         for(int i = 0; i < devices.Capacity; i++)
         {

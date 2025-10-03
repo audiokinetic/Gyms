@@ -32,11 +32,11 @@ public class BasicExecuteActionPauseResume_Interact : OnOffManager
     AkEvent _event;
     public override void OffAction()
     {
-        AkSoundEngine.ExecuteActionOnEvent(_event.data.Id, AkActionOnEventType.AkActionOnEventType_Resume, gameObject);
+        AkUnitySoundEngine.ExecuteActionOnEvent(_event.data.Id, AkActionOnEventType.AkActionOnEventType_Resume, gameObject);
     }
 
     public override void OnAction()
     {
-        AkSoundEngine.ExecuteActionOnEvent(_event.data.Id, AkActionOnEventType.AkActionOnEventType_Pause, gameObject);
+        AkUnitySoundEngine.ExecuteActionOnEvent(_event.data.Id, AkActionOnEventType.AkActionOnEventType_Pause, gameObject);
     }
 }

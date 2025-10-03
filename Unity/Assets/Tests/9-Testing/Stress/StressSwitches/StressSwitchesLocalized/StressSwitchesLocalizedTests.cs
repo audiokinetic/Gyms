@@ -52,10 +52,10 @@ namespace Tests
 
             // Changing localization to French and posting the event. Expect Hello and fr_FR marker callback.
             bank.data.Unload();
-            AkSoundEngine.SetCurrentLanguage("fr_FR");
+            AkUnitySoundEngine.SetCurrentLanguage("fr_FR");
             yield return new UnityEngine.WaitForSeconds(0.1f);
             bank.data.Load();
-            Assert.AreEqual("fr_FR", AkSoundEngine.GetCurrentLanguage());
+            Assert.AreEqual("fr_FR", AkUnitySoundEngine.GetCurrentLanguage());
             ExpectedLogError("Hello is expecting to play");
             Assert.AreEqual(++expected, akEvent.data.Post(gameObject, (uint)AkCallbackType.AK_Marker, CheckLocalizedFileFrenchPlaying, "Hello"));
             yield return new UnityEngine.WaitForSeconds(0.1f);

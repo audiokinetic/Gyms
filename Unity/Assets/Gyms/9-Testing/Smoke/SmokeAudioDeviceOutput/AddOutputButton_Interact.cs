@@ -40,7 +40,7 @@ public class AddOutputButton_Interact : OnOffManager
         if (AdditionalDevice != null)
         {
             _outSettingsToAdd.idDevice = AdditionalDevice.idDevice;
-            _outSettingsToAdd.audioDeviceShareset = AkSoundEngine.GetIDFromString(AudioDeviceShareSet);
+            _outSettingsToAdd.audioDeviceShareset = AkUnitySoundEngine.GetIDFromString(AudioDeviceShareSet);
         }
         else
         {
@@ -55,13 +55,13 @@ public class AddOutputButton_Interact : OnOffManager
 
     public override void OnAction()
     {
-        var Result = AkSoundEngine.AddOutput(_outSettingsToAdd, out _additionalDeviceId);
+        var Result = AkUnitySoundEngine.AddOutput(_outSettingsToAdd, out _additionalDeviceId);
         Debug.Log("Add output called with result " + Result);
     }
 
     public override void OffAction()
     {
-        var Result = AkSoundEngine.RemoveOutput(_additionalDeviceId);
+        var Result = AkUnitySoundEngine.RemoveOutput(_additionalDeviceId);
         Debug.Log("Remove output called with result " + Result);
     }
 }

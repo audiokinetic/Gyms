@@ -36,16 +36,10 @@ namespace Tests
         public IEnumerator StressMediaLoad_Tests()
         {
             UnityEngine.Debug.Log("Waiting Autobank implementation in unity");
-            yield break;
             yield return StartTest(SceneName);
-            yield return StartTest(SceneName);
-            AkBank bank = gameObject.GetComponent<AkBank>();
-
-            LoadBank(bank);
 
             yield return new WaitForSeconds(11f);
 
-            yield return FinishTest(SceneName);
             yield return FinishTest(SceneName);
         }
     }
