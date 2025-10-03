@@ -25,7 +25,7 @@ Open a command prompt in the Unity folders that contain the Unity project and ru
 - -f (InputFile): Can be of any format.
 Must follow the syntax of an Input File (see below).
 - -u (Unity.exe): Must be the same Unity version as the one used to compile the Gyms.
-- -p (TargetPlatform): Can be set to Playmode or StandaloneWindows64.
+- -p (TargetPlatform): Can be set to Playmode, StandaloneWindows64 or Editmode.
 - -o (OutputFile): Can be of any format.
 Shows whether a test has passed (True) or failed (False).
 
