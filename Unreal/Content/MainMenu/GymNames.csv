@@ -105,3 +105,4 @@ Key,SourceString
 "SmokeSequencerPause","Pausing the Sequencer"
 "AdvancedSequencerPlain","Using the sequencing system to post Wwise Events"
 "AdvancedSequencerSpatialized","Using the sequencing system to drive Wwise Events and Game Parameters"
+"BasicSeekOnEvent", "Seeking an Event at a given percentage of the duration."

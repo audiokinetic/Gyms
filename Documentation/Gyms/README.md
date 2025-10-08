@@ -77,6 +77,10 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `2-Basic/BasicPostLocation`_
 - Posting Events at given location.
 
+### Seeking an Event
+- _Folder: `2-Basic/BasicSeekEvent`_ 
+- Seeking an Event at a given percentage of the duration.
+
 ### Using Game Parameters to Modify Events (RTPC)
 
 - _Folder: `2-Basic/BasicSetGameParameter/BasicSetGameParameterOnObject`_
