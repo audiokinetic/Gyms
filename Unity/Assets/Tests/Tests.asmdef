@@ -13,7 +13,8 @@
         "AK.Wwise.Unity.MonoBehaviour.Editor",
         "Ak.Wwise.Api.WAAPI",
         "AK.Wwise.Unity.API.Editor",
-        "AK.Wwise.Unity.Addressables"
+        "AK.Wwise.Unity.Addressables",
+        "CommandBuffer"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

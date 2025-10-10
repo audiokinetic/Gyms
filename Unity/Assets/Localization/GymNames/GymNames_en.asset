@@ -408,6 +408,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 223050383360
     m_Localized: Additional Gyms
+    m_Metadata:
       m_Items: []
   - m_Id: 151856346166358016
     m_Localized: Posting a Wwise Event and keeping the video synchronized using GetSourcePlayPosition
@@ -427,6 +428,26 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3523015761920
     m_Localized: Using Event Callbacks to retrieve Music information (Bar duration)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48981013324128256
+    m_Localized: Experimental
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49012187346001920
+    m_Localized: Command Buffer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49017428883824640
+    m_Localized: Post Event
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49017485586620416
+    m_Localized: Set Game Parameter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49017601680760832
+    m_Localized: On a Gameobject
     m_Metadata:
       m_Items: []
   references:
