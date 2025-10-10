@@ -1,0 +1,30 @@
+{
+    "name": "CommandBuffer",
+    "references": [
+        "Gyms",
+        "AK.Wwise.Unity.API",
+        "AK.Wwise.Unity.MonoBehaviour",
+        "AK.Wwise.Unity.API.WwiseTypes"
+    ],
+    "allowUnsafeCode": true,
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.addressables",
+            "expression": "1.8",
+            "define": "UNITY_ADDRESSABLES"
+        },
+        {
+            "name": "com.audiokinetic.wwise.addressables",
+            "expression": "1.0.0",
+            "define": "AK_WWISE_ADDRESSABLES"
+        }
+        
+    ],
+    "noEngineReferences": false
+}

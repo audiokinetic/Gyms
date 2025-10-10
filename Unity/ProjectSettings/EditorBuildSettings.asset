@@ -318,6 +318,12 @@ EditorBuildSettings:
     path: Assets/Gyms/9-Testing/Stress/StressSwitches/StressSwitchesWithMediaAlreadyLoaded/StressSwitchesWithMediaAlreadyLoaded.unity
     guid: 96daaa5daecca3446a8673085002c24d
   - enabled: 1
+    path: Assets/Gyms/10-Experimental/CommandBuffer/CommandBufferPostEvent/CommandBufferPostEvent.unity
+    guid: 98488c91e0081b54cbc3a7a3a00dba2a
+  - enabled: 1
+    path: Assets/Gyms/10-Experimental/CommandBuffer/CommandBufferSetGameParameter/CommandBufferSetGameParameterOnObject/CommandBufferSetGameParameterOnObject.unity
+    guid: 13cdbf3e9d985d94090bb3f1227024bb
+  - enabled: 1
     path: Assets/Gyms/AutoBankSample/PlayAutoBankSound/PlayAutoBankSound.unity
     guid: 1c14037021a28984f85a3f3c3ee98fe2
   - enabled: 1
