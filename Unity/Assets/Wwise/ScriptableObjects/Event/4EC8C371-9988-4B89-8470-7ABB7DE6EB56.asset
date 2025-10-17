@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daac7cc27c886974fa974deb32331533, type: 3}
+  m_Name: 4EC8C371-9988-4B89-8470-7ABB7DE6EB56
+  m_EditorClassIdentifier: 
+  objectName: Play_Niagara_Synth
+  id: 994902426
+  guid: 4EC8C371-9988-4B89-8470-7ABB7DE6EB56
+  AutoBank: {fileID: 11400000, guid: 1834b5c501a922d4abadd99038b8b003, type: 2}
+  IsInUserDefinedSoundBank: 0

@@ -477,6 +477,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 331707220151943168
     m_Key: SpatialRoomPortalTransformCollision
+  - m_Id: 49017601680760832
+    m_Key: CommandBufferSetGameParameterOnObject
+  - m_Id: 67853137332559872
+    m_Key: 7-ParticleSystem
     m_Metadata:
       m_Items: []
   m_Metadata:

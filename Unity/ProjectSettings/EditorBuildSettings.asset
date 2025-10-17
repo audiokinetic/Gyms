@@ -143,6 +143,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gyms/5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTone/SpatialRoomSingleToneCollision/SpatialRoomSingleToneCollision.unity
     guid: 13721667bab446749bb28808a894c3e4
+    path: Assets/Gyms/7-ParticleSystem/ParticleSystemFireAndForget/ParticleSystemFireAndForgetCollision/ParticleSystemFireAndForgetCollision.unity
+    guid: acce6c014940d424bbe8f4461ab63d1c
+  - enabled: 1
+    path: Assets/Gyms/7-ParticleSystem/ParticleSystemPersistent/ParticleSystemPersistent.unity
+    guid: b1762dcd58a96a041b9d493c3dee408a
   - enabled: 1
     path: Assets/Gyms/8-Editor/EditorEnterPlayMode/EditorEnterPlayMode.unity
     guid: 830dec3939a06174f8345222e21edc3f
@@ -359,6 +364,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gyms/AutoBankSample/PlayUserDefinedBank/PlayUserDefinedBank.unity
     guid: f14d039e77955954ca72abb1cde1e3d2
+  - enabled: 1
+    path: Assets/Gyms/7-ParticleSystem/ParticleSystemFireAndForget/ParticleSystemFireAndForgetParticleSpawn/ParticleSystemFireAndForgetParticleSpawn.unity
+    guid: 82ab6a327a7132a4aad5536b0603c734
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: a6d8dce1fefcb964180e76277fd74379,
       type: 2}
