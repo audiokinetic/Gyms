@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}" SchemaVersion="131">
+<WwiseDocument Type="WorkUnit" ID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}" SchemaVersion="133">
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}" PersistMode="Standalone">
 			<ChildrenList>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+				<Bus Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<Comment>/!\ Do not bypass or remove the limiter</Comment>
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
@@ -229,7 +229,7 @@
 				<Bus Name="Audio_Device_Bus" ID="{75A5D9C9-CF36-4D95-94E3-D510D70E0089}">
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="Audio_Device_System" ID="{17D73C5C-968E-49BB-854A-CB93C553779C}" WorkUnitID="{672EC6AD-A634-47D9-B703-D928356C7F38}"/>
+							<ObjectRef Name="Device_System" ID="{17D73C5C-968E-49BB-854A-CB93C553779C}" WorkUnitID="{672EC6AD-A634-47D9-B703-D928356C7F38}"/>
 						</Reference>
 					</ReferenceList>
 				</Bus>
