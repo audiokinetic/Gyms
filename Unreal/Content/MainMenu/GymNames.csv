@@ -100,7 +100,7 @@ Key,SourceString
 "EssentialAmbient","Adding Ambient Events to Scenes"
 "BasicSetGameParameterOnObject","Modify a Game Object"
 "AdvancedCaptureProfiler","Capturing Profiler File"
-"SmokeAudioDeviceOutput","Output to an Audio Device"
+"SmokeDeviceOutput","Output to a Device"
 "SmokeEventWithNoMedia","Event without Media"
 "SmokeSequencerPause","Pausing the Sequencer"
 "AdvancedSequencerPlain","Using the sequencing system to post Wwise Events"

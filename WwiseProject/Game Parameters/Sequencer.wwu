@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}" SchemaVersion="131" RootDocumentID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}" ParentDocumentID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}">
+<WwiseDocument Type="WorkUnit" ID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}" SchemaVersion="133" RootDocumentID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}" ParentDocumentID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}">
 	<GameParameters>
 		<WorkUnit Name="Sequencer" ID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}" OwnerID="{719C8F4D-E570-4D69-98F0-7C49704EE24D}" PersistMode="Nested">
 			<ChildrenList>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{9BFC131D-86D1-46E0-9560-8E5C49AE788E}" SchemaVersion="131">
+<WwiseDocument Type="WorkUnit" ID="{9BFC131D-86D1-46E0-9560-8E5C49AE788E}" SchemaVersion="133">
 	<Events>
 		<WorkUnit Name="Asset Library Work Unit" ID="{9BFC131D-86D1-46E0-9560-8E5C49AE788E}" PersistMode="Standalone">
 			<ChildrenList>

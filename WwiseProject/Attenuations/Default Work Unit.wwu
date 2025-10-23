@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}" SchemaVersion="131">
+<WwiseDocument Type="WorkUnit" ID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}" SchemaVersion="133">
 	<Attenuations>
 		<WorkUnit Name="Default Work Unit" ID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}" PersistMode="Standalone">
 			<ChildrenList>
@@ -102,9 +102,9 @@
 						<HighPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</HighPassFilterUsage>
-						<HighShelfUsage>
+						<DualShelfUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</HighShelfUsage>
+						</DualShelfUsage>
 						<SpreadUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</SpreadUsage>
@@ -120,9 +120,9 @@
 						<ObstructionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</ObstructionHPFUsage>
-						<ObstructionHSFUsage>
+						<ObstructionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-						</ObstructionHSFUsage>
+						</ObstructionDSFUsage>
 						<OcclusionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</OcclusionVolumeUsage>
@@ -132,9 +132,9 @@
 						<OcclusionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</OcclusionHPFUsage>
-						<OcclusionHSFUsage>
+						<OcclusionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-						</OcclusionHSFUsage>
+						</OcclusionDSFUsage>
 						<DiffractionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</DiffractionVolumeUsage>
@@ -144,9 +144,9 @@
 						<DiffractionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</DiffractionHPFUsage>
-						<DiffractionHSFUsage>
+						<DiffractionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-						</DiffractionHSFUsage>
+						</DiffractionDSFUsage>
 						<TransmissionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</TransmissionVolumeUsage>
@@ -156,9 +156,9 @@
 						<TransmissionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</TransmissionHPFUsage>
-						<TransmissionHSFUsage>
+						<TransmissionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-						</TransmissionHSFUsage>
+						</TransmissionDSFUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="NiagaraDemoAttenuation" ID="{1DCC1A64-F11A-4200-9153-625C3E7C4B92}" ShortID="332730860">
@@ -200,9 +200,9 @@
 						<HighPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</HighPassFilterUsage>
-						<HighShelfUsage>
+						<DualShelfUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</HighShelfUsage>
+						</DualShelfUsage>
 						<SpreadUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</SpreadUsage>
@@ -218,9 +218,9 @@
 						<ObstructionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</ObstructionHPFUsage>
-						<ObstructionHSFUsage>
+						<ObstructionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-						</ObstructionHSFUsage>
+						</ObstructionDSFUsage>
 						<OcclusionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</OcclusionVolumeUsage>
@@ -230,9 +230,9 @@
 						<OcclusionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</OcclusionHPFUsage>
-						<OcclusionHSFUsage>
+						<OcclusionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-						</OcclusionHSFUsage>
+						</OcclusionDSFUsage>
 						<DiffractionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</DiffractionVolumeUsage>
@@ -242,9 +242,9 @@
 						<DiffractionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</DiffractionHPFUsage>
-						<DiffractionHSFUsage>
+						<DiffractionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-						</DiffractionHSFUsage>
+						</DiffractionDSFUsage>
 						<TransmissionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</TransmissionVolumeUsage>
@@ -254,9 +254,9 @@
 						<TransmissionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</TransmissionHPFUsage>
-						<TransmissionHSFUsage>
+						<TransmissionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-						</TransmissionHSFUsage>
+						</TransmissionDSFUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="SpatialAudioAttenuation_50m" ID="{DF00CA9A-3997-4B13-A5FA-B1D63D5134A7}" ShortID="681465934">
@@ -358,9 +358,9 @@
 						<HighPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</HighPassFilterUsage>
-						<HighShelfUsage>
+						<DualShelfUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</HighShelfUsage>
+						</DualShelfUsage>
 						<SpreadUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</SpreadUsage>
@@ -376,9 +376,9 @@
 						<ObstructionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</ObstructionHPFUsage>
-						<ObstructionHSFUsage>
+						<ObstructionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</ObstructionHSFUsage>
+						</ObstructionDSFUsage>
 						<OcclusionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</OcclusionVolumeUsage>
@@ -388,9 +388,9 @@
 						<OcclusionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</OcclusionHPFUsage>
-						<OcclusionHSFUsage>
+						<OcclusionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</OcclusionHSFUsage>
+						</OcclusionDSFUsage>
 						<DiffractionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</DiffractionVolumeUsage>
@@ -400,9 +400,9 @@
 						<DiffractionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</DiffractionHPFUsage>
-						<DiffractionHSFUsage>
+						<DiffractionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</DiffractionHSFUsage>
+						</DiffractionDSFUsage>
 						<TransmissionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</TransmissionVolumeUsage>
@@ -412,9 +412,9 @@
 						<TransmissionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</TransmissionHPFUsage>
-						<TransmissionHSFUsage>
+						<TransmissionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</TransmissionHSFUsage>
+						</TransmissionDSFUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="SpatialAudioAttenuation_100m" ID="{041CBBFA-49D8-417C-85F6-FB6B4612C727}" ShortID="614011754">
@@ -513,9 +513,9 @@
 						<HighPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</HighPassFilterUsage>
-						<HighShelfUsage>
+						<DualShelfUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</HighShelfUsage>
+						</DualShelfUsage>
 						<SpreadUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</SpreadUsage>
@@ -531,9 +531,9 @@
 						<ObstructionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</ObstructionHPFUsage>
-						<ObstructionHSFUsage>
+						<ObstructionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</ObstructionHSFUsage>
+						</ObstructionDSFUsage>
 						<OcclusionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</OcclusionVolumeUsage>
@@ -543,9 +543,9 @@
 						<OcclusionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</OcclusionHPFUsage>
-						<OcclusionHSFUsage>
+						<OcclusionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</OcclusionHSFUsage>
+						</OcclusionDSFUsage>
 						<DiffractionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</DiffractionVolumeUsage>
@@ -555,9 +555,9 @@
 						<DiffractionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</DiffractionHPFUsage>
-						<DiffractionHSFUsage>
+						<DiffractionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</DiffractionHSFUsage>
+						</DiffractionDSFUsage>
 						<TransmissionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</TransmissionVolumeUsage>
@@ -567,9 +567,9 @@
 						<TransmissionHPFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 						</TransmissionHPFUsage>
-						<TransmissionHSFUsage>
+						<TransmissionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</TransmissionHSFUsage>
+						</TransmissionDSFUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="Environmental Curves Migration" ID="{D5F38559-3D38-44D4-9BFB-87ACED14980B}" ShortID="716701818">
@@ -589,9 +589,9 @@
 						<HighPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</HighPassFilterUsage>
-						<HighShelfUsage>
+						<DualShelfUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</HighShelfUsage>
+						</DualShelfUsage>
 						<SpreadUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</SpreadUsage>
@@ -666,9 +666,9 @@
 								</Curve>
 							</CurveUsageInfo>
 						</ObstructionHPFUsage>
-						<ObstructionHSFUsage>
+						<ObstructionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None">
-								<Curve Name="O" ID="{3F4F97E6-C598-4245-9A0D-26775941E628}">
+								<Curve Name="ObstructionDSF" ID="{3F4F97E6-C598-4245-9A0D-26775941E628}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="3"/>
 									</PropertyList>
@@ -686,7 +686,7 @@
 									</PointList>
 								</Curve>
 							</CurveUsageInfo>
-						</ObstructionHSFUsage>
+						</ObstructionDSFUsage>
 						<OcclusionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
 								<Curve Name="O" ID="{C092F447-C078-4890-AC1E-EA585E3061DF}">
@@ -750,9 +750,9 @@
 								</Curve>
 							</CurveUsageInfo>
 						</OcclusionHPFUsage>
-						<OcclusionHSFUsage>
+						<OcclusionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None">
-								<Curve Name="O" ID="{FBC63280-5989-4BEB-85D1-BABE42BEFB43}">
+								<Curve Name="OcclusionDSF" ID="{FBC63280-5989-4BEB-85D1-BABE42BEFB43}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="3"/>
 									</PropertyList>
@@ -770,7 +770,7 @@
 									</PointList>
 								</Curve>
 							</CurveUsageInfo>
-						</OcclusionHSFUsage>
+						</OcclusionDSFUsage>
 						<DiffractionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
 								<Curve Name="D" ID="{79AEEB88-230F-4987-B867-14DB75720969}">
@@ -834,9 +834,9 @@
 								</Curve>
 							</CurveUsageInfo>
 						</DiffractionHPFUsage>
-						<DiffractionHSFUsage>
+						<DiffractionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None">
-								<Curve Name="D" ID="{57B4F684-A3DD-43C5-940D-AACEB5557DF2}">
+								<Curve Name="DiffractionDSF" ID="{57B4F684-A3DD-43C5-940D-AACEB5557DF2}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="3"/>
 									</PropertyList>
@@ -854,7 +854,7 @@
 									</PointList>
 								</Curve>
 							</CurveUsageInfo>
-						</DiffractionHSFUsage>
+						</DiffractionDSFUsage>
 						<TransmissionVolumeUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
 								<Curve Name="T" ID="{1A730564-D89E-4357-B252-C5B75C279970}">
@@ -918,9 +918,9 @@
 								</Curve>
 							</CurveUsageInfo>
 						</TransmissionHPFUsage>
-						<TransmissionHSFUsage>
+						<TransmissionDSFUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None">
-								<Curve Name="T" ID="{D18DC727-D9CB-4623-8BA0-556C6BB6A7D2}">
+								<Curve Name="TransmissionDSF" ID="{D18DC727-D9CB-4623-8BA0-556C6BB6A7D2}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="3"/>
 									</PropertyList>
@@ -938,7 +938,7 @@
 									</PointList>
 								</Curve>
 							</CurveUsageInfo>
-						</TransmissionHSFUsage>
+						</TransmissionDSFUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
 			</ChildrenList>
