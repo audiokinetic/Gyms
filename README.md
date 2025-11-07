@@ -7,7 +7,7 @@ The Wwise Gyms are examples and tests for both the Unreal&trade; and Unity&trade
 
 The Gym projects support the major version of Wwise indicated in the current git branch, as well as its minor versions. The following software versions are supported:
 
-- Wwise&trade; 2024.1 and all minor releases
+- Wwise&trade; 2025.1 and all minor releases
 - The latest three Unity&trade; LTS versions
 - The latest three Unreal&trade; versions
 
