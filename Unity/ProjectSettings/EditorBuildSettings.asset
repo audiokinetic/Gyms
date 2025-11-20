@@ -102,6 +102,9 @@ EditorBuildSettings:
     path: Assets/Gyms/5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeMesh/SpatialGeometryShapeMesh.unity
     guid: aa459ad6e83ab6e48b82538c320fc599
   - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialGeometry/SpatialGeometrySingle/SpatialGeometrySingleMesh/SpatialGeometrySingleMesh.unity
+    guid: 232f51180af5fca4586a1ad48cd9c803
+  - enabled: 1
     path: Assets/Gyms/5-Spatial/SpatialLevelLoading/SpatialLevelLoadingSubLevel/SpatialLevelLoadingSubLevel.unity
     guid: 3949d53f55b22014f840c9cd334dc2ca
   - enabled: 1
