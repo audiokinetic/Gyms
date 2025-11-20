@@ -446,6 +446,18 @@ MonoBehaviour:
     m_Localized: Using Event Callbacks to retrieve Music information (Bar duration)
     m_Metadata:
       m_Items: []
+  - m_Id: 70421320841719808
+    m_Localized: Using Multiple positions with one channel per position.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 294378784521895936
+    m_Localized: Single Geometry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 294378860321357824
+    m_Localized: Geometry on a Mesh
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
