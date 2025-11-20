@@ -62,6 +62,7 @@
 /Unity/Assets/Wwise/Gizmos
 
 # Track ScriptableObjects and their meta files to keep the references to wwiseobjects in components
+!/Unity/Assets/Wwise/ScriptableObjects/AcousticTexture/*
 !/Unity/Assets/Wwise/ScriptableObjects/AuxBus/*
 !/Unity/Assets/Wwise/ScriptableObjects/Event/*
 !/Unity/Assets/Wwise/ScriptableObjects/GameParameter/*
