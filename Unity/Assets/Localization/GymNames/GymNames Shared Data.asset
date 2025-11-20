@@ -437,6 +437,14 @@ MonoBehaviour:
     m_Key: 7-ParticleSystem
     m_Metadata:
       m_Items: []
+  - m_Id: 294378784521895936
+    m_Key: SpatialGeometrySingle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 294378860321357824
+    m_Key: SpatialGeometrySingleMesh
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

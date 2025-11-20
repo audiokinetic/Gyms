@@ -248,7 +248,27 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeMesh`_
 - Shows how Geometry works with all Mesh primitives and with custom shapes.
 
-### Level loading
+#### Single Geometry
+
+- _Folder: `5-Spatial/SpatialGeometry/SpatialGeometrySingle`_
+- List of gyms showing how to set and update the parameters of Geometry.
+
+##### Geometry on a Brush | _Unreal_
+
+- _Folder: `5-Spatial/SpatialGeometry/SpatialGeometrySingle/SpatialGeometrySingleBrush`_
+- Shows how to set and update the parameters of Geometry using a Brush component.
+
+##### Geometry on Simple Collision | _Unreal_
+
+- _Folder: `5-Spatial/SpatialGeometry/SpatialGeometrySingle/SpatialGeometrySingleCollision`_
+- Shows how to set and update the parameters of Geometry using Simple Collision information.
+
+##### Geometry on a Mesh
+
+- _Folder: `5-Spatial/SpatialGeometry/SpatialGeometrySingle/SpatialGeometrySingleMesh`_
+- Shows how to set and update the parameters of Geometry using a Mesh component.
+
+### Level Loading
 
 - _Folder: `5-Spatial/SpatialLevelLoading`_
 - A list of gyms to test the loading and unloading behaviour of Spatial Audio levels.
