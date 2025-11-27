@@ -32,6 +32,7 @@ public class GymsTarget : TargetRules
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.AddRange( new string[] { "Gyms", "WwiseSimpleExternalSource"} );
+		NativePointerMemberBehaviorOverride = PointerMemberBehavior.Disallow;
 		
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
