@@ -32,6 +32,7 @@ public class GymsEditorTarget : TargetRules
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.AddRange( new string[] { "Gyms", "GymEditorUtilities", "WwiseSimpleExternalSource" } );
+		NativePointerMemberBehaviorOverride = PointerMemberBehavior.Disallow;
 		
 #if UE_5_1_OR_LATER
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
