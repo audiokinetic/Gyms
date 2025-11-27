@@ -78,15 +78,22 @@ class UnrealAutomation(GymsAutomation):
     """
     def test_result(self):
         path = self.get_log_path()
-        with open(path) as f:
-            content = f.readlines()
         results = []
         testsNames = []
-        for line in content:
-            if re.search(r'Test Completed+', line):
-                results.append(re.search(self.get_success_keyword(), line) != None)
-                index = re.search(r'Path={Project.Functional Tests.', line).end()
-                testsNames.append(line[index + 5: -2])
+        with open(path) as f:
+            for line in f:
+                if re.search(r'Test Completed+', line):
+
+                    testPassed = re.search(self.get_success_keyword(), line) != None #
+
+                    pathMatch = re.search(r'Path=\{(.*?)\}', line)
+
+                    if pathMatch:
+                        testName = pathMatch.group(1)
+
+                        testsNames.append(testName)
+                        results.append(testPassed)
+
         return results, testsNames
 
     def run_tests_command(self, testsName, unrealPath, timeout):
@@ -97,6 +104,9 @@ class UnrealAutomation(GymsAutomation):
         subprocess.run(cmd_line, timeout=timeout)
         return self.test_result()
 
+    def run_wwise_tests(self, unrealPath, timeout):
+        return self.run_tests_command("Wwise", unrealPath, timeout)
+
     def get_command_line(self, gymsList, unrealPath, targetPlatform = ''):
         cmd_line = ('"{}" "{}" '.format(unrealPath, self.get_project_path()) +
                     '-ExecCmds="Automation RunTests {}" '.format(gymsList) +
@@ -106,6 +116,7 @@ class UnrealAutomation(GymsAutomation):
                     '-log={} '.format(self.outputFile) +
                     '-game'
                     )
+        print(cmd_line)
         return cmd_line
 
     def write_results(self, unrealPath, file, gymsList, targetPlatform, failingGyms, timeout):
@@ -125,6 +136,11 @@ class UnrealAutomation(GymsAutomation):
         return failingGyms + gymsSkipped
 
     def get_gym(self, gymsList, gym):
+        # If test starts with "cpp:", then it is a C++ test at the root of the Unreal test hierarchy
+        if gym.startswith('cpp:'):
+            gymsList.append(gym[4:])
+            return gymsList
+
         #To run a single test, every tests are in a folder with their name. Using "Name"/"Name.FunctionalTest" will
         #assure we are not running a test that might be in the folder of the given test.
         if self.gym_exists(gym, self.gymsPath): 
