@@ -24,9 +24,21 @@
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
+						<Folder Name="AkChannelEmitter" ID="{6306A61C-1439-4ECD-9D48-FA1BCA58B8BA}" ShortID="491943614"/>
 					</ChildrenList>
 				</Folder>
 				<WorkUnit Name="Sequencer" ID="{63DD140C-1BF2-4EFA-B8D9-9307D4525207}" PersistMode="Reference"/>
+				<Folder Name="AkChannelEmitter" ID="{0EF26954-3F8E-437B-826A-8E69B072B378}" ShortID="15990253">
+					<ChildrenList>
+						<GameParameter Name="AkChannelEmitterVolume" ID="{38104445-E26C-45D5-A310-0C230FAFA104}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="12"/>
+								<Property Name="Min" Type="Real64" Value="-96"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

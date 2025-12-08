@@ -195,6 +195,45 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
+						<Bus Name="AkChannelEmitter_Bus" ID="{955B1E3E-53C8-4051-B4CB-40C0937F35F5}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="HardAttenuation_10Units" ID="{78576EF5-5438-4A3D-880F-EC2BA36B48C4}" WorkUnitID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="AkChannelEmitter_FeederBus" ID="{6842C5E4-48DF-40A3-A99D-403ABC5ECADE}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="HardAttenuation_10Units" ID="{78576EF5-5438-4A3D-880F-EC2BA36B48C4}" WorkUnitID="{0F68B9B0-B101-4BA2-A502-63E435EC1B10}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{6DA0D366-730D-4C99-BE3E-3F339BAC2D33}" ShortID="270813735">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+														<ObjectRef Name="AkChannelEmitter_Meter" ID="{4F735C6D-E98A-4523-B3E8-0D1D47332609}" WorkUnitID="{3A0ECD51-8738-4A9C-9810-8E51D0DCAEAC}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">

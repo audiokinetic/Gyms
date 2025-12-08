@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3A0ECD51-8738-4A9C-9810-8E51D0DCAEAC}" SchemaVersion="119">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{3A0ECD51-8738-4A9C-9810-8E51D0DCAEAC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3A0ECD51-8738-4A9C-9810-8E51D0DCAEAC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="AkChannelEmitter_Meter" ID="{4F735C6D-E98A-4523-B3E8-0D1D47332609}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="Max" Type="Real32" Value="12"/>
+						<Property Name="Min" Type="Real32" Value="-96"/>
+					</PropertyList>
+					<PluginData>
+	<GameParameter Name="AkChannelEmitterVolume" ID="{38104445-E26C-45D5-A310-0C230FAFA104}"/>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
