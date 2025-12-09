@@ -40,7 +40,7 @@ public:
 private:
 	// This allows you to select the Wwise Event asset in the Unreal Editor
 	UPROPERTY(EditAnywhere, Category = "WwiseExample")
-	class UAkAudioEvent* EventToPost;
+	TObjectPtr<UAkAudioEvent> EventToPost;
 
 	// The function from the documentation
 	UFUNCTION(BlueprintCallable, Category = "WwiseExample")
