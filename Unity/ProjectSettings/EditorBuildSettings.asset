@@ -156,6 +156,9 @@ EditorBuildSettings:
     path: Assets/Gyms/9-Testing/Smoke/SmokeMultipleSameEvent/SmokeMultipleSameEvent.unity
     guid: bc3e0f3098f4a91428dedf8594afcb29
   - enabled: 1
+    path: Assets/Gyms/9-Testing/Smoke/SmokePostEventNullGameObject/SmokePostEventNullGameObject.unity
+    guid: b60ce3e89c420fe4dbbbbf20c8bab485
+  - enabled: 1
     path: Assets/Gyms/9-Testing/Smoke/SmokeSetStateTimeline/SmokeSetStateTimeline.unity
     guid: 066a3d8d37195734bb9e12dd05acf5f5
   - enabled: 1
@@ -343,3 +346,4 @@ EditorBuildSettings:
       type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 3c5660821b77c4f4b96d9759d21c2ec3,
       type: 2}
+  m_UseUCBPForAssetBundles: 0
