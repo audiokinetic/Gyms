@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daac7cc27c886974fa974deb32331533, type: 3}
+  m_Name: 439068C0-ED10-4EB7-9AE7-C2684D5DC77C
+  m_EditorClassIdentifier: 
+  objectName: SameName
+  id: 4266048278
+  guid: 439068C0-ED10-4EB7-9AE7-C2684D5DC77C
+  AutoBank: {fileID: 11400000, guid: e471dcf1018c5404d8fd1848d9f5ff8b, type: 2}
+  IsInUserDefinedSoundBank: 0
