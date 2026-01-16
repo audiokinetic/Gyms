@@ -497,6 +497,10 @@ MonoBehaviour:
     m_Key: SpatialRoomPortalTransformCollision
     m_Metadata:
       m_Items: []
+  - m_Id: 84482905416798208
+    m_Key: SmokeBanksWithSameName
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
