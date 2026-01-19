@@ -110,16 +110,27 @@ class UnityAutomation(GymsAutomation):
         outputFile = os.path.join(path, "Library", fileName)
         os.makedirs(os.path.dirname(outputFile), exist_ok=True)
         shutil.copyfile(inputFile, outputFile)
-        subprocess.run(cmd_line, timeout=timeout)
+        result = subprocess.run(cmd_line, timeout=timeout, capture_output=True, text=True)
+        if(result.returncode != 0):
+            print(result.stdout)
+            print(result.stderr)
         return self.test_result(testsName.split(';'))
 
     def get_command_line(self, testsName, unityPath, targetPlatform):
-        cmd_line = ('"{}" -runTests '.format(unityPath) +
-                    '-projectPath "{}" '.format(self.get_project_path()) +
-                    '-testFilter "{}" '.format(testsName) +
-                    '-testResults "{}{}{}" '.format(self.get_project_path(), os.path.sep, self.outputFile) +
-                    '-testPlatform {}'.format(targetPlatform)
-                    )
+        cmd_line = [
+            unityPath,
+            "-runTests",
+            "-projectPath", self.get_project_path(),
+            "-testFilter", testsName,
+            "-testResults", os.path.join(self.get_project_path(),self.outputFile),
+            "-testPlatform", targetPlatform,
+            "-batchmode",
+            "-wwiseEnableWithNoGraphics",
+            "-nographics",
+            "-verboseAkPluginActivator",
+            "-DisableDirectoryMonitor"
+        ]
+        print(" ".join(cmd_line))
         return cmd_line
 
     def write_results(self, unityPath, file, gymsList, targetPlatform, failingGyms, timeout):
