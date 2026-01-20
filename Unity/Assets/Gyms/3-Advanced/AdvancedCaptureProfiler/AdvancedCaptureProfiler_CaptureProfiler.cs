@@ -33,7 +33,7 @@ public class AdvancedCaptureProfiler_CaptureProfiler : OnOffManager
         var profilerFile = "Profiler_" + dt.ToString("yyyy-MM-ddTHH-mm-ss"); 
         
         Debug.Log(profilerFile);
-        AkUnitySoundEngine.StartProfilerCapture(profilerFile);
+        AkUnitySoundEngine.StartProfilerCapture(profilerFile, (ulong)AkMonitorInfo.AkMonitorInfo_All);
     }
 
     public override void OffAction()

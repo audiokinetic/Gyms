@@ -37,7 +37,7 @@ namespace Tests
         {
             UnityEngine.Debug.Log("This Gym is not implemented yet.");
             yield break;
-            AkUnitySoundEngine.StartProfilerCapture("meow.prof");
+            AkUnitySoundEngine.StartProfilerCapture("meow.prof", (ulong)AkMonitorInfo.AkMonitorInfo_All);
             yield return StartTest(SceneName);
             SwitchWithMediaAlreadyLoadedSwitch eventSwitchHolder = gameObject.GetComponent<SwitchWithMediaAlreadyLoadedSwitch>();
 

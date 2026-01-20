@@ -47,7 +47,7 @@ namespace Tests
             var dt = DateTime.Now;
             var profilerFile = "Profiler_" + dt.ToString("yyyy-MM-ddTHH-mm-ss"); 
         
-            AkUnitySoundEngine.StartProfilerCapture(profilerFile);
+            AkUnitySoundEngine.StartProfilerCapture(profilerFile, (ulong)AkMonitorInfo.AkMonitorInfo_All);
 
             yield return new WaitForEndOfFrame();
 
