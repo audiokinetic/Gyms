@@ -415,10 +415,6 @@ MonoBehaviour:
     m_Key: AdvancedCallbackTypesMusicSyncBar
     m_Metadata:
       m_Items: []
-  - m_Id: 70421320841719808
-    m_Key: AdvancedMultiplePositions
-    m_Metadata:
-      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

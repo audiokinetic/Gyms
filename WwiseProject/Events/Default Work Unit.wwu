@@ -718,28 +718,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="AkChannelEmitter" ID="{923E1FB9-18F0-4222-82CB-9AD2803F2377}" ShortID="587015705">
-					<ChildrenList>
-						<Event Name="Play_AkChannelEmitter" ID="{6FD9874C-DD59-438C-B961-93376DB72EE3}">
-							<ChildrenList>
-								<Action Name="" ID="{01B32E7E-19DD-4E0B-9A4D-2763020C381E}" ShortID="537805692">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AkChannelEmitter_L" ID="{D83D1610-4C32-46F5-A43C-D713385FA166}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{080CAD31-CE00-408D-AF92-FEA4446D136A}" ShortID="313880640">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AkChannelEmitter_R" ID="{5A9A5FDD-B853-4230-AEB3-86961BE47C68}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

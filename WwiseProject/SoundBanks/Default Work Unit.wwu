@@ -63,9 +63,6 @@
 						<ObjectRef Name="SetStateEvent" ID="{99CE3B98-FA97-4FA1-B19A-E657309D117C}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="In_Memory_Sound" ID="{9191C2A7-DC80-4FB3-AB89-4804FEB00CFE}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PostEvent_PCM" ID="{0A1F6812-357A-4FE6-8520-8B040A9B8BFC}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_AkChannelEmitter" ID="{6FD9874C-DD59-438C-B961-93376DB72EE3}" WorkUnitID="{4F7BD44B-0FCF-4A30-952D-A6380CF69475}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AkChannelEmitter" ID="{62B118E4-739E-48FA-A510-0E5F577FA661}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AkChannelEmitter_Bus" ID="{955B1E3E-53C8-4051-B4CB-40C0937F35F5}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
