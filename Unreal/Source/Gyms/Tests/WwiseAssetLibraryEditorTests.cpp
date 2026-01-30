@@ -97,7 +97,7 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 	// Construct the test objects
 	FWwiseAssetLibraryInfo LibraryInfo;
 	auto* Filter = NewObject<UWwiseAssetLibraryFilterLanguage>(GetTransientPackage());
-	FWwiseAssetLibraryProcessor::GetRelevantAssets(TEXT("/Game/"), FilteringSharedData->AssetsData);
+	FWwiseAssetLibraryProcessor::GetRelevantAssets({TEXT("/Game/")}, FilteringSharedData->AssetsData);
 	FilteringSharedData->bConsiderAssetsData = false;
 	SECTION("Initialize AssetLibraryProcessor, Filtering SharedData and filter")
 	{
@@ -251,7 +251,7 @@ WWISE_TEST_CASE(AssetMaps_MediaAndSoundBanks, "Wwise::AssetLibraryEditor::AssetM
 	}
 	TArray<FAssetData> AssetsData;
 	// Assets relevant to testing are based in Game/WwiseAudio
-	FWwiseAssetLibraryProcessor::GetRelevantAssets("/Game/WwiseAudio/", AssetsData);
+	FWwiseAssetLibraryProcessor::GetRelevantAssets({"/Game/WwiseAudio/"}, AssetsData);
 	FilteringSharedData->AssetsData = AssetsData;
 
 	TUniquePtr<FWwiseAssetLibraryFilteringSharedData> FilteringSharedMediaData;
