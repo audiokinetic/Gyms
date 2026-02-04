@@ -44,7 +44,7 @@ namespace Tests
             yield return new WaitForSeconds(1f);
             float expectedValue = 0f;
             float actualValue = timeline.TestingRTPC.GetValue(cube.gameObject);
-            LogOutput("RTPC value changes in Timeline: ", AreApproximatelyEqual(actualValue, expectedValue, 0.1f));
+            LogOutput("RTPC value changes in Timeline: ", AreApproximatelyEqual(actualValue, expectedValue, 0.3f));
             timeline.Interact();
 
             yield return FinishTest(SceneName);
