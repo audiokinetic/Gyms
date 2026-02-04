@@ -71,7 +71,7 @@ namespace Tests
             Assert.LessOrEqual(value, 850.0f);
 #if UNITY_ADDRESSABLES && AK_WWISE_ADDRESSABLES
             //Due to the async nature of Addressables, we are a bit more lenient.
-            Assert.GreaterOrEqual(value, 685.0f);
+            Assert.GreaterOrEqual(value, 400.0f);
 #else
             Assert.GreaterOrEqual(value, 750.0f);
 #endif

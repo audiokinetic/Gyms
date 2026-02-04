@@ -73,6 +73,8 @@
 !/Unity/Assets/Wwise/ScriptableObjects/SwitchGroup/*
 !/Unity/Assets/Wwise/ScriptableObjects/AkWwiseInitializationSettings.asset
 !/Unity/Assets/Wwise/ScriptableObjects/AkWwiseInitializationSettings.asset.meta
+!/Unity/Assets/Wwise/ScriptableObjects/InitBank.asset
+!/Unity/Assets/Wwise/ScriptableObjects/InitBank.asset.meta
 
 # Keep core script meta files so references wwise components on gameobjects aren't lost
 # We need these because the integration is not packaged with the gyms
