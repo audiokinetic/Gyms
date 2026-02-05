@@ -38,14 +38,15 @@ namespace Tests
             AkUnitySoundEngine.SetCurrentLanguage("en_US");
             yield return new WaitForEndOfFrame();
             yield return StartTest(SceneName);
+            yield return new WaitForSeconds(0.2f);
             BasicLocalizedVoice localizedVoice = GameObject.Find("Cylinder").GetComponent<BasicLocalizedVoice>();
+            yield return localizedVoice.SetLanguage("en_US");
+            yield return new WaitForSeconds(0.2f);
             AK.Wwise.Event localizedEvent = localizedVoice.LocalizedEvent;
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
             ExpectedLogErrorAtLeastOnce("Wwise Addressable Bank Manager: Post_Localized_Voice could not be loaded");
 #endif
-            yield return localizedVoice.SetLanguage("en_US");
-            yield return new WaitForSeconds(0.2f);
-            
+
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
             //With addressables, due to the auto bank not being loaded, the post won't happen for an invalid language thus not incrementing the PlayingId
             //This means that only the SetLanguage to "fr" will increment the PlayingId, making the expected localizedEvent.PlayingId + 1;

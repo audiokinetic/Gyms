@@ -35,13 +35,24 @@ namespace Tests
         [UnityTest]
         public IEnumerator AdvancedCallbackTypesMusicSyncBar_Tests()
         {
-            yield return StartTest(SceneName);;
+            yield return StartTest(SceneName);
+            AkEvent akEvent = gameObject.GetComponent<AkEvent>();
 
-			AkEvent akEvent = gameObject.GetComponent<AkEvent>();
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+	        yield return akEvent.data.WwiseObjectReference.CompleteLoadBank();
+#else
+            yield return new WaitUntil(() => akEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
+#endif
+
 			akEvent.HandleEvent(gameObject);
-			yield return new WaitForSeconds(0.2f);
+			yield return new WaitForSeconds(0.5f);
+			const float expected = 2.03391671f;
 			AdvancedCallbackTypesMusicSyncBarTests_Callback callbackInfo = gameObject.GetComponent<AdvancedCallbackTypesMusicSyncBarTests_Callback>();
-			AreApproximatelyEqual(callbackInfo.BarDuration, 2.03391671f, 0.0001f);
+			yield return new WaitUntil(() => (Mathf.Abs(callbackInfo.BarDuration - expected) < epsilon), 
+				System.TimeSpan.FromSeconds(0.5f), () => {});
+			AreApproximatelyEqual(callbackInfo.BarDuration, expected, epsilon);
 			LogOutput("Duration of a bar is " + callbackInfo.BarDuration + " seconds : ", true);
 
 			yield return FinishTest(SceneName);
