@@ -445,6 +445,58 @@ MonoBehaviour:
     m_Key: SpatialGeometrySingleMesh
     m_Metadata:
       m_Items: []
+  - m_Id: 317849152943210496
+    m_Key: SpatialRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317849195448287232
+    m_Key: SpatialRoomShape
+    m_Metadata:
+      m_Items: []
+  - m_Id: 317849257523986432
+    m_Key: SpatialRoomShapeCollision
+    m_Metadata:
+      m_Items: []
+  - m_Id: 327353235718717440
+    m_Key: SpatialRoomSingle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 327353301422489600
+    m_Key: SpatialRoomSingleTL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 327353656789090304
+    m_Key: SpatialRoomSingleTLCollision
+    m_Metadata:
+      m_Items: []
+  - m_Id: 327353752285003776
+    m_Key: SpatialRoomSingleTone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 327353847315349504
+    m_Key: SpatialRoomSingleToneCollision
+    m_Metadata:
+      m_Items: []
+  - m_Id: 328076469233696768
+    m_Key: SpatialRoomPortal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 328076519259160576
+    m_Key: SpatialRoomPortalSingle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329142220157796352
+    m_Key: SpatialRoomPortalSingleCollision
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331707134764302336
+    m_Key: SpatialRoomPortalTransform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331707220151943168
+    m_Key: SpatialRoomPortalTransformCollision
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
