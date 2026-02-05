@@ -129,6 +129,21 @@ EditorBuildSettings:
     path: Assets/Gyms/5-Spatial/SpatialRadialEmitter/SpatialRadialEmitterSimple/SpatialRadialEmitterSimple.unity
     guid: d14012ffde4cdfa49b35f2fd0258a5c5
   - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialRoom/SpatialRoomPortal/SpatialRoomPortalSingle/SpatialRoomPortalSingleCollision/SpatialRoomPortalSingleCollision.unity
+    guid: 864e0e6b473bbfe42841dfcec7848e93
+  - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialRoom/SpatialRoomPortal/SpatialRoomPortalTransform/SpatialRoomPortalTransformCollision/SpatialRoomPortalTransformCollision.unity
+    guid: 97673cd49faa6b3409a9310bd995eae4
+  - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialRoom/SpatialRoomShape/SpatialRoomShapeCollision/SpatialRoomShapeCollision.unity
+    guid: 86456cff8352ce140901b13f442ef6eb
+  - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTL/SpatialRoomSingleTLCollision/SpatialRoomSingleTLCollision.unity
+    guid: 324c6962cb0317c4f9d01c0d2b727d4e
+  - enabled: 1
+    path: Assets/Gyms/5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTone/SpatialRoomSingleToneCollision/SpatialRoomSingleToneCollision.unity
+    guid: 13721667bab446749bb28808a894c3e4
+  - enabled: 1
     path: Assets/Gyms/8-Editor/EditorEnterPlayMode/EditorEnterPlayMode.unity
     guid: 830dec3939a06174f8345222e21edc3f
   - enabled: 1
