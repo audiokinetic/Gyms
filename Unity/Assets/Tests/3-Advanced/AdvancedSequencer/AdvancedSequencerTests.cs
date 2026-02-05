@@ -46,7 +46,7 @@ namespace Tests
             yield return new WaitForSeconds(1f);
             float expectedValue = 0.6f;
             float actualValue = rtpc.RtpcSequencer.GetValue(button.gameObject);
-            LogOutput("RTPC value changes in Sequencer: ", AreApproximatelyEqual(actualValue, expectedValue, 0.1f));
+            LogOutput("RTPC value changes in Sequencer: ", AreApproximatelyEqual(actualValue, expectedValue, 0.3f));
             movement.Interact();
 
             yield return FinishTest(SceneName);

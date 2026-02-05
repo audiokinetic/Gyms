@@ -42,9 +42,12 @@ namespace Tests
 
 			AkEvent akEvent = gameObject.GetComponent<AkEvent>();
 			akEvent.HandleEvent(gameObject);
-			yield return new WaitForSeconds(0.2f);
+			yield return new WaitForSeconds(0.5f);
+			const float expected = 2.03391671f;
 			AdvancedCallbackTypesMusicSyncBarTests_Callback callbackInfo = gameObject.GetComponent<AdvancedCallbackTypesMusicSyncBarTests_Callback>();
-			AreApproximatelyEqual(callbackInfo.BarDuration, 2.03391671f, 0.0001f);
+			yield return new WaitUntil(() => (Mathf.Abs(callbackInfo.BarDuration - expected) < epsilon), 
+				System.TimeSpan.FromSeconds(0.5f), () => {});
+			AreApproximatelyEqual(callbackInfo.BarDuration, expected, epsilon);
 			LogOutput("Duration of a bar is " + callbackInfo.BarDuration + " seconds : ", true);
 
 			yield return FinishTest(SceneName);

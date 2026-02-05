@@ -38,11 +38,12 @@ namespace Tests
             AkSoundEngine.SetCurrentLanguage("en_US");
             yield return new WaitForEndOfFrame();
             yield return StartTest(SceneName);
+            yield return new WaitForSeconds(0.2f);
             BasicLocalizedVoice localizedVoice = GameObject.Find("Cylinder").GetComponent<BasicLocalizedVoice>();
-            AK.Wwise.Event localizedEvent = localizedVoice.LocalizedEvent;
             yield return localizedVoice.SetLanguage("en_US");
             yield return new WaitForSeconds(0.2f);
-            
+            AK.Wwise.Event localizedEvent = localizedVoice.LocalizedEvent;
+
             uint expected = localizedEvent.PlayingId + 1;
             //Set unsupported language
 #if UNITY_EDITOR

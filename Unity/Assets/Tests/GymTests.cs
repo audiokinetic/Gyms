@@ -32,6 +32,8 @@ using UnityEngine.SceneManagement;
 public class GymTests
 {
     protected GameObject gameObject;
+
+    protected const float epsilon = 0.0001f;
     protected IEnumerator StartTest(string SceneName)
     {
         yield return LoadScene(SceneName, LoadSceneMode.Single);

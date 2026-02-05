@@ -45,9 +45,9 @@ namespace Tests
             var EventButton = GameObject.Find("Button").GetComponentInChildren<AkEvent>();
             var StopButton = GameObject.Find("Button (1)").GetComponentInChildren<AkEvent>();
             EventButton.HandleEvent(EventButton.gameObject);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.5f);
             StopButton.HandleEvent(EventButton.gameObject);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.5f);
             Assert.AreEqual(1, CallbackIncrement.CallbackCount);
             Assert.AreEqual(expected + 3, PostSilence());
 

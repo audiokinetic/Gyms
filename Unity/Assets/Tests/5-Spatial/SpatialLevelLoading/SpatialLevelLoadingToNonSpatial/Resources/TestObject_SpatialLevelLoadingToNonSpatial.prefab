@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -967037530339388191}
   - component: {fileID: -7490521827582756526}
   m_Layer: 0
-  m_Name: TestObject_SpatialLevelLoadingToNormal
+  m_Name: TestObject_SpatialLevelLoadingToNonSpatial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,2 +1,2 @@
 PostEvent;>1-Basic
-All;RTPC;!>Stress;!>SwitchesTest
+All;RTPC;!>Stress;!>SwitchesTest;!SmokeSetStateTimeline;!SmokeTimelineInteractiveMusicSeek

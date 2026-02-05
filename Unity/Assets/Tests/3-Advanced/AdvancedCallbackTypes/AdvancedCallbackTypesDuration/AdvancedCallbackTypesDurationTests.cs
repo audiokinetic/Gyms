@@ -43,9 +43,11 @@ namespace Tests
 
 			AkEvent akEvent = gameObject.GetComponent<AkEvent>();
 			akEvent.HandleEvent(gameObject);
-			yield return new WaitForSeconds(0.2f);
+			const float expected = 1338.83337f;
 			AdvancedCallbackTypesDurationTests_Callback callbackInfo = gameObject.GetComponent<AdvancedCallbackTypesDurationTests_Callback>();
-			AreApproximatelyEqual(1338.83337f, callbackInfo.EventDuration, 0.0001f);
+			yield return new WaitUntil(() => (Mathf.Abs(callbackInfo.EventDuration - expected) < epsilon), 
+			System.TimeSpan.FromSeconds(0.5f), () => {});
+			AreApproximatelyEqual(callbackInfo.EventDuration, expected, epsilon);
 			LogOutput("Duration of the Event is " + callbackInfo.EventDuration + " milliseconds : ", true);
 
 			yield return FinishTest(SceneName);
