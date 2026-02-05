@@ -233,20 +233,20 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `5-Spatial/SpatialGeometry/SpatialGeometryShape`_
 - List of gyms showing how Geometry works with different shapes.
 
-##### All Brush presets | _Unreal_
+##### Brush Shapes | _Unreal_
 
 - _Folder: `5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeBrush`_
-- Shows how Geometry works with all Brush presets.
+- Shows how Geometry works with Brush shapes.
 
-##### All Collision presets | _Unreal_
+##### Collision Shapes | _Unreal_
 
 - _Folder: `5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeCollision`_
-- Shows how Geometry works with all Collision presets.
+- Shows how Geometry works with Collision shapes.
 
-##### All Mesh presets
+##### Mesh Shapes
 
 - _Folder: `5-Spatial/SpatialGeometry/SpatialGeometryShape/SpatialGeometryShapeMesh`_
-- Shows how Geometry works with all Mesh primitives and with custom shapes.
+- Shows how Geometry works with Mesh shapes.
 
 #### Single Geometry
 
@@ -342,6 +342,121 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 
 - _Folder: `5-Spatial/SpatialRadialEmitter/SpatialRadialEmitterSimple`_
 - Shows how to set up a single Radial emitter.
+
+### Room
+
+- _Folder: `5-Spatial/SpatialRoom`_
+- List of gyms showing how sound is affected by Rooms.
+
+#### Portal
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortal`_
+- List of gyms showing how sound is affected by Rooms and Portals.
+
+##### Single Portal
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalSingle`_
+- List of gyms showing how to set and update the parameters of a Portal.
+
+###### Brush Portal | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalSingleBrush`_
+- Gym showing how to set and update the parameters of a Portal on a Brush.
+
+###### Collision Portal
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalSingleCollision`_
+- Gym showing how to set and update the parameters of a Portal on a Collision Mesh.
+
+###### Mesh Portal | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalSingleMesh`_
+- Gym showing how to set and update the parameters of a Portal on a Mesh.
+
+##### Transform Rooms and Portals
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalTransform`_
+- List of gyms transforming Rooms and Portals.
+
+###### Transform Brush Room and Portal | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalTransformBrush`_
+- Gym transforming a Room and a Portal on a Brush.
+
+###### Transform Collision Room and Portal
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalTransformCollision`_
+- Gym transforming a Room and a Portal on a Collision Mesh.
+
+###### Transform Mesh Room and Portal | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalTransformMesh`_
+- Gym transforming a Room and a Portal on a Mesh.
+
+#### Room Shapes
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomShape`_
+- List of gyms showing how Room works with different shapes.
+
+##### Brush Shapes | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomShape/SpatialRoomShapeBrush`_
+- Shows how Room works with Brush shapes.
+
+##### Collision Shapes
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomShape/SpatialRoomShapeCollision`_
+- Shows how Room works with Collision shapes.
+
+##### Mesh Shapes | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomShape/SpatialRoomShapeMesh`_
+- Shows how Room works with Mesh shapes.
+
+#### Single Room
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingle`_
+- List of gyms showing how to set and update the parameters of a Room.
+
+##### Room Transmission Loss
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleTL`_
+- List of gyms showing how to set and update the transmission loss parameter of a Room.
+
+###### Brush Room Transmission Loss | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleTLBrush`_
+- Gym showing how to set and update the transmission loss parameter of a Room on a Brush.
+
+###### Collision Room Transmission Loss
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleTLCollision`_
+- Gym showing how to set and update the transmission loss parameter of a Room on a Collision.
+
+###### Mesh Room Transmission Loss | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleTLMesh`_
+- Gym showing how to set and update the transmission loss parameter of a Room on a Mesh.
+
+##### Room Tone
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleTone`_
+- List of gyms showing how to set and update the Room Tone of a Room.
+
+###### Brush Room Tone | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleToneBrush`_
+- Gym showing how to set and update the Room Tone of a Room on a Brush.
+
+###### Collision Room Tone
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleToneCollision`_
+- Gym showing how to set and update the Room Tone of a Room on a Collision.
+
+###### Mesh Room Tone | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleToneMesh`_
+- Gym showing how to set and update the Room Tone of a Room on a Mesh.
 
 ## Additional Gyms
 - _Folder: `6-Additional`_
