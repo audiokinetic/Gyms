@@ -32,6 +32,4 @@ public:
 	virtual bool AddToCreate(FWwiseReconcileItem& Item) override;
 	virtual bool AddToRename(FWwiseReconcileItem& Item) override;
 	virtual bool AddToUpdate(FWwiseReconcileItem& Item) override;
-	virtual bool ShouldMove(const FWwiseAnyRef& Ref, FAssetData InAssetPath, FString& OutNewAssetPath) const override;
-	virtual int32 MoveAssets(FScopedSlowTask& SlowTask) override;
 };

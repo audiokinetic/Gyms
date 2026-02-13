@@ -17,9 +17,44 @@ Copyright (c) 2024 Audiokinetic Inc.
 
 #include "WwiseGymsTestReconcileImpl.h"
 
+#include "AkSettings.h"
 #include "WwiseReconcile/Public/AkUnrealAssetDataHelper.h"
 
 bool FWwiseGymsTestReconcileImpl::ShouldBeSkipped(const FWwiseReconcileItem& Item) const
 {
 	return !FWwiseGymsReconcileImpl::ShouldBeSkipped(Item);
+}
+
+
+bool FWwiseGymsTestReconcileImpl::ShouldMove(const FWwiseAnyRef& Ref, FAssetData InAssetPath, FString& OutNewAssetPath) const
+{
+	bool bShouldMove = false;
+	FWwiseReconcileItem ReconcileItem;
+	ReconcileItem.WwiseAnyRef.WwiseAnyRef = &Ref;
+	if (!ShouldBeSkipped(ReconcileItem) && InAssetPath.IsValid())
+	{
+		auto WwisePath = Ref.GetObjectPath().ToString();
+		auto AkSettings = GetMutableDefault<UAkSettings>();
+		const FString DefaultPath = AkSettings->DefaultAssetCreationPath;
+		WwisePath = WwisePath.Replace(TEXT("\\"), TEXT("/"));
+		WwisePath = WwisePath.Replace(TEXT(" "), TEXT("_"));
+		FString ExpectedPath = DefaultPath / FPaths::GetPath(WwisePath);
+
+		if (!InAssetPath.GetObjectPathString().Contains(WwisePath))
+		{
+			bShouldMove = true;
+			OutNewAssetPath = ExpectedPath;
+		}
+	}
+	UE_LOG(LogWwiseGymsReconcile, Log, TEXT("Should Asset %s Move: %s"), *Ref.GetName().ToString(), bShouldMove ? TEXT("True") : TEXT("False"));
+	return bShouldMove;
+}
+
+int32 FWwiseGymsTestReconcileImpl::MoveAssets(FScopedSlowTask& SlowTask)
+{
+	for (const auto& AssetData : AssetsToMove)
+	{
+		UE_LOG(LogWwiseGymsReconcile, Warning, TEXT("TOTALLY moving %s to %s"), *AssetData.WwiseAnyRef.WwiseAnyRef->GetName().ToString(), *AssetData.MovedPath);
+	}
+	return AssetsToMove.Num();
 }
