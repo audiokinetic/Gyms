@@ -81,8 +81,8 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 		FrenchID = DataStructure.GetLanguageId(French);
 		EnglishID = DataStructure.GetLanguageId(English);
 #endif
-		CHECK(FrenchID != AK_INVALID_UNIQUE_ID);
-		CHECK(EnglishID != AK_INVALID_UNIQUE_ID);
+		WWISE_CHECK(FrenchID != AK_INVALID_UNIQUE_ID);
+		WWISE_CHECK(EnglishID != AK_INVALID_UNIQUE_ID);
 	}
 
 	// Filtering requires a FWwiseAssetLibraryProcessor and a FWwiseAssetLibraryFilteringSharedData
@@ -101,10 +101,10 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 	FilteringSharedData->bConsiderAssetsData = false;
 	SECTION("Initialize AssetLibraryProcessor, Filtering SharedData and filter")
 	{
-		CHECK(Processor);
-		CHECK(FilteringSharedData.IsValid());
-		CHECK(FilteringSharedData->Sources.Num() > 0);
-		CHECK(Filter);
+		WWISE_CHECK(Processor);
+		WWISE_CHECK(FilteringSharedData.IsValid());
+		WWISE_CHECK(FilteringSharedData->Sources.Num() > 0);
+		WWISE_CHECK(Filter);
 	}
 
 	SECTION("None Filter")
@@ -112,7 +112,7 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 		LibraryInfo.Filters.Add(nullptr);
 		LibraryInfo.FilteredAssets.Empty();
 		Processor->FilterLibraryAssets(*FilteringSharedData, LibraryInfo, false);
-		CHECK(LibraryInfo.FilteredAssets.Num() == (FilteringSharedData->Sources.Num()-FilteringSharedData->SkippedAssetsCount));
+		WWISE_CHECK(LibraryInfo.FilteredAssets.Num() == (FilteringSharedData->Sources.Num()-FilteringSharedData->SkippedAssetsCount));
 	}
 
 	// Set up Shared Testing Filter. This is used for all the tests below
@@ -127,10 +127,10 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 		Filter->SelectedLanguages.Add(French);
 
 		Processor->FilterLibraryAssets(*FilteringSharedData, LibraryInfo, false);
-		CHECK(LibraryInfo.FilteredAssets.Num() >= NumFrenchAssets)
+		WWISE_CHECK(LibraryInfo.FilteredAssets.Num() >= NumFrenchAssets)
 		for(const auto FilteredAsset : LibraryInfo.FilteredAssets)
 		{
-			CHECK(FilteredAsset.LanguageId == FrenchID);
+			WWISE_CHECK(FilteredAsset.LanguageId == FrenchID);
 		}
 	}
 	
@@ -143,10 +143,10 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 		Filter->SelectedLanguages.Add(English);
 
 		Processor->FilterLibraryAssets(*FilteringSharedData, LibraryInfo, false);
-		CHECK(LibraryInfo.FilteredAssets.Num() >= NumFrenchAssets + NumEnglishAssets)
+		WWISE_CHECK(LibraryInfo.FilteredAssets.Num() >= NumFrenchAssets + NumEnglishAssets)
 		for(const auto FilteredAsset : LibraryInfo.FilteredAssets)
 		{
-			CHECK(FilteredAsset.LanguageId == FrenchID || FilteredAsset.LanguageId == EnglishID);
+			WWISE_CHECK(FilteredAsset.LanguageId == FrenchID || FilteredAsset.LanguageId == EnglishID);
 		}
 	}
 
@@ -158,7 +158,7 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 		Filter->SelectedLanguages.Add(Invalid);
 		
 		Processor->FilterLibraryAssets(*FilteringSharedData, LibraryInfo, false);
-		CHECK(LibraryInfo.FilteredAssets.Num() == 0)
+		WWISE_CHECK(LibraryInfo.FilteredAssets.Num() == 0)
 	}
 
 	SECTION("Empty Filter")
@@ -175,7 +175,7 @@ WWISE_TEST_CASE(AssetFilter_Language, "Wwise::AssetLibraryEditor::AssetFilter_La
 
 		Processor->FilterLibraryAssets(*FilteringSharedData, LibraryInfo, false);
 		
-		CHECK(LibraryInfo.FilteredAssets.Num() == EmptyFilterCount);
+		WWISE_CHECK(LibraryInfo.FilteredAssets.Num() == EmptyFilterCount);
 	}
 }
 
@@ -236,8 +236,8 @@ WWISE_TEST_CASE(AssetMaps_MediaAndSoundBanks, "Wwise::AssetLibraryEditor::AssetM
 		FrenchID = DataStructure.GetLanguageId(French);
 		EnglishID = DataStructure.GetLanguageId(English);
 #endif
-		CHECK(FrenchID != AK_INVALID_UNIQUE_ID);
-		CHECK(EnglishID != AK_INVALID_UNIQUE_ID);
+		WWISE_CHECK(FrenchID != AK_INVALID_UNIQUE_ID);
+		WWISE_CHECK(EnglishID != AK_INVALID_UNIQUE_ID);
 	}
 
 	// Filtering requires a FWwiseAssetLibraryProcessor and a FWwiseAssetLibraryFilteringSharedData
@@ -271,7 +271,7 @@ WWISE_TEST_CASE(AssetMaps_MediaAndSoundBanks, "Wwise::AssetLibraryEditor::AssetM
 		TSet<WwiseDBShortId> ExistingKeys;
 		for (const auto& Source: FilteringSharedMediaData->Sources)
 		{
-			CHECK(Source.GetMedia());
+			WWISE_CHECK(Source.GetMedia());
 		}
 	}
 
@@ -280,7 +280,7 @@ WWISE_TEST_CASE(AssetMaps_MediaAndSoundBanks, "Wwise::AssetLibraryEditor::AssetM
 		TSet<WwiseDBShortId> ExistingKeys;
 		for (const auto& Source: FilteringSharedSoundBankData->Sources)
 		{
-			CHECK(Source.GetSoundBank());
+			WWISE_CHECK(Source.GetSoundBank());
 		}
 	}
 
@@ -288,7 +288,7 @@ WWISE_TEST_CASE(AssetMaps_MediaAndSoundBanks, "Wwise::AssetLibraryEditor::AssetM
 	{
 		for (const auto& Source: FilteringSharedMediaData->Sources)
 		{
-			CHECK(Source.GetType() == WwiseRefType::Media)
+			WWISE_CHECK(Source.GetType() == WwiseRefType::Media)
 		}
 	}
 
@@ -296,7 +296,7 @@ WWISE_TEST_CASE(AssetMaps_MediaAndSoundBanks, "Wwise::AssetLibraryEditor::AssetM
 	{
 		for (const auto& Source: FilteringSharedSoundBankData->Sources)
 		{
-			CHECK(Source.GetType() == WwiseRefType::SoundBank)
+			WWISE_CHECK(Source.GetType() == WwiseRefType::SoundBank)
 		}
 	}
 
@@ -307,7 +307,7 @@ WWISE_TEST_CASE(AssetMaps_MediaAndSoundBanks, "Wwise::AssetLibraryEditor::AssetM
 			auto Media = Source.GetMedia();
 			if (Media)
 			{
-				CHECK(Media->bStreaming || Media->Location == WwiseMetadataMediaLocation::Loose)
+				WWISE_CHECK(Media->bStreaming || Media->Location == WwiseMetadataMediaLocation::Loose)
 			}
 		}
 	}
