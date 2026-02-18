@@ -25,6 +25,7 @@ the specific language governing permissions and limitations under the License.
 
 #include "GymCreator.h"
 
+#include "FunctionalTest.h"
 #include "Engine/World.h"
 #include "GenericPlatform/GenericPlatformFile.h"
 #include "HAL/PlatformFileManager.h"
@@ -151,6 +152,21 @@ FString UGymCreator::CreateGym(FString CommonPath, FString Path, int TemplateInd
     UObject* NewMap = ObjectTools::DuplicateSingleObject(TemplateMapObject, NewGymName, PackagesNotDuplicated);
     if (NewMap)
     {
+        UWorld* NewWorld = Cast<UWorld>(NewMap);
+        if (NewWorld && NewWorld->PersistentLevel)
+        {
+            for (AActor* Actor : NewWorld->PersistentLevel->Actors)
+            {
+                if (Actor->GetClass()->IsChildOf(AFunctionalTest::StaticClass()))
+                {
+                    FString TestActorName = Name + TEXT("Test");
+                    Actor->Rename(*TestActorName, Actor->GetOuter(), REN_DontCreateRedirectors);
+                    Actor->SetActorLabel(TestActorName);
+                    break;
+                }
+            }
+        }
+
         PackagesToSave.Add(NewMap->GetOutermost());
     }
 

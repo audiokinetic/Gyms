@@ -141,18 +141,18 @@ class UnrealAutomation(GymsAutomation):
             gymsList.append(gym[4:])
             return gymsList
 
-        #To run a single test, every tests are in a folder with their name. Using "Name"/"Name.FunctionalTest" will
+        #To run a single test, every tests are in a folder with their name. Using "Name"/"Name.NameTest" will
         #assure we are not running a test that might be in the folder of the given test.
         if self.gym_exists(gym, self.gymsPath): 
             #Unreal's tests separator is always "/"
-            gymsList.append('{}.{}.FunctionalTest'.format(gym, gym))
+            gymsList.append('{}.{}.{}Test'.format(gym, gym, gym))
         return gymsList
 
 
     def get_all_gyms_in_folder(self, folderPath, gymsList):
         if self.contains_gyms(folderPath):
             gymName = folderPath[folderPath.rindex(os.path.sep) + 1:]
-            gymsList.append("{}.{}.FunctionalTest".format(gymName, gymName))
+            gymsList.append("{}.{}.{}Test".format(gymName, gymName, gymName))
         subfolders = os.listdir(folderPath)
         for subfolder in subfolders:
             fullPath = os.path.join(folderPath, subfolder)
