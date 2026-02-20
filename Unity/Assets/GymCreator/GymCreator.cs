@@ -68,14 +68,15 @@ public class GymCreator : UnityEditor.EditorWindow
                 {
                     var GymBasePath = System.IO.Path.Combine(UnityEngine.Application.dataPath, "Gyms/");
                     GymBasePath = GymBasePath.Replace("\\", "/");
-                    var GymPathSelected = UnityEditor.EditorUtility.OpenFolderPanel("Select your Gym Path", _gymPath, "");
-                    if(!GymPathSelected.Contains(GymBasePath))
-                    {
-                        UnityEditor.EditorUtility.DisplayDialog("Error", "The Gym Path must be within the Gyms folder", "Ok");
-                    }
-                    else
+                    var GymPathSelected = UnityEditor.EditorUtility.OpenFolderPanel("Select your Gym Path (It must be within Assets/Gyms)", _gymPath, "");
+
+                    if(GymPathSelected.Contains(GymBasePath))
                     {
                         _gymPath = GymPathSelected.Replace(GymBasePath, string.Empty);
+                    }
+                    else if (GymPathSelected.Length > 0)
+                    {
+                        UnityEditor.EditorUtility.DisplayDialog("Error", "The Gym Path must be within the Gyms folder (Assets/Gyms)", "Ok");
                     }
                 }
             }
