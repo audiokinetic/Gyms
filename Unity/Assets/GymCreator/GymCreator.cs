@@ -25,6 +25,7 @@ the specific language governing permissions and limitations under the License.
 using System;
 using System.IO;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 #if UNITY_EDITOR
@@ -47,8 +48,37 @@ public class GymCreator : UnityEditor.EditorWindow
     [UnityEditor.MenuItem("Window/Gym Creator", false)]
     public static void InitGymCreatorWindow()
     {
-        GetWindow<GymCreator>("Gym Creator", true);
+        var window = GetWindow<GymCreator>("Gym Creator", true);
+
+        SetIcon(window);
     }
+
+    private void OnEnable()
+    {
+        if (!HasOpenInstances<GymCreator>())
+        {
+            GymCreator window = (GymCreator)EditorWindow.GetWindow(typeof(GymCreator));
+            if (window != null)
+            {
+                SetIcon(window);
+            }
+        }
+    }
+
+    private static void SetIcon(GymCreator window)
+    {
+        Texture2D originalIcon = EditorGUIUtility.Load("Assets/Icons/Icon-32 Sprite.png") as Texture2D;
+
+        if (originalIcon != null)
+        {
+            window.titleContent = new GUIContent("Gym Creator", originalIcon);
+        }
+        else
+        {
+            window.titleContent = new GUIContent("Gym Creator");
+        }
+    }
+
     public void OnGUI()
     {
         using (new UnityEngine.GUILayout.VerticalScope("box"))
