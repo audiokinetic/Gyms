@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{08C44A45-F112-4231-A2E1-ED8AE1517430}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Testing" ID="{08C44A45-F112-4231-A2E1-ED8AE1517430}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="SameName" ID="{439068C0-ED10-4EB7-9AE7-C2684D5DC77C}">
+					<ChildrenList>
+						<Action Name="" ID="{385778C8-E180-4FBB-8472-AB0FF72CDB90}" ShortID="32879142">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="EventInSameNameSoundBank" ID="{3E1A134E-2463-4345-BED5-5B29B52C84E4}">
+					<ChildrenList>
+						<Action Name="" ID="{9F0C8DDD-02EB-4486-B569-F3280A6B7A3E}" ShortID="311814687">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shotgun_Fire" ID="{C5F6B19B-A8F5-4563-85FB-17A0BEA10871}" WorkUnitID="{83C7F172-2885-4077-9671-3FE56F82D16C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

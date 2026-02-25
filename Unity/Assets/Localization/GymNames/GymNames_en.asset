@@ -451,6 +451,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 294378784521895936
+  - m_Id: 84482905416798208
+    m_Localized: 'User Defined SoundBank and Auto Defined SoundBank with the Same
+      Name '
+    m_Metadata:
+      m_Items: []
     m_Localized: Single Geometry
     m_Metadata:
       m_Items: []
