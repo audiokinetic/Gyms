@@ -1,10 +1,10 @@
 {
   "dependencies": {
-    "com.audiokinetic.wwise.addressables": "https://github.com/audiokinetic/WwiseUnityAddressables.git#main_26.0",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.collab-proxy": "2.4.3",
     "com.unity.ide.rider": "3.0.31",
     "com.unity.ide.visualstudio": "2.0.22",
+    "com.audiokinetic.wwise.addressables": "https://github.com/audiokinetic/WwiseUnityAddressables.git#main_25.1",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.localization": "1.5.2",
     "com.unity.test-framework": "1.1.33",
