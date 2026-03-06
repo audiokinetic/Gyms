@@ -25,6 +25,7 @@ the specific language governing permissions and limitations under the License.
 #pragma once
 
 #include "CoreMinimal.h"
+#include "AkAudioEvent.h"
 #include "AkGameObject.h"
 #include "Wwise/API/WwiseSoundEngineAPI.h"
 #include "UPersistentMusicObject.generated.h"
@@ -37,6 +38,9 @@ class GYMS_API UPersistentMusicObject : public UObject
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audiokinetic|PersistentMusicObject")
 	TObjectPtr<UAkGameObject> AkGameObject = nullptr;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audiokinetic|PersistentMusicObject")
+	TObjectPtr<UAkAudioEvent> PersistentEvent = nullptr;
 
 	UPersistentMusicObject();
 
