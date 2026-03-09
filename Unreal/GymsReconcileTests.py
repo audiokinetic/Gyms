@@ -69,6 +69,10 @@ if __name__ == '__main__':
     path = os.path.join(path, 'Gyms.uproject')
     cmd = enginePath + " " + path + " -run=\"WwiseReconcileCommandlet\" -modes=all" + dryRun + " -ini:Engine:[Audio]:WwiseReconcileModuleName=WwiseGymsTestReconcile -log=ReconcileOutput.txt"
     print('Running: ' + cmd)
+    print('\nExectuing reconcile tests...\n')
     subprocess.run(cmd, timeout=1000)
+    print('Parsing tests results...\n')
     parse_results()
+    print('ALL TESTS PASSED SUCCESSFULLY!\n')
+    print('All expected log entries were found in: Saved/Logs/ReconcileOutput.txt')
         
