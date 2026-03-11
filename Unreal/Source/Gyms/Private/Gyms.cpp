@@ -25,4 +25,10 @@ the specific language governing permissions and limitations under the License.
 #include "Gyms.h"
 #include "Modules/ModuleManager.h"
 
-IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, Gyms, "Gyms" );
+void FGymsModule::StartupModule()
+{
+	// Load the WwiseAPIRecorder module
+	FModuleManager::Get().LoadModule(TEXT("WwiseAPIRecorder"));
+}
+
+IMPLEMENT_PRIMARY_GAME_MODULE( FGymsModule, Gyms, "Gyms" );

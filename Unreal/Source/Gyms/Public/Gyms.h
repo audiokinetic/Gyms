@@ -25,4 +25,11 @@ the specific language governing permissions and limitations under the License.
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Modules/ModuleManager.h"
 #include "Runtime/Launch/Resources/Version.h"
+
+class FGymsModule : public FDefaultGameModuleImpl
+{
+public:
+	virtual void StartupModule() override;
+};
