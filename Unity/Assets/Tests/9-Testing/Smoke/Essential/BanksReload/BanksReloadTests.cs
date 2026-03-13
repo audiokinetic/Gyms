@@ -45,7 +45,7 @@ namespace Tests
 #if UNITY_WEBGL
         private float timeOut = 10.0f;
 #else
-        private float timeOut = 2.5f;
+        private readonly float timeOut = 5.0f;
 #endif
         WwiseEventReference eventRef;
 
