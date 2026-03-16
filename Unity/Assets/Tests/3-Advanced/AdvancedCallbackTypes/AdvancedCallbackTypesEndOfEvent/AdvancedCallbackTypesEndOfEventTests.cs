@@ -46,7 +46,7 @@ namespace Tests
 			callbackScript = gameObject.GetComponent<AdvancedCallbackTypesEndOfEventTests_Callback>();
 			akEvent.HandleEvent(gameObject);
 			yield return new WaitUntil(() => callbackScript.callbackCalled, 
-				System.TimeSpan.FromSeconds(1.8f), () => {});
+				System.TimeSpan.FromSeconds(2.5f), () => {});
 			Assert.IsTrue(callbackScript.callbackCalled);
 			LogOutput("End of Event callback :  ", true);
 

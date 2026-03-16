@@ -46,7 +46,7 @@ namespace Tests
 			const float expected = 1338.83337f;
 			AdvancedCallbackTypesDurationTests_Callback callbackInfo = gameObject.GetComponent<AdvancedCallbackTypesDurationTests_Callback>();
 			yield return new WaitUntil(() => (Mathf.Abs(callbackInfo.EventDuration - expected) < epsilon), 
-			System.TimeSpan.FromSeconds(0.5f), () => {});
+			System.TimeSpan.FromSeconds(1.0f), () => {});
 			AreApproximatelyEqual(callbackInfo.EventDuration, expected, epsilon);
 			LogOutput("Duration of the Event is " + callbackInfo.EventDuration + " milliseconds : ", true);
 

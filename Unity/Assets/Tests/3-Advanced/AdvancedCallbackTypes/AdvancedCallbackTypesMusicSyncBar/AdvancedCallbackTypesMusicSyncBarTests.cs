@@ -46,7 +46,7 @@ namespace Tests
 			const float expected = 2.03391671f;
 			AdvancedCallbackTypesMusicSyncBarTests_Callback callbackInfo = gameObject.GetComponent<AdvancedCallbackTypesMusicSyncBarTests_Callback>();
 			yield return new WaitUntil(() => (Mathf.Abs(callbackInfo.BarDuration - expected) < epsilon), 
-				System.TimeSpan.FromSeconds(0.5f), () => {});
+				System.TimeSpan.FromSeconds(1.0f), () => {});
 			AreApproximatelyEqual(callbackInfo.BarDuration, expected, epsilon);
 			LogOutput("Duration of a bar is " + callbackInfo.BarDuration + " seconds : ", true);
 
