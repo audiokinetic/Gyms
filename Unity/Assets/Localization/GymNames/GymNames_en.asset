@@ -502,6 +502,38 @@ MonoBehaviour:
     m_Localized: Transform Collision Room and Portal
     m_Metadata:
       m_Items: []
+  - m_Id: 340746467823501312
+    m_Localized: Reverb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 340746624099074048
+    m_Localized: Single Room with Reverb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 340746662015582208
+    m_Localized: Room Transmission Loss with Reverb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 340746702951989248
+    m_Localized: Collision Room Transmission Loss with Reverb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 340746777644154880
+    m_Localized: Room Tone with Reverb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 340746810296811520
+    m_Localized: Collision Room Tone with Reverb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353427214682210304
+    m_Localized: Reverb Zone with Emitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353427351244554240
+    m_Localized: Reverb Zone with Room Tone
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

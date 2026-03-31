@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2280a4d6858231e41a70ebfb9469459d, type: 3}
   m_Name: E1A99C47-7FC9-4BEF-81EE-7173C2EBD91A
   m_EditorClassIdentifier: 
-  objectName: RoomReverb_Big
-  id: 2083434671
+  objectName: RoomReverb_Large
+  id: 1675184072
   guid: E1A99C47-7FC9-4BEF-81EE-7173C2EBD91A
