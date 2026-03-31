@@ -487,6 +487,38 @@ MonoBehaviour:
     m_Key: 7-ParticleSystem
     m_Metadata:
       m_Items: []
+  - m_Id: 340746467823501312
+    m_Key: SpatialRoomReverb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 340746624099074048
+    m_Key: SpatialRoomReverbSingle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 340746662015582208
+    m_Key: SpatialRoomReverbSingleTL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 340746702951989248
+    m_Key: SpatialRoomReverbSingleTLCollision
+    m_Metadata:
+      m_Items: []
+  - m_Id: 340746777644154880
+    m_Key: SpatialRoomReverbSingleTone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 340746810296811520
+    m_Key: SpatialRoomReverbSingleToneCollision
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353427214682210304
+    m_Key: ReverbZone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353427351244554240
+    m_Key: SpatialRoomReverbZoneSingleToneCollision
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -309,43 +309,164 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 
 ##### Single Portal
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalSingle`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortal/SpatialRoomPortalSingle`_
 - List of gyms showing how to set and update the parameters of a Portal.
 
 ###### Brush Portal | _Unreal_
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalSingleBrush`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortal/SpatialRoomPortalSingleBrush`_
 - Gym showing how to set and update the parameters of a Portal on a Brush.
 
 ###### Collision Portal
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalSingleCollision`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortal/SpatialRoomPortalSingleCollision`_
 - Gym showing how to set and update the parameters of a Portal on a Collision Mesh.
 
 ###### Mesh Portal | _Unreal_
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalSingleMesh`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortal/SpatialRoomPortalSingleMesh`_
 - Gym showing how to set and update the parameters of a Portal on a Mesh.
 
 ##### Transform Rooms and Portals
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalTransform`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortal/SpatialRoomPortalTransform`_
 - List of gyms transforming Rooms and Portals.
 
 ###### Transform Brush Room and Portal | _Unreal_
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalTransformBrush`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortal/SpatialRoomPortalTransform/SpatialRoomPortalTransformBrush`_
 - Gym transforming a Room and a Portal on a Brush.
 
 ###### Transform Collision Room and Portal
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalTransformCollision`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortal/SpatialRoomPortalTransform/SpatialRoomPortalTransformCollision`_
 - Gym transforming a Room and a Portal on a Collision Mesh.
 
 ###### Transform Mesh Room and Portal | _Unreal_
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortalTransformMesh`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomPortal/SpatialRoomPortalTransform/SpatialRoomPortalTransformMesh`_
 - Gym transforming a Room and a Portal on a Mesh.
+
+#### Reverb
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb`_
+- List of gyms showing how to set Room Reverb.
+
+##### Reverb Zone
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/ReverbZone`_
+- List of gyms showing how sound is affected by Reverb Zones.
+
+###### Single Reverb Zone
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/ReverbZone/Single`_
+- List of gyms with a single Reverb Zone.
+
+####### Single Reverb Zone with Emitter
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/ReverbZone/Single/Emitter`_
+- List of gyms with a single Reverb Zone with an emitter.
+
+######## Single Brush Reverb Zone with Emitter | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/ReverbZone/Single/Emitter/SpatialRoomReverbZoneSingleEmitterBrush`_
+- Gym showing how to change the parameters of a single Reverb Zone on a Brush with an emitter.
+
+######## Single Collision Reverb Zone with Emitter
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/ReverbZone/Single/Emitter/SpatialRoomReverbZoneSingleEmitterCollision`_
+- Gym showing how to change the parameters of a single Reverb Zone on a collision with an emitter.
+
+######## Single Mesh Reverb Zone with Emitter | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/ReverbZone/Single/Emitter/SpatialRoomReverbZoneSingleEmitterMesh`_
+- Gym showing how to change the parameters of a single Reverb Zone on a Mesh with an emitter.
+
+####### Single Reverb Zone with Room Tone
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/ReverbZone/Single/Tone`_
+- List of gyms with a single Reverb Zone with a Room Tone.
+
+######## Single Brush Reverb Zone with Room Tone | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/ReverbZone/Single/Tone/SpatialRoomReverbZoneSingleToneBrush`_
+- Gym showing how to change the parameters of a single Reverb Zone on a Brush with Room Tone.
+
+######## Single Collision Reverb Zone with Room Tone
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/ReverbZone/Single/Tone/SpatialRoomReverbZoneSingleToneCollision`_
+- Gym showing how to change the parameters of a single Reverb Zone on a collision with Room Tone.
+
+######## Single Mesh Reverb Zone with Room Tone | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/ReverbZone/Single/Tone/SpatialRoomReverbZoneSingleToneMesh`_
+- Gym showing how to change the parameters of a single Reverb Zone on a Mesh with Room Tone.
+
+##### Reverb Assignment | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbAssignment`_
+- List of gyms showing how to estimate the Reverb of a Room.
+
+###### Brush Room Reverb Assignment | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbAssignmentBrush`_
+- Gym showing how to set estimate the Reverb of a Room on a Brush.
+
+###### Collision Room Reverb Assignment | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbAssignmentCollision`_
+- Gym showing how to estimate the Reverb of a Room on a Collision.
+
+###### Mesh Room Reverb Assignment | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbAssignmentMesh`_
+- Gym showing how to estimate the Reverb of a Room on a Mesh.
+
+#### Single Room with Reverb
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbSingle`_
+- List of gyms showing how to set and update the parameters of a Room with Reverb.
+
+##### Room Transmission Loss with Reverb
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbSingle/SpatialRoomReverbSingleTL`_
+- List of gyms showing how to set and update the transmission loss parameter of a Room with Reverb.
+
+###### Brush Room Transmission Loss with Reverb | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbSingle/SpatialRoomReverbSingleTL/SpatialRoomReverbSingleTLBrush`_
+- Gym showing how to set and update the transmission loss parameter of a Room with Reverb on a Brush.
+
+###### Collision Room Transmission Loss with Reverb
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbSingle/SpatialRoomReverbSingleTL/SpatialRoomReverbSingleTLCollision`_
+- Gym showing how to set and update the transmission loss parameter of a Room with Reverb on a Collision.
+
+###### Mesh Room Transmission Loss with Reverb | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbSingle/SpatialRoomReverbSingleTL/SpatialRoomReverbSingleTLMesh`_
+- Gym showing how to set and update the transmission loss parameter of a Room with Reverb on a Mesh.
+
+##### Room Tone with Reverb
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbSingle/SpatialRoomReverbSingleTone`_
+- List of gyms showing how to set and update the Room Tone of a Room with Reverb.
+
+###### Brush Room Tone with Reverb | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbSingle/SpatialRoomReverbSingleTone/SpatialRoomReverbSingleToneBrush`_
+- Gym showing how to set and update the Room Tone of a Room with Reverb on a Brush.
+
+###### Collision Room Tone with Reverb
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbSingle/SpatialRoomReverbSingleTone/SpatialRoomReverbSingleToneCollision`_
+- Gym showing how to set and update the Room Tone of a Room with Reverb on a Collision.
+
+###### Mesh Room Tone with Reverb | _Unreal_
+
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomReverb/SpatialRoomReverbSingle/SpatialRoomReverbSingleTone/SpatialRoomReverbSingleToneMesh`_
+- Gym showing how to set and update the Room Tone of a Room with Reverb on a Mesh.
+
 
 #### Room Shapes
 
@@ -374,42 +495,42 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 
 ##### Room Transmission Loss
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleTL`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTL`_
 - List of gyms showing how to set and update the transmission loss parameter of a Room.
 
 ###### Brush Room Transmission Loss | _Unreal_
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleTLBrush`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTL/SpatialRoomSingleTLBrush`_
 - Gym showing how to set and update the transmission loss parameter of a Room on a Brush.
 
 ###### Collision Room Transmission Loss
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleTLCollision`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTL/SpatialRoomSingleTLCollision`_
 - Gym showing how to set and update the transmission loss parameter of a Room on a Collision.
 
 ###### Mesh Room Transmission Loss | _Unreal_
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleTLMesh`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTL/SpatialRoomSingleTLMesh`_
 - Gym showing how to set and update the transmission loss parameter of a Room on a Mesh.
 
 ##### Room Tone
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleTone`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTone`_
 - List of gyms showing how to set and update the Room Tone of a Room.
 
 ###### Brush Room Tone | _Unreal_
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleToneBrush`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTone/SpatialRoomSingleToneBrush`_
 - Gym showing how to set and update the Room Tone of a Room on a Brush.
 
 ###### Collision Room Tone
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleToneCollision`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTone/SpatialRoomSingleToneCollision`_
 - Gym showing how to set and update the Room Tone of a Room on a Collision.
 
 ###### Mesh Room Tone | _Unreal_
 
-- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingleToneMesh`_
+- _Folder: `5-Spatial/SpatialRoom/SpatialRoomSingle/SpatialRoomSingleTone/SpatialRoomSingleToneMesh`_
 - Gym showing how to set and update the Room Tone of a Room on a Mesh.
 
 ## Additional Gyms
