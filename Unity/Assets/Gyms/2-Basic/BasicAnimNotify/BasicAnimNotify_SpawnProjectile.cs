@@ -38,6 +38,6 @@ public class BasicAnimNotify_SpawnProjectile : StateMachineBehaviour
         Vector3 spawnPoint = animator.gameObject.transform.position + 0.2f * animator.transform.forward;
         spawnPoint.y -= 0.7f;
         projectile.transform.position = spawnPoint;
-        projectile.GetComponent<Rigidbody>().velocity = animator.transform.forward * 10;
+        projectile.GetComponent<Rigidbody>().linearVelocity = animator.transform.forward * 10;
     }
 }
