@@ -38,6 +38,7 @@ namespace Tests
     {
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
         private WwiseAddressableSoundBank bank;
+        private static string initBankHandleName = "InitFalseAkBankType_User";
 #endif
         private bool firstCall = true;
         private DateTime startTime;
@@ -71,7 +72,7 @@ namespace Tests
         private static void CheckRefCount(int count)
         {
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-            AkAddressableBankManager.BankHandles.TryGetValue("Init", out var handle);
+            AkAddressableBankManager.BankHandles.TryGetValue(initBankHandleName, out var handle);
             Assert.IsTrue(handle.RefCount == count);
 #else
             //Not implemented
@@ -81,7 +82,7 @@ namespace Tests
         private static void CheckIsInHandleDict(bool isInDict)
         {
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-            Assert.IsTrue(AkAddressableBankManager.BankHandles.ContainsKey("Init") == isInDict);
+            Assert.IsTrue(AkAddressableBankManager.BankHandles.ContainsKey(initBankHandleName) == isInDict);
 #else
             //Not implemented
 #endif
