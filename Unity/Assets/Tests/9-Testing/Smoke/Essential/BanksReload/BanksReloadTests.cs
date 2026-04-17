@@ -128,13 +128,13 @@ namespace Tests
         
         private void CheckRefCount(int count)
         {
-            AkAddressableBankManager.BankHandles.TryGetValue(bank.name, out var handle);
+            AkAddressableBankManager.BankHandles.TryGetValue(AkAddressableBankManager.GetBankHandleName(bank), out var handle);
             Assert.IsTrue(handle.RefCount == count);
         }
         
         private void CheckIsInHandleDict(bool isInDict)
         {
-            Assert.IsTrue(AkAddressableBankManager.BankHandles.ContainsKey(bank.name) == isInDict);
+            Assert.IsTrue(AkAddressableBankManager.BankHandles.ContainsKey(AkAddressableBankManager.GetBankHandleName(bank)) == isInDict);
         }
 #else
         private string bankName;
