@@ -43,12 +43,13 @@ namespace Tests
             {
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
 #if UNITY_WEBGL
-            yield return Event.data.WwiseObjectReference.CompleteLoadBank();
+                yield return Event.data.WwiseObjectReference.CompleteLoadBank();
 #else
                 yield return new WaitUntil(() => Event.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
 #endif
 #endif
-                Event.HandleEvent(gameObject);    
+                Event.HandleEvent(gameObject);
+                Assert.Greater(Event.playingId, 0);
             }
 
             yield return FinishTest(SceneName);
