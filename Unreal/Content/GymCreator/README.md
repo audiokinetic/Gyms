@@ -4,7 +4,7 @@ You can use the Unreal Gym Creator to create a Gym template.
 
 ## Using the Gym Creator
 
-Open the GymCreator level then click Play. In the dialog that appears, type the path in which you want to create your level, starting as a sub-folder of the Gyms folder. For example:
+Run the GymCreator Editor Utility Widget. In the dialog that appears, type the name of your level and select the path of your gym. The path must be inside the Gyms folder. For example:
 ![](../../../Documentation/Images/UnrealGymCreatorCreating.png)
 
 
