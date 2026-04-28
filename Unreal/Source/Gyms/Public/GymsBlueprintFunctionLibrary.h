@@ -51,9 +51,6 @@ class GYMS_API UGymsBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, Category = "Gym Blueprint Helpers")
 	static bool IsMobilePlatform();
 
-	UFUNCTION(BlueprintCallable, Category = "Gym Blueprint Helpers")
-	static void UpdateMapsToCook();
-
 	UFUNCTION(BlueprintCallable, Category = "Gym Blueprint Utilities")
 	static void FireEvent(const FGenericCallback& CallbackEvent);
 
