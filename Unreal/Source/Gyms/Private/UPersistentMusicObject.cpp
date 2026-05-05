@@ -24,6 +24,8 @@ the specific language governing permissions and limitations under the License.
 
 #include "UPersistentMusicObject.h"
 
+#include "AkAudioDevice.h"
+
 UPersistentMusicObject::UPersistentMusicObject()
 {
 	AkGameObject = CreateDefaultSubobject<UAkGameObject>("Persistent Music Object");
@@ -40,7 +42,7 @@ void UPersistentMusicObject::Register()
 
 void UPersistentMusicObject::Unregister()
 {
-	auto* SoundEngine = IWwiseSoundEngineAPI::Get();
+	auto SoundEngine = IWwiseSoundEngineAPI::Get();
 	if (LIKELY(SoundEngine))
 	{
 		SoundEngine->UnregisterGameObj(AkGameObject->GetAkGameObjectID());
@@ -50,7 +52,7 @@ void UPersistentMusicObject::Unregister()
 
 void UPersistentMusicObject::SetListener()
 {
-	auto* SoundEngine = IWwiseSoundEngineAPI::Get();
+	auto SoundEngine = IWwiseSoundEngineAPI::Get();
 	if (LIKELY(SoundEngine))
 	{
 		AkGameObjectID ListenerIds[] = { AkGameObject->GetAkGameObjectID() };

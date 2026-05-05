@@ -34,7 +34,6 @@ public class Gyms : ModuleRules
 			"Core", 
 			"CoreUObject",
 			"Engine",
-			"FunctionalTesting",
 			"InputCore",
 			"AkAudio",
 			"Wwise",
@@ -42,7 +41,12 @@ public class Gyms : ModuleRules
 			"WwiseSoundEngine",
 		});
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
+		if (Target.Configuration != UnrealTargetConfiguration.Shipping)
+		{
+			PublicDependencyModuleNames.Add("FunctionalTesting");
+		}
+
+		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore", "AssetRegistry" });
 		
 		if (Target.bBuildEditor || Target.bBuildWithEditorOnlyData)
 		{

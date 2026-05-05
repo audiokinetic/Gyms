@@ -26,7 +26,6 @@ the specific language governing permissions and limitations under the License.
 
 #include "CoreMinimal.h"
 #include "UObject/ObjectMacros.h"
-#include "FunctionalTest.h"
 #include "Engine/EngineTypes.h"
 
 #include "Kismet/BlueprintFunctionLibrary.h"
@@ -55,10 +54,10 @@ class GYMS_API UGymsBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 	static void FireEvent(const FGenericCallback& CallbackEvent);
 
 	UFUNCTION(BlueprintCallable, Category = "Gym Blueprint Helpers")
-	static void OpenLevelTestingAdditionalSteps(AFunctionalTest* TestActor);
+	static void OpenLevelTestingAdditionalSteps(AActor* TestActor);
 
 	UFUNCTION(BlueprintCallable, Category = "Gym Blueprint Helpers")
-	static void ForceFinishingTest(AFunctionalTest* TestActor);
+	static void ForceFinishingTest(AActor* TestActor);
 
 	UFUNCTION(BlueprintCallable, Category = "Gym Blueprint Helpers")
 	static void ForceGarbageCollection();

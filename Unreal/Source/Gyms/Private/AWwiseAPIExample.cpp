@@ -36,7 +36,7 @@ AAWwiseAPIExample::AAWwiseAPIExample()
 
 void AAWwiseAPIExample::PostEventSoundEngineWwiseAPIExample(UAkAudioEvent* Event, AActor* GameObject)
 {
-	if (auto* SoundEngine = IWwiseSoundEngineAPI::Get())
+	if (auto SoundEngine = IWwiseSoundEngineAPI::Get())
 	{
 		if(Event && GameObject)
 		{
@@ -64,7 +64,7 @@ void AAWwiseAPIExample::PostEventSoundEngineWwiseAPIExample(UAkAudioEvent* Event
 
 void AAWwiseAPIExample::StopAllWwiseAPIExample()
 {
-	if (auto* SoundEngine = IWwiseSoundEngineAPI::Get())
+	if (auto SoundEngine = IWwiseSoundEngineAPI::Get())
 	{
 		SoundEngine->StopAll();
 	}

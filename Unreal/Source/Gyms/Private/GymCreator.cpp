@@ -25,15 +25,18 @@ the specific language governing permissions and limitations under the License.
 
 #include "GymCreator.h"
 
-#include "FunctionalTest.h"
-#include "DesktopPlatformModule.h"
-#include "IDesktopPlatform.h"
+#include "Engine/Level.h"
 #include "Engine/World.h"
 #include "GenericPlatform/GenericPlatformFile.h"
 #include "HAL/PlatformFileManager.h"
 
 #if WITH_EDITOR
+#include "DesktopPlatformModule.h"
+#include "Framework/Application/SlateApplication.h"
 #include "FileHelpers.h"
+#include "FunctionalTest.h"
+#include "IDesktopPlatform.h"
+#include "Misc/MessageDialog.h"
 #include "ObjectTools.h"
 #endif
 
@@ -196,6 +199,7 @@ FString UGymCreator::CreateGym(FString CommonPath, FString Path, int TemplateInd
 
 FString UGymCreator::OpenFolderDialog()
 {
+#if WITH_EDITOR
     IDesktopPlatform* DesktopPlatform = FDesktopPlatformModule::Get();
     if (DesktopPlatform)
     {
@@ -214,5 +218,6 @@ FString UGymCreator::OpenFolderDialog()
         }
         return FolderName;
     }
+#endif
     return "";
 }

@@ -32,7 +32,7 @@ UAdvancedVideoAudioSyncStatics::UAdvancedVideoAudioSyncStatics(const FObjectInit
 int32 UAdvancedVideoAudioSyncStatics::GetSourcePlayPosition(int32 PlayingID)
 {
 	AkTimeMs CurrentPosition = 0;
-	if (auto* SoundEngine = IWwiseSoundEngineAPI::Get())
+	if (auto SoundEngine = IWwiseSoundEngineAPI::Get())
 	{
 		auto Result = SoundEngine->GetSourcePlayPosition(PlayingID, &CurrentPosition);
 		if (Result == AK_Success)

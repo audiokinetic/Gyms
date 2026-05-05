@@ -24,10 +24,16 @@ the specific language governing permissions and limitations under the License.
 
 #include "GymsBlueprintFunctionLibrary.h"
 
-#include "AutomationBlueprintFunctionLibrary.h"
+#if !UE_BUILD_SHIPPING
+#include "FunctionalTest.h"
 #include "FunctionalTestBase.h"
+#include "AutomationBlueprintFunctionLibrary.h"
+#endif
 #include "Gyms.h"
+#include "AssetRegistry/AssetData.h"
+#include "AssetRegistry/AssetRegistryModule.h"
 #include "Engine/Engine.h"
+#include "Engine/World.h"
 #include "HAL/FileManager.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -39,47 +45,43 @@ the specific language governing permissions and limitations under the License.
 
 TArray<UGymsBlueprintFunctionLibrary::FWorldSoftObjectPtr> UGymsBlueprintFunctionLibrary::GetAllGyms(const TArray<FString>& GymNames)
 {
-	TArray<FString> FoundGymFiles;
+	const IAssetRegistry& AssetRegistry = FAssetRegistryModule::GetRegistry();
 
-	// Find all umap files in the Gyms folder
-	FString GymsPath = FPaths::Combine(FPaths::ProjectContentDir(), TEXT("Gyms")) + TEXT("/");;
-	IFileManager::Get().FindFilesRecursive(FoundGymFiles, *GymsPath, TEXT("*.umap"), true, false);
+	TArray<FAssetData> AssetDataList;
+	AssetRegistry.GetAssetsByPath(FName(TEXT("/Game/Gyms")), AssetDataList, /*bRecursive=*/ true);
 
-	FString ContentDir = FPaths::ProjectContentDir();
-	if(!FoundGymFiles.IsEmpty())
-	{
-		//We're dealing with -Game
-		if(FPaths::IsRelative(FoundGymFiles[0]) != FPaths::IsRelative(ContentDir))
-		{
-			FString BaseDir = FPaths::ConvertRelativePathToFull(FPaths::ProjectDir());
-			ContentDir = FPaths::Combine(BaseDir, "Content/");
-		}
-	}
-	FoundGymFiles.Sort();
+	const FTopLevelAssetPath WorldClassPath = UWorld::StaticClass()->GetClassPathName();
+	const bool bCheckGymNames = !GymNames.IsEmpty();
 
-	const bool CheckGymNames = !GymNames.IsEmpty();
 	TArray<FWorldSoftObjectPtr> Gyms;
-	// Return only the file name
-	for (FString GymFile : FoundGymFiles)
+	for (const FAssetData& AssetData : AssetDataList)
 	{
-		TArray<FString> PathParts;
-		GymFile.RemoveFromStart(ContentDir);
-		GymFile.ParseIntoArray(PathParts, TEXT("/"));
-		FString Filename = PathParts[PathParts.Num() - 1];
-		Filename.RemoveFromEnd(TEXT(".umap"));
-
-		if(!CheckGymNames || GymNames.Contains(Filename))
+		if (AssetData.AssetClassPath != WorldClassPath)
 		{
-			FString LastFolder = PathParts[PathParts.Num() - 2];
-			if (Filename == LastFolder)
-			{
-				GymFile.RemoveFromEnd(TEXT(".umap"));
-				GymFile = TEXT("/Game/") + GymFile;
-				Gyms.Emplace( FSoftObjectPath(GymFile) );
-			}
+			continue;
 		}
 
+		const FString AssetName = AssetData.AssetName.ToString();
+		if (bCheckGymNames && !GymNames.Contains(AssetName))
+		{
+			continue;
+		}
+
+		const FString PackagePath = AssetData.PackagePath.ToString();
+		const int32 LastSlashIndex = PackagePath.Find(TEXT("/"), ESearchCase::IgnoreCase, ESearchDir::FromEnd);
+		const FString ParentFolderName = (LastSlashIndex != INDEX_NONE) ? PackagePath.RightChop(LastSlashIndex + 1) : PackagePath;
+
+		if (AssetName == ParentFolderName)
+		{
+			Gyms.Emplace(FSoftObjectPath(AssetData.PackageName.ToString()));
+		}
 	}
+
+	Gyms.Sort([](const FWorldSoftObjectPtr& Left, const FWorldSoftObjectPtr& Right)
+	{
+		return Left.GetUniqueID().GetLongPackageName() < Right.GetUniqueID().GetLongPackageName();
+	});
+
 	return Gyms;
 }
 
@@ -94,20 +96,27 @@ void UGymsBlueprintFunctionLibrary::FireEvent(const FGenericCallback& CallbackEv
 	CallbackEvent.ExecuteIfBound();
 }
 
-void UGymsBlueprintFunctionLibrary::OpenLevelTestingAdditionalSteps(AFunctionalTest* TestActor)
+void UGymsBlueprintFunctionLibrary::OpenLevelTestingAdditionalSteps(AActor* TestActor)
 {
-	//In Unreal 5.1.1, Running a test while changing level will abort the test and make it fail. Fake ending the test to prevent it. 
-	TestActor->bIsRunning = false;
+#if !UE_BUILD_SHIPPING
+	if (AFunctionalTest* FunctionalTestActor = Cast<AFunctionalTest>(TestActor))
+	{
+		FunctionalTestActor->bIsRunning = false;
+	}
+#endif
 }
 
-void UGymsBlueprintFunctionLibrary::ForceFinishingTest(AFunctionalTest* TestActor)
+void UGymsBlueprintFunctionLibrary::ForceFinishingTest(AActor* TestActor)
 {
+#if !UE_BUILD_SHIPPING
+	AFunctionalTest* FunctionalTestActor = Cast<AFunctionalTest>(TestActor);
 	FFunctionalTestBase* FunctionalTest = static_cast<FFunctionalTestBase*>(FAutomationTestFramework::Get().GetCurrentTest());
-	if (FunctionalTest && TestActor)
+	if (FunctionalTest && FunctionalTestActor)
 	{
-		TestActor->bIsRunning = true;
-		FunctionalTest->SetFunctionalTestComplete(TestActor->TestLabel);
+		FunctionalTestActor->bIsRunning = true;
+		FunctionalTest->SetFunctionalTestComplete(FunctionalTestActor->TestLabel);
 	}
+#endif
 }
 
 void UGymsBlueprintFunctionLibrary::ForceGarbageCollection()
@@ -150,6 +159,8 @@ int32 UGymsBlueprintFunctionLibrary::GetOutputDeviceId(const FString& DeviceName
 
 void UGymsBlueprintFunctionLibrary::IgnoreErrorMessages(const FString& IgnoredError)
 {
+#if !UE_BUILD_SHIPPING
 	UAutomationBlueprintFunctionLibrary::AddExpectedLogError(IgnoredError, 0);
+#endif
 	UE_LOG(LogTemp, Error, TEXT("%s"), *IgnoredError);
 }
