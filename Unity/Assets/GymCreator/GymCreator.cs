@@ -205,6 +205,7 @@ public class GymCreator : UnityEditor.EditorWindow
         string gymPath = Directory.GetCurrentDirectory() + "/Assets/Gyms";
         string testPath = Directory.GetCurrentDirectory() + "/Assets/Tests";
 
+        _gymName = _gymName.Replace(" ", "_");
         string newGymPath = System.IO.Path.Combine(_gymPath, _gymName); 
         newGymPath = newGymPath.Replace("\\", "/");
 
