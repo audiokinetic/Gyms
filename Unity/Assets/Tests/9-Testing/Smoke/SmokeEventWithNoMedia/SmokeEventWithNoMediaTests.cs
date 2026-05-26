@@ -47,10 +47,8 @@ namespace Tests
             yield return EventButton.data.WwiseObjectReference.CompleteLoadBank();
             yield return StopButton.data.WwiseObjectReference.CompleteLoadBank();
 #else
-            Task loadingBank = Task.Run(EventButton.data.WwiseObjectReference.CompleteLoadBank);
-            yield return new WaitUntil(() =>loadingBank.IsCompleted);
-            loadingBank = Task.Run(StopButton.data.WwiseObjectReference.CompleteLoadBank);
-            yield return new WaitUntil(() =>loadingBank.IsCompleted);
+            yield return new WaitUntil(() => EventButton.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+            yield return new WaitUntil(() => StopButton.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
 #endif
           
 #endif
