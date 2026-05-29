@@ -55,10 +55,13 @@ public class GymCreator : UnityEditor.EditorWindow
 
     private void OnEnable()
     {
-        GymCreator window = (GymCreator)EditorWindow.GetWindow(typeof(GymCreator));
-        if (window != null)
+        if (!HasOpenInstances<GymCreator>())
         {
-            SetIcon(window);
+            GymCreator window = (GymCreator)EditorWindow.GetWindow(typeof(GymCreator));
+            if (window != null)
+            {
+                SetIcon(window);
+            }
         }
     }
 
