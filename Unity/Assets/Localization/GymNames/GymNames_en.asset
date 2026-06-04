@@ -565,6 +565,10 @@ MonoBehaviour:
     m_Localized: Reverb Zone with Room Tone
     m_Metadata:
       m_Items: []
+  - m_Id: 134899619369705472
+    m_Localized: Using Event Callbacks to detect Music Switch Transitions
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

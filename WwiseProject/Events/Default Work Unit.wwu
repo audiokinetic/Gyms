@@ -708,6 +708,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_MusicSwitchTransition" ID="{8AF83AB2-2A66-4F1F-8F34-45BF6F3837E2}">
+							<ChildrenList>
+								<Action Name="" ID="{FFBB47E9-5E9A-4351-8E9A-A10EB9FAFEB2}" ShortID="741923006">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MusicSwitchTransition" ID="{97C8430E-5A3B-4B4D-B3FD-1DF5163F5689}" WorkUnitID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AudioDevice" ID="{6FDDDFFF-5433-4222-96C7-CF0C6A7E0311}" ShortID="762763421">

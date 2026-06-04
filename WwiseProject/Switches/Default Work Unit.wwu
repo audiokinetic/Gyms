@@ -60,6 +60,16 @@
 						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{581ACEAF-DC9F-4F7C-80D4-AB63EB38F99A}" ShortID="497508526">
+					<ChildrenList>
+						<SwitchGroup Name="MusicSwitchTransition" ID="{4BE2FC0E-E398-49CC-8793-37BCBFFFB798}">
+							<ChildrenList>
+								<Switch Name="MUS_RotTR" ID="{A6CD1E06-7F31-47D3-B338-39E63E67ED37}"/>
+								<Switch Name="OIZ_beat" ID="{0613EAF7-DEA7-4960-A174-D522C3A1C875}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

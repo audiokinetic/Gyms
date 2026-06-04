@@ -3964,16 +3964,6 @@
 				</SharedPropertyList>
 				<SharedPropertyList ClassName="RTPC" PluginType="0" CompanyID="1" PluginID="22">
 					<PropertyList>
-						<Property Name="Color" Type="int16">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="OverrideColor" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
 						<Property Name="PropertyName" Type="string">
 							<ValueList>
 								<Value></Value>
@@ -7953,6 +7943,16 @@
 				<SharedPropertyList ClassName="EffectSlot" PluginType="0" CompanyID="1" PluginID="84">
 					<PropertyList>
 						<Property Name="Bypass" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Color" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool">
 							<ValueList>
 								<Value>False</Value>
 							</ValueList>

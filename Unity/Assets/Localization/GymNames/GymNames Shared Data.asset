@@ -533,6 +533,10 @@ MonoBehaviour:
     m_Key: SpatialRoomReverbZoneSingleToneCollision
     m_Metadata:
       m_Items: []
+  - m_Id: 134899619369705472
+    m_Key: AdvancedCallbackTypesMusicSwitchTransition
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
