@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.audiokinetic.wwise.addressables": {
-      "version": "https://github.com/audiokinetic/WwiseUnityAddressables.git#main_26.0",
+      "version": "https://github.com/audiokinetic/WwiseUnityAddressables.git#main_26.1",
       "depth": 0,
       "source": "git",
       "dependencies": {
