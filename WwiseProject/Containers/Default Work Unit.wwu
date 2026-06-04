@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{83C7F172-2885-4077-9671-3FE56F82D16C}" SchemaVersion="133">
+<WwiseDocument Type="WorkUnit" ID="{83C7F172-2885-4077-9671-3FE56F82D16C}" SchemaVersion="137">
 	<Containers>
 		<WorkUnit Name="Default Work Unit" ID="{83C7F172-2885-4077-9671-3FE56F82D16C}" PersistMode="Standalone">
 			<ChildrenList>
@@ -317,8 +317,8 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Hello" ID="{23D0AF1C-FF8C-4860-92BE-C55960ECCCB3}" Platform="Linked"/>
-								<ActiveSource Name="Hello" ID="{2460D835-3AA1-4F7B-9731-3B632470A5B6}" Platform="Linked"/>
 								<ActiveSource Name="Hello" ID="{3F26236C-D7DC-4BFD-81AD-5A0E6DFA0C75}" Platform="Linked"/>
+								<ActiveSource Name="Hello" ID="{2460D835-3AA1-4F7B-9731-3B632470A5B6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="ExternalSources" ID="{C6AF64CF-B166-4412-8913-CE294F29BF2C}" ShortID="374500512">
@@ -2424,26 +2424,26 @@
 											<PropertyList>
 												<Property Name="Channels" Type="int32">
 													<ValueList>
-														<Value Platform="Base">4</Value>
 														<Value Platform="Windows">4</Value>
+														<Value Platform="Base">4</Value>
 													</ValueList>
 												</Property>
 												<Property Name="LRMix" Type="Real64">
 													<ValueList>
-														<Value Platform="Base">0</Value>
 														<Value Platform="Windows">0</Value>
+														<Value Platform="Base">0</Value>
 													</ValueList>
 												</Property>
 												<Property Name="MaxSampleRate" Type="int32">
 													<ValueList>
-														<Value Platform="Base">48000</Value>
 														<Value Platform="Windows">48000</Value>
+														<Value Platform="Base">48000</Value>
 													</ValueList>
 												</Property>
 												<Property Name="MinSampleRate" Type="int32">
 													<ValueList>
-														<Value Platform="Base">0</Value>
 														<Value Platform="Windows">0</Value>
+														<Value Platform="Base">0</Value>
 													</ValueList>
 												</Property>
 												<Property Name="SRConversionQuality" Type="int32">
@@ -2453,17 +2453,17 @@
 												</Property>
 												<Property Name="SampleRate" Type="int32">
 													<ValueList>
-														<Value Platform="Base">48000</Value>
 														<Value Platform="Windows">48000</Value>
+														<Value Platform="Base">48000</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
 											<ConversionPluginInfoList>
-												<ConversionPluginInfo Platform="Base">
-													<ConversionPlugin Name="" ID="{257DAB70-CFC6-4C3F-89D2-DF6735BDA219}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-												</ConversionPluginInfo>
 												<ConversionPluginInfo Platform="Windows">
 													<ConversionPlugin Name="" ID="{B4BA0BEE-DA79-4878-AE85-16FCA95D6A36}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+												<ConversionPluginInfo Platform="Base">
+													<ConversionPlugin Name="" ID="{257DAB70-CFC6-4C3F-89D2-DF6735BDA219}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 												</ConversionPluginInfo>
 											</ConversionPluginInfoList>
 										</Conversion>
@@ -3124,8 +3124,8 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Lang_AnotherBank_En" ID="{BBF8DE14-19C0-40C3-B99F-EC4443CD8C2C}" Platform="Linked"/>
 								<ActiveSource Name="Lang_AnotherBank_Fr" ID="{E6355962-91FD-4A85-9B73-A575BF720F1A}" Platform="Linked"/>
+								<ActiveSource Name="Lang_AnotherBank_En" ID="{BBF8DE14-19C0-40C3-B99F-EC4443CD8C2C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Language_Media_AutoBank" ID="{AF8B4D71-F35E-4C65-9A3B-8BFA5963199A}" ShortID="894946878">

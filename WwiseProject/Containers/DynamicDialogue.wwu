@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{5E42C017-C023-46C2-9503-950FD24100E7}" SchemaVersion="133">
+<WwiseDocument Type="WorkUnit" ID="{5E42C017-C023-46C2-9503-950FD24100E7}" SchemaVersion="137">
 	<Containers>
 		<WorkUnit Name="DynamicDialogue" ID="{5E42C017-C023-46C2-9503-950FD24100E7}" PersistMode="Standalone">
 			<ChildrenList>

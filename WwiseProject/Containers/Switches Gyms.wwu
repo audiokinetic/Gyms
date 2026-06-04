@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{53876CD0-19C2-476C-A830-BBCF3F922E8C}" SchemaVersion="133">
+<WwiseDocument Type="WorkUnit" ID="{53876CD0-19C2-476C-A830-BBCF3F922E8C}" SchemaVersion="137">
 	<Containers>
 		<WorkUnit Name="Switches Gyms" ID="{53876CD0-19C2-476C-A830-BBCF3F922E8C}" PersistMode="Standalone">
 			<ChildrenList>
@@ -231,8 +231,8 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="en-GB Name" ID="{41764158-E860-4375-948B-C3F8AC0F4DD6}" Platform="Linked"/>
-								<ActiveSource Name="en-US Name" ID="{D7B3707D-DAB4-4345-AE02-99D7D4ECB6FD}" Platform="Linked"/>
 								<ActiveSource Name="fr-FR Name" ID="{2D8B23A9-1411-4989-ABD0-1F9BD751015B}" Platform="Linked"/>
+								<ActiveSource Name="en-US Name" ID="{D7B3707D-DAB4-4345-AE02-99D7D4ECB6FD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

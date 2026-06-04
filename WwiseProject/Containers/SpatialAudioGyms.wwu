@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}" SchemaVersion="133">
+<WwiseDocument Type="WorkUnit" ID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}" SchemaVersion="137">
 	<Containers>
 		<WorkUnit Name="SpatialAudioGyms" ID="{D65E358B-10AB-497A-BBE3-0CC730B3D08D}" PersistMode="Standalone">
 			<ChildrenList>

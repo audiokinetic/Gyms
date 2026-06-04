@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{7670CF80-3164-4DC9-A81B-EC61B8A6DE43}" SchemaVersion="133">
+<WwiseDocument Type="WorkUnit" ID="{7670CF80-3164-4DC9-A81B-EC61B8A6DE43}" SchemaVersion="137">
 	<Containers>
 		<WorkUnit Name="Shared Assets" ID="{7670CF80-3164-4DC9-A81B-EC61B8A6DE43}" PersistMode="Standalone">
 			<ChildrenList>
@@ -64,9 +64,9 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="en-US Name" ID="{93801553-40F2-40E4-97E9-4FD9F04B9F0E}" Platform="Linked"/>
 								<ActiveSource Name="en-GB Name" ID="{F21EBE64-F887-44AE-B6AE-DB68F0AFC965}" Platform="Linked"/>
 								<ActiveSource Name="fr-FR Name" ID="{CDBF63B8-B65B-483B-9ADC-AC678C2B097C}" Platform="Linked"/>
+								<ActiveSource Name="en-US Name" ID="{93801553-40F2-40E4-97E9-4FD9F04B9F0E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
