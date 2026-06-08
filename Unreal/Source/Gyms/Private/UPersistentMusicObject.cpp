@@ -35,8 +35,16 @@ void UPersistentMusicObject::Register()
 {
 	if (FAkAudioDevice::Get())
 	{
-		FAkAudioDevice::Get()->RegisterGameObject(AkGameObject->GetAkGameObjectID(), TEXT("Persistent_Music"));
-		AkGameObject->SetRegisteredWithWwise(true);
+		auto ID = AkGameObject->GetAkGameObjectID();
+		if (ID != AK_INVALID_GAME_OBJECT)
+		{
+			FAkAudioDevice::Get()->RegisterGameObject(ID, TEXT("Persistent_Music"));
+			AkGameObject->SetRegisteredWithWwise(true);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("UPersistentMusicObject::Register failed to get GameObject ID"));
+		}
 	}
 }
 
@@ -45,8 +53,17 @@ void UPersistentMusicObject::Unregister()
 	auto SoundEngine = IWwiseSoundEngineAPI::Get();
 	if (LIKELY(SoundEngine))
 	{
-		SoundEngine->UnregisterGameObj(AkGameObject->GetAkGameObjectID());
-		AkGameObject->SetRegisteredWithWwise(false);
+		auto ID = AkGameObject->GetAkGameObjectID();
+
+		if (ID != AK_INVALID_GAME_OBJECT)
+		{
+			SoundEngine->UnregisterGameObj(ID);
+			AkGameObject->SetRegisteredWithWwise(false);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("UPersistentMusicObject::Unregister failed to get GameObject ID"));
+		}
 	}
 }
 
