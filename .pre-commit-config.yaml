@@ -11,7 +11,7 @@ repos:
     rev: v1.0.4
     hooks:
     -   id: unreal-version-checker
-        args: [--maxversion=5.5.4]
+        args: [--maxversion=5.6.1]
 -   repo: ssh://git.hq.audiokinetic.com:29418/PreCommit/Wwise
     rev: v1.0.0
     hooks:
