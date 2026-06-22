@@ -33,7 +33,7 @@ UPersistentMusicObject::UPersistentMusicObject()
 
 void UPersistentMusicObject::Register()
 {
-	if (FAkAudioDevice::Get())
+	if (!AkGameObject)
 	{
 		auto ID = AkGameObject->GetAkGameObjectID();
 		if (ID != AK_INVALID_GAME_OBJECT)
@@ -46,6 +46,8 @@ void UPersistentMusicObject::Register()
 			UE_LOG(LogTemp, Warning, TEXT("UPersistentMusicObject::Register failed to get GameObject ID"));
 		}
 	}
+	
+	AkGameObject->CreateAndFillWwiseData(TEXT("PersistentMusicObject::Register"));
 }
 
 void UPersistentMusicObject::Unregister()
