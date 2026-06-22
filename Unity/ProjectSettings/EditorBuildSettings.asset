@@ -171,6 +171,9 @@ EditorBuildSettings:
     path: Assets/Gyms/9-Testing/Smoke/Essential/InitBankReload/InitBankReload.unity
     guid: b26a1769d520e814fb5212fab7a91e6e
   - enabled: 1
+    path: Assets/Gyms/9-Testing/Smoke/Smoke_LoadUnloadedBank/Smoke_LoadUnloadedBank.unity
+    guid: ada7ab4c78bf0e347b62e395b86b23dd
+  - enabled: 1
     path: Assets/Gyms/9-Testing/Smoke/SmokeAudioDeviceOutput/SmokeAudioDeviceOutput.unity
     guid: 22b7f22c48bc2394f919b1fe3ebde023
   - enabled: 1
