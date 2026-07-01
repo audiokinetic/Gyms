@@ -17,6 +17,12 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `1-Essential/EssentialPostEvent`_
 - Posting a Wwise Event from an action that plays a sound, bound to an object.
 
+### Using States to Modify Events
+
+- _Folder: `1-Essential/EssentialState`_
+- Presetting a State for future Wwise Event posting.
+
+
 ### Using Switch Containers to Modify Events
 
 - _Folder: `1-Essential/EssentialSwitch`_

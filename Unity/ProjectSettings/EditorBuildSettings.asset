@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Gyms/1-Essential/EssentialPostEvent/EssentialPostEvent.unity
     guid: 9018fb71fb675104bb152882324fef39
   - enabled: 1
+    path: Assets/Gyms/1-Essential/EssentialState/EssentialState.unity
+    guid: b746067ef4505d147ba7622a43734f79
+  - enabled: 1
     path: Assets/Gyms/1-Essential/EssentialSwitch/EssentialSwitch.unity
     guid: fb161c2827174bd40bcaa92c29f89124
   - enabled: 1
