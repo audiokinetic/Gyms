@@ -114,17 +114,20 @@ namespace Tests
             AkAddressableBankManager.Instance.DoUnloadBank();
         }
 
+#if UNITY_WEBGL
         private IEnumerator UnloadAutoBankWebGL(bool ignoreRef = true, bool removeFromDict = false)
         {
-            yield return eventRef.UnloadAutoBank();
+            yield return eventRef.UnloadAutoBankAsync();
             AkAddressableBankManager.Instance.DoUnloadBank();
         }
-
+#else
         private IEnumerator UnloadAutoBank()
         {
-            yield return eventRef.UnloadAutoBank();
+            var unloadingBank = eventRef.UnloadAutoBankAsync();
+            yield return new WaitUntil(() => unloadingBank.IsCompleted);
             AkAddressableBankManager.Instance.DoUnloadBank();
         }
+#endif
         
         private void CheckRefCount(int count)
         {
