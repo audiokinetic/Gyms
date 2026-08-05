@@ -32,6 +32,17 @@ namespace Tests
     public class BasicLocalizedVoiceTests : GymTests
     {
         const string SceneName = "BasicLocalizedVoice";
+
+        private IEnumerator SetLanguageAndWait(BasicLocalizedVoice localizedVoice, string language)
+        {
+#if UNITY_WEBGL
+            yield return localizedVoice.SetLanguage(language);
+#else
+            var setLanguage = localizedVoice.SetLanguage(language);
+            yield return new WaitUntil(() => setLanguage.IsCompleted);
+#endif
+        }
+
         [UnityTest]
         public IEnumerator BasicLocalizedVoice_Tests()
         {
@@ -40,9 +51,10 @@ namespace Tests
             yield return StartTest(SceneName);
             yield return new WaitForSeconds(0.2f);
             BasicLocalizedVoice localizedVoice = GameObject.Find("Cylinder").GetComponent<BasicLocalizedVoice>();
-            yield return localizedVoice.SetLanguage("en_US");
+            yield return SetLanguageAndWait(localizedVoice, "en_US");
             yield return new WaitForSeconds(0.2f);
             AK.Wwise.Event localizedEvent = localizedVoice.LocalizedEvent;
+            uint expected = localizedEvent.PlayingId + 1;
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
             ExpectedLogErrorAtLeastOnce("Wwise Addressable Bank Manager: Post_Localized_Voice could not be loaded");
 #endif
@@ -50,9 +62,9 @@ namespace Tests
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
             //With addressables, due to the auto bank not being loaded, the post won't happen for an invalid language thus not incrementing the PlayingId
             //This means that only the SetLanguage to "fr" will increment the PlayingId, making the expected localizedEvent.PlayingId + 1;
-            uint expected = localizedEvent.PlayingId + 1;
+            expected = localizedEvent.PlayingId + 1;
 #else
-	        uint expected = localizedEvent.PlayingId + 2;
+	        expected = localizedEvent.PlayingId + 2;
 #endif
             //Set unsupported language
 #if !AK_WWISE_ADDRESSABLES
@@ -67,7 +79,7 @@ namespace Tests
             ExpectedLogError("Wwise", 5);
 #endif
 #endif
-            yield return localizedVoice.SetLanguage("");
+            yield return SetLanguageAndWait(localizedVoice, "");
             yield return new WaitForSeconds(0.2f);
             uint actual = localizedEvent.PlayingId;
             Assert.AreEqual(0, actual);
@@ -77,7 +89,7 @@ namespace Tests
             LogAssert.ignoreFailingMessages = false;
              
             // Set language
-            yield return localizedVoice.SetLanguage("fr_FR");
+            yield return SetLanguageAndWait(localizedVoice, "fr_FR");
 
             yield return new WaitForSeconds(0.2f);
             actual = localizedEvent.PlayingId;
