@@ -43,7 +43,8 @@ namespace Tests
 #if UNITY_WEBGL
 			yield return akEvent.data.WwiseObjectReference.CompleteLoadBank();
 #else
-			yield return new WaitUntil(() => akEvent.data.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+			var completeLoadBankTask = akEvent.data.WwiseObjectReference.CompleteLoadBank();
+			yield return new WaitUntil(() => completeLoadBankTask.IsCompleted);
 #endif
 #endif
 

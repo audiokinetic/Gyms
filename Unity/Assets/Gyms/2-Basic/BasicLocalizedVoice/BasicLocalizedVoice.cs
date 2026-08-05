@@ -22,10 +22,13 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using Wwise.API.Runtime.WwiseTypes.WwiseObjectsManagers;
+using Debug = UnityEngine.Debug;
 
 public class BasicLocalizedVoice : OnOffManager
 {
@@ -36,6 +39,7 @@ public class BasicLocalizedVoice : OnOffManager
         get { return _localizedEvent; }
     }
 
+#if UNITY_WEBGL
     public override void OnAction()
     {
         StartCoroutine(SetLanguage("en_US"));
@@ -45,20 +49,65 @@ public class BasicLocalizedVoice : OnOffManager
     {
         StartCoroutine(SetLanguage("fr_FR"));
     }
+#else
+    public override async void OnAction()
+    {
+        try
+        {
+            await SetLanguage("en_US");
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Error setting language: {e}");
+        }
+    }
 
+    public override async void OffAction()
+    {
+        try
+        {
+            await SetLanguage("fr_FR");
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Error setting language: {e}");
+        }
+    }
+#endif
+
+#if UNITY_WEBGL
     public IEnumerator SetLanguage(string language)
     {
-        List<string> bankToReload = new List<string>() {_localizedEvent.WwiseObjectReference.DisplayName };
+        List<string> bankToReload = new List<string>() { _localizedEvent.WwiseObjectReference.DisplayName };
+        
+        // Wait for language change to complete
         yield return WwiseEventReferencesManager.Instance.SetLanguageAndReloadLocalizedBanks(language, bankToReload);
-        yield return new WaitForEndOfFrame();
+        
         Debug.Log("Current language: " + AkUnitySoundEngine.GetCurrentLanguage());
+        
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-#if UNITY_WEBGL
+        // Wait for bank to load
         yield return _localizedEvent.WwiseObjectReference.CompleteLoadBank();
-#else
-        yield return new WaitUntil(() => _localizedEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
 #endif
-#endif
+        
         _localizedEvent.Post(gameObject);
     }
+#else
+    public async Task SetLanguage(string language)
+    {
+        List<string> bankToReload = new List<string>() { _localizedEvent.WwiseObjectReference.DisplayName };
+        
+        // Wait for language change to complete
+        await WwiseEventReferencesManager.Instance.SetLanguageAndReloadLocalizedBanks(language, bankToReload);
+        
+        Debug.Log("Current language: " + AkUnitySoundEngine.GetCurrentLanguage());
+        
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+        // Wait for bank to load
+        await _localizedEvent.WwiseObjectReference.CompleteLoadBank();
+#endif
+        
+        _localizedEvent.Post(gameObject);
+    }
+#endif
 }

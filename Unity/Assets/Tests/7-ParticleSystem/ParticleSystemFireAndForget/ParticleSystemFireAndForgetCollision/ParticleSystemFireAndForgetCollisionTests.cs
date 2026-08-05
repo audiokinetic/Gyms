@@ -44,7 +44,7 @@ namespace Tests
 
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
 #if UNITY_WEBGL
-            yield return scriptReference.wwiseEvent.WwiseObjectReference.CompleteLoadBank();
+            yield return scriptReference.collisionWwiseEvent.WwiseObjectReference.CompleteLoadBank();
 #else
 			yield return new WaitUntil(() => scriptReference.collisionWwiseEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
 #endif
