@@ -86,6 +86,12 @@
 !/Unity/Assets/Wwise/MonoBehaviour/Runtime/*.cs.meta
 !/Unity/Assets/Wwise/Timeline/Runtime/*.cs.meta
 
+# Do not track settings in Resources
+/Unity/Assets/Wwise/Resources/WwiseOptions.json
+/Unity/Assets/Wwise/Resources/WwiseOptions.json.meta
+/Unity/Assets/Wwise/Resources/WwiseRuntimeSettings.json
+/Unity/Assets/Wwise/Resources/WwiseRuntimeSettings.json.meta
+
 #
 # Unreal
 #

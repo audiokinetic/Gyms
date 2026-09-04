@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Namespaces": [
+    {
+      "Name": "IntegrationLogging",
+      "Options": [
+        {
+          "Name": "WwiseLoggerLevel",
+          "DefaultValue": "Verbose"
+        }
+      ]
+    },
+    {
+      "Name": "Integration",
+      "Options": [
+        {
+          "Name": "StartupLanguage",
+          "DefaultValue": "en_US"
+        }
+      ]
+    }
+  ]
+}
