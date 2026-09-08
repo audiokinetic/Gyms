@@ -173,3 +173,4 @@ Key,SourceString
 "AdvancedCallbackTypesEndOfEvent","Using Event Callbacks to retrieve when an Event ends"
 "AdvancedCallbackTypesDuration","Using Event Callbacks to retrieve Event duration"
 "AdvancedCallbackTypesMusicSyncBar","Using Event Callbacks to retrieve Music information (Bar duration)"
+"AdvancedDistanceProbe","Using a different game object for the position of a listener (Distance Probe)"
