@@ -173,6 +173,11 @@ This is a curated list of all the [Wwise Gyms](../../README.md), as defined in [
 - _Folder: `3-Advanced/AdvancedCaptureProfiler`_
 - Start and stop capturing a Profiler session.
 
+### Distance Probe
+
+- _Folder: `3-Advanced/AdvancedDistanceProbe`_
+- Using a different game object for the position of a listener.
+
 ### Event Operations
 
 - _Folder: `3-Advanced/AdvancedEvents`_
