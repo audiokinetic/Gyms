@@ -253,5 +253,26 @@ public class GymTests
         Assert.IsTrue(((AkMarkerCallbackInfo)in_info).strLabel == (string)in_cookie, string.Format("Expected {0} to play, but it was {1}", (string)in_cookie, ((AkMarkerCallbackInfo)in_info).strLabel));
         Debug.LogError(string.Format("{0} is expecting to play (This is an expected error)", (string)in_cookie));
     }
+
+	protected IEnumerator WaitForEventToLoad(AK.Wwise.Event akEvent)
+	{
+#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
+#if UNITY_WEBGL
+            yield return akEvent.WwiseObjectReference.CompleteLoadBank();
+#else
+		yield return new WaitUntil(() => akEvent.WwiseObjectReference.CompleteLoadBank().IsCompleted);
+#endif
+#endif
+	}
+
+	protected IEnumerator PostEventTest(AkEvent akEvent)
+	{
+		yield return WaitForEventToLoad(gameObject.GetComponent<AkEvent>().data); // Silence
+		yield return WaitForEventToLoad(akEvent.data);
+
+		uint expectedId = PostSilence() + 1;
+		Assert.AreEqual(expectedId, akEvent.data.Post(gameObject));
+		Debug.Log("Emitter can post: true");
+	}
 }
 
