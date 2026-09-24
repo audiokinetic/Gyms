@@ -2795,10 +2795,11 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: d7f348a33968cf748ac2df7c1aef4c12,
       type: 2}
   TransmissionLossValues:
-  - 1
-  - 1
+  - 0.4
+  - 0.6
   EnableDiffraction: 1
   EnableDiffractionOnBoundaryEdges: 0
+  BypassPortalSubtraction: 0
   Solid: 0
   isStatic: 0
   AcousticTextureInternal:

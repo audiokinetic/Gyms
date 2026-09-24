@@ -39,6 +39,14 @@ public class SpatialGeometrySingleParams_Interact : ButtonWithTextManager
 	[Range(0,1)]
 	int _subMesh = 0;
 
+	public float Variation
+	{
+		get
+		{
+			return _variation;
+		}
+	}
+
 	private void OnValidate()
 	{
 		switch (_parameter)

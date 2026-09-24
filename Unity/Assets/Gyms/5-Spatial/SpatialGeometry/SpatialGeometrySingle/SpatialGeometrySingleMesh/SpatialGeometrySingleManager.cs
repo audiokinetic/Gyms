@@ -22,8 +22,12 @@ OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 *******************************************************************************/
 
+using AK.Wwise;
+using System;
+using System.Collections.ObjectModel;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class SpatialGeometrySingleManager : MonoBehaviour
 {
@@ -47,6 +51,8 @@ public class SpatialGeometrySingleManager : MonoBehaviour
 			return m_instance;
 		}
 	}
+
+	public ReadOnlyCollection<AcousticTexture> AcousticTextures { get => Array.AsReadOnly(acousticTextures); }
 
 	[SerializeField] protected Text _GeometryEnabledValueText;
 	[SerializeField] protected Text _DiffractionText;
@@ -72,8 +78,14 @@ public class SpatialGeometrySingleManager : MonoBehaviour
 
 	[SerializeField] protected AkSurfaceReflector geometryComponent;
 
-	private bool currentGeometryEnabledValue = true;
 
+	private bool defaultGeometryEnabledValue = true;
+	private bool defaultDiffractionValue = true;
+	private bool defaultBoundaryEdgesValue = false;
+	private float[] defaultTransmissionLossValue = new float[2] { 0f, 0f };
+	private int[] defaultAcousticTextureIndex = new int[2] { 0, 1 };
+
+	private bool currentGeometryEnabledValue = true;
 	private bool currentDiffractionValue = true;
 	private bool currentBoundaryEdgesValue = false;
 
@@ -91,6 +103,14 @@ public class SpatialGeometrySingleManager : MonoBehaviour
 			DestroyImmediate(this);
 			return;
 		}
+
+		defaultGeometryEnabledValue = geometryComponent.enabled;
+		defaultDiffractionValue = geometryComponent.EnableDiffraction;
+		defaultBoundaryEdgesValue = geometryComponent.EnableDiffractionOnBoundaryEdges;
+		defaultAcousticTextureIndex[0] = currentAcousticTextureIndex[0];
+		defaultAcousticTextureIndex[1] = currentAcousticTextureIndex[1];
+		defaultTransmissionLossValue[0] = geometryComponent.TransmissionLossValues[0];
+		defaultTransmissionLossValue[1] = geometryComponent.TransmissionLossValues[1];
 
 		m_instance = this;
 	}
@@ -110,15 +130,13 @@ public class SpatialGeometrySingleManager : MonoBehaviour
 
 	public void ResetParams()
 	{
-		currentGeometryEnabledValue = true;
-
-		currentDiffractionValue = true;
-		currentBoundaryEdgesValue = false;
-
-		currentAcousticTextureIndex[0] = 0;
-		currentAcousticTextureIndex[1] = 1;
-		currentTransmissionLossValue[0] = 1f;
-		currentTransmissionLossValue[1] = 1f;
+		currentGeometryEnabledValue = defaultGeometryEnabledValue;
+		currentDiffractionValue = defaultDiffractionValue;
+		currentBoundaryEdgesValue = defaultBoundaryEdgesValue;
+		currentAcousticTextureIndex[0] = defaultAcousticTextureIndex[0];
+		currentAcousticTextureIndex[1] = defaultAcousticTextureIndex[1];
+		currentTransmissionLossValue[0] = defaultTransmissionLossValue[0];
+		currentTransmissionLossValue[1] = defaultTransmissionLossValue[1];
 
 		UpdateGeometryComponent();
 		UpdateUI();
