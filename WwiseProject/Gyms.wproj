@@ -25,8 +25,8 @@
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
-						<Value Platform="Base">GeneratedSoundBanks\Base</Value>
-						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
+						<Value Platform="Base">..\Unity\Assets\WwiseData\Bank\Base</Value>
+						<Value Platform="Windows">..\Unity\Assets\WwiseData\Bank\Windows</Value>
 					</ValueList>
 				</Property>
 				<Property Name="GenerateMainSoundBank" Type="bool" Value="True"/>
