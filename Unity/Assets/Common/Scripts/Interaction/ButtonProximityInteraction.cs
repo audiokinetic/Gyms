@@ -26,6 +26,8 @@ using UnityEngine;
 
 public class ButtonProximityInteraction: MonoBehaviour
 {
+	const float AngleThreshold = 90;
+
 	public float delayTime = 0.5f; // Set the time required between each valid interaction
 	private float timer = 0f;
 	private bool m_PlayerInTrigger = false;
@@ -49,12 +51,28 @@ public class ButtonProximityInteraction: MonoBehaviour
 		}
 	}
 
+	bool IsLookingAtButton()
+	{
+		GameObject controller = SetPlayerController.GetCurrentPlayerController();
+		Vector3 playerForward = controller.transform.forward;
+		Vector3 playerForwardXZ = new Vector2(playerForward.x, playerForward.z);
+
+		Vector3 playerToButton = gameObject.transform.position - controller.transform.position;
+		Vector2 playerToButtonXZ = new Vector2(playerToButton.x, playerToButton.z);
+
+		float angle = Vector2.Angle(playerForwardXZ, playerToButtonXZ);
+		return angle <= AngleThreshold;
+	}
+
 
 	// Update is called once per frame
 	void Update()
 	{
 		timer += Time.deltaTime;
-		if (m_PlayerInTrigger && (Input.GetButtonDown("Interact") || (Input.touchCount == 3) && timer >= delayTime))
+
+		bool playerInteracting = Input.GetButtonDown("Interact") || (Input.touchCount == 3) && timer >= delayTime;
+
+		if (m_PlayerInTrigger && playerInteracting && IsLookingAtButton())
 		{
 			if (OnButtonPressed != null)
 			{
