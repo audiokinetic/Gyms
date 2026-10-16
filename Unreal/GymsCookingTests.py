@@ -94,12 +94,12 @@ if __name__ == '__main__':
 
     path = os.path.dirname(__file__)
     path = os.path.join(path, 'Gyms.uproject')
-    cmd = enginePath + " " + path + " -run=cook -targetplatform=Windows -log=CookingOutput.txt -ini:Game:[/Script/WwisePackaging.WwisePackagingSettings]:bPackageAsBulkData=False"
+    cmd = enginePath + " " + path + " -unattended -run=cook -targetplatform=Windows -log=CookingOutput.txt -ini:Game:[/Script/WwisePackaging.WwisePackagingSettings]:bPackageAsBulkData=False"
     print('Running: ' + cmd)
     subprocess.run(cmd, timeout=1000)
     noBulkData = wemFilesFound(True)
     
-    cmd = enginePath + " " + path + " -run=cook -targetplatform=Windows -log=CookingOutput.txt -ini:Game:[/Script/WwisePackaging.WwisePackagingSettings]:bPackageAsBulkData=True"
+    cmd = enginePath + " " + path + " -unattended -run=cook -targetplatform=Windows -log=CookingOutput.txt -ini:Game:[/Script/WwisePackaging.WwisePackagingSettings]:bPackageAsBulkData=True"
     print('Running: ' + cmd)
     subprocess.run(cmd, timeout=1000)
     withBulkData = wemFilesFound(False)

@@ -67,7 +67,7 @@ if __name__ == '__main__':
 
     path = os.path.dirname(__file__)
     path = os.path.join(path, 'Gyms.uproject')
-    cmd = enginePath + " " + path + " -run=\"WwiseReconcileCommandlet\" -modes=all" + dryRun + " -ini:Engine:[Audio]:WwiseReconcileModuleName=WwiseGymsTestReconcile -log=ReconcileOutput.txt"
+    cmd = enginePath + " " + path + " -unattended -run=\"WwiseReconcileCommandlet\" -modes=all" + dryRun + " -ini:Engine:[Audio]:WwiseReconcileModuleName=WwiseGymsTestReconcile -log=ReconcileOutput.txt"
     print('Running: ' + cmd)
     print('\nExectuing reconcile tests...\n')
     subprocess.run(cmd, timeout=1000)
