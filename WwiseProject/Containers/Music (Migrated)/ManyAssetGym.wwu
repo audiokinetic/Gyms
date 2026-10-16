@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{28B6A239-496B-4E29-B668-55D49ADB4304}" SchemaVersion="139">
+	<Containers>
+		<WorkUnit Name="ManyAssetGym" ID="{28B6A239-496B-4E29-B668-55D49ADB4304}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="ManyAssetMusicSwitch" ID="{EB429532-2829-493E-962A-873070DFE8A8}" ShortID="853558334">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<Transition Name="Root" ID="{D0CDF0C6-4362-48DD-B9DF-C93B2AD2B145}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Transition Name="Transition" ID="{A40CF4F9-C667-4BA4-9545-8A44B79B0E46}"/>
+									</ChildrenList>
+								</Transition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="MusicContainer_B" ID="{286B3B55-0CA1-48D6-ACBA-AF8147274E36}" ShortID="61050721">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{901860B2-5748-4236-8D16-858FDDE372F7}" ShortID="122072305"/>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<Transition Name="Root" ID="{013ABE9C-FBD6-4212-8318-652DC3AA79E0}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Transition Name="Transition" ID="{654DC91F-B9A8-450F-9CE4-32B1DF74CEBE}"/>
+											</ChildrenList>
+										</Transition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Segment Name="ManyAssetsMediaMusic_6" ID="{12B9F409-7E13-4B96-B9FC-C99F03AC47E1}" ShortID="176965769">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="239777.278911565"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Track Name="ManyAssetsMediaMusic_6" ID="{75371702-FEF2-476F-B176-904C024F0BBF}" ShortID="600592250">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<Transition Name="Root" ID="{27A91C2D-967C-48E3-BA26-45502FD4A86A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+														</Transition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ManyAssetsMediaMusic_6" ID="{281E4A6A-0E54-4589-9522-9A9A13D02473}">
+													<Language>SFX</Language>
+													<AudioFile>ManyAssets\ManyAssetsMediaMusic_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="287200092"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<TrackSequence Name="" ID="{261C93DE-43DF-4F40-B38B-D834156D8756}"/>
+												</ObjectList>
+											</ObjectLists>
+										</Track>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Cue Name="Entry Cue" ID="{9BD2C640-BFFB-4932-B085-B9B414356A89}"/>
+											<Cue Name="Exit Cue" ID="{49320D04-5D5C-41E1-8477-D7B62B0210DA}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="239777.278911565"/>
+												</PropertyList>
+											</Cue>
+										</ObjectList>
+									</ObjectLists>
+								</Segment>
+								<Segment Name="ManyAssetsMediaMusic_7" ID="{3DC0D45F-BA2F-4C35-9478-9C4FD1FC1E8B}" ShortID="756780797">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="202771.292517007"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Track Name="ManyAssetsMediaMusic_7" ID="{477EDC9C-FAB9-4656-B60D-C0CFCBE09B67}" ShortID="519348783">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<Transition Name="Root" ID="{A78703A7-8ECB-46C3-B80B-B82D8F09CEFE}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+														</Transition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ManyAssetsMediaMusic_7" ID="{5342A0E3-D8AE-49A4-B103-2425A5D1C499}">
+													<Language>SFX</Language>
+													<AudioFile>ManyAssets\ManyAssetsMediaMusic_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="558541202"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<TrackSequence Name="" ID="{AD7D809F-BF93-4654-9E94-C3F4A4070136}"/>
+												</ObjectList>
+											</ObjectLists>
+										</Track>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Cue Name="Entry Cue" ID="{EB4625FE-11D9-4A93-94C4-6835429810C9}"/>
+											<Cue Name="Exit Cue" ID="{232FC4BB-D149-4965-8B12-F2DAD1FCEC82}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="202771.292517007"/>
+												</PropertyList>
+											</Cue>
+										</ObjectList>
+									</ObjectLists>
+								</Segment>
+								<Segment Name="ManyAssetsMediaMusic_8" ID="{A3E34D66-AB30-4B49-BA40-C41C701CAC11}" ShortID="470884931">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="166941.337868481"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Track Name="ManyAssetsMediaMusic_8" ID="{35202F83-B065-4D87-B36C-BD34D3E21733}" ShortID="335334248">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<Transition Name="Root" ID="{419B48EE-E19A-4583-8CF4-22645C94A5CC}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+														</Transition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ManyAssetsMediaMusic_8" ID="{9DC664BF-185B-4F41-AE58-BC2E323619A4}">
+													<Language>SFX</Language>
+													<AudioFile>ManyAssets\ManyAssetsMediaMusic_8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="881809451"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<TrackSequence Name="" ID="{41B56C45-9ED9-472A-AF6A-EF0474338D4F}"/>
+												</ObjectList>
+											</ObjectLists>
+										</Track>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Cue Name="Entry Cue" ID="{271251FC-91C8-4496-A14B-56377AA26B37}"/>
+											<Cue Name="Exit Cue" ID="{21716BF6-D625-40C1-BA99-1890D60108EA}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="166941.337868481"/>
+												</PropertyList>
+											</Cue>
+										</ObjectList>
+									</ObjectLists>
+								</Segment>
+								<Segment Name="ManyAssetsMediaMusic_9" ID="{2B5E24AA-EF1C-4C7E-969E-191DE163E9F4}" ShortID="994975927">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="287985.918367347"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Track Name="ManyAssetsMediaMusic_9" ID="{B3CC79E5-4CBA-4A73-8292-43DED3BDEDB0}" ShortID="182282560">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<Transition Name="Root" ID="{E5970CA9-4C84-4B6C-8118-D1F407330A40}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+														</Transition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ManyAssetsMediaMusic_9" ID="{8A82AD9A-3974-4F6A-9808-3A80A75F8A53}">
+													<Language>SFX</Language>
+													<AudioFile>ManyAssets\ManyAssetsMediaMusic_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="524403986"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<TrackSequence Name="" ID="{57C33FE1-D5B3-4C2D-A810-0234924EB735}"/>
+												</ObjectList>
+											</ObjectLists>
+										</Track>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Cue Name="Entry Cue" ID="{0B4B6B82-5406-4AF1-94AC-3A855CADBDCE}"/>
+											<Cue Name="Exit Cue" ID="{3E9037AB-58D6-4A6A-A096-B8D4F0ADE5C2}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="287985.918367347"/>
+												</PropertyList>
+											</Cue>
+										</ObjectList>
+									</ObjectLists>
+								</Segment>
+								<Segment Name="ManyAssetsMediaMusic_5" ID="{8BD117A9-EC1D-4ED8-A7AA-ED286B2B3F95}" ShortID="1018722420">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="164510.476190476"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Track Name="ManyAssetsMediaMusic_5" ID="{4F6A38DD-E1CE-47F2-B8E2-3FB1D098B09D}" ShortID="939043313">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<Transition Name="Root" ID="{A485E9A8-DD97-4850-A537-ECBDD269F093}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+														</Transition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ManyAssetsMediaMusic_5" ID="{4190D4BD-CCB1-40D2-9508-B6F9B7EDB1A0}">
+													<Language>SFX</Language>
+													<AudioFile>ManyAssets\ManyAssetsMediaMusic_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="801176930"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<TrackSequence Name="" ID="{24FD6E41-1945-4994-A7B9-CD3177A44E1B}"/>
+												</ObjectList>
+											</ObjectLists>
+										</Track>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Cue Name="Entry Cue" ID="{2393F7AF-10BD-4749-8F34-0E15717B13C8}"/>
+											<Cue Name="Exit Cue" ID="{ED6215B9-6D1D-4584-B4AD-4EF84E9827A4}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="164510.476190476"/>
+												</PropertyList>
+											</Cue>
+										</ObjectList>
+									</ObjectLists>
+								</Segment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<Segment Name="ManyAssetsMediaMusic" ID="{3163989C-46EC-4EBD-823D-72907412DD0A}" ShortID="212582459">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="236502.494331066"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Track Name="ManyAssetsMediaMusic_0" ID="{DCFACB29-563F-4CAA-A9C1-573CBDAB48D5}" ShortID="900393487">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<Transition Name="Root" ID="{760F5152-7413-416A-B6E2-1D5F2905CC58}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+												</Transition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ManyAssetsMediaMusic_0" ID="{EB4F1DD9-1057-4147-B506-69D587DF2A2C}">
+											<Language>SFX</Language>
+											<AudioFile>ManyAssets\ManyAssetsMediaMusic_0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="274945479"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<TrackSequence Name="" ID="{C52E7776-7563-443D-A597-290690315206}"/>
+										</ObjectList>
+									</ObjectLists>
+								</Track>
+								<Track Name="ManyAssetsMediaMusic_1" ID="{2B9DF229-1E84-453E-8D05-29CCB03DFD41}" ShortID="243163313">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<Transition Name="Root" ID="{7F48822F-143E-4D20-83EB-D70DC33360B6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+												</Transition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ManyAssetsMediaMusic_1" ID="{14D5DC51-6D0C-4547-80F4-EBD95521AE40}">
+											<Language>SFX</Language>
+											<AudioFile>ManyAssets\ManyAssetsMediaMusic_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="937912622"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<TrackSequence Name="" ID="{5BB16632-4739-4907-BC9C-E7FAA9CAFD48}"/>
+										</ObjectList>
+									</ObjectLists>
+								</Track>
+								<Track Name="ManyAssetsMediaMusic_2" ID="{F50129E0-F0F8-4076-88AA-943AD842D46D}" ShortID="195990114">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<Transition Name="Root" ID="{18BF3256-4295-44D6-A52A-C3D47138A85C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+												</Transition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ManyAssetsMediaMusic_2" ID="{99206E90-82CE-46B9-8D81-5DA5A1874223}">
+											<Language>SFX</Language>
+											<AudioFile>ManyAssets\ManyAssetsMediaMusic_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="226332075"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<TrackSequence Name="" ID="{1DE66E43-9B5A-44ED-915D-DD7B3D3F0275}"/>
+										</ObjectList>
+									</ObjectLists>
+								</Track>
+								<Track Name="ManyAssetsMediaMusic_3" ID="{D250D282-4A3D-4288-B334-170412E8C254}" ShortID="624356299">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<Transition Name="Root" ID="{22771116-61E7-474D-BDFA-28401E2BBB1E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+												</Transition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ManyAssetsMediaMusic_3" ID="{FFFD0822-D4B0-49E8-B9CA-522DC1F032AE}">
+											<Language>SFX</Language>
+											<AudioFile>ManyAssets\ManyAssetsMediaMusic_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="768250862"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<TrackSequence Name="" ID="{228D465A-4C73-4B9A-9D0C-FF86398ECFFF}"/>
+										</ObjectList>
+									</ObjectLists>
+								</Track>
+								<Track Name="ManyAssetsMediaMusic_4" ID="{D444D824-6079-493C-9632-ADA2437BCDDE}" ShortID="113236945">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<Transition Name="Root" ID="{01C7D9EE-FB3C-4941-9698-F25DCA0EA3DD}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+												</Transition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ManyAssetsMediaMusic_4" ID="{81001ECF-FE5B-4DF1-B7A5-38ACF5B7280E}">
+											<Language>SFX</Language>
+											<AudioFile>ManyAssets\ManyAssetsMediaMusic_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="44152948"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<TrackSequence Name="" ID="{59221A61-772A-4163-B259-C2282299087D}"/>
+										</ObjectList>
+									</ObjectLists>
+								</Track>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Cue Name="Entry Cue" ID="{9E8FA7B8-DB19-422D-830A-427402BB3C4E}"/>
+									<Cue Name="Exit Cue" ID="{622EEF2A-3A2B-4A65-8E75-A4C598CF6FD9}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="173633.900226757"/>
+										</PropertyList>
+									</Cue>
+								</ObjectList>
+							</ObjectLists>
+						</Segment>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Entries">
+							<MultiSwitchEntry Name="" ID="{E9EC6F0F-A7B4-40FC-A506-A104F2816E15}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="ManyAssetsMediaMusic" ID="{0F04FF08-3A64-40FE-B4AF-A6D6303075EF}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+									</Reference>
+								</ReferenceList>
+							</MultiSwitchEntry>
+						</ObjectList>
+						<ObjectList Name="Stingers">
+							<Stinger Name="" ID="{86363CCD-7EA1-44F0-8A2C-21545EEBF0BF}">
+								<ReferenceList>
+									<Reference Name="Segment">
+										<ObjectRef Name="ManyAssetsMediaMusicStinger_0" ID="{1652AC0C-34B0-4864-B208-8D576960F17A}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+									</Reference>
+								</ReferenceList>
+							</Stinger>
+							<Stinger Name="" ID="{B16A1D60-29BC-4091-B4AC-2F450CF293AD}">
+								<ReferenceList>
+									<Reference Name="Segment">
+										<ObjectRef Name="ManyAssetsMediaMusicStinger_1" ID="{DB0A5A1F-C22F-4C33-93BC-08165655A5A7}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+									</Reference>
+								</ReferenceList>
+							</Stinger>
+							<Stinger Name="" ID="{3B5E7A30-0C1A-41F7-98B4-6E37B95487E9}">
+								<ReferenceList>
+									<Reference Name="Segment">
+										<ObjectRef Name="ManyAssetsMediaMusicStinger_2" ID="{506D6387-976A-4AF0-AEB0-3E57B33726CA}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+									</Reference>
+								</ReferenceList>
+							</Stinger>
+							<Stinger Name="" ID="{1F978B63-84BF-499D-9CFD-63DB9D6C8541}">
+								<ReferenceList>
+									<Reference Name="Segment">
+										<ObjectRef Name="ManyAssetsMediaMusicStinger_3" ID="{19FBA0F7-AE90-4B7E-B2B4-C8AE7B6ADC59}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+									</Reference>
+								</ReferenceList>
+							</Stinger>
+							<Stinger Name="" ID="{7125F731-AC91-4228-B54E-406FE3734853}">
+								<ReferenceList>
+									<Reference Name="Segment">
+										<ObjectRef Name="ManyAssetsMediaMusicStinger_4" ID="{2A455C07-E0AA-41FB-944A-73C7DF9E6CD4}" WorkUnitID="{D00CC8F1-372C-48F3-B5D4-32E5C3713CBA}"/>
+									</Reference>
+								</ReferenceList>
+							</Stinger>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSwitchContainer>
+				<Folder Name="Stinger" ID="{535DB42D-4177-4EAF-9445-556E6BF1DE26}" ShortID="1015117540">
+					<ChildrenList>
+						<Segment Name="ManyAssetsMediaMusicStinger_0" ID="{277DDF6E-D54C-456D-BA4D-645E8E09BC45}" ShortID="969958169">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="24883.9682539683"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Track Name="ManyAssetsMediaMusicStinger_0" ID="{46F873E5-75E9-4CE6-88AC-DE020ED9E64F}" ShortID="1033799683">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<Transition Name="Root" ID="{38B013D1-5EF7-4051-9ADB-691BB03181A6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+												</Transition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ManyAssetsMediaMusicStinger_0" ID="{CEE9E672-E100-48DF-B885-D0638A204B76}">
+											<Language>SFX</Language>
+											<AudioFile>ManyAssets\ManyAssetsMediaMusicStinger_0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="693155290"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<TrackSequence Name="" ID="{4B186DC2-8829-47CF-8AD9-3956E561680E}"/>
+										</ObjectList>
+									</ObjectLists>
+								</Track>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Cue Name="Entry Cue" ID="{8AAD0014-0F54-4686-B89A-FD7DE12261D4}"/>
+									<Cue Name="Exit Cue" ID="{98CB5019-73A4-44B4-83A5-D6356BD7AD64}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="24883.9682539683"/>
+										</PropertyList>
+									</Cue>
+								</ObjectList>
+							</ObjectLists>
+						</Segment>
+						<Segment Name="ManyAssetsMediaMusicStinger_1" ID="{89D84D48-FBF3-4035-96D3-915BD56FF07C}" ShortID="690190945">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="5351.83673469388"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Track Name="ManyAssetsMediaMusicStinger_1" ID="{798DD461-5A6C-4502-8C60-17F9110749D8}" ShortID="624972399">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<Transition Name="Root" ID="{B810A021-6479-45FA-85F0-F9280910832F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+												</Transition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ManyAssetsMediaMusicStinger_1" ID="{37AF1DB8-05DA-43F7-855B-C414440BBB08}">
+											<Language>SFX</Language>
+											<AudioFile>ManyAssets\ManyAssetsMediaMusicStinger_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="148832450"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<TrackSequence Name="" ID="{3E91721F-4A1E-498E-A812-11D2D234488C}"/>
+										</ObjectList>
+									</ObjectLists>
+								</Track>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Cue Name="Entry Cue" ID="{BB6057F3-DE92-4BCF-A592-8DD724897DD1}"/>
+									<Cue Name="Exit Cue" ID="{2707BBB5-107A-48DC-ACD1-6C794F844DE6}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="5351.83673469388"/>
+										</PropertyList>
+									</Cue>
+								</ObjectList>
+							</ObjectLists>
+						</Segment>
+						<Segment Name="ManyAssetsMediaMusicStinger_2" ID="{6A8DF866-D0DC-4477-953F-1A74D52A2879}" ShortID="956000654">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="21561.2698412698"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Track Name="ManyAssetsMediaMusicStinger_2" ID="{7EB3E7BD-79D0-42F1-96F9-1F324152BD46}" ShortID="74929322">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<Transition Name="Root" ID="{8F701DEB-1390-4767-99D8-48B707D68A58}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+												</Transition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ManyAssetsMediaMusicStinger_2" ID="{E9091F10-6C32-4A94-9B89-5346AB3C385C}">
+											<Language>SFX</Language>
+											<AudioFile>ManyAssets\ManyAssetsMediaMusicStinger_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="376690861"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<TrackSequence Name="" ID="{3B9E8A45-079A-42F0-85EB-07AF81BC7C6D}"/>
+										</ObjectList>
+									</ObjectLists>
+								</Track>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Cue Name="Entry Cue" ID="{BAC302E6-8237-4EC3-AD48-7C134725A4FB}"/>
+									<Cue Name="Exit Cue" ID="{981DED88-FE88-4B30-B6B7-E1488496340D}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="21561.2698412698"/>
+										</PropertyList>
+									</Cue>
+								</ObjectList>
+							</ObjectLists>
+						</Segment>
+						<Segment Name="ManyAssetsMediaMusicStinger_3" ID="{FCCD583F-B06A-450D-8CF0-B56887D248F2}" ShortID="729548085">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="44731.6099773243"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Track Name="ManyAssetsMediaMusicStinger_3" ID="{3BC5393A-A2F7-4319-8EA2-19159E8BDDB5}" ShortID="369490978">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<Transition Name="Root" ID="{7BCDA6BF-66D3-4C7E-B218-FEE078873984}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+												</Transition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ManyAssetsMediaMusicStinger_3" ID="{25282C81-2E10-45A4-8F08-29CB217E1EA5}">
+											<Language>SFX</Language>
+											<AudioFile>ManyAssets\ManyAssetsMediaMusicStinger_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="441434069"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<TrackSequence Name="" ID="{2ED5CD12-3871-41CA-8B14-4094E1F05685}"/>
+										</ObjectList>
+									</ObjectLists>
+								</Track>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Cue Name="Entry Cue" ID="{11FF4561-2CF4-403F-AFF6-2BECC5A76F3F}"/>
+									<Cue Name="Exit Cue" ID="{704A8098-06E7-4429-9188-C6D7ED0F0845}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="44731.6099773243"/>
+										</PropertyList>
+									</Cue>
+								</ObjectList>
+							</ObjectLists>
+						</Segment>
+						<Segment Name="ManyAssetsMediaMusicStinger_4" ID="{79D269C7-0DD3-4544-AEC4-2D5B2FC4C996}" ShortID="966434867">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="33282.7210884354"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D2311743-B22F-4E19-B713-C7EA158EBE44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Track Name="ManyAssetsMediaMusicStinger_4" ID="{00E4FDB9-E8A2-4CE1-8657-D767B427B9B6}" ShortID="311486005">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{221E0A94-966F-4E8C-AAEA-F1A2F743E8F7}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<Transition Name="Root" ID="{000DFED7-F4DE-44C8-A4A5-CBC0D019C2C6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+												</Transition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ManyAssetsMediaMusicStinger_4" ID="{94D35C22-9DBE-491A-B118-982C9F5B1254}">
+											<Language>SFX</Language>
+											<AudioFile>ManyAssets\ManyAssetsMediaMusicStinger_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="830990532"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<TrackSequence Name="" ID="{0CBF3A0F-5CE0-43D2-B8ED-B148FFCA9B45}"/>
+										</ObjectList>
+									</ObjectLists>
+								</Track>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Cue Name="Entry Cue" ID="{06BA31C9-F0BD-4E4E-994A-A417EE3BA938}"/>
+									<Cue Name="Exit Cue" ID="{9F5C986E-0395-46CD-A71B-8ADCCCB583E7}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="33282.7210884354"/>
+										</PropertyList>
+									</Cue>
+								</ObjectList>
+							</ObjectLists>
+						</Segment>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}" SchemaVersion="137">
+<WwiseDocument Type="WorkUnit" ID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}" SchemaVersion="139">
 	<Containers>
 		<WorkUnit Name="Default Work Unit" ID="{FAAE0945-36D2-4943-8544-4A575E1B7BAC}" PersistMode="Standalone">
 			<ChildrenList>
@@ -169,16 +169,16 @@
 											<ReferenceList>
 												<Reference Name="TransitionFadeIn">
 													<Custom>
-														<MusicFade Name="Transition Fade-in" ID="{E6C82E86-FA6B-4223-8CA4-CE4AF917A12C}"/>
+														<Fade Name="Transition Fade-in" ID="{E6C82E86-FA6B-4223-8CA4-CE4AF917A12C}"/>
 													</Custom>
 												</Reference>
 												<Reference Name="TransitionFadeOut">
 													<Custom>
-														<MusicFade Name="Transition Fade-out" ID="{E31C807C-15BE-4017-BD43-7963E34D0CF2}">
+														<Fade Name="Transition Fade-out" ID="{E31C807C-15BE-4017-BD43-7963E34D0CF2}">
 															<PropertyList>
 																<Property Name="FadeType" Type="int16" Value="1"/>
 															</PropertyList>
-														</MusicFade>
+														</Fade>
 													</Custom>
 												</Reference>
 											</ReferenceList>

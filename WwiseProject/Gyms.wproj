@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="137" WwiseVersion="v2026.1.1" WwiseBuild="9196">
+<WwiseDocument Type="Project" SchemaVersion="139" WwiseVersion="v2027.1.1" WwiseBuild="9293">
 	<ProjectInfo>
 		<Project Name="Gyms" ID="{225E3277-D99C-47A8-9765-D8D28C291B75}">
 			<Platforms>
@@ -6671,7 +6671,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="MusicFade" PluginType="0" CompanyID="1" PluginID="39">
+				<SharedPropertyList ClassName="Fade" PluginType="0" CompanyID="1" PluginID="39">
 					<PropertyList>
 						<Property Name="FadeCurve" Type="int16">
 							<ValueList>
@@ -10673,6 +10673,11 @@
 								<Value>0</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Gain" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Hold" Type="Real32">
 							<ValueList>
 								<Value>0</Value>
@@ -13850,6 +13855,31 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Gain_Band0" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Gain_Band1" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Gain_Band2" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Gain_Band3" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Gain_Band4" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
 						<Property Name="HighFrequency_Band1" Type="Real32">
 							<ValueList>
 								<Value>200</Value>
@@ -13923,6 +13953,11 @@
 						<Property Name="InfiniteHold" Type="bool">
 							<ValueList>
 								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="InputGain" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="LowFrequency_Band1" Type="Real32">
@@ -14170,6 +14205,65 @@
 						<Property Name="OverrideColor" Type="bool">
 							<ValueList>
 								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
+				<SharedPropertyList ClassName="Tempest 3D AudioTech" PluginType="3" CompanyID="0" PluginID="211">
+					<PropertyList>
+						<Property Name="AmbisonicsBedOrder" Type="int32">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Color" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ForceSoftwareProcessing" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HrtfObjects" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HrtfPersonalization" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IgnoreOutputDeviceConfig" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MaxObjectCount" Type="int32">
+							<ValueList>
+								<Value>128</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ReferenceTriangleLookup" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SameAsMainMixCfg" Type="int32">
+							<ValueList>
+								<Value>0</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -14963,6 +15057,9 @@
 				</PhysicalFolder>
 				<PhysicalFolder Path="Containers\Music">
 					<WorkUnit Name="Music" ID="{49FED366-B530-42A8-993B-924873AAB707}" PersistMode="Standalone"/>
+				</PhysicalFolder>
+				<PhysicalFolder Path="Containers\Music (Migrated)">
+					<WorkUnit Name="Music (Migrated)" ID="{0CC47E88-3E96-4D13-A4A5-6B5E5A91D73C}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Control Surface Sessions">
 					<WorkUnit Name="Control Surface Sessions" ID="{1751E4CD-8018-4E2C-9A8A-C77764D1D653}" PersistMode="Standalone"/>
