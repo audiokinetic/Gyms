@@ -34,6 +34,8 @@ class GymsAutomation:
     gymExtension = ''
     editors = []
     platform = ''
+    roboqaServer = None
+    roboqaRunId = None
 
     """
     Load file used to know which gyms to run.
@@ -171,6 +173,8 @@ class GymsAutomation:
 
         optionalArguments = parser.add_argument_group("Optional Arguments")
         optionalArguments.add_argument('-t', '--timeout', required=False, type=int, default=6000, help='The maximum duration of the test in seconds. The run will fail without finishing if it lasts longer than the given value. The default value is 10 minutes.')
+        optionalArguments.add_argument('--roboqaServer', required=False, type=str, default=None, help='URL of the RoboQA Central server to send the test results to. Requires --roboqaRunId.')
+        optionalArguments.add_argument('--roboqaRunId', required=False, type=str, default=None, help='RoboQA Central run receiving the test results. Requires --roboqaServer.')
         self.platform_optional_argument(optionalArguments)
         args = parser.parse_args()
         enginePath = args.enginePath
@@ -178,6 +182,8 @@ class GymsAutomation:
         fileOutput = args.fileOutput
         self.platform = self.get_target_platform(args)
         timeout = args.timeout
+        self.roboqaServer = args.roboqaServer
+        self.roboqaRunId = args.roboqaRunId
         self.set_gyms_path(args)
         if os.path.isfile(enginePath):
             found = False
